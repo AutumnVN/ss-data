@@ -1,0 +1,3151 @@
+{
+  "100": {
+    "Id": 100,
+    "Name": "TravelerDuelChallengeAffix.100.1",
+    "Desc": "TravelerDuelChallengeAffix.100.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021011",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      1001
+    ]
+  },
+  "101": {
+    "Id": 101,
+    "Name": "TravelerDuelChallengeAffix.101.1",
+    "Desc": "TravelerDuelChallengeAffix.101.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021021",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      1001
+    ]
+  },
+  "102": {
+    "Id": 102,
+    "Name": "TravelerDuelChallengeAffix.102.1",
+    "Desc": "TravelerDuelChallengeAffix.102.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021031",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      1001
+    ]
+  },
+  "103": {
+    "Id": 103,
+    "Name": "TravelerDuelChallengeAffix.103.1",
+    "Desc": "TravelerDuelChallengeAffix.103.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021041",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      1001
+    ]
+  },
+  "110": {
+    "Id": 110,
+    "GroupId": 100101,
+    "Difficulty": 7,
+    "Name": "TravelerDuelChallengeAffix.110.1",
+    "Desc": "TravelerDuelChallengeAffix.110.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021011",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "BranchId": 700210111
+  },
+  "111": {
+    "Id": 111,
+    "GroupId": 100102,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.111.1",
+    "Desc": "TravelerDuelChallengeAffix.111.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021021",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "BranchId": 700210211
+  },
+  "112": {
+    "Id": 112,
+    "GroupId": 100103,
+    "Difficulty": 9,
+    "Name": "TravelerDuelChallengeAffix.112.1",
+    "Desc": "TravelerDuelChallengeAffix.112.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021031",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "BranchId": 700210121
+  },
+  "113": {
+    "Id": 113,
+    "GroupId": 100104,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.113.1",
+    "Desc": "TravelerDuelChallengeAffix.113.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021041",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "BranchId": 700210221
+  },
+  "114": {
+    "Id": 114,
+    "GroupId": 100105,
+    "Difficulty": 16,
+    "Name": "TravelerDuelChallengeAffix.114.1",
+    "Desc": "TravelerDuelChallengeAffix.114.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021051",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "BranchId": 700210131
+  },
+  "115": {
+    "Id": 115,
+    "GroupId": 100106,
+    "Difficulty": 12,
+    "Name": "TravelerDuelChallengeAffix.115.1",
+    "Desc": "TravelerDuelChallengeAffix.115.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70021061",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "BranchId": 700210231
+  },
+  "116": {
+    "Id": 116,
+    "GroupId": 101,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.116.1",
+    "Desc": "TravelerDuelChallengeAffix.116.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10101",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010101
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,116,Value1,Pct",
+    "Value1": "10"
+  },
+  "117": {
+    "Id": 117,
+    "GroupId": 101,
+    "Difficulty": 6,
+    "UnlockDifficulty": 20,
+    "UnlockDurationTime": 60,
+    "Name": "TravelerDuelChallengeAffix.117.1",
+    "Desc": "TravelerDuelChallengeAffix.117.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10102",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010102
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,117,Value1,Pct",
+    "Value1": "30"
+  },
+  "118": {
+    "Id": 118,
+    "GroupId": 101,
+    "Difficulty": 10,
+    "UnlockDifficulty": 30,
+    "UnlockDurationTime": 120,
+    "Name": "TravelerDuelChallengeAffix.118.1",
+    "Desc": "TravelerDuelChallengeAffix.118.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10103",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010103
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,118,Value1,Pct",
+    "Value1": "50"
+  },
+  "119": {
+    "Id": 119,
+    "GroupId": 102,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.119.1",
+    "Desc": "TravelerDuelChallengeAffix.119.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10201",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010201
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,119,Value1,Pct",
+    "Value1": "10"
+  },
+  "120": {
+    "Id": 120,
+    "GroupId": 102,
+    "Difficulty": 12,
+    "UnlockDifficulty": 20,
+    "UnlockDurationTime": 60,
+    "Name": "TravelerDuelChallengeAffix.120.1",
+    "Desc": "TravelerDuelChallengeAffix.120.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10202",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010202
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,120,Value1,Pct",
+    "Value1": "30"
+  },
+  "121": {
+    "Id": 121,
+    "GroupId": 102,
+    "Difficulty": 20,
+    "UnlockDifficulty": 30,
+    "UnlockDurationTime": 180,
+    "Name": "TravelerDuelChallengeAffix.121.1",
+    "Desc": "TravelerDuelChallengeAffix.121.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10203",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010203
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,121,Value1,Pct",
+    "Value1": "50"
+  },
+  "122": {
+    "Id": 122,
+    "GroupId": 103,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.122.1",
+    "Desc": "TravelerDuelChallengeAffix.122.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10301",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010301
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,122,Value1,Pct",
+    "Value1": "5"
+  },
+  "123": {
+    "Id": 123,
+    "GroupId": 103,
+    "Difficulty": 8,
+    "UnlockDifficulty": 15,
+    "UnlockDurationTime": 120,
+    "Name": "TravelerDuelChallengeAffix.123.1",
+    "Desc": "TravelerDuelChallengeAffix.123.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10302",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010302
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,123,Value1,Pct",
+    "Value1": "15"
+  },
+  "124": {
+    "Id": 124,
+    "GroupId": 103,
+    "Difficulty": 20,
+    "UnlockDifficulty": 30,
+    "UnlockDurationTime": 200,
+    "Name": "TravelerDuelChallengeAffix.124.1",
+    "Desc": "TravelerDuelChallengeAffix.124.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10303",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010303
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,124,Value1,Pct",
+    "Value1": "25"
+  },
+  "125": {
+    "Id": 125,
+    "GroupId": 104,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.125.1",
+    "Desc": "TravelerDuelChallengeAffix.125.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10501",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010401
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,125,Value1,Pct",
+    "Value1": "5"
+  },
+  "126": {
+    "Id": 126,
+    "GroupId": 104,
+    "Difficulty": 3,
+    "UnlockDifficulty": 10,
+    "UnlockDurationTime": 300,
+    "Name": "TravelerDuelChallengeAffix.126.1",
+    "Desc": "TravelerDuelChallengeAffix.126.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10502",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010402
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,126,Value1,Pct",
+    "Value1": "10"
+  },
+  "127": {
+    "Id": 127,
+    "GroupId": 104,
+    "Difficulty": 4,
+    "UnlockDifficulty": 15,
+    "UnlockDurationTime": 600,
+    "Name": "TravelerDuelChallengeAffix.127.1",
+    "Desc": "TravelerDuelChallengeAffix.127.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10503",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010403
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,127,Value1,Pct",
+    "Value1": "15"
+  },
+  "128": {
+    "Id": 128,
+    "GroupId": 105,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.128.1",
+    "Desc": "TravelerDuelChallengeAffix.128.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10401",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010501
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,128,Value1,Pct",
+    "Value1": "10"
+  },
+  "129": {
+    "Id": 129,
+    "GroupId": 105,
+    "Difficulty": 2,
+    "UnlockDifficulty": 8,
+    "UnlockDurationTime": 60,
+    "Name": "TravelerDuelChallengeAffix.129.1",
+    "Desc": "TravelerDuelChallengeAffix.129.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10402",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010502
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,129,Value1,Pct",
+    "Value1": "20"
+  },
+  "130": {
+    "Id": 130,
+    "GroupId": 105,
+    "Difficulty": 3,
+    "UnlockDifficulty": 15,
+    "UnlockDurationTime": 240,
+    "Name": "TravelerDuelChallengeAffix.130.1",
+    "Desc": "TravelerDuelChallengeAffix.130.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10403",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010503
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,130,Value1,Pct",
+    "Value1": "30"
+  },
+  "131": {
+    "Id": 131,
+    "GroupId": 106,
+    "Difficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.131.1",
+    "Desc": "TravelerDuelChallengeAffix.131.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10601",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010601
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,131,Value1,Pct",
+    "Value1": "5"
+  },
+  "132": {
+    "Id": 132,
+    "GroupId": 106,
+    "Difficulty": 20,
+    "UnlockDifficulty": 30,
+    "UnlockDurationTime": 60,
+    "Name": "TravelerDuelChallengeAffix.132.1",
+    "Desc": "TravelerDuelChallengeAffix.132.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10602",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010602
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,132,Value1,Pct",
+    "Value1": "10"
+  },
+  "133": {
+    "Id": 133,
+    "GroupId": 106,
+    "Difficulty": 30,
+    "UnlockDifficulty": 50,
+    "UnlockDurationTime": 240,
+    "Name": "TravelerDuelChallengeAffix.133.1",
+    "Desc": "TravelerDuelChallengeAffix.133.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_10603",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29010603
+    ],
+    "Param1": "TravelerDuelChallengeAffix,NoLevel,133,Value1,Pct",
+    "Value1": "15"
+  },
+  "200": {
+    "Id": 200,
+    "Name": "TravelerDuelChallengeAffix.200.1",
+    "Desc": "TravelerDuelChallengeAffix.200.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022011",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      1001
+    ]
+  },
+  "201": {
+    "Id": 201,
+    "Name": "TravelerDuelChallengeAffix.201.1",
+    "Desc": "TravelerDuelChallengeAffix.201.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022021",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      1001
+    ]
+  },
+  "202": {
+    "Id": 202,
+    "Name": "TravelerDuelChallengeAffix.202.1",
+    "Desc": "TravelerDuelChallengeAffix.202.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022051",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      1001
+    ]
+  },
+  "203": {
+    "Id": 203,
+    "Name": "TravelerDuelChallengeAffix.203.1",
+    "Desc": "TravelerDuelChallengeAffix.203.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022081",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      1001
+    ]
+  },
+  "100201": {
+    "Id": 100201,
+    "GroupId": 100201,
+    "Difficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.100201.1",
+    "Desc": "TravelerDuelChallengeAffix.100201.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022021",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_FMTrace"
+  },
+  "100202": {
+    "Id": 100202,
+    "GroupId": 100202,
+    "Difficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.100202.1",
+    "Desc": "TravelerDuelChallengeAffix.100202.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022071",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_DashArea"
+  },
+  "100203": {
+    "Id": 100203,
+    "GroupId": 100202,
+    "Difficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.100203.1",
+    "Desc": "TravelerDuelChallengeAffix.100203.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022061",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_DashBunshin"
+  },
+  "100204": {
+    "Id": 100204,
+    "GroupId": 100204,
+    "Difficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.100204.1",
+    "Desc": "TravelerDuelChallengeAffix.100204.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022031",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_SLJTrace"
+  },
+  "100205": {
+    "Id": 100205,
+    "GroupId": 100205,
+    "Difficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.100205.1",
+    "Desc": "TravelerDuelChallengeAffix.100205.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022091",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_SyncBunsin_SWC"
+  },
+  "100206": {
+    "Id": 100206,
+    "GroupId": 100206,
+    "Difficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.100206.1",
+    "Desc": "TravelerDuelChallengeAffix.100206.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_70022101",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_Illusion_Three"
+  },
+  "29020101": {
+    "Id": 29020101,
+    "GroupId": 201,
+    "Difficulty": 3,
+    "Name": "TravelerDuelChallengeAffix.29020101.1",
+    "Desc": "TravelerDuelChallengeAffix.29020101.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_101",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020101
+    ],
+    "Param1": "EffectValue,NoLevel,29020101,EffectTypeParam1,HdPct"
+  },
+  "29020102": {
+    "Id": 29020102,
+    "GroupId": 201,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.29020102.1",
+    "Desc": "TravelerDuelChallengeAffix.29020102.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_102",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020102
+    ],
+    "Param1": "EffectValue,NoLevel,29020102,EffectTypeParam1,HdPct"
+  },
+  "29020103": {
+    "Id": 29020103,
+    "GroupId": 201,
+    "Difficulty": 8,
+    "Name": "TravelerDuelChallengeAffix.29020103.1",
+    "Desc": "TravelerDuelChallengeAffix.29020103.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_103",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020103
+    ],
+    "Param1": "EffectValue,NoLevel,29020103,EffectTypeParam1,HdPct"
+  },
+  "29020201": {
+    "Id": 29020201,
+    "GroupId": 202,
+    "Difficulty": 3,
+    "Name": "TravelerDuelChallengeAffix.29020201.1",
+    "Desc": "TravelerDuelChallengeAffix.29020201.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_20301",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020201
+    ],
+    "Param1": "EffectValue,NoLevel,29020201,EffectTypeParam1,HdPct"
+  },
+  "29020202": {
+    "Id": 29020202,
+    "GroupId": 202,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.29020202.1",
+    "Desc": "TravelerDuelChallengeAffix.29020202.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_20302",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020202
+    ],
+    "Param1": "EffectValue,NoLevel,29020202,EffectTypeParam1,HdPct"
+  },
+  "29020203": {
+    "Id": 29020203,
+    "GroupId": 202,
+    "Difficulty": 8,
+    "Name": "TravelerDuelChallengeAffix.29020203.1",
+    "Desc": "TravelerDuelChallengeAffix.29020203.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_20303",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020203
+    ],
+    "Param1": "EffectValue,NoLevel,29020203,EffectTypeParam1,HdPct"
+  },
+  "29021001": {
+    "Id": 29021001,
+    "GroupId": 210,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.29021001.1",
+    "Desc": "TravelerDuelChallengeAffix.29021001.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1001",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021001,
+      290210011
+    ],
+    "Param1": "EffectValue,NoLevel,29021001,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290210011,EffectTypeParam1,Pct"
+  },
+  "29021501": {
+    "Id": 29021501,
+    "GroupId": 215,
+    "Difficulty": 3,
+    "Name": "TravelerDuelChallengeAffix.29021501.1",
+    "Desc": "TravelerDuelChallengeAffix.29021501.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1501",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021501
+    ],
+    "Param1": "EffectValue,NoLevel,29021501,EffectTypeParam1,Pct"
+  },
+  "29021502": {
+    "Id": 29021502,
+    "GroupId": 215,
+    "Difficulty": 8,
+    "Name": "TravelerDuelChallengeAffix.29021502.1",
+    "Desc": "TravelerDuelChallengeAffix.29021502.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1502",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021502
+    ],
+    "Param1": "EffectValue,NoLevel,29021502,EffectTypeParam1,Pct"
+  },
+  "29020401": {
+    "Id": 29020401,
+    "GroupId": 204,
+    "Difficulty": 3,
+    "Name": "TravelerDuelChallengeAffix.29020401.1",
+    "Desc": "TravelerDuelChallengeAffix.29020401.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_401",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020401
+    ],
+    "Param1": "Effect,NoLevel,290204011,TriggerParam1,Fixed",
+    "Param2": "BuffValue,NoLevel,290204011,Time,10K"
+  },
+  "29020501": {
+    "Id": 29020501,
+    "GroupId": 205,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.29020501.1",
+    "Desc": "TravelerDuelChallengeAffix.29020501.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_501",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020501
+    ],
+    "Param1": "EffectValue,NoLevel,29020501,EffectTypeParam1,Fixed"
+  },
+  "29020601": {
+    "Id": 29020601,
+    "GroupId": 206,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.29020601.1",
+    "Desc": "TravelerDuelChallengeAffix.29020601.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_601",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020601
+    ],
+    "Param1": "EffectValue,NoLevel,290206011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29020601,Time,10K",
+    "Param3": "BuffValue,NoLevel,29020601,LaminatedNum,Fixed"
+  },
+  "29020701": {
+    "Id": 29020701,
+    "GroupId": 207,
+    "Difficulty": 3,
+    "Name": "TravelerDuelChallengeAffix.29020701.1",
+    "Desc": "TravelerDuelChallengeAffix.29020701.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_701",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020701,
+      290207011
+    ],
+    "Param1": "EffectValue,NoLevel,29020701,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290207011,EffectTypeParam1,HdPct"
+  },
+  "29020702": {
+    "Id": 29020702,
+    "GroupId": 207,
+    "Difficulty": 3,
+    "Name": "TravelerDuelChallengeAffix.29020702.1",
+    "Desc": "TravelerDuelChallengeAffix.29020702.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_702",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020702,
+      290207021
+    ],
+    "Param1": "EffectValue,NoLevel,29020702,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290207021,EffectTypeParam1,HdPct"
+  },
+  "29020703": {
+    "Id": 29020703,
+    "GroupId": 207,
+    "Difficulty": 3,
+    "Name": "TravelerDuelChallengeAffix.29020703.1",
+    "Desc": "TravelerDuelChallengeAffix.29020703.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_703",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020703,
+      290207031
+    ],
+    "Param1": "EffectValue,NoLevel,29020703,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290207031,EffectTypeParam1,HdPct"
+  },
+  "29020801": {
+    "Id": 29020801,
+    "GroupId": 208,
+    "Difficulty": 5,
+    "UnlockDifficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.29020801.1",
+    "Desc": "TravelerDuelChallengeAffix.29020801.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_801",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020801
+    ],
+    "Param1": "EffectValue,NoLevel,290208011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29020801,Time,10K",
+    "Param3": "BuffValue,NoLevel,29020801,LaminatedNum,Fixed"
+  },
+  "29020901": {
+    "Id": 29020901,
+    "GroupId": 209,
+    "Difficulty": 3,
+    "UnlockDifficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.29020901.1",
+    "Desc": "TravelerDuelChallengeAffix.29020901.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_901",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020901,
+      290209011
+    ],
+    "Param1": "EffectValue,NoLevel,290209011,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,29020901,EffectTypeParam1,HdPct"
+  },
+  "29020902": {
+    "Id": 29020902,
+    "GroupId": 209,
+    "Difficulty": 8,
+    "UnlockDifficulty": 10,
+    "Name": "TravelerDuelChallengeAffix.29020902.1",
+    "Desc": "TravelerDuelChallengeAffix.29020902.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_902",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020902,
+      290209021
+    ],
+    "Param1": "EffectValue,NoLevel,290209021,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,29020902,EffectTypeParam1,HdPct"
+  },
+  "29021201": {
+    "Id": 29021201,
+    "GroupId": 212,
+    "Difficulty": 5,
+    "UnlockDifficulty": 15,
+    "Name": "TravelerDuelChallengeAffix.29021201.1",
+    "Desc": "TravelerDuelChallengeAffix.29021201.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1201",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021201,
+      290212011
+    ],
+    "Param1": "EffectValue,NoLevel,29021201,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290212011,EffectTypeParam1,HdPct"
+  },
+  "29021301": {
+    "Id": 29021301,
+    "GroupId": 213,
+    "Difficulty": 3,
+    "UnlockDifficulty": 15,
+    "Name": "TravelerDuelChallengeAffix.29021301.1",
+    "Desc": "TravelerDuelChallengeAffix.29021301.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1301",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021301
+    ],
+    "Param1": "EffectValue,NoLevel,29021301,EffectTypeParam1,Fixed"
+  },
+  "29021302": {
+    "Id": 29021302,
+    "GroupId": 213,
+    "Difficulty": 8,
+    "UnlockDifficulty": 15,
+    "Name": "TravelerDuelChallengeAffix.29021302.1",
+    "Desc": "TravelerDuelChallengeAffix.29021302.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1302",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021302
+    ],
+    "Param1": "EffectValue,NoLevel,29021302,EffectTypeParam1,Fixed"
+  },
+  "29021601": {
+    "Id": 29021601,
+    "GroupId": 216,
+    "Difficulty": 3,
+    "UnlockDifficulty": 50,
+    "Name": "TravelerDuelChallengeAffix.29021601.1",
+    "Desc": "TravelerDuelChallengeAffix.29021601.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1601",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021601
+    ],
+    "Param1": "Effect,NoLevel,290216011,TriggerParam1,Fixed",
+    "Param2": "EffectValue,NoLevel,290216012,EffectTypeParam1,HdPct"
+  },
+  "29021602": {
+    "Id": 29021602,
+    "GroupId": 216,
+    "Difficulty": 5,
+    "UnlockDifficulty": 50,
+    "Name": "TravelerDuelChallengeAffix.29021602.1",
+    "Desc": "TravelerDuelChallengeAffix.29021602.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1602",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021602
+    ],
+    "Param1": "Effect,NoLevel,290216021,TriggerParam1,Fixed",
+    "Param2": "EffectValue,NoLevel,290216022,EffectTypeParam1,HdPct"
+  },
+  "29021603": {
+    "Id": 29021603,
+    "GroupId": 216,
+    "Difficulty": 8,
+    "UnlockDifficulty": 50,
+    "Name": "TravelerDuelChallengeAffix.29021603.1",
+    "Desc": "TravelerDuelChallengeAffix.29021603.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1603",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021603
+    ],
+    "Param1": "Effect,NoLevel,290216031,TriggerParam1,Fixed",
+    "Param2": "EffectValue,NoLevel,290216032,EffectTypeParam1,HdPct"
+  },
+  "29021401": {
+    "Id": 29021401,
+    "GroupId": 214,
+    "Difficulty": 5,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29021401.1",
+    "Desc": "TravelerDuelChallengeAffix.29021401.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1401",
+    "Element": 4,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021401,
+      290214011,
+      290214012
+    ],
+    "Param1": "EffectValue,NoLevel,29021401,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290214012,EffectTypeParam1,HdPct"
+  },
+  "29021101": {
+    "Id": 29021101,
+    "GroupId": 211,
+    "Difficulty": 3,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29021101.1",
+    "Desc": "TravelerDuelChallengeAffix.29021101.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1101",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021101
+    ],
+    "Param1": "EffectValue,NoLevel,29021101,EffectTypeParam1,Pct",
+    "Param2": "EffectValue,NoLevel,29021101,CD,10K"
+  },
+  "29021102": {
+    "Id": 29021102,
+    "GroupId": 211,
+    "Difficulty": 8,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29021102.1",
+    "Desc": "TravelerDuelChallengeAffix.29021102.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_1102",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29021102
+    ],
+    "Param1": "EffectValue,NoLevel,29021102,EffectTypeParam1,Pct",
+    "Param2": "EffectValue,NoLevel,29021102,CD,10K"
+  },
+  "29020301": {
+    "Id": 29020301,
+    "GroupId": 203,
+    "Difficulty": 3,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29020301.1",
+    "Desc": "TravelerDuelChallengeAffix.29020301.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_301",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020301
+    ],
+    "Param1": "ShieldValue,NoLevel,29020301,ReferenceScale,10KHdPct"
+  },
+  "29020302": {
+    "Id": 29020302,
+    "GroupId": 203,
+    "Difficulty": 5,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29020302.1",
+    "Desc": "TravelerDuelChallengeAffix.29020302.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_302",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020302
+    ],
+    "Param1": "ShieldValue,NoLevel,29020302,ReferenceScale,10KHdPct"
+  },
+  "29020303": {
+    "Id": 29020303,
+    "GroupId": 203,
+    "Difficulty": 8,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29020303.1",
+    "Desc": "TravelerDuelChallengeAffix.29020303.2",
+    "Icon": "UI_Activity/_600001/Affix/duelaffix_303",
+    "Element": 4,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29020303
+    ],
+    "Param1": "ShieldValue,NoLevel,29020303,ReferenceScale,10KHdPct"
+  },
+  "200201": {
+    "Id": 200201,
+    "GroupId": 200201,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.200201.1",
+    "Desc": "TravelerDuelChallengeAffix.200201.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_200201",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_Ultra"
+  },
+  "200202": {
+    "Id": 200202,
+    "GroupId": 200202,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.200202.1",
+    "Desc": "TravelerDuelChallengeAffix.200202.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_200202",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_LightBlade"
+  },
+  "200203": {
+    "Id": 200203,
+    "GroupId": 200203,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.200203.1",
+    "Desc": "TravelerDuelChallengeAffix.200203.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_200203",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_HotCombo"
+  },
+  "200204": {
+    "Id": 200204,
+    "GroupId": 200204,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.200204.1",
+    "Desc": "TravelerDuelChallengeAffix.200204.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_200204",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_HotHitExtra"
+  },
+  "200205": {
+    "Id": 200205,
+    "GroupId": 200205,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.200205.1",
+    "Desc": "TravelerDuelChallengeAffix.200205.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_200205",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_HotLoss"
+  },
+  "200206": {
+    "Id": 200206,
+    "GroupId": 200205,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.200206.1",
+    "Desc": "TravelerDuelChallengeAffix.200206.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_200206",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_HotTimeUp"
+  },
+  "29030301": {
+    "Id": 29030301,
+    "GroupId": 303,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29030301.1",
+    "Desc": "TravelerDuelChallengeAffix.29030301.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30301",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030301,
+      290303011
+    ],
+    "Param1": "EffectValue,NoLevel,29030301,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290303011,EffectTypeParam1,Pct"
+  },
+  "29030601": {
+    "Id": 29030601,
+    "GroupId": 306,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.29030601.1",
+    "Desc": "TravelerDuelChallengeAffix.29030601.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30601",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030601
+    ],
+    "Param1": "EffectValue,NoLevel,29030601,EffectTypeParam1,Fixed"
+  },
+  "29030602": {
+    "Id": 29030602,
+    "GroupId": 306,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.29030602.1",
+    "Desc": "TravelerDuelChallengeAffix.29030602.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30602",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030602
+    ],
+    "Param1": "EffectValue,NoLevel,29030602,EffectTypeParam1,Fixed"
+  },
+  "29030901": {
+    "Id": 29030901,
+    "GroupId": 309,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29030901.1",
+    "Desc": "TravelerDuelChallengeAffix.29030901.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30901",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030901,
+      290309011
+    ],
+    "Param1": "EffectValue,NoLevel,29030901,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290309011,EffectTypeParam1,HdPct"
+  },
+  "29030902": {
+    "Id": 29030902,
+    "GroupId": 309,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29030902.1",
+    "Desc": "TravelerDuelChallengeAffix.29030902.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30902",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030902,
+      290309021
+    ],
+    "Param1": "EffectValue,NoLevel,29030902,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290309021,EffectTypeParam1,HdPct"
+  },
+  "29030903": {
+    "Id": 29030903,
+    "GroupId": 309,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29030903.1",
+    "Desc": "TravelerDuelChallengeAffix.29030903.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30903",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030903,
+      290309031
+    ],
+    "Param1": "EffectValue,NoLevel,29030903,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290309031,EffectTypeParam1,HdPct"
+  },
+  "29030401": {
+    "Id": 29030401,
+    "GroupId": 304,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29030401.1",
+    "Desc": "TravelerDuelChallengeAffix.29030401.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30401",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030401,
+      290304011
+    ],
+    "Param1": "EffectValue,NoLevel,29030401,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290304012,EffectTypeParam1,HdPct",
+    "Param3": "BuffValue,NoLevel,290304011,Time,10K",
+    "Param4": "BuffValue,NoLevel,290304011,LaminatedNum,Fixed"
+  },
+  "29031201": {
+    "Id": 29031201,
+    "GroupId": 312,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29031201.1",
+    "Desc": "TravelerDuelChallengeAffix.29031201.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31201",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29031201,
+      290312011
+    ],
+    "Param1": "EffectValue,NoLevel,29031201,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290312011,EffectTypeParam1,HdPct"
+  },
+  "29031202": {
+    "Id": 29031202,
+    "GroupId": 312,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29031202.1",
+    "Desc": "TravelerDuelChallengeAffix.29031202.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31202",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29031202,
+      290312021
+    ],
+    "Param1": "EffectValue,NoLevel,29031202,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290312021,EffectTypeParam1,HdPct"
+  },
+  "29030101": {
+    "Id": 29030101,
+    "GroupId": 301,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.29030101.1",
+    "Desc": "TravelerDuelChallengeAffix.29030101.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30101",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030101
+    ],
+    "Param1": "EffectValue,NoLevel,29030101,EffectTypeParam1,HdPct"
+  },
+  "29030102": {
+    "Id": 29030102,
+    "GroupId": 301,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29030102.1",
+    "Desc": "TravelerDuelChallengeAffix.29030102.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30102",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030102
+    ],
+    "Param1": "EffectValue,NoLevel,29030102,EffectTypeParam1,HdPct"
+  },
+  "29030103": {
+    "Id": 29030103,
+    "GroupId": 301,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.29030103.1",
+    "Desc": "TravelerDuelChallengeAffix.29030103.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30103",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030103
+    ],
+    "Param1": "EffectValue,NoLevel,29030103,EffectTypeParam1,HdPct"
+  },
+  "29030201": {
+    "Id": 29030201,
+    "GroupId": 302,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.29030201.1",
+    "Desc": "TravelerDuelChallengeAffix.29030201.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30201",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030201,
+      290302011
+    ],
+    "Param1": "EffectValue,NoLevel,29030201,EffectTypeParam1,HdPct"
+  },
+  "29030202": {
+    "Id": 29030202,
+    "GroupId": 302,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29030202.1",
+    "Desc": "TravelerDuelChallengeAffix.29030202.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30202",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030202,
+      290302021
+    ],
+    "Param1": "EffectValue,NoLevel,29030202,EffectTypeParam1,HdPct"
+  },
+  "29030203": {
+    "Id": 29030203,
+    "GroupId": 302,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.29030203.1",
+    "Desc": "TravelerDuelChallengeAffix.29030203.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30203",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030203,
+      290302031
+    ],
+    "Param1": "EffectValue,NoLevel,29030203,EffectTypeParam1,HdPct"
+  },
+  "29031401": {
+    "Id": 29031401,
+    "GroupId": 314,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.29031401.1",
+    "Desc": "TravelerDuelChallengeAffix.29031401.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31401",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031401,
+      290314011,
+      290314012,
+      290314013,
+      290314014,
+      290314015,
+      290314016,
+      290314017,
+      290314018
+    ],
+    "Param1": "Effect,NoLevel,290314018,TriggerParam1,Pct",
+    "Param2": "EffectValue,NoLevel,29031401,EffectTypeParam1,HdPct"
+  },
+  "29031402": {
+    "Id": 29031402,
+    "GroupId": 314,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29031402.1",
+    "Desc": "TravelerDuelChallengeAffix.29031402.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31402",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031402,
+      290314021,
+      290314022,
+      290314023,
+      290314024,
+      290314025,
+      290314026,
+      290314027,
+      290314028
+    ],
+    "Param1": "Effect,NoLevel,290314028,TriggerParam1,Pct",
+    "Param2": "EffectValue,NoLevel,29031402,EffectTypeParam1,HdPct"
+  },
+  "29031403": {
+    "Id": 29031403,
+    "GroupId": 314,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.29031403.1",
+    "Desc": "TravelerDuelChallengeAffix.29031403.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31403",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031403,
+      290314031,
+      290314032,
+      290314033,
+      290314034,
+      290314035,
+      290314036,
+      290314037,
+      290314038
+    ],
+    "Param1": "Effect,NoLevel,290314038,TriggerParam1,Pct",
+    "Param2": "EffectValue,NoLevel,29031403,EffectTypeParam1,HdPct"
+  },
+  "29031501": {
+    "Id": 29031501,
+    "GroupId": 315,
+    "Difficulty": 2,
+    "UnlockDurationTime": 960,
+    "Name": "TravelerDuelChallengeAffix.29031501.1",
+    "Desc": "TravelerDuelChallengeAffix.29031501.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31501",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29031501,
+      290315011
+    ],
+    "Param1": "EffectValue,NoLevel,29031501,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290315011,EffectTypeParam1,HdPct"
+  },
+  "29031601": {
+    "Id": 29031601,
+    "GroupId": 316,
+    "Difficulty": 1,
+    "UnlockDurationTime": 960,
+    "Name": "TravelerDuelChallengeAffix.29031601.1",
+    "Desc": "TravelerDuelChallengeAffix.29031601.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31601",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031601
+    ],
+    "Param1": "EffectValue,NoLevel,290316011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29031601,Time,10K"
+  },
+  "29031602": {
+    "Id": 29031602,
+    "GroupId": 316,
+    "Difficulty": 4,
+    "UnlockDurationTime": 960,
+    "Name": "TravelerDuelChallengeAffix.29031602.1",
+    "Desc": "TravelerDuelChallengeAffix.29031602.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31602",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031602
+    ],
+    "Param1": "EffectValue,NoLevel,290316021,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29031602,Time,10K"
+  },
+  "29032001": {
+    "Id": 29032001,
+    "GroupId": 320,
+    "Difficulty": 1,
+    "UnlockDurationTime": 2400,
+    "Name": "TravelerDuelChallengeAffix.29032001.1",
+    "Desc": "TravelerDuelChallengeAffix.29032001.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_32001",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29032001,
+      290320011,
+      290320012
+    ],
+    "Param1": "EffectValue,NoLevel,29032001,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290320012,EffectTypeParam1,HdPct"
+  },
+  "29031901": {
+    "Id": 29031901,
+    "GroupId": 319,
+    "Difficulty": 2,
+    "UnlockDurationTime": 2400,
+    "Name": "TravelerDuelChallengeAffix.29031901.1",
+    "Desc": "TravelerDuelChallengeAffix.29031901.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31901",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29031901,
+      290319012
+    ],
+    "Param1": "Effect,NoLevel,290319011,TriggerParam1,Fixed",
+    "Param2": "EffectValue,NoLevel,290319011,EffectTypeParam1,Pct",
+    "Param3": "EffectValue,NoLevel,290319012,EffectTypeParam1,Pct"
+  },
+  "29031902": {
+    "Id": 29031902,
+    "GroupId": 319,
+    "Difficulty": 2,
+    "UnlockDurationTime": 2400,
+    "Name": "TravelerDuelChallengeAffix.29031902.1",
+    "Desc": "TravelerDuelChallengeAffix.29031902.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31902",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29031902,
+      290319021
+    ],
+    "Param1": "EffectValue,NoLevel,29031902,EffectTypeParam1,Pct",
+    "Param2": "BuffValue,NoLevel,290319021,Time,10K"
+  },
+  "29031301": {
+    "Id": 29031301,
+    "GroupId": 313,
+    "Difficulty": 4,
+    "UnlockDurationTime": 3840,
+    "Name": "TravelerDuelChallengeAffix.29031301.1",
+    "Desc": "TravelerDuelChallengeAffix.29031301.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31301",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29031301,
+      290313011
+    ],
+    "Param1": "EffectValue,NoLevel,29031301,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290313011,EffectTypeParam1,Pct"
+  },
+  "29030501": {
+    "Id": 29030501,
+    "GroupId": 305,
+    "Difficulty": 1,
+    "UnlockDurationTime": 3840,
+    "Name": "TravelerDuelChallengeAffix.29030501.1",
+    "Desc": "TravelerDuelChallengeAffix.29030501.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30501",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030501,
+      290305011,
+      290305012
+    ],
+    "Param1": "EffectValue,NoLevel,29030501,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290305011,EffectTypeParam1,HdPct"
+  },
+  "29030502": {
+    "Id": 29030502,
+    "GroupId": 305,
+    "Difficulty": 6,
+    "UnlockDurationTime": 3840,
+    "Name": "TravelerDuelChallengeAffix.29030502.1",
+    "Desc": "TravelerDuelChallengeAffix.29030502.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30502",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030502,
+      290305021,
+      290305022
+    ],
+    "Param1": "EffectValue,NoLevel,29030502,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290305021,EffectTypeParam1,HdPct"
+  },
+  "29030801": {
+    "Id": 29030801,
+    "GroupId": 308,
+    "Difficulty": 4,
+    "UnlockDurationTime": 5280,
+    "Name": "TravelerDuelChallengeAffix.29030801.1",
+    "Desc": "TravelerDuelChallengeAffix.29030801.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30801",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030801
+    ],
+    "Param1": "EffectValue,NoLevel,290308011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29030801,Time,10K"
+  },
+  "29030701": {
+    "Id": 29030701,
+    "GroupId": 307,
+    "Difficulty": 6,
+    "UnlockDurationTime": 5280,
+    "Name": "TravelerDuelChallengeAffix.29030701.1",
+    "Desc": "TravelerDuelChallengeAffix.29030701.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_30701",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29030701
+    ],
+    "Param1": "EffectValue,NoLevel,290307011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29030701,Time,10K"
+  },
+  "29031801": {
+    "Id": 29031801,
+    "GroupId": 318,
+    "Difficulty": 4,
+    "UnlockDurationTime": 5280,
+    "Name": "TravelerDuelChallengeAffix.29031801.1",
+    "Desc": "TravelerDuelChallengeAffix.29031801.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31801",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29031801,
+      290318011
+    ],
+    "Param1": "EffectValue,NoLevel,29031801,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290318011,EffectTypeParam1,Fixed"
+  },
+  "29031001": {
+    "Id": 29031001,
+    "GroupId": 310,
+    "Difficulty": 6,
+    "UnlockDurationTime": 6720,
+    "Name": "TravelerDuelChallengeAffix.29031001.1",
+    "Desc": "TravelerDuelChallengeAffix.29031001.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31001",
+    "Element": 5,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29031001,
+      290310011
+    ],
+    "Param1": "EffectValue,NoLevel,29031001,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290310013,EffectTypeParam1,HdPct",
+    "Param3": "Effect,NoLevel,290310012,TriggerParam1,Fixed"
+  },
+  "29031101": {
+    "Id": 29031101,
+    "GroupId": 311,
+    "Difficulty": 1,
+    "UnlockDurationTime": 6720,
+    "Name": "TravelerDuelChallengeAffix.29031101.1",
+    "Desc": "TravelerDuelChallengeAffix.29031101.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31101",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031101,
+      290311011
+    ],
+    "Param1": "Effect,NoLevel,29031101,TriggerParam1,Pct",
+    "Param2": "EffectValue,NoLevel,29031101,EffectTypeParam1,HdPct",
+    "Param3": "Effect,NoLevel,290311011,TriggerParam1,Pct",
+    "Param4": "EffectValue,NoLevel,290311011,EffectTypeParam1,HdPct"
+  },
+  "29031102": {
+    "Id": 29031102,
+    "GroupId": 311,
+    "Difficulty": 6,
+    "UnlockDurationTime": 6720,
+    "Name": "TravelerDuelChallengeAffix.29031102.1",
+    "Desc": "TravelerDuelChallengeAffix.29031102.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31102",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031102,
+      290311021
+    ],
+    "Param1": "Effect,NoLevel,29031102,TriggerParam1,Pct",
+    "Param2": "EffectValue,NoLevel,29031102,EffectTypeParam1,HdPct",
+    "Param3": "Effect,NoLevel,290311021,TriggerParam1,Pct",
+    "Param4": "EffectValue,NoLevel,290311021,EffectTypeParam1,HdPct"
+  },
+  "29031701": {
+    "Id": 29031701,
+    "GroupId": 317,
+    "Difficulty": 1,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29031701.1",
+    "Desc": "TravelerDuelChallengeAffix.29031701.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31701",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031701
+    ],
+    "Param1": "EffectValue,NoLevel,290317011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29031701,Time,10K",
+    "Param3": "BuffValue,NoLevel,29031701,LaminatedNum,Fixed",
+    "Param4": "EffectValue,NoLevel,29031701,CD,10K"
+  },
+  "29031702": {
+    "Id": 29031702,
+    "GroupId": 317,
+    "Difficulty": 2,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29031702.1",
+    "Desc": "TravelerDuelChallengeAffix.29031702.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31702",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031702
+    ],
+    "Param1": "EffectValue,NoLevel,290317021,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29031702,Time,10K",
+    "Param3": "BuffValue,NoLevel,29031702,LaminatedNum,Fixed",
+    "Param4": "EffectValue,NoLevel,29031702,CD,10K"
+  },
+  "29031703": {
+    "Id": 29031703,
+    "GroupId": 317,
+    "Difficulty": 6,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29031703.1",
+    "Desc": "TravelerDuelChallengeAffix.29031703.2",
+    "Icon": "UI_Activity/_600002/Affix/duelaffix_31703",
+    "Element": 5,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      2
+    ],
+    "SkillId": [
+      29031703
+    ],
+    "Param1": "EffectValue,NoLevel,290317031,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29031703,Time,10K",
+    "Param3": "BuffValue,NoLevel,29031703,LaminatedNum,Fixed",
+    "Param4": "EffectValue,NoLevel,29031703,CD,10K"
+  },
+  "400101": {
+    "Id": 400101,
+    "GroupId": 400101,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.400101.1",
+    "Desc": "TravelerDuelChallengeAffix.400101.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_400101",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_AutoShoot"
+  },
+  "400102": {
+    "Id": 400102,
+    "GroupId": 400102,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.400102.1",
+    "Desc": "TravelerDuelChallengeAffix.400102.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_400102",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_LaserShoot"
+  },
+  "400103": {
+    "Id": 400103,
+    "GroupId": 400103,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.400103.1",
+    "Desc": "TravelerDuelChallengeAffix.400103.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_400103",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_ShootWithCat"
+  },
+  "400104": {
+    "Id": 400104,
+    "GroupId": 400104,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.400104.1",
+    "Desc": "TravelerDuelChallengeAffix.400104.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_400104",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_AimLaser"
+  },
+  "400105": {
+    "Id": 400105,
+    "GroupId": 400105,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.400105.1",
+    "Desc": "TravelerDuelChallengeAffix.400105.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_400105",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_MoreCatBullet"
+  },
+  "400106": {
+    "Id": 400106,
+    "GroupId": 400106,
+    "Difficulty": 5,
+    "Name": "TravelerDuelChallengeAffix.400106.1",
+    "Desc": "TravelerDuelChallengeAffix.400106.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_400106",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "LogicTag": "SkillTag_DevilEyesEx"
+  },
+  "29040101": {
+    "Id": 29040101,
+    "GroupId": 401,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.29040101.1",
+    "Desc": "TravelerDuelChallengeAffix.29040101.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40101",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040101
+    ],
+    "Param1": "EffectValue,NoLevel,29040101,EffectTypeParam1,HdPct"
+  },
+  "29040102": {
+    "Id": 29040102,
+    "GroupId": 401,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29040102.1",
+    "Desc": "TravelerDuelChallengeAffix.29040102.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40102",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040102
+    ],
+    "Param1": "EffectValue,NoLevel,29040102,EffectTypeParam1,HdPct"
+  },
+  "29040103": {
+    "Id": 29040103,
+    "GroupId": 401,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.29040103.1",
+    "Desc": "TravelerDuelChallengeAffix.29040103.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40103",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040103
+    ],
+    "Param1": "EffectValue,NoLevel,29040103,EffectTypeParam1,HdPct"
+  },
+  "29040201": {
+    "Id": 29040201,
+    "GroupId": 402,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.29040201.1",
+    "Desc": "TravelerDuelChallengeAffix.29040201.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40201",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040201
+    ],
+    "Param1": "EffectValue,NoLevel,29040201,EffectTypeParam1,HdPct"
+  },
+  "29040202": {
+    "Id": 29040202,
+    "GroupId": 402,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29040202.1",
+    "Desc": "TravelerDuelChallengeAffix.29040202.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40202",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040202
+    ],
+    "Param1": "EffectValue,NoLevel,29040202,EffectTypeParam1,HdPct"
+  },
+  "29040203": {
+    "Id": 29040203,
+    "GroupId": 402,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.29040203.1",
+    "Desc": "TravelerDuelChallengeAffix.29040203.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40203",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040203
+    ],
+    "Param1": "EffectValue,NoLevel,29040203,EffectTypeParam1,HdPct"
+  },
+  "29040301": {
+    "Id": 29040301,
+    "GroupId": 403,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29040301.1",
+    "Desc": "TravelerDuelChallengeAffix.29040301.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40301",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040301,
+      290403011
+    ],
+    "Param1": "EffectValue,NoLevel,29040301,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290403011,EffectTypeParam1,Pct"
+  },
+  "29040401": {
+    "Id": 29040401,
+    "GroupId": 404,
+    "Difficulty": 6,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29040401.1",
+    "Desc": "TravelerDuelChallengeAffix.29040401.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40401",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040401,
+      290404011
+    ],
+    "Param1": "EffectValue,NoLevel,29040401,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290404012,EffectTypeParam1,HdPct",
+    "Param3": "BuffValue,NoLevel,29040401,Time,10K",
+    "Param4": "BuffValue,NoLevel,29040401,LaminatedNum,Fixed"
+  },
+  "29040402": {
+    "Id": 29040402,
+    "GroupId": 404,
+    "Difficulty": 6,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29040402.1",
+    "Desc": "TravelerDuelChallengeAffix.29040402.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40402",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040402,
+      290404021
+    ],
+    "Param1": "EffectValue,NoLevel,29040402,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290404023,EffectTypeParam1,HdPct",
+    "Param3": "BuffValue,NoLevel,29040402,Time,10K"
+  },
+  "29040501": {
+    "Id": 29040501,
+    "GroupId": 405,
+    "Difficulty": 2,
+    "UnlockDurationTime": 2400,
+    "Name": "TravelerDuelChallengeAffix.29040501.1",
+    "Desc": "TravelerDuelChallengeAffix.29040501.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40501",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040501
+    ],
+    "Param1": "BuffValue,NoLevel,29040501,Time,10K",
+    "Param2": "EffectValue,NoLevel,290405011,EffectTypeParam1,HdPct"
+  },
+  "29040601": {
+    "Id": 29040601,
+    "GroupId": 406,
+    "Difficulty": 2,
+    "UnlockDurationTime": 3840,
+    "Name": "TravelerDuelChallengeAffix.29040601.1",
+    "Desc": "TravelerDuelChallengeAffix.29040601.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40601",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040601,
+      290406011
+    ],
+    "Param1": "EffectValue,NoLevel,29040601,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290406012,EffectTypeParam1,HdPct",
+    "Param3": "BuffValue,NoLevel,29040601,LaminatedNum,Fixed",
+    "Param4": "BuffValue,NoLevel,29040601,Time,10K"
+  },
+  "29040701": {
+    "Id": 29040701,
+    "GroupId": 407,
+    "Difficulty": 1,
+    "UnlockDurationTime": 960,
+    "Name": "TravelerDuelChallengeAffix.29040701.1",
+    "Desc": "TravelerDuelChallengeAffix.29040701.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40701",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040701
+    ],
+    "Param1": "EffectValue,NoLevel,290407011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29040701,Time,10K",
+    "Param3": "EffectValue,NoLevel,29040701,CD,10K"
+  },
+  "29040702": {
+    "Id": 29040702,
+    "GroupId": 407,
+    "Difficulty": 4,
+    "UnlockDurationTime": 960,
+    "Name": "TravelerDuelChallengeAffix.29040702.1",
+    "Desc": "TravelerDuelChallengeAffix.29040702.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40702",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040702
+    ],
+    "Param1": "EffectValue,NoLevel,290407021,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29040702,Time,10K",
+    "Param3": "EffectValue,NoLevel,29040702,CD,10K"
+  },
+  "29040801": {
+    "Id": 29040801,
+    "GroupId": 408,
+    "Difficulty": 6,
+    "UnlockDurationTime": 6720,
+    "Name": "TravelerDuelChallengeAffix.29040801.1",
+    "Desc": "TravelerDuelChallengeAffix.29040801.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40801",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040801
+    ],
+    "Param1": "EffectValue,NoLevel,29040801,EffectTypeParam1,Fixed"
+  },
+  "29040901": {
+    "Id": 29040901,
+    "GroupId": 409,
+    "Difficulty": 4,
+    "UnlockDurationTime": 3840,
+    "Name": "TravelerDuelChallengeAffix.29040901.1",
+    "Desc": "TravelerDuelChallengeAffix.29040901.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40901",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040901,
+      290409011
+    ],
+    "Param1": "EffectValue,NoLevel,29040901,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290409011,EffectTypeParam1,HdPct"
+  },
+  "29040902": {
+    "Id": 29040902,
+    "GroupId": 409,
+    "Difficulty": 4,
+    "UnlockDurationTime": 3840,
+    "Name": "TravelerDuelChallengeAffix.29040902.1",
+    "Desc": "TravelerDuelChallengeAffix.29040902.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_40902",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29040902,
+      290409021
+    ],
+    "Param1": "EffectValue,NoLevel,29040902,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290409021,EffectTypeParam1,HdPct"
+  },
+  "29041001": {
+    "Id": 29041001,
+    "GroupId": 410,
+    "Difficulty": 2,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29041001.1",
+    "Desc": "TravelerDuelChallengeAffix.29041001.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41001",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041001,
+      290410011
+    ],
+    "Param1": "EffectValue,NoLevel,29041001,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290410011,EffectTypeParam1,HdPct"
+  },
+  "29041101": {
+    "Id": 29041101,
+    "GroupId": 411,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29041101.1",
+    "Desc": "TravelerDuelChallengeAffix.29041101.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41101",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041101,
+      290411011
+    ],
+    "Param1": "EffectValue,NoLevel,29041101,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290411011,EffectTypeParam1,HdPct"
+  },
+  "29041102": {
+    "Id": 29041102,
+    "GroupId": 411,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29041102.1",
+    "Desc": "TravelerDuelChallengeAffix.29041102.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41102",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041102,
+      290411021
+    ],
+    "Param1": "EffectValue,NoLevel,29041102,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290411021,EffectTypeParam1,HdPct"
+  },
+  "29041103": {
+    "Id": 29041103,
+    "GroupId": 411,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29041103.1",
+    "Desc": "TravelerDuelChallengeAffix.29041103.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41103",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041103,
+      290411031
+    ],
+    "Param1": "EffectValue,NoLevel,29041103,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290411031,EffectTypeParam1,HdPct"
+  },
+  "29041201": {
+    "Id": 29041201,
+    "GroupId": 412,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.29041201.1",
+    "Desc": "TravelerDuelChallengeAffix.29041201.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41201",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      290412013
+    ],
+    "Param1": "EffectValue,NoLevel,29041201,EffectTypeParam1,HdPct",
+    "Param2": "Effect,NoLevel,290412011,TriggerParam1,Fixed",
+    "Param3": "EffectValue,NoLevel,290412012,EffectTypeParam1,HdPct",
+    "Param4": "BuffValue,NoLevel,29041201,LaminatedNum,Fixed"
+  },
+  "29041202": {
+    "Id": 29041202,
+    "GroupId": 412,
+    "Difficulty": 6,
+    "Name": "TravelerDuelChallengeAffix.29041202.1",
+    "Desc": "TravelerDuelChallengeAffix.29041202.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41202",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      290412023
+    ],
+    "Param1": "EffectValue,NoLevel,29041202,EffectTypeParam1,HdPct",
+    "Param2": "Effect,NoLevel,290412021,TriggerParam1,Fixed",
+    "Param3": "EffectValue,NoLevel,290412022,EffectTypeParam1,HdPct",
+    "Param4": "BuffValue,NoLevel,29041202,LaminatedNum,Fixed"
+  },
+  "29041301": {
+    "Id": 29041301,
+    "GroupId": 413,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29041301.1",
+    "Desc": "TravelerDuelChallengeAffix.29041301.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41301",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041301,
+      290413011
+    ],
+    "Param1": "EffectValue,NoLevel,29041301,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290413011,EffectTypeParam1,HdPct"
+  },
+  "29041302": {
+    "Id": 29041302,
+    "GroupId": 413,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29041302.1",
+    "Desc": "TravelerDuelChallengeAffix.29041302.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41302",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041302,
+      290413021
+    ],
+    "Param1": "EffectValue,NoLevel,29041302,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290413021,EffectTypeParam1,HdPct"
+  },
+  "29041401": {
+    "Id": 29041401,
+    "GroupId": 414,
+    "Difficulty": 1,
+    "UnlockDurationTime": 5280,
+    "Name": "TravelerDuelChallengeAffix.29041401.1",
+    "Desc": "TravelerDuelChallengeAffix.29041401.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41401",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041401
+    ],
+    "Param1": "Effect,NoLevel,290414011,TriggerParam1,Fixed",
+    "Param2": "EffectValue,NoLevel,290414012,EffectTypeParam1,HdPct",
+    "Param3": "BuffValue,NoLevel,29041401,LaminatedNum,Fixed"
+  },
+  "29041402": {
+    "Id": 29041402,
+    "GroupId": 414,
+    "Difficulty": 2,
+    "UnlockDurationTime": 5280,
+    "Name": "TravelerDuelChallengeAffix.29041402.1",
+    "Desc": "TravelerDuelChallengeAffix.29041402.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41402",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041402
+    ],
+    "Param1": "Effect,NoLevel,290414021,TriggerParam1,Fixed",
+    "Param2": "EffectValue,NoLevel,290414022,EffectTypeParam1,HdPct",
+    "Param3": "BuffValue,NoLevel,29041402,LaminatedNum,Fixed"
+  },
+  "29041403": {
+    "Id": 29041403,
+    "GroupId": 414,
+    "Difficulty": 6,
+    "UnlockDurationTime": 5280,
+    "Name": "TravelerDuelChallengeAffix.29041403.1",
+    "Desc": "TravelerDuelChallengeAffix.29041403.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41403",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041403
+    ],
+    "Param1": "Effect,NoLevel,290414031,TriggerParam1,Fixed",
+    "Param2": "EffectValue,NoLevel,290414032,EffectTypeParam1,HdPct",
+    "Param3": "BuffValue,NoLevel,29041403,LaminatedNum,Fixed"
+  },
+  "29041501": {
+    "Id": 29041501,
+    "GroupId": 415,
+    "Difficulty": 2,
+    "UnlockDurationTime": 960,
+    "Name": "TravelerDuelChallengeAffix.29041501.1",
+    "Desc": "TravelerDuelChallengeAffix.29041501.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41501",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041501,
+      290415011,
+      290415012
+    ],
+    "Param1": "EffectValue,NoLevel,290415012,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,29041501,EffectTypeParam1,HdPct"
+  },
+  "29041601": {
+    "Id": 29041601,
+    "GroupId": 416,
+    "Difficulty": 1,
+    "UnlockDurationTime": 2400,
+    "Name": "TravelerDuelChallengeAffix.29041601.1",
+    "Desc": "TravelerDuelChallengeAffix.29041601.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41601",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041601
+    ],
+    "Param1": "EffectValue,NoLevel,290416011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29041601,Time,10K",
+    "Param3": "BuffValue,NoLevel,29041601,LaminatedNum,Fixed"
+  },
+  "29041602": {
+    "Id": 29041602,
+    "GroupId": 416,
+    "Difficulty": 4,
+    "UnlockDurationTime": 2400,
+    "Name": "TravelerDuelChallengeAffix.29041602.1",
+    "Desc": "TravelerDuelChallengeAffix.29041602.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41602",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041602
+    ],
+    "Param1": "EffectValue,NoLevel,290416021,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29041602,Time,10K",
+    "Param3": "BuffValue,NoLevel,29041602,LaminatedNum,Fixed"
+  },
+  "29041701": {
+    "Id": 29041701,
+    "GroupId": 417,
+    "Difficulty": 1,
+    "Name": "TravelerDuelChallengeAffix.29041701.1",
+    "Desc": "TravelerDuelChallengeAffix.29041701.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41701",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041701
+    ],
+    "Param1": "EffectValue,NoLevel,290417011,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29041701,Time,10K",
+    "Param3": "BuffValue,NoLevel,29041701,LaminatedNum,Fixed"
+  },
+  "29041702": {
+    "Id": 29041702,
+    "GroupId": 417,
+    "Difficulty": 2,
+    "Name": "TravelerDuelChallengeAffix.29041702.1",
+    "Desc": "TravelerDuelChallengeAffix.29041702.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41702",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041702
+    ],
+    "Param1": "EffectValue,NoLevel,290417021,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29041702,Time,10K",
+    "Param3": "BuffValue,NoLevel,29041702,LaminatedNum,Fixed"
+  },
+  "29041703": {
+    "Id": 29041703,
+    "GroupId": 417,
+    "Difficulty": 4,
+    "Name": "TravelerDuelChallengeAffix.29041703.1",
+    "Desc": "TravelerDuelChallengeAffix.29041703.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41703",
+    "Element": 2,
+    "AddCamp": [
+      3
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041703
+    ],
+    "Param1": "EffectValue,NoLevel,290417031,EffectTypeParam1,HdPct",
+    "Param2": "BuffValue,NoLevel,29041703,Time,10K",
+    "Param3": "BuffValue,NoLevel,29041703,LaminatedNum,Fixed"
+  },
+  "29041801": {
+    "Id": 29041801,
+    "GroupId": 418,
+    "Difficulty": 6,
+    "UnlockDurationTime": 8160,
+    "Name": "TravelerDuelChallengeAffix.29041801.1",
+    "Desc": "TravelerDuelChallengeAffix.29041801.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41801",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041801,
+      290418011
+    ],
+    "Param1": "EffectValue,NoLevel,29041801,EffectTypeParam1,HdPct",
+    "Param2": "EffectValue,NoLevel,290418011,EffectTypeParam1,Fixed",
+    "Param3": "EffectValue,NoLevel,290418011,CD,10K"
+  },
+  "29041901": {
+    "Id": 29041901,
+    "GroupId": 419,
+    "Difficulty": 2,
+    "UnlockDurationTime": 6720,
+    "Name": "TravelerDuelChallengeAffix.29041901.1",
+    "Desc": "TravelerDuelChallengeAffix.29041901.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41901",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      29041901
+    ],
+    "Param1": "Effect,NoLevel,29041901,TriggerParam1,Pct",
+    "Param2": "EffectValue,NoLevel,290419013,EffectTypeParam1,Pct",
+    "Param3": "BuffValue,NoLevel,29041901,Time,10K",
+    "Param4": "EffectValue,NoLevel,290419012,EffectTypeParam1,HdPct",
+    "Param5": "EffectValue,NoLevel,29041901,CD,10K"
+  },
+  "29041902": {
+    "Id": 29041902,
+    "GroupId": 419,
+    "Difficulty": 2,
+    "UnlockDurationTime": 6720,
+    "Name": "TravelerDuelChallengeAffix.29041902.1",
+    "Desc": "TravelerDuelChallengeAffix.29041902.2",
+    "Icon": "UI_Activity/_600003/Affix/duelaffix_41902",
+    "Element": 2,
+    "AddCamp": [
+      1,
+      2
+    ],
+    "AddClass": [
+      1
+    ],
+    "SkillId": [
+      290419022
+    ],
+    "Param1": "Effect,NoLevel,29041902,TriggerParam1,Fixed",
+    "Param2": "EffectValue,NoLevel,29041902,EffectTypeParam1,Pct",
+    "Param3": "EffectValue,NoLevel,290419021,EffectTypeParam1,HdPct"
+  }
+}
