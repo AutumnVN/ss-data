@@ -1,0 +1,61 @@
+{
+  "1": {
+    "ActivityId": 101003,
+    "UIAssets": "ActivityTask_act_01",
+    "CtrlName": "ActivityTaskCtrl_01"
+  },
+  "2": {
+    "ActivityId": 1010003
+  },
+  "3": {
+    "ActivityId": 1010103
+  },
+  "4": {
+    "ActivityId": 1010203
+  },
+  "5": {
+    "ActivityId": 2010103
+  },
+  "6": {
+    "ActivityId": 1010303
+  },
+  "7": {
+    "ActivityId": 1010403
+  },
+  "8": {
+    "ActivityId": 3010102
+  },
+  "9": {
+    "ActivityId": 1010503
+  },
+  "10": {
+    "ActivityId": 1010603
+  },
+  "11": {
+    "ActivityId": 2010203
+  },
+  "12": {
+    "ActivityId": 3010202
+  },
+  "13": {
+    "ActivityId": 1010703
+  },
+  "14": {
+    "ActivityId": 1010803
+  },
+  "15": {
+    "ActivityId": 1110003
+  },
+  "16": {
+    "ActivityId": 1010903
+  },
+  "17": {
+    "ActivityId": 2010303
+  },
+  "18": {
+    "ActivityId": 1011003
+  },
+  "19": {
+    "ActivityId": 3010302
+  }
+}
