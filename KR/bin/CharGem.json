@@ -1,0 +1,101 @@
+{
+  "101": {
+    "Id": 101,
+    "GenerateCostTid": 35001,
+    "RefreshCostTid": 35001,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/101/101",
+    "IconBg": "Icon/Equipment/chargem_d_01",
+    "Type": 1,
+    "Title": "CharGem.101.1",
+    "Desc": "CharGem.101.2"
+  },
+  "102": {
+    "Id": 102,
+    "GenerateCostTid": 35001,
+    "RefreshCostTid": 35001,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/201/201",
+    "IconBg": "Icon/Equipment/chargem_d_01",
+    "Type": 1,
+    "Title": "CharGem.102.1",
+    "Desc": "CharGem.102.2"
+  },
+  "103": {
+    "Id": 103,
+    "GenerateCostTid": 35001,
+    "RefreshCostTid": 35001,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/301/301",
+    "IconBg": "Icon/Equipment/chargem_d_01",
+    "Type": 1,
+    "Title": "CharGem.103.1",
+    "Desc": "CharGem.103.2"
+  },
+  "201": {
+    "Id": 201,
+    "GenerateCostTid": 35002,
+    "RefreshCostTid": 35002,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/102/102",
+    "IconBg": "Icon/Equipment/chargem_d_02",
+    "Type": 2,
+    "Title": "CharGem.201.1",
+    "Desc": "CharGem.201.2"
+  },
+  "202": {
+    "Id": 202,
+    "GenerateCostTid": 35002,
+    "RefreshCostTid": 35002,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/202/202",
+    "IconBg": "Icon/Equipment/chargem_d_02",
+    "Type": 2,
+    "Title": "CharGem.202.1",
+    "Desc": "CharGem.202.2"
+  },
+  "203": {
+    "Id": 203,
+    "GenerateCostTid": 35002,
+    "RefreshCostTid": 35002,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/302/302",
+    "IconBg": "Icon/Equipment/chargem_d_02",
+    "Type": 2,
+    "Title": "CharGem.203.1",
+    "Desc": "CharGem.203.2"
+  },
+  "301": {
+    "Id": 301,
+    "GenerateCostTid": 35003,
+    "RefreshCostTid": 35003,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/103/103",
+    "IconBg": "Icon/Equipment/chargem_d_03",
+    "Type": 3,
+    "Title": "CharGem.301.1",
+    "Desc": "CharGem.301.2"
+  },
+  "302": {
+    "Id": 302,
+    "GenerateCostTid": 35003,
+    "RefreshCostTid": 35003,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/203/203",
+    "IconBg": "Icon/Equipment/chargem_d_03",
+    "Type": 3,
+    "Title": "CharGem.302.1",
+    "Desc": "CharGem.302.2"
+  },
+  "303": {
+    "Id": 303,
+    "GenerateCostTid": 35003,
+    "RefreshCostTid": 35003,
+    "OverlockCostTid": 35010,
+    "Icon": "Equipment/303/303",
+    "IconBg": "Icon/Equipment/chargem_d_03",
+    "Type": 3,
+    "Title": "CharGem.303.1",
+    "Desc": "CharGem.303.2"
+  }
+}

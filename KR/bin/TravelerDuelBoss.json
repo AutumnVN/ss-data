@@ -1,0 +1,26 @@
+{
+  "1001": {
+    "Id": 1001,
+    "Name": "TravelerDuelBoss.1001.1",
+    "TravelerDuelBossType": 2,
+    "Episode": "Icon/MapEpisode/ep_ duel_challenge_001",
+    "Image": "Icon/MapEpisode/ep_duel_challenge_boss_002",
+    "Cover": "UI/TravelerDuelLevelSelect/Cover/Cover_1001"
+  },
+  "2001": {
+    "Id": 2001,
+    "Name": "TravelerDuelBoss.2001.1",
+    "TravelerDuelBossType": 2,
+    "Episode": "Icon/MapEpisode/ep_ duel_challenge_002",
+    "Image": "Icon/MapEpisode/ep_duel_challenge_boss_001",
+    "Cover": "UI/TravelerDuelLevelSelect/Cover/Cover_2001"
+  },
+  "3001": {
+    "Id": 3001,
+    "Name": "TravelerDuelBoss.3001.1",
+    "TravelerDuelBossType": 2,
+    "Episode": "Icon/MapEpisode/ep_ duel_challenge_003",
+    "Image": "Icon/MapEpisode/ep_duel_challenge_boss_001",
+    "Cover": "UI/TravelerDuelLevelSelect/Cover/Cover_3001"
+  }
+}
