@@ -1,0 +1,151 @@
+{
+  "500001": {
+    "Id": 500001,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500001.1"
+  },
+  "500002": {
+    "Id": 500002,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500002.1"
+  },
+  "500003": {
+    "Id": 500003,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500003.1"
+  },
+  "500004": {
+    "Id": 500004,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500004.1"
+  },
+  "500005": {
+    "Id": 500005,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500005.1"
+  },
+  "500006": {
+    "Id": 500006,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500006.1"
+  },
+  "500007": {
+    "Id": 500007,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500007.1"
+  },
+  "500008": {
+    "Id": 500008,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500008.1"
+  },
+  "500009": {
+    "Id": 500009,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500009.1"
+  },
+  "500010": {
+    "Id": 500010,
+    "UIAssets": "_500001/ActivityBdConvert",
+    "CtrlName": "BdConvertActCtrl",
+    "RewardsShow": [
+      503,
+      35000,
+      30004,
+      50004,
+      82001,
+      82004,
+      1
+    ],
+    "DesText": "BdConvertControl.500010.1"
+  }
+}

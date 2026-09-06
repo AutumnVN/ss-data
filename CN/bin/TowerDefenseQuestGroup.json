@@ -1,0 +1,82 @@
+{
+  "1": {
+    "Id": 1,
+    "ActivityId": 102001,
+    "GroupName": "TowerDefenseQuestGroup.1.1"
+  },
+  "2": {
+    "Id": 2,
+    "ActivityId": 102001,
+    "GroupName": "TowerDefenseQuestGroup.2.1"
+  },
+  "3": {
+    "Id": 3,
+    "ActivityId": 102001,
+    "GroupName": "TowerDefenseQuestGroup.3.1"
+  },
+  "4": {
+    "Id": 4,
+    "ActivityId": 102001,
+    "GroupName": "TowerDefenseQuestGroup.4.1"
+  },
+  "5": {
+    "Id": 5,
+    "ActivityId": 102002,
+    "GroupName": "TowerDefenseQuestGroup.5.1"
+  },
+  "6": {
+    "Id": 6,
+    "ActivityId": 102002,
+    "GroupName": "TowerDefenseQuestGroup.6.1"
+  },
+  "7": {
+    "Id": 7,
+    "ActivityId": 102002,
+    "GroupName": "TowerDefenseQuestGroup.7.1"
+  },
+  "8": {
+    "Id": 8,
+    "ActivityId": 102002,
+    "GroupName": "TowerDefenseQuestGroup.8.1"
+  },
+  "9": {
+    "Id": 9,
+    "ActivityId": 102003,
+    "GroupName": "TowerDefenseQuestGroup.9.1"
+  },
+  "10": {
+    "Id": 10,
+    "ActivityId": 102003,
+    "GroupName": "TowerDefenseQuestGroup.10.1"
+  },
+  "11": {
+    "Id": 11,
+    "ActivityId": 102003,
+    "GroupName": "TowerDefenseQuestGroup.11.1"
+  },
+  "12": {
+    "Id": 12,
+    "ActivityId": 102003,
+    "GroupName": "TowerDefenseQuestGroup.12.1"
+  },
+  "13": {
+    "Id": 13,
+    "ActivityId": 102004,
+    "GroupName": "TowerDefenseQuestGroup.13.1"
+  },
+  "14": {
+    "Id": 14,
+    "ActivityId": 102004,
+    "GroupName": "TowerDefenseQuestGroup.14.1"
+  },
+  "15": {
+    "Id": 15,
+    "ActivityId": 102004,
+    "GroupName": "TowerDefenseQuestGroup.15.1"
+  },
+  "16": {
+    "Id": 16,
+    "ActivityId": 102004,
+    "GroupName": "TowerDefenseQuestGroup.16.1"
+  }
+}
