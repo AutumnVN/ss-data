@@ -1,0 +1,177 @@
+{
+  "1": {
+    "Order": "addAllChars"
+  },
+  "2": {
+    "Order": "addItems",
+    "ParamCount": 2
+  },
+  "3": {
+    "Order": "addPerks",
+    "ParamCount": 2
+  },
+  "4": {
+    "Order": "charUp",
+    "ParamCount": 2
+  },
+  "5": {
+    "Order": "changeItems",
+    "ParamCount": 2
+  },
+  "6": {
+    "Order": "changeWorldClass",
+    "ParamCount": 1
+  },
+  "7": {
+    "Order": "cleanItems",
+    "ParamCount": 1
+  },
+  "8": {
+    "Order": "drop",
+    "ParamCount": 2
+  },
+  "9": {
+    "Order": "questComplete",
+    "ParamCount": 2
+  },
+  "10": {
+    "Order": "resetChar",
+    "ParamCount": 1
+  },
+  "11": {
+    "Order": "setRegionBossLevelStar",
+    "ParamCount": 2
+  },
+  "12": {
+    "Order": "unlockRegionBossLevelPrev",
+    "ParamCount": 1
+  },
+  "13": {
+    "Order": "addmail",
+    "ParamCount": 1
+  },
+  "14": {
+    "Order": "subPerks",
+    "ParamCount": 2
+  },
+  "15": {
+    "Order": "addCharAffinity",
+    "ParamCount": 2
+  },
+  "16": {
+    "Order": "infinityTowerSkipFloor",
+    "ParamCount": 2
+  },
+  "17": {
+    "Order": "resetInfinityTower"
+  },
+  "18": {
+    "Order": "addEquipment",
+    "ParamCount": 3
+  },
+  "19": {
+    "Order": "resetDailyAgent"
+  },
+  "20": {
+    "Order": "resetWeeklyAgent"
+  },
+  "21": {
+    "Order": "towerGrowthResetNode",
+    "ParamCount": 1
+  },
+  "22": {
+    "Order": "towerGrowthUnlockGroup",
+    "ParamCount": 1
+  },
+  "23": {
+    "Order": "towerGrowthUnlockNode",
+    "ParamCount": 1
+  },
+  "24": {
+    "Order": "towerGrowthResetGroup",
+    "ParamCount": 1
+  },
+  "25": {
+    "Order": "characterReadPlot",
+    "ParamCount": 1
+  },
+  "26": {
+    "Order": "setDisc",
+    "ParamCount": 4
+  },
+  "27": {
+    "Order": "setWorldClassLv",
+    "ParamCount": 1
+  },
+  "28": {
+    "Order": "worldClassCompleteQuest"
+  },
+  "29": {
+    "Order": "stSubNoteSkillInfo"
+  },
+  "30": {
+    "Order": "refreshAgent"
+  },
+  "31": {
+    "Order": "clearAllSkillInstance"
+  },
+  "32": {
+    "Order": "chatDisplay",
+    "ParamCount": 1
+  },
+  "33": {
+    "Order": "periodicActivityOpenStatusSet",
+    "ParamCount": 2
+  },
+  "34": {
+    "Order": "periodicQuestComplete",
+    "ParamCount": 2
+  },
+  "35": {
+    "Order": "skipPrologue"
+  },
+  "36": {
+    "Order": "addFriend"
+  },
+  "37": {
+    "Order": "clearAllActivityBreakoutLevels"
+  },
+  "38": {
+    "Order": "changeTrekkerVersusLevelExp",
+    "ParamCount": 3
+  },
+  "39": {
+    "Order": "clearAllActivityIceCreamLevels"
+  },
+  "40": {
+    "Order": "sdAddBuffCard",
+    "ParamCount": 2
+  },
+  "41": {
+    "Order": "sdAddChess",
+    "ParamCount": 3
+  },
+  "42": {
+    "Order": "sdAddCoin",
+    "ParamCount": 1
+  },
+  "43": {
+    "Order": "sdChangeHp",
+    "ParamCount": 1
+  },
+  "44": {
+    "Order": "sdChangeShopInfo",
+    "ParamCount": 2
+  },
+  "45": {
+    "Order": "sdDataSave"
+  },
+  "46": {
+    "Order": "sdSetGradeChallengeId",
+    "ParamCount": 1
+  },
+  "47": {
+    "Order": "sdSkipNode",
+    "ParamCount": 1
+  }
+}

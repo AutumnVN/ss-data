@@ -1,0 +1,2126 @@
+{
+  "111000201": {
+    "Id": 111000201,
+    "ChapterId": 11100,
+    "Index": "ActivityStory.111000201.4",
+    "Title": "ActivityStory.111000201.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_01",
+    "Desc": "ActivityStory.111000201.2",
+    "Type": 3,
+    "StoryId": "STev_01_01",
+    "ConditionId": 111000201,
+    "Aim": "ActivityStory.111000201.3",
+    "AvgLuaName": "STev_01_01",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_01"
+  },
+  "111000202": {
+    "Id": 111000202,
+    "ChapterId": 11100,
+    "Index": "ActivityStory.111000202.4",
+    "Title": "ActivityStory.111000202.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_02",
+    "Desc": "ActivityStory.111000202.2",
+    "Type": 3,
+    "StoryId": "STev_01_02",
+    "ConditionId": 111000202,
+    "ParentStoryId": [
+      "STev_01_01"
+    ],
+    "Aim": "ActivityStory.111000202.3",
+    "AvgLuaName": "STev_01_02",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_02"
+  },
+  "111000203": {
+    "Id": 111000203,
+    "ChapterId": 11100,
+    "Index": "ActivityStory.111000203.4",
+    "Title": "ActivityStory.111000203.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_03",
+    "Desc": "ActivityStory.111000203.2",
+    "Type": 3,
+    "StoryId": "STev_01_03",
+    "ConditionId": 111000203,
+    "ParentStoryId": [
+      "STev_01_02"
+    ],
+    "Aim": "ActivityStory.111000203.3",
+    "AvgLuaName": "STev_01_03",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_03"
+  },
+  "111000204": {
+    "Id": 111000204,
+    "ChapterId": 11100,
+    "Index": "ActivityStory.111000204.4",
+    "Title": "ActivityStory.111000204.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_04",
+    "Desc": "ActivityStory.111000204.2",
+    "Type": 3,
+    "StoryId": "STev_01_04",
+    "ConditionId": 111000204,
+    "ParentStoryId": [
+      "STev_01_03"
+    ],
+    "Aim": "ActivityStory.111000204.3",
+    "AvgLuaName": "STev_01_04",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_04"
+  },
+  "111000205": {
+    "Id": 111000205,
+    "ChapterId": 11100,
+    "Index": "ActivityStory.111000205.4",
+    "Title": "ActivityStory.111000205.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_05",
+    "Desc": "ActivityStory.111000205.2",
+    "Type": 3,
+    "StoryId": "STev_01_05",
+    "ConditionId": 111000205,
+    "ParentStoryId": [
+      "STev_01_04"
+    ],
+    "Aim": "ActivityStory.111000205.3",
+    "AvgLuaName": "STev_01_05",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_05"
+  },
+  "111000206": {
+    "Id": 111000206,
+    "ChapterId": 11100,
+    "Index": "ActivityStory.111000206.4",
+    "Title": "ActivityStory.111000206.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_06",
+    "Desc": "ActivityStory.111000206.2",
+    "Type": 3,
+    "StoryId": "STev_01_06",
+    "ConditionId": 111000206,
+    "ParentStoryId": [
+      "STev_01_05"
+    ],
+    "Aim": "ActivityStory.111000206.3",
+    "AvgLuaName": "STev_01_06",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_06"
+  },
+  "111000207": {
+    "Id": 111000207,
+    "ChapterId": 11100,
+    "Index": "ActivityStory.111000207.4",
+    "Title": "ActivityStory.111000207.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_07",
+    "Desc": "ActivityStory.111000207.2",
+    "Type": 3,
+    "StoryId": "STev_01_07",
+    "ConditionId": 111000207,
+    "ParentStoryId": [
+      "STev_01_06"
+    ],
+    "Aim": "ActivityStory.111000207.3",
+    "AvgLuaName": "STev_01_07",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_07"
+  },
+  "111000208": {
+    "Id": 111000208,
+    "ChapterId": 11100,
+    "DayOpen": 1,
+    "Index": "ActivityStory.111000208.4",
+    "Title": "ActivityStory.111000208.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_08",
+    "Desc": "ActivityStory.111000208.2",
+    "Type": 3,
+    "StoryId": "STev_01_08",
+    "ConditionId": 111000208,
+    "ParentStoryId": [
+      "STev_01_07"
+    ],
+    "Aim": "ActivityStory.111000208.3",
+    "AvgLuaName": "STev_01_08",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_08"
+  },
+  "111000209": {
+    "Id": 111000209,
+    "ChapterId": 11100,
+    "DayOpen": 1,
+    "Index": "ActivityStory.111000209.4",
+    "Title": "ActivityStory.111000209.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_09",
+    "Desc": "ActivityStory.111000209.2",
+    "Type": 3,
+    "StoryId": "STev_01_09",
+    "ConditionId": 111000209,
+    "ParentStoryId": [
+      "STev_01_08"
+    ],
+    "Aim": "ActivityStory.111000209.3",
+    "AvgLuaName": "STev_01_09",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_09"
+  },
+  "111000210": {
+    "Id": 111000210,
+    "ChapterId": 11100,
+    "DayOpen": 1,
+    "Index": "ActivityStory.111000210.4",
+    "Title": "ActivityStory.111000210.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_10",
+    "Desc": "ActivityStory.111000210.2",
+    "Type": 3,
+    "StoryId": "STev_01_10",
+    "ConditionId": 111000210,
+    "ParentStoryId": [
+      "STev_01_09"
+    ],
+    "Aim": "ActivityStory.111000210.3",
+    "AvgLuaName": "STev_01_10",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event01_10"
+  },
+  "111000211": {
+    "Id": 111000211,
+    "ChapterId": 11100,
+    "DayOpen": 1,
+    "Index": "ActivityStory.111000211.4",
+    "Title": "ActivityStory.111000211.1",
+    "IconRes": "Icon/ActivityStory/ep_event01_11",
+    "Desc": "ActivityStory.111000211.2",
+    "Type": 3,
+    "StoryId": "STev_01_11",
+    "ConditionId": 111000211,
+    "ParentStoryId": [
+      "STev_01_10"
+    ],
+    "Aim": "ActivityStory.111000211.3",
+    "AvgLuaName": "STev_01_11",
+    "AvgMotion": "style_44",
+    "IsLast": true,
+    "FirstCompleteReward": "{\"2\":50}",
+    "Icon": "Icon/ActivityStory/ep_event01_11"
+  },
+  "201010201": {
+    "Id": 201010201,
+    "ChapterId": 20101,
+    "Index": "ActivityStory.201010201.4",
+    "Title": "ActivityStory.201010201.1",
+    "Desc": "ActivityStory.201010201.2",
+    "Type": 3,
+    "StoryId": "STev_02_01",
+    "ConditionId": 201010201,
+    "Aim": "ActivityStory.201010201.3",
+    "AvgLuaName": "STev_02_01",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010202": {
+    "Id": 201010202,
+    "ChapterId": 20101,
+    "Index": "ActivityStory.201010202.4",
+    "Title": "ActivityStory.201010202.1",
+    "Desc": "ActivityStory.201010202.2",
+    "Type": 3,
+    "StoryId": "STev_02_02",
+    "ConditionId": 201010202,
+    "ParentStoryId": [
+      "STev_02_01"
+    ],
+    "Aim": "ActivityStory.201010202.3",
+    "AvgLuaName": "STev_02_02",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010203": {
+    "Id": 201010203,
+    "ChapterId": 20101,
+    "Index": "ActivityStory.201010203.4",
+    "Title": "ActivityStory.201010203.1",
+    "Desc": "ActivityStory.201010203.2",
+    "Type": 3,
+    "StoryId": "STev_02_03",
+    "ConditionId": 201010203,
+    "ParentStoryId": [
+      "STev_02_02"
+    ],
+    "Aim": "ActivityStory.201010203.3",
+    "AvgLuaName": "STev_02_03",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010204": {
+    "Id": 201010204,
+    "ChapterId": 20101,
+    "Index": "ActivityStory.201010204.4",
+    "Title": "ActivityStory.201010204.1",
+    "Desc": "ActivityStory.201010204.2",
+    "Type": 3,
+    "StoryId": "STev_02_04_a",
+    "ConditionId": 201010204,
+    "ParentStoryId": [
+      "STev_02_03"
+    ],
+    "Aim": "ActivityStory.201010204.3",
+    "AvgLuaName": "STev_02_04_a",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010205": {
+    "Id": 201010205,
+    "ChapterId": 20101,
+    "Index": "ActivityStory.201010205.4",
+    "Title": "ActivityStory.201010205.1",
+    "Desc": "ActivityStory.201010205.2",
+    "Type": 3,
+    "StoryId": "STev_02_04_b",
+    "ConditionId": 201010205,
+    "ParentStoryId": [
+      "STev_02_03"
+    ],
+    "Aim": "ActivityStory.201010205.3",
+    "AvgLuaName": "STev_02_04_b",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010206": {
+    "Id": 201010206,
+    "ChapterId": 20101,
+    "Index": "ActivityStory.201010206.4",
+    "Title": "ActivityStory.201010206.1",
+    "Desc": "ActivityStory.201010206.2",
+    "Type": 3,
+    "StoryId": "STev_02_04_c",
+    "ConditionId": 201010206,
+    "ParentStoryId": [
+      "STev_02_03"
+    ],
+    "Aim": "ActivityStory.201010206.3",
+    "AvgLuaName": "STev_02_04_c",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010207": {
+    "Id": 201010207,
+    "ChapterId": 20101,
+    "Index": "ActivityStory.201010207.4",
+    "Title": "ActivityStory.201010207.1",
+    "Desc": "ActivityStory.201010207.2",
+    "Type": 3,
+    "StoryId": "STev_02_05",
+    "ConditionId": 201010207,
+    "ParentStoryId": [
+      "STev_02_04_a",
+      "STev_02_04_b",
+      "STev_02_04_c"
+    ],
+    "Aim": "ActivityStory.201010207.3",
+    "AvgLuaName": "STev_02_05",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010208": {
+    "Id": 201010208,
+    "ChapterId": 20101,
+    "Index": "ActivityStory.201010208.4",
+    "Title": "ActivityStory.201010208.1",
+    "Desc": "ActivityStory.201010208.2",
+    "Type": 3,
+    "StoryId": "STev_02_06",
+    "ConditionId": 201010208,
+    "ParentStoryId": [
+      "STev_02_05"
+    ],
+    "Aim": "ActivityStory.201010208.3",
+    "AvgLuaName": "STev_02_06",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010209": {
+    "Id": 201010209,
+    "ChapterId": 20101,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201010209.4",
+    "Title": "ActivityStory.201010209.1",
+    "Desc": "ActivityStory.201010209.2",
+    "Type": 3,
+    "StoryId": "STev_02_07",
+    "ConditionId": 201010209,
+    "ParentStoryId": [
+      "STev_02_06"
+    ],
+    "Aim": "ActivityStory.201010209.3",
+    "AvgLuaName": "STev_02_07",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010210": {
+    "Id": 201010210,
+    "ChapterId": 20101,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201010210.4",
+    "Title": "ActivityStory.201010210.1",
+    "Desc": "ActivityStory.201010210.2",
+    "Type": 3,
+    "StoryId": "STev_02_08",
+    "ConditionId": 201010210,
+    "ParentStoryId": [
+      "STev_02_07"
+    ],
+    "Aim": "ActivityStory.201010210.3",
+    "AvgLuaName": "STev_02_08",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010211": {
+    "Id": 201010211,
+    "ChapterId": 20101,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201010211.4",
+    "Title": "ActivityStory.201010211.1",
+    "Desc": "ActivityStory.201010211.2",
+    "Type": 3,
+    "StoryId": "STev_02_09",
+    "ConditionId": 201010211,
+    "ParentStoryId": [
+      "STev_02_08"
+    ],
+    "Aim": "ActivityStory.201010211.3",
+    "AvgLuaName": "STev_02_09",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010212": {
+    "Id": 201010212,
+    "ChapterId": 20101,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201010212.4",
+    "Title": "ActivityStory.201010212.1",
+    "Desc": "ActivityStory.201010212.2",
+    "Type": 3,
+    "StoryId": "STev_02_10",
+    "ConditionId": 201010212,
+    "ParentStoryId": [
+      "STev_02_09"
+    ],
+    "Aim": "ActivityStory.201010212.3",
+    "AvgLuaName": "STev_02_10",
+    "AvgMotion": "style_20",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010213": {
+    "Id": 201010213,
+    "ChapterId": 20101,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201010213.4",
+    "Title": "ActivityStory.201010213.1",
+    "Desc": "ActivityStory.201010213.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "BAev02_01",
+    "FloorId": [
+      1060401
+    ],
+    "TrialBuild": 200010,
+    "PreviewMonsterGroupId": 300408,
+    "Recommend": "5",
+    "ConditionId": 201010213,
+    "ParentStoryId": [
+      "STev_02_10"
+    ],
+    "Aim": "ActivityStory.201010213.3",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "201010214": {
+    "Id": 201010214,
+    "ChapterId": 20101,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201010214.4",
+    "Title": "ActivityStory.201010214.1",
+    "Desc": "ActivityStory.201010214.2",
+    "Type": 3,
+    "StoryId": "STev_02_11",
+    "ConditionId": 201010214,
+    "ParentStoryId": [
+      "BAev02_01"
+    ],
+    "Aim": "ActivityStory.201010214.3",
+    "AvgLuaName": "STev_02_11",
+    "AvgMotion": "style_20",
+    "IsLast": true,
+    "FirstCompleteReward": "{\"2\":50}"
+  },
+  "101040201": {
+    "Id": 101040201,
+    "ChapterId": 10104,
+    "Index": "ActivityStory.101040201.4",
+    "Title": "ActivityStory.101040201.1",
+    "Desc": "ActivityStory.101040201.2",
+    "Type": 3,
+    "StoryId": "STev_03_01",
+    "ConditionId": 101040201,
+    "Aim": "ActivityStory.101040201.3",
+    "AvgLuaName": "STev_03_01",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040202": {
+    "Id": 101040202,
+    "ChapterId": 10104,
+    "Index": "ActivityStory.101040202.4",
+    "Title": "ActivityStory.101040202.1",
+    "Desc": "ActivityStory.101040202.2",
+    "Type": 3,
+    "StoryId": "STev_03_02",
+    "ConditionId": 101040202,
+    "ParentStoryId": [
+      "STev_03_01"
+    ],
+    "Aim": "ActivityStory.101040202.3",
+    "AvgLuaName": "STev_03_02",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040203": {
+    "Id": 101040203,
+    "ChapterId": 10104,
+    "Index": "ActivityStory.101040203.4",
+    "Title": "ActivityStory.101040203.1",
+    "Desc": "ActivityStory.101040203.2",
+    "Type": 3,
+    "StoryId": "STev_03_03",
+    "ConditionId": 101040203,
+    "ParentStoryId": [
+      "STev_03_02"
+    ],
+    "Aim": "ActivityStory.101040203.3",
+    "AvgLuaName": "STev_03_03",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040204": {
+    "Id": 101040204,
+    "ChapterId": 10104,
+    "Index": "ActivityStory.101040204.4",
+    "Title": "ActivityStory.101040204.1",
+    "Desc": "ActivityStory.101040204.2",
+    "Type": 3,
+    "StoryId": "STev_03_04",
+    "ConditionId": 101040204,
+    "ParentStoryId": [
+      "STev_03_03"
+    ],
+    "Aim": "ActivityStory.101040204.3",
+    "AvgLuaName": "STev_03_04",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040205": {
+    "Id": 101040205,
+    "ChapterId": 10104,
+    "Index": "ActivityStory.101040205.4",
+    "Title": "ActivityStory.101040205.1",
+    "Desc": "ActivityStory.101040205.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_03_BT01",
+    "FloorId": [
+      1060501
+    ],
+    "TrialBuild": 200020,
+    "PreviewMonsterGroupId": 300621,
+    "Recommend": "30",
+    "ConditionId": 101040205,
+    "ParentStoryId": [
+      "STev_03_04"
+    ],
+    "Aim": "ActivityStory.101040205.3",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040206": {
+    "Id": 101040206,
+    "ChapterId": 10104,
+    "Index": "ActivityStory.101040206.4",
+    "Title": "ActivityStory.101040206.1",
+    "Desc": "ActivityStory.101040206.2",
+    "Type": 3,
+    "StoryId": "STev_03_05",
+    "ConditionId": 101040206,
+    "ParentStoryId": [
+      "STev_03_BT01"
+    ],
+    "Aim": "ActivityStory.101040206.3",
+    "AvgLuaName": "STev_03_05",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040207": {
+    "Id": 101040207,
+    "ChapterId": 10104,
+    "Index": "ActivityStory.101040207.4",
+    "Title": "ActivityStory.101040207.1",
+    "Desc": "ActivityStory.101040207.2",
+    "Type": 3,
+    "StoryId": "STev_03_06",
+    "ConditionId": 101040207,
+    "ParentStoryId": [
+      "STev_03_05"
+    ],
+    "Aim": "ActivityStory.101040207.3",
+    "AvgLuaName": "STev_03_06",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040208": {
+    "Id": 101040208,
+    "ChapterId": 10104,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101040208.4",
+    "Title": "ActivityStory.101040208.1",
+    "Desc": "ActivityStory.101040208.2",
+    "Type": 3,
+    "StoryId": "STev_03_07",
+    "ConditionId": 101040208,
+    "ParentStoryId": [
+      "STev_03_06"
+    ],
+    "Aim": "ActivityStory.101040208.3",
+    "AvgLuaName": "STev_03_07",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040209": {
+    "Id": 101040209,
+    "ChapterId": 10104,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101040209.4",
+    "Title": "ActivityStory.101040209.1",
+    "Desc": "ActivityStory.101040209.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_03_BT02",
+    "FloorId": [
+      1060601
+    ],
+    "TrialBuild": 200030,
+    "PreviewMonsterGroupId": 300622,
+    "Recommend": "40",
+    "ConditionId": 101040209,
+    "ParentStoryId": [
+      "STev_03_07"
+    ],
+    "Aim": "ActivityStory.101040209.3",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040210": {
+    "Id": 101040210,
+    "ChapterId": 10104,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101040210.4",
+    "Title": "ActivityStory.101040210.1",
+    "Desc": "ActivityStory.101040210.2",
+    "Type": 3,
+    "StoryId": "STev_03_08",
+    "ConditionId": 101040210,
+    "ParentStoryId": [
+      "STev_03_BT02"
+    ],
+    "Aim": "ActivityStory.101040210.3",
+    "AvgLuaName": "STev_03_08",
+    "AvgMotion": "style_33",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101040211": {
+    "Id": 101040211,
+    "ChapterId": 10104,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101040211.4",
+    "Title": "ActivityStory.101040211.1",
+    "Desc": "ActivityStory.101040211.2",
+    "Type": 3,
+    "StoryId": "STev_03_09",
+    "ConditionId": 101040211,
+    "ParentStoryId": [
+      "STev_03_08"
+    ],
+    "Aim": "ActivityStory.101040211.3",
+    "AvgLuaName": "STev_03_09",
+    "AvgMotion": "style_33",
+    "IsLast": true,
+    "FirstCompleteReward": "{\"2\":50}"
+  },
+  "101050201": {
+    "Id": 101050201,
+    "ChapterId": 10105,
+    "Index": "ActivityStory.101050201.4",
+    "Title": "ActivityStory.101050201.1",
+    "Desc": "ActivityStory.101050201.2",
+    "Type": 3,
+    "StoryId": "STev_04_01",
+    "ConditionId": 101050201,
+    "Aim": "ActivityStory.101050201.3",
+    "AvgLuaName": "STev_04_01",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050202": {
+    "Id": 101050202,
+    "ChapterId": 10105,
+    "Index": "ActivityStory.101050202.4",
+    "Title": "ActivityStory.101050202.1",
+    "Desc": "ActivityStory.101050202.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_04_BT01",
+    "FloorId": [
+      1060402
+    ],
+    "TrialBuild": 200040,
+    "PreviewMonsterGroupId": 300706,
+    "Recommend": "40",
+    "ConditionId": 101050202,
+    "ParentStoryId": [
+      "STev_04_01"
+    ],
+    "Aim": "ActivityStory.101050202.3",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050203": {
+    "Id": 101050203,
+    "ChapterId": 10105,
+    "Index": "ActivityStory.101050203.4",
+    "Title": "ActivityStory.101050203.1",
+    "Desc": "ActivityStory.101050203.2",
+    "Type": 3,
+    "StoryId": "STev_04_02",
+    "ConditionId": 101050203,
+    "ParentStoryId": [
+      "STev_04_BT01"
+    ],
+    "Aim": "ActivityStory.101050203.3",
+    "AvgLuaName": "STev_04_02",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050204": {
+    "Id": 101050204,
+    "ChapterId": 10105,
+    "Index": "ActivityStory.101050204.4",
+    "Title": "ActivityStory.101050204.1",
+    "Desc": "ActivityStory.101050204.2",
+    "Type": 3,
+    "StoryId": "STev_04_03",
+    "ConditionId": 101050204,
+    "ParentStoryId": [
+      "STev_04_02"
+    ],
+    "Aim": "ActivityStory.101050204.3",
+    "AvgLuaName": "STev_04_03",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050205": {
+    "Id": 101050205,
+    "ChapterId": 10105,
+    "Index": "ActivityStory.101050205.4",
+    "Title": "ActivityStory.101050205.1",
+    "Desc": "ActivityStory.101050205.2",
+    "Type": 3,
+    "StoryId": "STev_04_04",
+    "ConditionId": 101050205,
+    "ParentStoryId": [
+      "STev_04_03"
+    ],
+    "Aim": "ActivityStory.101050205.3",
+    "AvgLuaName": "STev_04_04",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050206": {
+    "Id": 101050206,
+    "ChapterId": 10105,
+    "Index": "ActivityStory.101050206.4",
+    "Title": "ActivityStory.101050206.1",
+    "Desc": "ActivityStory.101050206.2",
+    "Type": 3,
+    "StoryId": "STev_04_05",
+    "ConditionId": 101050206,
+    "ParentStoryId": [
+      "STev_04_04"
+    ],
+    "Aim": "ActivityStory.101050206.3",
+    "AvgLuaName": "STev_04_05",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050207": {
+    "Id": 101050207,
+    "ChapterId": 10105,
+    "Index": "ActivityStory.101050207.4",
+    "Title": "ActivityStory.101050207.1",
+    "Desc": "ActivityStory.101050207.2",
+    "Type": 3,
+    "StoryId": "STev_04_06",
+    "ConditionId": 101050207,
+    "ParentStoryId": [
+      "STev_04_05"
+    ],
+    "Aim": "ActivityStory.101050207.3",
+    "AvgLuaName": "STev_04_06",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050208": {
+    "Id": 101050208,
+    "ChapterId": 10105,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101050208.4",
+    "Title": "ActivityStory.101050208.1",
+    "Desc": "ActivityStory.101050208.2",
+    "Type": 3,
+    "StoryId": "STev_04_07",
+    "ConditionId": 101050208,
+    "ParentStoryId": [
+      "STev_04_06"
+    ],
+    "Aim": "ActivityStory.101050208.3",
+    "AvgLuaName": "STev_04_07",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050209": {
+    "Id": 101050209,
+    "ChapterId": 10105,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101050209.4",
+    "Title": "ActivityStory.101050209.1",
+    "Desc": "ActivityStory.101050209.2",
+    "Type": 3,
+    "StoryId": "STev_04_08",
+    "ConditionId": 101050209,
+    "ParentStoryId": [
+      "STev_04_07"
+    ],
+    "Aim": "ActivityStory.101050209.3",
+    "AvgLuaName": "STev_04_08",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050210": {
+    "Id": 101050210,
+    "ChapterId": 10105,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101050210.4",
+    "Title": "ActivityStory.101050210.1",
+    "Desc": "ActivityStory.101050210.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_04_BT02",
+    "FloorId": [
+      1060404
+    ],
+    "TrialBuild": 200060,
+    "PreviewMonsterGroupId": 300708,
+    "Recommend": "40",
+    "ConditionId": 101050210,
+    "ParentStoryId": [
+      "STev_04_08"
+    ],
+    "Aim": "ActivityStory.101050210.3",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050211": {
+    "Id": 101050211,
+    "ChapterId": 10105,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101050211.4",
+    "Title": "ActivityStory.101050211.1",
+    "Desc": "ActivityStory.101050211.2",
+    "Type": 3,
+    "StoryId": "STev_04_09",
+    "ConditionId": 101050211,
+    "ParentStoryId": [
+      "STev_04_BT02"
+    ],
+    "Aim": "ActivityStory.101050211.3",
+    "AvgLuaName": "STev_04_09",
+    "AvgMotion": "style_34",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101050212": {
+    "Id": 101050212,
+    "ChapterId": 10105,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101050212.4",
+    "Title": "ActivityStory.101050212.1",
+    "Desc": "ActivityStory.101050212.2",
+    "Type": 3,
+    "StoryId": "STev_04_10",
+    "ConditionId": 101050212,
+    "ParentStoryId": [
+      "STev_04_09"
+    ],
+    "Aim": "ActivityStory.101050212.3",
+    "AvgLuaName": "STev_04_10",
+    "AvgMotion": "style_34",
+    "IsLast": true,
+    "FirstCompleteReward": "{\"2\":50}"
+  },
+  "101060201": {
+    "Id": 101060201,
+    "ChapterId": 10106,
+    "Index": "ActivityStory.101060201.4",
+    "Title": "ActivityStory.101060201.1",
+    "Desc": "ActivityStory.101060201.2",
+    "Type": 3,
+    "StoryId": "STev_05_01",
+    "ConditionId": 101060201,
+    "Aim": "ActivityStory.101060201.3",
+    "AvgLuaName": "STev_05_01",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060202": {
+    "Id": 101060202,
+    "ChapterId": 10106,
+    "Index": "ActivityStory.101060202.4",
+    "Title": "ActivityStory.101060202.1",
+    "Desc": "ActivityStory.101060202.2",
+    "Type": 3,
+    "StoryId": "STev_05_02_a",
+    "ConditionId": 101060202,
+    "ParentStoryId": [
+      "STev_05_01"
+    ],
+    "Aim": "ActivityStory.101060202.3",
+    "AvgLuaName": "STev_05_02_a",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060203": {
+    "Id": 101060203,
+    "ChapterId": 10106,
+    "Index": "ActivityStory.101060203.4",
+    "Title": "ActivityStory.101060203.1",
+    "Desc": "ActivityStory.101060203.2",
+    "Type": 3,
+    "StoryId": "STev_05_02_b",
+    "ConditionId": 101060203,
+    "ParentStoryId": [
+      "STev_05_01"
+    ],
+    "Aim": "ActivityStory.101060203.3",
+    "AvgLuaName": "STev_05_02_b",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060204": {
+    "Id": 101060204,
+    "ChapterId": 10106,
+    "Index": "ActivityStory.101060204.4",
+    "Title": "ActivityStory.101060204.1",
+    "Desc": "ActivityStory.101060204.2",
+    "Type": 3,
+    "StoryId": "STev_05_02_c",
+    "ConditionId": 101060204,
+    "ParentStoryId": [
+      "STev_05_01"
+    ],
+    "Aim": "ActivityStory.101060204.3",
+    "AvgLuaName": "STev_05_02_c",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060205": {
+    "Id": 101060205,
+    "ChapterId": 10106,
+    "Index": "ActivityStory.101060205.4",
+    "Title": "ActivityStory.101060205.1",
+    "Desc": "ActivityStory.101060205.2",
+    "Type": 3,
+    "StoryId": "STev_05_03",
+    "ConditionId": 101060205,
+    "ParentStoryId": [
+      "STev_05_02_a",
+      "STev_05_02_b",
+      "STev_05_02_c"
+    ],
+    "Aim": "ActivityStory.101060205.3",
+    "AvgLuaName": "STev_05_03",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060206": {
+    "Id": 101060206,
+    "ChapterId": 10106,
+    "Index": "ActivityStory.101060206.4",
+    "Title": "ActivityStory.101060206.1",
+    "Desc": "ActivityStory.101060206.2",
+    "Type": 3,
+    "StoryId": "STev_05_04",
+    "ConditionId": 101060206,
+    "ParentStoryId": [
+      "STev_05_03"
+    ],
+    "Aim": "ActivityStory.101060206.3",
+    "AvgLuaName": "STev_05_04",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060207": {
+    "Id": 101060207,
+    "ChapterId": 10106,
+    "Index": "ActivityStory.101060207.4",
+    "Title": "ActivityStory.101060207.1",
+    "Desc": "ActivityStory.101060207.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_05_BT01",
+    "FloorId": [
+      1060505
+    ],
+    "TrialBuild": 200070,
+    "PreviewMonsterGroupId": 300802,
+    "Recommend": "40",
+    "ConditionId": 101060207,
+    "ParentStoryId": [
+      "STev_05_04"
+    ],
+    "Aim": "ActivityStory.101060207.3",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060208": {
+    "Id": 101060208,
+    "ChapterId": 10106,
+    "Index": "ActivityStory.101060208.4",
+    "Title": "ActivityStory.101060208.1",
+    "Desc": "ActivityStory.101060208.2",
+    "Type": 3,
+    "StoryId": "STev_05_05",
+    "ConditionId": 101060208,
+    "ParentStoryId": [
+      "STev_05_BT01"
+    ],
+    "Aim": "ActivityStory.101060208.3",
+    "AvgLuaName": "STev_05_05",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060209": {
+    "Id": 101060209,
+    "ChapterId": 10106,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101060209.4",
+    "Title": "ActivityStory.101060209.1",
+    "Desc": "ActivityStory.101060209.2",
+    "Type": 3,
+    "StoryId": "STev_05_06",
+    "ConditionId": 101060209,
+    "ParentStoryId": [
+      "STev_05_05"
+    ],
+    "Aim": "ActivityStory.101060209.3",
+    "AvgLuaName": "STev_05_06",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060210": {
+    "Id": 101060210,
+    "ChapterId": 10106,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101060210.4",
+    "Title": "ActivityStory.101060210.1",
+    "Desc": "ActivityStory.101060210.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_05_BT02",
+    "FloorId": [
+      1060506
+    ],
+    "TrialBuild": 200080,
+    "PreviewMonsterGroupId": 300808,
+    "Recommend": "40",
+    "ConditionId": 101060210,
+    "ParentStoryId": [
+      "STev_05_06"
+    ],
+    "Aim": "ActivityStory.101060210.3",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060211": {
+    "Id": 101060211,
+    "ChapterId": 10106,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101060211.4",
+    "Title": "ActivityStory.101060211.1",
+    "Desc": "ActivityStory.101060211.2",
+    "Type": 3,
+    "StoryId": "STev_05_07",
+    "ConditionId": 101060211,
+    "ParentStoryId": [
+      "STev_05_BT02"
+    ],
+    "Aim": "ActivityStory.101060211.3",
+    "AvgLuaName": "STev_05_07",
+    "AvgMotion": "style_41",
+    "FirstCompleteReward": "{\"2\":30}"
+  },
+  "101060212": {
+    "Id": 101060212,
+    "ChapterId": 10106,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101060212.4",
+    "Title": "ActivityStory.101060212.1",
+    "Desc": "ActivityStory.101060212.2",
+    "Type": 3,
+    "StoryId": "STev_05_08",
+    "ConditionId": 101060212,
+    "ParentStoryId": [
+      "STev_05_07"
+    ],
+    "Aim": "ActivityStory.101060212.3",
+    "AvgLuaName": "STev_05_08",
+    "AvgMotion": "style_41",
+    "IsLast": true,
+    "FirstCompleteReward": "{\"2\":50}"
+  },
+  "101070201": {
+    "Id": 101070201,
+    "ChapterId": 10107,
+    "Index": "ActivityStory.101070201.4",
+    "Title": "ActivityStory.101070201.1",
+    "Desc": "ActivityStory.101070201.2",
+    "Type": 3,
+    "StoryId": "STev_07_01",
+    "ConditionId": 101070201,
+    "Aim": "ActivityStory.101070201.3",
+    "AvgLuaName": "STev_07_01",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_01"
+  },
+  "101070202": {
+    "Id": 101070202,
+    "ChapterId": 10107,
+    "Index": "ActivityStory.101070202.4",
+    "Title": "ActivityStory.101070202.1",
+    "Desc": "ActivityStory.101070202.2",
+    "Type": 3,
+    "StoryId": "STev_07_02",
+    "ConditionId": 101070202,
+    "ParentStoryId": [
+      "STev_07_01"
+    ],
+    "Aim": "ActivityStory.101070202.3",
+    "AvgLuaName": "STev_07_02",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_02"
+  },
+  "101070203": {
+    "Id": 101070203,
+    "ChapterId": 10107,
+    "Index": "ActivityStory.101070203.4",
+    "Title": "ActivityStory.101070203.1",
+    "Desc": "ActivityStory.101070203.2",
+    "Type": 3,
+    "StoryId": "STev_07_03",
+    "ConditionId": 101070203,
+    "ParentStoryId": [
+      "STev_07_02"
+    ],
+    "Aim": "ActivityStory.101070203.3",
+    "AvgLuaName": "STev_07_03",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_03"
+  },
+  "101070204": {
+    "Id": 101070204,
+    "ChapterId": 10107,
+    "Index": "ActivityStory.101070204.4",
+    "Title": "ActivityStory.101070204.1",
+    "Desc": "ActivityStory.101070204.2",
+    "Type": 3,
+    "StoryId": "STev_07_04",
+    "ConditionId": 101070204,
+    "ParentStoryId": [
+      "STev_07_03"
+    ],
+    "Aim": "ActivityStory.101070204.3",
+    "AvgLuaName": "STev_07_04",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_04"
+  },
+  "101070205": {
+    "Id": 101070205,
+    "ChapterId": 10107,
+    "Index": "ActivityStory.101070205.4",
+    "Title": "ActivityStory.101070205.1",
+    "Desc": "ActivityStory.101070205.2",
+    "Type": 3,
+    "StoryId": "STev_07_05",
+    "ConditionId": 101070205,
+    "ParentStoryId": [
+      "STev_07_04"
+    ],
+    "Aim": "ActivityStory.101070205.3",
+    "AvgLuaName": "STev_07_05",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_05"
+  },
+  "101070206": {
+    "Id": 101070206,
+    "ChapterId": 10107,
+    "Index": "ActivityStory.101070206.4",
+    "Title": "ActivityStory.101070206.1",
+    "Desc": "ActivityStory.101070206.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_07_BT01",
+    "FloorId": [
+      301045
+    ],
+    "TrialBuild": 200083,
+    "PreviewMonsterGroupId": 301021,
+    "Recommend": "40",
+    "ConditionId": 101070206,
+    "ParentStoryId": [
+      "STev_07_05"
+    ],
+    "Aim": "ActivityStory.101070206.3",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_06"
+  },
+  "101070207": {
+    "Id": 101070207,
+    "ChapterId": 10107,
+    "Index": "ActivityStory.101070207.4",
+    "Title": "ActivityStory.101070207.1",
+    "Desc": "ActivityStory.101070207.2",
+    "Type": 3,
+    "StoryId": "STev_07_06",
+    "ConditionId": 101070207,
+    "ParentStoryId": [
+      "STev_07_BT01"
+    ],
+    "Aim": "ActivityStory.101070207.3",
+    "AvgLuaName": "STev_07_06",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_07"
+  },
+  "101070208": {
+    "Id": 101070208,
+    "ChapterId": 10107,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101070208.4",
+    "Title": "ActivityStory.101070208.1",
+    "Desc": "ActivityStory.101070208.2",
+    "Type": 3,
+    "StoryId": "STev_07_07",
+    "ConditionId": 101070208,
+    "ParentStoryId": [
+      "STev_07_06"
+    ],
+    "Aim": "ActivityStory.101070208.3",
+    "AvgLuaName": "STev_07_07",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_08"
+  },
+  "101070209": {
+    "Id": 101070209,
+    "ChapterId": 10107,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101070209.4",
+    "Title": "ActivityStory.101070209.1",
+    "Desc": "ActivityStory.101070209.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_07_BT02",
+    "FloorId": [
+      301044
+    ],
+    "TrialBuild": 200084,
+    "PreviewMonsterGroupId": 301016,
+    "Recommend": "40",
+    "ConditionId": 101070209,
+    "ParentStoryId": [
+      "STev_07_07"
+    ],
+    "Aim": "ActivityStory.101070209.3",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_09"
+  },
+  "101070210": {
+    "Id": 101070210,
+    "ChapterId": 10107,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101070210.4",
+    "Title": "ActivityStory.101070210.1",
+    "Desc": "ActivityStory.101070210.2",
+    "Type": 3,
+    "StoryId": "STev_07_08",
+    "ConditionId": 101070210,
+    "ParentStoryId": [
+      "STev_07_BT02"
+    ],
+    "Aim": "ActivityStory.101070210.3",
+    "AvgLuaName": "STev_07_08",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event07_10"
+  },
+  "101070211": {
+    "Id": 101070211,
+    "ChapterId": 10107,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101070211.4",
+    "Title": "ActivityStory.101070211.1",
+    "Desc": "ActivityStory.101070211.2",
+    "Type": 3,
+    "StoryId": "STev_07_09",
+    "ConditionId": 101070211,
+    "ParentStoryId": [
+      "STev_07_08"
+    ],
+    "Aim": "ActivityStory.101070211.3",
+    "AvgLuaName": "STev_07_09",
+    "AvgMotion": "style_43",
+    "FirstCompleteReward": "{\"2\":50}",
+    "Icon": "Icon/ActivityStory/ep_event07_11"
+  },
+  "101080201": {
+    "Id": 101080201,
+    "ChapterId": 10108,
+    "Index": "ActivityStory.101080201.4",
+    "Title": "ActivityStory.101080201.1",
+    "Desc": "ActivityStory.101080201.2",
+    "Type": 3,
+    "StoryId": "STev_08_01",
+    "ConditionId": 101080201,
+    "Aim": "ActivityStory.101080201.3",
+    "AvgLuaName": "STev_08_01",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_01"
+  },
+  "101080202": {
+    "Id": 101080202,
+    "ChapterId": 10108,
+    "Index": "ActivityStory.101080202.4",
+    "Title": "ActivityStory.101080202.1",
+    "Desc": "ActivityStory.101080202.2",
+    "Type": 3,
+    "StoryId": "STev_08_02",
+    "ConditionId": 101080202,
+    "ParentStoryId": [
+      "STev_08_01"
+    ],
+    "Aim": "ActivityStory.101080202.3",
+    "AvgLuaName": "STev_08_02",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_02"
+  },
+  "101080203": {
+    "Id": 101080203,
+    "ChapterId": 10108,
+    "Index": "ActivityStory.101080203.4",
+    "Title": "ActivityStory.101080203.1",
+    "Desc": "ActivityStory.101080203.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_08_BT01",
+    "FloorId": [
+      301125
+    ],
+    "TrialBuild": 200085,
+    "PreviewMonsterGroupId": 301121,
+    "Recommend": "40",
+    "ConditionId": 101080203,
+    "ParentStoryId": [
+      "STev_08_02"
+    ],
+    "Aim": "ActivityStory.101080203.3",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_03"
+  },
+  "101080204": {
+    "Id": 101080204,
+    "ChapterId": 10108,
+    "Index": "ActivityStory.101080204.4",
+    "Title": "ActivityStory.101080204.1",
+    "Desc": "ActivityStory.101080204.2",
+    "Type": 3,
+    "StoryId": "STev_08_03",
+    "ConditionId": 101080204,
+    "ParentStoryId": [
+      "STev_08_BT01"
+    ],
+    "Aim": "ActivityStory.101080204.3",
+    "AvgLuaName": "STev_08_03",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_04"
+  },
+  "101080205": {
+    "Id": 101080205,
+    "ChapterId": 10108,
+    "Index": "ActivityStory.101080205.4",
+    "Title": "ActivityStory.101080205.1",
+    "Desc": "ActivityStory.101080205.2",
+    "Type": 3,
+    "StoryId": "STev_08_04",
+    "ConditionId": 101080205,
+    "ParentStoryId": [
+      "STev_08_03"
+    ],
+    "Aim": "ActivityStory.101080205.3",
+    "AvgLuaName": "STev_08_04",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_05"
+  },
+  "101080206": {
+    "Id": 101080206,
+    "ChapterId": 10108,
+    "Index": "ActivityStory.101080206.4",
+    "Title": "ActivityStory.101080206.1",
+    "Desc": "ActivityStory.101080206.2",
+    "Type": 3,
+    "StoryId": "STev_08_05",
+    "ConditionId": 101080206,
+    "ParentStoryId": [
+      "STev_08_04"
+    ],
+    "Aim": "ActivityStory.101080206.3",
+    "AvgLuaName": "STev_08_05",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_06"
+  },
+  "101080207": {
+    "Id": 101080207,
+    "ChapterId": 10108,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101080207.4",
+    "Title": "ActivityStory.101080207.1",
+    "Desc": "ActivityStory.101080207.2",
+    "Type": 3,
+    "StoryId": "STev_08_06",
+    "ConditionId": 101080207,
+    "ParentStoryId": [
+      "STev_08_05"
+    ],
+    "Aim": "ActivityStory.101080207.3",
+    "AvgLuaName": "STev_08_06",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_07"
+  },
+  "101080208": {
+    "Id": 101080208,
+    "ChapterId": 10108,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101080208.4",
+    "Title": "ActivityStory.101080208.1",
+    "Desc": "ActivityStory.101080208.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_08_BT02",
+    "FloorId": [
+      301126
+    ],
+    "TrialBuild": 200086,
+    "PreviewMonsterGroupId": 301124,
+    "Recommend": "40",
+    "ConditionId": 101080208,
+    "ParentStoryId": [
+      "STev_08_06"
+    ],
+    "Aim": "ActivityStory.101080208.3",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_08"
+  },
+  "101080209": {
+    "Id": 101080209,
+    "ChapterId": 10108,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101080209.4",
+    "Title": "ActivityStory.101080209.1",
+    "Desc": "ActivityStory.101080209.2",
+    "Type": 3,
+    "StoryId": "STev_08_07",
+    "ConditionId": 101080209,
+    "ParentStoryId": [
+      "STev_08_BT02"
+    ],
+    "Aim": "ActivityStory.101080209.3",
+    "AvgLuaName": "STev_08_07",
+    "AvgMotion": "style_21",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event08_09"
+  },
+  "101080210": {
+    "Id": 101080210,
+    "ChapterId": 10108,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101080210.4",
+    "Title": "ActivityStory.101080210.1",
+    "Desc": "ActivityStory.101080210.2",
+    "Type": 3,
+    "StoryId": "STev_08_08",
+    "ConditionId": 101080210,
+    "ParentStoryId": [
+      "STev_08_07"
+    ],
+    "Aim": "ActivityStory.101080210.3",
+    "AvgLuaName": "STev_08_08",
+    "AvgMotion": "style_21",
+    "IsLast": true,
+    "FirstCompleteReward": "{\"2\":50}",
+    "Icon": "Icon/ActivityStory/ep_event08_10"
+  },
+  "101090201": {
+    "Id": 101090201,
+    "ChapterId": 10109,
+    "Index": "ActivityStory.101090201.4",
+    "Title": "ActivityStory.101090201.1",
+    "Desc": "ActivityStory.101090201.2",
+    "Type": 3,
+    "StoryId": "STev_09_01",
+    "ConditionId": 101090201,
+    "Aim": "ActivityStory.101090201.3",
+    "AvgLuaName": "STev_09_01",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_01"
+  },
+  "101090202": {
+    "Id": 101090202,
+    "ChapterId": 10109,
+    "Index": "ActivityStory.101090202.4",
+    "Title": "ActivityStory.101090202.1",
+    "Desc": "ActivityStory.101090202.2",
+    "Type": 3,
+    "StoryId": "STev_09_02",
+    "ConditionId": 101090202,
+    "ParentStoryId": [
+      "STev_09_01"
+    ],
+    "Aim": "ActivityStory.101090202.3",
+    "AvgLuaName": "STev_09_02",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_02"
+  },
+  "101090203": {
+    "Id": 101090203,
+    "ChapterId": 10109,
+    "Index": "ActivityStory.101090203.4",
+    "Title": "ActivityStory.101090203.1",
+    "Desc": "ActivityStory.101090203.2",
+    "Type": 3,
+    "StoryId": "STev_09_03",
+    "ConditionId": 101090203,
+    "ParentStoryId": [
+      "STev_09_02"
+    ],
+    "Aim": "ActivityStory.101090203.3",
+    "AvgLuaName": "STev_09_03",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_03"
+  },
+  "101090204": {
+    "Id": 101090204,
+    "ChapterId": 10109,
+    "Index": "ActivityStory.101090204.4",
+    "Title": "ActivityStory.101090204.1",
+    "Desc": "ActivityStory.101090204.2",
+    "Type": 3,
+    "StoryId": "STev_09_04",
+    "ConditionId": 101090204,
+    "ParentStoryId": [
+      "STev_09_03"
+    ],
+    "Aim": "ActivityStory.101090204.3",
+    "AvgLuaName": "STev_09_04",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_04"
+  },
+  "101090205": {
+    "Id": 101090205,
+    "ChapterId": 10109,
+    "Index": "ActivityStory.101090205.4",
+    "Title": "ActivityStory.101090205.1",
+    "Desc": "ActivityStory.101090205.2",
+    "Type": 3,
+    "StoryId": "STev_09_05",
+    "ConditionId": 101090205,
+    "ParentStoryId": [
+      "STev_09_04"
+    ],
+    "Aim": "ActivityStory.101090205.3",
+    "AvgLuaName": "STev_09_05",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_05"
+  },
+  "101090206": {
+    "Id": 101090206,
+    "ChapterId": 10109,
+    "Index": "ActivityStory.101090206.4",
+    "Title": "ActivityStory.101090206.1",
+    "Desc": "ActivityStory.101090206.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_09_BT01",
+    "FloorId": [
+      301225
+    ],
+    "TrialBuild": 200087,
+    "PreviewMonsterGroupId": 301225,
+    "Recommend": "40",
+    "ConditionId": 101090206,
+    "ParentStoryId": [
+      "STev_09_05"
+    ],
+    "Aim": "ActivityStory.101090206.3",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_06"
+  },
+  "101090207": {
+    "Id": 101090207,
+    "ChapterId": 10109,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101090207.4",
+    "Title": "ActivityStory.101090207.1",
+    "Desc": "ActivityStory.101090207.2",
+    "Type": 3,
+    "StoryId": "STev_09_06",
+    "ConditionId": 101090207,
+    "ParentStoryId": [
+      "STev_09_BT01"
+    ],
+    "Aim": "ActivityStory.101090207.3",
+    "AvgLuaName": "STev_09_06",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_07"
+  },
+  "101090208": {
+    "Id": 101090208,
+    "ChapterId": 10109,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101090208.4",
+    "Title": "ActivityStory.101090208.1",
+    "Desc": "ActivityStory.101090208.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_09_BT02",
+    "FloorId": [
+      301226
+    ],
+    "TrialBuild": 200088,
+    "PreviewMonsterGroupId": 301226,
+    "Recommend": "40",
+    "ConditionId": 101090208,
+    "ParentStoryId": [
+      "STev_09_06"
+    ],
+    "Aim": "ActivityStory.101090208.3",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_08"
+  },
+  "101090209": {
+    "Id": 101090209,
+    "ChapterId": 10109,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101090209.4",
+    "Title": "ActivityStory.101090209.1",
+    "Desc": "ActivityStory.101090209.2",
+    "Type": 3,
+    "StoryId": "STev_09_07",
+    "ConditionId": 101090209,
+    "ParentStoryId": [
+      "STev_09_BT02"
+    ],
+    "Aim": "ActivityStory.101090209.3",
+    "AvgLuaName": "STev_09_07",
+    "AvgMotion": "style_48",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event09_09"
+  },
+  "101090210": {
+    "Id": 101090210,
+    "ChapterId": 10109,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101090210.4",
+    "Title": "ActivityStory.101090210.1",
+    "Desc": "ActivityStory.101090210.2",
+    "Type": 3,
+    "StoryId": "STev_09_08",
+    "ConditionId": 101090210,
+    "ParentStoryId": [
+      "STev_09_07"
+    ],
+    "Aim": "ActivityStory.101090210.3",
+    "AvgLuaName": "STev_09_08",
+    "AvgMotion": "style_48",
+    "IsLast": true,
+    "FirstCompleteReward": "{\"2\":50}",
+    "Icon": "Icon/ActivityStory/ep_event09_10"
+  },
+  "201030201": {
+    "Id": 201030201,
+    "ChapterId": 20103,
+    "Index": "ActivityStory.201030201.4",
+    "Title": "ActivityStory.201030201.1",
+    "Desc": "ActivityStory.201030201.2",
+    "Type": 3,
+    "StoryId": "STev_10_01",
+    "ConditionId": 201030201,
+    "Aim": "ActivityStory.201030201.3",
+    "AvgLuaName": "STev_10_01",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_01"
+  },
+  "201030202": {
+    "Id": 201030202,
+    "ChapterId": 20103,
+    "Index": "ActivityStory.201030202.4",
+    "Title": "ActivityStory.201030202.1",
+    "Desc": "ActivityStory.201030202.2",
+    "Type": 3,
+    "StoryId": "STev_10_02",
+    "ConditionId": 201030202,
+    "ParentStoryId": [
+      "STev_10_01"
+    ],
+    "Aim": "ActivityStory.201030202.3",
+    "AvgLuaName": "STev_10_02",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_02"
+  },
+  "201030203": {
+    "Id": 201030203,
+    "ChapterId": 20103,
+    "Index": "ActivityStory.201030203.4",
+    "Title": "ActivityStory.201030203.1",
+    "Desc": "ActivityStory.201030203.2",
+    "Type": 3,
+    "StoryId": "STev_10_03",
+    "ConditionId": 201030203,
+    "ParentStoryId": [
+      "STev_10_02"
+    ],
+    "Aim": "ActivityStory.201030203.3",
+    "AvgLuaName": "STev_10_03",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_03"
+  },
+  "201030204": {
+    "Id": 201030204,
+    "ChapterId": 20103,
+    "Index": "ActivityStory.201030204.4",
+    "Title": "ActivityStory.201030204.1",
+    "Desc": "ActivityStory.201030204.2",
+    "Type": 3,
+    "StoryId": "STev_10_04",
+    "ConditionId": 201030204,
+    "ParentStoryId": [
+      "STev_10_03"
+    ],
+    "Aim": "ActivityStory.201030204.3",
+    "AvgLuaName": "STev_10_04",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_04"
+  },
+  "201030205": {
+    "Id": 201030205,
+    "ChapterId": 20103,
+    "Index": "ActivityStory.201030205.4",
+    "Title": "ActivityStory.201030205.1",
+    "Desc": "ActivityStory.201030205.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_10_BT01",
+    "FloorId": [
+      301325
+    ],
+    "TrialBuild": 200089,
+    "PreviewMonsterGroupId": 301322,
+    "Recommend": "40",
+    "ConditionId": 201030205,
+    "ParentStoryId": [
+      "STev_10_04"
+    ],
+    "Aim": "ActivityStory.201030205.3",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_05"
+  },
+  "201030206": {
+    "Id": 201030206,
+    "ChapterId": 20103,
+    "Index": "ActivityStory.201030206.4",
+    "Title": "ActivityStory.201030206.1",
+    "Desc": "ActivityStory.201030206.2",
+    "Type": 3,
+    "StoryId": "STev_10_05",
+    "ConditionId": 201030206,
+    "ParentStoryId": [
+      "STev_10_BT01"
+    ],
+    "Aim": "ActivityStory.201030206.3",
+    "AvgLuaName": "STev_10_05",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_06"
+  },
+  "201030207": {
+    "Id": 201030207,
+    "ChapterId": 20103,
+    "Index": "ActivityStory.201030207.4",
+    "Title": "ActivityStory.201030207.1",
+    "Desc": "ActivityStory.201030207.2",
+    "Type": 3,
+    "StoryId": "STev_10_06",
+    "ConditionId": 201030207,
+    "ParentStoryId": [
+      "STev_10_05"
+    ],
+    "Aim": "ActivityStory.201030207.3",
+    "AvgLuaName": "STev_10_06",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_07"
+  },
+  "201030208": {
+    "Id": 201030208,
+    "ChapterId": 20103,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201030208.4",
+    "Title": "ActivityStory.201030208.1",
+    "Desc": "ActivityStory.201030208.2",
+    "Type": 3,
+    "StoryId": "STev_10_07",
+    "ConditionId": 201030208,
+    "ParentStoryId": [
+      "STev_10_06"
+    ],
+    "Aim": "ActivityStory.201030208.3",
+    "AvgLuaName": "STev_10_07",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_08"
+  },
+  "201030209": {
+    "Id": 201030209,
+    "ChapterId": 20103,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201030209.4",
+    "Title": "ActivityStory.201030209.1",
+    "Desc": "ActivityStory.201030209.2",
+    "Type": 3,
+    "StoryId": "STev_10_08",
+    "ConditionId": 201030209,
+    "ParentStoryId": [
+      "STev_10_07"
+    ],
+    "Aim": "ActivityStory.201030209.3",
+    "AvgLuaName": "STev_10_08",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_09"
+  },
+  "201030210": {
+    "Id": 201030210,
+    "ChapterId": 20103,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201030210.4",
+    "Title": "ActivityStory.201030210.1",
+    "Desc": "ActivityStory.201030210.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_10_BT02",
+    "FloorId": [
+      301326
+    ],
+    "TrialBuild": 200090,
+    "PreviewMonsterGroupId": 301324,
+    "Recommend": "40",
+    "ConditionId": 201030210,
+    "ParentStoryId": [
+      "STev_10_08"
+    ],
+    "Aim": "ActivityStory.201030210.3",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/ep_event10_10"
+  },
+  "201030211": {
+    "Id": 201030211,
+    "ChapterId": 20103,
+    "DayOpen": 1,
+    "Index": "ActivityStory.201030211.4",
+    "Title": "ActivityStory.201030211.1",
+    "Desc": "ActivityStory.201030211.2",
+    "Type": 3,
+    "StoryId": "STev_10_09",
+    "ConditionId": 201030211,
+    "ParentStoryId": [
+      "STev_10_BT02"
+    ],
+    "Aim": "ActivityStory.201030211.3",
+    "AvgLuaName": "STev_10_09",
+    "AvgMotion": "style_44",
+    "IsLast": true,
+    "FirstCompleteReward": "{\"2\":50}",
+    "Icon": "Icon/ActivityStory/ep_event10_11"
+  },
+  "101100201": {
+    "Id": 101100201,
+    "ChapterId": 10110,
+    "Index": "ActivityStory.101100201.4",
+    "Title": "ActivityStory.101100201.1",
+    "Desc": "ActivityStory.101100201.2",
+    "Type": 3,
+    "StoryId": "STev_11_01",
+    "ConditionId": 101100201,
+    "Aim": "ActivityStory.101100201.3",
+    "AvgLuaName": "STev_11_01",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg1"
+  },
+  "101100202": {
+    "Id": 101100202,
+    "ChapterId": 10110,
+    "Index": "ActivityStory.101100202.4",
+    "Title": "ActivityStory.101100202.1",
+    "Desc": "ActivityStory.101100202.2",
+    "Type": 3,
+    "StoryId": "STev_11_02",
+    "ConditionId": 101100202,
+    "ParentStoryId": [
+      "STev_11_01"
+    ],
+    "Aim": "ActivityStory.101100202.3",
+    "AvgLuaName": "STev_11_02",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg2"
+  },
+  "101100203": {
+    "Id": 101100203,
+    "ChapterId": 10110,
+    "Index": "ActivityStory.101100203.4",
+    "Title": "ActivityStory.101100203.1",
+    "Desc": "ActivityStory.101100203.2",
+    "Type": 3,
+    "StoryId": "STev_11_03",
+    "ConditionId": 101100203,
+    "ParentStoryId": [
+      "STev_11_02"
+    ],
+    "Aim": "ActivityStory.101100203.3",
+    "AvgLuaName": "STev_11_03",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg3"
+  },
+  "101100204": {
+    "Id": 101100204,
+    "ChapterId": 10110,
+    "Index": "ActivityStory.101100204.4",
+    "Title": "ActivityStory.101100204.1",
+    "Desc": "ActivityStory.101100204.2",
+    "Type": 3,
+    "StoryId": "STev_11_04",
+    "ConditionId": 101100204,
+    "ParentStoryId": [
+      "STev_11_03"
+    ],
+    "Aim": "ActivityStory.101100204.3",
+    "AvgLuaName": "STev_11_04",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg1"
+  },
+  "101100205": {
+    "Id": 101100205,
+    "ChapterId": 10110,
+    "Index": "ActivityStory.101100205.4",
+    "Title": "ActivityStory.101100205.1",
+    "Desc": "ActivityStory.101100205.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_11_BT01",
+    "FloorId": [
+      301443,
+      301444,
+      301445
+    ],
+    "TrialBuild": 200091,
+    "PreviewMonsterGroupId": 301425,
+    "Recommend": "40",
+    "ConditionId": 101100205,
+    "ParentStoryId": [
+      "STev_11_04"
+    ],
+    "Aim": "ActivityStory.101100205.3",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg4"
+  },
+  "101100206": {
+    "Id": 101100206,
+    "ChapterId": 10110,
+    "Index": "ActivityStory.101100206.4",
+    "Title": "ActivityStory.101100206.1",
+    "Desc": "ActivityStory.101100206.2",
+    "Type": 3,
+    "StoryId": "STev_11_05",
+    "ConditionId": 101100206,
+    "ParentStoryId": [
+      "STev_11_BT01"
+    ],
+    "Aim": "ActivityStory.101100206.3",
+    "AvgLuaName": "STev_11_05",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg2"
+  },
+  "101100207": {
+    "Id": 101100207,
+    "ChapterId": 10110,
+    "Index": "ActivityStory.101100207.4",
+    "Title": "ActivityStory.101100207.1",
+    "Desc": "ActivityStory.101100207.2",
+    "Type": 3,
+    "StoryId": "STev_11_06",
+    "ConditionId": 101100207,
+    "ParentStoryId": [
+      "STev_11_05"
+    ],
+    "Aim": "ActivityStory.101100207.3",
+    "AvgLuaName": "STev_11_06",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg3"
+  },
+  "101100208": {
+    "Id": 101100208,
+    "ChapterId": 10110,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101100208.4",
+    "Title": "ActivityStory.101100208.1",
+    "Desc": "ActivityStory.101100208.2",
+    "Type": 3,
+    "StoryId": "STev_11_07",
+    "ConditionId": 101100208,
+    "ParentStoryId": [
+      "STev_11_06"
+    ],
+    "Aim": "ActivityStory.101100208.3",
+    "AvgLuaName": "STev_11_07",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg1"
+  },
+  "101100209": {
+    "Id": 101100209,
+    "ChapterId": 10110,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101100209.4",
+    "Title": "ActivityStory.101100209.1",
+    "Desc": "ActivityStory.101100209.2",
+    "Type": 3,
+    "IsBattle": true,
+    "StoryId": "STev_11_BT02",
+    "FloorId": [
+      301446
+    ],
+    "TrialBuild": 200099,
+    "PreviewMonsterGroupId": 301426,
+    "Recommend": "40",
+    "ConditionId": 101100209,
+    "ParentStoryId": [
+      "STev_11_07"
+    ],
+    "Aim": "ActivityStory.101100209.3",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg4"
+  },
+  "101100210": {
+    "Id": 101100210,
+    "ChapterId": 10110,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101100210.4",
+    "Title": "ActivityStory.101100210.1",
+    "Desc": "ActivityStory.101100210.2",
+    "Type": 3,
+    "StoryId": "STev_11_08",
+    "ConditionId": 101100210,
+    "ParentStoryId": [
+      "STev_11_BT02"
+    ],
+    "Aim": "ActivityStory.101100210.3",
+    "AvgLuaName": "STev_11_08",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":30}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg2"
+  },
+  "101100211": {
+    "Id": 101100211,
+    "ChapterId": 10110,
+    "DayOpen": 1,
+    "Index": "ActivityStory.101100211.4",
+    "Title": "ActivityStory.101100211.1",
+    "Desc": "ActivityStory.101100211.2",
+    "Type": 3,
+    "StoryId": "STev_11_09",
+    "ConditionId": 101100211,
+    "ParentStoryId": [
+      "STev_11_08"
+    ],
+    "Aim": "ActivityStory.101100211.3",
+    "AvgLuaName": "STev_11_09",
+    "AvgMotion": "style_44",
+    "FirstCompleteReward": "{\"2\":50}",
+    "Icon": "Icon/ActivityStory/zs_summeradv_story_bg3"
+  }
+}

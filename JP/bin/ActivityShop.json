@@ -1,0 +1,166 @@
+{
+  "1001": {
+    "Id": 1001,
+    "Name": "ActivityShop.1001.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73101,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "1002": {
+    "Id": 1002,
+    "Name": "ActivityShop.1002.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73102,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "1003": {
+    "Id": 1003,
+    "Name": "ActivityShop.1003.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73103,
+    "ExchangeItemId": 1,
+    "Rate": 300.0,
+    "OtherExchangeItem1": [
+      120002,
+      1,
+      200000
+    ]
+  },
+  "1004": {
+    "Id": 1004,
+    "Name": "ActivityShop.1004.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73104,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "1005": {
+    "Id": 1005,
+    "Name": "ActivityShop.1005.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73105,
+    "ExchangeItemId": 1,
+    "Rate": 300.0,
+    "OtherExchangeItem1": [
+      120003,
+      1,
+      200000
+    ]
+  },
+  "1006": {
+    "Id": 1006,
+    "Name": "ActivityShop.1006.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73106,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "3001": {
+    "Id": 3001,
+    "Name": "ActivityShop.3001.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73202,
+    "ExchangeItemId": 1,
+    "Rate": 1500.0
+  },
+  "1007": {
+    "Id": 1007,
+    "Name": "ActivityShop.1007.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73107,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "1008": {
+    "Id": 1008,
+    "Name": "ActivityShop.1008.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73108,
+    "ExchangeItemId": 1,
+    "Rate": 300.0,
+    "OtherExchangeItem1": [
+      120004,
+      1,
+      200000
+    ]
+  },
+  "1009": {
+    "Id": 1009,
+    "Name": "ActivityShop.1009.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73109,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "3002": {
+    "Id": 3002,
+    "Name": "ActivityShop.3002.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73202,
+    "ExchangeItemId": 1,
+    "Rate": 1500.0
+  },
+  "1010": {
+    "Id": 1010,
+    "Name": "ActivityShop.1010.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73110,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "1011": {
+    "Id": 1011,
+    "Name": "ActivityShop.1011.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73111,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "1012": {
+    "Id": 1012,
+    "Name": "ActivityShop.1012.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73101,
+    "ExchangeItemId": 1,
+    "Rate": 300.0,
+    "OtherExchangeItem1": [
+      120005,
+      1,
+      200000
+    ]
+  },
+  "1013": {
+    "Id": 1013,
+    "Name": "ActivityShop.1013.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73112,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "1014": {
+    "Id": 1014,
+    "Name": "ActivityShop.1014.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73113,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "1015": {
+    "Id": 1015,
+    "Name": "ActivityShop.1015.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73114,
+    "ExchangeItemId": 1,
+    "Rate": 300.0
+  },
+  "3003": {
+    "Id": 3003,
+    "Name": "ActivityShop.3003.1",
+    "Sequence": 1,
+    "CurrencyItemId": 73202,
+    "ExchangeItemId": 1,
+    "Rate": 1500.0
+  }
+}
