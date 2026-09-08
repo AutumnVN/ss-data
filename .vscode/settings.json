@@ -1,0 +1,10 @@
+{
+    "search.exclude": {
+        "**/CN*": true,
+        "**/JP*": true,
+        "**/KR*": true,
+        "**/TW*": true,
+        "**/EN*/language/zh_CN": true,
+        "**/_Metadata": true,
+    }
+}

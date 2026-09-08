@@ -1,0 +1,1041 @@
+const { writeFileSync } = require('fs');
+const { collectParamsFrom, resolveParam, resolveParamsTooltips, ATTR_TYPE, DAMAGE_TYPE, EFFECT_TYPE, CORNER_TYPE, getEffectData, PARAM_TYPE, formatEffectType, formatAddAttrType, getSkillType, SKILL_SLOT_TYPE, collectUnusedParamsFrom, collectPotentialHiddenParamsFrom, iHateFloatingPointNumber, CHARACTER_ATTACK_TYPE, BULLET_TYPE, CHARGE_RATE_TYPE, badScaleAfterLevel } = require('./utils');
+const CHARACTER = require('./EN/bin/Character.json');
+const CHARACTERADVANCE = require('./EN/bin/CharacterAdvance.json');
+const CHARACTERDES = require('./EN/bin/CharacterDes.json');
+const CHARACTERSKILLUPGRADE = require('./EN/bin/CharacterSkillUpgrade.json');
+const CHARPOTENTIAL = require('./EN/bin/CharPotential.json');
+const SKILL = require('./EN/bin/Skill.json');
+const HITDAMAGE = require('./EN/bin/HitDamage.json');
+const EFFECT = require('./EN/bin/Effect.json');
+const EFFECTVALUE = require('./EN/bin/EffectValue.json');
+const BUFF = require('./EN/bin/Buff.json');
+const BUFFVALUE = require('./EN/bin/BuffValue.json');
+const ITEM = require('./EN/bin/Item.json');
+const POTENTIAL = require('./EN/bin/Potential.json');
+const ATTRIBUTE = require('./EN/bin/Attribute.json');
+const AFFINITYGIFT = require('./EN/bin/AffinityGift.json');
+const TALENT = require('./EN/bin/Talent.json');
+const TALENTGROUP = require('./EN/bin/TalentGroup.json');
+const DATINGCHARACTEREVENT = require('./EN/bin/DatingCharacterEvent.json');
+const DATINGBRANCH = require('./EN/bin/DatingBranch.json');
+const ONCEADDITTIONALATTRIBUTEVALUE = require('./EN/bin/OnceAdditionalAttributeValue.json');
+const GACHA = require('./EN/bin/Gacha.json');
+const GACHAPKG = require('./EN/bin/GachaPkg.json');
+const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
+const LANG_CHARACTERTAG = require('./EN/language/en_US/CharacterTag.json');
+const LANG_SKILL = require('./EN/language/en_US/Skill.json');
+const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
+const LANG_ITEM = require('./EN/language/en_US/Item.json');
+const LANG_POTENTIAL = require('./EN/language/en_US/Potential.json');
+const LANG_TALENT = require('./EN/language/en_US/Talent.json');
+const LANG_TALENTGROUP = require('./EN/language/en_US/TalentGroup.json');
+const LANG_DATINGCHARACTEREVENT = require('./EN/language/en_US/DatingCharacterEvent.json');
+const LANG_DATINGBRANCH = require('./EN/language/en_US/DatingBranch.json');
+const LANG_FORCE = require('./EN/language/en_US/Force.json');
+const LANG_CHARACTERDES = require('./EN/language/en_US/CharacterDes.json');
+const LANG_CHARACTERARCHIVEBASEINFO = require('./EN/language/en_US/CharacterArchiveBaseInfo.json');
+const CN_CHARACTER = require('./CN/language/zh_CN/Character.json');
+const CN_CHARACTERTAG = require('./CN/language/zh_CN/CharacterTag.json');
+const CN_SKILL = require('./CN/language/zh_CN/Skill.json');
+const CN_UITEXT = require('./CN/language/zh_CN/UIText.json');
+const CN_ITEM = require('./CN/language/zh_CN/Item.json');
+const CN_POTENTIAL = require('./CN/language/zh_CN/Potential.json');
+const CN_TALENT = require('./CN/language/zh_CN/Talent.json');
+const CN_TALENTGROUP = require('./CN/language/zh_CN/TalentGroup.json');
+const CN_DATINGCHARACTEREVENT = require('./CN/language/zh_CN/DatingCharacterEvent.json');
+const CN_DATINGBRANCH = require('./CN/language/zh_CN/DatingBranch.json');
+const CN_FORCE = require('./CN/language/zh_CN/Force.json');
+const CN_CHARACTERDES = require('./CN/language/zh_CN/CharacterDes.json');
+const CN_CHARACTERARCHIVEBASEINFO = require('./CN/language/zh_CN/CharacterArchiveBaseInfo.json');
+const JP_CHARACTER = require('./JP/language/ja_JP/Character.json');
+const JP_CHARACTERTAG = require('./JP/language/ja_JP/CharacterTag.json');
+const JP_SKILL = require('./JP/language/ja_JP/Skill.json');
+const JP_UITEXT = require('./JP/language/ja_JP/UIText.json');
+const JP_ITEM = require('./JP/language/ja_JP/Item.json');
+const JP_POTENTIAL = require('./JP/language/ja_JP/Potential.json');
+const JP_TALENT = require('./JP/language/ja_JP/Talent.json');
+const JP_TALENTGROUP = require('./JP/language/ja_JP/TalentGroup.json');
+const JP_DATINGCHARACTEREVENT = require('./JP/language/ja_JP/DatingCharacterEvent.json');
+const JP_DATINGBRANCH = require('./JP/language/ja_JP/DatingBranch.json');
+const JP_FORCE = require('./JP/language/ja_JP/Force.json');
+const JP_CHARACTERDES = require('./JP/language/ja_JP/CharacterDes.json');
+const JP_CHARACTERARCHIVEBASEINFO = require('./JP/language/ja_JP/CharacterArchiveBaseInfo.json');
+const KR_CHARACTER = require('./KR/language/ko_KR/Character.json');
+const KR_CHARACTERTAG = require('./KR/language/ko_KR/CharacterTag.json');
+const KR_SKILL = require('./KR/language/ko_KR/Skill.json');
+const KR_UITEXT = require('./KR/language/ko_KR/UIText.json');
+const KR_ITEM = require('./KR/language/ko_KR/Item.json');
+const KR_POTENTIAL = require('./KR/language/ko_KR/Potential.json');
+const KR_TALENT = require('./KR/language/ko_KR/Talent.json');
+const KR_TALENTGROUP = require('./KR/language/ko_KR/TalentGroup.json');
+const KR_DATINGCHARACTEREVENT = require('./KR/language/ko_KR/DatingCharacterEvent.json');
+const KR_DATINGBRANCH = require('./KR/language/ko_KR/DatingBranch.json');
+const KR_FORCE = require('./KR/language/ko_KR/Force.json');
+const KR_CHARACTERDES = require('./KR/language/ko_KR/CharacterDes.json');
+const KR_CHARACTERARCHIVEBASEINFO = require('./KR/language/ko_KR/CharacterArchiveBaseInfo.json');
+const characterId = require('./characterid.json');
+
+const character = {};
+const unreleased = {};
+
+Object.keys(POTENTIAL['513332']).forEach(key => {
+    if (key.startsWith('Param')) {
+        POTENTIAL['513332'][key] = POTENTIAL['513332'][key].replace(/^Effect/, 'OnceAdditionalAttribute').replace(/EffectTypeFirstSubtype/, 'AttributeType1').replace(/EffectTypeParam1/, 'Value1').replace(/HdPct/, '10KHdPct');
+    }
+});
+
+for (let id = 100; id <= 200; id++) {
+    let char = undefined;
+
+    if (!CHARACTER[id] && (getUpgrades(id).length || getSkillUpgrades(id).length)) {
+        char = {
+            id: +id,
+            name: `${id} ${characterId[id] || ''}`,
+            desc: '',
+            star: 0,
+            element: getElementFromSkillUpgrade(id) || '',
+            class: '',
+            attackType: '',
+            style: '',
+            force: '',
+            tag: [],
+            cnCv: '',
+            jpCv: '',
+            birthday: '',
+            source: [],
+            loveGift: [],
+            hateGift: [],
+            date: [],
+            fixedStat: {},
+            normalAtk: undefined,
+            skill: undefined,
+            supportSkill: undefined,
+            ultimate: undefined,
+            special: [],
+            potential: {},
+            talent: [],
+            stat: {},
+            upgrade: getUpgrades(id),
+            skillUpgrade: getSkillUpgrades(id),
+        };
+    } else if (CHARACTER[id]) {
+        char = {
+            id: +id,
+            name: LANG_CHARACTER[CHARACTER[id].Name],
+            star: CHARACTER[id].Grade === 1 ? 5 : 4,
+            element: LANG_UITEXT[`UIText.T_Element_Attr_${CHARACTER[id].EET}.1`],
+            class: LANG_UITEXT[`UIText.Char_JobClass_${CHARACTER[id].Class}.1`],
+            attackType: CHARACTER_ATTACK_TYPE[CHARACTER[id].CharacterAttackType],
+            style: LANG_CHARACTERTAG[`CharacterTag.${CHARACTERDES[id].Tag[1]}.1`],
+            force: LANG_FORCE[`Force.${CHARACTERDES[id].Force}.1`],
+            tag: CHARACTERDES[id].Tag.map(tagId => LANG_CHARACTERTAG[`CharacterTag.${tagId}.1`]),
+            cnCv: LANG_CHARACTERDES[CHARACTERDES[id].CnCv],
+            jpCv: LANG_CHARACTERDES[CHARACTERDES[id].JpCv],
+            source: getSource(id),
+            birthday: LANG_CHARACTERARCHIVEBASEINFO[`CharacterArchiveBaseInfo.${id}02.2`],
+            loveGift: getGifts(CHARACTERDES[id].PreferTags),
+            hateGift: getGifts(CHARACTERDES[id].HateTags),
+            date: getDates(id),
+            fixedStat: getFixedStats(id),
+            normalAtk: !SKILL[CHARACTER[id].NormalAtkId] ? undefined : {
+                id: CHARACTER[id].NormalAtkId,
+                name: LANG_SKILL[SKILL[CHARACTER[id].NormalAtkId].Title],
+                nameCN: CN_SKILL[SKILL[CHARACTER[id].NormalAtkId].Title],
+                nameJP: JP_SKILL[SKILL[CHARACTER[id].NormalAtkId].Title],
+                nameKR: KR_SKILL[SKILL[CHARACTER[id].NormalAtkId].Title],
+                energyLimit: SKILL[CHARACTER[id].NormalAtkId].GetEnergyLimit / 10000,
+                desc: LANG_SKILL[SKILL[CHARACTER[id].NormalAtkId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].NormalAtkId], LANG_SKILL),
+                descCN: CN_SKILL[SKILL[CHARACTER[id].NormalAtkId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].NormalAtkId], CN_SKILL),
+                descJP: JP_SKILL[SKILL[CHARACTER[id].NormalAtkId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].NormalAtkId], JP_SKILL),
+                descKR: KR_SKILL[SKILL[CHARACTER[id].NormalAtkId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].NormalAtkId], KR_SKILL),
+                damageType: getSkillDamageTypes(CHARACTER[id].NormalAtkId),
+                effectType: getSkillEffectTypes(CHARACTER[id].NormalAtkId),
+                addAttrType: getSkillAddAttrTypes(CHARACTER[id].NormalAtkId),
+                effectData: getSkillEffectData(CHARACTER[id].NormalAtkId),
+                buffIcon: getSkillBuffIcons(CHARACTER[id].NormalAtkId),
+                params: getSkillParams(CHARACTER[id].NormalAtkId),
+                paramsTooltips: getSkillParamsTooltips(CHARACTER[id].NormalAtkId),
+                icon: SKILL[CHARACTER[id].NormalAtkId].Icon.split('/').pop(),
+            },
+            skill: !SKILL[CHARACTER[id].SkillId] ? undefined : {
+                id: CHARACTER[id].SkillId,
+                name: LANG_SKILL[SKILL[CHARACTER[id].SkillId].Title],
+                nameCN: CN_SKILL[SKILL[CHARACTER[id].SkillId].Title],
+                nameJP: JP_SKILL[SKILL[CHARACTER[id].SkillId].Title],
+                nameKR: KR_SKILL[SKILL[CHARACTER[id].SkillId].Title],
+                cooldown: SKILL[CHARACTER[id].SkillId].SkillCD / 10000 + 's',
+                energyLimit: SKILL[CHARACTER[id].SkillId].GetEnergyLimit / 10000,
+                desc: LANG_SKILL[SKILL[CHARACTER[id].SkillId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].SkillId], LANG_SKILL),
+                descCN: CN_SKILL[SKILL[CHARACTER[id].SkillId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].SkillId], CN_SKILL),
+                descJP: JP_SKILL[SKILL[CHARACTER[id].SkillId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].SkillId], JP_SKILL),
+                descKR: KR_SKILL[SKILL[CHARACTER[id].SkillId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].SkillId], KR_SKILL),
+                damageType: getSkillDamageTypes(CHARACTER[id].SkillId),
+                effectType: getSkillEffectTypes(CHARACTER[id].SkillId),
+                addAttrType: getSkillAddAttrTypes(CHARACTER[id].SkillId),
+                effectData: getSkillEffectData(CHARACTER[id].SkillId),
+                buffIcon: getSkillBuffIcons(CHARACTER[id].SkillId),
+                params: getSkillParams(CHARACTER[id].SkillId),
+                paramsTooltips: getSkillParamsTooltips(CHARACTER[id].SkillId),
+                icon: SKILL[CHARACTER[id].SkillId].Icon.split('/').pop(),
+            },
+            supportSkill: !SKILL[CHARACTER[id].AssistSkillId] ? undefined : {
+                id: CHARACTER[id].AssistSkillId,
+                name: LANG_SKILL[SKILL[CHARACTER[id].AssistSkillId].Title],
+                nameCN: CN_SKILL[SKILL[CHARACTER[id].AssistSkillId].Title],
+                nameJP: JP_SKILL[SKILL[CHARACTER[id].AssistSkillId].Title],
+                nameKR: KR_SKILL[SKILL[CHARACTER[id].AssistSkillId].Title],
+                cooldown: SKILL[CHARACTER[id].AssistSkillId].SkillCD / 10000 + 's',
+                desc: LANG_SKILL[SKILL[CHARACTER[id].AssistSkillId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].AssistSkillId], LANG_SKILL),
+                descCN: CN_SKILL[SKILL[CHARACTER[id].AssistSkillId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].AssistSkillId], CN_SKILL),
+                descJP: JP_SKILL[SKILL[CHARACTER[id].AssistSkillId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].AssistSkillId], JP_SKILL),
+                descKR: KR_SKILL[SKILL[CHARACTER[id].AssistSkillId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].AssistSkillId], KR_SKILL),
+                damageType: getSkillDamageTypes(CHARACTER[id].AssistSkillId),
+                effectType: getSkillEffectTypes(CHARACTER[id].AssistSkillId),
+                addAttrType: getSkillAddAttrTypes(CHARACTER[id].AssistSkillId),
+                effectData: getSkillEffectData(CHARACTER[id].AssistSkillId),
+                buffIcon: getSkillBuffIcons(CHARACTER[id].AssistSkillId),
+                params: getSkillParams(CHARACTER[id].AssistSkillId),
+                paramsTooltips: getSkillParamsTooltips(CHARACTER[id].AssistSkillId),
+                icon: SKILL[CHARACTER[id].AssistSkillId].Icon.split('/').pop(),
+            },
+            ultimate: !SKILL[CHARACTER[id].UltimateId] ? undefined : {
+                id: CHARACTER[id].UltimateId,
+                name: LANG_SKILL[SKILL[CHARACTER[id].UltimateId].Title],
+                nameCN: CN_SKILL[SKILL[CHARACTER[id].UltimateId].Title],
+                nameJP: JP_SKILL[SKILL[CHARACTER[id].UltimateId].Title],
+                nameKR: KR_SKILL[SKILL[CHARACTER[id].UltimateId].Title],
+                cooldown: SKILL[CHARACTER[id].UltimateId].SkillCD / 10000 + 's',
+                energy: SKILL[CHARACTER[id].UltimateId].UltraEnergy / 10000,
+                desc: LANG_SKILL[SKILL[CHARACTER[id].UltimateId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].UltimateId], LANG_SKILL),
+                descCN: CN_SKILL[SKILL[CHARACTER[id].UltimateId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].UltimateId], CN_SKILL),
+                descJP: JP_SKILL[SKILL[CHARACTER[id].UltimateId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].UltimateId], JP_SKILL),
+                descKR: KR_SKILL[SKILL[CHARACTER[id].UltimateId].Desc] + collectUnusedParamsFrom(SKILL[CHARACTER[id].UltimateId], KR_SKILL),
+                damageType: getSkillDamageTypes(CHARACTER[id].UltimateId),
+                effectType: getSkillEffectTypes(CHARACTER[id].UltimateId),
+                addAttrType: getSkillAddAttrTypes(CHARACTER[id].UltimateId),
+                effectData: getSkillEffectData(CHARACTER[id].UltimateId),
+                buffIcon: getSkillBuffIcons(CHARACTER[id].UltimateId),
+                params: getSkillParams(CHARACTER[id].UltimateId),
+                paramsTooltips: getSkillParamsTooltips(CHARACTER[id].UltimateId),
+                icon: SKILL[CHARACTER[id].UltimateId].Icon.split('/').pop(),
+            },
+            special: getSpecialSkills(id),
+            potential: getPotentials(id),
+            talent: getTalents(id),
+            stat: getStats(id),
+            upgrade: getUpgrades(id),
+            skillUpgrade: getSkillUpgrades(id),
+        };
+    }
+
+    if (!LANG_CHARACTER[CHARACTER[id]?.Name]) {
+        unreleased[id] = char;
+    } else {
+        character[id] = char;
+    }
+}
+
+writeFileSync('./character.json', JSON.stringify(character, null, 4));
+writeFileSync('./unreleased.json', JSON.stringify(unreleased, null, 4));
+
+function getSource(id) {
+    const source = [];
+
+    if (Object.keys(GACHA[1]).some(key => key.endsWith('Pkg') && Object.values(GACHAPKG).some(pkg => pkg.PkgId === GACHA[1][key] && pkg.GoodsId === +id))) {
+        source.push('Permanent');
+        source.push('Standard');
+        source.push('Recruit');
+        source.push('Gacha');
+        source.push('Banner');
+        source.push('f2p');
+    } else if (Object.values(GACHA).some(gacha => gacha.GachaType === 1 && Object.values(GACHAPKG).some(pkg => pkg.PkgId === gacha.ATypeUpPkg && pkg.GoodsId === +id))) {
+        source.push('Limited');
+        source.push('Premium');
+        source.push('Recruit');
+        source.push('Gacha');
+        source.push('Banner');
+        source.push('p2w');
+    } else if (Object.values(GACHA).some(gacha => gacha.GachaType === 8 && Object.values(GACHAPKG).some(pkg => pkg.PkgId === gacha.ATypeUpPkg && pkg.GoodsId === +id))) {
+        source.push('Exclusive');
+        source.push('Premium');
+        source.push('Recruit');
+        source.push('Gacha');
+        source.push('Banner');
+        source.push('p2w');
+    }
+
+    return [...new Set(source)];
+}
+
+function getSkillParams(skillId) {
+    const params = collectParamsFrom(SKILL[skillId]);
+    return resolveParam(params);
+}
+
+function getSkillParamsTooltips(skillId) {
+    const params = collectParamsFrom(SKILL[skillId]);
+    return resolveParamsTooltips(params);
+}
+
+function getSkillDamageTypes(skillId) {
+    const damageTypes = [];
+
+    const params = collectParamsFrom(SKILL[skillId]).filter(p => p && p.startsWith('HitDamage'));
+
+    for (const param of params) {
+        const p = param.split(',');
+        if (!HITDAMAGE[p[2]]) continue;
+
+        const type = HITDAMAGE[p[2]].DamageType;
+        const energyCharge = HITDAMAGE[p[2]].EnergyCharge;
+        const skillSlotType = HITDAMAGE[p[2]].SkillSlotType;
+        const levelData = HITDAMAGE[p[2]].LevelData;
+        const from = skillSlotType && `from ${SKILL_SLOT_TYPE[skillSlotType]}`;
+        const energy = energyCharge && `${iHateFloatingPointNumber(energyCharge, '/', 10000)}e`
+        const scaleWith = [5, 2, 4].includes(levelData) && `scale with ${SKILL_SLOT_TYPE[levelData]}`;
+        const combined = [energy, from, scaleWith].filter(v => v).join(', ');
+
+        damageTypes.push(`${DAMAGE_TYPE[type]}${combined ? ` (${combined})` : ''}`);
+    }
+
+    return [...new Set(damageTypes)];
+}
+
+function getSkillEffectTypes(skillId) {
+    const effectTypes = [];
+
+    const params = collectParamsFrom(SKILL[skillId]).filter(p => p && p.startsWith('Effect'));
+
+    const buffParams = collectParamsFrom(SKILL[skillId]).filter(p => p && (p.startsWith('Buff')));
+
+    for (const param of buffParams) {
+        const p = param.split(',');
+
+        let buffId = +p[2];
+        const possibleBuffIds = [buffId, buffId + 10];
+
+        for (const buffId of possibleBuffIds) {
+            if (!BUFFVALUE[buffId]) continue;
+
+            const effectIds = BUFFVALUE[buffId].Effects || [];
+
+            for (const effectId of effectIds) {
+                if (!EFFECTVALUE[effectId]) continue;
+
+                params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            }
+        }
+    }
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let effectId = +p[2];
+        const possibleEffectIds = [effectId, effectId + 10];
+
+        for (const effectId of possibleEffectIds) {
+            if (!EFFECTVALUE[effectId]) continue;
+
+            let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
+            if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
+            const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+
+            effectTypes.push(formatEffectType(effectId, type, paramType));
+        }
+    }
+
+    return [...new Set(effectTypes)];
+}
+
+function getSkillAddAttrTypes(skillId) {
+    const addAttrTypes = [];
+
+    const params = collectParamsFrom(SKILL[skillId]).filter(p => p && p.startsWith('OnceAdditionalAttribute'));
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let addAttrId = +p[2];
+        const possibleAddAttrIds = [addAttrId, addAttrId + 10];
+
+        for (const addAttrId of possibleAddAttrIds) {
+            if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
+
+            const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
+            const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
+            const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
+            const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
+            const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
+            const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+
+            addAttrTypes.push(formatAddAttrType(type, paramType, element));
+            if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+        }
+    }
+
+    return [...new Set(addAttrTypes)];
+}
+
+function getSkillEffectData(skillId) {
+    const effectDatas = [];
+
+    const params = collectParamsFrom(SKILL[skillId]).filter(p => p && p.startsWith('Effect'));
+
+    for (const param of params) {
+        const p = param.split(',');
+        let effectId = +p[2];
+        if (!EFFECT[effectId]) continue;
+
+        const data = getEffectData(effectId);
+        if (!data) continue;
+
+        effectDatas.push(data);
+    }
+
+    return [...new Set(effectDatas)];
+}
+
+function getSkillBuffIcons(skillId) {
+    const buffIcons = [];
+
+    const params = collectParamsFrom(SKILL[skillId]).filter(p => p && (p.startsWith('Buff') || p.startsWith('Effect') || p.startsWith('OnceAdditionalAttribute')));
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let buffId = +p[2];
+        const possibleBuffIds = [buffId, buffId + 10];
+
+        for (const buffId of possibleBuffIds) {
+            if (!BUFF[buffId]) continue;
+
+            const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+
+            buffIcons.push(icon);
+        }
+    }
+
+    return [...new Set(buffIcons)];
+}
+
+function getUpgrades(charId) {
+    return Object.keys(CHARACTERADVANCE)
+        .filter(key => CHARACTERADVANCE[key].Group === +charId).map(key => {
+            const a = CHARACTERADVANCE[key];
+            const mats = {};
+
+            for (let i = 1; ; i++) {
+                const tidKey = `Tid${i}`;
+                const qtyKey = `Qty${i}`;
+
+                if (!a[tidKey]) break;
+
+                const tid = a[tidKey];
+                const qty = a[qtyKey] || 0;
+                const itemTitle = ITEM[tid] && ITEM[tid].Title;
+                const name = LANG_ITEM[itemTitle];
+
+                mats[name] = qty;
+            }
+
+            mats.Dorra = a.GoldQty;
+
+            return mats;
+        }).filter(mats => Object.keys(mats).length > 1);
+}
+
+function getSkillUpgrades(charId) {
+    return Object.keys(CHARACTERSKILLUPGRADE)
+        .filter(key => CHARACTERSKILLUPGRADE[key].Group === +charId).map(key => {
+            const a = CHARACTERSKILLUPGRADE[key];
+            const mats = {};
+
+            for (let i = 1; ; i++) {
+                const tidKey = `Tid${i}`;
+                const qtyKey = `Qty${i}`;
+
+                if (!a[tidKey]) break;
+
+                const tid = a[tidKey];
+                const qty = a[qtyKey];
+                const name = LANG_ITEM[ITEM[tid].Title];
+
+                mats[name] = qty;
+            }
+
+            mats.Dorra = a.GoldQty;
+
+            return mats;
+        }).filter(mats => Object.keys(mats).length > 1);
+}
+
+function getPotentials(charId) {
+    const pot = CHARPOTENTIAL[charId];
+    if (!pot || !pot.MasterSpecificPotentialIds) return {};
+
+    const allSkillParams = [...getSkillParams(CHARACTER[charId].NormalAtkId), ...getSkillParams(CHARACTER[charId].SkillId), ...getSkillParams(CHARACTER[charId].AssistSkillId), ...getSkillParams(CHARACTER[charId].UltimateId)].filter(p => p);
+
+    return {
+        mainCore: pot.MasterSpecificPotentialIds.map(id => ({
+            id,
+            name: LANG_ITEM[ITEM[id].Title],
+            nameCN: CN_ITEM[ITEM[id].Title],
+            nameJP: JP_ITEM[ITEM[id].Title],
+            nameKR: KR_ITEM[ITEM[id].Title],
+            desc: LANG_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], LANG_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descCN: CN_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], CN_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descJP: JP_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], JP_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descKR: KR_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], KR_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            damageType: getPotentialDamageTypes(id),
+            effectType: getPotentialEffectTypes(id),
+            addAttrType: getPotentialAddAttrTypes(id),
+            effectData: getPotentialEffectData(id),
+            buffIcon: getPotentialBuffIcons(id),
+            params: getPotentialParams(id),
+            paramsTooltips: getPotentialParamsTooltips(id),
+            hiddenParams: getPotentialHiddenParams(id),
+            hiddenParamsTooltips: getPotentialHiddenParamsTooltips(id),
+            icon: (ITEM[id].Icon || ITEM[id].Icon2).split('/').pop(),
+            corner: CORNER_TYPE[POTENTIAL[id].Corner],
+            rarity: getPotentialRarity(id),
+        })),
+        mainNormal: pot.MasterNormalPotentialIds.map(id => ({
+            id,
+            name: LANG_ITEM[ITEM[id].Title],
+            nameCN: CN_ITEM[ITEM[id].Title],
+            nameJP: JP_ITEM[ITEM[id].Title],
+            nameKR: KR_ITEM[ITEM[id].Title],
+            desc: LANG_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], LANG_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descCN: CN_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], CN_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descJP: JP_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], JP_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descKR: KR_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], KR_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            damageType: getPotentialDamageTypes(id),
+            effectType: getPotentialEffectTypes(id),
+            addAttrType: getPotentialAddAttrTypes(id),
+            effectData: getPotentialEffectData(id),
+            buffIcon: getPotentialBuffIcons(id),
+            params: getPotentialParams(id),
+            paramsTooltips: getPotentialParamsTooltips(id),
+            hiddenParams: getPotentialHiddenParams(id),
+            hiddenParamsTooltips: getPotentialHiddenParamsTooltips(id),
+            icon: (ITEM[id].Icon || ITEM[id].Icon2).split('/').pop(),
+            corner: CORNER_TYPE[POTENTIAL[id].Corner],
+            rarity: getPotentialRarity(id),
+            badScaleAfterLevel: badScaleAfterLevel(getPotentialParams(id)),
+        })),
+        common: pot.CommonPotentialIds.map(id => ({
+            id,
+            name: LANG_ITEM[ITEM[id].Title],
+            nameCN: CN_ITEM[ITEM[id].Title],
+            nameJP: JP_ITEM[ITEM[id].Title],
+            nameKR: KR_ITEM[ITEM[id].Title],
+            desc: LANG_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], LANG_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descCN: CN_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], CN_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descJP: JP_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], JP_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descKR: KR_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], KR_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            damageType: getPotentialDamageTypes(id),
+            effectType: getPotentialEffectTypes(id),
+            addAttrType: getPotentialAddAttrTypes(id),
+            effectData: getPotentialEffectData(id),
+            buffIcon: getPotentialBuffIcons(id),
+            params: getPotentialParams(id),
+            paramsTooltips: getPotentialParamsTooltips(id),
+            hiddenParams: getPotentialHiddenParams(id),
+            hiddenParamsTooltips: getPotentialHiddenParamsTooltips(id),
+            icon: (ITEM[id].Icon || ITEM[id].Icon2).split('/').pop(),
+            corner: CORNER_TYPE[POTENTIAL[id].Corner],
+            rarity: getPotentialRarity(id),
+            badScaleAfterLevel: badScaleAfterLevel(getPotentialParams(id)),
+        })),
+        supportCore: pot.AssistSpecificPotentialIds.map(id => ({
+            id,
+            name: LANG_ITEM[ITEM[id].Title],
+            nameCN: CN_ITEM[ITEM[id].Title],
+            nameJP: JP_ITEM[ITEM[id].Title],
+            nameKR: KR_ITEM[ITEM[id].Title],
+            desc: LANG_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], LANG_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descCN: CN_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], CN_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descJP: JP_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], JP_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descKR: KR_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], KR_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            damageType: getPotentialDamageTypes(id),
+            effectType: getPotentialEffectTypes(id),
+            addAttrType: getPotentialAddAttrTypes(id),
+            effectData: getPotentialEffectData(id),
+            buffIcon: getPotentialBuffIcons(id),
+            params: getPotentialParams(id),
+            paramsTooltips: getPotentialParamsTooltips(id),
+            hiddenParams: getPotentialHiddenParams(id),
+            hiddenParamsTooltips: getPotentialHiddenParamsTooltips(id),
+            icon: (ITEM[id].Icon || ITEM[id].Icon2).split('/').pop(),
+            corner: CORNER_TYPE[POTENTIAL[id].Corner],
+            rarity: getPotentialRarity(id),
+        })),
+        supportNormal: pot.AssistNormalPotentialIds.map(id => ({
+            id,
+            name: LANG_ITEM[ITEM[id].Title],
+            nameCN: CN_ITEM[ITEM[id].Title],
+            nameJP: JP_ITEM[ITEM[id].Title],
+            nameKR: KR_ITEM[ITEM[id].Title],
+            desc: LANG_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], LANG_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descCN: CN_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], CN_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descJP: JP_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], JP_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            descKR: KR_POTENTIAL[POTENTIAL[id].Desc] + collectUnusedParamsFrom(POTENTIAL[id], KR_POTENTIAL) + collectPotentialHiddenParamsFrom(POTENTIAL[id], allSkillParams).desc,
+            damageType: getPotentialDamageTypes(id),
+            effectType: getPotentialEffectTypes(id),
+            addAttrType: getPotentialAddAttrTypes(id),
+            effectData: getPotentialEffectData(id),
+            buffIcon: getPotentialBuffIcons(id),
+            params: getPotentialParams(id),
+            paramsTooltips: getPotentialParamsTooltips(id),
+            hiddenParams: getPotentialHiddenParams(id),
+            hiddenParamsTooltips: getPotentialHiddenParamsTooltips(id),
+            icon: (ITEM[id].Icon || ITEM[id].Icon2).split('/').pop(),
+            corner: CORNER_TYPE[POTENTIAL[id].Corner],
+            rarity: getPotentialRarity(id),
+            badScaleAfterLevel: badScaleAfterLevel(getPotentialParams(id)),
+        })),
+    }
+}
+
+function getPotentialParams(potId) {
+    const params = collectParamsFrom(POTENTIAL[potId]);
+    return resolveParam(params);
+}
+
+function getPotentialParamsTooltips(potId) {
+    const params = collectParamsFrom(POTENTIAL[potId]);
+    return resolveParamsTooltips(params);
+}
+
+function getPotentialHiddenParams(potId) {
+    const allSkillParams = [...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].NormalAtkId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].SkillId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].AssistSkillId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].UltimateId)].filter(p => p);
+    const params = collectPotentialHiddenParamsFrom(POTENTIAL[potId], allSkillParams).params;
+    return resolveParam(params);
+}
+
+function getPotentialHiddenParamsTooltips(potId) {
+    const allSkillParams = [...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].NormalAtkId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].SkillId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].AssistSkillId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].UltimateId)].filter(p => p);
+    const params = collectPotentialHiddenParamsFrom(POTENTIAL[potId], allSkillParams).params;
+    return resolveParamsTooltips(params);
+}
+
+function getPotentialDamageTypes(potId) {
+    const damageTypes = [];
+
+    const allSkillParams = [...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].NormalAtkId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].SkillId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].AssistSkillId), ...getSkillParams(CHARACTER[POTENTIAL[potId].CharId].UltimateId)].filter(p => p);
+    const params = collectParamsFrom(POTENTIAL[potId]).filter(p => p && p.startsWith('HitDamage'));
+    const hiddenParams = collectPotentialHiddenParamsFrom(POTENTIAL[potId], allSkillParams).params.filter(p => p && p.startsWith('HitDamage'));
+
+    for (const param of params) {
+        const p = param.split(',');
+        if (!HITDAMAGE[p[2]]) continue;
+
+        const type = HITDAMAGE[p[2]].DamageType;
+        const energyCharge = HITDAMAGE[p[2]].EnergyCharge;
+        const skillSlotType = HITDAMAGE[p[2]].SkillSlotType;
+        const levelData = HITDAMAGE[p[2]].LevelData;
+        const from = skillSlotType && `from ${SKILL_SLOT_TYPE[skillSlotType]}`;
+        const energy = energyCharge && `${iHateFloatingPointNumber(energyCharge, '/', 10000)}e`
+        const scaleWith = [5, 2, 4].includes(levelData) && `scale with ${SKILL_SLOT_TYPE[levelData]}`;
+        const combined = [energy, from, scaleWith].filter(v => v).join(', ');
+
+        damageTypes.push(`${DAMAGE_TYPE[type]}${combined ? ` (${combined})` : ''}`);
+    }
+
+    for (const param of hiddenParams) {
+        const p = param.split(',');
+        if (!HITDAMAGE[p[2]]) continue;
+
+        const type = HITDAMAGE[p[2]].DamageType;
+        const energyCharge = HITDAMAGE[p[2]].EnergyCharge;
+        const skillSlotType = HITDAMAGE[p[2]].SkillSlotType;
+        const levelData = HITDAMAGE[p[2]].LevelData;
+        const from = skillSlotType && `from ${SKILL_SLOT_TYPE[skillSlotType]}`;
+        const energy = energyCharge && `${iHateFloatingPointNumber(energyCharge, '/', 10000)}e`
+        const scaleWith = [5, 2, 4].includes(levelData) && `scale with ${SKILL_SLOT_TYPE[levelData]}`;
+        const combined = [energy, from, scaleWith].filter(v => v).join(', ');
+
+        damageTypes.push(`${DAMAGE_TYPE[type]}${combined ? ` (${combined})` : ''} (hidden)`);
+    }
+
+    return [...new Set(damageTypes)];
+}
+
+function getPotentialEffectTypes(potId) {
+    const effectTypes = [];
+
+    const params = collectParamsFrom(POTENTIAL[potId]).filter(p => p && p.startsWith('Effect'));
+
+    const buffParams = collectParamsFrom(POTENTIAL[potId]).filter(p => p && (p.startsWith('Buff')));
+
+    for (const param of buffParams) {
+        const p = param.split(',');
+
+        let buffId = +p[2];
+        const possibleBuffIds = [buffId, buffId + 10];
+
+        for (const buffId of possibleBuffIds) {
+            if (!BUFFVALUE[buffId]) continue;
+
+            const effectIds = BUFFVALUE[buffId].Effects || [];
+
+            for (const effectId of effectIds) {
+                if (!EFFECTVALUE[effectId]) continue;
+
+                params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            }
+        }
+    }
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let effectId = +p[2];
+        const possibleEffectIds = [effectId, effectId + 10];
+
+        for (const effectId of possibleEffectIds) {
+            if (!EFFECTVALUE[effectId]) continue;
+
+            let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
+            if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
+            const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+
+            effectTypes.push(formatEffectType(effectId, type, paramType));
+        }
+    }
+
+    return [...new Set(effectTypes)];
+}
+
+function getPotentialAddAttrTypes(potId) {
+    const addAttrTypes = [];
+
+    const params = collectParamsFrom(POTENTIAL[potId]).filter(p => p && p.startsWith('OnceAdditionalAttribute'));
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let addAttrId = +p[2];
+        const possibleAddAttrIds = [addAttrId, addAttrId + 10];
+
+        for (const addAttrId of possibleAddAttrIds) {
+            if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
+
+            const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
+            const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
+            const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
+            const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
+            const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
+            const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+
+            addAttrTypes.push(formatAddAttrType(type, paramType, element));
+            if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+        }
+    }
+
+    return [...new Set(addAttrTypes)];
+}
+
+function getPotentialEffectData(potId) {
+    const effectDatas = [];
+
+    const params = collectParamsFrom(POTENTIAL[potId]).filter(p => p && p.startsWith('Effect'));
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let effectId = +p[2];
+        if (!EFFECT[effectId]) continue;
+
+        const data = getEffectData(effectId);
+        if (!data) continue;
+
+        effectDatas.push(data);
+    }
+
+    return [...new Set(effectDatas)];
+}
+
+function getPotentialBuffIcons(potId) {
+    const buffIcons = [];
+
+    const params = collectParamsFrom(POTENTIAL[potId]).filter(p => p && (p.startsWith('Buff') || p.startsWith('Effect') || p.startsWith('OnceAdditionalAttribute')));
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let buffId = +p[2];
+        const possibleBuffIds = [buffId, buffId + 10];
+
+        for (const buffId of possibleBuffIds) {
+            if (!BUFF[buffId]) continue;
+
+            const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+
+            buffIcons.push(icon);
+        }
+    }
+
+    return [...new Set(buffIcons)];
+}
+
+function getPotentialRarity(potId) {
+    const stype = ITEM[potId].Stype;
+    const rarity = ITEM[potId].Rarity;
+
+    if (stype === 42) return 'core';
+    if (stype === 41 && rarity === 1) return 'rare';
+    if (stype === 41 && rarity === 2) return 'common';
+    return 'common';
+}
+
+function getStats(charId) {
+    return Object.keys(ATTRIBUTE)
+        .filter(key => ATTRIBUTE[key].GroupId === +charId)
+        .map(key => {
+            const attr = ATTRIBUTE[key];
+            return {
+                'Level': attr.lvl,
+                'HP': attr.Hp,
+                'ATK': attr.Atk,
+                'DEF': attr.Def,
+                'Crit Rate': attr.CritRate / 100 + '%',
+                'Crit DMG': attr.CritPower / 100 + '%',
+                'Resilience Break Efficiency': attr.ToughnessDamageAdjust / 100 + '%',
+                'VUL Exploit': attr.Suppress ? attr.Suppress / 100 + '%' : '0%',
+            };
+        });
+}
+
+function getFixedStats(charId) {
+    const char = CHARACTER[charId];
+    return {
+        'Charge Rate': CHARGE_RATE_TYPE[char.ChargingRate],
+        'Energy Cost': CHARGE_RATE_TYPE[char.EnergyConsume],
+        'Attack Range': char.VisionAttackRng / 10000,
+        'Walk Speed': char.WalkSpd / 10000,
+        'Run Speed': char.RunSpd / 10000,
+        'Bullet Type': char.BulletType ? BULLET_TYPE[char.BulletType] : undefined,
+        'Ammo': char.Ammo ? char.Ammo : undefined,
+    };
+}
+
+function getGifts(tagIds) {
+    if (!tagIds || tagIds.length === 0) return [];
+
+    return tagIds.map(tagId => {
+        const giftIds = Object.keys(AFFINITYGIFT)
+            .filter(key => AFFINITYGIFT[key].Tags.includes(tagId));
+
+        return giftIds.map(giftId => LANG_ITEM[ITEM[giftId].Title]);
+    }).flat();
+}
+
+function getTalents(charId) {
+    return Object.keys(TALENTGROUP)
+        .filter(key => TALENTGROUP[key].CharId === +charId).map(groupId => {
+            const talentIds = Object.keys(TALENT)
+                .filter(key => TALENT[key].GroupId === +groupId);
+
+            const last = talentIds.pop();
+            talentIds.unshift(last);
+
+            return {
+                name: LANG_TALENTGROUP[TALENTGROUP[groupId].Title],
+                boost: talentIds.map((talentId, index) => ({
+                    name: LANG_TALENT[TALENT[talentId].Title],
+                    nameCN: CN_TALENT[TALENT[talentId].Title],
+                    nameJP: JP_TALENT[TALENT[talentId].Title],
+                    nameKR: KR_TALENT[TALENT[talentId].Title],
+                    desc: LANG_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], LANG_TALENT),
+                    descCN: CN_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], CN_TALENT),
+                    descJP: JP_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], JP_TALENT),
+                    descKR: KR_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], KR_TALENT),
+                    effectType: getTalentEffectTypes(talentId, index),
+                    addAttrType: getTalentAddAttrTypes(talentId, index),
+                    effectData: getTalentEffectData(talentId),
+                    buffIcon: getTalentBuffIcons(talentId, index),
+                    params: getTalentParams(talentId),
+                    paramsTooltips: getTalentParamsTooltips(talentId),
+                })),
+            };
+        });
+}
+
+function getTalentParams(talentId) {
+    const params = collectParamsFrom(TALENT[talentId]);
+    return resolveParam(params);
+}
+
+function getTalentParamsTooltips(talentId) {
+    const params = collectParamsFrom(TALENT[talentId]);
+    return resolveParamsTooltips(params);
+}
+
+function getTalentEffectTypes(talentId, index) {
+    const effectTypes = [];
+
+    const params = collectParamsFrom(TALENT[talentId]).filter(p => p && p.startsWith('Effect'));
+
+    const buffParams = collectParamsFrom(TALENT[talentId]).filter(p => p && (p.startsWith('Buff')));
+
+    for (const param of buffParams) {
+        const p = param.split(',');
+
+        let buffId = +p[2];
+        const possibleBuffIds = [buffId];
+        if (index === 0 || !BUFFVALUE[buffId]) possibleBuffIds.push(buffId + 10);
+
+        for (const buffId of possibleBuffIds) {
+            if (!BUFFVALUE[buffId]) continue;
+
+            const effectIds = BUFFVALUE[buffId].Effects || [];
+
+            for (const effectId of effectIds) {
+                if (!EFFECTVALUE[effectId]) continue;
+
+                params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+            }
+        }
+    }
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let effectId = +p[2];
+        const possibleEffectIds = [effectId];
+        if (index === 0 || !EFFECTVALUE[effectId]) possibleEffectIds.push(effectId + 10);
+
+        for (const effectId of possibleEffectIds) {
+            if (!EFFECTVALUE[effectId]) continue;
+
+            let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
+            if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
+            const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
+
+            effectTypes.push(formatEffectType(effectId, type, paramType));
+        }
+    }
+
+    return [...new Set(effectTypes)];
+}
+
+function getTalentAddAttrTypes(talentId, index) {
+    const addAttrTypes = [];
+
+    const params = collectParamsFrom(TALENT[talentId]).filter(p => p && p.startsWith('OnceAdditionalAttribute'));
+
+    for (const param of params) {
+        const p = param.split(',');
+        let addAttrId = +p[2];
+        const possibleAddAttrIds = [addAttrId];
+        if (index === 0 || !ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) possibleAddAttrIds.push(addAttrId + 10);
+
+        for (const addAttrId of possibleAddAttrIds) {
+            if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) continue;
+
+            const element = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType1;
+            const type = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType1;
+            const paramType = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType1;
+            const element2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ElementType2;
+            const type2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].AttributeType2;
+            const paramType2 = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId].ParameterType2;
+
+            addAttrTypes.push(formatAddAttrType(type, paramType, element));
+            if (type2 && paramType2) addAttrTypes.push(formatAddAttrType(type2, paramType2, element2));
+        }
+    }
+
+    return [...new Set(addAttrTypes)];
+}
+
+function getTalentEffectData(talentId) {
+    const effectDatas = [];
+
+    const params = collectParamsFrom(TALENT[talentId]).filter(p => p && p.startsWith('Effect'));
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let effectId = +p[2];
+        if (!EFFECT[effectId]) continue;
+
+        const data = getEffectData(effectId);
+        if (!data) continue;
+
+        effectDatas.push(data);
+    }
+
+    return [...new Set(effectDatas)];
+}
+
+function getTalentBuffIcons(talentId, index) {
+    const buffIcons = [];
+
+    const params = collectParamsFrom(TALENT[talentId]).filter(p => p && (p.startsWith('Buff') || p.startsWith('Effect') || p.startsWith('OnceAdditionalAttribute')));
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        let buffId = +p[2];
+        const possibleBuffIds = [buffId];
+        if (index === 0 || !BUFF[buffId]) possibleBuffIds.push(buffId + 10);
+
+        for (const buffId of possibleBuffIds) {
+            if (!BUFF[buffId]) continue;
+
+            const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
+
+            buffIcons.push(icon);
+        }
+    }
+
+    return [...new Set(buffIcons)];
+}
+
+function getDates(charId) {
+    return Object.keys(DATINGCHARACTEREVENT)
+        .filter(key => DATINGCHARACTEREVENT[key].DatingEventParams[0] === +charId).map(eventId => {
+            return {
+                id: +eventId,
+                name: LANG_DATINGCHARACTEREVENT[DATINGCHARACTEREVENT[eventId].Name],
+                clue: LANG_DATINGCHARACTEREVENT[DATINGCHARACTEREVENT[eventId].Clue],
+                secondChoice: LANG_DATINGBRANCH[DATINGBRANCH[`${DATINGCHARACTEREVENT[eventId].DatingEventParams[1]}001`][`Option${DATINGCHARACTEREVENT[eventId].BranchTag}`]],
+            }
+        });
+}
+
+function getSpecialSkills(id) {
+    const hitdamage = HITDAMAGE[`${CHARACTER[id].SpecialSkillId}1`] || HITDAMAGE[`${CHARACTER[id].DodgeId}1`];
+    if (!hitdamage) return;
+
+    const type = HITDAMAGE[`${CHARACTER[id].SpecialSkillId}1`] ? 'Special' : 'Dodge';
+    const params = hitdamage.SkillPercentAmend.filter(v => v !== 0).map(v => v / 10000 + '%');
+
+    return {
+        id: type === 'Special' ? CHARACTER[id].SpecialSkillId : CHARACTER[id].DodgeId,
+        type,
+        name: hitdamage.HitdamageInfo,
+        params: params.every(v => v === params[0]) ? params[0] : params.join('/'),
+        damageType: DAMAGE_TYPE[hitdamage.DamageType],
+    };
+}
+
+function getElementFromSkillUpgrade(charId) {
+    const skillUpgrades = Object.keys(CHARACTERSKILLUPGRADE)
+        .filter(key => CHARACTERSKILLUPGRADE[key].Group === +charId);
+    if (!skillUpgrades || skillUpgrades.length === 0) return '';
+
+    const lastSkillUpgrade = CHARACTERSKILLUPGRADE[skillUpgrades[skillUpgrades.length - 1]];
+    const elementMap = {
+        0: 'Terra',
+        1: 'Umbra',
+        2: 'Ignis',
+        4: 'Ventus',
+        5: 'Lux',
+        6: 'Aqua'
+    };
+
+    return elementMap[`${lastSkillUpgrade.Tid1}`.slice(3, 4)] || '';
+}

@@ -1,0 +1,155 @@
+{
+    "lv70": {
+        "attrGroup": [
+            {
+                "weight": "30%",
+                "attr": [
+                    "HP: 680 / 850 / 1020 / 2040",
+                    "ATK: 70 / 88 / 105 / 210",
+                    "DEF: 35 / 44 / 53 / 105",
+                    "HP: 4% / 5% / 6% / 12%",
+                    "ATK: 4% / 5% / 6% / 12%",
+                    "DEF: 10% / 12.5% / 15% / 30%"
+                ]
+            },
+            {
+                "weight": "27.65%",
+                "attr": [
+                    "Auto Attack Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Skill Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Ultimate Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Mark Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Minion Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Derivative Crit Rate: 5% / 6.3% / 7.5% / 15%"
+                ]
+            },
+            {
+                "weight": "34.35%",
+                "attr": [
+                    "Crit DMG: 8% / 10% / 12% / 24%",
+                    "Elemental DMG: 4% / 5% / 6% / 12%",
+                    "Auto Attack DMG: 10% / 12.5% / 15% / 30%",
+                    "Skill DMG: 7% / 8% / 10% / 20%",
+                    "Ultimate DMG: 10% / 13% / 15% / 30%",
+                    "Mark DMG: 27% / 33% / 40% / 80%",
+                    "Minion DMG: 7% / 8% / 10% / 20%",
+                    "Derivative DMG: 7% / 8% / 10% / 20%"
+                ]
+            },
+            {
+                "weight": "8%",
+                "attr": [
+                    "Crit Rate: 5% / 6.3% / 7.5% / 15%*",
+                    "Elemental PEN: 35 / 40 / 53 / 110*",
+                    "Charge Efficiency (Main): 10% / 12.5% / 15% / 30%",
+                    "Charge Efficiency (Support): 13.5% / 17% / 20.3% / 40%"
+                ]
+            }
+        ]
+    },
+    "lv80": {
+        "attrGroup": [
+            {
+                "weight": "30%",
+                "attr": [
+                    "HP: 680 / 850 / 1020 / 2040",
+                    "ATK: 70 / 88 / 105 / 210",
+                    "DEF: 35 / 44 / 53 / 105",
+                    "HP: 4% / 5% / 6% / 12%",
+                    "ATK: 4% / 5% / 6% / 12%",
+                    "DEF: 10% / 12.5% / 15% / 30%"
+                ]
+            },
+            {
+                "weight": "27.65%",
+                "attr": [
+                    "Auto Attack Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Skill Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Ultimate Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Mark Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Minion Crit Rate: 5% / 6.3% / 7.5% / 15%",
+                    "Derivative Crit Rate: 5% / 6.3% / 7.5% / 15%"
+                ]
+            },
+            {
+                "weight": "34.35%",
+                "attr": [
+                    "Crit DMG: 8% / 10% / 12% / 24%",
+                    "Elemental DMG: 4% / 5% / 6% / 12%",
+                    "Auto Attack DMG: 10% / 12.5% / 15% / 30%",
+                    "Skill DMG: 7% / 8% / 10% / 20%",
+                    "Ultimate DMG: 10% / 13% / 15% / 30%",
+                    "Mark DMG: 27% / 33% / 40% / 80%",
+                    "Minion DMG: 7% / 8% / 10% / 20%",
+                    "Derivative DMG: 7% / 8% / 10% / 20%"
+                ]
+            },
+            {
+                "weight": "8%",
+                "attr": [
+                    "Crit Rate: 5% / 6.3% / 7.5% / 15%*",
+                    "Elemental PEN: 35 / 40 / 53 / 110*",
+                    "Charge Efficiency (Main): 10% / 12.5% / 15% / 30%",
+                    "Charge Efficiency (Support): 13.5% / 17% / 20.3% / 40%"
+                ]
+            }
+        ],
+        "uniqueAttrGroup": {
+            "uniqueAttrGroupProb": "40%",
+            "guaranteeCount": 40,
+            "uniqueAttrNumWeight": {
+                "1": "75%",
+                "2": "20%",
+                "3": "4.5%",
+                "4": "0.5%"
+            },
+            "attr": [
+                "Auto Attack: 1 / 2 / 3*",
+                "Main Skill: 1 / 2 / 3*",
+                "Support Skill: 1 / 2 / 3*",
+                "Ultimate: 1 / 2 / 3*"
+            ]
+        }
+    },
+    "lv90": {
+        "attrGroup": [
+            {
+                "weight": "51.17%",
+                "attr": [
+                    "HP: 680 / 850 / 1020 / 2040",
+                    "ATK: 70 / 88 / 105 / 210",
+                    "DEF: 35 / 44 / 53 / 105",
+                    "HP: 4% / 5% / 6% / 12%",
+                    "ATK: 4% / 5% / 6% / 12%",
+                    "DEF: 10% / 12.5% / 15% / 30%"
+                ]
+            },
+            {
+                "weight": "48.83%",
+                "attr": [
+                    "Crit DMG: 8% / 10% / 12% / 24%",
+                    "Elemental DMG: 4% / 5% / 6% / 12%",
+                    "Auto Attack DMG: 10% / 12.5% / 15% / 30%",
+                    "Skill DMG: 7% / 8% / 10% / 20%",
+                    "Ultimate DMG: 10% / 13% / 15% / 30%",
+                    "Mark DMG: 27% / 33% / 40% / 80%",
+                    "Minion DMG: 7% / 8% / 10% / 20%",
+                    "Derivative DMG: 7% / 8% / 10% / 20%"
+                ]
+            }
+        ],
+        "uniqueAttrGroup": {
+            "uniqueAttrGroupProb": "33.3%",
+            "guaranteeCount": 48,
+            "uniqueAttrNumWeight": {
+                "1": "67%",
+                "2": "26.5%",
+                "3": "5%",
+                "4": "1.5%"
+            },
+            "attr": [
+                "Potential: 1 / 2 / 3*"
+            ]
+        }
+    }
+}
