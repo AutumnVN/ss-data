@@ -12,7 +12,7 @@
     "WorldClass": 1,
     "MaxStar": 3,
     "TokenRate": 110,
-    "DisplayTokenRate": 10
+    "DisplayMaxStar": 10
   },
   "3": {
     "Level": 3,
@@ -20,7 +20,7 @@
     "WorldClass": 1,
     "MaxStar": 3,
     "TokenRate": 110,
-    "DisplayLuckyRate": 5
+    "DisplayTokenRate": 5
   },
   "4": {
     "Level": 4,
@@ -28,7 +28,7 @@
     "WorldClass": 1,
     "MaxStar": 3,
     "TokenRate": 120,
-    "DisplayTokenRate": 10
+    "DisplayMaxStar": 10
   },
   "5": {
     "Level": 5,
@@ -36,7 +36,7 @@
     "WorldClass": 12,
     "MaxStar": 3,
     "TokenRate": 120,
-    "DisplayFreeRate": 3
+    "DisplayAddRate": 3
   },
   "6": {
     "Level": 6,
@@ -44,8 +44,10 @@
     "WorldClass": 12,
     "MaxStar": 4,
     "TokenRate": 130,
-    "DisplayMaxStar": 4,
-    "DisplayTokenRate": 10
+    "DifficultyList": [
+      4
+    ],
+    "DisplayMaxStar": 10
   },
   "7": {
     "Level": 7,
@@ -53,7 +55,7 @@
     "WorldClass": 14,
     "MaxStar": 4,
     "TokenRate": 130,
-    "DisplayAddRate": 10
+    "DisplayLuckyRate": 10
   },
   "8": {
     "Level": 8,
@@ -61,7 +63,9 @@
     "WorldClass": 14,
     "MaxStar": 5,
     "TokenRate": 130,
-    "DisplayMaxStar": 5
+    "DifficultyList": [
+      5
+    ]
   },
   "9": {
     "Level": 9,
@@ -69,7 +73,7 @@
     "WorldClass": 14,
     "MaxStar": 5,
     "TokenRate": 130,
-    "DisplayLuckyRate": 5
+    "DisplayTokenRate": 5
   },
   "10": {
     "Level": 10,
@@ -77,7 +81,7 @@
     "WorldClass": 14,
     "MaxStar": 5,
     "TokenRate": 150,
-    "DisplayTokenRate": 20
+    "DisplayMaxStar": 20
   },
   "11": {
     "Level": 11,
@@ -85,7 +89,7 @@
     "WorldClass": 18,
     "MaxStar": 5,
     "TokenRate": 150,
-    "DisplayFreeRate": 3
+    "DisplayAddRate": 3
   },
   "12": {
     "Level": 12,
@@ -93,7 +97,9 @@
     "WorldClass": 18,
     "MaxStar": 6,
     "TokenRate": 150,
-    "DisplayMaxStar": 6
+    "DifficultyList": [
+      6
+    ]
   },
   "13": {
     "Level": 13,
@@ -101,7 +107,7 @@
     "WorldClass": 18,
     "MaxStar": 6,
     "TokenRate": 150,
-    "DisplayAddRate": 10
+    "DisplayLuckyRate": 10
   },
   "14": {
     "Level": 14,
@@ -109,7 +115,7 @@
     "WorldClass": 18,
     "MaxStar": 6,
     "TokenRate": 180,
-    "DisplayTokenRate": 30
+    "DisplayMaxStar": 30
   },
   "15": {
     "Level": 15,
@@ -117,7 +123,7 @@
     "WorldClass": 22,
     "MaxStar": 6,
     "TokenRate": 180,
-    "DisplayLuckyRate": 5
+    "DisplayTokenRate": 5
   },
   "16": {
     "Level": 16,
@@ -125,7 +131,9 @@
     "WorldClass": 22,
     "MaxStar": 7,
     "TokenRate": 180,
-    "DisplayMaxStar": 7
+    "DifficultyList": [
+      7
+    ]
   },
   "17": {
     "Level": 17,
@@ -133,7 +141,7 @@
     "WorldClass": 22,
     "MaxStar": 7,
     "TokenRate": 180,
-    "DisplayFreeRate": 3
+    "DisplayAddRate": 3
   },
   "18": {
     "Level": 18,
@@ -141,7 +149,7 @@
     "WorldClass": 22,
     "MaxStar": 7,
     "TokenRate": 220,
-    "DisplayTokenRate": 40
+    "DisplayMaxStar": 40
   },
   "19": {
     "Level": 19,
@@ -156,6 +164,6 @@
     "WorldClass": 22,
     "MaxStar": 7,
     "TokenRate": 260,
-    "DisplayTokenRate": 40
+    "DisplayMaxStar": 40
   }
 }

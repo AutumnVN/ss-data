@@ -8,7 +8,9 @@
     "TriggerType": 1,
     "TriggerProbability": 100,
     "TriggerLimit": 3,
-    "TriggerLimitParam": 1,
+    "TriggerLimitParam": [
+      1
+    ],
     "EffectType": 6,
     "EffectParam": "[50]",
     "Duration": 3,
@@ -112,7 +114,9 @@
     "TriggerParam": "[101,102,103]",
     "TriggerProbability": 50,
     "TriggerLimit": 4,
-    "TriggerLimitParam": 1,
+    "TriggerLimitParam": [
+      1
+    ],
     "EffectType": 1,
     "EffectParam": "{\"104\":60,\"105\":40}",
     "Duration": 4,
