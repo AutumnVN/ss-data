@@ -1,0 +1,2171 @@
+{
+    "51002": {
+        "id": 51002,
+        "name": "[Opera Ghost: Rovina] Waltz",
+        "season": 2,
+        "icon": "monsterhead_70001JuYuanMeiYing_Dark_L",
+        "type": "Raid",
+        "mechanic": [
+            {
+                "name": "Waltz: Chorus",
+                "desc": "The boss gains an Echo Codex that takes much less Auto Attack DMG. When the boss casts certain skills, the Echo Codex casts similar skills.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_007"
+            },
+            {
+                "name": "Waltz: Echo",
+                "desc": "The boss gains a Record Codex that takes much less Auto Attack DMG and revives after some time. When the boss casts certain skills, the Record Codex records similar skills and casts them later.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_008"
+            },
+            {
+                "name": "Waltz: Malice Shroud",
+                "desc": "After a friendly unit deals damage to the boss a certain number of times, it increases the damage the boss takes for a short period.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_010"
+            },
+            {
+                "name": "Codex's Protection",
+                "desc": "The boss initially has high DMG Resistance. Each Echo Codex or Record Codex removed lowers the boss's DMG Resistance.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_003"
+            },
+            {
+                "name": "Requiem Aria",
+                "desc": "The boss summons multiple Echo Codices to continuously channel energy. The fewer Echo Codices remaining when the channeling ends, the weaker the attacks from the boss.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_005"
+            },
+            {
+                "name": "Nightmare Finale",
+                "desc": "The boss summons the Record Codices on the battlefield and absorbs them. The more Record Codices absorbed, the stronger the boss's attacks will become.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_006"
+            }
+        ],
+        "weakTo": [
+            "Ignis",
+            "Ventus"
+        ],
+        "resistTo": "None",
+        "diff": [
+            {
+                "name": "Normal",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 4130000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1376529,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 4130000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1835372,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 61950,
+                    "ATK": 973,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            },
+            {
+                "name": "Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 29900000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 9965670,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 29900000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 13287560,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 123900,
+                    "ATK": 2512,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            },
+            {
+                "name": "Extra Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 63780000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 21257874,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 63780000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 28343832,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 247800,
+                    "ATK": 4310,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            },
+            {
+                "name": "Ultimate",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 210201100,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 70060026,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 210201100,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 93413368,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 931080,
+                    "ATK": 8272,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            },
+            {
+                "name": "Beyond",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 999694620,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 333198216,
+                            "Aqua RES": 750,
+                            "Ignis RES": 250,
+                            "Terra RES": 750,
+                            "Ventus RES": 250,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 999694620,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 444264289,
+                            "Aqua RES": 750,
+                            "Ignis RES": 250,
+                            "Terra RES": 750,
+                            "Ventus RES": 250,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 2935930,
+                    "ATK": 8532,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            }
+        ]
+    },
+    "51003": {
+        "id": 51003,
+        "name": "[Celsia: Chariot of Frenzy] Operation Thunderbolt",
+        "season": 3,
+        "icon": "monsterhead_72001ShuangZiQiHong_Com_L",
+        "icons": [
+            "monsterhead_72001ShuangZiQiHong_Com_L",
+            "monsterhead_72002ShuangZiQiLan_Com_L"
+        ],
+        "type": "Raid",
+        "mechanic": [
+            {
+                "name": "Lord's Law: Assimilation Decay",
+                "desc": "When a friendly unit is on yellow or blue tiles, this unit's DMG to same-color bosses is greatly reduced.",
+                "icon": "Icon_JointDrill_ShuangZiQi_001"
+            },
+            {
+                "name": "Lord's Law: Isomeric Amplification",
+                "desc": "When a friendly unit is on yellow or blue tiles, this unit's DMG to opposite-color bosses is significantly increased.",
+                "icon": "Icon_JointDrill_ShuangZiQi_002"
+            },
+            {
+                "name": "Dominion",
+                "desc": "Certain boss skills can change the color of specific tiles on the board.",
+                "icon": "Icon_JointDrill_ShuangZiQi_003"
+            },
+            {
+                "name": "Apocalyptic Twilight",
+                "desc": "Upon the defeat of either boss, the battle permanently enters the second phase. Players will face the remaining boss alone on a newly manifested chessboard.",
+                "icon": "Icon_JointDrill_ShuangZiQi_004"
+            },
+            {
+                "name": "Omen of Ruin",
+                "desc": "In the second phase, prioritize neutralizing the Flaming Lanterns. Their explosions will color massive tiles across the board.",
+                "icon": "Icon_JointDrill_ShuangZiQi_005"
+            }
+        ],
+        "weakTo": [
+            "Aqua",
+            "Ignis"
+        ],
+        "resistTo": "None",
+        "diff": [
+            {
+                "name": "Normal",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 2065000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1755250,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 2065000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1755250,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 14950000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 12707500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 14950000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 12707500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Extra Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 31890000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 27106500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 31890000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 27106500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Ultimate",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 216892190,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 184358361,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 216892190,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 184358361,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Beyond",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 1050968070,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 893322859,
+                            "Aqua RES": 250,
+                            "Ignis RES": 250,
+                            "Terra RES": 750,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 1050968070,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 893322859,
+                            "Aqua RES": 250,
+                            "Ignis RES": 250,
+                            "Terra RES": 750,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ]
+                ]
+            }
+        ]
+    },
+    "51004": {
+        "id": 51004,
+        "name": "[Opera Ghost: Rovina] Symphony",
+        "season": 4,
+        "icon": "monsterhead_70001JuYuanMeiYing_Dark_L",
+        "type": "Raid",
+        "mechanic": [
+            {
+                "name": "Symphony: Sigh",
+                "desc": "The boss gains an Echo Codex that dissipates after taking a certain number of hits. When the boss casts certain skills, the Echo Codex casts similar skills.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_001"
+            },
+            {
+                "name": "Symphony: Recitation",
+                "desc": "The boss gains a Record Codex that dissipates after taking a certain number of hits but revives after some time. When the boss casts certain skills, the Record Codex records similar skills and casts them later.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_002"
+            },
+            {
+                "name": "Symphony: Fear Resonance",
+                "desc": "Each time a friendly unit deals DMG to the boss, increases the boss's DMG Taken for a short period.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_004"
+            },
+            {
+                "name": "Codex's Protection",
+                "desc": "The boss initially has high DMG Resistance. Each Echo Codex or Record Codex removed lowers the boss's DMG Resistance.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_003"
+            },
+            {
+                "name": "Requiem Aria",
+                "desc": "The boss summons multiple Echo Codices to continuously channel energy. The fewer Echo Codices remaining when the channeling ends, the weaker the attacks from the boss.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_005"
+            },
+            {
+                "name": "Nightmare Finale",
+                "desc": "The boss summons the Record Codices on the battlefield and absorbs them. The more Record Codices absorbed, the stronger the boss's attacks will become.",
+                "icon": "Icon_JointDrill_JuYuanMeiYing_006"
+            }
+        ],
+        "weakTo": [
+            "Aqua",
+            "Umbra"
+        ],
+        "resistTo": "None",
+        "diff": [
+            {
+                "name": "Normal",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 4130000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1652000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 4130000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 2478000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 20,
+                    "ATK": 1334,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            },
+            {
+                "name": "Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 29900000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 11960000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 29900000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 17940000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 30,
+                    "ATK": 1749,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            },
+            {
+                "name": "Extra Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 63780000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 25512000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 63780000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 38268000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 40,
+                    "ATK": 2218,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            },
+            {
+                "name": "Ultimate",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 210201100,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 84080440,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        },
+                        {
+                            "Type": "Raid",
+                            "HP": 210201100,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 126120660,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 50,
+                    "ATK": 9971,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            },
+            {
+                "name": "Beyond",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 999694620,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 399877848,
+                            "Aqua RES": 250,
+                            "Ignis RES": 750,
+                            "Terra RES": 750,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 250
+                        }
+                    ]
+                ],
+                "bookStat": {
+                    "Type": "Elite",
+                    "HP": 65,
+                    "ATK": 9971,
+                    "DEF": 500,
+                    "Hit Rate": "100%",
+                    "Attack Speed": "100%",
+                    "Aqua DMG": "100%",
+                    "Ignis DMG": "100%",
+                    "Terra DMG": "100%",
+                    "Ventus DMG": "100%",
+                    "Lux DMG": "100%",
+                    "Umbra DMG": "100%",
+                    "Mark DMG Taken": "100%",
+                    "Aqua RES": 570,
+                    "Ignis RES": 570,
+                    "Terra RES": 570,
+                    "Ventus RES": 570,
+                    "Lux RES": 570,
+                    "Umbra RES": 570
+                }
+            }
+        ]
+    },
+    "51005": {
+        "id": 51005,
+        "name": "[Celsia: Chariot of Frenzy] Fortress of Despair",
+        "season": 5,
+        "icon": "monsterhead_72001ShuangZiQiHong_Com_L",
+        "icons": [
+            "monsterhead_72001ShuangZiQiHong_Com_L",
+            "monsterhead_72002ShuangZiQiLan_Com_L"
+        ],
+        "type": "Raid",
+        "mechanic": [
+            {
+                "name": "Lord's Law: Assimilation Decay",
+                "desc": "When a friendly unit is on yellow or blue tiles, this unit's DMG to same-color bosses is greatly reduced.",
+                "icon": "Icon_JointDrill_ShuangZiQi_001"
+            },
+            {
+                "name": "Lord's Law: Isomeric Amplification",
+                "desc": "When a friendly unit is on yellow or blue tiles, this unit's DMG to opposite-color bosses is significantly increased.",
+                "icon": "Icon_JointDrill_ShuangZiQi_002"
+            },
+            {
+                "name": "Dominion",
+                "desc": "Certain boss skills can change the color of specific tiles on the board.",
+                "icon": "Icon_JointDrill_ShuangZiQi_003"
+            },
+            {
+                "name": "Apocalyptic Twilight",
+                "desc": "Upon the defeat of either boss, the battle permanently enters the second phase. Players will face the remaining boss alone on a newly manifested chessboard.",
+                "icon": "Icon_JointDrill_ShuangZiQi_004"
+            },
+            {
+                "name": "Omen of Ruin",
+                "desc": "In the second phase, prioritize neutralizing the Flaming Lanterns. Their explosions will color massive tiles across the board.",
+                "icon": "Icon_JointDrill_ShuangZiQi_005"
+            }
+        ],
+        "weakTo": [
+            "Aqua",
+            "Ignis"
+        ],
+        "resistTo": "None",
+        "diff": [
+            {
+                "name": "Normal",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 2065000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1755250,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 2065000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1755250,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 14950000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 12707500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 14950000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 12707500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Extra Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 31890000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 27106500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 31890000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 27106500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Ultimate",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 216892190,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 184358361,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 216892190,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 184358361,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Beyond",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 1050968070,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 893322859,
+                            "Aqua RES": 250,
+                            "Ignis RES": 250,
+                            "Terra RES": 750,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 1050968070,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 893322859,
+                            "Aqua RES": 250,
+                            "Ignis RES": 250,
+                            "Terra RES": 750,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ]
+                ]
+            }
+        ]
+    },
+    "51006": {
+        "id": 51006,
+        "name": "[Celsia: Chariot of Frenzy] Siege Tactics",
+        "season": 6,
+        "icon": "monsterhead_72001ShuangZiQiHong_Com_L",
+        "icons": [
+            "monsterhead_72001ShuangZiQiHong_Com_L",
+            "monsterhead_72002ShuangZiQiLan_Com_L"
+        ],
+        "type": "Raid",
+        "mechanic": [
+            {
+                "name": "Lord's Law: Assimilation Decay",
+                "desc": "When a friendly unit is on yellow or blue tiles, this unit's DMG to same-color bosses is greatly reduced.",
+                "icon": "Icon_JointDrill_ShuangZiQi_001"
+            },
+            {
+                "name": "Lord's Law: Isomeric Amplification",
+                "desc": "When a friendly unit is on yellow or blue tiles, this unit's DMG to opposite-color bosses is significantly increased.",
+                "icon": "Icon_JointDrill_ShuangZiQi_002"
+            },
+            {
+                "name": "Dominion",
+                "desc": "Certain boss skills can change the color of specific tiles on the board.",
+                "icon": "Icon_JointDrill_ShuangZiQi_003"
+            },
+            {
+                "name": "Apocalyptic Twilight",
+                "desc": "Upon the defeat of either boss, the battle permanently enters the second phase. Players will face the remaining boss alone on a newly manifested chessboard.",
+                "icon": "Icon_JointDrill_ShuangZiQi_004"
+            },
+            {
+                "name": "Omen of Ruin",
+                "desc": "In the second phase, prioritize neutralizing the Flaming Lanterns. Their explosions will color massive tiles across the board.",
+                "icon": "Icon_JointDrill_ShuangZiQi_005"
+            },
+            {
+                "name": "Offensive Shift: Arc",
+                "desc": "Chess Piece: Mortar fires parabolic projectiles at the target. Chess Piece: Knight scans all tiles within a \"knight's move\" (L-shaped) range, selects the tile closest to the target, and performs a leaping trample attack.",
+                "icon": "Icon_JointDrill_ShuangZiQi_008"
+            }
+        ],
+        "weakTo": [
+            "Aqua",
+            "Ignis"
+        ],
+        "resistTo": "Terra",
+        "diff": [
+            {
+                "name": "Normal",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 2065000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1755250,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 2065000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1755250,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 14950000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 12707500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 14950000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 12707500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Extra Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 31890000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 27106500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 31890000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 27106500,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Ultimate",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 216892190,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 184358361,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 216892190,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 184358361,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Beyond",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 1050968070,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 893322859,
+                            "Aqua RES": 250,
+                            "Ignis RES": 250,
+                            "Terra RES": 750,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 1050968070,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 893322859,
+                            "Aqua RES": 250,
+                            "Ignis RES": 250,
+                            "Terra RES": 750,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Chaotic",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 3518110880,
+                            "HP Bar": 80,
+                            "Max Score": 14352000,
+                            "Score": "3865600 + (6800000 - time_in_seconds * 8100) + 3686400",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 2990394248,
+                            "Aqua RES": 250,
+                            "Ignis RES": 250,
+                            "Terra RES": 2000,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ],
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 3518110880,
+                            "HP Bar": 80,
+                            "Max Score": 14352000,
+                            "Score": "3865600 + (6800000 - time_in_seconds * 8100) + 3686400",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 2990394248,
+                            "Aqua RES": 250,
+                            "Ignis RES": 250,
+                            "Terra RES": 2000,
+                            "Ventus RES": 750,
+                            "Lux RES": 750,
+                            "Umbra RES": 750
+                        }
+                    ]
+                ]
+            }
+        ]
+    },
+    "51007": {
+        "id": 51007,
+        "name": "[Exalted Puppets: Coppelius & Olympia] Eye of Ashes",
+        "season": 7,
+        "icon": "monsterhead_72012MoShuShi_Nv_Com_L",
+        "type": "Raid",
+        "mechanic": [
+            {
+                "name": "Cycle of Creation",
+                "desc": "In Phase 1, Coppelius fights while Olympia periodically moves to the arena's edge to support Coppelius and unleash AoE attacks.\nIn Phase 2, Coppelius leaves the field, and you face Olympia alone.",
+                "icon": "Icon_JointDrill_MoShuShi_001"
+            },
+            {
+                "name": "Arcane Energy Interception",
+                "desc": "Arcane Puppets generate arcane beams that channel arcane energy into the boss enemy. If uninterrupted long enough, the boss enemy gains an Arcane Barrier.\nThe Main Trekker can block the beams to stop the charge and gain buffs.\nDefeating Arcane Puppets grants your squad a temporary buff.",
+                "icon": "Icon_JointDrill_MoShuShi_002"
+            },
+            {
+                "name": "Free-Floating Core",
+                "desc": "Olympia absorbs nearby Free-Floating Cores, detonating them to deal AoE DMG. Absorbing enough grants her an Arcane Barrier. If the Main Trekker touches a Core first, they absorb it instead and gain a temporary buff.",
+                "icon": "Icon_JointDrill_MoShuShi_003"
+            },
+            {
+                "name": "Royal Guard Puppet",
+                "desc": "Royal Guard Puppets attack as commanded by the boss enemy and cannot be targeted.",
+                "icon": "Icon_JointDrill_MoShuShi_004"
+            },
+            {
+                "name": "Arcane Collapse",
+                "desc": "Olympia creates damaging zones around the arena and repeatedly casts Arcane Collapse, knocking the Main Trekker back in set directions.",
+                "icon": "Icon_JointDrill_MoShuShi_005"
+            },
+            {
+                "name": "Puppet Blade Dance",
+                "desc": "Royal Guard Puppets become more dangerous and unleash slashes that deal continuous DMG.",
+                "icon": "Icon_JointDrill_MoShuShi_006"
+            }
+        ],
+        "weakTo": [
+            "Ventus",
+            "Umbra"
+        ],
+        "resistTo": "Ignis",
+        "diff": [
+            {
+                "name": "Normal",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 4130000,
+                            "HP Bar": 20,
+                            "Max Score": 720000,
+                            "Score": "200000 + (340000 - time_in_seconds * 600) + 180000",
+                            "ATK": 1946,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 2065000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 29900000,
+                            "HP Bar": 25,
+                            "Max Score": 1440000,
+                            "Score": "400000 + (680000 - time_in_seconds * 1200) + 360000",
+                            "ATK": 5024,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 14950000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Extra Hard",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 63780000,
+                            "HP Bar": 30,
+                            "Max Score": 2890000,
+                            "Score": "800000 + (1370000 - time_in_seconds * 2400) + 720000",
+                            "ATK": 8620,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 31890000,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Ultimate",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 210201100,
+                            "HP Bar": 40,
+                            "Max Score": 5780000,
+                            "Score": "1600000 + (2740000 - time_in_seconds * 4800) + 1440000",
+                            "ATK": 16544,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 105100550,
+                            "Aqua RES": 570,
+                            "Ignis RES": 570,
+                            "Terra RES": 570,
+                            "Ventus RES": 570,
+                            "Lux RES": 570,
+                            "Umbra RES": 570
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Beyond",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 999694620,
+                            "HP Bar": 60,
+                            "Max Score": 9244000,
+                            "Score": "2560000 + (4380000 - time_in_seconds * 6200) + 2304000",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 499847310,
+                            "Aqua RES": 750,
+                            "Ignis RES": 750,
+                            "Terra RES": 750,
+                            "Ventus RES": 250,
+                            "Lux RES": 750,
+                            "Umbra RES": 250
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Chaotic",
+                "stat": [
+                    [
+                        {
+                            "Type": "Raid",
+                            "HP": 2999083860,
+                            "HP Bar": 80,
+                            "Max Score": 14352000,
+                            "Score": "3865600 + (6800000 - time_in_seconds * 8100) + 3686400",
+                            "ATK": 17064,
+                            "DEF": 500,
+                            "Hit Rate": "100%",
+                            "Attack Speed": "100%",
+                            "Aqua DMG": "100%",
+                            "Ignis DMG": "100%",
+                            "Terra DMG": "100%",
+                            "Ventus DMG": "100%",
+                            "Lux DMG": "100%",
+                            "Umbra DMG": "100%",
+                            "Mark DMG Taken": "100%",
+                            "Resilience": 1499541930,
+                            "Aqua RES": 750,
+                            "Ignis RES": 2000,
+                            "Terra RES": 750,
+                            "Ventus RES": 250,
+                            "Lux RES": 750,
+                            "Umbra RES": 250
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+}

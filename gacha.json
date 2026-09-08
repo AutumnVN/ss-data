@@ -1,0 +1,1568 @@
+{
+    "10110": {
+        "id": 10110,
+        "type": "character",
+        "name": "Mirroring the Jade's Ideal",
+        "icon": "tab_gacha_10110",
+        "rateUp5Star": [
+            {
+                "id": 110,
+                "name": "Firenze",
+                "element": "Umbra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 142,
+                "name": "Cosette",
+                "element": "Umbra"
+            },
+            {
+                "id": 116,
+                "name": "Ridge",
+                "element": "Terra"
+            }
+        ],
+        "startTime": "2026-01-13T12:00:00+08:00",
+        "endTime": "2026-02-03T10:59:59+08:00"
+    },
+    "10114": {
+        "id": 10114,
+        "type": "character",
+        "name": "Sniper of the Meowverse",
+        "icon": "tab_gacha_10114_lang",
+        "rateUp5Star": [
+            {
+                "id": 114,
+                "name": "Chaton",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 126,
+                "name": "Flora",
+                "element": "Ignis"
+            },
+            {
+                "id": 113,
+                "name": "Shimiao",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-06-30T12:00:00+08:00",
+        "endTime": "2026-07-21T10:59:59+08:00"
+    },
+    "10115": {
+        "id": 10115,
+        "type": "character",
+        "name": "Stardust Rising in the Light",
+        "icon": "tab_gacha_10115_lang",
+        "rateUp5Star": [
+            {
+                "id": 115,
+                "name": "Firefly",
+                "element": "Lux"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 107,
+                "name": "Tilia",
+                "element": "Lux"
+            },
+            {
+                "id": 116,
+                "name": "Ridge",
+                "element": "Terra"
+            }
+        ],
+        "startTime": "2026-05-14T12:00:00+08:00",
+        "endTime": "2026-06-02T10:59:59+08:00"
+    },
+    "10119": {
+        "id": 10119,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_10119",
+        "rateUp5Star": [
+            {
+                "id": 119,
+                "name": "Nanoha",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 107,
+                "name": "Tilia",
+                "element": "Lux"
+            },
+            {
+                "id": 108,
+                "name": "Kasimira",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2025-11-11T12:00:00+08:00",
+        "endTime": "2025-12-02T03:59:59+08:00"
+    },
+    "10125": {
+        "id": 10125,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_10125",
+        "rateUp5Star": [
+            {
+                "id": 125,
+                "name": "Freesia",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 126,
+                "name": "Flora",
+                "element": "Ignis"
+            },
+            {
+                "id": 118,
+                "name": "Coronis",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2025-12-30T12:00:00+08:00",
+        "endTime": "2026-01-20T03:59:59+08:00"
+    },
+    "10130": {
+        "id": 10130,
+        "type": "character",
+        "name": "Heartfelt Messages, Delivered on Time",
+        "icon": "tab_gacha_10130_lang",
+        "rateUp5Star": [
+            {
+                "id": 130,
+                "name": "Donna",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 127,
+                "name": "Teresa",
+                "element": "Aqua"
+            },
+            {
+                "id": 118,
+                "name": "Coronis",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2026-03-17T12:00:00+08:00",
+        "endTime": "2026-04-07T10:59:59+08:00"
+    },
+    "10132": {
+        "id": 10132,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_10132",
+        "rateUp5Star": [
+            {
+                "id": 132,
+                "name": "Minova",
+                "element": "Lux"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 123,
+                "name": "Ann",
+                "element": "Ventus"
+            },
+            {
+                "id": 113,
+                "name": "Shimiao",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-03-10T12:00:00+08:00",
+        "endTime": "2026-03-31T03:59:59+08:00"
+    },
+    "10133": {
+        "id": 10133,
+        "type": "character",
+        "name": "A Breezy Romance",
+        "icon": "tab_gacha_10133",
+        "rateUp5Star": [
+            {
+                "id": 133,
+                "name": "Nazuka",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 123,
+                "name": "Ann",
+                "element": "Ventus"
+            },
+            {
+                "id": 108,
+                "name": "Kasimira",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2025-12-09T12:00:00+08:00",
+        "endTime": "2025-12-30T03:59:59+08:00"
+    },
+    "10134": {
+        "id": 10134,
+        "type": "character",
+        "name": "The Promise of Melting Snow",
+        "icon": "tab_gacha_10134",
+        "rateUp5Star": [
+            {
+                "id": 134,
+                "name": "Fuyuka",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 126,
+                "name": "Flora",
+                "element": "Ignis"
+            },
+            {
+                "id": 120,
+                "name": "Canace",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2025-11-18T12:00:00+08:00",
+        "endTime": "2025-12-09T10:59:59+08:00"
+    },
+    "10135": {
+        "id": 10135,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_10135",
+        "rateUp5Star": [
+            {
+                "id": 135,
+                "name": "Mistique",
+                "element": "Umbra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 142,
+                "name": "Cosette",
+                "element": "Umbra"
+            },
+            {
+                "id": 116,
+                "name": "Ridge",
+                "element": "Terra"
+            }
+        ],
+        "startTime": "2026-01-27T12:00:00+08:00",
+        "endTime": "2026-02-17T03:59:59+08:00"
+    },
+    "10137": {
+        "id": 10137,
+        "type": "character",
+        "name": "With Graceful Steps, Elegance Arrives",
+        "icon": "tab_gacha_10137_lang",
+        "rateUp5Star": [
+            {
+                "id": 137,
+                "name": "Eleanor",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 123,
+                "name": "Ann",
+                "element": "Ventus"
+            },
+            {
+                "id": 127,
+                "name": "Teresa",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-09-08T12:00:00+08:00",
+        "endTime": "2026-09-29T10:59:59+08:00"
+    },
+    "10140": {
+        "id": 10140,
+        "type": "character",
+        "name": "The Ultimate Answer",
+        "icon": "tab_gacha_10140_lang",
+        "rateUp5Star": [
+            {
+                "id": 140,
+                "name": "Sparkla",
+                "element": "Terra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 116,
+                "name": "Ridge",
+                "element": "Terra"
+            },
+            {
+                "id": 108,
+                "name": "Kasimira",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2026-06-02T12:00:00+08:00",
+        "endTime": "2026-06-23T10:59:59+08:00"
+    },
+    "10141": {
+        "id": 10141,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_10141",
+        "rateUp5Star": [
+            {
+                "id": 141,
+                "name": "Chixia",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 117,
+                "name": "Jinglin",
+                "element": "Lux"
+            },
+            {
+                "id": 120,
+                "name": "Canace",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-02-17T12:00:00+08:00",
+        "endTime": "2026-03-10T03:59:59+08:00"
+    },
+    "10143": {
+        "id": 10143,
+        "type": "character",
+        "name": "Silver Shattering the Dark",
+        "icon": "tab_gacha_10143",
+        "rateUp5Star": [
+            {
+                "id": 143,
+                "name": "Wraith",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 123,
+                "name": "Ann",
+                "element": "Ventus"
+            },
+            {
+                "id": 113,
+                "name": "Shimiao",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-02-24T12:00:00+08:00",
+        "endTime": "2026-03-17T10:59:59+08:00"
+    },
+    "10144": {
+        "id": 10144,
+        "type": "character",
+        "name": "Blades Beneath the Moon",
+        "icon": "tab_gacha_10144",
+        "rateUp5Star": [
+            {
+                "id": 144,
+                "name": "Chitose",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 117,
+                "name": "Jinglin",
+                "element": "Lux"
+            },
+            {
+                "id": 127,
+                "name": "Teresa",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2025-10-20T04:00:00+08:00",
+        "endTime": "2025-11-11T03:59:59+08:00"
+    },
+    "10145": {
+        "id": 10145,
+        "type": "character",
+        "name": "Where Night Blossoms Fade",
+        "icon": "tab_gacha_10145_lang",
+        "rateUp5Star": [
+            {
+                "id": 145,
+                "name": "Otoha",
+                "element": "Umbra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 142,
+                "name": "Cosette",
+                "element": "Umbra"
+            },
+            {
+                "id": 150,
+                "name": "Laru",
+                "element": "Lux"
+            }
+        ],
+        "startTime": "2026-04-16T12:00:00+08:00",
+        "endTime": "2026-05-08T10:59:59+08:00"
+    },
+    "10149": {
+        "id": 10149,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_10149",
+        "rateUp5Star": [
+            {
+                "id": 149,
+                "name": "Gerie",
+                "element": "Terra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 126,
+                "name": "Flora",
+                "element": "Ignis"
+            },
+            {
+                "id": 120,
+                "name": "Canace",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2025-12-02T12:00:00+08:00",
+        "endTime": "2025-12-23T10:59:59+08:00"
+    },
+    "10155": {
+        "id": 10155,
+        "type": "character",
+        "name": "Tide to the Full Moon",
+        "icon": "tab_gacha_10155",
+        "rateUp5Star": [
+            {
+                "id": 155,
+                "name": "Shia",
+                "element": "Lux"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 107,
+                "name": "Tilia",
+                "element": "Lux"
+            },
+            {
+                "id": 108,
+                "name": "Kasimira",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2025-10-28T12:00:00+08:00",
+        "endTime": "2025-11-18T03:59:59+08:00"
+    },
+    "10156": {
+        "id": 10156,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_10156_lang",
+        "rateUp5Star": [
+            {
+                "id": 156,
+                "name": "Nazuna",
+                "element": "Terra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 127,
+                "name": "Teresa",
+                "element": "Aqua"
+            },
+            {
+                "id": 118,
+                "name": "Coronis",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2026-03-31T12:00:00+08:00",
+        "endTime": "2026-04-21T03:59:59+08:00"
+    },
+    "10157": {
+        "id": 10157,
+        "type": "character",
+        "name": "Bloom to the Bright Sun",
+        "icon": "tab_gacha_10157_lang",
+        "rateUp5Star": [
+            {
+                "id": 157,
+                "name": "Karin",
+                "element": "Umbra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 142,
+                "name": "Cosette",
+                "element": "Umbra"
+            },
+            {
+                "id": 120,
+                "name": "Canace",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-08-18T12:00:00+08:00",
+        "endTime": "2026-09-08T10:59:59+08:00"
+    },
+    "10158": {
+        "id": 10158,
+        "type": "character",
+        "name": "Holy Night Gift Rush!",
+        "icon": "tab_gacha_10158",
+        "rateUp5Star": [
+            {
+                "id": 158,
+                "name": "Snowish Laru",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 126,
+                "name": "Flora",
+                "element": "Ignis"
+            },
+            {
+                "id": 118,
+                "name": "Coronis",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2025-12-23T12:00:00+08:00",
+        "endTime": "2026-01-13T10:59:59+08:00"
+    },
+    "10159": {
+        "id": 10159,
+        "type": "character",
+        "name": "Warmth Lingers, Longing Stirs",
+        "icon": "tab_gacha_10159",
+        "rateUp5Star": [
+            {
+                "id": 159,
+                "name": "Springseek Coronis",
+                "element": "Terra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 117,
+                "name": "Jinglin",
+                "element": "Lux"
+            },
+            {
+                "id": 120,
+                "name": "Canace",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-02-03T12:00:00+08:00",
+        "endTime": "2026-02-24T10:59:59+08:00"
+    },
+    "10160": {
+        "id": 10160,
+        "type": "character",
+        "name": "Warm Up Before Jumping In!",
+        "icon": "tab_gacha_10160_lang",
+        "rateUp5Star": [
+            {
+                "id": 160,
+                "name": "Suntide Willow",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 127,
+                "name": "Teresa",
+                "element": "Aqua"
+            },
+            {
+                "id": 118,
+                "name": "Coronis",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2026-07-21T12:00:00+08:00",
+        "endTime": "2026-08-11T10:59:59+08:00"
+    },
+    "11119": {
+        "id": 11119,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_11119_lang",
+        "rateUp5Star": [
+            {
+                "id": 119,
+                "name": "Nanoha",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 116,
+                "name": "Ridge",
+                "element": "Terra"
+            },
+            {
+                "id": 108,
+                "name": "Kasimira",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2026-06-16T12:00:00+08:00",
+        "endTime": "2026-07-07T03:59:59+08:00"
+    },
+    "11133": {
+        "id": 11133,
+        "type": "character",
+        "name": "A Breezy Romance",
+        "icon": "tab_gacha_11133_lang",
+        "rateUp5Star": [
+            {
+                "id": 133,
+                "name": "Nazuka",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 123,
+                "name": "Ann",
+                "element": "Ventus"
+            },
+            {
+                "id": 108,
+                "name": "Kasimira",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2026-08-04T12:00:00+08:00",
+        "endTime": "2026-08-25T10:59:59+08:00"
+    },
+    "11134": {
+        "id": 11134,
+        "type": "character",
+        "name": "The Promise of Melting Snow",
+        "icon": "tab_gacha_11134_lang",
+        "rateUp5Star": [
+            {
+                "id": 134,
+                "name": "Fuyuka",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 126,
+                "name": "Flora",
+                "element": "Ignis"
+            },
+            {
+                "id": 120,
+                "name": "Canace",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-09-01T12:00:00+08:00",
+        "endTime": "2026-09-22T10:59:59+08:00"
+    },
+    "11141": {
+        "id": 11141,
+        "type": "character",
+        "name": "A Fateful Encounter",
+        "icon": "tab_gacha_11141_lang",
+        "rateUp5Star": [
+            {
+                "id": 141,
+                "name": "Chixia",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 126,
+                "name": "Flora",
+                "element": "Ignis"
+            },
+            {
+                "id": 111,
+                "name": "Iris",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-07-14T12:00:00+08:00",
+        "endTime": "2026-08-04T03:59:59+08:00"
+    },
+    "11144": {
+        "id": 11144,
+        "type": "character",
+        "name": "Blades Beneath the Moon",
+        "icon": "tab_gacha_11144_lang",
+        "rateUp5Star": [
+            {
+                "id": 144,
+                "name": "Chitose",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 117,
+                "name": "Jinglin",
+                "element": "Lux"
+            },
+            {
+                "id": 127,
+                "name": "Teresa",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-04-30T12:00:00+08:00",
+        "endTime": "2026-05-19T03:59:59+08:00"
+    },
+    "11155": {
+        "id": 11155,
+        "type": "character",
+        "name": "Tide to the Full Moon",
+        "icon": "tab_gacha_11155_lang",
+        "rateUp5Star": [
+            {
+                "id": 155,
+                "name": "Shia",
+                "element": "Lux"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 107,
+                "name": "Tilia",
+                "element": "Lux"
+            },
+            {
+                "id": 108,
+                "name": "Kasimira",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2026-05-26T12:00:00+08:00",
+        "endTime": "2026-06-16T03:59:59+08:00"
+    },
+    "20110": {
+        "id": 20110,
+        "type": "disc",
+        "name": "Tipsy Wisteria Dreams",
+        "icon": "tab_gacha_20110",
+        "rateUp5Star": [
+            {
+                "id": 214004,
+                "name": "Wisteria Dream",
+                "element": "Umbra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213012,
+                "name": "Starry Night Ode",
+                "element": "Umbra"
+            },
+            {
+                "id": 213013,
+                "name": "Leaf Her to Me",
+                "element": "Terra"
+            }
+        ],
+        "startTime": "2026-01-13T12:00:00+08:00",
+        "endTime": "2026-02-03T10:59:59+08:00"
+    },
+    "20114": {
+        "id": 20114,
+        "type": "disc",
+        "name": "Your Heart in Meow Sights",
+        "icon": "tab_gacha_20114_lang",
+        "rateUp5Star": [
+            {
+                "id": 214029,
+                "name": "The Cat's Treasure",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213016,
+                "name": "Cage of Roses",
+                "element": "Ignis"
+            },
+            {
+                "id": 213010,
+                "name": "Steam Syndrome",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-06-30T12:00:00+08:00",
+        "endTime": "2026-07-21T10:59:59+08:00"
+    },
+    "20115": {
+        "id": 20115,
+        "type": "disc",
+        "name": "If Only I Could Touch the Stars",
+        "icon": "tab_gacha_20115_lang",
+        "rateUp5Star": [
+            {
+                "id": 214051,
+                "name": "Stellar Destination",
+                "element": "Lux"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213006,
+                "name": "Good Night",
+                "element": "Lux"
+            },
+            {
+                "id": 213014,
+                "name": "The Knight's Smith",
+                "element": "Terra"
+            }
+        ],
+        "startTime": "2026-05-14T12:00:00+08:00",
+        "endTime": "2026-06-02T10:59:59+08:00"
+    },
+    "20119": {
+        "id": 20119,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_20119",
+        "rateUp5Star": [
+            {
+                "id": 214028,
+                "name": "Daylight Garden",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213008,
+                "name": "Tranquil Retreat",
+                "element": "Ventus"
+            },
+            {
+                "id": 213005,
+                "name": "★Bam Bam Girl★",
+                "element": "Lux"
+            }
+        ],
+        "startTime": "2025-11-11T12:00:00+08:00",
+        "endTime": "2025-12-02T03:59:59+08:00"
+    },
+    "20125": {
+        "id": 20125,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_20125",
+        "rateUp5Star": [
+            {
+                "id": 214005,
+                "name": "Sunlit Blossom",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213010,
+                "name": "Steam Syndrome",
+                "element": "Aqua"
+            },
+            {
+                "id": 213011,
+                "name": "Meow Rhythm",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2025-12-30T12:00:00+08:00",
+        "endTime": "2026-01-20T03:59:59+08:00"
+    },
+    "20130": {
+        "id": 20130,
+        "type": "disc",
+        "name": "Joy Sets Sail, Wishes Aloft",
+        "icon": "tab_gacha_20130_lang",
+        "rateUp5Star": [
+            {
+                "id": 214008,
+                "name": "Soaring Blue",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213010,
+                "name": "Steam Syndrome",
+                "element": "Aqua"
+            },
+            {
+                "id": 213011,
+                "name": "Meow Rhythm",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2026-03-17T12:00:00+08:00",
+        "endTime": "2026-04-07T10:59:59+08:00"
+    },
+    "20132": {
+        "id": 20132,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_20132",
+        "rateUp5Star": [
+            {
+                "id": 214007,
+                "name": "Midnight Mayhem",
+                "element": "Lux"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213017,
+                "name": "★Rolling Life★",
+                "element": "Lux"
+            },
+            {
+                "id": 213018,
+                "name": "Soda Shopping",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-03-10T12:00:00+08:00",
+        "endTime": "2026-03-31T03:59:59+08:00"
+    },
+    "20133": {
+        "id": 20133,
+        "type": "disc",
+        "name": "Afternoon Glimmer into the Green",
+        "icon": "tab_gacha_20133",
+        "rateUp5Star": [
+            {
+                "id": 214015,
+                "name": "Deer's Song",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213007,
+                "name": "Emerald Dream",
+                "element": "Ventus"
+            },
+            {
+                "id": 213003,
+                "name": "Scorching Night's End",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2025-12-09T12:00:00+08:00",
+        "endTime": "2025-12-30T03:59:59+08:00"
+    },
+    "20134": {
+        "id": 20134,
+        "type": "disc",
+        "name": "Fireworks Dazzling the Night",
+        "icon": "tab_gacha_20134",
+        "rateUp5Star": [
+            {
+                "id": 214017,
+                "name": "Fireworks",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213016,
+                "name": "Cage of Roses",
+                "element": "Ignis"
+            },
+            {
+                "id": 213015,
+                "name": "Unknown Fragrance",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2025-11-18T12:00:00+08:00",
+        "endTime": "2025-12-09T10:59:59+08:00"
+    },
+    "20135": {
+        "id": 20135,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_20135",
+        "rateUp5Star": [
+            {
+                "id": 214006,
+                "name": "Witch's Swing",
+                "element": "Umbra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213019,
+                "name": "Delusion",
+                "element": "Umbra"
+            },
+            {
+                "id": 213014,
+                "name": "The Knight's Smith",
+                "element": "Terra"
+            }
+        ],
+        "startTime": "2026-01-27T12:00:00+08:00",
+        "endTime": "2026-02-17T03:59:59+08:00"
+    },
+    "20137": {
+        "id": 20137,
+        "type": "disc",
+        "name": "Toward Her Heart's Desire",
+        "icon": "tab_gacha_20137_lang",
+        "rateUp5Star": [
+            {
+                "id": 214059,
+                "name": "Fly, O Caged Bird",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213007,
+                "name": "Emerald Dream",
+                "element": "Ventus"
+            },
+            {
+                "id": 213010,
+                "name": "Steam Syndrome",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-09-08T12:00:00+08:00",
+        "endTime": "2026-09-29T10:59:59+08:00"
+    },
+    "20140": {
+        "id": 20140,
+        "type": "disc",
+        "name": "Brilliant Ideas, Crafted by Hand",
+        "icon": "tab_gacha_20140_lang",
+        "rateUp5Star": [
+            {
+                "id": 214054,
+                "name": "Little Paradise",
+                "element": "Terra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213013,
+                "name": "Leaf Her to Me",
+                "element": "Terra"
+            },
+            {
+                "id": 213003,
+                "name": "Scorching Night's End",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2026-06-02T12:00:00+08:00",
+        "endTime": "2026-06-23T10:59:59+08:00"
+    },
+    "20141": {
+        "id": 20141,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_20141",
+        "rateUp5Star": [
+            {
+                "id": 214027,
+                "name": "Mystic Brushstrokes",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213004,
+                "name": "Twin Moon Mischief",
+                "element": "Ignis"
+            },
+            {
+                "id": 213015,
+                "name": "Unknown Fragrance",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-02-17T12:00:00+08:00",
+        "endTime": "2026-03-10T03:59:59+08:00"
+    },
+    "20143": {
+        "id": 20143,
+        "type": "disc",
+        "name": "Springlight Intoxication",
+        "icon": "tab_gacha_20143",
+        "rateUp5Star": [
+            {
+                "id": 214016,
+                "name": "Chronicles of Spring",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213007,
+                "name": "Emerald Dream",
+                "element": "Ventus"
+            },
+            {
+                "id": 213009,
+                "name": "Rainy Tune",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-02-24T12:00:00+08:00",
+        "endTime": "2026-03-17T10:59:59+08:00"
+    },
+    "20144": {
+        "id": 20144,
+        "type": "disc",
+        "name": "Moon upon Still Waters",
+        "icon": "tab_gacha_20144",
+        "rateUp5Star": [
+            {
+                "id": 214026,
+                "name": "Sword Against Stream",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213009,
+                "name": "Rainy Tune",
+                "element": "Aqua"
+            },
+            {
+                "id": 213005,
+                "name": "★Bam Bam Girl★",
+                "element": "Lux"
+            }
+        ],
+        "startTime": "2025-10-20T04:00:00+08:00",
+        "endTime": "2025-11-11T03:59:59+08:00"
+    },
+    "20145": {
+        "id": 20145,
+        "type": "disc",
+        "name": "Lilies Whisper Through Haze",
+        "icon": "tab_gacha_20145_lang",
+        "rateUp5Star": [
+            {
+                "id": 214045,
+                "name": "Petals of Blooming Mirage",
+                "element": "Umbra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213012,
+                "name": "Starry Night Ode",
+                "element": "Umbra"
+            },
+            {
+                "id": 213005,
+                "name": "★Bam Bam Girl★",
+                "element": "Lux"
+            }
+        ],
+        "startTime": "2026-04-16T12:00:00+08:00",
+        "endTime": "2026-05-08T10:59:59+08:00"
+    },
+    "20149": {
+        "id": 20149,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_20149",
+        "rateUp5Star": [
+            {
+                "id": 214036,
+                "name": "The Lost Pilgrim",
+                "element": "Terra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213020,
+                "name": "The Shining",
+                "element": "Terra"
+            },
+            {
+                "id": 213004,
+                "name": "Twin Moon Mischief",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2025-12-02T12:00:00+08:00",
+        "endTime": "2025-12-23T10:59:59+08:00"
+    },
+    "20155": {
+        "id": 20155,
+        "type": "disc",
+        "name": "Ocean Meets the Sky",
+        "icon": "tab_gacha_20155",
+        "rateUp5Star": [
+            {
+                "id": 214038,
+                "name": "Ripples of Nostalgia",
+                "element": "Lux"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213004,
+                "name": "Twin Moon Mischief",
+                "element": "Ignis"
+            },
+            {
+                "id": 213006,
+                "name": "Good Night",
+                "element": "Lux"
+            }
+        ],
+        "startTime": "2025-10-28T12:00:00+08:00",
+        "endTime": "2025-11-18T03:59:59+08:00"
+    },
+    "20156": {
+        "id": 20156,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_20156_lang",
+        "rateUp5Star": [
+            {
+                "id": 214037,
+                "name": "Claw the Claw",
+                "element": "Terra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213009,
+                "name": "Rainy Tune",
+                "element": "Aqua"
+            },
+            {
+                "id": 213013,
+                "name": "Leaf Her to Me",
+                "element": "Terra"
+            }
+        ],
+        "startTime": "2026-03-31T12:00:00+08:00",
+        "endTime": "2026-04-21T03:59:59+08:00"
+    },
+    "20157": {
+        "id": 20157,
+        "type": "disc",
+        "name": "Tinges of Rainbow",
+        "icon": "tab_gacha_20157_lang",
+        "rateUp5Star": [
+            {
+                "id": 214057,
+                "name": "Ride the Waves With Me",
+                "element": "Umbra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213019,
+                "name": "Delusion",
+                "element": "Umbra"
+            },
+            {
+                "id": 213008,
+                "name": "Tranquil Retreat",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-08-18T12:00:00+08:00",
+        "endTime": "2026-09-08T10:59:59+08:00"
+    },
+    "20158": {
+        "id": 20158,
+        "type": "disc",
+        "name": "Ode of the Kingdom of Fries",
+        "icon": "tab_gacha_20158",
+        "rateUp5Star": [
+            {
+                "id": 214048,
+                "name": "Snowy Night Surprise",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213016,
+                "name": "Cage of Roses",
+                "element": "Ignis"
+            },
+            {
+                "id": 213019,
+                "name": "Delusion",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2025-12-23T12:00:00+08:00",
+        "endTime": "2026-01-13T10:59:59+08:00"
+    },
+    "20159": {
+        "id": 20159,
+        "type": "disc",
+        "name": "Fresh Affection Awakes",
+        "icon": "tab_gacha_20159",
+        "rateUp5Star": [
+            {
+                "id": 214044,
+                "name": "Veiled Dawn of Spring",
+                "element": "Terra"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213020,
+                "name": "The Shining",
+                "element": "Terra"
+            },
+            {
+                "id": 213008,
+                "name": "Tranquil Retreat",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-02-03T12:00:00+08:00",
+        "endTime": "2026-02-24T10:59:59+08:00"
+    },
+    "20160": {
+        "id": 20160,
+        "type": "disc",
+        "name": "Rippling Waves, a Touch so Gentle",
+        "icon": "tab_gacha_20160_lang",
+        "rateUp5Star": [
+            {
+                "id": 214055,
+                "name": "Fleeting Glimmers",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213018,
+                "name": "Soda Shopping",
+                "element": "Aqua"
+            },
+            {
+                "id": 213011,
+                "name": "Meow Rhythm",
+                "element": "Umbra"
+            }
+        ],
+        "startTime": "2026-07-21T12:00:00+08:00",
+        "endTime": "2026-08-11T10:59:59+08:00"
+    },
+    "21119": {
+        "id": 21119,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_21119_lang",
+        "rateUp5Star": [
+            {
+                "id": 214028,
+                "name": "Daylight Garden",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213014,
+                "name": "The Knight's Smith",
+                "element": "Terra"
+            },
+            {
+                "id": 213008,
+                "name": "Tranquil Retreat",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-06-16T12:00:00+08:00",
+        "endTime": "2026-07-07T03:59:59+08:00"
+    },
+    "21133": {
+        "id": 21133,
+        "type": "disc",
+        "name": "Afternoon Glimmer into the Green",
+        "icon": "tab_gacha_21133_lang",
+        "rateUp5Star": [
+            {
+                "id": 214015,
+                "name": "Deer's Song",
+                "element": "Ventus"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213007,
+                "name": "Emerald Dream",
+                "element": "Ventus"
+            },
+            {
+                "id": 213003,
+                "name": "Scorching Night's End",
+                "element": "Ignis"
+            }
+        ],
+        "startTime": "2026-08-04T12:00:00+08:00",
+        "endTime": "2026-08-25T10:59:59+08:00"
+    },
+    "21134": {
+        "id": 21134,
+        "type": "disc",
+        "name": "Fireworks Dazzling the Night",
+        "icon": "tab_gacha_21134_lang",
+        "rateUp5Star": [
+            {
+                "id": 214017,
+                "name": "Fireworks",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213016,
+                "name": "Cage of Roses",
+                "element": "Ignis"
+            },
+            {
+                "id": 213015,
+                "name": "Unknown Fragrance",
+                "element": "Ventus"
+            }
+        ],
+        "startTime": "2026-09-01T12:00:00+08:00",
+        "endTime": "2026-09-22T10:59:59+08:00"
+    },
+    "21141": {
+        "id": 21141,
+        "type": "disc",
+        "name": "A Heart-Tuned Melody",
+        "icon": "tab_gacha_21141_lang",
+        "rateUp5Star": [
+            {
+                "id": 214027,
+                "name": "Mystic Brushstrokes",
+                "element": "Ignis"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213004,
+                "name": "Twin Moon Mischief",
+                "element": "Ignis"
+            },
+            {
+                "id": 213009,
+                "name": "Rainy Tune",
+                "element": "Aqua"
+            }
+        ],
+        "startTime": "2026-07-14T12:00:00+08:00",
+        "endTime": "2026-08-04T03:59:59+08:00"
+    },
+    "21144": {
+        "id": 21144,
+        "type": "disc",
+        "name": "Moon upon Still Waters",
+        "icon": "tab_gacha_21144_lang",
+        "rateUp5Star": [
+            {
+                "id": 214026,
+                "name": "Sword Against Stream",
+                "element": "Aqua"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213009,
+                "name": "Rainy Tune",
+                "element": "Aqua"
+            },
+            {
+                "id": 213005,
+                "name": "★Bam Bam Girl★",
+                "element": "Lux"
+            }
+        ],
+        "startTime": "2026-04-30T12:00:00+08:00",
+        "endTime": "2026-05-19T03:59:59+08:00"
+    },
+    "21155": {
+        "id": 21155,
+        "type": "disc",
+        "name": "Ocean Meets the Sky",
+        "icon": "tab_gacha_21155_lang",
+        "rateUp5Star": [
+            {
+                "id": 214038,
+                "name": "Ripples of Nostalgia",
+                "element": "Lux"
+            }
+        ],
+        "rateUp4Star": [
+            {
+                "id": 213004,
+                "name": "Twin Moon Mischief",
+                "element": "Ignis"
+            },
+            {
+                "id": 213006,
+                "name": "Good Night",
+                "element": "Lux"
+            }
+        ],
+        "startTime": "2026-05-26T12:00:00+08:00",
+        "endTime": "2026-06-16T03:59:59+08:00"
+    }
+}

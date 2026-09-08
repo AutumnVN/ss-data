@@ -1,0 +1,1377 @@
+{
+    "9": {
+        "name": "DEF PEN",
+        "desc": "Target DEF ignored when dealing DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "17": {
+        "name": "Aqua DMG",
+        "desc": "Additional DMG multiplier when dealing Aqua DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "18": {
+        "name": "Ignis DMG",
+        "desc": "Additional DMG multiplier when dealing Ignis DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "19": {
+        "name": "Terra DMG",
+        "desc": "Additional DMG multiplier when dealing Terra DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "20": {
+        "name": "Ventus DMG",
+        "desc": "Additional DMG multiplier when dealing Ventus DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "21": {
+        "name": "Lux DMG",
+        "desc": "Additional DMG multiplier when dealing Lux DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "22": {
+        "name": "Umbra DMG",
+        "desc": "Additional DMG multiplier when dealing Umbra DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "45": {
+        "name": "Max Energy",
+        "desc": "When reaching the Energy limit, the Trekker Ultimate becomes available",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "46": {
+        "name": "Charge Efficiency (Support)",
+        "desc": "The Main Trekker provides Energy for Support Trekkers by default. Support Trekkers' Energy gained = Main Trekker's Energy gained × Support Charge Efficiency.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "66": {
+        "name": "VUL Exploit Multiplier",
+        "desc": "Additional DMG multiplier against targets with negative Elemental RES.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1001": {
+        "name": "Shock",
+        "desc": "Receive additional DMG when attacked",
+        "params": [
+            "4/4/5/5/7/7/8/8/9",
+            "0.001%/0.0016%/0.0022%/0.0028%/0.0034%/0.004%/0.0046%/0.0052%/0.0058%"
+        ],
+        "effectType": [
+            "Skill DMG (base)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1002": {
+        "name": "Freeze",
+        "desc": "Frozen and incapacitated. Unable to take action.",
+        "params": [
+            "9%/14.4%/19.8%/25.2%/30.6%/36%/41.4%/46.8%/52.2%"
+        ],
+        "effectType": [
+            "ATK (%)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_CommonBuff_AttackUp"
+        ]
+    },
+    "1003": {
+        "name": "Slow",
+        "desc": "Reduce Movement SPD",
+        "params": [
+            "19%/31%/42%/54%/65%/77%/88%/100%/111%"
+        ],
+        "effectType": [],
+        "addAttrType": [
+            "Skill DMG (base)"
+        ],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1004": {
+        "name": "Stun",
+        "desc": "Unable to take any actions",
+        "params": [
+            "8/11/14/17/19/22/25/28/31"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1005": {
+        "name": "Burn",
+        "desc": "Continuously take Ignis DMG",
+        "params": [
+            "7/9/12/14/16/19/21/23/25"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1006": {
+        "name": "Resilience Break",
+        "desc": "When Resilience decreases to 0, Superarmor effect is removed",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1007": {
+        "name": "Arctic",
+        "desc": "Reduce Aqua Res by 10",
+        "params": [
+            "22%/35%/48%/61%/74%/87%/101%/114%/127%"
+        ],
+        "effectType": [
+            "ATK (%)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_CommonBuff_AttackUp"
+        ]
+    },
+    "1008": {
+        "name": "Bind",
+        "desc": "Unable to move but can cast skills",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1009": {
+        "name": "Damp",
+        "desc": "Reduce Movement SPD by 30%",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1010": {
+        "name": "Lucent Mark",
+        "desc": "Lux Mark. Reduce the target's Lux Res by 23",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1011": {
+        "name": "Blind",
+        "desc": "Unable to attack and wander aimlessly. Effect breaks when taking DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1012": {
+        "name": "Incineration Mark",
+        "desc": "Ignis Mark. Reduce the target's Ignis Res by 23",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1013": {
+        "name": "Combustion",
+        "desc": "Deal Ignis DMG to all targets within the area",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1014": {
+        "name": "Ventus Mark: Breeze",
+        "desc": "A special status applied to the target by some Ventus Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Ventus Trekkers. When triggered, removes the status and activates special effects.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1015": {
+        "name": "Lux Mark",
+        "desc": "The generic name for all Lux Marks.\u000bWhen triggered by specific Lux Trekkers' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Light1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1016": {
+        "name": "Ignis Mark",
+        "desc": "The generic name for all Ignis Marks.\u000bWhen triggered by specific Ignis Trekkers' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Fire1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1017": {
+        "name": "Ventus Mark",
+        "desc": "The generic name for all Ventus Marks.\u000bWhen triggered by specific Ventus Trekkers' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Wind1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1018": {
+        "name": "Aqua Mark",
+        "desc": "The generic name for all Aqua Marks.\u000bWhen triggered by specific Aqua Trekkers' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Water1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1019": {
+        "name": "Umbra Mark",
+        "desc": "The generic name for all Umbra Marks.\u000bWhen triggered by specific Umbra Trekkers' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Dark1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1020": {
+        "name": "Terra Mark",
+        "desc": "The generic name for all Terra Marks.\u000bWhen triggered by specific Terra Trekkers' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Earth1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1021": {
+        "name": "Lightning Array",
+        "desc": "Light Orbs orbit the Trekker, dealing Lux DMG when colliding with a target. There can be a maximum of 3 Light Orbs at a time, lasts 3s",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1022": {
+        "name": "Chain of Radiance",
+        "desc": "Chains of Light will ricochet at a maximum of 2 times by default. Damage is reduced by 10% after each ricochet",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1023": {
+        "name": "Light of Thunder",
+        "desc": "Light of Thunder deals are of effect Lux DMG to targets within the area with an increased base Crit Rate of 12%",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1024": {
+        "name": "Wind Shear",
+        "desc": "Wind Shear will automatically track and ricochet between targets at a maximum of 3 times by default",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1025": {
+        "name": "Aqua-Etch",
+        "desc": "Aqua Mark, reduce target Movement SPD by 5%, up to 10 stacks",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1026": {
+        "name": "Ventus-Press",
+        "desc": "Ventus Mark, reduce target ATK SPD by 20%",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1027": {
+        "name": "Chill",
+        "desc": "Reduces Movement SPD by 25% for &Param2&s, up to &Param3& stacks.\u000bAt &Param3& stacks, converts into Freeze for &Param4&s.",
+        "params": [
+            "-25%",
+            10,
+            3,
+            3
+        ],
+        "effectType": [
+            "Movement Speed (%)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_CommonBuff_Cold",
+            "Icon_CommonBuff_Frozen"
+        ]
+    },
+    "1028": {
+        "name": "Burn",
+        "desc": "Burn deals 5% ATK + 20 as Ignis DMG to the target every second for 5s",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1029": {
+        "name": "Melt Armor",
+        "desc": "Increase target DMG received by 40% for 5s",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1030": {
+        "name": "Lightning Spirit",
+        "desc": "Each Electric Soul increases the Trekker's damage by 5%. When reaching 3 Electric Souls, Electric Soul will be activated and will automatically seek out enemies, dealing area of effect Lux DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1031": {
+        "name": "Unstable Flowery Cloud",
+        "desc": "Determined after throwing Unstable Flowery Cloud:\nNormal: Explode 1 time\nSuccess: Explode 2 times\nGreat Success: Explode 3 times",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1032": {
+        "name": "Ring of Fog",
+        "desc": "Summon Dew to accumulate Ring of Fog\nFor every 3 Dew summons, expand 1 stack of Ring of Fog, up to 3 stacks\nDeal 30% ATK as Aqua DMG to targets within Ring of Fog every 2s\nIf less than 3 Dews are casted within 10s, remove 1 stack of Ring of Fog",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1033": {
+        "name": "Wind Realm",
+        "desc": "Firing Wind Shots can accumulate 15 Ventus Energy\nAccumulate 60 Ventus Energy to expand 1 stack of Wind Zone, up to 3 stacks\nEach stack of Wind Zone increases Ventus DMG received by the target by 5%\nIf less than 3 Wind Shots are fired within 10s, remove 1 stack of Wind Zone",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1034": {
+        "name": "Ignis Vulnerable",
+        "desc": "Increase Ignis DMG taken",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1035": {
+        "name": "Lux Vulnerable",
+        "desc": "Increase Lux DMG received",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1036": {
+        "name": "Ventus Vulnerable",
+        "desc": "Increase Ventus DMG received",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1037": {
+        "name": "Aqua Vulnerable",
+        "desc": "Increase Aqua DMG received",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1038": {
+        "name": "Terra Vulnerable",
+        "desc": "Increase Terra DMG received",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1039": {
+        "name": "Umbra Vulnerable",
+        "desc": "Increase Umbra DMG received",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1040": {
+        "name": "Light Explosion",
+        "desc": "Light Orbs detonate and disappear, dealing single-target Lux DMG",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1041": {
+        "name": "Mark of Kamaitachi",
+        "desc": "Increase Kamatachi damage to the marked target by for 5s, up to 10 stacks.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1042": {
+        "name": "Mark of Great Kamaitachi",
+        "desc": "Increase Kamatachi damage and Crit Rate to the marked target for 30s. Cannot stack with Mark of Kamaitachi",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1043": {
+        "name": "Protection of Ranged Evasion",
+        "desc": "When receiving ranged damage, remove Protection of Ranged Evasion and Evade the damage",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1044": {
+        "name": "Electric Soul Vulnerable",
+        "desc": "Increase damage received from Electric Soul",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1045": {
+        "name": "Paralyze",
+        "desc": "Abnormal behavior that causes periodic convulsion",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1046": {
+        "name": "Dive Shark Vulnerable",
+        "desc": "Increase damage received from Dive Shark",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1047": {
+        "name": "Dive Shark Waters",
+        "desc": "A dangerous area that continues to summon Dive Sharks",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1048": {
+        "name": "Mark of Dive Shark Prey",
+        "desc": "Periodically summons 1 Dive Shark to attack the marked target",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1049": {
+        "name": "Dr. Cloud",
+        "desc": "In this state, increase Trekker ATK and all Unstable Flowery Cloud the Trekker throws is guaranteed to be Great Success",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1050": {
+        "name": "Flowery Cloud",
+        "desc": "Includes Unstable Flowery Cloud and Stable Flowery Cloud",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1051": {
+        "name": "Runic Ice",
+        "desc": "Each Runic Ice increases Trekker Aqua DMG and weakens target hit with Dew, reducing the target's damage",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1052": {
+        "name": "Heart",
+        "desc": "Each stack of Heart increases 15 DEF for 5s, up to 10 stacks",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1053": {
+        "name": "Sword Aura",
+        "desc": "Noya fires sword auras that penetrate enemies, dealing area of effect DMG.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "1054": {
+        "name": "Multi Sword Aura",
+        "desc": "Create a sword aura sphere at the enemy's position, dealing multi-hit area of effect DMG.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2007": {
+        "name": "Shatter",
+        "desc": "When a specific DMG type hits a Frozen normal target, it immediately kills the target.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2008": {
+        "name": "Aqua Mark: Torrent",
+        "desc": "A special status applied by some Aqua characters to the target for 10 sec.\u000bWhen triggered by specific Aqua characters' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Water1_small",
+        "params": [
+            10
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_ElementTag_Water1"
+        ]
+    },
+    "2013": {
+        "name": "Ignis Mark: Sacred Flame",
+        "desc": "Some Ignis characters apply a special status to the target for 10 sec.\u000bWhen triggered by specific Ignis characters' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Fire1_small",
+        "params": [
+            10
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_ElementTag_Fire1"
+        ]
+    },
+    "2014": {
+        "name": "Berserk",
+        "desc": "Freesia enters a frenzied state, increase ATK by <color=#fb8037>&Param1&</color>. Auto Attack changes.",
+        "params": [
+            "46%",
+            "Freesia"
+        ],
+        "effectType": [
+            "ATK (%)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_CommonBuff_AttackUp"
+        ]
+    },
+    "2015": {
+        "name": "Agile",
+        "desc": "&Param1& more agile, enhancing her Auto Attacks and allowing her to shoot while moving.",
+        "params": [
+            "Donna"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2016": {
+        "name": "Lux Mark: Radiance",
+        "desc": "Some Lux Trekkers apply a special status to the target for 10 sec.\u000bWhen triggered by specific Lux Trekkers' attacks, the status is removed, and a special effect is activated.",
+        "icon": "Icon_ElementTag_Light1_small",
+        "params": [
+            15
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_ElementTag_Light1"
+        ]
+    },
+    "2017": {
+        "name": "Ventus Mark: Breeze",
+        "desc": "A special status applied to the target by some Ventus Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Ventus Trekkers. When triggered, removes the status and activates special effects.",
+        "icon": "Icon_ElementTag_Wind1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2018": {
+        "name": "Umbra Mark: Gloom",
+        "desc": "A special status applied to the target by some Umbra Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Umbra Trekkers. When triggered, removes the status and activates special effects.",
+        "icon": "Icon_ElementTag_Dark1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2019": {
+        "name": "Scorched Butterfly",
+        "desc": "Can apply Ignis Mark: Sacred Flame. Cannot apply Butterfly Mark.",
+        "params": [
+            "11.47%/12.6%/13.8%/17.2%/18.4%/19.5%/21.8%/23%/24.1%/26.4%/27.5%/28.7%/29.8%"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2020": {
+        "name": "Dark Shackles",
+        "desc": "After some Umbra Trekkers trigger Umbra Mark, deal damage and trigger Dark Shackles for &Param1&s, binding weaker enemies in place.",
+        "params": [
+            5
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "No Icon"
+        ]
+    },
+    "2021": {
+        "name": "Butterfly Mark",
+        "desc": "Each stack of Butterfly Mark increases the target's &Param1& by &Param2&, up to 3 stacks, for 6s.",
+        "params": [
+            "Ignis DMG Taken",
+            "3.5%"
+        ],
+        "effectType": [
+            "Ignis DMG Taken (base)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2022": {
+        "name": "Stream",
+        "desc": "A special status applied to the target by some Aqua Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Aqua Trekkers. When triggered, deals AoE DMG and applies Chill.",
+        "params": [
+            10
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_ElementTag_Water1"
+        ]
+    },
+    "2023": {
+        "name": "Sacred Flame",
+        "desc": "A special status applied to the target by some Ignis Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Ignis Trekkers. When triggered, deals large AoE DMG.",
+        "params": [
+            10
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_ElementTag_Fire1"
+        ]
+    },
+    "2024": {
+        "name": "Radiance",
+        "desc": "A special status applied to the target by some Lux Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Lux Trekkers. When triggered, deals DMG.",
+        "params": [
+            15
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_ElementTag_Light1"
+        ]
+    },
+    "2025": {
+        "name": "Breeze",
+        "desc": "A special status applied to the target by some Ventus Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Ventus Trekkers. When triggered, removes the status and activates special effects.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2026": {
+        "name": "Dark Shadow",
+        "desc": "A special status applied to the target by some Umbra Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Umbra Trekkers. When triggered, removes the status and activates special effects.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2027": {
+        "name": "Ignite",
+        "desc": "Chixia's flames ignite the Ink applied on the target, dealing DMG pers for &Param2&s. Her flames deal Ignis DMG equal to &Param1& of ATK in total.",
+        "params": [
+            "68%/78%/88%/119%/128%/138%/157%/165%/173%/189%/203%/216%/230%",
+            8
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_CommonBuff_Bleed"
+        ]
+    },
+    "2028": {
+        "name": "Dark Burn",
+        "desc": "After some Umbra Trekkers trigger the Umbra Mark, deal damage and trigger Dark Burn, dealing DOT.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2029": {
+        "name": "Terra Mark: Earth Vein",
+        "desc": "A special status applied to the target by some Terra Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Terra Trekkers. When triggered, removes the status and activates special effects.",
+        "icon": "Icon_ElementTag_Earth1_small",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "2030": {
+        "name": "Earth Vein",
+        "desc": "A special status applied to the target by some Terra Trekkers, lasting for 10s.\u000bCan be triggered by the attacks of specific Terra Trekkers. When triggered, removes the status and activates special effects.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4002": {
+        "name": "Shadow Clone",
+        "desc": "Shadow Clone is &Param1&'s minion and has 100% of &Param1&'s ATK. It is immune to DMG and lasts for &Param2&s. Up to &Param3& Shadow Clones can exist at the same time.",
+        "params": [
+            "Firenze",
+            5,
+            2
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4003": {
+        "name": "Wind Chant",
+        "desc": "Can stack up to &Param1& times. When Wind Chant is at max stacks, Nazuka consumes all stacks of Wind Chant upon casting her next Skill and enters Wind Roar.",
+        "params": [
+            20
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4004": {
+        "name": "Flower Formation",
+        "desc": "Up to 3 Flower Formations can be present at the same time. Flower Formations of Bouquet Blast (Support Skill) can deal DMG to the same target no more than once per second.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4005": {
+        "name": "Dark Burn",
+        "desc": "Deals DMG to the target every 0.5s for &Param1&s, dealing &Param2& of Firenze's ATK as Umbra Mark DMG in total.",
+        "params": [
+            5,
+            "4.1%/5.3%/6.6%/7.8%/9%/10.3%/11.5%/12.7%/14%"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "No Icon"
+        ]
+    },
+    "4007": {
+        "name": "Pumpka Phantom",
+        "desc": "Pumpka Phantom inherits 25% of Mistique's Base Max HP and 100% of her ATK, lasting for 15s. Up to 4 can exist at the same time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4008": {
+        "name": "Lanterna Phantom",
+        "desc": "Lanterna Phantom inherits 3% of Mistique's Base Max HP and 100% of her ATK, lasting for 8s.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4009": {
+        "name": "Dark Burn",
+        "desc": "Deals DMG to the target every 0.5s for &Param1&s, dealing &Param2& of Mistique's ATK as Umbra Mark DMG in total.",
+        "params": [
+            5,
+            "1.4%/1.7%/2.1%/2.4%/2.7%/3.1%/3.4%/3.7%/4.1%"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "No Icon"
+        ]
+    },
+    "4010": {
+        "name": "Dark Burn",
+        "desc": "Deals DMG to the target every 0.5s for &Param1&s, dealing &Param2& of Caramel's ATK as Umbra Mark DMG in total.",
+        "params": [
+            5,
+            "1.4%/1.7%/2.1%/2.4%/2.7%/3.1%/3.4%/3.7%/4.1%"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "No Icon"
+        ]
+    },
+    "4013": {
+        "name": "Bubble",
+        "desc": "Bubble inherits 100% of Ann's ATK for 15s, during which it is immune to DMG.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4014": {
+        "name": "Nether Energy",
+        "desc": "Lasts for 15s, stacking up to 4 times.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4015": {
+        "name": "Popularity",
+        "desc": "Lasts for 8s, stacking up to 5 times.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4016": {
+        "name": "Demonic Boombox",
+        "desc": "Demonic Boombox inherits 100% of Caramel's ATK for 15s, during which it is immune to DMG. Only 1 can exist at the same time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4017": {
+        "name": "Advertising Doll",
+        "desc": "Advertising Doll inherits 100% of Donna's Base Max HP and 100% of her ATK for 12s.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4018": {
+        "name": "Crimson Dragon",
+        "desc": "Crimson Dragon inherits 100% of Chixia's ATK for 8s, during which it is immune to DMG.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4019": {
+        "name": "Tiger of the East",
+        "desc": "Tiger of the East inherits 100% of Chixia's ATK for 15s, during which it is immune to DMG.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4020": {
+        "name": "Colonel Walnut",
+        "desc": "Colonel Walnut, summoned by Snowish Laru as the Main Trekker, inherits 100% of Snowish Laru's ATK and is immune to DMG permanently.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4021": {
+        "name": "General Curly",
+        "desc": "General Curly, summoned by Snowish Laru as the Main Trekker, inherits 100% of Snowish Laru's ATK and is immune to DMG permanently.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4022": {
+        "name": "Clockwork Queen",
+        "desc": "Clockwork Queen inherits 100% of Snowish Laru's ATK for 12s, during which it is immune to DMG. Only 1 can exist at the same time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4023": {
+        "name": "Colonel Walnut",
+        "desc": "Colonel Walnut, summoned by Snowish Laru as the Support Trekker, inherits 100% of Snowish Laru's ATK for 10s, during which it is immune to DMG. Up to 4 can exist at the same time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4024": {
+        "name": "General Curly",
+        "desc": "General Curly, combined by Colonel Walnuts, inherits 100% of Snowish Laru's ATK for 10s, during which it is immune to DMG. Only 1 can exist at the same time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4025": {
+        "name": "Conflagration",
+        "desc": "When certain Ignis Trekkers trigger a Mark, they deal DMG in a large area.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4026": {
+        "name": "Incineration",
+        "desc": "When certain Ignis Trekkers trigger a Mark, they deal DMG in a small area.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4027": {
+        "name": "Thunderbolt",
+        "desc": "When certain Lux Trekkers trigger a Mark, they deal DMG in a small area.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4028": {
+        "name": "Lucent",
+        "desc": "When certain Lux Trekkers trigger a Mark, they deal AoE DMG and inflict Glimmer.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4029": {
+        "name": "Glimmer",
+        "desc": "Increases the targets' &Param1& by &Param2& for &Param3&s, stacking up to &Param4& times.",
+        "params": [
+            "Lux DMG Taken",
+            "0.5%",
+            6,
+            3
+        ],
+        "effectType": [
+            "Lux DMG Taken (base)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_CommonBuff_DefenseDown"
+        ]
+    },
+    "4030": {
+        "name": "Artillery Form",
+        "desc": "The ranged attack form Firefly enters after casting the Main Skill. Uses floating cannons to strike targets for a period of time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4031": {
+        "name": "Sword Form",
+        "desc": "The melee attack form Firefly enters after casting the Support Skill. Wields a giant sword and launches flying blades to strike targets for a period of time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4032": {
+        "name": "Avalanche",
+        "desc": "Firefly's personal combat unit, which remains in standby mode while following Firefly. When required, it transforms into various combat forms to attack Firefly's targets.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4033": {
+        "name": "Bunny Jaws Mode",
+        "desc": "Select the Main Skill Button to enter a slow attack mode that deals AoE DMG for a period of time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4034": {
+        "name": "Bunny Rapid Fire Mode",
+        "desc": "Hold the Main Skill Button to enter a rapid attack mode that deals multiple instances of DMG over a period of time.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4035": {
+        "name": "Evil Eye Unleashed",
+        "desc": "Chaton breaks the seal of Evil Eye, gaining Super Armor, increased stats, and enhanced Auto Attacks.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4036": {
+        "name": "Dark Ray",
+        "desc": "Derived Skill unleashed by tapping &Param1& (Main Skill). Chaton fires a laser at the target, inflicting Dark Mark and dealing DMG over time.",
+        "params": [
+            "Sniper Operation"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4037": {
+        "name": "Bouncing Kitty Bomb",
+        "desc": "Derived Skill unleashed by holding &Param1& (Main Skill). Chaton throws Bouncing Bombs at the target, dealing AoE DMG.",
+        "params": [
+            "Sniper Operation"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4038": {
+        "name": "Decibels",
+        "desc": "When Willow is the Main Trekker, she can accumulate up to 100 Decibels through Auto Attacks.\u000bAuto Attack Strike 1 to 3: Increases 3 Decibels.\u000bAuto Attack Strike 4: Increases 4 Decibels.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4039": {
+        "name": "Decibels",
+        "desc": "When Willow is the Support Trekker, each bubble fired increases 2 Decibels, up to 100.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4040": {
+        "name": "Smiling Sanction",
+        "desc": "Granted by certain Support Potentials. Increases the target's &Param1& by &Param2& for &Param3&s, stacking up to &Param4& times.",
+        "params": [
+            "Mark DMG Taken",
+            "11.7%",
+            12,
+            6
+        ],
+        "effectType": [
+            "ELEMENTTYPE_:(Aqua) Mark DMG Taken"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_Buff_16001_516021"
+        ]
+    },
+    "4041": {
+        "name": "Bubble Mark",
+        "desc": "Inflicted by Auto Attacks in Bubble Machine mode. Increases the &Param1& dealt by Willow to targets with Bubble Mark by &Param2& for &Param3&s.",
+        "params": [
+            "Aqua DMG",
+            "25%",
+            4
+        ],
+        "effectType": [],
+        "addAttrType": [
+            "Aqua DMG (base)"
+        ],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_Buff_16001_516001"
+        ]
+    },
+    "4042": {
+        "name": "Gentle Warning",
+        "desc": "When Willow is a Support Trekker and current Decibels ≤40, she enters Gentle Warning: Increases the squad's &Param4& by <color=#fb8037>&Param5&</color>.",
+        "params": [
+            "",
+            "",
+            "",
+            "Aqua DMG",
+            "5%/7%/8%/13%/14%/15%/18%/19%/21%/23%/25%/27%/29%"
+        ],
+        "effectType": [
+            "Aqua DMG (base)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "Icon_CommonBuff_AttackUp"
+        ]
+    },
+    "4043": {
+        "name": "Safety Alert",
+        "desc": "When Willow is the Support Trekker and current Decibels >40, she enters Safety Alert: Gains the stat bonuses of Gentle Warning by default, and additionally increases the squad's &Param6& by <color=#fb8037>&Param7&</color>.",
+        "params": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "ATK",
+            "10%/13%/16%/25%/28%/31%/36%/39%/41%/46%/50%/54%/58%"
+        ],
+        "effectType": [
+            "ATK (%)"
+        ],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "No Icon"
+        ]
+    },
+    "4045": {
+        "name": "Hunting Energy",
+        "desc": "Karin has Hunting Energy, which is capped at 100 and regenerates 10 per second.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4046": {
+        "name": "Hunter's Mark",
+        "desc": "After consuming Hunting Energy to throw the chain, Karin inflicts a special mark on the target for &Param1&s.",
+        "params": [
+            3
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "No Icon"
+        ]
+    },
+    "4047": {
+        "name": "Echoing Soundwave",
+        "desc": "Generated by the Main Trekker Potential, Rainbow Rebound. Deals damage.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4048": {
+        "name": "Tactical Energy",
+        "desc": "Each time Eleanor deals Auto Attack DMG, she has an 80% chance to gain 2 Tactical Energy. This can only be triggered once every 2s.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4049": {
+        "name": "The Myriad Case",
+        "desc": "Eleanor's special weapon case that contains many unique weapons ready for use.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4050": {
+        "name": "Sentry",
+        "desc": "Eleanor's unique drone, which can either protect her or be deployed for targeted attacks.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4051": {
+        "name": "Dark Burn",
+        "desc": "Deals DMG to the target every 0.5s for &Param1&s, dealing &Param2& of Karin's ATK as Umbra Mark DMG in total.",
+        "params": [
+            5,
+            "4.1%/5.3%/6.6%/7.8%/9%/10.3%/11.5%/12.7%/14%"
+        ],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": [
+            "No Icon"
+        ]
+    },
+    "4501": {
+        "name": "Fear",
+        "desc": "The target has escaped and can no longer be attacked.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "4502": {
+        "name": "Allure",
+        "desc": "The target remains too close to the caster. Cannot attack.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    },
+    "6002": {
+        "name": "Ode",
+        "desc": "When a target inflicted with Ode takes minion DMG, Ode is converted into Hymn.\u000bEach Ignis Trekker can only inflict 1 stack of Ode, and this Ode can only be converted into Hymn by Minion DMG dealt by that Trekker's minion.",
+        "params": [],
+        "effectType": [],
+        "addAttrType": [],
+        "effectData": [],
+        "buffIcons": []
+    }
+}
