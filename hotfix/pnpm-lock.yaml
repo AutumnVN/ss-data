@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      iced-x86:
+        specifier: ^1.21.0
+        version: 1.21.0
+
+packages:
+
+  iced-x86@1.21.0:
+    resolution: {integrity: sha512-zHK5/RREJbD7N2BfbeiHJciHbZKCSwI5c34wASV9/B8vNe+mjOzqK8RIabhMLmqHv3L6UvuFDlpdS/dqleQyeA==}
+
+snapshots:
+
+  iced-x86@1.21.0: {}

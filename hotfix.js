@@ -1,12 +1,20 @@
-const API_URL = 'https://api.github.com/repos/MorphTheMoth/Stella-Sora-Combat-Logger/contents/decompilation/hotfix';
-const RAW_URL = 'https://github.com/MorphTheMoth/Stella-Sora-Combat-Logger/raw/refs/heads/main/decompilation/hotfix';
+const { readFileSync } = require('fs');
+
+const HOTFIX_FILE = `${__dirname}/hotfix/out/Hotfix.dec.decompiled.cs`;
 
 const ELEMENTS = { WE: 1, FE: 2, SE: 3, AE: 4, LE: 5, DE: 6 };
+const ELEMENTS_BY_NAME = { Water: 1, Fire: 2, Land: 3, Earth: 3, Air: 4, Wind: 4, Light: 5, Dark: 6 };
+
+const ELEMENT_CODES = /(?:\(\s*(?:int|elementType)\s*\)\s*[\w.]*)?elementType(?:\s*\)\s*|\s*[!=]=\s*)([1-6])\b/g;
 
 function parse(block) {
     const elements = new Set();
     for (const [, code] of block.matchAll(/\belementType\.([A-Z]{2})\b/g)) {
         if (ELEMENTS[code]) elements.add(ELEMENTS[code]);
+    }
+    for (const [, value] of block.matchAll(ELEMENT_CODES)) elements.add(+value);
+    for (const [, name] of block.matchAll(/\bCommonDefine\.(Water|Fire|Land|Earth|Wind|Air|Light|Dark)(?![A-Za-z])/g)) {
+        elements.add(ELEMENTS_BY_NAME[name]);
     }
 
     const proc = block.includes('TriggerElementMarkEvent');
@@ -19,9 +27,7 @@ function parse(block) {
 }
 
 async function getHotfixData() {
-    const list = await (await fetch(API_URL)).json();
-    const version = list.map(entry => entry.name).filter(name => /^\d+(\.\d+)*$/.test(name)).sort((a, b) => a.localeCompare(b, undefined, { numeric: true })).pop();
-    const lines = (await (await fetch(`${RAW_URL}/${version}/Hotfix.decompiled.cs`)).text()).split(/\r?\n/);
+    const lines = readFileSync(HOTFIX_FILE, 'utf8').split(/\r?\n/);
 
     const characters = {};
     let depth = 0, id = 0, start = 0;
