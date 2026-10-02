@@ -72793,7 +72793,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "130522002",
-                            "hitDamageNote": "Applied when this character deals damage; Requires Arrowfall Reckoning (513022)"
+                            "hitDamageNote": "Requires Arrowfall Reckoning (513022)"
                         },
                         {},
                         {},
@@ -84318,7 +84318,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "134503001",
-                            "hitDamageNote": "Applied when this character deals damage; Requires Kitty Punch (513403)"
+                            "hitDamageNote": "Requires Kitty Punch (513403)"
                         },
                         {
                             "buffIcon": "No Icon",
@@ -85239,7 +85239,7 @@
                         {
                             "damageType": "Skill",
                             "hitDamageId": "134528001",
-                            "hitDamageNote": "Applied when this character deals damage; Requires Multi-Blow Impact (513428)"
+                            "hitDamageNote": "Requires Multi-Blow Impact (513428)"
                         }
                     ],
                     "hiddenParams": [],
@@ -100097,7 +100097,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "140502001",
-                            "hitDamageNote": "Requires Click-Clack Echoes (514002); Applied when this character deals damage"
+                            "hitDamageNote": "Requires Click-Clack Echoes (514002)"
                         },
                         {
                             "addAttrType": "(Terra) Skill DMG (base)",
@@ -131724,7 +131724,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150310201",
-                            "hitDamageNote": "Applied when this character deals damage; Requires Arc Chain Laser (515002)"
+                            "hitDamageNote": "Requires Arc Chain Laser (515002)"
                         },
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
@@ -144803,7 +144803,7 @@
                         {
                             "damageType": "Ultimate (from Skill, scale with Skill)",
                             "hitDamageId": "157300014",
-                            "hitDamageNote": "Applied when this character deals damage; Requires Dark Bite Mark (515722)"
+                            "hitDamageNote": "Requires Dark Bite Mark (515722)"
                         }
                     ],
                     "hiddenParams": [],

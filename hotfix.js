@@ -170,7 +170,6 @@ function parseHitDamageNotes(source) {
     const methodAt = new Array(lines.length);
     const damageTags = new Map();
     const occurrences = new Map();
-    const fieldReads = new Map();
     const stack = [];
     const requiredBy = new Map();
     const applyCalls = new Set();
@@ -256,9 +255,7 @@ function parseHitDamageNotes(source) {
             }
             list.push({
                 declaration: applied,
-                field: applied && declared[1],
                 perks: new Set(guards),
-                method,
             });
         }
 
@@ -273,27 +270,6 @@ function parseHitDamageNotes(source) {
 
         depth -= closes;
         while (stack.length && stack[stack.length - 1].depth > depth) stack.pop();
-    }
-
-    const fields = new Set();
-    for (const list of occurrences.values()) {
-        for (const entry of list) if (entry.field) fields.add(entry.field);
-    }
-
-    const fieldPattern = new RegExp(`\\b(?:${[...fields].map(f => f.replace(/[$]/g, '\\$')).join('|')})\\b`, 'g');
-    for (let i = 0; i < lines.length; i++) {
-        const declared = DECL_LINE.exec(lines[i]);
-        for (const [field] of lines[i].matchAll(fieldPattern)) {
-            if (declared && declared[1] === field) continue;
-            fieldReads.set(field, (fieldReads.get(field) || 0) + 1);
-        }
-    }
-
-    const unused = new Set();
-    for (const [id, list] of occurrences) {
-        if (list.some(entry => !entry.field)) continue;
-        if (list.some(entry => fieldReads.get(entry.field))) continue;
-        unused.add(id);
     }
 
     const mappings = new Map();
@@ -359,7 +335,6 @@ function parseHitDamageNotes(source) {
         for (const entry of list) {
             if (entry.declaration) continue;
             paths.push(entry.perks);
-            if (entry.method === 'OnSelfDamaged' || entry.method === 'OnBeforeSelfHit') add(id, 'Applied when this character deals damage');
         }
 
         const unconditional = !paths.length || paths.some(perks => !perks.size);
@@ -368,8 +343,6 @@ function parseHitDamageNotes(source) {
         const required = paths.reduce((kept, perks) => new Set([...kept].filter(id => perks.has(id))), paths[0]);
         for (const perkId of required) add(id, `Requires ${potentialLabel(perkId)}`);
     }
-
-    for (const id of unused) add(id, 'Unused: declared in code but never applied');
 
     return result;
 }
