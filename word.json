@@ -5,7 +5,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "17": {
@@ -14,7 +13,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "18": {
@@ -23,7 +21,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "19": {
@@ -32,7 +29,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "20": {
@@ -41,7 +37,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "21": {
@@ -50,7 +45,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "22": {
@@ -59,7 +53,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "45": {
@@ -68,7 +61,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "46": {
@@ -77,7 +69,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "66": {
@@ -86,7 +77,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1001": {
@@ -100,7 +90,6 @@
             "Skill DMG (base)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1002": {
@@ -113,7 +102,6 @@
             "ATK (%)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_CommonBuff_AttackUp"
         ]
@@ -128,7 +116,6 @@
         "addAttrType": [
             "Skill DMG (base)"
         ],
-        "effectData": [],
         "buffIcons": []
     },
     "1004": {
@@ -139,7 +126,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1005": {
@@ -150,7 +136,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1006": {
@@ -159,7 +144,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1007": {
@@ -172,7 +156,6 @@
             "ATK (%)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_CommonBuff_AttackUp"
         ]
@@ -183,7 +166,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1009": {
@@ -192,7 +174,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1010": {
@@ -201,7 +182,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1011": {
@@ -210,7 +190,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1012": {
@@ -219,7 +198,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1013": {
@@ -228,7 +206,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1014": {
@@ -237,7 +214,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1015": {
@@ -247,7 +223,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1016": {
@@ -257,7 +232,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1017": {
@@ -267,7 +241,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1018": {
@@ -277,7 +250,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1019": {
@@ -287,7 +259,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1020": {
@@ -297,7 +268,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1021": {
@@ -306,7 +276,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1022": {
@@ -315,7 +284,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1023": {
@@ -324,7 +292,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1024": {
@@ -333,7 +300,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1025": {
@@ -342,7 +308,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1026": {
@@ -351,7 +316,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1027": {
@@ -367,7 +331,6 @@
             "Movement Speed (%)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_CommonBuff_Cold",
             "Icon_CommonBuff_Frozen"
@@ -379,7 +342,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1029": {
@@ -388,7 +350,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1030": {
@@ -397,7 +358,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1031": {
@@ -406,7 +366,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1032": {
@@ -415,7 +374,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1033": {
@@ -424,7 +382,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1034": {
@@ -433,7 +390,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1035": {
@@ -442,7 +398,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1036": {
@@ -451,7 +406,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1037": {
@@ -460,7 +414,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1038": {
@@ -469,7 +422,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1039": {
@@ -478,7 +430,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1040": {
@@ -487,7 +438,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1041": {
@@ -496,7 +446,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1042": {
@@ -505,7 +454,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1043": {
@@ -514,7 +462,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1044": {
@@ -523,7 +470,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1045": {
@@ -532,7 +478,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1046": {
@@ -541,7 +486,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1047": {
@@ -550,7 +494,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1048": {
@@ -559,7 +502,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1049": {
@@ -568,7 +510,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1050": {
@@ -577,7 +518,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1051": {
@@ -586,7 +526,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1052": {
@@ -595,7 +534,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1053": {
@@ -604,7 +542,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "1054": {
@@ -613,7 +550,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2007": {
@@ -622,7 +558,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2008": {
@@ -634,7 +569,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_ElementTag_Water1"
         ]
@@ -648,7 +582,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_ElementTag_Fire1"
         ]
@@ -664,7 +597,6 @@
             "ATK (%)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_CommonBuff_AttackUp"
         ]
@@ -677,7 +609,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2016": {
@@ -689,7 +620,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_ElementTag_Light1"
         ]
@@ -701,7 +631,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2018": {
@@ -711,7 +640,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2019": {
@@ -722,7 +650,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2020": {
@@ -733,7 +660,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "No Icon"
         ]
@@ -749,7 +675,6 @@
             "Ignis DMG Taken (base)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2022": {
@@ -760,7 +685,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_ElementTag_Water1"
         ]
@@ -773,7 +697,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_ElementTag_Fire1"
         ]
@@ -786,7 +709,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_ElementTag_Light1"
         ]
@@ -797,7 +719,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2026": {
@@ -806,7 +727,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2027": {
@@ -818,7 +738,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_CommonBuff_Bleed"
         ]
@@ -829,7 +748,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2029": {
@@ -839,7 +757,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "2030": {
@@ -848,7 +765,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4002": {
@@ -861,7 +777,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4003": {
@@ -872,7 +787,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4004": {
@@ -881,7 +795,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4005": {
@@ -893,7 +806,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "No Icon"
         ]
@@ -904,7 +816,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4008": {
@@ -913,7 +824,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4009": {
@@ -925,7 +835,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "No Icon"
         ]
@@ -939,7 +848,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "No Icon"
         ]
@@ -950,7 +858,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4014": {
@@ -959,7 +866,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4015": {
@@ -968,7 +874,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4016": {
@@ -977,7 +882,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4017": {
@@ -986,7 +890,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4018": {
@@ -995,7 +898,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4019": {
@@ -1004,7 +906,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4020": {
@@ -1013,7 +914,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4021": {
@@ -1022,7 +922,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4022": {
@@ -1031,7 +930,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4023": {
@@ -1040,7 +938,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4024": {
@@ -1049,7 +946,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4025": {
@@ -1058,7 +954,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4026": {
@@ -1067,7 +962,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4027": {
@@ -1076,7 +970,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4028": {
@@ -1085,7 +978,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4029": {
@@ -1101,7 +993,6 @@
             "Lux DMG Taken (base)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_CommonBuff_DefenseDown"
         ]
@@ -1112,7 +1003,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4031": {
@@ -1121,7 +1011,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4032": {
@@ -1130,7 +1019,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4033": {
@@ -1139,7 +1027,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4034": {
@@ -1148,7 +1035,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4035": {
@@ -1157,7 +1043,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4036": {
@@ -1168,7 +1053,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4037": {
@@ -1179,7 +1063,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4038": {
@@ -1188,7 +1071,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4039": {
@@ -1197,7 +1079,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4040": {
@@ -1213,7 +1094,6 @@
             "ELEMENTTYPE_:(Aqua) Mark DMG Taken"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_Buff_16001_516021"
         ]
@@ -1230,7 +1110,6 @@
         "addAttrType": [
             "Aqua DMG (base)"
         ],
-        "effectData": [],
         "buffIcons": [
             "Icon_Buff_16001_516001"
         ]
@@ -1249,7 +1128,6 @@
             "Aqua DMG (base)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_CommonBuff_AttackUp"
         ]
@@ -1270,7 +1148,6 @@
             "ATK (%)"
         ],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "No Icon"
         ]
@@ -1281,7 +1158,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4046": {
@@ -1292,7 +1168,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "No Icon"
         ]
@@ -1303,7 +1178,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4048": {
@@ -1312,7 +1186,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4049": {
@@ -1321,7 +1194,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4050": {
@@ -1330,7 +1202,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4051": {
@@ -1342,7 +1213,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "No Icon"
         ]
@@ -1353,7 +1223,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4053": {
@@ -1367,7 +1236,6 @@
         ],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": [
             "Icon_CommonBuff_Tide"
         ]
@@ -1378,7 +1246,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4501": {
@@ -1387,7 +1254,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "4502": {
@@ -1396,7 +1262,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     },
     "6002": {
@@ -1405,7 +1270,6 @@
         "params": [],
         "effectType": [],
         "addAttrType": [],
-        "effectData": [],
         "buffIcons": []
     }
 }

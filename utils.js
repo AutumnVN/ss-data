@@ -12,6 +12,7 @@ const SKILL = require('./EN/bin/Skill.json');
 const SCOREBOSSABILITY = require('./EN/bin/ScoreBossAbility.json');
 const SCOREBOSSGETCONTROL = require('./EN/bin/ScoreBossGetControl.json');
 const ITEM = require('./EN/bin/Item.json');
+const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, potentialLabel } = require('./hotfix');
 const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
 const LANG_SKILL = require('./EN/language/en_US/Skill.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
@@ -503,21 +504,33 @@ function collectPotentialHiddenParamsFrom(obj, allSkillParams) {
     const params = collectParamsFrom(obj);
     const target = String(potId).padStart(2, '0');
 
-    const hiddenHitDamageIds = [];
+    const accepted = id => {
+        if (stringifiedSkill.includes(`DamageNum,${id}`)) return false;
+        if (stringifiedPotential.includes(`DamageNum,${id}`)) return false;
+        if (params.some(param => param.includes(id))) return false;
+        return true;
+    };
+
+    const fromHotfix = getHiddenHitDamageIds(obj.Id).filter(accepted);
+    const hiddenHitDamageIds = fromHotfix.slice();
+
+    if (getHotfixHitDamage().potential[obj.Id]) return {
+        desc: hiddenHitDamageIds.map((id, index) => `\u000bHiddenParam${index + 1}: &HiddenParam${index + 1}& (HitDamage,${DAMAGE_TYPE[HITDAMAGE[id].DamageType]},${id})`).join(' '),
+        params: hiddenHitDamageIds.map(id => `HitDamage,DamageNum,${id}`)
+    };
+
     for (const id of Object.keys(HITDAMAGE)) {
+        if (fromHotfix.includes(id)) continue;
         if (['103522002', '134506002'].includes(id)) continue;
         if (id.length !== 9) continue;
         if (!id.startsWith(charId)) continue;
         if (['01', '02', '03', '04'].includes(target) && !['1', '2', '4', '5'].includes(id.slice(3, 4))) continue;
         if (['21', '22', '23', '24'].includes(target) && !['1', '3', '4', '5'].includes(id.slice(3, 4))) continue;
         if (!['01', '02', '03', '04', '21', '22', '23', '24'].includes(target) && !['5'].includes(id.slice(3, 4))) continue;
-        if (stringifiedSkill.includes(`DamageNum,${id}`)) continue;
-        if (stringifiedPotential.includes(`DamageNum,${id}`)) continue;
+        if (!accepted(id)) continue;
 
         const slice = !slice58Group.includes(charId) ? id.slice(4, 7) : id.slice(5, 8);
         if (slice !== `${target}0`) continue;
-
-        if (params.some(param => param.includes(id))) continue;
 
         const resolved = resolveParam([`HitDamage,DamageNum,${id}`])[0];
         if (!resolved) continue;
@@ -774,16 +787,67 @@ function resolveParam(params) {
     });
 }
 
-function resolveParamsTooltips(params) {
-    return params.map(param => ({
-        damageType: getDamageTypeFromOneParam(param),
-        effectType: getEffectTypeFromOneParam(param),
-        addAttrType: getAddAttrTypeFromOneParam(param),
-        buffIcon: getBuffIconFromOneParam(param)
-    }));
+function getHitDamageNote(hitDamageId) {
+    const notes = [];
+    const perkId = HITDAMAGE[hitDamageId]?.PerkId;
+
+    if (POTENTIAL[perkId]) notes.push(`Requires ${potentialLabel(perkId)}`);
+
+    for (const note of getHotfixHitDamageNote(hitDamageId)) {
+        if (!notes.includes(note)) notes.push(note);
+    }
+
+    return notes;
 }
 
-function getDamageTypeFromOneParam(param) {
+function resolveParamsTooltips(params) {
+    return params.map(param => {
+        const hitDamageId = getHitDamageIdFromParam(param);
+        return {
+            damageType: getDamageTypeFromParam(param),
+            hitDamageId,
+            hitDamageNote: hitDamageId && getHitDamageNote(hitDamageId).join('; ') || undefined,
+            effectType: getEffectTypeFromParam(param),
+            effectId: getEffectIdFromParam(param),
+            addAttrType: getAddAttrTypeFromParam(param),
+            addAttrId: getAddAttrIdFromParam(param),
+            buffIcon: getBuffIconFromParam(param),
+            buffId: getBuffIdFromParam(param)
+        };
+    });
+}
+
+function getHitDamageIdFromParam(param) {
+    if (!param.startsWith('HitDamage')) return;
+
+    const p = param.split(',');
+    if (!HITDAMAGE[p[2]]) return;
+
+    return p[2];
+}
+
+function getEffectIdFromParam(param) {
+    if (!param.startsWith('Effect')) return;
+
+    const p = param.split(',');
+    let effectId = +p[2];
+    if (!EFFECTVALUE[effectId]) effectId += 10;
+    if (!EFFECTVALUE[effectId]) return;
+
+    return effectId;
+}
+
+function getAddAttrIdFromParam(param) {
+    if (!param.startsWith('OnceAdditionalAttribute')) return;
+
+    let addAttrId = +param.split(',')[2];
+    if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) addAttrId += 10;
+    if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) return;
+
+    return addAttrId;
+}
+
+function getDamageTypeFromParam(param) {
     if (!param.startsWith('HitDamage')) return;
 
     const p = param.split(',');
@@ -802,7 +866,7 @@ function getDamageTypeFromOneParam(param) {
     return `${DAMAGE_TYPE[type]}${combined ? ` (${combined})` : ''}`;
 }
 
-function getEffectTypeFromOneParam(param) {
+function getEffectTypeFromParam(param) {
     if (!param.startsWith('Effect')) return;
 
     const p = param.split(',');
@@ -817,7 +881,7 @@ function getEffectTypeFromOneParam(param) {
     return formatEffectType(effectId, type, paramType);
 }
 
-function getAddAttrTypeFromOneParam(param) {
+function getAddAttrTypeFromParam(param) {
     if (!param.startsWith('OnceAdditionalAttribute')) return;
 
     let addAttrId = +param.split(',')[2];
@@ -837,7 +901,7 @@ function getAddAttrTypeFromOneParam(param) {
     return result;
 }
 
-function getBuffIconFromOneParam(param) {
+function getBuffIconFromParam(param) {
     if (!(param.startsWith('Buff') || param.startsWith('Effect') || param.startsWith('OnceAdditionalAttribute'))) return;
 
     const p = param.split(',');
@@ -851,40 +915,14 @@ function getBuffIconFromOneParam(param) {
     return icon;
 }
 
-function getEffectData(effectId) {
-    const effect = EFFECT[effectId];
-    if (!effect) return;
+function getBuffIdFromParam(param) {
+    if (!(param.startsWith('Buff') || param.startsWith('Effect') || param.startsWith('OnceAdditionalAttribute'))) return;
 
-    const trigger = TRIGGER_TYPE[effect.Trigger];
-    const triggerTarget = TARGET_TYPE[effect.TriggerTarget];
-    const triggerCondition1 = CONDITION_TYPE[effect.TriggerCondition1];
-    const triggerParam1 = triggerCondition1?.includes('ELEMENT') ? LANG_UITEXT[`UIText.T_Element_Attr_${effect.TriggerParam1}.1`] : effect.TriggerParam1;
-    const triggerTarget2 = TARGET_TYPE[effect.TriggerTarget2];
-    const triggerCondition2 = CONDITION_TYPE[effect.TriggerCondition2];
-    const triggerParam2 = triggerCondition2?.includes('ELEMENT') ? LANG_UITEXT[`UIText.T_Element_Attr_${effect.TriggerParam2}.1`] : effect.TriggerParam2;
-    const triggerLogicType = triggerTarget2 && LOGIC_TYPE[effect.TriggerLogicType];
+    let buffId = +param.split(',')[2];
+    if (!BUFF[buffId]) buffId += 10;
+    if (!BUFF[buffId]) return;
 
-    const takeEffectTarget1 = TARGET_TYPE[effect.TakeEffectTarget1];
-    const takeEffectCondition1 = CONDITION_TYPE[effect.TakeEffectCondition1];
-    const takeEffectParam1 = takeEffectCondition1?.includes('ELEMENT') ? LANG_UITEXT[`UIText.T_Element_Attr_${effect.TakeEffectParam1}.1`] : effect.TakeEffectParam1;
-    const takeEffectTarget2 = TARGET_TYPE[effect.TakeEffectTarget2];
-    const takeEffectCondition2 = CONDITION_TYPE[effect.TakeEffectCondition2];
-    const takeEffectParam2 = takeEffectCondition2?.includes('ELEMENT') ? LANG_UITEXT[`UIText.T_Element_Attr_${effect.TakeEffectParam2}.1`] : effect.TakeEffectParam2;
-    const takeEffectLogicType = takeEffectTarget2 && LOGIC_TYPE[effect.TakeEffectLogicType];
-
-    const target1 = TARGET_TYPE[effect.Target1];
-    const targetCondition1 = CONDITION_TYPE[effect.TargetCondition1];
-    const targetParam1 = targetCondition1?.includes('ELEMENT') ? LANG_UITEXT[`UIText.T_Element_Attr_${effect.TargetParam1}.1`] : effect.TargetParam1;
-
-    let triggerLine = [trigger, triggerTarget, triggerCondition1, triggerParam1, triggerLogicType, triggerTarget2, triggerCondition2, triggerParam2].filter(v => v).join(', ');
-    let takeEffectLine = [takeEffectTarget1, takeEffectCondition1, takeEffectParam1, takeEffectLogicType, takeEffectTarget2, takeEffectCondition2, takeEffectParam2].filter(v => v).join(', ');
-    let targetLine = [target1, targetCondition1, targetParam1].filter(v => v).join(', ');
-
-    const result = [triggerLine, takeEffectLine, targetLine].join(' | ');
-
-    if (result === 'NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF, DEFAULT') return;
-
-    return result;
+    return buffId;
 }
 
 function formatEffectType(id, type, paramType) {
@@ -978,8 +1016,11 @@ module.exports = {
     iHateFloatingPointNumber,
     resolveParam,
     resolveParamsTooltips,
-    getDamageTypeFromOneParam,
-    getEffectData,
+    getDamageTypeFromParam,
+    getHitDamageIdFromParam,
+    getEffectIdFromParam,
+    getAddAttrIdFromParam,
+    getBuffIdFromParam,
     formatEffectType,
     formatAddAttrType,
     badScaleAfterLevel,

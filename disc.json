@@ -32,9 +32,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "7%/8.4%/9.8%/11.2%/12.6%/14%",
             "icon": "DiscSkill_1",
@@ -556,9 +553,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "7%/8.4%/9.8%/11.2%/12.6%/14%",
             "icon": "DiscSkill_1",
@@ -1080,9 +1074,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "10%/12%/14%/16%/18%/20%",
             "icon": "DiscSkill_4",
@@ -1604,9 +1595,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "10%/12%/14%/16%/18%/20%",
             "icon": "DiscSkill_4",
@@ -2128,9 +2116,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "22.5%/27%/31.5%/36%/40.5%/45%",
             "icon": "DiscSkill_4",
@@ -2652,9 +2637,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "22.5%/27%/31.5%/36%/40.5%/45%",
             "icon": "DiscSkill_4",
@@ -3177,9 +3159,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "8%/9.6%/11.2%/12.8%/14.4%/16%",
             "icon": "DiscSkill_4",
@@ -3702,9 +3681,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "8%/9.6%/11.2%/12.8%/14.4%/16%",
             "icon": "DiscSkill_4",
@@ -4225,9 +4201,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "8%/9.6%/11.2%/12.8%/14.4%/16%",
             "icon": "DiscSkill_4",
@@ -4747,9 +4720,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "7%/8.4%/9.8%/11.2%/12.6%/14%",
             "icon": "DiscSkill_1",
@@ -5270,9 +5240,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "8%/9.6%/11.2%/12.8%/14.4%/16%",
             "icon": "DiscSkill_4",
@@ -5794,7 +5761,6 @@
                 "Ignis DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "6%/7.2%/8.4%/9.6%/10.8%/12%",
             "icon": "DiscSkill_13",
@@ -6316,7 +6282,6 @@
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "6%/7.2%/8.4%/9.6%/10.8%/12%",
             "icon": "DiscSkill_14",
@@ -6836,7 +6801,6 @@
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "6%/7.2%/8.4%/9.6%/10.8%/12%",
             "icon": "DiscSkill_9",
@@ -7356,7 +7320,6 @@
                 "Aqua DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "6%/7.2%/8.4%/9.6%/10.8%/12%",
             "icon": "DiscSkill_12",
@@ -7876,7 +7839,6 @@
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "6%/7.2%/8.4%/9.6%/10.8%/12%",
             "icon": "DiscSkill_10",
@@ -8396,7 +8358,6 @@
                 "Terra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "6%/7.2%/8.4%/9.6%/10.8%/12%",
             "icon": "DiscSkill_11",
@@ -8918,10 +8879,6 @@
                 "Crit DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 1, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -8946,10 +8903,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | ASSISTANT_PLAYER, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | ASSISTANT_PLAYER, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -9512,10 +9465,6 @@
                 "HITTED_ADDITIONAL_:Auto Attack DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT, AND, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, DEFAULT | SELF | MAINCONTROL_PLAYER, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "5%,8%/6%,9.6%/7%,11.2%/8%,12.8%/9%,14.4%/10%,16%",
             "icon": "DiscSkill_1",
@@ -9538,10 +9487,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | MAINCONTROL_PLAYER, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | MAINCONTROL_PLAYER, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -10104,10 +10049,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -10130,9 +10071,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ignis | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -10691,10 +10629,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Ignis | MAINCONTROL_PLAYER, HEALTHUP, 80 | SELF, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [],
             "params": "7.5%,80%,8%/9%,80%,9.6%/10.5%,80%,11.2%/12%,80%,12.8%/13.5%,80%,14.4%/15%,80%,16%",
             "icon": "DiscSkill_4",
@@ -10714,9 +10648,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, ACTORELEMENTTYPE, Ignis, AND, SELF, SELF_BE_MAINCONTROL | SELF, CERTAIN_TYPE_ASSISTANT_IN_BATTLE, 2 | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [],
             "params": "8%/16%/24%/32%/40%",
             "requirements": [
@@ -11276,10 +11207,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -11302,9 +11229,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Lux | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -11867,10 +11791,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Lux | MAINCONTROL_PLAYER, HEALTHUP, 80 | SELF, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [],
             "params": "7.5%,80%,8%/9%,80%,9.6%/10.5%,80%,11.2%/12%,80%,12.8%/13.5%,80%,14.4%/15%,80%,16%",
             "icon": "DiscSkill_4",
@@ -11890,9 +11810,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, SELF_BE_MAINCONTROL | SELF, CERTAIN_TYPE_ASSISTANT_IN_BATTLE, 5 | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [],
             "params": "8%/16%/24%/32%/40%",
             "requirements": [
@@ -12450,10 +12367,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -12476,9 +12389,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ventus | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -13041,10 +12951,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Ventus | MAINCONTROL_PLAYER, HEALTHUP, 80 | SELF, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [],
             "params": "7.5%,80%,8%/9%,80%,9.6%/10.5%,80%,11.2%/12%,80%,12.8%/13.5%,80%,14.4%/15%,80%,16%",
             "icon": "DiscSkill_4",
@@ -13064,9 +12970,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, ACTORELEMENTTYPE, Ventus, AND, SELF, SELF_BE_MAINCONTROL | SELF, CERTAIN_TYPE_ASSISTANT_IN_BATTLE, 4 | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [],
             "params": "8%/16%/24%/32%/40%",
             "requirements": [
@@ -13624,10 +13527,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -13650,9 +13549,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Aqua | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -14214,10 +14110,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Aqua | MAINCONTROL_PLAYER, HEALTHUP, 80 | SELF, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [],
             "params": "7.5%,80%,8%/9%,80%,9.6%/10.5%,80%,11.2%/12%,80%,12.8%/13.5%,80%,14.4%/15%,80%,16%",
             "icon": "DiscSkill_4",
@@ -14237,9 +14129,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, ACTORELEMENTTYPE, Aqua, AND, SELF, SELF_BE_MAINCONTROL | SELF, CERTAIN_TYPE_ASSISTANT_IN_BATTLE, 1 | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [],
             "params": "8%/16%/24%/32%/40%",
             "requirements": [
@@ -14800,10 +14689,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -14826,9 +14711,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Umbra | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -15389,10 +15271,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Umbra | MAINCONTROL_PLAYER, HEALTHUP, 80 | SELF, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [],
             "params": "7.5%,80%,8%/9%,80%,9.6%/10.5%,80%,11.2%/12%,80%,12.8%/13.5%,80%,14.4%/15%,80%,16%",
             "icon": "DiscSkill_4",
@@ -15412,9 +15290,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, ACTORELEMENTTYPE, Umbra, AND, SELF, SELF_BE_MAINCONTROL | SELF, CERTAIN_TYPE_ASSISTANT_IN_BATTLE, 6 | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [],
             "params": "8%/16%/24%/32%/40%",
             "requirements": [
@@ -15974,10 +15849,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -16000,9 +15871,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -16563,10 +16431,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Terra | MAINCONTROL_PLAYER, HEALTHUP, 80 | SELF, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [],
             "params": "7.5%,80%,8%/9%,80%,9.6%/10.5%,80%,11.2%/12%,80%,12.8%/13.5%,80%,14.4%/15%,80%,16%",
             "icon": "DiscSkill_4",
@@ -16586,9 +16450,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, ACTORELEMENTTYPE, Terra, AND, SELF, SELF_BE_MAINCONTROL | SELF, CERTAIN_TYPE_ASSISTANT_IN_BATTLE, 3 | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [],
             "params": "8%/16%/24%/32%/40%",
             "requirements": [
@@ -17149,10 +17010,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4 | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -17175,9 +17032,6 @@
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -17739,10 +17593,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4 | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -17765,9 +17615,6 @@
                 "Ignis DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -18327,10 +18174,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4 | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -18353,9 +18196,6 @@
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -18917,10 +18757,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4 | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -18943,9 +18779,6 @@
                 "Aqua DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -19507,10 +19340,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4 | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -19533,9 +19362,6 @@
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -20097,10 +19923,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4 | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -20123,9 +19945,6 @@
                 "Terra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "BEHIT, SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -20683,10 +20502,6 @@
                 "SPECIAL_:ENERGY (abs)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT",
-                "IN_BATTLE_STATE, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "16%,15/19.2%,18/22.4%,21/25.6%,24/28.8%,27/32%,30",
             "icon": "DiscSkill_7",
@@ -20707,9 +20522,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -21267,10 +21079,6 @@
                 "SPECIAL_:ENERGY (abs)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "IN_BATTLE_STATE, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "16%,15/19.2%,18/22.4%,21/25.6%,24/28.8%,27/32%,30",
             "icon": "DiscSkill_7",
@@ -21291,9 +21099,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -21851,10 +21656,6 @@
                 "SPECIAL_:ENERGY (abs)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT",
-                "IN_BATTLE_STATE, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "16%,15/19.2%,18/22.4%,21/25.6%,24/28.8%,27/32%,30",
             "icon": "DiscSkill_7",
@@ -21875,9 +21676,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -22435,10 +22233,6 @@
                 "SPECIAL_:ENERGY (abs)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT",
-                "IN_BATTLE_STATE, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "16%,15/19.2%,18/22.4%,21/25.6%,24/28.8%,27/32%,30",
             "icon": "DiscSkill_7",
@@ -22459,9 +22253,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -23019,10 +22810,6 @@
                 "SPECIAL_:ENERGY (abs)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | SELF, DEFAULT",
-                "IN_BATTLE_STATE, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "16%,15/19.2%,18/22.4%,21/25.6%,24/28.8%,27/32%,30",
             "icon": "DiscSkill_7",
@@ -23043,9 +22830,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -23603,10 +23387,6 @@
                 "SPECIAL_:ENERGY (abs)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT",
-                "IN_BATTLE_STATE, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "16%,15/19.2%,18/22.4%,21/25.6%,24/28.8%,27/32%,30",
             "icon": "DiscSkill_7",
@@ -23627,9 +23407,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -24193,11 +23970,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2 | SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2 | SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -24220,10 +23992,6 @@
                 "HITTED_ADDITIONAL_:Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GETBUFF, MAINCONTROL_PLAYER, CERTAINBUFFID, 4001041 | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ignis",
-                "HITTING, SELF, DEFAULT | ENEMY, CERTAIN_MONSTER_EPICTYPE, 2,3,4 | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -24268,9 +24036,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "KILLENEMY, SELF, DEFAULT | MAINCONTROL_PLAYER, CARRYBUFFID, 4001041 | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -24833,11 +24598,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Ventus, AND, SELF, DAMAGE_NOT_NORMAL | SELF, DEFAULT | ENEMY, DEFAULT",
-                "BEHIT, ENEMY, CARRYBUFFID, 4002021 | SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -24859,9 +24619,6 @@
                 "HITTED_ADDITIONAL_:Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, CARRYBUFFID, 4002021 | SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "16%/32%/48%/64%/80%",
             "requirements": [
@@ -24904,9 +24661,6 @@
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "KILLENEMY, ENEMY, CARRYBUFFID, 4002021 | SELF, ACTORELEMENTTYPE, Ventus | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -25467,7 +25221,6 @@
                 "Auto Attack DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon",
                 "Icon_DiscBuff_214003",
@@ -25492,7 +25245,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -25537,7 +25289,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -26102,7 +25853,6 @@
                 "ELEMENTTYPE_:(Umbra) Minion DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214004",
                 "No Icon",
@@ -26126,7 +25876,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -26172,7 +25921,6 @@
             "addAttrType": [
                 "Umbra DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -26736,9 +26484,6 @@
                 "HITTED_ADDITIONAL_:Aqua DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, CARRYBUFFIDENTIFYING, Cold, OR, ENEMY, CARRYBUFFIDENTIFYING | SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "10%,10%/12%,12%/14%,14%/16%,16%/18%,18%/20%,20%",
             "icon": "DiscSkill_214005",
@@ -26761,9 +26506,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -26809,10 +26551,6 @@
             ],
             "addAttrType": [
                 "Skill DMG (base)"
-            ],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Aqua | SELF, CERTAIN_TYPE_ASSISTANT_IN_BATTLE, 1 | SELF, ACTORELEMENTTYPE, Aqua"
             ],
             "buffIcon": [],
             "params": "4%,4.8%/8%,9.6%/12%,14.4%/16%,19.2%/20%,24%",
@@ -27375,10 +27113,6 @@
                 "ADDBUFF:Umbra DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_ASSISTANT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -27403,10 +27137,6 @@
                 "Minion DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_ASSISTANT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Umbra",
-                "SUMMON, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | TEAM_SUMMONED, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -27453,11 +27183,6 @@
                 "Minion DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | SELF, DEFAULT",
-                "ANY_ACTOR_TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Umbra | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Umbra",
-                "ANY_ACTOR_TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Umbra | SELF, DEFAULT | TEAM_SUMMONED, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -28026,10 +27751,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT",
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Lux | SELF, DEFAULT | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -28052,10 +27773,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Lux",
-                "HITTING, ENEMY, CARRYBUFFIDENTIFYING, Stun, OR, ENEMY, CARRYBUFFIDENTIFYING | SELF, ACTORELEMENTTYPE, Lux | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -28101,9 +27818,6 @@
             ],
             "addAttrType": [
                 "Lux DMG (base)"
-            ],
-            "effectData": [
-                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_ASSISTANT | ENEMY, DEFAULT"
             ],
             "buffIcon": [
                 "No Icon"
@@ -28668,7 +28382,6 @@
                 "Auto Attack DMG Taken (base)",
                 "Skill DMG Taken (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214008"
             ],
@@ -28692,7 +28405,6 @@
             "addAttrType": [
                 "Crit DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "5%,0.8%/10%,1%/15%,1.2%/20%,1.4%/25%,1.6%",
             "requirements": [
@@ -28734,7 +28446,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "0.4%/0.8%/1.2%/1.6%/2%",
             "requirements": [
@@ -29296,10 +29007,6 @@
                 "ADD_SHIELD"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT",
-                "CERTAIN_TIME_INTERVAL, SELF, TIME_INTERVAL, 20 | SELF, DEFAULT | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [],
             "params": "10%,20%,15,20/12%,20%,15,20/14%,20%,15,20/16%,20%,15,20/18%,20%,15,20/20%,20%,15,20",
             "icon": "DiscSkill_214009",
@@ -29320,9 +29027,6 @@
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GET_SHIELD, MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -29366,9 +29070,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, ACTORELEMENTTYPE, Ventus | MAINCONTROL_PLAYER, HAVE_SHIELD, AND, MAINCONTROL_PLAYER, ACTORELEMENTTYPE | SELF, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [],
             "params": "7.5%/15%/22.5%/30%/37.5%",
             "requirements": [
@@ -29926,10 +29627,6 @@
                 "ADD_SHIELD"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT",
-                "BEHIT, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [],
             "params": "10%,15%,20,20/12%,15%,20,20/14%,15%,20,20/16%,15%,20,20/18%,15%,20,20/20%,15%,20,20",
             "icon": "DiscSkill_214010",
@@ -29950,9 +29647,6 @@
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -29997,9 +29691,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | MAINCONTROL_PLAYER, HAVE_SHIELD | FULL_TEAM, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -30563,10 +30254,6 @@
                 "ADD_SHIELD"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [],
             "params": "10%,15%,20/12%,15%,20/14%,15%,20/16%,15%,20/18%,15%,20/20%,15%,20",
             "icon": "DiscSkill_214011",
@@ -30587,9 +30274,6 @@
                 "Aqua DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Aqua, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -30635,10 +30319,6 @@
             ],
             "addAttrType": [
                 "Aqua DMG (base)"
-            ],
-            "effectData": [
-                "HITTING, SELF, ACTORELEMENTTYPE, Aqua | MAINCONTROL_PLAYER, HAVE_SHIELD, AND, MAINCONTROL_PLAYER, ACTORELEMENTTYPE | SELF, ACTORELEMENTTYPE, Aqua",
-                "HITTING, SELF, ACTORELEMENTTYPE, Aqua, AND, SELF, SELF_BE_MAINCONTROL | ENEMY, CERTAIN_MONSTER_EPICTYPE, 2,3,4 | SELF, DEFAULT"
             ],
             "buffIcon": [],
             "params": "4%,3%/8%,6%/12%,9%/16%,12%/20%,15%",
@@ -31199,9 +30879,6 @@
                 "ADD_SHIELD"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -31224,9 +30901,6 @@
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Umbra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -31273,9 +30947,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Umbra | MAINCONTROL_PLAYER, HAVE_SHIELD | FULL_TEAM, ACTORELEMENTTYPE, Umbra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -31835,10 +31506,6 @@
                 "ADD_SHIELD"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [],
             "params": "10%,15%,20,20/12%,15%,20,20/14%,15%,20,20/16%,15%,20,20/18%,15%,20,20/20%,15%,20,20",
             "icon": "DiscSkill_214013",
@@ -31859,9 +31526,6 @@
                 "Ignis DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Ignis, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -31905,9 +31569,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, HEALTHUP, 50, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [],
             "params": "50%,11%/50%,22%/50%,33%/50%,44%/50%,55%",
             "requirements": [
@@ -32469,10 +32130,6 @@
                 "ADD_SHIELD"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT",
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [],
             "params": "10%,15%,20,20/12%,15%,20,20/14%,15%,20,20/16%,15%,20,20/18%,15%,20,20/20%,15%,20,20",
             "icon": "DiscSkill_214014",
@@ -32493,9 +32150,6 @@
                 "Terra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GET_SHIELD, SELF, ACTORELEMENTTYPE, Terra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -32540,9 +32194,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | MAINCONTROL_PLAYER, HAVE_SHIELD | FULL_TEAM, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -33106,10 +32757,6 @@
                 "Skill DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_ASSISTANT, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT",
-                "BEHIT, ENEMY, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "Icon_DiscBuff_214015",
                 "Icon_CommonBuff_DefenseDown"
@@ -33134,9 +32781,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -33180,7 +32824,6 @@
             "addAttrType": [
                 "Ventus DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "8%/16%/24%/32%/40%",
             "requirements": [
@@ -33742,7 +33385,6 @@
                 "ELEMENTTYPE_:(Ventus) Skill DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214016",
                 "Icon_CommonBuff_DefenseDown"
@@ -33766,7 +33408,6 @@
                 "Normal Attack Crit DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -33810,7 +33451,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -34374,9 +34014,6 @@
                 "Auto Attack DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "BEHIT, ENEMY, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "Icon_DiscBuff_214017",
                 "No Icon"
@@ -34401,9 +34038,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ignis | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -34447,7 +34081,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -35008,7 +34641,6 @@
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -35031,10 +34663,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, WEAKELEMENTTYPE, Ventus, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT",
-                "BEHIT, SELF, ACTORELEMENTTYPE, Ventus, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "2.5%,10%/5%,10%/7.5%,10%/10%,10%/12.5%,10%",
             "requirements": [
@@ -35077,9 +34705,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "KILLENEMY, SELF, DEFAULT | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -35640,7 +35265,6 @@
                 "Ignis DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -35663,10 +35287,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, WEAKELEMENTTYPE, Ignis, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT",
-                "BEHIT, SELF, ACTORELEMENTTYPE, Ignis, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "2.5%,10%/5%,10%/7.5%,10%/10%,10%/12.5%,10%",
             "requirements": [
@@ -35710,11 +35330,6 @@
                 "ADDBUFF:ATK"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "IN_BATTLE_STATE, SELF, DEFAULT, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT",
-                "CERTAIN_TIME_INTERVAL, SELF, TIME_INTERVAL, 8 | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -36275,7 +35890,6 @@
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -36298,10 +35912,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, WEAKELEMENTTYPE, Lux, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT",
-                "BEHIT, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "2.5%,10%/5%,10%/7.5%,10%/10%,10%/12.5%,10%",
             "requirements": [
@@ -36346,10 +35956,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -36910,7 +36516,6 @@
                 "Aqua DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -36934,10 +36539,6 @@
             ],
             "addAttrType": [
                 "Aqua DMG (base)"
-            ],
-            "effectData": [
-                "HITTING, ENEMY, WEAKELEMENTTYPE, Aqua, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT",
-                "BEHIT, SELF, ACTORELEMENTTYPE, Aqua, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
             ],
             "buffIcon": [],
             "params": "2.5%,10%/5%,10%/7.5%,10%/10%,10%/12.5%,10%",
@@ -36981,9 +36582,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -37544,7 +37142,6 @@
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -37567,10 +37164,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, WEAKELEMENTTYPE, Umbra, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT",
-                "BEHIT, SELF, ACTORELEMENTTYPE, Umbra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "2.5%,10%/5%,10%/7.5%,10%/10%,10%/12.5%,10%",
             "requirements": [
@@ -37613,7 +37206,6 @@
                 "Skill DMG (base)",
                 "Ultimate DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "3%,50,18%/6%,50,18%/9%,50,18%/12%,50,18%/15%,50,18%",
             "requirements": [
@@ -38170,7 +37762,6 @@
                 "Terra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -38193,10 +37784,6 @@
                 "Aqua DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, WEAKELEMENTTYPE, Terra, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT",
-                "BEHIT, SELF, ACTORELEMENTTYPE, Terra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "2.5%,10%/5%,10%/7.5%,10%/10%,10%/12.5%,10%",
             "requirements": [
@@ -38241,12 +37828,6 @@
                 "REMOVE_BUFF"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT",
-                "KILLENEMY, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT",
-                "GETBUFF, SELF, BUFF_NUM, 10, 4023245 | SELF, DEFAULT | SELF, DEFAULT",
-                "EFFECT_EXECUTE, SELF, CERTAIN_EFFECT_ID, 4023243 | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -38806,9 +38387,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -38832,10 +38410,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT",
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ventus | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -38879,7 +38453,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -39443,9 +39016,6 @@
                 "ADDBUFF:Aqua DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Aqua, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -39467,9 +39037,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -39513,9 +39080,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, CERTAIN_MONSTER_EPICTYPE, 2,3,4 | SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "12%/24%/36%/48%/60%",
             "requirements": [
@@ -40078,10 +39642,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "ANY_ACTOR_TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ignis | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -40104,10 +39664,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, ENEMY, CARRYBUFFIDENTIFYING, 141_Burn, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "4%,4%/8%,8%/12%,12%/16%,16%/20%,20%",
             "requirements": [
@@ -40150,10 +39706,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, SELF_BE_ASSISTANT | SELF, ACTORELEMENTTYPE, Ignis | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ignis",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, SELF_BE_ASSISTANT | SELF, ACTORELEMENTTYPE, Ignis | TEAM_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -40719,10 +40271,6 @@
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT",
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Ventus | SELF, DEFAULT | MAINCONTROL_PLAYER, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -40746,10 +40294,6 @@
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 4 | SELF, ACTORELEMENTTYPE, Ventus, AND, SELF, SELF_BE_MAINCONTROL | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Ventus"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -40793,7 +40337,6 @@
                 "Ventus DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -41357,7 +40900,6 @@
                 "ELEMENTTYPE_:(Ignis) Skill DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214029",
                 "No Icon"
@@ -41381,7 +40923,6 @@
                 "Skill Crit DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -41425,7 +40966,6 @@
             "addAttrType": [
                 "Ignis DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "9%/18%/27%/36%/45%",
             "requirements": [
@@ -41985,11 +41525,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, DAMAGE_NOT_NORMAL | SELF, DEFAULT | ENEMY, DEFAULT",
-                "BEHIT, ENEMY, CARRYBUFFID, 4030021 | SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -42011,9 +41546,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, ENEMY, CARRYBUFFID, 4030021, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "7.5%/15%/22.5%/30%/37.5%",
             "requirements": [
@@ -42056,9 +41588,6 @@
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "KILLENEMY, ENEMY, CARRYBUFFID, 4030021, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -42622,11 +42151,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | FULL_TEAM, ACTORELEMENTTYPE, Aqua",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Aqua"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -42649,10 +42173,6 @@
                 "HITTED_ADDITIONAL_:Aqua DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GETBUFF, MAINCONTROL_PLAYER, CERTAINBUFFID, 4031041 | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT",
-                "HITTING, ENEMY, CERTAIN_MONSTER_EPICTYPE, 2,3,4 | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -42698,9 +42218,6 @@
             ],
             "addAttrType": [
                 "Aqua DMG (base)"
-            ],
-            "effectData": [
-                "KILLENEMY, SELF, DEFAULT | MAINCONTROL_PLAYER, CARRYBUFFID, 4031041 | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Aqua"
             ],
             "buffIcon": [
                 "No Icon"
@@ -43263,12 +42780,6 @@
                 "Final DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "HITTING, SELF, ACTORELEMENTTYPE, Umbra, AND, SELF, DAMAGE_NOT_NORMAL | SELF, DEFAULT | ENEMY, DEFAULT",
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | ENEMY, DEFAULT",
-                "BEHIT, ENEMY, CARRYBUFFID, 4032021 | SELF, SELF_BE_MAINCONTROL, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -43290,7 +42801,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -43335,9 +42845,6 @@
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "KILLENEMY, ENEMY, CARRYBUFFID, 4032021, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -43903,11 +43410,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [
-                "NOTHING, SELF, DEFAULT | SELF, DEFAULT | SELF_AND_SUMMONED, DEFAULT",
-                "HITTING, SELF, HEALTHUP, 50, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | FULL_TEAM, ACTORELEMENTTYPE, Terra",
-                "BEHIT, SELF, HEALTHUP, 50, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -43930,9 +43432,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "GETBUFF, MAINCONTROL_PLAYER, CERTAINBUFFID, 4033041 | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -43977,9 +43476,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "KILLENEMY, SELF, DEFAULT, AND, MAINCONTROL_PLAYER, CARRYBUFFID | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -44546,9 +44042,6 @@
                 "Auto Attack DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -44571,10 +44064,6 @@
                 "HITTED_ADDITIONAL_:Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, CERTAIN_TYPE_ASSISTANT_IN_BATTLE, 3 | SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "2.5%,5%/5%,10%/7.5%,15%/10%,20%/12.5%,25%",
             "requirements": [
@@ -44617,9 +44106,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -45184,9 +44670,6 @@
                 "Terra DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "TRIGGER_MARK, SELF, CERTAIN_MARK_ELEMENT_TYPE, Terra | SELF, DEFAULT | ENEMY, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -45208,7 +44691,6 @@
                 "Terra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -45253,9 +44735,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Terra"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -45820,9 +45299,6 @@
                 "Lux DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, SKILLSLOTTYPE, 4, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | ENEMY, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -45847,10 +45323,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, SELF_BE_MAINCONTROL | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -45894,7 +45366,6 @@
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -46453,9 +45924,6 @@
                 "Lux DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -46478,10 +45946,6 @@
                 "ADDBUFF:Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Lux | SELF, DEFAULT | SELF, DEFAULT",
-                "CASTSKILL, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -46525,9 +45989,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | MAINCONTROL_PLAYER, ACTORELEMENTTYPE, Lux"
-            ],
             "buffIcon": [
                 "Icon_DiscBuff_214039",
                 "No Icon"
@@ -47089,7 +46550,6 @@
             "addAttrType": [
                 "Ultimate DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214040"
             ],
@@ -47113,10 +46573,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT",
-                "HITTING, SELF, SKILLSLOTTYPE, 2, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | FULL_TEAM_AND_SUMMONED, ACTORELEMENTTYPE, Ignis"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -47161,7 +46617,6 @@
                 "DEF (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -47721,9 +47176,6 @@
                 "Minion DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -47746,10 +47198,6 @@
                 "Minion DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT",
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis, AND, SELF, SELF_BE_ASSISTANT | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [],
             "params": "2.4%,5%/4.8%,10%/7.2%,15%/9.6%,20%/12%,25%",
             "requirements": [
@@ -47791,7 +47239,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -48350,9 +47797,6 @@
                 "Ultimate DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -48375,9 +47819,6 @@
                 "Auto Attack DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Terra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -48421,7 +47862,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -48980,9 +48420,6 @@
                 "Minion DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Umbra | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -49004,7 +48441,6 @@
                 "Minion DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -49049,7 +48485,6 @@
                 "Skill DMG (base)",
                 "Minion DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "5%,2%/10%,4%/15%,6%/20%,8%/25%,10%",
             "requirements": [
@@ -49611,9 +49046,6 @@
                 "ELEMENTTYPE_:(Terra) Skill DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, SELF_BE_ASSISTANT, AND, SELF, ACTORELEMENTTYPE | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon",
                 "Icon_DiscBuff_214044"
@@ -49638,7 +49070,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -49684,7 +49115,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -50249,7 +49679,6 @@
             "addAttrType": [
                 "Skill DMG Taken (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214045_1"
             ],
@@ -50272,7 +49701,6 @@
                 "ELEMENTTYPE_:(Umbra) Ultimate DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -50317,7 +49745,6 @@
                 "Skill Crit DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214045_2",
                 "No Icon"
@@ -50878,7 +50305,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214046"
             ],
@@ -50901,9 +50327,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -50947,7 +50370,6 @@
                 "Ventus DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -51507,7 +50929,6 @@
                 "Aqua DMG (base)",
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214047"
             ],
@@ -51530,9 +50951,6 @@
             ],
             "addAttrType": [
                 "Auto Attack DMG (base)"
-            ],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT"
             ],
             "buffIcon": [],
             "params": "3%,0.4%/6%,0.6%/9%,0.8%/12%,1%/15%,1.2%",
@@ -51575,7 +50993,6 @@
             "addAttrType": [
                 "Ultimate DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "0.7%/1.4%/2.1%/2.8%/3.5%",
             "requirements": [
@@ -52137,7 +51554,6 @@
                 "Ignis DMG Taken (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon",
                 "Icon_DiscBuff_214048A1",
@@ -52162,7 +51578,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon",
                 "Icon_DiscBuff_214048B2"
@@ -52209,7 +51624,6 @@
             "addAttrType": [
                 "Ultimate DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -52763,7 +52177,6 @@
             "descKR": "메인 캐릭터의 HP가 10% 미만일 때, 최대 HP <color=#ec6d21>{1}</color>의 보호막을 즉시 획득한다. {2}초간 지속되며, 해당 효과는 {3}초마다 최대 1회 발동한다.",
             "effectType": [],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "20%,20,30/24%,20,30/28%,20,30/32%,20,30/36%,20,30/40%,20,30",
             "icon": "DiscSkill_214049",
@@ -52783,7 +52196,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "10%,10%%/12%,12%%/14%,14%%/16%,16%%/20%,20%%",
             "requirements": [
@@ -52830,7 +52242,6 @@
                 "Umbra DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [],
             "params": "10%,10%%/12%,12%%/14%,14%%/16%,16%%/20%,20%%",
             "requirements": [
@@ -53389,7 +52800,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214050"
             ],
@@ -53412,7 +52822,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -53457,7 +52866,6 @@
                 "Auto Attack DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -54021,7 +53429,6 @@
                 "ELEMENTTYPE_:(Lux) Auto Attack DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon",
                 "Icon_DiscBuff_214051A",
@@ -54046,7 +53453,6 @@
                 "Crit DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -54091,7 +53497,6 @@
                 "Skill Crit DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -54652,7 +54057,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214052",
                 "No Icon"
@@ -54676,7 +54080,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -54720,7 +54123,6 @@
             "addAttrType": [
                 "Ultimate DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214052"
             ],
@@ -55279,7 +54681,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214053",
                 "No Icon"
@@ -55302,7 +54703,6 @@
                 "Skill DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -55347,9 +54747,6 @@
             ],
             "addAttrType": [
                 "Ultimate DMG (base)"
-            ],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ignis | SELF, DEFAULT | SELF, DEFAULT"
             ],
             "buffIcon": [],
             "params": "2%,8%/4%,16%/6%,24%/8%,32%/10%,40%",
@@ -55913,7 +55310,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214054",
                 "Icon_CommonBuff_DefenseDown"
@@ -55937,7 +55333,6 @@
                 "Skill Crit DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -55981,7 +55376,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214054",
                 "No Icon"
@@ -56546,7 +55940,6 @@
                 "ELEMENTTYPE_:(Aqua) Skill DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214055_Buff",
                 "Icon_DiscBuff_214055_Debuff"
@@ -56570,9 +55963,6 @@
                 "ELEMENTTYPE_:(Aqua) Auto Attack DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "Icon_DiscBuff_214055_Debuff"
             ],
@@ -56617,7 +56007,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -57177,7 +56566,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214056_Buff",
                 "No Icon"
@@ -57201,9 +56589,6 @@
                 "Aqua DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Aqua | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "No Icon"
             ],
@@ -57247,7 +56632,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "4.5%/9%/13.5%/18%/22.5%",
             "requirements": [
@@ -57809,7 +57193,6 @@
                 "ELEMENTTYPE_:(Umbra) Ultimate DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214057_Buff",
                 "Icon_CommonBuff_DefenseDown"
@@ -57834,7 +57217,6 @@
             "addAttrType": [
                 "Ultimate Crit DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -57878,7 +57260,6 @@
             "addAttrType": [
                 "Auto Attack DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "7.5%/15%/22.5%/30%/37.5%",
             "requirements": [
@@ -58438,9 +57819,6 @@
             "addAttrType": [
                 "Umbra DMG (base)"
             ],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Umbra, AND, SELF, SELF_BE_MAINCONTROL | SELF, DEFAULT | SELF, DEFAULT"
-            ],
             "buffIcon": [
                 "Icon_DiscBuff_214058_Buff",
                 "No Icon"
@@ -58465,7 +57843,6 @@
             "addAttrType": [
                 "Umbra DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -58509,7 +57886,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -59073,7 +58449,6 @@
                 "ELEMENTTYPE_:(Ventus) Auto Attack DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214059_Buff",
                 "Icon_CommonBuff_DefenseDown"
@@ -59098,7 +58473,6 @@
                 "Skill DMG (base)",
                 "Skill Crit DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "5%,1.5%/10%,2%/15%,2.5%/20%,3%/25%,3.5%",
             "requirements": [
@@ -59141,7 +58515,6 @@
                 "ELEMENTTYPE_:(Ventus) Skill DMG"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -59701,7 +59074,6 @@
                 "Ventus DMG (base)",
                 "Auto Attack DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214060_Buff"
             ],
@@ -59724,9 +59096,6 @@
             ],
             "addAttrType": [
                 "Skill DMG (base)"
-            ],
-            "effectData": [
-                "NOTHING, SELF, ACTORELEMENTTYPE, Ventus | SELF, DEFAULT | SELF, DEFAULT"
             ],
             "buffIcon": [],
             "params": "2.4%,0.1%/4.8%,0.2%/7.2%,0.3%/9.6%,0.4%/12%,0.5%",
@@ -59769,7 +59138,6 @@
             "addAttrType": [
                 "Ventus DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [],
             "params": "4%/8%/12%/16%/20%",
             "requirements": [
@@ -60332,7 +59700,6 @@
                 "ELEMENTTYPE_:(Aqua) Mark DMG Taken"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214061_Buff",
                 "No Icon"
@@ -60356,7 +59723,6 @@
                 "ELEMENTTYPE_:(Aqua) Mark DMG"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "Icon_CommonBuff_CritDamageUp"
             ],
@@ -60401,7 +59767,6 @@
                 "Skill Crit DMG (base)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],
@@ -60962,7 +60327,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214062_Buff",
                 "No Icon"
@@ -60987,7 +60351,6 @@
             "addAttrType": [
                 "Skill DMG (base)"
             ],
-            "effectData": [],
             "buffIcon": [
                 "Icon_DiscBuff_214062_Debuff",
                 "No Icon"
@@ -61032,7 +60395,6 @@
                 "ATK (%)"
             ],
             "addAttrType": [],
-            "effectData": [],
             "buffIcon": [
                 "No Icon"
             ],

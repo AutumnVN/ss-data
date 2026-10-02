@@ -1,5 +1,5 @@
 const { writeFileSync } = require('fs');
-const { collectParamsFrom, resolveParam, resolveParamsTooltips, getDamageTypeFromOneParam, ATTR_TYPE, DAMAGE_TYPE, EFFECT_TYPE, CORNER_TYPE, getEffectData, PARAM_TYPE, formatEffectType, formatAddAttrType, getSkillType, SKILL_SLOT_TYPE, collectUnusedParamsFrom, collectPotentialHiddenParamsFrom, iHateFloatingPointNumber, CHARACTER_ATTACK_TYPE, BULLET_TYPE, CHARGE_RATE_TYPE, badScaleAfterLevel } = require('./utils');
+const { collectParamsFrom, resolveParam, resolveParamsTooltips, getDamageTypeFromParam, ATTR_TYPE, DAMAGE_TYPE, EFFECT_TYPE, CORNER_TYPE, PARAM_TYPE, formatEffectType, formatAddAttrType, getSkillType, SKILL_SLOT_TYPE, collectUnusedParamsFrom, collectPotentialHiddenParamsFrom, iHateFloatingPointNumber, CHARACTER_ATTACK_TYPE, BULLET_TYPE, CHARGE_RATE_TYPE, badScaleAfterLevel } = require('./utils');
 const CHARACTER = require('./EN/bin/Character.json');
 const CHARACTERADVANCE = require('./EN/bin/CharacterAdvance.json');
 const CHARACTERDES = require('./EN/bin/CharacterDes.json');
@@ -7,7 +7,6 @@ const CHARACTERSKILLUPGRADE = require('./EN/bin/CharacterSkillUpgrade.json');
 const CHARPOTENTIAL = require('./EN/bin/CharPotential.json');
 const SKILL = require('./EN/bin/Skill.json');
 const HITDAMAGE = require('./EN/bin/HitDamage.json');
-const EFFECT = require('./EN/bin/Effect.json');
 const EFFECTVALUE = require('./EN/bin/EffectValue.json');
 const BUFF = require('./EN/bin/Buff.json');
 const BUFFVALUE = require('./EN/bin/BuffValue.json');
@@ -125,7 +124,6 @@ async function main() {
                     damageType: getSkillDamageTypes(CHARACTER[id].NormalAtkId),
                     effectType: getSkillEffectTypes(CHARACTER[id].NormalAtkId),
                     addAttrType: getSkillAddAttrTypes(CHARACTER[id].NormalAtkId),
-                    effectData: getSkillEffectData(CHARACTER[id].NormalAtkId),
                     buffIcon: getSkillBuffIcons(CHARACTER[id].NormalAtkId),
                     params: getSkillParams(CHARACTER[id].NormalAtkId),
                     paramsTooltips: getSkillParamsTooltips(CHARACTER[id].NormalAtkId),
@@ -146,7 +144,6 @@ async function main() {
                     damageType: getSkillDamageTypes(CHARACTER[id].SkillId),
                     effectType: getSkillEffectTypes(CHARACTER[id].SkillId),
                     addAttrType: getSkillAddAttrTypes(CHARACTER[id].SkillId),
-                    effectData: getSkillEffectData(CHARACTER[id].SkillId),
                     buffIcon: getSkillBuffIcons(CHARACTER[id].SkillId),
                     params: getSkillParams(CHARACTER[id].SkillId),
                     paramsTooltips: getSkillParamsTooltips(CHARACTER[id].SkillId),
@@ -166,7 +163,6 @@ async function main() {
                     damageType: getSkillDamageTypes(CHARACTER[id].AssistSkillId),
                     effectType: getSkillEffectTypes(CHARACTER[id].AssistSkillId),
                     addAttrType: getSkillAddAttrTypes(CHARACTER[id].AssistSkillId),
-                    effectData: getSkillEffectData(CHARACTER[id].AssistSkillId),
                     buffIcon: getSkillBuffIcons(CHARACTER[id].AssistSkillId),
                     params: getSkillParams(CHARACTER[id].AssistSkillId),
                     paramsTooltips: getSkillParamsTooltips(CHARACTER[id].AssistSkillId),
@@ -187,7 +183,6 @@ async function main() {
                     damageType: getSkillDamageTypes(CHARACTER[id].UltimateId),
                     effectType: getSkillEffectTypes(CHARACTER[id].UltimateId),
                     addAttrType: getSkillAddAttrTypes(CHARACTER[id].UltimateId),
-                    effectData: getSkillEffectData(CHARACTER[id].UltimateId),
                     buffIcon: getSkillBuffIcons(CHARACTER[id].UltimateId),
                     params: getSkillParams(CHARACTER[id].UltimateId),
                     paramsTooltips: getSkillParamsTooltips(CHARACTER[id].UltimateId),
@@ -322,7 +317,7 @@ function getSkillDamageTypes(skillId) {
     const params = collectParamsFrom(SKILL[skillId]).filter(p => p && p.startsWith('HitDamage'));
 
     for (const param of params) {
-        const damageType = getDamageTypeFromOneParam(param);
+        const damageType = getDamageTypeFromParam(param);
         if (!damageType) continue;
 
         damageTypes.push(damageType);
@@ -404,25 +399,6 @@ function getSkillAddAttrTypes(skillId) {
     }
 
     return [...new Set(addAttrTypes)];
-}
-
-function getSkillEffectData(skillId) {
-    const effectDatas = [];
-
-    const params = collectParamsFrom(SKILL[skillId]).filter(p => p && p.startsWith('Effect'));
-
-    for (const param of params) {
-        const p = param.split(',');
-        let effectId = +p[2];
-        if (!EFFECT[effectId]) continue;
-
-        const data = getEffectData(effectId);
-        if (!data) continue;
-
-        effectDatas.push(data);
-    }
-
-    return [...new Set(effectDatas)];
 }
 
 function getSkillBuffIcons(skillId) {
@@ -519,7 +495,6 @@ function getPotentials(charId) {
             damageType: getPotentialDamageTypes(id),
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
-            effectData: getPotentialEffectData(id),
             buffIcon: getPotentialBuffIcons(id),
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
@@ -542,7 +517,6 @@ function getPotentials(charId) {
             damageType: getPotentialDamageTypes(id),
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
-            effectData: getPotentialEffectData(id),
             buffIcon: getPotentialBuffIcons(id),
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
@@ -566,7 +540,6 @@ function getPotentials(charId) {
             damageType: getPotentialDamageTypes(id),
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
-            effectData: getPotentialEffectData(id),
             buffIcon: getPotentialBuffIcons(id),
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
@@ -590,7 +563,6 @@ function getPotentials(charId) {
             damageType: getPotentialDamageTypes(id),
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
-            effectData: getPotentialEffectData(id),
             buffIcon: getPotentialBuffIcons(id),
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
@@ -613,7 +585,6 @@ function getPotentials(charId) {
             damageType: getPotentialDamageTypes(id),
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
-            effectData: getPotentialEffectData(id),
             buffIcon: getPotentialBuffIcons(id),
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
@@ -657,14 +628,14 @@ function getPotentialDamageTypes(potId) {
     const hiddenParams = collectPotentialHiddenParamsFrom(POTENTIAL[potId], allSkillParams).params.filter(p => p && p.startsWith('HitDamage'));
 
     for (const param of params) {
-        const damageType = getDamageTypeFromOneParam(param);
+        const damageType = getDamageTypeFromParam(param);
         if (!damageType) continue;
 
         damageTypes.push(damageType);
     }
 
     for (const param of hiddenParams) {
-        const damageType = getDamageTypeFromOneParam(param);
+        const damageType = getDamageTypeFromParam(param);
         if (!damageType) continue;
 
         damageTypes.push(`${damageType} (hidden)`);
@@ -746,26 +717,6 @@ function getPotentialAddAttrTypes(potId) {
     }
 
     return [...new Set(addAttrTypes)];
-}
-
-function getPotentialEffectData(potId) {
-    const effectDatas = [];
-
-    const params = collectParamsFrom(POTENTIAL[potId]).filter(p => p && p.startsWith('Effect'));
-
-    for (const param of params) {
-        const p = param.split(',');
-
-        let effectId = +p[2];
-        if (!EFFECT[effectId]) continue;
-
-        const data = getEffectData(effectId);
-        if (!data) continue;
-
-        effectDatas.push(data);
-    }
-
-    return [...new Set(effectDatas)];
 }
 
 function getPotentialBuffIcons(potId) {
@@ -865,7 +816,6 @@ function getTalents(charId) {
                     descKR: KR_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], KR_TALENT),
                     effectType: getTalentEffectTypes(talentId, index),
                     addAttrType: getTalentAddAttrTypes(talentId, index),
-                    effectData: getTalentEffectData(talentId),
                     buffIcon: getTalentBuffIcons(talentId, index),
                     params: getTalentParams(talentId),
                     paramsTooltips: getTalentParamsTooltips(talentId),
@@ -959,26 +909,6 @@ function getTalentAddAttrTypes(talentId, index) {
     }
 
     return [...new Set(addAttrTypes)];
-}
-
-function getTalentEffectData(talentId) {
-    const effectDatas = [];
-
-    const params = collectParamsFrom(TALENT[talentId]).filter(p => p && p.startsWith('Effect'));
-
-    for (const param of params) {
-        const p = param.split(',');
-
-        let effectId = +p[2];
-        if (!EFFECT[effectId]) continue;
-
-        const data = getEffectData(effectId);
-        if (!data) continue;
-
-        effectDatas.push(data);
-    }
-
-    return [...new Set(effectDatas)];
 }
 
 function getTalentBuffIcons(talentId, index) {

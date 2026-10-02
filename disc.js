@@ -1,5 +1,5 @@
 const { writeFileSync } = require('fs');
-const { ATTR_TYPE, EFFECT_TYPE, collectParamsFrom, getEffectData, PARAM_TYPE, formatEffectType, formatAddAttrType, collectUnusedDiscParamsFrom } = require('./utils');
+const { ATTR_TYPE, EFFECT_TYPE, collectParamsFrom, PARAM_TYPE, formatEffectType, formatAddAttrType, collectUnusedDiscParamsFrom } = require('./utils');
 const DISC = require('./EN/bin/Disc.json');
 const DISCIP = require('./EN/bin/DiscIP.json');
 const DISCTAG = require('./EN/bin/DiscTag.json');
@@ -171,7 +171,6 @@ function getMainSkill(id) {
         descKR: KR_MAINSKILL[MAINSKILL[key].Desc] + collectUnusedDiscParamsFrom(MAINSKILL[key], KR_MAINSKILL),
         effectType: getMainSkillEffectTypes(id),
         addAttrType: getMainSkillAddAttrType(id),
-        effectData: getMainSkillEffectData(id),
         buffIcon: getMainSkillBuffIcons(id),
         params: getMainSkillParams(id),
         icon: MAINSKILL[key].Icon.split('/').pop(),
@@ -238,23 +237,6 @@ function getMainSkillAddAttrType(id) {
     return [...new Set(attrTypes)];
 }
 
-function getMainSkillEffectData(id) {
-    const effectDatas = [];
-
-    const effectKeys = Object.keys(EFFECT).filter(k => k.startsWith(`${id}0`) && k.length === 7);
-
-    for (const effectKey of effectKeys) {
-        let effectId = +effectKey;
-        if (!EFFECT[effectId]) continue;
-
-        const data = getEffectData(effectId);
-        if (!data) continue;
-
-        effectDatas.push(data);
-    }
-
-    return [...new Set(effectDatas)];
-}
 
 function getMainSkillBuffIcons(id) {
     const buffIcons = [];
@@ -289,7 +271,6 @@ function getSeconarySkill(id) {
         descKR: KR_SECONDARYSKILL[SECONDARYSKILL[key].Desc] + collectUnusedDiscParamsFrom(SECONDARYSKILL[key], KR_SECONDARYSKILL),
         effectType: getSeconarySkillEffectTypes(id),
         addAttrType: getSeconarySkillAddAttrType(id),
-        effectData: getSeconarySkillEffectData(id),
         buffIcon: getSecondarySkillBuffIcons(id),
         params: getSecondarySkillParams(id),
         requirements: getNoteRequirements(id),
@@ -357,23 +338,6 @@ function getSeconarySkillAddAttrType(id) {
     return [...new Set(attrTypes)];
 }
 
-function getSeconarySkillEffectData(id) {
-    const effectDatas = [];
-
-    const effectKeys = Object.keys(EFFECT).filter(k => k.startsWith(`${id}`) && k.length === 7);
-
-    for (const effectKey of effectKeys) {
-        let effectId = +effectKey;
-        if (!EFFECT[effectId]) continue;
-
-        const data = getEffectData(effectId);
-        if (!data) continue;
-
-        effectDatas.push(data);
-    }
-
-    return [...new Set(effectDatas)];
-}
 
 function getSecondarySkillBuffIcons(id) {
     const buffIcons = [];

@@ -1,5 +1,5 @@
 import { spawnSync } from 'child_process';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -286,14 +286,18 @@ pe.writeUInt32LE(0x60000020, sec + 36);
 content.copy(pe, SECTION_RVA);
 
 mkdirSync(OUT, { recursive: true });
-const outDll = join(OUT, 'Hotfix.dec.dll');
+const outDll = join(OUT, 'Hotfix.dll');
 writeFileSync(outDll, pe);
 console.log(`wrote ${outDll} (${pe.length} bytes)`);
 
 const res = spawnSync('ilspycmd', [outDll, '-o', OUT], { stdio: 'inherit', env: { ...process.env, DOTNET_ROLL_FORWARD: 'Major' } });
 if (res.error) die(`cannot run ilspycmd: ${res.error.message}`);
 if (res.status !== 0) die(`ilspycmd failed (exit code ${res.status})`);
-console.log(`decompiled -> ${OUT}`);
+
+const outCs = join(OUT, 'Hotfix.cs');
+const generated = join(OUT, 'Hotfix.decompiled.cs');
+if (existsSync(generated)) renameSync(generated, outCs);
+console.log(`decompiled -> ${outCs}`);
 
 function die(msg) {
     console.error(`hotfix: ${msg}`);

@@ -1,11 +1,10 @@
 const { writeFileSync } = require('fs');
 const WORD = require('./EN/bin/Word.json');
-const EFFECT = require('./EN/bin/Effect.json');
 const EFFECTVALUE = require('./EN/bin/EffectValue.json');
 const ONCEADDITTIONALATTRIBUTEVALUE = require('./EN/bin/OnceAdditionalAttributeValue.json');
 const BUFF = require('./EN/bin/Buff.json');
 const LANG_WORD = require('./EN/language/en_US/Word.json');
-const { collectParamsFrom, resolveParam, formatEffectType, formatAddAttrType, getEffectData } = require('./utils');
+const { collectParamsFrom, resolveParam, formatEffectType, formatAddAttrType } = require('./utils');
 
 const word = {};
 
@@ -19,7 +18,6 @@ for (const id in WORD) {
         params: getWordParams(id),
         effectType: getWordEffectType(id),
         addAttrType: getWordAddAttrType(id),
-        effectData: getWordEffectData(id),
         buffIcons: getWordBuffIcons(id),
     };
 }
@@ -80,24 +78,6 @@ function getWordAddAttrType(id) {
     return [...new Set(addAttrTypes)];
 }
 
-function getWordEffectData(id) {
-    const effectDatas = [];
-
-    const params = collectParamsFrom(WORD[id]).filter(p => p && p.startsWith('Effect'));
-
-    for (const param of params) {
-        const p = param.split(',');
-        let effectId = +p[2];
-        if (!EFFECT[effectId]) continue;
-
-        const data = getEffectData(effectId);
-        if (!data) continue;
-
-        effectDatas.push(data);
-    }
-
-    return [...new Set(effectDatas)];
-}
 
 function getWordBuffIcons(id) {
     const buffIcons = [];
