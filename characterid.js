@@ -11,5 +11,9 @@ fetch(AVGCHARACTER_URL)
             characterId[id] = name;
         });
 
+        if (Object.keys(characterId).length === 0) {
+            return;
+        }
+
         writeFileSync('characterid.json', JSON.stringify(characterId, null, 4));
     });
