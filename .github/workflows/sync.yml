@@ -34,7 +34,7 @@ jobs:
         git fetch --all --prune
         git merge --allow-unrelated-histories -X theirs --no-edit upstream/main
 
-        SCRIPTS=(arena.js ascension.js blitz.js characterid.js character.js disc.js duel.js gacha.js ground.js item.js raid.js siege.js word.js)
+        SCRIPTS=(arena.js ascension.js blitz.js cata.js characterid.js character.js disc.js duel.js gacha.js ground.js item.js raid.js siege.js word.js)
         for script in "${SCRIPTS[@]}"; do
           echo "Running $script"
           node "$script"
