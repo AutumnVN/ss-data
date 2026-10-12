@@ -41,15 +41,15 @@ for (const survivorId in VAMPIRESURVIVOR) {
         weakTo: survivor.EET?.map(type => LANG_UITEXT[`UIText.T_Element_Attr_${type}.1`]) || ['None'],
         resistTo: survivor.NotEET?.map(type => LANG_UITEXT[`UIText.T_Element_Attr_${type}.1`]) || ['None'],
         zone: {
-            '1': getZone(floor.FirstHalfPoolId, survivor.FHPreviewMonsterGroupId, floor.FHBossId, survivor.EETScore1, survivor.Name1, 1),
-            ...(survivor.Mode === 2 ? { '2': getZone(floor.SecondHalfPoolId, survivor.SHPreviewMonsterGroupId, floor.SHBossId, survivor.EETScore2, survivor.Name2, 2) } : {}),
+            '1': getZone(floor.FirstHalfPoolId, survivor.FHPreviewMonsterGroupId, floor.FHBossId, survivor.EETScore1, survivor.Name1, 1, survivor.Type),
+            ...(survivor.Mode === 2 ? { '2': getZone(floor.SecondHalfPoolId, survivor.SHPreviewMonsterGroupId, floor.SHBossId, survivor.EETScore2, survivor.Name2, 2, survivor.Type) } : {}),
         },
     };
 }
 
 writeFileSync('./cata.json', JSON.stringify(cata, null, 4));
 
-function getZone(poolId, previewMonsterGroupId, bossId, weakTo, nameKey, index) {
+function getZone(poolId, previewMonsterGroupId, bossId, weakTo, nameKey, index, type) {
     const monsterIds = PREVIEWMONSTERGROUP[previewMonsterGroupId]?.MonsterIds ? [...PREVIEWMONSTERGROUP[previewMonsterGroupId].MonsterIds] : [];
 
     if (bossId && !monsterIds.includes(bossId)) {
@@ -61,11 +61,8 @@ function getZone(poolId, previewMonsterGroupId, bossId, weakTo, nameKey, index) 
         return epicDiff !== 0 ? epicDiff : a - b;
     });
 
-    const monster = {};
-
-    for (const monsterId of monsterIds) {
-        monster[monsterId] = getMonster(monsterId, bossLevelByPool[poolId], monsterId === bossId);
-    }
+    const overrideWeakTo = type === 3 ? weakTo : undefined;
+    const monster = monsterIds.map(monsterId => getMonster(monsterId, bossLevelByPool[poolId], monsterId === bossId, overrideWeakTo));
 
     return {
         name: LANG_VAMPIRESURVIVOR[nameKey] || `Zone ${index}`,
@@ -74,7 +71,7 @@ function getZone(poolId, previewMonsterGroupId, bossId, weakTo, nameKey, index) 
     };
 }
 
-function getMonster(monsterId, monsterLv, boss) {
+function getMonster(monsterId, monsterLv, boss, overrideWeakTo) {
     const monster = MONSTER[monsterId];
     const monsterManual = MONSTERMANUAL[MONSTERSKIN[monster.FAId].MonsterManual];
     const monsterValueTemplateAdjust = MONSTERVALUETEMPLETEADJUST[monster.Templete];
@@ -92,7 +89,7 @@ function getMonster(monsterId, monsterLv, boss) {
         icon: monsterManual.Icon.split('/').pop(),
         type: MONSTER_EPIC_TYPE[monster.EpicLv],
         boss,
-        weakTo: monsterValueTemplateAdjust.WeakEET?.map(type => LANG_UITEXT[`UIText.T_Element_Attr_${type}.1`]) || ['None'],
+        weakTo: (overrideWeakTo || monsterValueTemplateAdjust.WeakEET)?.map(type => LANG_UITEXT[`UIText.T_Element_Attr_${type}.1`]) || ['None'],
         resistTo: LANG_UITEXT[`UIText.T_Element_Attr_${monsterValueTemplateAdjust.EET}.1`],
         stat: {
             'HP': Math.floor(monsterValueTemplate.Hp * (1 + (monsterValueTemplateAdjust.HpRatio / 10000 || 0)) + (monsterValueTemplateAdjust.HpFix || 0)),
