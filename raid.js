@@ -20,6 +20,7 @@ const raid = {};
 
 for (const drillId in JOINTDRILLCONTROL) {
     const drillLevelGroupId = JOINTDRILLCONTROL[drillId].DrillLevelGroupId;
+    if ([51001].includes(drillLevelGroupId)) continue;
     const drillLevels = [...Object.values(JOINTDRILLLEVEL), ...Object.values(JOINTDRILL_2_LEVEL)].filter(level => level.DrillLevelGroupId === drillLevelGroupId);
     drillLevels.forEach(level => typeof level.BossId === 'number' && (level.BossId = [level.BossId]));
     const season = drillLevelGroupId % 51000;
