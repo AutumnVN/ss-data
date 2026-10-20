@@ -401650,9 +401650,9 @@ namespace AIScript
 		{
 			//IL_0001: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0002: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0046: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0047: Unknown result type (might be due to invalid IL or missing references)
-			//IL_004c: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0022: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0023: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0028: Unknown result type (might be due to invalid IL or missing references)
 			this.worldPosition = worldPosition;
 			if (selectUIBtn)
 			{
@@ -401660,7 +401660,7 @@ namespace AIScript
 			}
 			else
 			{
-				if (blockInput || (dragState == DragState.None && (Object)null != (Object)(object)mouseFollower && mouseFollower.IsPointerOverClickableUI()))
+				if (blockInput)
 				{
 					return;
 				}
