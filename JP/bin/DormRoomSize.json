@@ -1,0 +1,23 @@
+{
+  "0": {
+    "L": 20,
+    "W": 20,
+    "H": 10,
+    "CameraConfigDefault": "CameraConfig_Default_Out1",
+    "CameraConfigEdit": "CameraConfig_Edit_Out1",
+    "CameraConfigView": "CameraConfig_View_Out1",
+    "CameraConfigSwitch": "CameraConfig_Switch_Out1",
+    "NavigationMesh": "Dorm/Configs/NavigationMeshes/NavigationMeshes_001_Out_20X20"
+  },
+  "1": {
+    "Id": 1,
+    "L": 16,
+    "W": 16,
+    "H": 5,
+    "CameraConfigDefault": "CameraConfig_Default_In1",
+    "CameraConfigEdit": "CameraConfig_Edit_In1",
+    "CameraConfigView": "CameraConfig_View_In1",
+    "CameraConfigSwitch": "CameraConfig_Switch_In1",
+    "NavigationMesh": "Dorm/Configs/NavigationMeshes/NavigationMeshes_001_In_16X16"
+  }
+}
