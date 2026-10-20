@@ -9,12 +9,16 @@ const MONSTERMANUAL = require('./EN/bin/MonsterManual.json');
 const MONSTERSKIN = require('./EN/bin/MonsterSkin.json');
 const MONSTERVALUETEMPLETE = require('./EN/bin/MonsterValueTemplete.json');
 const MONSTERVALUETEMPLETEADJUST = require('./EN/bin/MonsterValueTempleteAdjust.json');
+const EFFECTVALUE = require('./EN/bin/EffectValue.json');
+const BUFF = require('./EN/bin/Buff.json');
+const BUFFVALUE = require('./EN/bin/BuffValue.json');
 const LANG_JOINTDRILLAFFIX = require('./EN/language/en_US/JointDrillAffix.json');
 const LANG_JOINTDRILLLEVEL = require('./EN/language/en_US/JointDrillLevel.json');
 const LANG_JOINTDRILL_2_LEVEL = require('./EN/language/en_US/JointDrill_2_Level.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
 const LANG_MONSTERMANUAL = require('./EN/language/en_US/MonsterManual.json');
-const { MONSTER_EPIC_TYPE } = require('./utils');
+const { MONSTER_EPIC_TYPE, formatEffectType, ATTR_TYPE } = require('./utils');
+const { getHotfixJointDrillBuffs } = require('./hotfix');
 
 const raid = {};
 
@@ -27,6 +31,8 @@ for (const drillId in JOINTDRILLCONTROL) {
 
     if (!MONSTER[drillLevels[0].BossId[0]]) continue;
 
+    const effectLevels = getJointDrillEffects(MONSTER[drillLevels[0].BossId[0]].FCId, drillLevels.length);
+
     raid[drillLevelGroupId] = {
         id: drillLevelGroupId,
         name: `[${LANG_MONSTERMANUAL[MONSTERMANUAL[MONSTERSKIN[MONSTER[drillLevels[0].BossId[0]].FAId].MonsterManual].Name]}] ${LANG_JOINTDRILLLEVEL[drillLevels[0].SubName] || LANG_JOINTDRILL_2_LEVEL[drillLevels[0].SubName]}`,
@@ -34,6 +40,7 @@ for (const drillId in JOINTDRILLCONTROL) {
         icon: MONSTERMANUAL[MONSTERSKIN[MONSTER[drillLevels[0].BossId[0]].FAId].MonsterManual].Icon.split('/').pop(),
         icons: drillLevels[0].BossId.length > 1 && drillLevels[0].BossId.map(bossId => MONSTERMANUAL[MONSTERSKIN[MONSTER[bossId].FAId].MonsterManual].Icon.split('/').pop()) || undefined,
         type: MONSTER_EPIC_TYPE[MONSTER[drillLevels[0].BossId[0]].EpicLv],
+        effects: mergeEffectLevels(effectLevels),
         mechanic: drillLevels[0].BossAffix.map(affixId => ({
             name: LANG_JOINTDRILLAFFIX[JOINTDRILLAFFIX[affixId].Name],
             desc: LANG_JOINTDRILLAFFIX[JOINTDRILLAFFIX[affixId].Desc],
@@ -85,11 +92,127 @@ for (const drillId in JOINTDRILLCONTROL) {
 
 writeFileSync('./raid.json', JSON.stringify(raid, null, 4));
 
-function getBookStartId(lastDiffBossId) {
-    for (let i = lastDiffBossId + 2; i < lastDiffBossId + 2 + 10; i++) {
-        const monster = MONSTER[i];
+function getJointDrillEffects(fcId, count) {
+    const prefix = String(fcId || '').slice(0, 5);
+    const { all, levels } = getHotfixJointDrillBuffs(prefix);
 
-        if (monster && monster.EpicLv === 4) {
+    if (!all.length) return Array.from({ length: count }, () => []);
+
+    const levelMapped = new Set(levels.flat().filter(Boolean));
+    const constants = all.filter(id => !levelMapped.has(id));
+    const hasLevels = levels.some(ids => ids && ids.length);
+
+    return Array.from({ length: count }, (_, index) => {
+        const ids = new Set(constants);
+        const levelIds = levels[index + 1] || [];
+
+        if (levelIds.length) {
+            levelIds.forEach(id => ids.add(id));
+        } else if (!hasLevels) {
+            all.forEach(id => ids.add(id));
+        }
+
+        const effects = [...ids].flatMap(getBuffEffects);
+        const seen = new Set();
+
+        return effects.filter(effect => {
+            const key = `${effect.type}|${effect.value}|${effect.icon}`;
+            if (seen.has(key)) return false;
+            seen.add(key);
+            return true;
+        });
+    });
+}
+
+function getBuffEffects(buffId) {
+    const buff = BUFF[buffId];
+    const buffValue = BUFFVALUE[buffId];
+    const effectIds = buffValue?.Effects?.length ? buffValue.Effects : EFFECTVALUE[buffId] ? [buffId] : [];
+    const icon = buff?.Icon ? buff.Icon.split('/').pop() : undefined;
+
+    return effectIds.flatMap(effectId => {
+        const effect = EFFECTVALUE[effectId];
+        if (!effect) return [];
+
+        let type = effect.EffectTypeFirstSubtype;
+        if (!type) type = EFFECTVALUE[effect.EffectTypeParam1]?.EffectTypeFirstSubtype;
+        const paramType = effect.EffectTypeSecondSubtype;
+        const assignment = effect.EffectType === 46;
+        let effectType = formatEffectType(effectId, type, paramType);
+
+        if (assignment) {
+            effectType = ATTR_TYPE[type] || effectType;
+        }
+
+        effectType = effectType.replace(/^HITTED_ADDITIONAL_*:/, '');
+
+        const number = Number(effect.EffectTypeParam1);
+
+        return [{
+            type: effectType,
+            value: formatEffectValue(effect.EffectTypeParam1),
+            number: Number.isFinite(number) ? number : undefined,
+            icon,
+        }];
+    });
+}
+
+function formatEffectValue(value) {
+    if (value === undefined || value === null || value === '') return undefined;
+
+    const number = Number(value);
+    if (!Number.isFinite(number)) return undefined;
+
+    const isRate = Math.abs(number) <= 1;
+    const scaled = isRate ? number * 100 : number;
+    const formatted = Number(scaled.toFixed(2)).toString();
+
+    return `${formatted}${isRate ? '%' : ''}`;
+}
+
+function mergeEffectLevels(effectLevels) {
+    const merged = new Map();
+
+    effectLevels.forEach((effects, index) => {
+        const groups = new Map();
+
+        effects.forEach(effect => {
+            const groupKey = `${effect.type}|${effect.icon}|${Math.sign(effect.number) || 0}`;
+            const group = groups.get(groupKey) || [];
+            group.push(effect);
+            groups.set(groupKey, group);
+        });
+
+        for (const [groupKey, group] of groups) {
+            group.sort((a, b) => (a.number ?? 0) - (b.number ?? 0));
+
+            group.forEach((effect, slot) => {
+                const key = `${groupKey}|${slot}`;
+                const entry = merged.get(key) || {
+                    type: effect.type,
+                    icon: effect.icon,
+                    values: Array(effectLevels.length).fill('-'),
+                };
+
+                entry.values[index] = effect.value ?? '-';
+                merged.set(key, entry);
+            });
+        }
+    });
+
+    return [...merged.values()].map(entry => ({
+        type: entry.type,
+        value: entry.values.join('/'),
+        icon: entry.icon,
+    }));
+}
+
+function getBookStartId(lastDiffBossId) {
+    for (let i = lastDiffBossId + 1; i <= lastDiffBossId + 20; i++) {
+        const monster = MONSTER[i];
+        const skin = monster && MONSTERSKIN[monster.FAId];
+
+        if (skin?.Model?.includes('Book_')) {
             return i;
         }
     }

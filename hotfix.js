@@ -23,6 +23,11 @@ const NAMESPACE = /^namespace\s+(\S+)/;
 const CLASS_DECL = /^\s*(?:(?:public|private|protected|internal|static|sealed|abstract|partial)\s+)*class\s+/;
 const BOSS_TAG_DECL = /^\s*(?:(?:public|private|protected|internal|static|readonly|const)\s+)*string\s+(\w*(?:TagId|EntryId)\w*)\s*=\s*"(\d{6})"\s*;/;
 const BOSS_BUFF_DECL = /^\s*(?:(?:public|private|protected|internal|static|readonly|const)\s+)*int\s+(\w+)\s*=\s*(631\d{6})\s*;/;
+const JOINT_DRILL_NAMESPACE = /^namespace\s+AIScript\.Monster\._(\d{5})/;
+const JOINT_DRILL_BUFF_ID = /\b(\d{9})\b/g;
+const JOINT_DRILL_BUFF_FIELD = /\b(buff\w*)\s*=/i;
+const JOINT_DRILL_BUFF_LEVEL = /\[(\d+)\]\s*=\s*new\s+List<int>\s*\{([^}]*)\}/;
+const JOINT_DRILL_BUFF_LV = /\["Lv(\d+)"\]\s*=\s*(\d{9})/;
 const METHOD = /^\t\t(?:public|private|protected|internal)[\w\s<>\[\],.?]*\s(\w+)\s*\(/;
 const DECL_LINE = /^\s*(?:(?:public|private|protected|internal)\s+)?(?:(?:const|static\s+readonly|readonly|static)\s+)?[\w<>\[\].]+\s+(\w+)\s*=\s*(\d+)\s*[;,]\s*$/;
 const MAPPING_USAGE = /(\w*hitDamageIdMapping\w*)\.TryGetValue\(/;
@@ -111,6 +116,7 @@ let src = null;
 let hitDamage = null;
 let notes = null;
 let scoreBossBuffs = null;
+let jointDrillBuffs = null;
 
 function getSource() {
     if (!src) src = readFileSync(HOTFIX_FILE, 'utf8');
@@ -144,6 +150,64 @@ function getHotfixScoreBossBuffs() {
     }
 
     return scoreBossBuffs;
+}
+
+function getHotfixJointDrillBuffs(prefix) {
+    if (!jointDrillBuffs) {
+        jointDrillBuffs = {};
+        let currentNamespace = null;
+        let currentField = '';
+        let current = null;
+
+        for (const line of getSource().split(/\r?\n/)) {
+            const namespace = JOINT_DRILL_NAMESPACE.exec(line);
+            if (namespace) {
+                currentNamespace = namespace[1];
+                currentField = '';
+                current = null;
+                continue;
+            }
+
+            if (!currentNamespace) continue;
+
+            const field = JOINT_DRILL_BUFF_FIELD.exec(line);
+            if (field) currentField = field[1];
+
+            if (!current || current.prefix !== currentNamespace) {
+                current = jointDrillBuffs[currentNamespace] || (jointDrillBuffs[currentNamespace] = {
+                    prefix: currentNamespace,
+                    all: new Set(),
+                    levels: [],
+                });
+            }
+
+            for (const [, id] of line.matchAll(JOINT_DRILL_BUFF_ID)) {
+                if (id.startsWith(currentNamespace)) current.all.add(+id);
+            }
+
+            const level = JOINT_DRILL_BUFF_LEVEL.exec(line);
+            if (level && /buffid/i.test(currentField)) {
+                const index = +level[1];
+                const ids = current.levels[index] || (current.levels[index] = new Set());
+                for (const [, id] of level[2].matchAll(/\b(\d{9})\b/g)) ids.add(+id);
+            }
+
+            const lv = JOINT_DRILL_BUFF_LV.exec(line);
+            if (lv) {
+                const index = +lv[1];
+                const ids = current.levels[index] || (current.levels[index] = new Set());
+                ids.add(+lv[2]);
+            }
+        }
+    }
+
+    const data = jointDrillBuffs[prefix];
+    if (!data) return { all: [], levels: [] };
+
+    return {
+        all: [...data.all],
+        levels: data.levels.map(ids => ids ? [...ids] : []),
+    };
 }
 
 async function getHotfixData() {
@@ -395,4 +459,4 @@ function getHitDamageNote(hitDamageId) {
     return notes[hitDamageId] || [];
 }
 
-module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHotfixScoreBossBuffs, potentialLabel };
+module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };

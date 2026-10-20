@@ -5,6 +5,27 @@
         "season": 2,
         "icon": "monsterhead_70001JuYuanMeiYing_Dark_L",
         "type": "Raid",
+        "effects": [
+            {
+                "type": "Final DMG Taken (base)",
+                "value": "0.15%/0.15%/0.15%/0.15%/0.15%",
+                "icon": "Icon_CommonBuff_AttackUp"
+            },
+            {
+                "type": "Final DMG Taken (base)",
+                "value": "15%/15%/15%/15%/15%",
+                "icon": "Icon_CommonBuff_AttackUp"
+            },
+            {
+                "type": "Final DMG Taken (base)",
+                "value": "-1%/-1%/-1%/-1%/-1%",
+                "icon": "Icon_CommonBuff_DefenseDown"
+            },
+            {
+                "type": "Auto Attack DMG Taken",
+                "value": "60%/60%/40%/20%/20%"
+            }
+        ],
         "mechanic": [
             {
                 "name": "Waltz: Chorus",
@@ -445,6 +466,16 @@
             "monsterhead_72002ShuangZiQiLan_Com_L"
         ],
         "type": "Raid",
+        "effects": [
+            {
+                "type": "Final DMG (base)",
+                "value": "25%/25%/30%/30%/30%"
+            },
+            {
+                "type": "Final DMG (base)",
+                "value": "-10%/-10%/-10%/-25%/-50%"
+            }
+        ],
         "mechanic": [
             {
                 "name": "Lord's Law: Assimilation Decay",
@@ -781,6 +812,27 @@
         "season": 4,
         "icon": "monsterhead_70001JuYuanMeiYing_Dark_L",
         "type": "Raid",
+        "effects": [
+            {
+                "type": "Final DMG Taken (base)",
+                "value": "0.15%/0.15%/0.15%/0.15%/0.15%",
+                "icon": "Icon_CommonBuff_AttackUp"
+            },
+            {
+                "type": "Final DMG Taken (base)",
+                "value": "15%/15%/15%/15%/15%",
+                "icon": "Icon_CommonBuff_AttackUp"
+            },
+            {
+                "type": "Final DMG Taken (base)",
+                "value": "-1%/-1%/-1%/-1%/-1%",
+                "icon": "Icon_CommonBuff_DefenseDown"
+            },
+            {
+                "type": "Auto Attack DMG Taken",
+                "value": "60%/60%/40%/20%/20%"
+            }
+        ],
         "mechanic": [
             {
                 "name": "Symphony: Sigh",
@@ -1196,6 +1248,16 @@
             "monsterhead_72002ShuangZiQiLan_Com_L"
         ],
         "type": "Raid",
+        "effects": [
+            {
+                "type": "Final DMG (base)",
+                "value": "25%/25%/30%/30%/30%"
+            },
+            {
+                "type": "Final DMG (base)",
+                "value": "-10%/-10%/-10%/-25%/-50%"
+            }
+        ],
         "mechanic": [
             {
                 "name": "Lord's Law: Assimilation Decay",
@@ -1536,6 +1598,16 @@
             "monsterhead_72002ShuangZiQiLan_Com_L"
         ],
         "type": "Raid",
+        "effects": [
+            {
+                "type": "Final DMG (base)",
+                "value": "25%/25%/30%/30%/30%/30%"
+            },
+            {
+                "type": "Final DMG (base)",
+                "value": "-10%/-10%/-10%/-25%/-50%/-65%"
+            }
+        ],
         "mechanic": [
             {
                 "name": "Lord's Law: Assimilation Decay",
@@ -1936,6 +2008,7 @@
         "season": 7,
         "icon": "monsterhead_72012MoShuShi_Nv_Com_L",
         "type": "Raid",
+        "effects": [],
         "mechanic": [
             {
                 "name": "Cycle of Creation",
