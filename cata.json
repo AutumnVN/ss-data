@@ -6095,8 +6095,8 @@
                                 ],
                                 "resistTo": "Ignis",
                                 "stat": {
-                                    "HP": 2189337,
-                                    "ATK": 13030,
+                                    "HP": 3126602,
+                                    "ATK": 7535,
                                     "DEF": 500,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
@@ -6107,7 +6107,7 @@
                                     "Lux DMG": "100%",
                                     "Umbra DMG": "100%",
                                     "Mark DMG Taken": "100%",
-                                    "Resilience": 1313602,
+                                    "Resilience": 1875961,
                                     "Aqua RES": 250,
                                     "Ignis RES": 2000,
                                     "Terra RES": 750,
@@ -6127,8 +6127,8 @@
                                 ],
                                 "resistTo": "Ignis",
                                 "stat": {
-                                    "HP": 2189337,
-                                    "ATK": 13030,
+                                    "HP": 3126602,
+                                    "ATK": 7535,
                                     "DEF": 500,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
@@ -6139,7 +6139,7 @@
                                     "Lux DMG": "100%",
                                     "Umbra DMG": "100%",
                                     "Mark DMG Taken": "100%",
-                                    "Resilience": 1313602,
+                                    "Resilience": 1875961,
                                     "Aqua RES": 750,
                                     "Ignis RES": 2000,
                                     "Terra RES": 750,
@@ -6159,8 +6159,8 @@
                                 ],
                                 "resistTo": "Ignis",
                                 "stat": {
-                                    "HP": 2189337,
-                                    "ATK": 13030,
+                                    "HP": 3126602,
+                                    "ATK": 7535,
                                     "DEF": 500,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
@@ -6171,7 +6171,7 @@
                                     "Lux DMG": "100%",
                                     "Umbra DMG": "100%",
                                     "Mark DMG Taken": "100%",
-                                    "Resilience": 1313602,
+                                    "Resilience": 1875961,
                                     "Aqua RES": 250,
                                     "Ignis RES": 2000,
                                     "Terra RES": 750,
@@ -6191,8 +6191,8 @@
                                 ],
                                 "resistTo": "Ignis",
                                 "stat": {
-                                    "HP": 321101,
-                                    "ATK": 6565,
+                                    "HP": 458566,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6221,8 +6221,8 @@
                                 ],
                                 "resistTo": "Ignis",
                                 "stat": {
-                                    "HP": 75896,
-                                    "ATK": 6565,
+                                    "HP": 108387,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6251,8 +6251,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 75896,
-                                    "ATK": 6565,
+                                    "HP": 108387,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6281,8 +6281,8 @@
                                 ],
                                 "resistTo": "Ignis",
                                 "stat": {
-                                    "HP": 94871,
-                                    "ATK": 6565,
+                                    "HP": 135486,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6311,8 +6311,8 @@
                                 ],
                                 "resistTo": "Ignis",
                                 "stat": {
-                                    "HP": 94871,
-                                    "ATK": 6565,
+                                    "HP": 135486,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6341,8 +6341,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 94871,
-                                    "ATK": 6565,
+                                    "HP": 135486,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6371,8 +6371,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 256881,
-                                    "ATK": 6565,
+                                    "HP": 366853,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6410,8 +6410,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 3229239,
-                                    "ATK": 13030,
+                                    "HP": 4611692,
+                                    "ATK": 7535,
                                     "DEF": 500,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
@@ -6422,7 +6422,7 @@
                                     "Lux DMG": "100%",
                                     "Umbra DMG": "100%",
                                     "Mark DMG Taken": "100%",
-                                    "Resilience": 1937543,
+                                    "Resilience": 2767015,
                                     "Aqua RES": 750,
                                     "Ignis RES": 750,
                                     "Terra RES": 250,
@@ -6442,8 +6442,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 3229239,
-                                    "ATK": 13030,
+                                    "HP": 4611692,
+                                    "ATK": 7535,
                                     "DEF": 500,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
@@ -6454,7 +6454,7 @@
                                     "Lux DMG": "100%",
                                     "Umbra DMG": "100%",
                                     "Mark DMG Taken": "100%",
-                                    "Resilience": 1937543,
+                                    "Resilience": 2767015,
                                     "Aqua RES": 750,
                                     "Ignis RES": 750,
                                     "Terra RES": 750,
@@ -6474,8 +6474,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 3229239,
-                                    "ATK": 13030,
+                                    "HP": 4611692,
+                                    "ATK": 7535,
                                     "DEF": 500,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
@@ -6486,7 +6486,7 @@
                                     "Lux DMG": "100%",
                                     "Umbra DMG": "100%",
                                     "Mark DMG Taken": "100%",
-                                    "Resilience": 1937543,
+                                    "Resilience": 2767015,
                                     "Aqua RES": 750,
                                     "Ignis RES": 750,
                                     "Terra RES": 250,
@@ -6506,8 +6506,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 139933,
-                                    "ATK": 6565,
+                                    "HP": 199840,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6536,8 +6536,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 473620,
-                                    "ATK": 6565,
+                                    "HP": 676380,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6566,8 +6566,8 @@
                                 ],
                                 "resistTo": "Terra",
                                 "stat": {
-                                    "HP": 473620,
-                                    "ATK": 6565,
+                                    "HP": 676380,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6596,8 +6596,8 @@
                                 ],
                                 "resistTo": "Terra",
                                 "stat": {
-                                    "HP": 139933,
-                                    "ATK": 6565,
+                                    "HP": 199840,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6626,8 +6626,8 @@
                                 ],
                                 "resistTo": "Terra",
                                 "stat": {
-                                    "HP": 111945,
-                                    "ATK": 6565,
+                                    "HP": 159869,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6656,8 +6656,8 @@
                                 ],
                                 "resistTo": "Umbra",
                                 "stat": {
-                                    "HP": 139933,
-                                    "ATK": 6565,
+                                    "HP": 199840,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -6686,8 +6686,8 @@
                                 ],
                                 "resistTo": "Terra",
                                 "stat": {
-                                    "HP": 378895,
-                                    "ATK": 6565,
+                                    "HP": 541102,
+                                    "ATK": 7535,
                                     "Hit Rate": "100%",
                                     "Attack Speed": "100%",
                                     "Aqua DMG": "100%",
@@ -15893,6 +15893,652 @@
                                     "Terra RES": 750,
                                     "Ventus RES": 750,
                                     "Lux RES": 2000,
+                                    "Umbra RES": 750
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "317": {
+                "name": "Wrathbone Hunt Phase 17",
+                "icon": "zs_survivor_entrancepic_301",
+                "weakTo": [
+                    "Ventus",
+                    "Lux",
+                    "Aqua"
+                ],
+                "resistTo": [
+                    "Ignis",
+                    "Umbra",
+                    "Terra"
+                ],
+                "zone": {
+                    "1": {
+                        "name": "Zone 1",
+                        "weakTo": [
+                            "Ventus",
+                            "Lux"
+                        ],
+                        "monster": [
+                            {
+                                "name": "Wrath Blaze Juggernaut",
+                                "icon": "monsterhead_50011XingXing_Fire_L",
+                                "type": "Overlord",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Ignis",
+                                "stat": {
+                                    "HP": 3126602,
+                                    "ATK": 7535,
+                                    "DEF": 500,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Resilience": 1875961,
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 2000,
+                                    "Terra RES": 750,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Wrath Blaze Juggernaut",
+                                "icon": "monsterhead_50011XingXing_Fire_L",
+                                "type": "Overlord",
+                                "boss": true,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Ignis",
+                                "stat": {
+                                    "HP": 3126602,
+                                    "ATK": 7535,
+                                    "DEF": 500,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Resilience": 1875961,
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 2000,
+                                    "Terra RES": 750,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Megahand Enforcer: Heat",
+                                "icon": "monsterhead_50001DaShou_Fire_L",
+                                "type": "Sentinel",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Ignis",
+                                "stat": {
+                                    "HP": 3126602,
+                                    "ATK": 7535,
+                                    "DEF": 500,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Resilience": 1875961,
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 2000,
+                                    "Terra RES": 750,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Megahand Enforcer: Heat",
+                                "icon": "monsterhead_50001DaShou_Fire_L",
+                                "type": "Elite",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Ignis",
+                                "stat": {
+                                    "HP": 458566,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 2000,
+                                    "Terra RES": 750,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Armadillo Fish: Heat",
+                                "icon": "monsterhead_10015FengYu_Fire_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Ignis",
+                                "stat": {
+                                    "HP": 108387,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 2000,
+                                    "Terra RES": 750,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Whimagus: Shadow",
+                                "icon": "monsterhead_50041XiaoFa_Dark_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 108387,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 250,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 250,
+                                    "Umbra RES": 2000
+                                }
+                            },
+                            {
+                                "name": "Cursipot: Heat",
+                                "icon": "monsterhead_50091GuanZi_Fire_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Ignis",
+                                "stat": {
+                                    "HP": 135486,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 2000,
+                                    "Terra RES": 750,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Grumblegeist: Heat",
+                                "icon": "monsterhead_50191ZhongGuanZi_Fire_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Ignis",
+                                "stat": {
+                                    "HP": 135486,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 2000,
+                                    "Terra RES": 750,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Steam Pot Hammer: Shadow",
+                                "icon": "monsterhead_10018GaoYaGuo_Dark_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 135486,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 250,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 250,
+                                    "Umbra RES": 2000
+                                }
+                            },
+                            {
+                                "name": "Magishark: Shadow",
+                                "icon": "monsterhead_50020ShaYuFaShi_Dark_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Ventus",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 366853,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 250,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 250,
+                                    "Umbra RES": 2000
+                                }
+                            }
+                        ]
+                    },
+                    "2": {
+                        "name": "Zone 2",
+                        "weakTo": [
+                            "Aqua",
+                            "Lux"
+                        ],
+                        "monster": [
+                            {
+                                "name": "Golem of Nightmares",
+                                "icon": "monsterhead_10012FanRongZhiShiTi_Dark_L",
+                                "type": "Overlord",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 4611692,
+                                    "ATK": 7535,
+                                    "DEF": 500,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Resilience": 2767015,
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 250,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 250,
+                                    "Umbra RES": 2000
+                                }
+                            },
+                            {
+                                "name": "Golem of Nightmares",
+                                "icon": "monsterhead_10012FanRongZhiShiTi_Dark_L",
+                                "type": "Overlord",
+                                "boss": true,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 4611692,
+                                    "ATK": 7535,
+                                    "DEF": 500,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Resilience": 2767015,
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 750,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 2000
+                                }
+                            },
+                            {
+                                "name": "Master Digger: Shadow",
+                                "icon": "monsterhead_50231JiXieBi_Dark_L",
+                                "type": "Sentinel",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 4611692,
+                                    "ATK": 7535,
+                                    "DEF": 500,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Resilience": 2767015,
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 250,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 250,
+                                    "Umbra RES": 2000
+                                }
+                            },
+                            {
+                                "name": "Fat Glopo: Shadow",
+                                "icon": "monsterhead_50071ZhongShiLaiMu_Dark_L",
+                                "type": "Elite",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 199840,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 250,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 250,
+                                    "Umbra RES": 2000
+                                }
+                            },
+                            {
+                                "name": "Master Digger: Shadow",
+                                "icon": "monsterhead_50231JiXieBi_Dark_L",
+                                "type": "Elite",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 676380,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 250,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 250,
+                                    "Umbra RES": 2000
+                                }
+                            },
+                            {
+                                "name": "Spear-Wielding Attendant: Rock",
+                                "icon": "monsterhead_50201WeiBing_Earth_L",
+                                "type": "Elite",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Terra",
+                                "stat": {
+                                    "HP": 676380,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 2000,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Sword-and-Shield Vanguard: Rock",
+                                "icon": "monsterhead_50021JianDun_Earth_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Terra",
+                                "stat": {
+                                    "HP": 199840,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 2000,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Armadillo Fish: Rock",
+                                "icon": "monsterhead_10015FengYu_Earth_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Terra",
+                                "stat": {
+                                    "HP": 159869,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 2000,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
+                                    "Umbra RES": 750
+                                }
+                            },
+                            {
+                                "name": "Glopo: Shadow",
+                                "icon": "monsterhead_50061XiaoShiLaiMu_Dark_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Umbra",
+                                "stat": {
+                                    "HP": 199840,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 750,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 250,
+                                    "Ventus RES": 750,
+                                    "Lux RES": 250,
+                                    "Umbra RES": 2000
+                                }
+                            },
+                            {
+                                "name": "Magishark: Rock",
+                                "icon": "monsterhead_50020ShaYuFaShi_Earth_L",
+                                "type": "Normal",
+                                "boss": false,
+                                "weakTo": [
+                                    "Aqua",
+                                    "Lux"
+                                ],
+                                "resistTo": "Terra",
+                                "stat": {
+                                    "HP": 541102,
+                                    "ATK": 7535,
+                                    "Hit Rate": "100%",
+                                    "Attack Speed": "100%",
+                                    "Aqua DMG": "100%",
+                                    "Ignis DMG": "100%",
+                                    "Terra DMG": "100%",
+                                    "Ventus DMG": "100%",
+                                    "Lux DMG": "100%",
+                                    "Umbra DMG": "100%",
+                                    "Mark DMG Taken": "100%",
+                                    "Aqua RES": 250,
+                                    "Ignis RES": 750,
+                                    "Terra RES": 2000,
+                                    "Ventus RES": 250,
+                                    "Lux RES": 750,
                                     "Umbra RES": 750
                                 }
                             }
