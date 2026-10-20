@@ -1,5 +1,5 @@
 const { writeFileSync } = require('fs');
-const { MONSTER_EPIC_TYPE, ATTR_TYPE, EFFECT_TYPE, formatEffectType, formatAddAttrType, collectParamsFrom, resolveParam, resolveParamsTooltips } = require('./utils');
+const { MONSTER_EPIC_TYPE, ATTR_TYPE, EFFECT_TYPE, formatEffectType, collectParamsFrom, resolveParam, resolveParamsTooltips } = require('./utils');
 const TRAVELERDUELBOSSLEVEL = require('./EN/bin/TravelerDuelBossLevel.json');
 const TRAVELERDUELCHALLENGEDIFFICULTY = require('./EN/bin/TravelerDuelChallengeDifficulty.json');
 const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
@@ -110,26 +110,7 @@ function getAffixEffectTypes(aff) {
 }
 
 function getAffixAddAttrTypes(aff) {
-    const addAttrTypes = [];
-
-    for (const skillId of aff.SkillId || []) {
-        for (const effectId of getLeafEffectIds(skillId)) {
-            const effect = EFFECTVALUE[effectId];
-            const effectType = EFFECT_TYPE[effect.EffectType] || '';
-            if (!effectType.includes('ATTR_FIX') && effect.EffectType !== 46) continue;
-
-            const type = effect.EffectTypeFirstSubtype;
-            const paramType = effect.EffectTypeSecondSubtype;
-            if (type === undefined || type === null) continue;
-
-            let addAttrType = formatAddAttrType(type, paramType);
-            if (effect.EffectType === 46) addAttrType = ATTR_TYPE[type] || addAttrType;
-
-            addAttrTypes.push(addAttrType);
-        }
-    }
-
-    return [...new Set(addAttrTypes)];
+    return [...new Set(resolveParamsTooltips(collectParamsFrom(aff)).map((tooltip) => tooltip.addAttrType).filter(Boolean))];
 }
 
 function getLeafEffectIds(effectId, seen = new Set()) {
