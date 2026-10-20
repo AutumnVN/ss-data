@@ -10,7 +10,7 @@
                     "name": "Full-auto Fire",
                     "desc": "Enhanced Assault Mode: Fires more bullets during Rapid Fire.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -24,7 +24,7 @@
                     "name": "Dark Ray",
                     "desc": "Enhanced Sniper Mode: Unleashes a more powerful dark ray after Dark Bullet.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -38,7 +38,7 @@
                     "name": "All Out",
                     "desc": "Enhanced Assault Mode: After continuous firing, Chaton summons a magic circle to fire Kitty Bullets outward.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -52,7 +52,7 @@
                     "name": "Secondary Beam",
                     "desc": "Enhanced Sniper Mode: Adds a follow-up attack to Laser Beam.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -66,7 +66,7 @@
                     "name": "Furious Kitty",
                     "desc": "Fires more Kitty Bullets during Kitty Barrage.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -80,7 +80,7 @@
                     "name": "Eye of the Meow Lord",
                     "desc": "Eye of the Demon Lord has increased tracking duration and tracking speed.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -96,7 +96,7 @@
                     "params": [
                         "EffectValue,NoLevel,29040101,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%"
                     ],
                     "paramsTooltips": [
@@ -121,7 +121,7 @@
                     "params": [
                         "EffectValue,NoLevel,29040102,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%"
                     ],
                     "paramsTooltips": [
@@ -146,7 +146,7 @@
                     "params": [
                         "EffectValue,NoLevel,29040103,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "30%"
                     ],
                     "paramsTooltips": [
@@ -174,7 +174,7 @@
                         "EffectValue,NoLevel,29040301,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290403011,EffectTypeParam1,Pct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-50%",
                         "0.8%"
                     ],
@@ -208,7 +208,7 @@
                         "EffectValue,NoLevel,29041301,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290413011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "40%",
                         "-30%"
                     ],
@@ -241,7 +241,7 @@
                         "EffectValue,NoLevel,29041302,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290413021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "15%",
                         "-30%"
                     ],
@@ -275,7 +275,7 @@
                     "params": [
                         "EffectValue,NoLevel,29040201,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "5%"
                     ],
                     "paramsTooltips": [
@@ -298,7 +298,7 @@
                     "params": [
                         "EffectValue,NoLevel,29040202,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%"
                     ],
                     "paramsTooltips": [
@@ -321,7 +321,7 @@
                     "params": [
                         "EffectValue,NoLevel,29040203,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%"
                     ],
                     "paramsTooltips": [
@@ -348,7 +348,7 @@
                         "BuffValue,NoLevel,29041701,Time,10K",
                         "BuffValue,NoLevel,29041701,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "1%",
                         3,
                         10
@@ -387,7 +387,7 @@
                         "BuffValue,NoLevel,29041702,Time,10K",
                         "BuffValue,NoLevel,29041702,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "2.1%",
                         3,
                         10
@@ -426,7 +426,7 @@
                         "BuffValue,NoLevel,29041703,Time,10K",
                         "BuffValue,NoLevel,29041703,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "3.2%",
                         3,
                         10
@@ -466,7 +466,7 @@
                         "EffectValue,NoLevel,29041101,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290411011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -499,7 +499,7 @@
                         "EffectValue,NoLevel,29041102,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290411021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -532,7 +532,7 @@
                         "EffectValue,NoLevel,29041103,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290411031,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -569,7 +569,7 @@
                         "EffectValue,NoLevel,290412012,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29041201,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-5%",
                         4,
                         "-0.2%",
@@ -612,7 +612,7 @@
                         "EffectValue,NoLevel,290412022,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29041202,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-10%",
                         2,
                         "-0.5%",
@@ -656,7 +656,7 @@
                         "BuffValue,NoLevel,29040701,Time,10K",
                         "EffectValue,NoLevel,29040701,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-15%",
                         5,
                         5
@@ -697,7 +697,7 @@
                         "BuffValue,NoLevel,29040702,Time,10K",
                         "EffectValue,NoLevel,29040702,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-35%",
                         5,
                         5
@@ -739,7 +739,7 @@
                         "EffectValue,NoLevel,290415012,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,29041501,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-40%",
                         "25%"
                     ],
@@ -776,7 +776,7 @@
                         "BuffValue,NoLevel,29040501,Time,10K",
                         "EffectValue,NoLevel,290405011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         10,
                         "-20%"
                     ],
@@ -814,7 +814,7 @@
                         "BuffValue,NoLevel,29041601,Time,10K",
                         "BuffValue,NoLevel,29041601,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "2%",
                         5,
                         10
@@ -853,7 +853,7 @@
                         "BuffValue,NoLevel,29041602,Time,10K",
                         "BuffValue,NoLevel,29041602,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "5%",
                         5,
                         10
@@ -895,7 +895,7 @@
                         "BuffValue,NoLevel,29040601,LaminatedNum,Fixed",
                         "BuffValue,NoLevel,29040601,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-40%",
                         "20%",
                         2,
@@ -942,7 +942,7 @@
                         "EffectValue,NoLevel,29040901,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290409011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "15%",
                         "30%"
                     ],
@@ -975,7 +975,7 @@
                         "EffectValue,NoLevel,29040902,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290409021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-15%",
                         "-30%"
                     ],
@@ -1011,7 +1011,7 @@
                         "EffectValue,NoLevel,290414012,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29041401,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         10,
                         "-1.2%",
                         12
@@ -1048,7 +1048,7 @@
                         "EffectValue,NoLevel,290414022,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29041402,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         10,
                         "-2.4%",
                         12
@@ -1085,7 +1085,7 @@
                         "EffectValue,NoLevel,290414032,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29041403,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         10,
                         "-3.6%",
                         12
@@ -1122,7 +1122,7 @@
                     "params": [
                         "EffectValue,NoLevel,29040801,EffectTypeParam1,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         -30
                     ],
                     "paramsTooltips": [
@@ -1153,7 +1153,7 @@
                         "EffectValue,NoLevel,290419012,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,29041901,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%",
                         "80%",
                         20,
@@ -1204,7 +1204,7 @@
                         "EffectValue,NoLevel,29041902,EffectTypeParam1,Pct",
                         "EffectValue,NoLevel,290419021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         5,
                         "8%",
                         "30%"
@@ -1242,7 +1242,7 @@
                         "BuffValue,NoLevel,29040401,Time,10K",
                         "BuffValue,NoLevel,29040401,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-40%",
                         "2%",
                         5,
@@ -1288,7 +1288,7 @@
                         "EffectValue,NoLevel,290404023,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29040402,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%",
                         "-40%",
                         5
@@ -1331,7 +1331,7 @@
                         "EffectValue,NoLevel,290418011,EffectTypeParam1,Fixed",
                         "EffectValue,NoLevel,290418011,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "50%",
                         20,
                         2
@@ -1371,7 +1371,7 @@
                         "EffectValue,NoLevel,29041001,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290410011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%",
                         "-20%"
                     ],
@@ -1939,7 +1939,7 @@
                     "name": "Sunflower Ties",
                     "desc": "Sunflower Dance enhanced: The shuriken Nanoha hurls is attached to a string. After a brief delay, she pulls the player toward her.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -1953,7 +1953,7 @@
                     "name": "Shrouded Moon: Meteor",
                     "desc": "Shrouded Moon enhanced: When Nanoha dashes, generates shurikens randomly on the battlefield.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -1965,7 +1965,7 @@
                     "name": "Shrouded Moon: Gale",
                     "desc": "Shrouded Moon enhanced: When Nanoha dashes, continuously summons clones to launch coordinated attacks.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -1979,7 +1979,7 @@
                     "name": "Entwined Gale",
                     "desc": "Scattered Gale enhanced: The kunai Nanoha throws is attached to a string. Nanoha retracts the kunai thrown.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -1993,7 +1993,7 @@
                     "name": "Shadow Dance: Leaf Storm",
                     "desc": "Shadow Dance: Leaf Barrier enhanced: Nanoha's clones will dash like her in Shrouded Moon, dealing DMG along their paths.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -2007,7 +2007,7 @@
                     "name": "Shadow Dance: Dream Wanderer",
                     "desc": "Shadow Dance: Wither enhanced: Nanoha summons more clones to launch coordinated attacks.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -2023,7 +2023,7 @@
                     "params": [
                         "EffectValue,NoLevel,29020101,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%"
                     ],
                     "paramsTooltips": [
@@ -2048,7 +2048,7 @@
                     "params": [
                         "EffectValue,NoLevel,29020102,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%"
                     ],
                     "paramsTooltips": [
@@ -2073,7 +2073,7 @@
                     "params": [
                         "EffectValue,NoLevel,29020103,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "40%"
                     ],
                     "paramsTooltips": [
@@ -2100,7 +2100,7 @@
                     "params": [
                         "EffectValue,NoLevel,29020201,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-10%"
                     ],
                     "paramsTooltips": [
@@ -2125,7 +2125,7 @@
                     "params": [
                         "EffectValue,NoLevel,29020202,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-20%"
                     ],
                     "paramsTooltips": [
@@ -2150,7 +2150,7 @@
                     "params": [
                         "EffectValue,NoLevel,29020203,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-40%"
                     ],
                     "paramsTooltips": [
@@ -2178,7 +2178,7 @@
                         "EffectValue,NoLevel,29021001,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290210011,EffectTypeParam1,Pct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-50%",
                         "0.5%"
                     ],
@@ -2211,7 +2211,7 @@
                     "params": [
                         "EffectValue,NoLevel,29021501,EffectTypeParam1,Pct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "3%"
                     ],
                     "paramsTooltips": [
@@ -2234,7 +2234,7 @@
                     "params": [
                         "EffectValue,NoLevel,29021502,EffectTypeParam1,Pct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%"
                     ],
                     "paramsTooltips": [
@@ -2260,7 +2260,7 @@
                         "Effect,NoLevel,290204011,TriggerParam1,Fixed",
                         "BuffValue,NoLevel,290204011,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         15,
                         2
                     ],
@@ -2296,7 +2296,7 @@
                     "params": [
                         "EffectValue,NoLevel,29020501,EffectTypeParam1,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         3
                     ],
                     "paramsTooltips": [
@@ -2323,7 +2323,7 @@
                         "BuffValue,NoLevel,29020601,Time,10K",
                         "BuffValue,NoLevel,29020601,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-5%",
                         4,
                         3
@@ -2363,7 +2363,7 @@
                         "EffectValue,NoLevel,29020701,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290207011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "15%"
                     ],
@@ -2396,7 +2396,7 @@
                         "EffectValue,NoLevel,29020702,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290207021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "15%"
                     ],
@@ -2429,7 +2429,7 @@
                         "EffectValue,NoLevel,29020703,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290207031,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "15%"
                     ],
@@ -2465,7 +2465,7 @@
                         "BuffValue,NoLevel,29020801,Time,10K",
                         "BuffValue,NoLevel,29020801,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "4%",
                         12,
                         5
@@ -2505,7 +2505,7 @@
                         "EffectValue,NoLevel,290209011,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,29020901,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%",
                         "25%"
                     ],
@@ -2537,7 +2537,7 @@
                         "EffectValue,NoLevel,290209021,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,29020902,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%",
                         "50%"
                     ],
@@ -2571,7 +2571,7 @@
                         "EffectValue,NoLevel,29021201,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290212011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "15%",
                         "-30%"
                     ],
@@ -2605,7 +2605,7 @@
                     "params": [
                         "EffectValue,NoLevel,29021301,EffectTypeParam1,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         -20
                     ],
                     "paramsTooltips": [
@@ -2630,7 +2630,7 @@
                     "params": [
                         "EffectValue,NoLevel,29021302,EffectTypeParam1,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         -50
                     ],
                     "paramsTooltips": [
@@ -2658,7 +2658,7 @@
                         "Effect,NoLevel,290216011,TriggerParam1,Fixed",
                         "EffectValue,NoLevel,290216012,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         18,
                         "1%"
                     ],
@@ -2693,7 +2693,7 @@
                         "Effect,NoLevel,290216021,TriggerParam1,Fixed",
                         "EffectValue,NoLevel,290216022,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         16,
                         "3%"
                     ],
@@ -2728,7 +2728,7 @@
                         "Effect,NoLevel,290216031,TriggerParam1,Fixed",
                         "EffectValue,NoLevel,290216032,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         15,
                         "5%"
                     ],
@@ -2765,7 +2765,7 @@
                         "EffectValue,NoLevel,29021401,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290214012,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-30%",
                         "30%"
                     ],
@@ -2802,7 +2802,7 @@
                         "EffectValue,NoLevel,29021101,EffectTypeParam1,Pct",
                         "EffectValue,NoLevel,29021101,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "5%",
                         20
                     ],
@@ -2831,7 +2831,7 @@
                         "EffectValue,NoLevel,29021102,EffectTypeParam1,Pct",
                         "EffectValue,NoLevel,29021102,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%",
                         10
                     ],
@@ -2861,7 +2861,7 @@
                     "params": [
                         "ShieldValue,NoLevel,29020301,ReferenceScale,10KHdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "5%"
                     ],
                     "paramsTooltips": [
@@ -2881,7 +2881,7 @@
                     "params": [
                         "ShieldValue,NoLevel,29020302,ReferenceScale,10KHdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%"
                     ],
                     "paramsTooltips": [
@@ -2901,7 +2901,7 @@
                     "params": [
                         "ShieldValue,NoLevel,29020303,ReferenceScale,10KHdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "50%"
                     ],
                     "paramsTooltips": [
@@ -3457,7 +3457,7 @@
                     "name": "Omni-Blade: Execution",
                     "desc": "Enhances Omni-Blade, allowing Firefly to follow up with a high-power slash after moving.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -3471,7 +3471,7 @@
                     "name": "Cosmic: Rhapsody",
                     "desc": "Enhances Cosmic Symphony, increasing the density and quantity of falling floating armaments.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -3485,7 +3485,7 @@
                     "name": "Light Hunter",
                     "desc": "Gains a new Skill: Light Hunter. Locks onto the Main Trekker, throws a floating sword, and follows up with a high-power slash.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -3499,7 +3499,7 @@
                     "name": "Sustain Mode",
                     "desc": "After Firefly casts a skill, she gains an additional <color=#ec6d21>5</color> Heat.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -3513,7 +3513,7 @@
                     "name": "Eco Mode",
                     "desc": "When Firefly is All Fired Up, casting Skills costs <color=#ec6d21>5</color> less Heat.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -3525,7 +3525,7 @@
                     "name": "Warm-up Mode",
                     "desc": "When Firefly is not All Fired Up, she gains <color=#ec6d21>5</color> Heat every <color=#ec6d21>5</color>s.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -3542,7 +3542,7 @@
                         "EffectValue,NoLevel,29030301,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290303011,EffectTypeParam1,Pct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-50%",
                         "0.8%"
                     ],
@@ -3575,7 +3575,7 @@
                     "params": [
                         "EffectValue,NoLevel,29030601,EffectTypeParam1,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         -10
                     ],
                     "paramsTooltips": [
@@ -3600,7 +3600,7 @@
                     "params": [
                         "EffectValue,NoLevel,29030602,EffectTypeParam1,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         -20
                     ],
                     "paramsTooltips": [
@@ -3628,7 +3628,7 @@
                         "EffectValue,NoLevel,29030901,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290309011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -3661,7 +3661,7 @@
                         "EffectValue,NoLevel,29030902,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290309021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -3694,7 +3694,7 @@
                         "EffectValue,NoLevel,29030903,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290309031,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -3731,7 +3731,7 @@
                         "BuffValue,NoLevel,290304011,Time,10K",
                         "BuffValue,NoLevel,290304011,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-50%",
                         "2.5%",
                         3,
@@ -3776,7 +3776,7 @@
                         "EffectValue,NoLevel,29031201,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290312011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "40%",
                         "-30%"
                     ],
@@ -3809,7 +3809,7 @@
                         "EffectValue,NoLevel,29031202,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290312021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "15%",
                         "-30%"
                     ],
@@ -3843,7 +3843,7 @@
                     "params": [
                         "EffectValue,NoLevel,29030101,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%"
                     ],
                     "paramsTooltips": [
@@ -3868,7 +3868,7 @@
                     "params": [
                         "EffectValue,NoLevel,29030102,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%"
                     ],
                     "paramsTooltips": [
@@ -3893,7 +3893,7 @@
                     "params": [
                         "EffectValue,NoLevel,29030103,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "30%"
                     ],
                     "paramsTooltips": [
@@ -3920,7 +3920,7 @@
                     "params": [
                         "EffectValue,NoLevel,29030201,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-10%"
                     ],
                     "paramsTooltips": [
@@ -3947,7 +3947,7 @@
                     "params": [
                         "EffectValue,NoLevel,29030202,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-20%"
                     ],
                     "paramsTooltips": [
@@ -3974,7 +3974,7 @@
                     "params": [
                         "EffectValue,NoLevel,29030203,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-30%"
                     ],
                     "paramsTooltips": [
@@ -4004,7 +4004,7 @@
                         "Effect,NoLevel,290314018,TriggerParam1,Pct",
                         "EffectValue,NoLevel,29031401,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%",
                         "2%"
                     ],
@@ -4035,7 +4035,7 @@
                         "Effect,NoLevel,290314028,TriggerParam1,Pct",
                         "EffectValue,NoLevel,29031402,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%",
                         "4%"
                     ],
@@ -4066,7 +4066,7 @@
                         "Effect,NoLevel,290314038,TriggerParam1,Pct",
                         "EffectValue,NoLevel,29031403,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%",
                         "8%"
                     ],
@@ -4099,7 +4099,7 @@
                         "EffectValue,NoLevel,29031501,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290315011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-25%",
                         "-20%"
                     ],
@@ -4133,7 +4133,7 @@
                         "EffectValue,NoLevel,290316011,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29031601,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "15%",
                         5
                     ],
@@ -4166,7 +4166,7 @@
                         "EffectValue,NoLevel,290316021,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29031602,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "40%",
                         5
                     ],
@@ -4201,7 +4201,7 @@
                         "EffectValue,NoLevel,29032001,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290320012,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "25%",
                         "-40%"
                     ],
@@ -4239,7 +4239,7 @@
                         "EffectValue,NoLevel,290319011,EffectTypeParam1,Pct",
                         "EffectValue,NoLevel,290319012,EffectTypeParam1,Pct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         4,
                         "15%",
                         "0.5%"
@@ -4280,7 +4280,7 @@
                         "EffectValue,NoLevel,29031902,EffectTypeParam1,Pct",
                         "BuffValue,NoLevel,290319021,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "15%",
                         4
                     ],
@@ -4314,7 +4314,7 @@
                         "EffectValue,NoLevel,29031301,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290313011,EffectTypeParam1,Pct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%",
                         "15%"
                     ],
@@ -4348,7 +4348,7 @@
                         "EffectValue,NoLevel,29030501,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290305011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "100%",
                         "-15%"
                     ],
@@ -4383,7 +4383,7 @@
                         "EffectValue,NoLevel,29030502,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290305021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "100%",
                         "-40%"
                     ],
@@ -4420,7 +4420,7 @@
                         "EffectValue,NoLevel,290308011,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29030801,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "35%",
                         4
                     ],
@@ -4455,7 +4455,7 @@
                         "EffectValue,NoLevel,290307011,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,29030701,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-20%",
                         10
                     ],
@@ -4490,7 +4490,7 @@
                         "EffectValue,NoLevel,29031801,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,290318011,EffectTypeParam1,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "40%",
                         20
                     ],
@@ -4526,7 +4526,7 @@
                         "EffectValue,NoLevel,290310013,EffectTypeParam1,HdPct",
                         "Effect,NoLevel,290310012,TriggerParam1,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "90%",
                         "-6%",
                         6
@@ -4570,7 +4570,7 @@
                         "Effect,NoLevel,290311011,TriggerParam1,Pct",
                         "EffectValue,NoLevel,290311011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "70%",
                         "-20%",
                         "20%",
@@ -4613,7 +4613,7 @@
                         "Effect,NoLevel,290311021,TriggerParam1,Pct",
                         "EffectValue,NoLevel,290311021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "50%",
                         "-40%",
                         "10%",
@@ -4658,7 +4658,7 @@
                         "BuffValue,NoLevel,29031701,LaminatedNum,Fixed",
                         "EffectValue,NoLevel,29031701,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-1%",
                         3,
                         10,
@@ -4705,7 +4705,7 @@
                         "BuffValue,NoLevel,29031702,LaminatedNum,Fixed",
                         "EffectValue,NoLevel,29031702,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-2.5%",
                         3,
                         10,
@@ -4752,7 +4752,7 @@
                         "BuffValue,NoLevel,29031703,LaminatedNum,Fixed",
                         "EffectValue,NoLevel,29031703,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-4%",
                         3,
                         10,
@@ -5332,7 +5332,7 @@
                     "name": "Devoted Entourage",
                     "desc": "Mistique calls forth additional minions whenever she casts a Minion Summon skill.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -5346,7 +5346,7 @@
                     "name": "Swift Diffusion",
                     "desc": "Empowers Mistique's minion skills.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -5360,7 +5360,7 @@
                     "name": "Perfume Alchemy",
                     "desc": "Increases the amount of Perfume Mistique regenerates naturally.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -5374,7 +5374,7 @@
                     "name": "Double Trouble",
                     "desc": "Casting Fragrant Summons for the first time also summons Grouch.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -5388,7 +5388,7 @@
                     "name": "Summon Boost: Aroma Phantom",
                     "desc": "While Reverie Tour is active, Mistique summons Schemer instead.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -5400,7 +5400,7 @@
                     "name": "Summon Boost: Incense Phantom",
                     "desc": "While Reverie Tour is active, Mistique summons Meanie instead.",
                     "params": [],
-                    "resolvedParams": [],
+                    "value": [],
                     "paramsTooltips": [],
                     "effectType": [],
                     "addAttrType": [],
@@ -5416,7 +5416,7 @@
                     "params": [
                         "EffectValue,NoLevel,709054011,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "10%"
                     ],
                     "paramsTooltips": [
@@ -5441,7 +5441,7 @@
                     "params": [
                         "EffectValue,NoLevel,709054021,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "20%"
                     ],
                     "paramsTooltips": [
@@ -5466,7 +5466,7 @@
                     "params": [
                         "EffectValue,NoLevel,709054031,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "30%"
                     ],
                     "paramsTooltips": [
@@ -5494,8 +5494,8 @@
                         "TravelerDuelChallengeAffix,NoLevel,29051401,Value1,Pct",
                         "EffectValue,NoLevel,709054251,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
-                        "TravelerDuelChallengeAffix,NoLevel,29051401,Value1,Pct",
+                    "value": [
+                        "10%",
                         "-1.5%"
                     ],
                     "paramsTooltips": [
@@ -5524,8 +5524,8 @@
                         "TravelerDuelChallengeAffix,NoLevel,29051402,Value1,Pct",
                         "EffectValue,NoLevel,709054260,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
-                        "TravelerDuelChallengeAffix,NoLevel,29051402,Value1,Pct",
+                    "value": [
+                        "10%",
                         "-2.5%"
                     ],
                     "paramsTooltips": [
@@ -5554,8 +5554,8 @@
                         "TravelerDuelChallengeAffix,NoLevel,29051403,Value1,Pct",
                         "EffectValue,NoLevel,709054270,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
-                        "TravelerDuelChallengeAffix,NoLevel,29051403,Value1,Pct",
+                    "value": [
+                        "10%",
                         "-4%"
                     ],
                     "paramsTooltips": [
@@ -5587,7 +5587,7 @@
                         "BuffValue,NoLevel,709054310,Time,10K",
                         "BuffValue,NoLevel,709054310,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-1%",
                         4,
                         10
@@ -5626,7 +5626,7 @@
                         "BuffValue,NoLevel,709054320,Time,10K",
                         "BuffValue,NoLevel,709054320,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-2%",
                         4,
                         10
@@ -5665,7 +5665,7 @@
                         "BuffValue,NoLevel,709054330,Time,10K",
                         "BuffValue,NoLevel,709054330,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-3.5%",
                         4,
                         10
@@ -5705,7 +5705,7 @@
                         "Effect,NoLevel,709054211,TriggerParam1,Fixed",
                         "EffectValue,NoLevel,709054213,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         10,
                         "1.5%"
                     ],
@@ -5741,7 +5741,7 @@
                         "Effect,NoLevel,709054221,TriggerParam1,Fixed",
                         "EffectValue,NoLevel,709054223,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         10,
                         "4%"
                     ],
@@ -5779,7 +5779,7 @@
                         "EffectValue,NoLevel,709054071,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,709054072,EffectTypeParam1,Pct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "25%",
                         "0.8%"
                     ],
@@ -5815,7 +5815,7 @@
                         "BuffValue,NoLevel,709054080,Time,10K",
                         "BuffValue,NoLevel,709054080,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-1%",
                         "2%",
                         4,
@@ -5851,7 +5851,7 @@
                         "BuffValue,NoLevel,709054090,Time,10K",
                         "BuffValue,NoLevel,709054090,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "1%",
                         "3.5%",
                         4,
@@ -5889,7 +5889,7 @@
                     "params": [
                         "EffectValue,NoLevel,709054041,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-10%"
                     ],
                     "paramsTooltips": [
@@ -5916,7 +5916,7 @@
                     "params": [
                         "EffectValue,NoLevel,709054051,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-20%"
                     ],
                     "paramsTooltips": [
@@ -5943,7 +5943,7 @@
                     "params": [
                         "EffectValue,NoLevel,709054061,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-40%"
                     ],
                     "paramsTooltips": [
@@ -5973,7 +5973,7 @@
                         "EffectValue,NoLevel,709054181,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,709054182,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -6006,7 +6006,7 @@
                         "EffectValue,NoLevel,709054191,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,709054192,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -6039,7 +6039,7 @@
                         "EffectValue,NoLevel,709054201,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,709054202,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-80%",
                         "20%"
                     ],
@@ -6076,7 +6076,7 @@
                         "EffectValue,NoLevel,709054101,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,709054102,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "25%",
                         "-5%"
                     ],
@@ -6112,7 +6112,7 @@
                         "BuffValue,NoLevel,709054120,Time,10K",
                         "BuffValue,NoLevel,709054120,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-5%",
                         4,
                         4
@@ -6151,7 +6151,7 @@
                         "BuffValue,NoLevel,709054130,Time,10K",
                         "BuffValue,NoLevel,709054130,LaminatedNum,Fixed"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-10%",
                         4,
                         4
@@ -6192,7 +6192,7 @@
                         "Effect,NoLevel,709054112,TakeEffectParam1,Pct",
                         "EffectValue,NoLevel,709054111,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "90%",
                         "10%",
                         "-10%"
@@ -6230,7 +6230,7 @@
                         "BuffValue,NoLevel,709054160,Time,10K",
                         "EffectValue,NoLevel,709054167,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         60,
                         "40%"
                     ],
@@ -6266,7 +6266,7 @@
                         "EffectValue,NoLevel,709054173,EffectTypeParam1,HdPct",
                         "BuffValue,NoLevel,709054178,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         30,
                         "40%",
                         120
@@ -6311,7 +6311,7 @@
                         "BuffValue,NoLevel,709054150,Time,10K",
                         "EffectValue,NoLevel,709054151,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         10,
                         "6%",
                         10,
@@ -6354,7 +6354,7 @@
                         "EffectValue,NoLevel,709054231,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,709054232,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "15%",
                         "-30%"
                     ],
@@ -6387,7 +6387,7 @@
                         "EffectValue,NoLevel,709054242,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,709054241,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "40%",
                         "-30%"
                     ],
@@ -6423,7 +6423,7 @@
                         "EffectValue,NoLevel,709054342,EffectTypeParam1,Fixed",
                         "EffectValue,NoLevel,709054343,CD,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "30%",
                         -2,
                         5
@@ -6463,8 +6463,8 @@
                         "BuffValue,NoLevel,709054350,Time,10K",
                         "EffectValue,NoLevel,709054351,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
-                        "TravelerDuelChallengeAffix,NoLevel,29051901,Value1,Fixed",
+                    "value": [
+                        30,
                         30,
                         "-15%"
                     ],
@@ -6494,7 +6494,7 @@
                         "EffectValue,NoLevel,709054361,EffectTypeParam1,Pct",
                         "BuffValue,NoLevel,709054360,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "9%",
                         5
                     ],
@@ -6530,7 +6530,7 @@
                         "EffectValue,NoLevel,709054281,EffectTypeParam1,HdPct",
                         "EffectValue,NoLevel,709054282,EffectTypeParam1,HdPct"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         "-40%",
                         "-20%"
                     ],
@@ -6563,7 +6563,7 @@
                     "params": [
                         "BuffValue,NoLevel,709054290,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         2
                     ],
                     "paramsTooltips": [
@@ -6588,7 +6588,7 @@
                     "params": [
                         "BuffValue,NoLevel,709054300,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         6
                     ],
                     "paramsTooltips": [
@@ -6615,7 +6615,7 @@
                     "params": [
                         "BuffValue,NoLevel,709054140,Time,10K"
                     ],
-                    "resolvedParams": [
+                    "value": [
                         4
                     ],
                     "paramsTooltips": [

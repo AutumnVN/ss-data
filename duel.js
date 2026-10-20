@@ -44,7 +44,7 @@ for (const id in TRAVELERDUELBOSSLEVEL) {
                     name: LANG_TRAVELERDUELCHALLENGEAFFIX[aff.Name],
                     desc,
                     params,
-                    resolvedParams,
+                    value: resolvedParams,
                     paramsTooltips: resolveParamsTooltips(params),
                     effectType: getAffixEffectTypes(aff),
                     addAttrType: getAffixAddAttrTypes(aff),

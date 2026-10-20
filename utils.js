@@ -11,6 +11,7 @@ const SHIELDVALUE = require('./EN/bin/ShieldValue.json');
 const SKILL = require('./EN/bin/Skill.json');
 const SCOREBOSSABILITY = require('./EN/bin/ScoreBossAbility.json');
 const SCOREBOSSGETCONTROL = require('./EN/bin/ScoreBossGetControl.json');
+const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
 const ITEM = require('./EN/bin/Item.json');
 const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, potentialLabel } = require('./hotfix');
 const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
@@ -683,6 +684,11 @@ function resolveParam(params) {
                 case 'ScoreBossGetControl':
                     if (!SCOREBOSSGETCONTROL[p[2]]) return param;
                     value = SCOREBOSSGETCONTROL[p[2]][p[3]];
+                    break;
+
+                case 'TravelerDuelChallengeAffix':
+                    if (!TRAVELERDUELCHALLENGEAFFIX[p[2]]) return param;
+                    value = TRAVELERDUELCHALLENGEAFFIX[p[2]][p[3]];
                     break;
 
                 default:
