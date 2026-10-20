@@ -189,8 +189,7 @@
                         }
                     ],
                     "effectType": [
-                        "HP (%)",
-                        "EFFECT_HP_RECOVERY"
+                        "HP (%)"
                     ],
                     "addAttrType": [
                         "HP (%)"
@@ -595,9 +594,7 @@
                             "buffId": 29041201
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_MUL"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 1,
@@ -638,9 +635,7 @@
                             "buffId": 29041202
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_MUL"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 6,
@@ -755,12 +750,10 @@
                     ],
                     "effectType": [
                         "PLAYER_:FRONT_ADD_ENERGY (%)",
-                        "PLAYER_",
                         "Ultimate DMG (%)"
                     ],
                     "addAttrType": [
                         "ATK (%)",
-                        "undefined (%)",
                         "Ultimate DMG (%)"
                     ],
                     "buffIcon": [],
@@ -791,11 +784,9 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_",
                         "PLAYER_:FRONT_ADD_ENERGY (%)"
                     ],
                     "addAttrType": [
-                        "undefined (%)",
                         "ATK (%)"
                     ],
                     "buffIcon": [
@@ -1030,9 +1021,7 @@
                             "buffId": 29041401
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_MUL"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [
                         "Icon_CommonBuff_AttackDown"
@@ -1067,9 +1056,7 @@
                             "buffId": 29041402
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_MUL"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [
                         "Icon_CommonBuff_AttackDown"
@@ -1104,9 +1091,7 @@
                             "buffId": 29041403
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_MUL"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [
                         "Icon_CommonBuff_AttackDown"
@@ -1186,9 +1171,7 @@
                             "buffId": 29041901
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_MUL"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [
                         "Icon_CommonBuff_AttackDown"
@@ -1223,9 +1206,7 @@
                             "effectId": 290419021
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_MUL"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 2,
@@ -1386,11 +1367,9 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_",
                         "DMG Dealt (base)"
                     ],
                     "addAttrType": [
-                        "undefined (base)",
                         "DMG Dealt (base)"
                     ],
                     "buffIcon": [],
@@ -2193,8 +2172,7 @@
                         }
                     ],
                     "effectType": [
-                        "HP (%)",
-                        "EFFECT_HP_RECOVERY"
+                        "HP (%)"
                     ],
                     "addAttrType": [
                         "HP (%)"
@@ -2220,9 +2198,7 @@
                             "effectId": 29021501
                         }
                     ],
-                    "effectType": [
-                        "REDUCE_HP_BY_CURRENTHP"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 3,
@@ -2243,9 +2219,7 @@
                             "effectId": 29021502
                         }
                     ],
-                    "effectType": [
-                        "REDUCE_HP_BY_CURRENTHP"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 8,
@@ -2781,12 +2755,10 @@
                     ],
                     "effectType": [
                         "PLAYER_:FRONT_ADD_ENERGY (%)",
-                        "PLAYER_",
                         "Ultimate DMG (%)"
                     ],
                     "addAttrType": [
                         "ATK (%)",
-                        "undefined (%)",
                         "Ultimate DMG (%)"
                     ],
                     "buffIcon": [],
@@ -2816,9 +2788,7 @@
                             "effectId": 29021101
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_HP_RECOVERY"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 3,
@@ -2845,9 +2815,7 @@
                             "effectId": 29021102
                         }
                     ],
-                    "effectType": [
-                        "EFFECT_HP_RECOVERY"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 8,
@@ -2867,9 +2835,7 @@
                     "paramsTooltips": [
                         {}
                     ],
-                    "effectType": [
-                        "ADD_SHIELD"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 3,
@@ -2887,9 +2853,7 @@
                     "paramsTooltips": [
                         {}
                     ],
-                    "effectType": [
-                        "ADD_SHIELD"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 5,
@@ -2907,9 +2871,7 @@
                     "paramsTooltips": [
                         {}
                     ],
-                    "effectType": [
-                        "ADD_SHIELD"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "diff": 8,
@@ -3557,8 +3519,7 @@
                         }
                     ],
                     "effectType": [
-                        "HP (%)",
-                        "EFFECT_HP_RECOVERY"
+                        "HP (%)"
                     ],
                     "addAttrType": [
                         "HP (%)"
@@ -3930,12 +3891,10 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_:FRONT_ADD_ENERGY (%)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (%)"
                     ],
                     "addAttrType": [
-                        "ATK (%)",
-                        "undefined (%)"
+                        "ATK (%)"
                     ],
                     "buffIcon": [],
                     "diff": 1,
@@ -3957,12 +3916,10 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_:FRONT_ADD_ENERGY (%)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (%)"
                     ],
                     "addAttrType": [
-                        "ATK (%)",
-                        "undefined (%)"
+                        "ATK (%)"
                     ],
                     "buffIcon": [],
                     "diff": 2,
@@ -3984,12 +3941,10 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_:FRONT_ADD_ENERGY (%)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (%)"
                     ],
                     "addAttrType": [
-                        "ATK (%)",
-                        "undefined (%)"
+                        "ATK (%)"
                     ],
                     "buffIcon": [],
                     "diff": 4,
@@ -4217,12 +4172,10 @@
                     ],
                     "effectType": [
                         "PLAYER_:FRONT_ADD_ENERGY (%)",
-                        "PLAYER_",
                         "Ultimate DMG (%)"
                     ],
                     "addAttrType": [
                         "ATK (%)",
-                        "undefined (%)",
                         "Ultimate DMG (%)"
                     ],
                     "buffIcon": [],
@@ -4262,10 +4215,7 @@
                             "effectId": 290319012
                         }
                     ],
-                    "effectType": [
-                        "REDUCE_HP_BY_CURRENTHP",
-                        "EFFECT_HP_RECOVERY"
-                    ],
+                    "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [
                         "No Icon"
@@ -4295,7 +4245,6 @@
                         }
                     ],
                     "effectType": [
-                        "EFFECT_HP_RECOVERY",
                         "STATE_CHANGE:CURE_IMM"
                     ],
                     "addAttrType": [],
@@ -4328,13 +4277,8 @@
                             "effectId": 290313011
                         }
                     ],
-                    "effectType": [
-                        "PLAYER_",
-                        "REDUCE_HP_BY_CURRENTHP"
-                    ],
-                    "addAttrType": [
-                        "undefined (%)"
-                    ],
+                    "effectType": [],
+                    "addAttrType": [],
                     "buffIcon": [],
                     "diff": 4,
                     "icon": "duelaffix_31301"
@@ -4364,13 +4308,11 @@
                     ],
                     "effectType": [
                         "SPECIAL_:ENERGY (%)",
-                        "PLAYER_:FRONT_ADD_ENERGY (%)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (%)"
                     ],
                     "addAttrType": [
                         "Accuracy (%)",
-                        "ATK (%)",
-                        "undefined (%)"
+                        "ATK (%)"
                     ],
                     "buffIcon": [],
                     "diff": 1,
@@ -4399,13 +4341,11 @@
                     ],
                     "effectType": [
                         "SPECIAL_:ENERGY (%)",
-                        "PLAYER_:FRONT_ADD_ENERGY (%)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (%)"
                     ],
                     "addAttrType": [
                         "Accuracy (%)",
-                        "ATK (%)",
-                        "undefined (%)"
+                        "ATK (%)"
                     ],
                     "buffIcon": [],
                     "diff": 6,
@@ -5722,7 +5662,6 @@
                         }
                     ],
                     "effectType": [
-                        "ADDBUFF",
                         "Final DMG (base)"
                     ],
                     "addAttrType": [
@@ -5758,7 +5697,6 @@
                         }
                     ],
                     "effectType": [
-                        "ADDBUFF",
                         "Final DMG (base)"
                     ],
                     "addAttrType": [
@@ -5794,8 +5732,7 @@
                         }
                     ],
                     "effectType": [
-                        "Final DMG Taken (base)",
-                        "EFFECT_HP_RECOVERY"
+                        "Final DMG Taken (base)"
                     ],
                     "addAttrType": [
                         "Final DMG Taken (base)"
@@ -5899,12 +5836,10 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_:FRONT_ADD_ENERGY (base)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (base)"
                     ],
                     "addAttrType": [
-                        "ATK (base)",
-                        "undefined (base)"
+                        "ATK (base)"
                     ],
                     "buffIcon": [],
                     "diff": 1,
@@ -5926,12 +5861,10 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_:FRONT_ADD_ENERGY (base)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (base)"
                     ],
                     "addAttrType": [
-                        "ATK (base)",
-                        "undefined (base)"
+                        "ATK (base)"
                     ],
                     "buffIcon": [],
                     "diff": 2,
@@ -5953,12 +5886,10 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_:FRONT_ADD_ENERGY (base)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (base)"
                     ],
                     "addAttrType": [
-                        "ATK (base)",
-                        "undefined (base)"
+                        "ATK (base)"
                     ],
                     "buffIcon": [],
                     "diff": 4,
@@ -6245,12 +6176,10 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_:FRONT_ADD_ENERGY (base)",
-                        "PLAYER_"
+                        "PLAYER_:FRONT_ADD_ENERGY (base)"
                     ],
                     "addAttrType": [
-                        "ATK (base)",
-                        "undefined (base)"
+                        "ATK (base)"
                     ],
                     "buffIcon": [
                         "No Icon"
@@ -6286,13 +6215,10 @@
                         }
                     ],
                     "effectType": [
-                        "PLAYER_:FRONT_ADD_ENERGY (base)",
-                        "PLAYER_",
-                        "ADDBUFF"
+                        "PLAYER_:FRONT_ADD_ENERGY (base)"
                     ],
                     "addAttrType": [
-                        "ATK (base)",
-                        "undefined (base)"
+                        "ATK (base)"
                     ],
                     "buffIcon": [
                         "No Icon"
@@ -6333,7 +6259,6 @@
                         }
                     ],
                     "effectType": [
-                        "ADD_SHIELD",
                         "Final DMG Taken (base)"
                     ],
                     "addAttrType": [
@@ -6509,7 +6434,6 @@
                         }
                     ],
                     "effectType": [
-                        "EFFECT_HP_RECOVERY",
                         "Shield Reception Efficiency (%)"
                     ],
                     "addAttrType": [

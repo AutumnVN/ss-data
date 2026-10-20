@@ -100,6 +100,7 @@ function getAffixEffectTypes(aff) {
 
             let type = effect.EffectTypeFirstSubtype;
             if (!type) type = EFFECTVALUE[effect.EffectTypeParam1]?.EffectTypeFirstSubtype;
+            if (type === undefined || type === null) continue;
 
             effectTypes.push(formatEffectType(effectId, type, effect.EffectTypeSecondSubtype).replace(/^HITTED_ADDITIONAL_*:/, ''));
         }
@@ -119,6 +120,7 @@ function getAffixAddAttrTypes(aff) {
 
             const type = effect.EffectTypeFirstSubtype;
             const paramType = effect.EffectTypeSecondSubtype;
+            if (type === undefined || type === null) continue;
 
             let addAttrType = formatAddAttrType(type, paramType);
             if (effect.EffectType === 46) addAttrType = ATTR_TYPE[type] || addAttrType;
