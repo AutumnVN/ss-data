@@ -21,12 +21,8 @@
                 "descJP": "*****",
                 "descKR": "없음",
                 "icon": "Icon_Bossrush_Teshujizhi_001",
-                "effectType": [
-                    "Final DMG (%)"
-                ],
-                "buffIcon": [
-                    "No Icon"
-                ]
+                "effectType": [],
+                "buffIcon": []
             }
         ],
         "weakTo": [
@@ -5002,10 +4998,11 @@
                 "icon": "Icon_Bossrush_Teshujizhi_006",
                 "effectType": [
                     "Final DMG (base)",
-                    "Skill DMG Taken (base)"
+                    "Ultimate DMG Taken (base)"
                 ],
                 "buffIcon": [
-                    "No Icon"
+                    "Icon_BossRushBuff_JinDuanLiRong",
+                    "Icon_CommonBuff_DefenseDown"
                 ]
             }
         ],
@@ -7542,11 +7539,10 @@
                 "icon": "Icon_Bossrush_Teshujizhi_005",
                 "effectType": [
                     "Final DMG (base)",
-                    "Ultimate DMG Taken (base)"
+                    "Skill DMG Taken (base)"
                 ],
                 "buffIcon": [
-                    "Icon_BossRushBuff_JinDuanLiRong",
-                    "Icon_CommonBuff_DefenseDown"
+                    "No Icon"
                 ]
             }
         ],
@@ -10082,7 +10078,8 @@
                 "descKR": "보스 적이 「진영 상태」와 「환멸 상태」를 <color=#ec6d21>15초</color> 간격으로 전환한다. \n「환멸 상태」 중 보스가 받는 소환물 피해가 <color=#ec6d21>50%</color> 증가한다. 표식을 1회 발동할 때마다 현재 상태의 지속 시간이 <color=#ec6d21>0.6</color>초 연장된다. 1초마다 최대 1회 발동한다. \n「진영 상태」 중 보스가 받는 스킬 피해가 <color=#ec6d21>50%</color> 증가한다. 소환물 피해를 1회 입힐 때마다 현재 상태의 지속 시간이 <color=#ec6d21>0.6</color>초 연장된다. 1초마다 최대 1회 발동한다.",
                 "icon": "Icon_Bossrush_Teshujizhi_007",
                 "effectType": [
-                    "Skill DMG (%)"
+                    "Minion DMG Taken (base)",
+                    "Skill DMG Taken (base)"
                 ],
                 "buffIcon": [
                     "No Icon"
@@ -12621,7 +12618,7 @@
                 "descKR": "보스가 「낙뢰」를 보유할 시 자신이 입히는 피해가 <color=#ec6d21>30%</color> 증가한다. 3초마다 추가로 작은 범위 피해를 4회 입힌다. \n전체 아군이 <color=#ec6d21>5</color>초 동안 보스에게 누적 <color=#ec6d21>20</color>회의 지원 캐릭터 스킬 피해를 입힐 시, 「낙뢰」가 15초간 무효되며 해당 기간 동안 보스가 지원 캐릭터에게 받는 스킬 피해가 <color=#ec6d21>40%</color> 증가한다.",
                 "icon": "Icon_Bossrush_Teshujizhi_008",
                 "effectType": [
-                    "Minion DMG Taken (base)",
+                    "Final DMG (%)",
                     "Skill DMG Taken (base)"
                 ],
                 "buffIcon": [
@@ -17702,12 +17699,12 @@
                 "descKR": "보스가 <color=#ec6d21>20</color>회의 피해를 입을 때마다 「집중」 1스택을 부여하여 자신이 입히는 피해가 <color=#ec6d21>15%</color> 증가한다.\n<color=#ec6d21>6</color>초 내에 표식을 <color=#ec6d21>2</color>회 발동한다면, 현재 보유하고 있는 「집중」은 모두 제거된다. 다음 <color=#ec6d21>20</color>초간 보스가 받는 지원 캐릭터의 스킬 피해가 <color=#ec6d21>65%</color> 증가한다. 해당 효과는 <color=#ec6d21>15</color>초간 최대 1회 발동하며, 중복으로 발동 시 지속 시간이 초기화된다.",
                 "icon": "Icon_Bossrush_Teshujizhi_010",
                 "effectType": [
-                    "Final DMG (%)",
-                    "Skill DMG Taken (base)",
-                    "IMM_BUFF:3"
+                    "Final DMG (base)",
+                    "Skill DMG Taken (base)"
                 ],
                 "buffIcon": [
-                    "No Icon"
+                    "Icon_CommonBuff_AttackUp",
+                    "Icon_CommonBuff_DefenseDown"
                 ]
             }
         ],
@@ -20242,14 +20239,8 @@
                 "descJP": "首領は交互に「男爵」モードと「ツボ」モードで切り替わる。戦闘中、<color=#ec6d21>30</color>秒ごとに別のモードへ切り替わる。切り替わる時、自身にかかっているすべてのデバフが解除される（ブレイク状態を除く）。\n「男爵」モード中、空壺ノ王の必殺技被ダメージが追加で<color=#ec6d21>30%</color>減少し、通常攻撃被ダメージが追加で<color=#ec6d21>65%</color>増加する。\n「ツボ」モード中、空壺ノ王の印被ダメージが追加で<color=#ec6d21>30%</color>減少し、スキル被ダメージが追加で<color=#ec6d21>65%</color>増加する。",
                 "descKR": "보스가 「용사」와 「꿀단지」 형태를 번갈아 전환한다. 전투 <color=#ec6d21>30</color>초마다 다른 형태로 전환하며, 자신에게 부여된 모든 약화 효과를 제거한다. (내성 무시 포함되지 않음)\n「용사」 형태일 때, 뚜두뚜두 남작이 받는 필살기 피해가 <color=#ec6d21>30%</color> 추가 감소하고, 받는 일반 공격 피해가 <color=#ec6d21>65%</color> 추가 증가한다. \n「꿀단지」 형태일 때, 뚜두뚜두 남작이 받는 표식 피해가 <color=#ec6d21>30%</color> 추가 감소하고, 받는 스킬 피해가 <color=#ec6d21>65%</color> 추가 증가한다.",
                 "icon": "Icon_Bossrush_DaGuanZi_003",
-                "effectType": [
-                    "Final DMG (base)",
-                    "Skill DMG Taken (base)"
-                ],
-                "buffIcon": [
-                    "Icon_CommonBuff_AttackUp",
-                    "Icon_CommonBuff_DefenseDown"
-                ]
+                "effectType": [],
+                "buffIcon": []
             }
         ],
         "weakTo": [
@@ -22784,6 +22775,7 @@
                 "descKR": "보스가 「물의 고리」를 보유하면 자신이 입히는 피해가 <color=#ec6d21>30%</color> 증가하고, 5초마다 범위 피해를 1회 입힌다. \n전체 아군이 5초 동안 보스에게 누적 <color=#ec6d21>10</color>회의 피해를 입힌 후, 「물의 고리」가 <color=#ec6d21>20</color>초 동안 무효가 되고, 무효 기간 중 다음 효과가 적용된다. \n전체 아군이 5초 동안 보스에게 누적 <color=#ec6d21>20</color>회의 지원 캐릭터 피해를 입힌 후, 보스가 받는 일반 공격 피해가 <color=#ec6d21>45%</color> 증가한다. \n전체 아군이 5초 동안 보스에게 누적 <color=#ec6d21>10</color>회의 메인 캐릭터 피해를 입히면, 보스가 받는 지원 캐릭터의 스킬 피해가 <color=#ec6d21>45%</color> 증가한다.",
                 "icon": "Icon_Bossrush_Teshujizhi_004",
                 "effectType": [
+                    "Auto Attack DMG Taken (base)",
                     "Skill DMG Taken (base)",
                     "Final DMG (base)"
                 ],
@@ -50731,7 +50723,6 @@
                     "Final DMG Taken (base)"
                 ],
                 "buffIcon": [
-                    "Icon_CommonBuff_DefenseUp",
                     "Icon_CommonBuff_DefenseDown"
                 ]
             }
@@ -53267,8 +53258,13 @@
                 "descJP": "チーム内の巡遊者が印を<color=#ec6d21>4</color>回発動させるごとに、首領に「アーマーブレイク」を1付与する。「アーマーブレイク」1ごとに、首領の通常攻撃被ダメージ強度が<color=#ec6d21>10%</color>増加し、スキル被ダメージ強度が<color=#ec6d21>3%</color>増加する。この効果は<color=#ec6d21>5</color>回まで重複できる。",
                 "descKR": "캐릭터가 표식을 <color=#ec6d21>4</color>회 발동할 때마다 보스 목표에게 「방어 파괴」를 부여한다. 「방어 파괴」 스택마다 받는 일반 공격 피해 강도가 <color=#ec6d21>10%</color> 증가하고, 받는 스킬 피해 강도가 <color=#ec6d21>3%</color> 증가한다. 최대 <color=#ec6d21>5</color>스택 중첩된다.",
                 "icon": "Icon_Bossrush_Teshujizhi_019",
-                "effectType": [],
-                "buffIcon": []
+                "effectType": [
+                    "Final DMG Taken (base)"
+                ],
+                "buffIcon": [
+                    "Icon_CommonBuff_DefenseUp",
+                    "Icon_CommonBuff_DefenseDown"
+                ]
             }
         ],
         "weakTo": [
@@ -55803,11 +55799,9 @@
                 "descKR": "메인 캐릭터가 필살기를 시전하면, 보스 목표가 받는 스킬 피해 강도가 <color=#ec6d21>15%</color> 증가한다. <color=#ec6d21>15</color>초간 지속된다.\n메인 캐릭터가 필살기를 시전하면, 보스 목표가 받는 표식 피해 강도가 <color=#ec6d21>15%</color> 증가한다. <color=#ec6d21>10</color>초간 지속된다.",
                 "icon": "Icon_Bossrush_Teshujizhi_021",
                 "effectType": [
-                    "HP (%)",
                     "Final DMG Taken (base)"
                 ],
                 "buffIcon": [
-                    "No Icon",
                     "Icon_CommonBuff_DefenseDown"
                 ]
             }
@@ -58343,8 +58337,14 @@
                 "descJP": "主力巡遊者の最大HPが<color=#ec6d21>20%</color>上昇し、被ダメージが<color=#ec6d21>10%</color>増加する。\n味方が5秒以内に首領へ累計<color=#ec6d21>3</color>回の印ダメージを与えた時、15秒間、首領のスキル被ダメージ強度が<color=#ec6d21>24%</color>増加し、通常攻撃被ダメージ強度が<color=#ec6d21>24%</color>増加する。",
                 "descKR": "메인 캐릭터의 최대 HP가 <color=#ec6d21>20%</color> 증가하고, 받는 피해가 <color=#ec6d21>10%</color> 증가한다.\n전체 아군이 <color=#ec6d21>5</color>초 내에 보스 목표에게 누적 <color=#ec6d21>3</color>회의 표식 피해를 입히면, 보스 목표가 받는 스킬 피해 강도가 <color=#ec6d21>24%</color> 증가하고, 받는 일반 공격 피해 강도가 <color=#ec6d21>24%</color> 증가한다. <color=#ec6d21>15</color>초간 지속된다.",
                 "icon": "Icon_Bossrush_Teshujizhi_022",
-                "effectType": [],
-                "buffIcon": []
+                "effectType": [
+                    "HP (%)",
+                    "Final DMG Taken (base)"
+                ],
+                "buffIcon": [
+                    "No Icon",
+                    "Icon_CommonBuff_DefenseDown"
+                ]
             }
         ],
         "weakTo": [

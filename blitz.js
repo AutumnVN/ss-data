@@ -24,6 +24,7 @@ const JP_SCOREBOSSABILITY = require('./JP/language/ja_JP/ScoreBossAbility.json')
 const KR_SCOREBOSSGETCONTROL = require('./KR/language/ko_KR/ScoreBossGetControl.json');
 const KR_SCOREBOSSABILITY = require('./KR/language/ko_KR/ScoreBossAbility.json');
 const { MONSTER_EPIC_TYPE, formatEffectType, collectParamsFrom, resolveParam, iHateFloatingPointNumber } = require('./utils');
+const { getHotfixScoreBossBuffs } = require('./hotfix');
 
 const blitz = {};
 
@@ -62,8 +63,8 @@ for (const id in SCOREBOSSLEVEL) {
                 descJP: getScoreBossAbilityDesc(scoreBossLevel.ScoreBossAbility, 'JP'),
                 descKR: getScoreBossAbilityDesc(scoreBossLevel.ScoreBossAbility, 'KR'),
                 icon: SCOREBOSSABILITY[scoreBossLevel.ScoreBossAbility]?.IconSource?.split('/')?.pop(),
-                effectType: getBlitzEffectType(scoreBossLevel.MonsterId),
-                buffIcon: getBlitzBuffIcon(scoreBossLevel.MonsterId),
+                effectType: getBlitzEffectType(scoreBossLevel),
+                buffIcon: getBlitzBuffIcon(scoreBossLevel),
             }
         ],
         weakTo: monsterValueTemplateAdjust?.WeakEET?.map(type => LANG_UITEXT[`UIText.T_Element_Attr_${type}.1`]) || ['None'],
@@ -176,11 +177,49 @@ function getScoreBossAbilityDesc(id, lang = 'EN') {
     return result;
 }
 
-function getBlitzEffectType(monsterId) {
-    const effectIds = Object.keys(EFFECTVALUE).filter(effectId => filterBuff(effectId, monsterId));
+function getBlitzBuffIds(scoreBossLevel) {
+    const ability = SCOREBOSSABILITY[scoreBossLevel.ScoreBossAbility] || {};
+    const effectIds = new Set();
+    const buffIds = new Set();
+
+    for (const value of Object.values(ability)) {
+        if (typeof value !== 'string') continue;
+
+        for (const param of value.split(';')) {
+            const [type, , id] = param.split(',');
+            if (!id) continue;
+
+            if (type === 'EffectValue' || type === 'Effect') effectIds.add(+id);
+            if (type === 'BuffValue' || type === 'Buff') buffIds.add(+id);
+        }
+    }
+
+    for (const id of getHotfixScoreBossBuffs()[scoreBossLevel.ScoreBossAbility] || []) buffIds.add(id);
+
+    const hasEffectParams = effectIds.size > 0;
+
+    for (const id of buffIds) {
+        if (EFFECTVALUE[id]) effectIds.add(id);
+    }
+
+    if (!hasEffectParams) {
+        for (const id of buffIds) {
+            const prefix = String(id).slice(0, 7);
+            for (const effectId of Object.keys(EFFECTVALUE)) {
+                if (effectId.startsWith(prefix)) effectIds.add(+effectId);
+            }
+        }
+    }
+
+    return { effectIds, buffIds };
+}
+
+function getBlitzEffectType(scoreBossLevel) {
+    const { effectIds } = getBlitzBuffIds(scoreBossLevel);
+    const ids = Object.keys(EFFECTVALUE).filter(effectId => effectIds.has(+effectId));
     const effectTypes = [];
 
-    for (const effectId of effectIds) {
+    for (const effectId of ids) {
         let type = EFFECTVALUE[effectId].EffectTypeFirstSubtype;
         if (!type) type = EFFECTVALUE[EFFECTVALUE[effectId].EffectTypeParam1]?.EffectTypeFirstSubtype;
         const paramType = EFFECTVALUE[effectId].EffectTypeSecondSubtype;
@@ -191,22 +230,16 @@ function getBlitzEffectType(monsterId) {
     return [...new Set(effectTypes)];
 }
 
-function getBlitzBuffIcon(monsterId) {
-    const buffIds = Object.keys(BUFF).filter(buffId => filterBuff(buffId, monsterId));
+function getBlitzBuffIcon(scoreBossLevel) {
+    const { buffIds } = getBlitzBuffIds(scoreBossLevel);
+    const ids = Object.keys(BUFF).filter(buffId => buffIds.has(+buffId));
     const buffIcons = [];
 
-    for (const buffId of buffIds) {
+    for (const buffId of ids) {
         const icon = BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon'
 
         buffIcons.push(icon);
     }
 
     return [...new Set(buffIcons)];
-}
-
-function filterBuff(buffId, monsterId) {
-    if (monsterId === 6310100) return [631010001, 631010002, 631001003].includes(+buffId);
-    if (monsterId === 6310130) return [631011011, 631011021, 631011010, 631011020].includes(+buffId);
-    if (monsterId >= 6310140) return buffId.startsWith(monsterId - 10);
-    return buffId.startsWith(monsterId);
 }

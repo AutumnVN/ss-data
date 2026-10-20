@@ -20,6 +20,9 @@ const HITDAMAGE_ENTRIES = /\[(\d+)\]\s*=\s*(\d+)/g;
 const POTENTIAL_SUFFIX = /_P(\d+)$/;
 
 const NAMESPACE = /^namespace\s+(\S+)/;
+const CLASS_DECL = /^\s*(?:(?:public|private|protected|internal|static|sealed|abstract|partial)\s+)*class\s+/;
+const BOSS_TAG_DECL = /^\s*(?:(?:public|private|protected|internal|static|readonly|const)\s+)*string\s+(\w*(?:TagId|EntryId)\w*)\s*=\s*"(\d{6})"\s*;/;
+const BOSS_BUFF_DECL = /^\s*(?:(?:public|private|protected|internal|static|readonly|const)\s+)*int\s+(\w+)\s*=\s*(631\d{6})\s*;/;
 const METHOD = /^\t\t(?:public|private|protected|internal)[\w\s<>\[\],.?]*\s(\w+)\s*\(/;
 const DECL_LINE = /^\s*(?:(?:public|private|protected|internal)\s+)?(?:(?:const|static\s+readonly|readonly|static)\s+)?[\w<>\[\].]+\s+(\w+)\s*=\s*(\d+)\s*[;,]\s*$/;
 const MAPPING_USAGE = /(\w*hitDamageIdMapping\w*)\.TryGetValue\(/;
@@ -107,10 +110,40 @@ function parseHitDamage(src) {
 let src = null;
 let hitDamage = null;
 let notes = null;
+let scoreBossBuffs = null;
 
 function getSource() {
     if (!src) src = readFileSync(HOTFIX_FILE, 'utf8');
     return src;
+}
+
+function getHotfixScoreBossBuffs() {
+    if (scoreBossBuffs) return scoreBossBuffs;
+
+    scoreBossBuffs = {};
+    let currentTag = null;
+
+    for (const line of getSource().split(/\r?\n/)) {
+        if (CLASS_DECL.test(line)) {
+            currentTag = null;
+            continue;
+        }
+
+        const tag = BOSS_TAG_DECL.exec(line);
+        if (tag) {
+            currentTag = tag[2];
+            continue;
+        }
+
+        const buff = BOSS_BUFF_DECL.exec(line);
+        if (!buff || !currentTag) continue;
+
+        const ids = scoreBossBuffs[currentTag] || (scoreBossBuffs[currentTag] = []);
+        const id = +buff[2];
+        if (!ids.includes(id)) ids.push(id);
+    }
+
+    return scoreBossBuffs;
 }
 
 async function getHotfixData() {
@@ -362,4 +395,4 @@ function getHitDamageNote(hitDamageId) {
     return notes[hitDamageId] || [];
 }
 
-module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, potentialLabel };
+module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHotfixScoreBossBuffs, potentialLabel };
