@@ -95987,42 +95987,42 @@
                 {
                     "damageType": "Auto Attack (2.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "139100001",
-                    "hitDamageNote": "Can be replaced by 139100101 (no damage only); Can be replaced by 139100201 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139100101 (no damage only); Can be replaced by 139100201 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 },
                 {
                     "damageType": "Auto Attack (2.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "139100002",
-                    "hitDamageNote": "Can be replaced by 139100102 (no damage only); Can be replaced by 139100202 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139100102 (no damage only); Can be replaced by 139100202 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 },
                 {
                     "damageType": "Auto Attack (6.1e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "139100003",
-                    "hitDamageNote": "Can be replaced by 139100103 (no damage only); Can be replaced by 139100203 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139100103 (no damage only); Can be replaced by 139100203 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 },
                 {
                     "damageType": "Auto Attack (2.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "139100004",
-                    "hitDamageNote": "Can be replaced by 139100104 (no damage only); Can be replaced by 139100204 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139100104 (no damage only); Can be replaced by 139100204 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 },
                 {
                     "damageType": "Auto Attack (2.1e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "139100005",
-                    "hitDamageNote": "Can be replaced by 139100105 (no damage only); Can be replaced by 139100205 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139100105 (no damage only); Can be replaced by 139100205 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 },
                 {
                     "damageType": "Auto Attack (2.1e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "139100006",
-                    "hitDamageNote": "Can be replaced by 139100106 (no damage only); Can be replaced by 139100206 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139100106 (no damage only); Can be replaced by 139100206 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 },
                 {
                     "damageType": "Auto Attack (1.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "139100007",
-                    "hitDamageNote": "Can be replaced by 139100107 (no damage only); Can be replaced by 139100207 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139100107 (no damage only); Can be replaced by 139100207 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 },
                 {
                     "damageType": "Auto Attack (6.1e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "139100008",
-                    "hitDamageNote": "Can be replaced by 139100108 (no damage only); Can be replaced by 139100208 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139100108 (no damage only); Can be replaced by 139100208 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 }
             ],
             "icon": "13901_Normal"
@@ -96191,7 +96191,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "139400001",
-                    "hitDamageNote": "Can be replaced by 139400101 (no damage only); Can be replaced by 139400201 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                    "hitDamageNote": "Can be replaced by 139400101 (no damage only); Can be replaced by 139400201 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                 },
                 {
                     "effectType": "ATK (%)",
@@ -96644,52 +96644,52 @@
                         {
                             "damageType": "Mark (2.8e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100201",
-                            "hitDamageNote": "Can replace 139100001 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100001 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (2.8e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100202",
-                            "hitDamageNote": "Can replace 139100002 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100002 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (6.1e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100203",
-                            "hitDamageNote": "Can replace 139100003 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100003 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (2.8e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100204",
-                            "hitDamageNote": "Can replace 139100004 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100004 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (2.1e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100205",
-                            "hitDamageNote": "Can replace 139100005 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100005 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (2.1e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100206",
-                            "hitDamageNote": "Can replace 139100006 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100006 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (1.8e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100207",
-                            "hitDamageNote": "Can replace 139100007 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100007 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (6.1e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100208",
-                            "hitDamageNote": "Can replace 139100008 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100008 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (from Normal attack, scale with Normal attack)",
                             "hitDamageId": "139100209",
-                            "hitDamageNote": "Can replace 139100009 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139100009 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         },
                         {
                             "damageType": "Mark (from Ultimate, scale with Ultimate)",
                             "hitDamageId": "139400201",
-                            "hitDamageNote": "Can replace 139400001 (requires Wide Blade Arc (513908), all Aqua trekkers, damage tag 139_P08_Mark)"
+                            "hitDamageNote": "Can replace 139400001 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)"
                         }
                     ],
                     "icon": "13901_Potential_04",
@@ -131845,8 +131845,7 @@
                         {},
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "150310201",
-                            "hitDamageNote": "Requires Arc Chain Laser (515002)"
+                            "hitDamageId": "150310201"
                         },
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
