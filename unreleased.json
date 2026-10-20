@@ -24,5 +24,31 @@
         "stat": {},
         "upgrade": [],
         "skillUpgrade": []
+    },
+    "161": {
+        "id": 161,
+        "name": "161 ***",
+        "desc": "",
+        "star": 0,
+        "element": "Terra",
+        "class": "Versatile",
+        "attackType": "",
+        "style": "",
+        "force": "",
+        "tag": [],
+        "cnCv": "",
+        "jpCv": "",
+        "birthday": "",
+        "source": [],
+        "loveGift": [],
+        "hateGift": [],
+        "date": [],
+        "fixedStat": {},
+        "special": [],
+        "potential": {},
+        "talent": [],
+        "stat": {},
+        "upgrade": [],
+        "skillUpgrade": []
     }
 }

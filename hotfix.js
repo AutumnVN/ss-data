@@ -123,13 +123,16 @@ async function getHotfixData() {
         const line = lines[i].replace(/"(?:[^"\\]|\\.)*"/g, '""');
         const namespace = /^namespace AIScript\.Character\._(\d{3})01/.exec(line);
         if (namespace) id = +namespace[1];
-        if (depth === 1 && /^\s*(?:public|internal)\s+(?:sealed |abstract |partial )*class ActionScript\b/.test(line)) start = i;
+        if (depth === 1 && /^\s*(?:public|internal)\s+(?:sealed |abstract |partial )*class (?:Action|ActionScript)\b/.test(line)) start = i;
         if (!line.includes('{') && !line.includes('}')) continue;
 
         for (const char of line) {
             if (char === '{') depth++;
             else if (char === '}' && --depth < 1 && start) {
-                if (id) characters[id] = parse(lines.slice(start, i + 1).join('\n'));
+                if (id) {
+                    const character = parse(lines.slice(start, i + 1).join('\n'));
+                    if (character.element || character.class) characters[id] = character;
+                }
                 start = 0;
             }
         }
