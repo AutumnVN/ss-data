@@ -3187,6 +3187,7 @@
         "name": "Token Supply",
         "desc": "Restores 30% of Vita's Tokens.\nSpend Tokens to hand Monolith Exploration over to Vita, and she'll run the ascensions for you.",
         "literary": "Vita never gets hungry, but she still needs Tokens. Now that's a token excuse. Hahaha. :)",
+        "type": "TokenItem",
         "rarity": "SR"
     },
     "82001": {
@@ -5269,12 +5270,14 @@
         "id": 198025,
         "name": "Ventus Team Record",
         "desc": "Grants a Ventus Monolith: Record to a beginner!",
+        "type": "Build",
         "rarity": "R"
     },
     "198026": {
         "id": 198026,
         "name": "Ignis Team Record",
         "desc": "Grants a beginner-exclusive Ignis Monolith Record for immediate use!",
+        "type": "Build",
         "rarity": "R"
     },
     "199000": {
@@ -14224,6 +14227,7 @@
         "name": "Heartlink Booth",
         "desc": "[Special] furniture for decorating the Tyrant's Tower.",
         "literary": "A cellphone fixed to a booth... Let's just call it a fixed-line!",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "700002": {
@@ -14231,6 +14235,7 @@
         "name": "Wish Gacha Machine",
         "desc": "[Special] furniture for decorating the Tyrant's Tower.",
         "literary": "A gacha machine stuffed with Artifact Wishing Eggs. Simulates the thrill of wishing whenever the urge strikes.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "700003": {
@@ -14238,6 +14243,7 @@
         "name": "Sherlock Statue",
         "desc": "[Special] furniture for decorating the Tyrant's Tower.",
         "literary": "A statue of the silent Manager from the Monolith Convenience Store.\nIt even glows!",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "700004": {
@@ -14245,6 +14251,7 @@
         "name": "Disc Gramophone",
         "desc": "[Special] furniture for decorating the Tyrant's Tower.",
         "literary": "Drop the needle, and let the melodies and memories flood back...",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "700005": {
@@ -14252,6 +14259,7 @@
         "name": "Heartlink Station",
         "desc": "[Special] furniture for decorating the Tyrant's Tower.",
         "literary": "A cellphone fixed to a desk... We can call this a fixed-line too!",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "701001": {
@@ -14259,6 +14267,7 @@
         "name": "Hall 1 Prototype Room",
         "desc": "Used to enter Hall 1 of the Tyrant's Tower.",
         "literary": "A miniature space not yet given form, bearing infinite possibilities. Infuse it with the vision in your heart, and it can transform into a royal court in reality, opening up a brand-new realm for you.",
+        "type": "DormRoom",
         "rarity": "SSR"
     },
     "701002": {
@@ -14266,36 +14275,43 @@
         "name": "Hall 2 Prototype Room",
         "desc": "Used to enter Hall 2 of the Tyrant's Tower.",
         "literary": "A miniature space not yet given form, bearing infinite possibilities. Infuse it with the vision in your heart, and it can transform into a royal court in reality, opening up a brand-new realm for you.",
+        "type": "DormRoom",
         "rarity": "SSR"
     },
     "705001": {
         "id": 705001,
         "name": "Scene 1",
+        "type": "DormScene",
         "rarity": "SSR"
     },
     "705002": {
         "id": 705002,
         "name": "Scene 2",
+        "type": "DormScene",
         "rarity": "SSR"
     },
     "705003": {
         "id": 705003,
         "name": "Scene 3",
+        "type": "DormScene",
         "rarity": "SSR"
     },
     "706001": {
         "id": 706001,
         "name": "Male Tyrant Skin",
+        "type": "DormSkin",
         "rarity": "SSR"
     },
     "706002": {
         "id": 706002,
         "name": "Female Tyrant Skin",
+        "type": "DormSkin",
         "rarity": "SSR"
     },
     "706003": {
         "id": 706003,
         "name": "NPC 1 Skin",
+        "type": "DormSkin",
         "rarity": "SSR"
     },
     "710001": {
@@ -14303,6 +14319,7 @@
         "name": "Auto Vending Artifacts",
         "desc": "The Tyrant's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "A legendary Artifact that dispenses a limitless supply of ice-cold sugary drinks.\nRumor has it you still need to give it a good kick every now and then to get it working, though.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710003": {
@@ -14310,6 +14327,7 @@
         "name": "Cat Nest Beanbag",
         "desc": "Amber's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "When Amber curls up to sleep in this, she looks exactly like Inky.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710004": {
@@ -14317,6 +14335,7 @@
         "name": "Expert Toolbox",
         "desc": "Noya's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "Noya always manages to fish something out from the bottom of this thing—a wrench, Loxy, maybe some polish?",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710005": {
@@ -14324,6 +14343,7 @@
         "name": "Office Desk",
         "desc": "Iris's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "Before Iris leaves this desk for the day, she always makes absolutely sure the books are balanced.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710007": {
@@ -14331,6 +14351,7 @@
         "name": "Pedestal Fan",
         "desc": "Nazuka's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "Nazuka does have a soft spot for things that spin in loops.\nBut honestly, she probably just likes this because it blows a ton of air.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710008": {
@@ -14338,6 +14359,7 @@
         "name": "Practice Log",
         "desc": "Chitose's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "Chitose leaves a few more slash marks on this log every time she walks past it.\nLooks like she's still holding a grudge against that black thing that slipped away.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710010": {
@@ -14345,6 +14367,7 @@
         "name": "Cardboard Box with a Hole",
         "desc": "Fuyuka's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "Fuyuka claims she \"loves hanging out inside because it feels safe.\"\nYou really need to get her out for some fresh air.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710011": {
@@ -14352,6 +14375,7 @@
         "name": "Claw Machine",
         "desc": "Nazuna's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "The claw machine master's philosophy: If you win, hug the prize and spin in circles. If you lose, lie on the floor and spin in circles anyway.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710012": {
@@ -14359,6 +14383,7 @@
         "name": "Cabinet of Truths",
         "desc": "Mistique's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "The witch claims to \"feast on the truth,\" so that probably makes this her pantry.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710013": {
@@ -14366,6 +14391,7 @@
         "name": "Elegant Tea Table",
         "desc": "Firenze's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "The teapot is always steaming hot, but the higher-up made it clear: no talking business at this table.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "710014": {
@@ -14373,11 +14399,13 @@
         "name": "Knight's Display Cabinet",
         "desc": "Firstlight Noya's favorite furniture. Used to decorate the Tyrant's Tower.",
         "literary": "All the gear is polished to a mirror shine and looks brand new!",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720000": {
         "id": 720000,
         "name": "Default Outdoor Floor",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720001": {
@@ -14385,6 +14413,7 @@
         "name": "Walls of Origin",
         "desc": "[Wallpaper] for decorating the Tyrant's Tower.",
         "literary": "Your standard Monolith wall.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720002": {
@@ -14392,6 +14421,7 @@
         "name": "Floor Tiles of Origin",
         "desc": "[Flooring] for decorating the Tyrant's Tower.",
         "literary": "Your standard Monolith floor.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720003": {
@@ -14399,6 +14429,7 @@
         "name": "Elevator of Origin",
         "desc": "[Elevator] for decorating the Tyrant's Tower.",
         "literary": "A perfectly ordinary Monolith elevator.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720004": {
@@ -14406,6 +14437,7 @@
         "name": "Cozy Pale Wood Bed",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A plain wood bed. Nobody ever thought about dragging one of these into the Monolith.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720005": {
@@ -14413,6 +14445,7 @@
         "name": "Cozy Nightstand",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A small bedside cabinet. Perfect for holding flowers.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720006": {
@@ -14420,6 +14453,7 @@
         "name": "Cozy Sofa",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A sky-blue wooden sofa. The cushions aren't super soft, but they offer great support. Plus, it's roomy enough for two.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720007": {
@@ -14427,6 +14461,7 @@
         "name": "Cozy Floor Lamp",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "As long as it lights up the space right next to you, it's doing its job.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720008": {
@@ -14434,6 +14469,7 @@
         "name": "Sky Blue Rug",
         "desc": "[Rug] for decorating the Tyrant's Tower.",
         "literary": "A sky-blue rug. Feels great on bare feet.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720009": {
@@ -14441,6 +14477,7 @@
         "name": "Charming Portrait",
         "desc": "[Wall decor] for decorating the Tyrant's Tower.",
         "literary": "According to the artist, this painting depicts the most handsome man they could possibly imagine.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720010": {
@@ -14448,6 +14485,7 @@
         "name": "Charming Portrait",
         "desc": "[Wall decor] for decorating the Tyrant's Tower.",
         "literary": "According to the artist, this painting depicts the most beautiful woman they could possibly imagine.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720011": {
@@ -14455,6 +14493,7 @@
         "name": "Forest Elevator",
         "desc": "[Elevator] for decorating the Tyrant's Tower.",
         "literary": "A Monolith entrance hidden in the woods.\nA Trekker couldn't ask for a luckier find.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720012": {
@@ -14462,6 +14501,7 @@
         "name": "Basic Canopy",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A simple canopy anyone can set up. Unfold it to carve out a cozy little room right under the trees.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720013": {
@@ -14469,6 +14509,7 @@
         "name": "Basic Campfire",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A hastily stacked pile of wood. Good luck getting it to actually light.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720014": {
@@ -14476,6 +14517,7 @@
         "name": "Basic Folding Stool",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Folds down to the size of your palm, yet holds your weight without a single wobble.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720015": {
@@ -14483,6 +14525,7 @@
         "name": "Basic Folding Table",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "An instant dining table. Just picturing it hosting a massive feast is enough to make you hungry.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720016": {
@@ -14490,6 +14533,7 @@
         "name": "Basic Grill",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "This handy Artifact works like magic, turning ingredients into a proper feast.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720017": {
@@ -14497,6 +14541,7 @@
         "name": "Pole-Mounted Lantern",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Stick a lantern on a pole, and you've got yourself a makeshift streetlamp.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720018": {
@@ -14504,6 +14549,7 @@
         "name": "Common Shrub",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A standard Novian bush. It rustles with every passing breeze.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720019": {
@@ -14511,6 +14557,7 @@
         "name": "Basic Ground Mat",
         "desc": "[Rug] for decorating the Tyrant's Tower.",
         "literary": "Blocks out the damp dirt and softens the rough ground.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720020": {
@@ -14518,6 +14565,7 @@
         "name": "Spotless Elevator",
         "desc": "[Elevator] for decorating the Tyrant's Tower.",
         "literary": "A freshly swept Monolith entrance.\nWithout the usual weeds, it almost feels like the wrong place.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720021": {
@@ -14525,6 +14573,7 @@
         "name": "Chic Canopy",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Bigger and tougher. Pitching this feels more like building a house than camping.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720022": {
@@ -14532,6 +14581,7 @@
         "name": "Chic Tent",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "When the RV gets too cramped, pitching a tent is your next best bet.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720023": {
@@ -14539,6 +14589,7 @@
         "name": "Chic Tea Table",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Living in the Wilds doesn't mean you have to give up your elegance.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720024": {
@@ -14546,6 +14597,7 @@
         "name": "Chic Folding Chair",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A premium chair that doesn't sacrifice comfort for portability.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720025": {
@@ -14553,6 +14605,7 @@
         "name": "Basic Pet Bed",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Think Inky will actually sleep in this?",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720026": {
@@ -14560,6 +14613,7 @@
         "name": "Chic Artifact Lamp",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A rare Artifact won from a wish. It casts a warm, unwavering light.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720027": {
@@ -14567,6 +14621,7 @@
         "name": "Soul Waker",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Toss a few leaves in your tea. Whether it cures your fatigue is debatable, but the bitter kick alone will definitely jolt you awake.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720028": {
@@ -14574,6 +14629,7 @@
         "name": "Chic Deck",
         "desc": "[Rug] for decorating the Tyrant's Tower.",
         "literary": "Lays a solid foundation over the soft dirt. Beats tossing a flimsy mat on the ground any day.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720039": {
@@ -14581,6 +14637,7 @@
         "name": "Cozy Wall",
         "desc": "[Wallpaper] for decorating the Tyrant's Tower.",
         "literary": "It looks like an ordinary wall, but turning a Monolith into a proper home took some real elbow grease.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720040": {
@@ -14588,6 +14645,7 @@
         "name": "Cozy Flooring",
         "desc": "[Flooring] for decorating the Tyrant's Tower.",
         "literary": "It looks like ordinary flooring, but turning a Monolith into a proper home took some real elbow grease.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720041": {
@@ -14595,6 +14653,7 @@
         "name": "Simple Backpack",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Big enough to hold all your possessions. Though if you ask a Trekker, it's still way too small.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720042": {
@@ -14602,6 +14661,7 @@
         "name": "Simple Tea Stove",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A sleek, minimalist tea-brewing set. Perfect for whipping up whatever drink you're craving.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720043": {
@@ -14609,6 +14669,7 @@
         "name": "Simple Kettle",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A rugged, heavy-duty kettle. The bottom is still scorched from the last campfire.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720044": {
@@ -14616,6 +14677,7 @@
         "name": "Simple Picnic Basket",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A hastily packed picnic basket. It gives off a classy vibe, doesn't it?",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720045": {
@@ -14623,6 +14685,7 @@
         "name": "Simple Cutlery Case",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Packing your plates in a proper case makes dining in the Wild feel a lot more civilized.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720046": {
@@ -14630,6 +14693,7 @@
         "name": "Simple Roll-up Mat",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Just roll it up, and you're good to go.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720047": {
@@ -14637,6 +14701,7 @@
         "name": "Camp Lamp Post",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Adds a touch of light and a whole lot of warmth.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720048": {
@@ -14644,6 +14709,7 @@
         "name": "Camp Wooden Gate",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Frames the scenery perfectly, like the title of a painting.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720049": {
@@ -14651,6 +14717,7 @@
         "name": "Camp Signpost",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Just staking it into the ground makes the whole place feel safer.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720050": {
@@ -14658,6 +14725,7 @@
         "name": "Camp Flagpole",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Flutters in the wind, giving the camp a nice sense of territory.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720051": {
@@ -14665,6 +14733,7 @@
         "name": "Camp Torch",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Great for lighting up the dark, and even better for keeping the bugs away.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720052": {
@@ -14672,6 +14741,7 @@
         "name": "Camp Utensil Rack",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A sturdy wooden rack stocked with all your essential pots and pans.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720053": {
@@ -14679,6 +14749,7 @@
         "name": "Log Stool A",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A low stool chopped straight from a log. It's a bit rough, but it's reliable.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720054": {
@@ -14686,6 +14757,7 @@
         "name": "Log Stool B",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A low stool chopped straight from a log. It's a bit rough, but it's reliable.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720055": {
@@ -14693,6 +14765,7 @@
         "name": "Log Stool C",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A low stool chopped straight from a log. It's a bit rough, but it's reliable.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720056": {
@@ -14700,6 +14773,7 @@
         "name": "Log Stool D",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A low stool chopped straight from a log. It's a bit rough, but it's reliable.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720057": {
@@ -14707,6 +14781,7 @@
         "name": "Camp Log Table",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Anyway, cheers!",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720058": {
@@ -14714,6 +14789,7 @@
         "name": "Simple Cooking Pot",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Thick, heavy, and reliable. Perfect for boiling and stewing.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720059": {
@@ -14721,6 +14797,7 @@
         "name": "Firewood Pile",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "The most reliable fuel in the Wilds. Just don't let it get wet.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720060": {
@@ -14728,6 +14805,7 @@
         "name": "Cookware Set",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A clanking set of pots and pans. Better hang them up if you want them to dry.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720061": {
@@ -14735,6 +14813,7 @@
         "name": "Simple Picnic Table",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "It doesn't fold, but the tradeoff is it won't wobble while you eat.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720062": {
@@ -14742,6 +14821,7 @@
         "name": "Simple Folding Chair A",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A camping chair with a proper backrest. Surprisingly comfortable.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720063": {
@@ -14749,6 +14829,7 @@
         "name": "Simple Folding Chair B",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A camping chair with a proper backrest. Surprisingly comfortable.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720064": {
@@ -14756,6 +14837,7 @@
         "name": "Camp Storage Box A",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "The moment you close the lid, you'll forget what you put inside.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720065": {
@@ -14763,6 +14845,7 @@
         "name": "Camp Storage Box B",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "The moment you close the lid, you'll forget what you put inside.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720066": {
@@ -14770,6 +14853,7 @@
         "name": "Camp Storage Box C",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "The moment you close the lid, you'll forget what you put inside.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720067": {
@@ -14777,6 +14861,7 @@
         "name": "Cast-Iron Grill",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A rugged, heavy-duty grill. Perfect for searing the meat of fierce monsters.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720068": {
@@ -14784,6 +14869,7 @@
         "name": "Fishing Gear",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Take advantage of a rare break to sit back, relax, and enjoy the quiet.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720069": {
@@ -14791,6 +14877,7 @@
         "name": "BBQ Spice Rack",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Every master chef's personal spellcasting station.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720070": {
@@ -14798,6 +14885,7 @@
         "name": "Camping Wagon",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Slap some wheels on it, and your hauling capacity goes through the roof.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720071": {
@@ -14805,6 +14893,7 @@
         "name": "Wall Planter",
         "desc": "[Wall decor] for decorating the Tyrant's Tower.",
         "literary": "It grows incredibly slow. Probably because it's such a pain to water.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720072": {
@@ -14812,6 +14901,7 @@
         "name": "Cozy Nightlight",
         "desc": "[Wall decor] for decorating the Tyrant's Tower.",
         "literary": "A wall-mounted lamp featuring a classic, retro pull-cord switch.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720073": {
@@ -14819,6 +14909,7 @@
         "name": "Cozy Wall Shelf",
         "desc": "[Wall decor] for decorating the Tyrant's Tower.",
         "literary": "An open wall shelf. The perfect spot for a small plant or some incense.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720074": {
@@ -14826,6 +14917,7 @@
         "name": "Large Potted Plant",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "It doesn't need much attention. Just water it whenever you happen to remember.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720075": {
@@ -14833,6 +14925,7 @@
         "name": "Round Table",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A plain round table with a sleek, elegant design.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720076": {
@@ -14840,6 +14933,7 @@
         "name": "Cozy Shoe Cabinet",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A massive, practical shoe cabinet... Seriously, how many feet do you need to actually fill this thing?",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720077": {
@@ -14847,6 +14941,7 @@
         "name": "Cozy Wardrobe",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A spacious wooden wardrobe. Rumor has it that 80% of the hesitation before heading out happens right in front of it.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720078": {
@@ -14854,6 +14949,7 @@
         "name": "Cozy Wooden Chair",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "An incredibly ordinary chair. It gives a gentle creak whenever you sit down.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720079": {
@@ -14861,6 +14957,7 @@
         "name": "Cozy Coffee Table",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A low table sitting right at the perfect reach-for-your-drink height.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720080": {
@@ -14868,6 +14965,7 @@
         "name": "Cozy Low Cabinet",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A decorated, long cabinet that adds a touch of ambiance to your everyday life.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720081": {
@@ -14875,6 +14973,7 @@
         "name": "Cozy Folding Screen",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Unfold it to split the room right in half ... at least psychologically, anyway.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720082": {
@@ -14882,6 +14981,7 @@
         "name": "Cozy Shoe Rack",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "You only have two feet, yet somehow, you'll still run out of space for your shoes.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720083": {
@@ -14889,6 +14989,7 @@
         "name": "Egg Yolk Rug",
         "desc": "[Rug] for decorating the Tyrant's Tower.",
         "literary": "Perfect for bare feet on a chilly day. Also great for sitting down and never getting back up.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720084": {
@@ -14896,6 +14997,7 @@
         "name": "Potted Plant Stepladder",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Great for holding a houseplant, but also doubles as a step stool. Highly practical.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720085": {
@@ -14903,6 +15005,7 @@
         "name": "Sky Blue Curtains",
         "desc": "[Wall decor] for decorating the Tyrant's Tower.",
         "literary": "You can't actually look outside from inside the Monolith, so you'll just have to imagine the view.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720086": {
@@ -14910,6 +15013,7 @@
         "name": "Folding Laundry Basket",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "You're supposed to do laundry once this hits a \"certain amount.\" But what exactly is that amount...?",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720087": {
@@ -14917,6 +15021,7 @@
         "name": "Cozy Desk",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "By the time you perfectly line up your pens and open your notebook, you've already lost all motivation to actually work.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720088": {
@@ -14924,6 +15029,7 @@
         "name": "Cozy Office Chair",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A desk chair with a slight recline. It actually keeps your back from screaming after a long day of sitting.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720089": {
@@ -14931,6 +15037,7 @@
         "name": "Cozy Round Cabinet",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A little Sherlock plushie rests in the basket, sleeping like a baby.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720090": {
@@ -14938,6 +15045,7 @@
         "name": "Upholstered Bench",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "It provides the comforting reassurance that you can sit down at any time.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720091": {
@@ -14945,6 +15053,7 @@
         "name": "Wooden Bookcase",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "If a bookcase is organized this perfectly, chances are no one is actually reading from it.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720092": {
@@ -14952,6 +15061,7 @@
         "name": "Sky Blue Round Rug",
         "desc": "[Rug] for decorating the Tyrant's Tower.",
         "literary": "It has no fixed direction, so you can place it however you like.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720093": {
@@ -14959,6 +15069,7 @@
         "name": "Chic Backpack",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A highly fashionable backpack with extra capacity. You can even fit a pet inside.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720094": {
@@ -14966,6 +15077,7 @@
         "name": "Audio Receiver",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "It seems to receive Scarlet Sights' sonic magic, letting you listen to news and shows. It's more durable and affordable than a Photo Capturer.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720095": {
@@ -14973,6 +15085,7 @@
         "name": "Chic Kettle",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A kettle that comes with a heating stove. It looks especially new and shiny.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720096": {
@@ -14980,6 +15093,7 @@
         "name": "Stacked Firewood",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "An elegant solution to keep firewood from being scattered everywhere.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720097": {
@@ -14987,6 +15101,7 @@
         "name": "Chic Cookware Set",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A cookware rack that boasts an excellent folding design and takes up minimal space.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720098": {
@@ -14994,6 +15109,7 @@
         "name": "Chic Camping Wagon",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A sturdy and durable camping wagon that doesn't compromise on style.",
+        "type": "DormFurniture",
         "rarity": "SSR"
     },
     "720099": {
@@ -15001,6 +15117,7 @@
         "name": "Chic Tool Set",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A stylish yet sturdy tool set. You have to sweat a little more now to rest more comfortably later!",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720100": {
@@ -15008,6 +15125,7 @@
         "name": "Chic Picnic Box",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "A beautiful and stylish picnic set. Using this gear just makes your food taste better.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720101": {
@@ -15015,6 +15133,7 @@
         "name": "Chic Guitar",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Bringing an instrument along means you plan to sing, even if you end up just carrying it there and back.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720102": {
@@ -15022,6 +15141,7 @@
         "name": "Pet Bowl",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "If you bring your little buddy along, you have to make sure they get their food and water.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720103": {
@@ -15029,6 +15149,7 @@
         "name": "Chic Folding Stool",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "A lightweight and stylish folding stool. It saves space while keeping you comfortable.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720104": {
@@ -15036,6 +15157,7 @@
         "name": "Chic Utensil Rack",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Hang your pots and pans so you won't lose them—at least, that's the theory.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720105": {
@@ -15043,6 +15165,7 @@
         "name": "Chic Camp Flagpole B",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Use these poles to mark your stylish territory!\nThe mug is hung there on purpose to add a touch of everyday life.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720106": {
@@ -15050,6 +15173,7 @@
         "name": "Simple Fire Pit",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "At the very least, this makes cleaning up the ashes much easier.",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720107": {
@@ -15057,6 +15181,7 @@
         "name": "Chic Camp Light Pole",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Decorate your stylish camping trip with these string lights!",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "720108": {
@@ -15064,6 +15189,7 @@
         "name": "Chic Camp Sign",
         "desc": "[Ornament] for decorating the Tyrant's Tower.",
         "literary": "Pointing in the direction of style!",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720109": {
@@ -15071,6 +15197,7 @@
         "name": "Chic Tea Table Setup",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Maintain an elegant and stylish posture for tea breaks, anywhere and anytime.\nIt also covers your rain protection and lighting needs.",
+        "type": "DormFurniture",
         "rarity": "SR"
     },
     "720110": {
@@ -15078,6 +15205,7 @@
         "name": "Chic Camp Flagpole A",
         "desc": "[Furniture] for decorating the Tyrant's Tower.",
         "literary": "Use these poles to mark your stylish territory!",
+        "type": "DormFurniture",
         "rarity": "R"
     },
     "731001": {
@@ -15085,6 +15213,7 @@
         "name": "Everyday Living Room Set",
         "desc": "A furniture set for decorating indoor areas of the Tyrant's Tower.",
         "literary": "Eat, read, or curl up and let your worries sink quietly into the couch cushions—\nA perfect home doesn't need to be luxurious. What matters most is that it feels good to lounge in.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "731003": {
@@ -15092,118 +15221,138 @@
         "name": "Sleek Black Camping Set",
         "desc": "A furniture set for decorating indoor areas of the Tyrant's Tower.",
         "literary": "Bright sunshine, a lovely breeze, and the latest full set of trendy black—\nif you're going to be comfortable, you might as well look fabulous too!",
+        "type": "DormKit",
         "rarity": "SSR"
     },
     "732001": {
         "id": 732001,
         "name": "Everyday Living Room Layout",
+        "type": "DormLayout",
         "rarity": "SR"
     },
     "732002": {
         "id": 732002,
         "name": "Outdoor Camping Layout",
+        "type": "DormLayout",
         "rarity": "SR"
     },
     "741001": {
         "id": 741001,
         "name": "Simple Camping Set 01",
         "desc": "Includes Basic Canopy x1, Basic Grill x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741002": {
         "id": 741002,
         "name": "Simple Camping Set 02",
         "desc": "Includes Basic Folding Stool x1, Basic Folding Table x2, Simple Picnic Basket x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741003": {
         "id": 741003,
         "name": "Simple Camping Set 03",
         "desc": "Includes Simple Backpack x1, Basic Ground Mat x2, Simple Roll-up Mat x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741004": {
         "id": 741004,
         "name": "Simple Camping Set 04",
         "desc": "Includes Pole-Mounted Lantern x2, Camp Flagpole x3, Common Shrub x3.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741005": {
         "id": 741005,
         "name": "Simple Camping Set 05",
         "desc": "Includes Cookware Set x1, Simple Tea Stove x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741006": {
         "id": 741006,
         "name": "Simple Camping Set 06",
         "desc": "Includes Simple Picnic Table x1, Basic Folding Stool x3, Basic Ground Mat x2.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741007": {
         "id": 741007,
         "name": "Simple Camping Set 07",
         "desc": "Includes Camp Torch x3, Camp Lamp Post x5.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741008": {
         "id": 741008,
         "name": "Simple Camping Set 08",
         "desc": "Includes Camp Wooden Gate x1, Camp Signpost x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741009": {
         "id": 741009,
         "name": "Simple Camping Set 09",
         "desc": "Includes Camp Utensil Rack x1, Simple Cooking Pot x2.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741010": {
         "id": 741010,
         "name": "Simple Camping Set 10",
         "desc": "Includes Basic Campfire x1, Firewood Pile x2.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741011": {
         "id": 741011,
         "name": "Simple Camping Set 11",
         "desc": "Includes Camp Log Table x1, Log Stool A x1, Log Stool B x1, Log Stool C x1, Log Stool D x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741012": {
         "id": 741012,
         "name": "Simple Camping Set 12",
         "desc": "Includes Simple Kettle x1, Simple Cutlery Case x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741013": {
         "id": 741013,
         "name": "Simple Camping Set 13",
         "desc": "Includes Camp Lamp Post x5, Common Shrub x4.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741014": {
         "id": 741014,
         "name": "Simple Camping Set 14",
         "desc": "Includes Simple Folding Chair A x1, Simple Folding Chair B x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741015": {
         "id": 741015,
         "name": "Simple Camping Set 15",
         "desc": "Includes Camp Storage Box A x1, Camp Storage Box B x1, Camp Storage Box C x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741016": {
         "id": 741016,
         "name": "Simple Camping Set 16",
         "desc": "Includes Fishing Gear x1, Camping Wagon x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "741017": {
         "id": 741017,
         "name": "Simple Camping Set 17",
         "desc": "Includes Cast-Iron Grill x1, BBQ Spice Rack x1.",
+        "type": "DormKit",
         "rarity": "SR"
     },
     "1310011": {
@@ -15225,321 +15374,385 @@
     "2501001": {
         "id": 2501001,
         "name": "Noya",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501002": {
         "id": 2501002,
         "name": "Iris",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501003": {
         "id": 2501003,
         "name": "Amber",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501004": {
         "id": 2501004,
         "name": "Freesia",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501005": {
         "id": 2501005,
         "name": "Donna",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501006": {
         "id": 2501006,
         "name": "Teresa",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501007": {
         "id": 2501007,
         "name": "Fuyuka",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501008": {
         "id": 2501008,
         "name": "Nazuna",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501009": {
         "id": 2501009,
         "name": "Nazuka",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501010": {
         "id": 2501010,
         "name": "Gerie",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501011": {
         "id": 2501011,
         "name": "Sparkla",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501012": {
         "id": 2501012,
         "name": "Wraith",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501013": {
         "id": 2501013,
         "name": "Tilia",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501014": {
         "id": 2501014,
         "name": "Firefly",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501015": {
         "id": 2501015,
         "name": "Canace",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501016": {
         "id": 2501016,
         "name": "Laru",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501017": {
         "id": 2501017,
         "name": "Willow",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501018": {
         "id": 2501018,
         "name": "Chitose",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501019": {
         "id": 2501019,
         "name": "Shia",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501020": {
         "id": 2501020,
         "name": "Minova",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501021": {
         "id": 2501021,
         "name": "Guard Squire",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501022": {
         "id": 2501022,
         "name": "Guard Knight",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501023": {
         "id": 2501023,
         "name": "Guard Captain",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501024": {
         "id": 2501024,
         "name": "Guard Sergeant",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501025": {
         "id": 2501025,
         "name": "Exhausted Employee",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501026": {
         "id": 2501026,
         "name": "Veteran Employee",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501027": {
         "id": 2501027,
         "name": "Vollara",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501028": {
         "id": 2501028,
         "name": "Neuvira",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501029": {
         "id": 2501029,
         "name": "Sturdy Batter",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501030": {
         "id": 2501030,
         "name": "Clever Technician",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501031": {
         "id": 2501031,
         "name": "Shrubshrews Warrior",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501032": {
         "id": 2501032,
         "name": "Citadel Shrubshrew",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501033": {
         "id": 2501033,
         "name": "Spirit of Brutality",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501034": {
         "id": 2501034,
         "name": "Sherlock",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501035": {
         "id": 2501035,
         "name": "Howling Owl",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501036": {
         "id": 2501036,
         "name": "Armadillo Fish",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501037": {
         "id": 2501037,
         "name": "Firefang",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501038": {
         "id": 2501038,
         "name": "Captain Ⅴacuum",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501039": {
         "id": 2501039,
         "name": "Vacuum Kitty",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501040": {
         "id": 2501040,
         "name": "Bomber Chicken",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501041": {
         "id": 2501041,
         "name": "Jinglin",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501042": {
         "id": 2501042,
         "name": "Shimiao",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501043": {
         "id": 2501043,
         "name": "Chixia",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501044": {
         "id": 2501044,
         "name": "Kasimira",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501045": {
         "id": 2501045,
         "name": "Ridge",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501046": {
         "id": 2501046,
         "name": "Coronis",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501047": {
         "id": 2501047,
         "name": "Flora",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501048": {
         "id": 2501048,
         "name": "Firenze",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501049": {
         "id": 2501049,
         "name": "Karin",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501050": {
         "id": 2501050,
         "name": "Eleanor",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501051": {
         "id": 2501051,
         "name": "Allie",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501052": {
         "id": 2501052,
         "name": "Nanoha",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501053": {
         "id": 2501053,
         "name": "Otoha",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501054": {
         "id": 2501054,
         "name": "Mistique",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501055": {
         "id": 2501055,
         "name": "Chaton",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501056": {
         "id": 2501056,
         "name": "Firstlight Noya",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501057": {
         "id": 2501057,
         "name": "Desert Swordsman",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501058": {
         "id": 2501058,
         "name": "Pest Control Expert",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501059": {
         "id": 2501059,
         "name": "Desert Crossbowman",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501060": {
         "id": 2501060,
         "name": "Desert Sniper",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501061": {
         "id": 2501061,
         "name": "Sentinel Blader",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501062": {
         "id": 2501062,
         "name": "Sentinel Mage",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501063": {
         "id": 2501063,
         "name": "Greyhorn",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2501064": {
         "id": 2501064,
         "name": "Hazana",
+        "type": "Chess",
         "rarity": "SSR"
     },
     "2701001": {
