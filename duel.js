@@ -1,5 +1,5 @@
 const { writeFileSync } = require('fs');
-const { MONSTER_EPIC_TYPE, ATTR_TYPE, EFFECT_TYPE, collectParamsFrom, resolveParam } = require('./utils');
+const { MONSTER_EPIC_TYPE, ATTR_TYPE, EFFECT_TYPE, formatEffectType, formatAddAttrType, collectParamsFrom, resolveParam, resolveParamsTooltips } = require('./utils');
 const TRAVELERDUELBOSSLEVEL = require('./EN/bin/TravelerDuelBossLevel.json');
 const TRAVELERDUELCHALLENGEDIFFICULTY = require('./EN/bin/TravelerDuelChallengeDifficulty.json');
 const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
@@ -11,6 +11,8 @@ const MONSTERSKIN = require('./EN/bin/MonsterSkin.json');
 const MONSTERVALUETEMPLETE = require('./EN/bin/MonsterValueTemplete.json');
 const MONSTERVALUETEMPLETEADJUST = require('./EN/bin/MonsterValueTempleteAdjust.json');
 const EFFECTVALUE = require('./EN/bin/EffectValue.json');
+const BUFF = require('./EN/bin/Buff.json');
+const BUFFVALUE = require('./EN/bin/BuffValue.json');
 const LANG_TRAVELERDUELBOSSLEVEL = require('./EN/language/en_US/TravelerDuelBossLevel.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
 const LANG_MONSTERMANUAL = require('./EN/language/en_US/MonsterManual.json');
@@ -34,22 +36,19 @@ for (const id in TRAVELERDUELBOSSLEVEL) {
         type: MONSTER_EPIC_TYPE[monster.EpicLv],
         mechanic: Object.values(TRAVELERDUELCHALLENGECONTROL).filter(c => c.BossLevelId === +id)[0].AffixGroupIds.match(/\d+/g).map(gid => {
             return Object.values(TRAVELERDUELCHALLENGEAFFIX).filter(aff => aff.GroupId === +gid).map(aff => {
-                let desc = LANG_TRAVELERDUELCHALLENGEAFFIX[aff.Desc];
-
+                const desc = LANG_TRAVELERDUELCHALLENGEAFFIX[aff.Desc];
                 const params = collectParamsFrom(aff);
-                if (params.length > 0) {
-                    const resolvedParams = resolveParam(params);
-
-                    resolvedParams.forEach((paramSet, index) => {
-                        const splitted = paramSet.toString().split('/');
-                        const paramValue = splitted[0];
-                        desc = desc.replaceAll(`&Param${index + 1}&`, paramValue);
-                    });
-                }
+                const resolvedParams = resolveParam(params);
 
                 return {
                     name: LANG_TRAVELERDUELCHALLENGEAFFIX[aff.Name],
                     desc,
+                    params,
+                    resolvedParams,
+                    paramsTooltips: resolveParamsTooltips(params),
+                    effectType: getAffixEffectTypes(aff),
+                    addAttrType: getAffixAddAttrTypes(aff),
+                    buffIcon: getAffixBuffIcons(aff),
                     diff: aff.Difficulty,
                     icon: aff.Icon.split('/').pop(),
                 };
@@ -89,6 +88,86 @@ for (const id in TRAVELERDUELBOSSLEVEL) {
             return effects;
         })
     };
+}
+
+function getAffixEffectTypes(aff) {
+    const effectTypes = [];
+
+    for (const skillId of aff.SkillId || []) {
+        for (const effectId of getLeafEffectIds(skillId)) {
+            const effect = EFFECTVALUE[effectId];
+            if (effect.EffectType === 46) continue;
+
+            let type = effect.EffectTypeFirstSubtype;
+            if (!type) type = EFFECTVALUE[effect.EffectTypeParam1]?.EffectTypeFirstSubtype;
+
+            effectTypes.push(formatEffectType(effectId, type, effect.EffectTypeSecondSubtype).replace(/^HITTED_ADDITIONAL_*:/, ''));
+        }
+    }
+
+    return [...new Set(effectTypes)];
+}
+
+function getAffixAddAttrTypes(aff) {
+    const addAttrTypes = [];
+
+    for (const skillId of aff.SkillId || []) {
+        for (const effectId of getLeafEffectIds(skillId)) {
+            const effect = EFFECTVALUE[effectId];
+            const effectType = EFFECT_TYPE[effect.EffectType] || '';
+            if (!effectType.includes('ATTR_FIX') && effect.EffectType !== 46) continue;
+
+            const type = effect.EffectTypeFirstSubtype;
+            const paramType = effect.EffectTypeSecondSubtype;
+
+            let addAttrType = formatAddAttrType(type, paramType);
+            if (effect.EffectType === 46) addAttrType = ATTR_TYPE[type] || addAttrType;
+
+            addAttrTypes.push(addAttrType);
+        }
+    }
+
+    return [...new Set(addAttrTypes)];
+}
+
+function getLeafEffectIds(effectId, seen = new Set()) {
+    if (seen.has(effectId)) return [];
+    seen.add(effectId);
+
+    const effect = EFFECTVALUE[effectId];
+    if (!effect) return [];
+
+    if (effect.EffectType === 6) {
+        const nested = (BUFFVALUE[effect.EffectTypeParam1]?.Effects || [])
+            .flatMap(id => getLeafEffectIds(id, seen));
+
+        if (nested.length) return nested;
+    }
+
+    return [effectId];
+}
+
+function getAffixBuffIcons(aff) {
+    const buffIcons = [];
+
+    for (const skillId of aff.SkillId || []) {
+        const effect = EFFECTVALUE[skillId];
+        if (!effect) continue;
+
+        const buffIds = [skillId];
+        if (effect.EffectType === 6 || effect.EffectType === 9) {
+            const paramId = +effect.EffectTypeParam1;
+            if (Number.isFinite(paramId)) buffIds.push(paramId);
+        }
+
+        for (const buffId of buffIds) {
+            if (!BUFF[buffId]) continue;
+
+            buffIcons.push(BUFF[buffId].Icon ? BUFF[buffId].Icon.split('/').pop() : 'No Icon');
+        }
+    }
+
+    return [...new Set(buffIcons)];
 }
 
 writeFileSync('./duel.json', JSON.stringify(duel, null, 4));

@@ -195,6 +195,16 @@ const EFFECT_TYPE = {
     51: 'DROP_ITEM_PICKUP_RANGE_FIX',
     52: 'ELEMENTTYPE_ATTR_FIX',
     53: 'DAMAGETYPE_ATTR_FIX',
+    54: 'HITTED_ADDITIONAL_ELEMENTTYPE_ATTR_FIX',
+    55: 'HITTED_ADDITIONAL_DAMAGETYPE_ATTR_FIX',
+    56: 'ELEMENTTYPE_ATTR_PERCENT_FIX',
+    57: 'DAMAGETYPE_ATTR_PERCENT_FIX',
+    58: 'HITTED_ADDITIONAL_ELEMENTTYPE_ATTR_PERCENT_FIX',
+    59: 'HITTED_ADDITIONAL_DAMAGETYPE_ATTR_PERCENT_FIX',
+    60: 'ELEMENTTYPE_ATTR_ASSIGNMENT',
+    61: 'DAMAGETYPE_ATTR_ASSIGNMENT',
+    62: 'ELEMENTTYPE_ATTR_PERCENT_ASSIGNMENT',
+    63: 'DAMAGETYPE_ATTR_PERCENT_ASSIGNMENT'
 };
 
 const CORNER_TYPE = {
@@ -234,7 +244,17 @@ const ITEM_STYPE = {
     44: 'CharacterYO',
     45: 'PlayHead',
     46: 'CharacterSkin',
-    47: 'SouvenirEnergyItem'
+    47: 'SouvenirEnergyItem',
+    48: 'Build',
+    49: 'Chess',
+    50: 'DormHonor',
+    51: 'DormFurniture',
+    52: 'DormKit',
+    53: 'DormScene',
+    54: 'DormSkin',
+    55: 'DormRoom',
+    56: 'DormLayout',
+    57: 'TokenItem'
 };
 
 const ITEM_RARITY = {
@@ -295,7 +315,14 @@ const TARGET_TYPE = {
     7: 'ASSISTANT_PLAYER',
     8: 'TEAM_SUMMONED',
     9: 'FULL_TEAM_AND_SUMMONED',
-    10: 'SELF_AND_SUMMONED'
+    10: 'SELF_AND_SUMMONED',
+    11: 'FRIEND_FACTION',
+    12: 'FRIEND_AND_ENEMY_FACTION',
+    13: 'FROM_ACTOR_SUMMONED',
+    14: 'TEAMMATE_SUMMONED',
+    15: 'ENEMY_SUMMONED',
+    16: 'FRIEND_AND_ENEMY_SUMMONED',
+    17: 'TEAMMATE_AND_SUMMONED'
 };
 
 const CONDITION_TYPE = {
@@ -351,7 +378,9 @@ const CONDITION_TYPE = {
     50: 'WEAKELEMENTTYPE',
     51: 'CERTAIN_MARK_TYPE',
     52: 'BE_MAINCONTROL',
-    53: 'BE_ASSISTANT'
+    53: 'BE_ASSISTANT',
+    54: 'CERTAIN_DAMAGETYPE',
+    55: 'ASSISTANT_IN_BATTLE'
 };
 
 const LOGIC_TYPE = {
@@ -420,7 +449,7 @@ const STATE_TYPE = {
     38: 'UNPARALLELED',
     39: 'INDEFENSE',
     40: 'DODGE',
-    41: 'MAX'
+    41: 'TOUGHNESS_BROKEN'
 };
 
 const CHARACTER_ATTACK_TYPE = {
@@ -948,7 +977,7 @@ function formatEffectType(id, type, paramType) {
             result += `${PLAYER_ATTR_TYPE[type]}`;
         } else if (effectTypeStr === 'STATE_CHANGE') {
             result += `${STATE_TYPE[type]}`;
-        } else if (effectTypeStr.includes('ATTR_FIX') || effectTypeStr === 'ADDBUFF') {
+        } else if (effectTypeStr.includes('ATTR_FIX') || effectTypeStr === 'ADDBUFF' || effectTypeStr === 'ATTR_ASSIGNMENT') {
             result += `${attrTypeStr}`;
         } else {
             result += `${type}`;

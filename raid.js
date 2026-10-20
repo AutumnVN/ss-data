@@ -17,7 +17,7 @@ const LANG_JOINTDRILLLEVEL = require('./EN/language/en_US/JointDrillLevel.json')
 const LANG_JOINTDRILL_2_LEVEL = require('./EN/language/en_US/JointDrill_2_Level.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
 const LANG_MONSTERMANUAL = require('./EN/language/en_US/MonsterManual.json');
-const { MONSTER_EPIC_TYPE, formatEffectType, ATTR_TYPE } = require('./utils');
+const { MONSTER_EPIC_TYPE, formatEffectType, formatAddAttrType, ATTR_TYPE } = require('./utils');
 const { getHotfixJointDrillBuffs } = require('./hotfix');
 
 const raid = {};
@@ -128,7 +128,7 @@ function getBuffEffects(buffId) {
     const buff = BUFF[buffId];
     const buffValue = BUFFVALUE[buffId];
     const effectIds = buffValue?.Effects?.length ? buffValue.Effects : EFFECTVALUE[buffId] ? [buffId] : [];
-    const icon = buff?.Icon ? buff.Icon.split('/').pop() : undefined;
+    const icon = buff?.Icon ? buff.Icon.split('/').pop() : buff ? 'No Icon' : undefined;
 
     return effectIds.flatMap(effectId => {
         const effect = EFFECTVALUE[effectId];
@@ -137,22 +137,30 @@ function getBuffEffects(buffId) {
         let type = effect.EffectTypeFirstSubtype;
         if (!type) type = EFFECTVALUE[effect.EffectTypeParam1]?.EffectTypeFirstSubtype;
         const paramType = effect.EffectTypeSecondSubtype;
+        const addAttr = [12, 45, 46].includes(effect.EffectType);
         const assignment = effect.EffectType === 46;
-        let effectType = formatEffectType(effectId, type, paramType);
+        const effectType = formatEffectType(effectId, type, paramType).replace(/^HITTED_ADDITIONAL_*:/, '');
+        let addAttrType;
 
-        if (assignment) {
-            effectType = ATTR_TYPE[type] || effectType;
+        if (addAttr) {
+            addAttrType = formatAddAttrType(type, paramType);
+            if (assignment) addAttrType = ATTR_TYPE[type] || addAttrType;
         }
-
-        effectType = effectType.replace(/^HITTED_ADDITIONAL_*:/, '');
 
         const number = Number(effect.EffectTypeParam1);
 
         return [{
-            type: effectType,
+            type: addAttrType || effectType,
+            effectType,
+            addAttrType: addAttr ? addAttrType : null,
+            kind: addAttr ? 'addAttr' : 'effect',
             value: formatEffectValue(effect.EffectTypeParam1),
             number: Number.isFinite(number) ? number : undefined,
             icon,
+            buffIcon: icon ?? null,
+            effectId,
+            addAttrId: addAttr ? effectId : null,
+            buffId,
         }];
     });
 }
@@ -177,7 +185,7 @@ function mergeEffectLevels(effectLevels) {
         const groups = new Map();
 
         effects.forEach(effect => {
-            const groupKey = `${effect.type}|${effect.icon}|${Math.sign(effect.number) || 0}`;
+            const groupKey = `${effect.kind}|${effect.type}|${effect.icon}|${Math.sign(effect.number) || 0}`;
             const group = groups.get(groupKey) || [];
             group.push(effect);
             groups.set(groupKey, group);
@@ -190,7 +198,14 @@ function mergeEffectLevels(effectLevels) {
                 const key = `${groupKey}|${slot}`;
                 const entry = merged.get(key) || {
                     type: effect.type,
+                    effectType: effect.effectType,
+                    addAttrType: effect.addAttrType,
+                    kind: effect.kind,
                     icon: effect.icon,
+                    buffIcon: effect.buffIcon,
+                    effectId: effect.effectId,
+                    addAttrId: effect.addAttrId,
+                    buffId: effect.buffId,
                     values: Array(effectLevels.length).fill('-'),
                 };
 
@@ -201,9 +216,13 @@ function mergeEffectLevels(effectLevels) {
     });
 
     return [...merged.values()].map(entry => ({
-        type: entry.type,
+        effectType: entry.effectType,
+        effectId: entry.effectId,
+        addAttrType: entry.addAttrType,
+        addAttrId: entry.addAttrId,
         value: entry.values.join('/'),
-        icon: entry.icon,
+        buffIcon: entry.buffIcon,
+        buffId: entry.buffId,
     }));
 }
 

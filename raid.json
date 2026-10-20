@@ -7,23 +7,40 @@
         "type": "Raid",
         "effects": [
             {
-                "type": "Final DMG Taken (base)",
+                "effectType": "Final DMG Taken (base)",
+                "effectId": 700010012,
+                "addAttrType": "Final DMG Taken (base)",
+                "addAttrId": 700010012,
                 "value": "0.15%/0.15%/0.15%/0.15%/0.15%",
-                "icon": "Icon_CommonBuff_AttackUp"
+                "buffIcon": "Icon_CommonBuff_AttackUp",
+                "buffId": 700010012
             },
             {
-                "type": "Final DMG Taken (base)",
+                "effectType": "Final DMG Taken (base)",
+                "effectId": 700010037,
+                "addAttrType": "Final DMG Taken (base)",
+                "addAttrId": 700010037,
                 "value": "15%/15%/15%/15%/15%",
-                "icon": "Icon_CommonBuff_AttackUp"
+                "buffIcon": "Icon_CommonBuff_AttackUp",
+                "buffId": 700010037
             },
             {
-                "type": "Final DMG Taken (base)",
+                "effectType": "Final DMG Taken (base)",
+                "effectId": 700010010,
+                "addAttrType": "Final DMG Taken (base)",
+                "addAttrId": 700010010,
                 "value": "-1%/-1%/-1%/-1%/-1%",
-                "icon": "Icon_CommonBuff_DefenseDown"
+                "buffIcon": "Icon_CommonBuff_DefenseDown",
+                "buffId": 700010010
             },
             {
-                "type": "Auto Attack DMG Taken",
-                "value": "60%/60%/40%/20%/20%"
+                "effectType": "ATTR_ASSIGNMENT:Auto Attack DMG Taken",
+                "effectId": 700010030,
+                "addAttrType": "Auto Attack DMG Taken",
+                "addAttrId": 700010030,
+                "value": "60%/60%/40%/20%/20%",
+                "buffIcon": "No Icon",
+                "buffId": 700010030
             }
         ],
         "mechanic": [
@@ -468,12 +485,22 @@
         "type": "Raid",
         "effects": [
             {
-                "type": "Final DMG (base)",
-                "value": "25%/25%/30%/30%/30%"
+                "effectType": "Final DMG (base)",
+                "effectId": 720010001,
+                "addAttrType": "Final DMG (base)",
+                "addAttrId": 720010001,
+                "value": "25%/25%/30%/30%/30%",
+                "buffIcon": "No Icon",
+                "buffId": 720010000
             },
             {
-                "type": "Final DMG (base)",
-                "value": "-10%/-10%/-10%/-25%/-50%"
+                "effectType": "Final DMG (base)",
+                "effectId": 720010002,
+                "addAttrType": "Final DMG (base)",
+                "addAttrId": 720010002,
+                "value": "-10%/-10%/-10%/-25%/-50%",
+                "buffIcon": "No Icon",
+                "buffId": 720010000
             }
         ],
         "mechanic": [
@@ -814,23 +841,40 @@
         "type": "Raid",
         "effects": [
             {
-                "type": "Final DMG Taken (base)",
+                "effectType": "Final DMG Taken (base)",
+                "effectId": 700010012,
+                "addAttrType": "Final DMG Taken (base)",
+                "addAttrId": 700010012,
                 "value": "0.15%/0.15%/0.15%/0.15%/0.15%",
-                "icon": "Icon_CommonBuff_AttackUp"
+                "buffIcon": "Icon_CommonBuff_AttackUp",
+                "buffId": 700010012
             },
             {
-                "type": "Final DMG Taken (base)",
+                "effectType": "Final DMG Taken (base)",
+                "effectId": 700010037,
+                "addAttrType": "Final DMG Taken (base)",
+                "addAttrId": 700010037,
                 "value": "15%/15%/15%/15%/15%",
-                "icon": "Icon_CommonBuff_AttackUp"
+                "buffIcon": "Icon_CommonBuff_AttackUp",
+                "buffId": 700010037
             },
             {
-                "type": "Final DMG Taken (base)",
+                "effectType": "Final DMG Taken (base)",
+                "effectId": 700010010,
+                "addAttrType": "Final DMG Taken (base)",
+                "addAttrId": 700010010,
                 "value": "-1%/-1%/-1%/-1%/-1%",
-                "icon": "Icon_CommonBuff_DefenseDown"
+                "buffIcon": "Icon_CommonBuff_DefenseDown",
+                "buffId": 700010010
             },
             {
-                "type": "Auto Attack DMG Taken",
-                "value": "60%/60%/40%/20%/20%"
+                "effectType": "ATTR_ASSIGNMENT:Auto Attack DMG Taken",
+                "effectId": 700010030,
+                "addAttrType": "Auto Attack DMG Taken",
+                "addAttrId": 700010030,
+                "value": "60%/60%/40%/20%/20%",
+                "buffIcon": "No Icon",
+                "buffId": 700010030
             }
         ],
         "mechanic": [
@@ -1250,12 +1294,22 @@
         "type": "Raid",
         "effects": [
             {
-                "type": "Final DMG (base)",
-                "value": "25%/25%/30%/30%/30%"
+                "effectType": "Final DMG (base)",
+                "effectId": 720010001,
+                "addAttrType": "Final DMG (base)",
+                "addAttrId": 720010001,
+                "value": "25%/25%/30%/30%/30%",
+                "buffIcon": "No Icon",
+                "buffId": 720010000
             },
             {
-                "type": "Final DMG (base)",
-                "value": "-10%/-10%/-10%/-25%/-50%"
+                "effectType": "Final DMG (base)",
+                "effectId": 720010002,
+                "addAttrType": "Final DMG (base)",
+                "addAttrId": 720010002,
+                "value": "-10%/-10%/-10%/-25%/-50%",
+                "buffIcon": "No Icon",
+                "buffId": 720010000
             }
         ],
         "mechanic": [
@@ -1600,12 +1654,22 @@
         "type": "Raid",
         "effects": [
             {
-                "type": "Final DMG (base)",
-                "value": "25%/25%/30%/30%/30%/30%"
+                "effectType": "Final DMG (base)",
+                "effectId": 720010001,
+                "addAttrType": "Final DMG (base)",
+                "addAttrId": 720010001,
+                "value": "25%/25%/30%/30%/30%/30%",
+                "buffIcon": "No Icon",
+                "buffId": 720010000
             },
             {
-                "type": "Final DMG (base)",
-                "value": "-10%/-10%/-10%/-25%/-50%/-65%"
+                "effectType": "Final DMG (base)",
+                "effectId": 720010002,
+                "addAttrType": "Final DMG (base)",
+                "addAttrId": 720010002,
+                "value": "-10%/-10%/-10%/-25%/-50%/-65%",
+                "buffIcon": "No Icon",
+                "buffId": 720010000
             }
         ],
         "mechanic": [
