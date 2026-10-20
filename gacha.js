@@ -12,7 +12,7 @@ const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
 const gacha = {};
 
 for (const id in GACHA) {
-    if (+id < 10) continue;
+    if (+id < 10000) continue;
 
     gacha[id] = {
         id: +id,
