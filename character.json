@@ -11943,7 +11943,9 @@
                 },
                 {
                     "damageType": "Minion (from Skill, scale with Normal attack)",
-                    "hitDamageId": "110900001"
+                    "hitDamageId": "110900001",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 }
             ],
             "icon": "11001_Normal"
@@ -11986,7 +11988,9 @@
                 },
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "110900002"
+                    "hitDamageId": "110900002",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
@@ -12040,7 +12044,9 @@
                 },
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "110900005"
+                    "hitDamageId": "110900005",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
@@ -12245,7 +12251,9 @@
                         {
                             "damageType": "Minion (scale with Skill)",
                             "hitDamageId": "110900004",
-                            "hitDamageNote": "Requires Gloomy Veil (511008)"
+                            "hitDamageNote": "Requires Gloomy Veil (511008)",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         },
                         {}
                     ],
@@ -13237,7 +13245,9 @@
                         {
                             "damageType": "Minion",
                             "hitDamageId": "110900006",
-                            "hitDamageNote": "Requires Dark Resurgence (511029)"
+                            "hitDamageNote": "Requires Dark Resurgence (511029)",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         }
                     ],
                     "hiddenParams": [],
@@ -55660,7 +55670,9 @@
             "paramsTooltips": [
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "123310001"
+                    "hitDamageId": "123310001",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
@@ -55888,7 +55900,9 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "123310002"
+                            "hitDamageId": "123310002",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         }
                     ],
                     "hiddenParams": [],
@@ -55941,7 +55955,9 @@
                         },
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "123310002"
+                            "hitDamageId": "123310002",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         }
                     ],
                     "hiddenParams": [],
@@ -71748,7 +71764,9 @@
             "paramsTooltips": [
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "130310002"
+                    "hitDamageId": "130310002",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 },
                 {
                     "damageType": "Auto Attack (3.09e, from Skill, scale with Normal attack)",
@@ -71976,7 +71994,9 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "130503001"
+                            "hitDamageId": "130503001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         },
                         {},
                         {},
@@ -72036,7 +72056,9 @@
                         },
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "130504001"
+                            "hitDamageId": "130504001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
@@ -72045,7 +72067,9 @@
                         {},
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "130504002"
+                            "hitDamageId": "130504002",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         },
                         {
                             "effectType": "Minion DMG (base)",
@@ -72344,7 +72368,9 @@
                         {},
                         {
                             "damageType": "Minion (from Skill)",
-                            "hitDamageId": "130510001"
+                            "hitDamageId": "130510001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         },
                         {},
                         {},
@@ -88185,11 +88211,15 @@
             "paramsTooltips": [
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "135900001"
+                    "hitDamageId": "135900001",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 },
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "135900002"
+                    "hitDamageId": "135900002",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
@@ -88233,7 +88263,9 @@
             "paramsTooltips": [
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "135900005"
+                    "hitDamageId": "135900005",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 }
             ],
             "icon": "13501_Skill_Support"
@@ -88297,7 +88329,9 @@
                         {
                             "damageType": "Minion (scale with Skill)",
                             "hitDamageId": "135900004",
-                            "hitDamageNote": "Requires Burst Shooting (513502)"
+                            "hitDamageNote": "Requires Burst Shooting (513502)",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         }
                     ],
                     "hiddenParams": [],
@@ -88404,7 +88438,9 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "135900003",
-                            "hitDamageNote": "Requires Thread the Needle (513504)"
+                            "hitDamageNote": "Requires Thread the Needle (513504)",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         }
                     ],
                     "hiddenParams": [],
@@ -123749,11 +123785,15 @@
             "paramsTooltips": [
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "147300001"
+                    "hitDamageId": "147300001",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 },
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "147300002"
+                    "hitDamageId": "147300002",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrPercent": 100
                 },
                 {
                     "effectType": "ATK (%)",
@@ -123983,7 +124023,9 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "147300003"
+                            "hitDamageId": "147300003",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         },
                         {
                             "effectType": "Minion DMG (base)",
@@ -124210,7 +124252,9 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill)",
-                            "hitDamageId": "147300004"
+                            "hitDamageId": "147300004",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         }
                     ],
                     "hiddenParams": [],
@@ -124429,7 +124473,9 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill)",
-                            "hitDamageId": "147300005"
+                            "hitDamageId": "147300005",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrPercent": 100
                         }
                     ],
                     "hiddenParams": [],
@@ -148015,7 +148061,8 @@
                 },
                 {
                     "damageType": "Minion (from Normal attack, scale with Normal attack)",
-                    "hitDamageId": "158100006"
+                    "hitDamageId": "158100006",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                 },
                 {
                     "buffIcon": "No Icon",
@@ -148023,7 +148070,8 @@
                 },
                 {
                     "damageType": "Minion (from Normal attack, scale with Normal attack)",
-                    "hitDamageId": "158100007"
+                    "hitDamageId": "158100007",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                 }
             ],
             "icon": "15801_Normal"
@@ -148063,11 +148111,13 @@
                 {},
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "158310002"
+                    "hitDamageId": "158310002",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                 },
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "158310003"
+                    "hitDamageId": "158310003",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
@@ -148110,7 +148160,8 @@
                 },
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
-                    "hitDamageId": "158320003"
+                    "hitDamageId": "158320003",
+                    "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                 }
             ],
             "icon": "15801_Skill_Support"
@@ -148191,19 +148242,23 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "158501001"
+                            "hitDamageId": "158501001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "158501002"
+                            "hitDamageId": "158501002",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "158501003"
+                            "hitDamageId": "158501003",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "158501004"
+                            "hitDamageId": "158501004",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         }
                     ],
                     "hiddenParams": [],
@@ -148240,7 +148295,8 @@
                         {},
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "158502001"
+                            "hitDamageId": "158502001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {}
                     ],
@@ -148401,7 +148457,8 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill)",
-                            "hitDamageId": "158506001"
+                            "hitDamageId": "158506001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         }
                     ],
                     "hiddenParams": [],
@@ -148577,12 +148634,14 @@
                         {},
                         {
                             "damageType": "Minion (from Skill)",
-                            "hitDamageId": "158511001"
+                            "hitDamageId": "158511001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {},
                         {
                             "damageType": "Minion (from Skill)",
-                            "hitDamageId": "158511002"
+                            "hitDamageId": "158511002",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "effectType": "Ignis DMG (base)",
@@ -149045,7 +149104,8 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "158523001"
+                            "hitDamageId": "158523001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {},
                         {
@@ -149104,11 +149164,13 @@
                     "paramsTooltips": [
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "158524001"
+                            "hitDamageId": "158524001",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "158524002"
+                            "hitDamageId": "158524002",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "effectType": "ELEMENTTYPE_:(Ignis) Minion Crit Rate",
@@ -149300,12 +149362,14 @@
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "158528001",
-                            "hitDamageNote": "Requires Heart's Benediction (515828)"
+                            "hitDamageNote": "Requires Heart's Benediction (515828)",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "158528002",
-                            "hitDamageNote": "Requires Heart's Benediction (515828)"
+                            "hitDamageNote": "Requires Heart's Benediction (515828)",
+                            "summonAttrType": "Copies summoner's stats from the start of battle (later buffs excluded)"
                         }
                     ],
                     "hiddenParams": [],

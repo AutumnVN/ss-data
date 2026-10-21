@@ -13,7 +13,7 @@ const SCOREBOSSABILITY = require('./EN/bin/ScoreBossAbility.json');
 const SCOREBOSSGETCONTROL = require('./EN/bin/ScoreBossGetControl.json');
 const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
 const ITEM = require('./EN/bin/Item.json');
-const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, potentialLabel } = require('./hotfix');
+const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, potentialLabel } = require('./hotfix');
 const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
 const LANG_SKILL = require('./EN/language/en_US/Skill.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
@@ -890,10 +890,13 @@ function getHitDamageNote(hitDamageId) {
 function resolveParamsTooltips(params) {
     return params.map(param => {
         const hitDamageId = getHitDamageIdFromParam(param);
+        const summonInfo = hitDamageId && getHitDamageSummonInfo(hitDamageId);
         return {
             damageType: getDamageTypeFromParam(param),
             hitDamageId,
             hitDamageNote: hitDamageId && getHitDamageNote(hitDamageId).join('; ') || undefined,
+            summonAttrType: summonInfo?.summonAttrType,
+            summonAttrPercent: summonInfo?.summonAttrPercent,
             effectType: getEffectTypeFromParam(param),
             effectId: getEffectIdFromParam(param),
             addAttrType: getAddAttrTypeFromParam(param),

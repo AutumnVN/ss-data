@@ -4,6 +4,7 @@ const HOTFIX_FILE = `${__dirname}/hotfix/out/Hotfix.cs`;
 
 const CHARACTER = require('./EN/bin/Character.json');
 const HITDAMAGE = require('./EN/bin/HitDamage.json');
+const SKILL = require('./EN/bin/Skill.json');
 const POTENTIAL = require('./EN/bin/Potential.json');
 const ITEM = require('./EN/bin/Item.json');
 const LANG_ITEM = require('./EN/language/en_US/Item.json');
@@ -11,6 +12,12 @@ const LANG_ITEM = require('./EN/language/en_US/Item.json');
 const ELEMENTS = { WE: 1, FE: 2, SE: 3, AE: 4, LE: 5, DE: 6 };
 const ELEMENTS_BY_NAME = { Water: 1, Fire: 2, Land: 3, Earth: 3, Air: 4, Wind: 4, Light: 5, Dark: 6 };
 const ELEMENT_NAMES = { 1: 'Aqua', 2: 'Ignis', 3: 'Terra', 4: 'Ventus', 5: 'Lux', 6: 'Umbra' };
+
+const SUMMON_ATTR_TYPE_LABEL = {
+    Self: 'Self, uses its own stats',
+    Inherit: "Inherit, copies summoner's current stats (includes active buffs)",
+    InheritByInitialSnapshot: "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+};
 
 const ELEMENT_CODES = /(?:\(\s*(?:int|elementType)\s*\)\s*[\w.]*)?elementType(?:\s*\)\s*|\s*[!=]=\s*)([1-6])\b/g;
 
@@ -21,6 +28,7 @@ const POTENTIAL_SUFFIX = /_P(\d+)$/;
 
 const NAMESPACE = /^namespace\s+(\S+)/;
 const CLASS_DECL = /^\s*(?:(?:public|private|protected|internal|static|sealed|abstract|partial)\s+)*class\s+/;
+const CLASS_NAME = /^\s*(?:(?:public|private|protected|internal|static|sealed|abstract|partial)\s+)*class\s+(\w+)/;
 const BOSS_TAG_DECL = /^\s*(?:(?:public|private|protected|internal|static|readonly|const)\s+)*string\s+(\w*(?:TagId|EntryId)\w*)\s*=\s*"(\d{6})"\s*;/;
 const BOSS_BUFF_DECL = /^\s*(?:(?:public|private|protected|internal|static|readonly|const)\s+)*int\s+(\w+)\s*=\s*(631\d{6})\s*;/;
 const JOINT_DRILL_NAMESPACE = /^namespace\s+AIScript\.Monster\._(\d{5})/;
@@ -44,6 +52,10 @@ const NOT_DAMAGE_APPLY = /(?:\.AddFromAttr|\.AddBuff|buffId\s*=\s*\d|SetBuff)/;
 const HITDAMAGE_PARAM = /^\s*(?:public|private|protected|internal)[\w\s<>\[\],.?]*\s(\w+)\s*\([^)]*\bint\s+hitDamageId\b/;
 const CALL_WITH_ID = /\b(\w+)\s*\(/g;
 const NO_DAMAGE_METHOD = 'OnReceiveNoDamage';
+const CHARACTER_NAMESPACE = /^namespace AIScript\.Character\._(\d{3})01/;
+const SUMMON_ATTR_ASSIGN = /summonAttrType\s*=\s*SummonAttrType\.(\w+)/;
+const SUMMON_ATTR_PERCENT_ASSIGN = /attrPercent\s*=\s*(\w+|\d+)/;
+const INT_DECL = /^\s*(?:(?:public|private|protected|internal)\s+)?(?:static\s+)?(?:readonly\s+)?int\s+(\w+)\s*=\s*(\d+)\s*;/;
 
 const potentialByChar = {};
 for (const potential of Object.values(POTENTIAL)) {
@@ -245,6 +257,148 @@ function getHotfixHitDamage() {
 
 function getHiddenHitDamageIds(potentialId) {
     return getHotfixHitDamage().potential[potentialId] || [];
+}
+
+let characterSummonInfo = null;
+let classSummonInfo = null;
+
+function summarizeSummonInfo(attrs, percents, ints) {
+    if (!attrs.size) return;
+
+    const values = [...percents]
+        .map(value => ints[value] ?? (/^\d+$/.test(value) ? +value : undefined))
+        .filter(value => value !== undefined);
+
+    return {
+        summonAttrType: [...attrs].map(attr => SUMMON_ATTR_TYPE_LABEL[attr] || attr).join(' / '),
+        attrPercent: values.length && values.every(value => value === values[0]) ? values[0] : undefined,
+    };
+}
+
+function getSummonInfoData() {
+    if (characterSummonInfo) return;
+
+    characterSummonInfo = {};
+    classSummonInfo = {};
+
+    let namespace = '';
+    let charId = null;
+    let className = null;
+    let ints = {};
+    let current = null;
+    let currentClass = null;
+
+    const flushClass = () => {
+        if (!namespace || !className || !currentClass) return;
+
+        const info = summarizeSummonInfo(currentClass.attrs, currentClass.percents, ints);
+        if (info) classSummonInfo[`${namespace}|${className}`] = info;
+        currentClass = null;
+    };
+
+    const flushCharacter = () => {
+        if (!charId || !current) return;
+
+        const info = summarizeSummonInfo(current.attrs, current.percents, ints);
+        if (info) characterSummonInfo[charId] = info;
+    };
+
+    for (const line of getSource().split(/\r?\n/)) {
+        const foundNamespace = /^namespace\s+(\S+)/.exec(line);
+        if (foundNamespace) {
+            flushClass();
+            flushCharacter();
+            namespace = foundNamespace[1];
+            charId = CHARACTER_NAMESPACE.exec(line)?.[1] || null;
+            className = null;
+            ints = {};
+            current = charId ? { attrs: new Set(), percents: new Set() } : null;
+            continue;
+        }
+
+        const foundClass = CLASS_NAME.exec(line);
+        if (foundClass) {
+            flushClass();
+            className = foundClass[1];
+            currentClass = { attrs: new Set(), percents: new Set() };
+        }
+
+        if (!charId) continue;
+
+        const declaration = INT_DECL.exec(line);
+        if (declaration) ints[declaration[1]] = +declaration[2];
+
+        const attr = SUMMON_ATTR_ASSIGN.exec(line);
+        if (attr) {
+            current.attrs.add(attr[1]);
+            currentClass?.attrs.add(attr[1]);
+        }
+
+        const percent = SUMMON_ATTR_PERCENT_ASSIGN.exec(line);
+        if (percent) {
+            current.percents.add(percent[1]);
+            currentClass?.percents.add(percent[1]);
+        }
+    }
+
+    flushClass();
+    flushCharacter();
+}
+
+function getCharacterSummonInfo() {
+    getSummonInfoData();
+    return characterSummonInfo;
+}
+
+function getClassSummonInfo(fcPath) {
+    getSummonInfoData();
+    if (!fcPath) return;
+
+    const index = fcPath.lastIndexOf('.');
+    if (index < 0) return;
+
+    return classSummonInfo[`${fcPath.slice(0, index)}|${fcPath.slice(index + 1)}`];
+}
+
+let hitDamageSkillIds = null;
+
+function getHitDamageSkillIds() {
+    if (hitDamageSkillIds) return hitDamageSkillIds;
+
+    hitDamageSkillIds = {};
+
+    for (const [skillId, skill] of Object.entries(SKILL)) {
+        for (let index = 1; index <= 10; index++) {
+            const match = new RegExp(`(?:^|,)HitDamage,DamageNum,(\\d+)`).exec(skill[`Param${index}`] || '');
+            if (!match) continue;
+
+            (hitDamageSkillIds[match[1]] ||= []).push(+skillId);
+        }
+    }
+
+    return hitDamageSkillIds;
+}
+
+function getHitDamageSummonInfo(hitDamageId) {
+    const hitDamage = HITDAMAGE[hitDamageId];
+    if (!hitDamage || hitDamage.DamageType !== 7) return;
+
+    const charId = getCharId(String(hitDamageId)) || getCharId(String(hitDamage.SkillId || ''));
+    const skillIds = hitDamage.SkillId
+        ? [hitDamage.SkillId]
+        : getHitDamageSkillIds()[hitDamageId] || Object.keys(SKILL).filter(skillId => String(hitDamageId).startsWith(skillId));
+    const classInfos = skillIds
+        .map(skillId => getClassSummonInfo(SKILL[skillId]?.FCPath))
+        .filter(Boolean);
+    const classInfo = classInfos.length && classInfos.every(info => info.summonAttrType === classInfos[0].summonAttrType)
+        ? classInfos[0]
+        : null;
+    const summonInfo = classInfo || (charId && getCharacterSummonInfo()[charId]);
+
+    return {
+        summonAttrType: summonInfo?.summonAttrType,
+        summonAttrPercent: summonInfo?.attrPercent,
+    };
 }
 
 function parseHitDamageNotes(source) {
@@ -459,4 +613,4 @@ function getHitDamageNote(hitDamageId) {
     return notes[hitDamageId] || [];
 }
 
-module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };
+module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };
