@@ -440,9 +440,9 @@ function getHitDamageAreaEffectInfo(hitDamageId) {
     if (typeof copyBattleDataBeforeAttack !== 'boolean') return;
 
     return {
-        areaEffectAttrType: copyBattleDataBeforeAttack
-            ? "AreaEffect, refreshes summoner's stats before each attack"
-            : "AreaEffectSnapshot, snapshots summoner's stats when created",
+        areaEffect: copyBattleDataBeforeAttack
+            ? "AreaEffect-Refresh, refreshes summoner's stats before each attack"
+            : "AreaEffect-Snapshot, snapshots summoner's stats when created",
     };
 }
 

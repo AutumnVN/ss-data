@@ -131,9 +131,9 @@
                     "hitDamageId": "103310001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "103000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "Auto Attack DMG (base)",
@@ -176,9 +176,9 @@
                     "hitDamageId": "103320001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "103000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "10301_Skill_Support"
@@ -212,9 +212,9 @@
                     "hitDamageId": "103400001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "103000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "10301_Ultra"
@@ -336,9 +336,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "103304001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -935,9 +935,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "103525001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -4134,9 +4134,9 @@
                     "hitDamageId": "107400001"
                 },
                 {
-                    "damageType": "Skill (2.31e, from Skill, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Skill (2.31e, from Skill, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "107400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "10701_Ultra"
@@ -4421,9 +4421,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "107310601",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_Stun",
@@ -5010,9 +5010,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "107322301",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Skill DMG Taken (base)",
@@ -5107,9 +5107,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "107322501",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Lux DMG Taken (base)",
@@ -5320,9 +5320,9 @@
                         {},
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "107322301",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Skill DMG Taken (base)",
@@ -8880,9 +8880,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "108521001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -12050,9 +12050,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "110300004",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot)",
@@ -12107,14 +12107,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "110400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "110400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
@@ -12263,12 +12263,12 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Minion (scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "110900004",
                             "hitDamageNote": "Requires Gloomy Veil (511008)",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {}
                     ],
@@ -12848,9 +12848,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "110300006",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -12879,9 +12879,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "110300004",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -13260,12 +13260,12 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Minion (InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "110900006",
                             "hitDamageNote": "Requires Dark Resurgence (511029)",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -15947,9 +15947,9 @@
                     "hitDamageId": "111310001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "111000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11101_Skill_Main"
@@ -15976,9 +15976,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "111320001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11101_Skill_Support"
@@ -16006,9 +16006,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "111400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11101_Ultra"
@@ -16115,14 +16115,14 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "111502001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "111502002",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_Frozen",
@@ -16219,10 +16219,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "111504001",
                             "hitDamageNote": "Requires Keep Strangers at Bay (511111)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -16540,10 +16540,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "111511001",
                             "hitDamageNote": "Requires Keep Strangers at Bay (511111)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_Frozen",
@@ -16598,9 +16598,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                            "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                             "hitDamageId": "111000001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ATK (%)",
@@ -16769,10 +16769,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (AreaEffectSnapshot)",
+                            "damageType": "Ultimate (AreaEffect-Snapshot)",
                             "hitDamageId": "111541001",
                             "hitDamageNote": "Requires Icicle Rain (511141)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -17032,9 +17032,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "111523001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_Stun",
@@ -17084,9 +17084,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "111524001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -17508,10 +17508,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "111529001",
                             "hitDamageNote": "Requires Distressed Asset (511129)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -20190,9 +20190,9 @@
                     "hitDamageId": "112310002"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "112100000",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11201_Skill_Main"
@@ -20230,9 +20230,9 @@
                     "hitDamageId": "112320002"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "112100000",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11201_Skill_Support"
@@ -20266,9 +20266,9 @@
                     "hitDamageId": "112400001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "112100000",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11201_Ultra"
@@ -20381,9 +20381,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Normal attack, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Normal attack, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "112100010",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {}
                     ],
@@ -23967,9 +23967,9 @@
                     "hitDamageId": "113310021"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "113000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11301_Skill_Main"
@@ -24007,9 +24007,9 @@
                     "hitDamageId": "113320001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "113000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11301_Skill_Support"
@@ -24044,9 +24044,9 @@
                     "hitDamageId": "113400011"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "113000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
@@ -24244,9 +24244,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "113310401",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -24443,9 +24443,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "113310901",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -24475,9 +24475,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "113311001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -24823,9 +24823,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (AreaEffectSnapshot)",
+                            "damageType": "Ultimate (AreaEffect-Snapshot)",
                             "hitDamageId": "113404301",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -25260,9 +25260,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "113323001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -25365,9 +25365,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "113322901",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -28053,20 +28053,20 @@
                     "hitDamageId": "114310001"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "114310002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Skill (3.17e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (3.17e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "114310003",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {},
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "114000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "buffIcon": "No Icon",
@@ -28105,9 +28105,9 @@
                 },
                 {},
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "114000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11401_Skill_Support"
@@ -28151,14 +28151,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "114400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "114400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "buffIcon": "No Icon",
@@ -28166,9 +28166,9 @@
                 },
                 {},
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "114000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "buffIcon": "No Icon",
@@ -28222,9 +28222,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114501001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "(Ignis) Skill DMG (base)",
@@ -28371,19 +28371,19 @@
                     ],
                     "hiddenParamsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114504001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114504002",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114504003",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "icon": "11401_Potential_04",
@@ -28474,10 +28474,10 @@
                             "buffId": 11406012
                         },
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114506001",
                             "hitDamageNote": "Requires Efficient Use (511406)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [
@@ -29014,19 +29014,19 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114521001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114521002",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114521003",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -29191,9 +29191,9 @@
                             "addAttrId": 11425011
                         },
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114525001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -29328,9 +29328,9 @@
                             "buffId": 11428011
                         },
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "114528001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -32168,9 +32168,9 @@
                     "hitDamageId": "115110001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "115000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11501_Skill_Main"
@@ -32363,9 +32363,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "115506001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -32489,9 +32489,9 @@
                             "hitDamageId": "115110302"
                         },
                         {
-                            "damageType": "Auto Attack (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "115110301",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -32564,9 +32564,9 @@
                             "hitDamageId": "115308001"
                         },
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "115308002",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -32708,9 +32708,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "115211301",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_Stun",
@@ -32807,9 +32807,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                            "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                             "hitDamageId": "115000001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ATK (%)",
@@ -33065,9 +33065,9 @@
                             "addAttrId": 11522011
                         },
                         {
-                            "damageType": "Skill (from Normal attack, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Normal attack, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "115122202",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -33316,9 +33316,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "115322701",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ELEMENTTYPE_:(Lux) Skill Crit DMG",
@@ -33425,9 +33425,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "115323001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {}
                     ],
@@ -36276,9 +36276,9 @@
                     "buffId": 11690011
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "116000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11601_Skill_Main"
@@ -36311,18 +36311,18 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "116320001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "buffIcon": "No Icon",
                     "buffId": 11691011
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "116320002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11601_Skill_Support"
@@ -36351,14 +36351,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "116400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "116400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11601_Ultra"
@@ -40132,9 +40132,9 @@
                     "hitDamageId": "117502001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "117000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11701_Skill_Main"
@@ -40161,9 +40161,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "117320001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11701_Skill_Support"
@@ -40663,9 +40663,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                            "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                             "hitDamageId": "117000001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ATK (%)",
@@ -40717,10 +40717,10 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "117512001",
                             "hitDamageNote": "Requires Neutral Left, Live Right, Ground Below (511712)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -41071,9 +41071,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "117524001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -44447,10 +44447,10 @@
                             "buffId": 11808011
                         },
                         {
-                            "damageType": "Auto Attack (AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (AreaEffect-Snapshot)",
                             "hitDamageId": "118000017",
                             "hitDamageNote": "Requires Toxin Infusion (511824)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ATK (%)",
@@ -44976,10 +44976,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "118000011",
                             "hitDamageNote": "Requires Toxin Infusion (511824)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -47995,9 +47995,9 @@
                     "hitDamageId": "119310001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "119000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11901_Skill_Main"
@@ -48030,9 +48030,9 @@
                     "hitDamageId": "119320001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "119000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11901_Skill_Support"
@@ -48076,9 +48076,9 @@
                     "hitDamageId": "119900003"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "119000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "11901_Ultra"
@@ -48106,9 +48106,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Normal attack, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Normal attack, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "119501001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -48829,9 +48829,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "119503001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {}
@@ -51876,9 +51876,9 @@
                     "hitDamageId": "120310001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "120000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "12001_Skill_Main"
@@ -52749,9 +52749,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "120524001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -55715,9 +55715,9 @@
                     "hitDamageId": "123100002"
                 },
                 {
-                    "damageType": "Auto Attack (4.04e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (4.04e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "123100003",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Auto Attack (4.04e, from Normal attack, scale with Normal attack)",
@@ -55764,11 +55764,11 @@
                     "summonAttrPercent": 100
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                     "hitDamageId": "123310004",
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "ATK (%)",
@@ -55818,9 +55818,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "123320001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "ATK (%)",
@@ -55864,9 +55864,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "123300001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "12301_Ultra"
@@ -55901,11 +55901,11 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "123310004",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Mark DMG (base)",
@@ -55996,11 +55996,11 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "123310002",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -56052,11 +56052,11 @@
                             "buffId": 12304011
                         },
                         {
-                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "123310002",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -56359,11 +56359,11 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "123310004",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ATK (%)",
@@ -56655,9 +56655,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "123320002",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Ventus DMG Taken (base)",
@@ -59782,9 +59782,9 @@
                     "hitDamageId": "125310001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "125000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "12501_Skill_Support"
@@ -60325,9 +60325,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "125310901",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -60516,9 +60516,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                            "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                             "hitDamageId": "125000001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ATK (%)",
@@ -60917,9 +60917,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "125322401",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -61080,9 +61080,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "125322701",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -64183,9 +64183,9 @@
                     "hitDamageId": "126400001"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "126400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "12601_Ultra"
@@ -64788,9 +64788,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "126542001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -64820,9 +64820,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "126543001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -67986,9 +67986,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (12.24e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (12.24e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "127310001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (12.24e, from Skill, scale with Skill)",
@@ -68028,9 +68028,9 @@
                     "hitDamageId": "127320001"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "127320002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {},
                 {}
@@ -68101,9 +68101,9 @@
                             "addAttrId": 12750111
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "127501001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -68168,9 +68168,9 @@
                         },
                         {},
                         {
-                            "damageType": "Skill (4.66e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (4.66e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "127502005",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -68199,9 +68199,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "127503001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -68824,9 +68824,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "127522001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -69103,9 +69103,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "127530001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -71899,11 +71899,11 @@
                     "hitDamageId": "130310003"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                     "hitDamageId": "130000001",
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13001_Skill_Main"
@@ -71947,18 +71947,18 @@
                     "hitDamageId": "130320003"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "130320004",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "130320005"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "130320006",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13001_Skill_Support"
@@ -71986,9 +71986,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "130400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13001_Ultra"
@@ -72194,11 +72194,11 @@
                         },
                         {},
                         {
-                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "130504002",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Minion DMG (base)",
@@ -72496,11 +72496,11 @@
                         {},
                         {},
                         {
-                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "130510001",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -73075,9 +73075,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "130523001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "(Aqua) Skill DMG (base)",
@@ -73131,9 +73131,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "130524002",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "(Aqua) Skill DMG (base)",
@@ -76333,9 +76333,9 @@
                     "hitDamageId": "132100006"
                 },
                 {
-                    "damageType": "Auto Attack (0.52e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (0.52e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "132100005",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13201_Normal"
@@ -76381,9 +76381,9 @@
                     "hitDamageId": "132310005"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "132000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13201_Skill_Main"
@@ -76415,9 +76415,9 @@
                     "hitDamageId": "132320001"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "132320002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13201_Skill_Support"
@@ -76445,9 +76445,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "132400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13201_Ultra"
@@ -76624,9 +76624,9 @@
                             "addAttrId": 13204011
                         },
                         {
-                            "damageType": "Skill (2.98e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (2.98e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "132310401",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -76812,9 +76812,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "132310801",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -76995,9 +76995,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                            "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                             "hitDamageId": "132000001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Skill DMG (base)",
@@ -77169,14 +77169,14 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Ultimate (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "132400002",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
-                            "damageType": "Ultimate (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "132400003",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -77263,9 +77263,9 @@
                     ],
                     "hiddenParamsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "132522001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "icon": "13201_Potential_22",
@@ -80340,9 +80340,9 @@
                     "hitDamageId": "133310001"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "133000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13301_Skill_Main"
@@ -80371,18 +80371,18 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "133320001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "133320002"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "133320003",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13301_Skill_Support"
@@ -80539,9 +80539,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "133504001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseDown",
@@ -80858,9 +80858,9 @@
                             "buffId": 13351111
                         },
                         {
-                            "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                            "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                             "hitDamageId": "133000001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -81295,9 +81295,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "133524001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -81540,9 +81540,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "133530001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "Ventus DMG (base)",
@@ -84347,14 +84347,14 @@
                     "hitDamageId": "134100008"
                 },
                 {
-                    "damageType": "Auto Attack (from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "134100009",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "134000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13401_Normal"
@@ -84396,9 +84396,9 @@
                     "hitDamageId": "134310002"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "134000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13401_Skill_Main"
@@ -84428,15 +84428,15 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "134320001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {},
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "134000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13401_Skill_Support"
@@ -84482,9 +84482,9 @@
                 },
                 {},
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "134000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13401_Ultra"
@@ -84862,10 +84862,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "134509001",
                             "hitDamageNote": "Requires Blast Chase (513409)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -88314,24 +88314,24 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "135100001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "135100002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Auto Attack (1.87e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (1.87e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "135100003",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "135100004",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13501_Normal"
@@ -88422,11 +88422,11 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                    "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                     "hitDamageId": "135900005",
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13501_Skill_Support"
@@ -88455,14 +88455,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "135400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "135400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13501_Ultra"
@@ -88490,12 +88490,12 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Minion (scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "135900004",
                             "hitDamageNote": "Requires Burst Shooting (513502)",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -89440,10 +89440,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (AreaEffectSnapshot)",
+                            "damageType": "Skill (AreaEffect-Snapshot)",
                             "hitDamageId": "135900006",
                             "hitDamageNote": "Requires Malice (513528)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -92258,14 +92258,14 @@
                     "hitDamageId": "137100005"
                 },
                 {
-                    "damageType": "Auto Attack (1.94e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (1.94e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "137100006",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "137000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13701_Normal"
@@ -92307,14 +92307,14 @@
                     "buffId": 13700011
                 },
                 {
-                    "damageType": "Skill (7.37e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (7.37e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "137300002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "137000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13701_Skill_Main"
@@ -92343,9 +92343,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "137300010",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Auto Attack (from Normal attack, scale with Skill)",
@@ -92377,9 +92377,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "137900001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "13701_Ultra"
@@ -92442,9 +92442,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                             "hitDamageId": "137100007",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -92526,9 +92526,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "137300003",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Ventus DMG (base)",
@@ -92579,9 +92579,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Normal attack, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Normal attack, AreaEffect-Snapshot)",
                             "hitDamageId": "137100008",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "Ventus DMG (base)",
@@ -93317,9 +93317,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Normal attack, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Normal attack, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "137300013",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Attack Speed (%)",
@@ -96274,9 +96274,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "139310001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "Aqua DMG (base)",
@@ -96346,9 +96346,9 @@
                     "hitDamageId": "139320001"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "139320002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
@@ -96402,10 +96402,10 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "139400001",
                     "hitDamageNote": "Can be replaced by 139400101 (no damage only); Can be replaced by 139400201 (requires Wide Blade Arc (513908), damage tag 139_P08_Mark)",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "ATK (%)",
@@ -96424,10 +96424,10 @@
                     "buffId": 13994011
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "139400002",
                     "hitDamageNote": "Can be replaced by 139400102 (no damage only); Can be replaced by 139400302 (requires Clothesline Stance (513905), damage tag 139_P05_Skill)",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {},
                 {},
@@ -96510,9 +96510,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (5.1e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (5.1e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "139502001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "Aqua DMG (base)",
@@ -96589,9 +96589,9 @@
                             "buffId": 13904011
                         },
                         {
-                            "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                            "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                             "hitDamageId": "139504001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -97437,9 +97437,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "139524001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -97640,10 +97640,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "139530001",
                             "hitDamageNote": "Requires Crescent Icicle (513930)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -100235,18 +100235,18 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (11.16e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (11.16e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "140310002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (3.52e, from Skill, scale with Skill)",
                     "hitDamageId": "140310003"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "140000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14001_Skill_Main"
@@ -100279,9 +100279,9 @@
                     "hitDamageId": "140320002"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "140000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14001_Skill_Support"
@@ -100312,19 +100312,19 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "140400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "140400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "140000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14001_Ultra"
@@ -100462,10 +100462,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (2.67e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (2.67e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "140503001",
                             "hitDamageNote": "Requires Fluffy Rechamber (514003)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {
@@ -100697,16 +100697,16 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "140508001",
                             "hitDamageNote": "Requires Cyclone Dial (514008)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "140508002",
                             "hitDamageNote": "Requires Cyclone Dial (514008)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -104439,9 +104439,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "141400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {},
                 {},
@@ -104542,9 +104542,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "141503001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -104640,9 +104640,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "141506001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -105008,9 +105008,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "141442001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -105040,9 +105040,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "141443001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -108251,9 +108251,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "142300006",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "Umbra DMG Taken (base)",
@@ -108388,9 +108388,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "142300004",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -108483,9 +108483,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "142300005",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Umbra DMG Taken (base)",
@@ -109231,9 +109231,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "142300007",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ATK (%)",
@@ -112267,9 +112267,9 @@
                     "hitDamageId": "143100001"
                 },
                 {
-                    "damageType": "Auto Attack (5.11e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (5.11e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "143100002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14301_Normal"
@@ -112304,14 +112304,14 @@
                     "hitDamageId": "143300001"
                 },
                 {
-                    "damageType": "Skill (1.87e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (1.87e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "143300002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "143000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14301_Skill_Main"
@@ -112349,9 +112349,9 @@
                     "hitDamageId": "143310002"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "143000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14301_Skill_Support"
@@ -112382,19 +112382,19 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "143400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "143400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "143000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14301_Ultra"
@@ -112433,9 +112433,9 @@
                             "buffId": 14301011
                         },
                         {
-                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "143300003",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -112472,9 +112472,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "143300003",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -112927,9 +112927,9 @@
                             "buffId": 14310011
                         },
                         {
-                            "damageType": "Skill (from Normal attack, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Normal attack, AreaEffect-Snapshot)",
                             "hitDamageId": "143300005",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -113124,9 +113124,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "143310004",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -113155,9 +113155,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "143310005",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -113239,9 +113239,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "143310008",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -113494,9 +113494,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "143310007",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -116262,21 +116262,21 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (7.81e, from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                    "damageType": "Skill (7.81e, from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                     "hitDamageId": "144310001",
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Skill (12.49e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (12.49e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "144310002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                     "hitDamageId": "144000001",
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14401_Skill_Main"
@@ -116306,10 +116306,10 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                     "hitDamageId": "144320001",
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot)",
@@ -116318,10 +116318,10 @@
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                     "hitDamageId": "144000001",
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14401_Skill_Support"
@@ -116360,10 +116360,10 @@
                     "hitDamageId": "144400002"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                     "hitDamageId": "144000001",
                     "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14401_Ultra"
@@ -116483,9 +116483,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (3.86e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (3.86e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "144310301",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -116694,10 +116694,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Normal attack, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Normal attack, AreaEffect-Snapshot)",
                             "hitDamageId": "144310701",
                             "hitDamageNote": "Requires Aqueous Phantasm (514407)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -117167,10 +117167,10 @@
                             "addAttrId": 14422011
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "144322201",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -117231,10 +117231,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "144322401",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -120199,9 +120199,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (14.08e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (14.08e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "145300001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
@@ -120238,7 +120238,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill, AreaEffect)",
                     "hitDamageId": "145300006",
-                    "areaEffectAttrType": "AreaEffect, refreshes summoner's stats before each attack"
+                    "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
@@ -120281,19 +120281,19 @@
                     "hitDamageId": "145400003"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "145400004",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "145400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "145400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14501_Ultra"
@@ -120323,10 +120323,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "145300002",
                             "hitDamageNote": "Requires Subtle Tremor (514501)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {}
@@ -120363,10 +120363,10 @@
                         {},
                         {},
                         {
-                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "145300002",
                             "hitDamageNote": "Requires Subtle Tremor (514501)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -121120,10 +121120,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "145300011",
                             "hitDamageNote": "Requires Ripple of Shadow (514523)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {},
@@ -121181,7 +121181,7 @@
                             "damageType": "Skill (from Skill, scale with Skill, AreaEffect)",
                             "hitDamageId": "145300012",
                             "hitDamageNote": "Requires Evening Rain (514524)",
-                            "areaEffectAttrType": "AreaEffect, refreshes summoner's stats before each attack"
+                            "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack"
                         },
                         {
                             "addAttrType": "DEF PEN (base)",
@@ -121235,10 +121235,10 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Ultimate (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "145300009",
                             "hitDamageNote": "Requires Solitary Lantern (514525)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {
@@ -124161,9 +124161,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "147400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
@@ -124278,11 +124278,11 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "147300003",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Minion DMG (base)",
@@ -124508,11 +124508,11 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "147300004",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -124937,9 +124937,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "147300008",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -128045,9 +128045,9 @@
                     "effectId": 14900011
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "149000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14901_Skill_Main"
@@ -128081,14 +128081,14 @@
                     "hitDamageId": "149320001"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "149320002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "149000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14901_Skill_Support"
@@ -128124,9 +128124,9 @@
                 },
                 {},
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "149000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "14901_Ultra"
@@ -128947,9 +128947,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "149323101",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -129163,10 +129163,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "149330101",
                             "hitDamageNote": "Requires Hexacalamity: Hallowed Chains (514927)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -131972,9 +131972,9 @@
                     "hitDamageId": "150100005"
                 },
                 {
-                    "damageType": "Auto Attack (0.58e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (0.58e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "150100007",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "15001_Normal"
@@ -132013,9 +132013,9 @@
                     "hitDamageId": "150310002"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "150000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "15001_Skill_Main"
@@ -132046,19 +132046,19 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "150320003",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "150320001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "150000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
@@ -132092,14 +132092,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "150400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "150000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "15001_Ultra"
@@ -132129,9 +132129,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "150310101",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -132167,9 +132167,9 @@
                             "hitDamageId": "150310201"
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "150310203",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -132344,9 +132344,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "150310601",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -132501,9 +132501,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "150311101",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {}
                     ],
@@ -132676,9 +132676,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Ultimate (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "150404101",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -132796,9 +132796,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "150322101",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -132862,14 +132862,14 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "150322301",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "150322302",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -132934,9 +132934,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "150322501",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -135908,9 +135908,9 @@
                     "hitDamageId": "155310003"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "155000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "15501_Skill_Main"
@@ -135956,9 +135956,9 @@
                     "hitDamageNote": "Requires Neutral Left, Live Right, Ground Below (511712)"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "155000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "15501_Skill_Support"
@@ -135988,14 +135988,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "155400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "155000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "15501_Ultra"
@@ -140319,9 +140319,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "156320002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "EFFECT_HP_RECOVERY",
@@ -140330,9 +140330,9 @@
                     "buffId": 15691013
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "156320004",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
@@ -141319,10 +141319,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "156320005",
                             "hitDamageNote": "Requires Feather Frenzy (515625)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -141399,10 +141399,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "156320006",
                             "hitDamageNote": "Requires Twinkle Toss (515627)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -144261,9 +144261,9 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Auto Attack (3.3388e, from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (3.3388e, from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                     "hitDamageId": "157100001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
@@ -144307,14 +144307,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Auto Attack (15e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (15e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "157300001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (15e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (15e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "157300002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
@@ -144431,9 +144431,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "157300003",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "(Umbra) Ultimate Crit Rate (base)",
@@ -144477,9 +144477,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "157300006",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Ultimate Crit Rate (base)",
@@ -144529,9 +144529,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "157300004",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ATK (%)",
@@ -144657,9 +144657,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "157300007",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {},
                         {
@@ -144805,9 +144805,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "157300008",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ELEMENTTYPE_:(Umbra) Auto Attack DMG",
@@ -145154,9 +145154,9 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Ultimate (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "157400002",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ELEMENTTYPE_:(Umbra) Ultimate DMG",
@@ -145336,9 +145336,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "157300015",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -145373,9 +145373,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Ultimate (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "157300016",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "(Umbra) Ultimate DMG (base)",
@@ -148505,9 +148505,9 @@
                     "hitDamageId": "158400002"
                 },
                 {
-                    "damageType": "Ultimate (1.35e, from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (1.35e, from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "158400003",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {},
                 {
@@ -148668,9 +148668,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "158504001",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "buffIcon": "No Icon",
@@ -148764,7 +148764,7 @@
                             "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffect)",
                             "hitDamageId": "158506001",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffectAttrType": "AreaEffect, refreshes summoner's stats before each attack"
+                            "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack"
                         }
                     ],
                     "hiddenParams": [],
@@ -148945,10 +148945,10 @@
                         },
                         {},
                         {
-                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "158511002",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Ignis DMG (base)",
@@ -152567,18 +152567,18 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (32.33e, from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (32.33e, from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "159310001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (0.3e, from Skill, scale with Skill)",
                     "hitDamageId": "159310002"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "159000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "15901_Skill_Main"
@@ -152607,14 +152607,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "159320001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "159320002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
@@ -152647,14 +152647,14 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "159400001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "159400002",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "15901_Ultra"
@@ -152745,9 +152745,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                             "hitDamageId": "159310301",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -152780,9 +152780,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Normal attack, scale with Normal attack, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Normal attack, scale with Normal attack, AreaEffect-Snapshot)",
                             "hitDamageId": "159310402",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "(Terra) Auto Attack DMG (base)",
@@ -153389,9 +153389,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "159321101",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "(Terra) Skill DMG (base)",
@@ -156569,7 +156569,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill, AreaEffect)",
                     "hitDamageId": "160320002",
-                    "areaEffectAttrType": "AreaEffect, refreshes summoner's stats before each attack"
+                    "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack"
                 },
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
@@ -156730,10 +156730,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "160502001",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Aqua DMG Taken (base)",
@@ -156830,10 +156830,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
                             "hitDamageId": "160504001",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Aqua DMG Taken (base)",
@@ -156992,10 +156992,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "160507001",
                             "hitDamageNote": "Requires Clustered Foam (516007)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "Aqua DMG (base)",
@@ -157249,10 +157249,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "160510001",
                             "hitDamageNote": "Requires Wavering Glow (516010)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Aqua DMG Taken (base)",
@@ -157913,10 +157913,10 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "160530001",
                             "hitDamageNote": "Requires Prismatic Bubbles (516030)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "Crit Rate (base)",
@@ -157950,10 +157950,10 @@
                     ],
                     "hiddenParamsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "160530002",
                             "hitDamageNote": "Requires Prismatic Bubbles (516030)",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "icon": "16001_Potential_23",
@@ -160785,14 +160785,14 @@
                     "hitDamageId": "162310002"
                 },
                 {
-                    "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffectSnapshot)",
+                    "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffect-Snapshot)",
                     "hitDamageId": "162310008",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "162000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "16201_Skill_Main"
@@ -160836,9 +160836,9 @@
                     "hitDamageId": "162320003"
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "162000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "16201_Skill_Support"
@@ -160891,9 +160891,9 @@
                     "hitDamageId": "162400003"
                 },
                 {
-                    "damageType": "Skill (from Ultimate, scale with Ultimate, AreaEffectSnapshot)",
+                    "damageType": "Skill (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
                     "hitDamageId": "162400004",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 },
                 {
                     "effectType": "Crit Rate (base)",
@@ -160912,9 +160912,9 @@
                     "buffId": 16290003
                 },
                 {
-                    "damageType": "Mark (scale with Upgrade, AreaEffectSnapshot)",
+                    "damageType": "Mark (scale with Upgrade, AreaEffect-Snapshot)",
                     "hitDamageId": "162000001",
-                    "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                 }
             ],
             "icon": "16201_Ultra_1"
@@ -161020,9 +161020,9 @@
                             "hitDamageId": "162100006"
                         },
                         {
-                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "162310008",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -161258,9 +161258,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "162310010",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "addAttrType": "Auto Attack Crit Rate (base)",
@@ -161563,9 +161563,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Ultimate, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Ultimate, AreaEffect-Snapshot)",
                             "hitDamageId": "162400007",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         },
                         {
                             "effectType": "ELEMENTTYPE_:(Lux) Auto Attack DMG",
@@ -161651,9 +161651,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "162320006",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],
@@ -161682,9 +161682,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffectSnapshot)",
+                            "damageType": "Auto Attack (from Skill, scale with Skill, AreaEffect-Snapshot)",
                             "hitDamageId": "162320004",
-                            "areaEffectAttrType": "AreaEffectSnapshot, snapshots summoner's stats when created"
+                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
                         }
                     ],
                     "hiddenParams": [],

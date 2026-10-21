@@ -894,7 +894,7 @@ function resolveParamsTooltips(params) {
         const areaEffectInfo = hitDamageId && getHitDamageAreaEffectInfo(hitDamageId);
         const damageTypeTags = [
             summonInfo?.summonAttrType?.split(',')[0],
-            areaEffectInfo?.areaEffectAttrType?.split(',')[0],
+            areaEffectInfo?.areaEffect?.split(',')[0],
         ].filter(Boolean);
         return {
             damageType: getDamageTypeFromParam(param, damageTypeTags),
@@ -902,7 +902,7 @@ function resolveParamsTooltips(params) {
             hitDamageNote: hitDamageId && getHitDamageNote(hitDamageId).join('; ') || undefined,
             summonAttrType: summonInfo?.summonAttrType,
             summonAttrPercent: summonInfo?.summonAttrPercent,
-            areaEffectAttrType: areaEffectInfo?.areaEffectAttrType,
+            areaEffect: areaEffectInfo?.areaEffect,
             effectType: getEffectTypeFromParam(param),
             effectId: getEffectIdFromParam(param),
             addAttrType: getAddAttrTypeFromParam(param),
