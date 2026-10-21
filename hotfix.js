@@ -1,4 +1,5 @@
 const { readFileSync } = require('fs');
+const { tmpdir } = require('os');
 
 const HOTFIX_FILE = `${__dirname}/hotfix/out/Hotfix.cs`;
 
@@ -8,6 +9,8 @@ const SKILL = require('./EN/bin/Skill.json');
 const POTENTIAL = require('./EN/bin/Potential.json');
 const ITEM = require('./EN/bin/Item.json');
 const LANG_ITEM = require('./EN/language/en_US/Item.json');
+
+const OUTPUT = `${tmpdir()}/areaEffect.json`;
 
 const ELEMENTS = { WE: 1, FE: 2, SE: 3, AE: 4, LE: 5, DE: 6 };
 const ELEMENTS_BY_NAME = { Water: 1, Fire: 2, Land: 3, Earth: 3, Air: 4, Wind: 4, Light: 5, Dark: 6 };
@@ -55,6 +58,7 @@ const NO_DAMAGE_METHOD = 'OnReceiveNoDamage';
 const CHARACTER_NAMESPACE = /^namespace AIScript\.Character\._(\d{3})01/;
 const SUMMON_ATTR_ASSIGN = /summonAttrType\s*=\s*SummonAttrType\.(\w+)/;
 const SUMMON_ATTR_PERCENT_ASSIGN = /attrPercent\s*=\s*(\w+|\d+)/;
+const SUMMON_CFG_REF = /(\w+)\.summonCfg\w*/;
 const INT_DECL = /^\s*(?:(?:public|private|protected|internal)\s+)?(?:static\s+)?(?:readonly\s+)?int\s+(\w+)\s*=\s*(\d+)\s*;/;
 
 const potentialByChar = {};
@@ -287,6 +291,9 @@ function getSummonInfoData() {
     let ints = {};
     let current = null;
     let currentClass = null;
+    let currentClassRefs = null;
+
+    const classSummonRefs = {};
 
     const flushClass = () => {
         if (!namespace || !className || !currentClass) return;
@@ -294,6 +301,7 @@ function getSummonInfoData() {
         const info = summarizeSummonInfo(currentClass.attrs, currentClass.percents, ints);
         if (info) classSummonInfo[`${namespace}|${className}`] = info;
         currentClass = null;
+        currentClassRefs = null;
     };
 
     const flushCharacter = () => {
@@ -321,6 +329,8 @@ function getSummonInfoData() {
             flushClass();
             className = foundClass[1];
             currentClass = { attrs: new Set(), percents: new Set() };
+            currentClassRefs = new Set();
+            classSummonRefs[`${namespace}|${className}`] = currentClassRefs;
         }
 
         if (!charId) continue;
@@ -339,10 +349,26 @@ function getSummonInfoData() {
             current.percents.add(percent[1]);
             currentClass?.percents.add(percent[1]);
         }
+
+        const configRef = SUMMON_CFG_REF.exec(line);
+        if (configRef) currentClassRefs?.add(configRef[1]);
     }
 
     flushClass();
     flushCharacter();
+
+    for (const [key, refs] of Object.entries(classSummonRefs)) {
+        if (classSummonInfo[key] || !refs.size) continue;
+
+        const keyNamespace = key.slice(0, key.indexOf('|'));
+        for (const ref of refs) {
+            const info = classSummonInfo[`${keyNamespace}|${ref}`];
+            if (info) {
+                classSummonInfo[key] = info;
+                break;
+            }
+        }
+    }
 }
 
 function getCharacterSummonInfo() {
@@ -381,7 +407,7 @@ function getHitDamageSkillIds() {
 
 function getHitDamageSummonInfo(hitDamageId) {
     const hitDamage = HITDAMAGE[hitDamageId];
-    if (!hitDamage || hitDamage.DamageType !== 7) return;
+    if (!hitDamage) return;
 
     const charId = getCharId(String(hitDamageId)) || getCharId(String(hitDamage.SkillId || ''));
     const skillIds = hitDamage.SkillId
@@ -393,11 +419,30 @@ function getHitDamageSummonInfo(hitDamageId) {
     const classInfo = classInfos.length && classInfos.every(info => info.summonAttrType === classInfos[0].summonAttrType)
         ? classInfos[0]
         : null;
-    const summonInfo = classInfo || (charId && getCharacterSummonInfo()[charId]);
+    const summonInfo = classInfo || (hitDamage.DamageType === 7 && charId && getCharacterSummonInfo()[charId]);
 
     return {
         summonAttrType: summonInfo?.summonAttrType,
         summonAttrPercent: summonInfo?.attrPercent,
+    };
+}
+
+let AREA_EFFECT_MAP = {};
+try {
+    AREA_EFFECT_MAP = JSON.parse(readFileSync(OUTPUT, 'utf8'));
+} catch {}
+
+function getHitDamageAreaEffectInfo(hitDamageId) {
+    const areaEffect = AREA_EFFECT_MAP[hitDamageId];
+    const copyBattleDataBeforeAttack = typeof areaEffect === 'boolean'
+        ? areaEffect
+        : areaEffect?.copyBattleDataBeforeAttack;
+    if (typeof copyBattleDataBeforeAttack !== 'boolean') return;
+
+    return {
+        areaEffectAttrType: copyBattleDataBeforeAttack
+            ? "AreaEffect, refreshes summoner's stats before each attack"
+            : "AreaEffectSnapshot, snapshots summoner's stats when created",
     };
 }
 
@@ -613,4 +658,4 @@ function getHitDamageNote(hitDamageId) {
     return notes[hitDamageId] || [];
 }
 
-module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };
+module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };

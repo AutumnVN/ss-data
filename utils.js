@@ -13,7 +13,7 @@ const SCOREBOSSABILITY = require('./EN/bin/ScoreBossAbility.json');
 const SCOREBOSSGETCONTROL = require('./EN/bin/ScoreBossGetControl.json');
 const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
 const ITEM = require('./EN/bin/Item.json');
-const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, potentialLabel } = require('./hotfix');
+const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, potentialLabel } = require('./hotfix');
 const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
 const LANG_SKILL = require('./EN/language/en_US/Skill.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
@@ -891,12 +891,18 @@ function resolveParamsTooltips(params) {
     return params.map(param => {
         const hitDamageId = getHitDamageIdFromParam(param);
         const summonInfo = hitDamageId && getHitDamageSummonInfo(hitDamageId);
+        const areaEffectInfo = hitDamageId && getHitDamageAreaEffectInfo(hitDamageId);
+        const damageTypeTags = [
+            summonInfo?.summonAttrType?.split(',')[0],
+            areaEffectInfo?.areaEffectAttrType?.split(',')[0],
+        ].filter(Boolean);
         return {
-            damageType: getDamageTypeFromParam(param),
+            damageType: getDamageTypeFromParam(param, damageTypeTags),
             hitDamageId,
             hitDamageNote: hitDamageId && getHitDamageNote(hitDamageId).join('; ') || undefined,
             summonAttrType: summonInfo?.summonAttrType,
             summonAttrPercent: summonInfo?.summonAttrPercent,
+            areaEffectAttrType: areaEffectInfo?.areaEffectAttrType,
             effectType: getEffectTypeFromParam(param),
             effectId: getEffectIdFromParam(param),
             addAttrType: getAddAttrTypeFromParam(param),
@@ -937,7 +943,7 @@ function getAddAttrIdFromParam(param) {
     return addAttrId;
 }
 
-function getDamageTypeFromParam(param) {
+function getDamageTypeFromParam(param, extraTags = []) {
     if (!param.startsWith('HitDamage')) return;
 
     const p = param.split(',');
@@ -951,7 +957,7 @@ function getDamageTypeFromParam(param) {
     const from = skillSlotType && `from ${SKILL_SLOT_TYPE[skillSlotType]}`;
     const energy = energyCharge && `${iHateFloatingPointNumber(energyCharge, '/', 10000)}e`
     const scaleWith = [5, 2, 4].includes(levelData) ? `scale with ${SKILL_SLOT_TYPE[levelData]}` : levelTypeData === 4 ? 'scale with Upgrade' : undefined;
-    const combined = [energy, from, scaleWith].filter(v => v).join(', ');
+    const combined = [energy, from, scaleWith, ...extraTags].filter(v => v).join(', ');
 
     return `${DAMAGE_TYPE[type]}${combined ? ` (${combined})` : ''}`;
 }
