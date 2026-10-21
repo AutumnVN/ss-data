@@ -120236,7 +120236,7 @@
             ],
             "paramsTooltips": [
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Refresh)",
                     "hitDamageId": "145300006",
                     "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack"
                 },
@@ -121178,7 +121178,7 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect)",
+                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Refresh)",
                             "hitDamageId": "145300012",
                             "hitDamageNote": "Requires Evening Rain (514524)",
                             "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack"
@@ -148761,7 +148761,7 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffect)",
+                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffect-Refresh)",
                             "hitDamageId": "158506001",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
                             "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack"
@@ -156567,7 +156567,7 @@
                     "hitDamageId": "160320001"
                 },
                 {
-                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect)",
+                    "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Refresh)",
                     "hitDamageId": "160320002",
                     "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack"
                 },
