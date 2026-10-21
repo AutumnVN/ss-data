@@ -805,23 +805,87 @@ function getTalents(charId) {
 
             return {
                 name: LANG_TALENTGROUP[TALENTGROUP[groupId].Title],
-                boost: talentIds.map((talentId, index) => ({
-                    name: LANG_TALENT[TALENT[talentId].Title],
-                    nameCN: CN_TALENT[TALENT[talentId].Title],
-                    nameJP: JP_TALENT[TALENT[talentId].Title],
-                    nameKR: KR_TALENT[TALENT[talentId].Title],
-                    desc: LANG_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], LANG_TALENT),
-                    descCN: CN_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], CN_TALENT),
-                    descJP: JP_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], JP_TALENT),
-                    descKR: KR_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], KR_TALENT),
-                    effectType: getTalentEffectTypes(talentId, index),
-                    addAttrType: getTalentAddAttrTypes(talentId, index),
-                    buffIcon: getTalentBuffIcons(talentId, index),
-                    params: getTalentParams(talentId),
-                    paramsTooltips: getTalentParamsTooltips(talentId),
-                })),
+                boost: talentIds.map((talentId, index) => {
+                    const hidden = getTalentHiddenParams(talentId);
+                    const boost = {
+                        name: LANG_TALENT[TALENT[talentId].Title],
+                        nameCN: CN_TALENT[TALENT[talentId].Title],
+                        nameJP: JP_TALENT[TALENT[talentId].Title],
+                        nameKR: KR_TALENT[TALENT[talentId].Title],
+                        desc: LANG_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], LANG_TALENT) + hidden.desc,
+                        descCN: CN_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], CN_TALENT) + hidden.desc,
+                        descJP: JP_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], JP_TALENT) + hidden.desc,
+                        descKR: KR_TALENT[TALENT[talentId].Desc] + collectUnusedParamsFrom(TALENT[talentId], KR_TALENT) + hidden.desc,
+                        effectType: getTalentEffectTypes(talentId, index),
+                        addAttrType: getTalentAddAttrTypes(talentId, index),
+                        buffIcon: getTalentBuffIcons(talentId, index),
+                        params: getTalentParams(talentId),
+                        paramsTooltips: getTalentParamsTooltips(talentId),
+                    };
+
+                    if (hidden.params.length) {
+                        boost.hiddenParams = resolveParam(hidden.params);
+                        boost.hiddenParamsTooltips = resolveParamsTooltips(hidden.params);
+                    }
+
+                    return boost;
+                }),
             };
         });
+}
+
+function getTalentHiddenParams(talentId) {
+    const params = collectParamsFrom(TALENT[talentId]);
+    const effectIds = new Set();
+    const buffIds = new Set();
+    let scale;
+
+    for (const param of params) {
+        const p = param.split(',');
+
+        if (p[0] === 'Effect' || p[0] === 'EffectValue') {
+            let effectId = +p[2];
+            if (!EFFECTVALUE[effectId]) effectId += 10;
+            if (EFFECTVALUE[effectId]) effectIds.add(effectId);
+        }
+
+        if (p[0] === 'Buff' || p[0] === 'BuffValue') {
+            let buffId = +p[2];
+            if (!BUFFVALUE[buffId]) buffId += 10;
+            if (BUFFVALUE[buffId]) buffIds.add(buffId);
+        }
+
+        if ((p[0] === 'Effect' || p[0] === 'EffectValue') && p[3] === 'EffectTypeParam1' && p[4]) scale = p[4];
+    }
+
+    for (const buffId of Object.keys(BUFFVALUE)) {
+        if ((BUFFVALUE[buffId].Effects || []).some(effectId => effectIds.has(effectId))) buffIds.add(+buffId);
+    }
+
+    const hidden = [];
+    const seen = new Set();
+
+    for (const buffId of buffIds) {
+        for (const effectId of BUFFVALUE[buffId]?.Effects || []) {
+            if (!EFFECTVALUE[effectId]) continue;
+            if (effectIds.has(effectId)) continue;
+            if (seen.has(effectId)) continue;
+            seen.add(effectId);
+            hidden.push(effectId);
+        }
+    }
+
+    if (hidden.length === 0) return { desc: '', params: [] };
+
+    const desc = hidden.map((effectId, index) => {
+        const effect = EFFECTVALUE[effectId];
+        const element = effect.EffectTypeSecondSubtype ? `${LANG_UITEXT[`UIText.T_Element_Attr_${effect.EffectTypeSecondSubtype}.1`]} ` : '';
+        return `\u000bHiddenParam${index + 1}: &HiddenParam${index + 1}& (EffectValue,${element}${ATTR_TYPE[effect.EffectTypeFirstSubtype]},${effectId})`;
+    }).join(' ');
+
+    const hiddenParams = hidden.map(effectId => `EffectValue,NoLevel,${effectId},EffectTypeParam1${scale ? `,${scale}` : ''}`);
+
+    return { desc, params: hiddenParams };
 }
 
 function getTalentParams(talentId) {

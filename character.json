@@ -161455,10 +161455,10 @@
                     "nameCN": "诛邪破",
                     "nameJP": "明星の型",
                     "nameKR": "악을 베는 일격",
-                    "desc": "Increases the &Param1& dealt by Firstlight Noya's greatsword attacks and Starfalls by <color=#fb8037>&Param2&</color>.",
-                    "descCN": "源初尘沙的巨剑攻击和「坠星」造成的&Param1&提升<color=#fb8037>&Param2&</color>。",
-                    "descJP": "セイナ（原点）の大剣による攻撃と星雷で与える&Param1&が<color=#fb8037>&Param2&</color>増加する。",
-                    "descKR": "세이나(기원)의 대검 공격과 「낙성」이 입히는 &Param1_kr1& <color=#fb8037>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)",
+                    "desc": "Increases the &Param1& dealt by Firstlight Noya's greatsword attacks and Starfalls by <color=#fb8037>&Param2&</color>.\u000bHiddenParam1: &HiddenParam1& (OnceAdditionalAttribute,Lux Auto Attack Crit Rate,16227011)",
+                    "descCN": "源初尘沙的巨剑攻击和「坠星」造成的&Param1&提升<color=#fb8037>&Param2&</color>。\u000bHiddenParam1: &HiddenParam1& (OnceAdditionalAttribute,Lux Auto Attack Crit Rate,16227011)",
+                    "descJP": "セイナ（原点）の大剣による攻撃と星雷で与える&Param1&が<color=#fb8037>&Param2&</color>増加する。\u000bHiddenParam1: &HiddenParam1& (OnceAdditionalAttribute,Lux Auto Attack Crit Rate,16227011)",
+                    "descKR": "세이나(기원)의 대검 공격과 「낙성」이 입히는 &Param1_kr1& <color=#fb8037>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (OnceAdditionalAttribute,Lux Auto Attack Crit Rate,16227011)",
                     "damageType": [],
                     "effectType": [],
                     "addAttrType": [
@@ -161480,8 +161480,15 @@
                             "addAttrId": 16227011
                         }
                     ],
-                    "hiddenParams": [],
-                    "hiddenParamsTooltips": [],
+                    "hiddenParams": [
+                        "4%/6%/8%/11%/13%/15%/15%/15%/15%"
+                    ],
+                    "hiddenParamsTooltips": [
+                        {
+                            "addAttrType": "DMG multiplier (base), (Lux) Auto Attack Crit Rate (base)",
+                            "addAttrId": 16227011
+                        }
+                    ],
                     "icon": "16201_Potential_22",
                     "corner": "Round",
                     "rarity": "common"
@@ -161582,10 +161589,10 @@
                     "nameCN": "光之息",
                     "nameJP": "閃光の型",
                     "nameKR": "빛의 숨결",
-                    "desc": "Increases the &Param1& dealt by Firstlight Noya's longsword attacks and Glows by <color=#fb8037>&Param2&</color>.",
-                    "descCN": "源初尘沙的长剑攻击和「流光」造成的&Param1&提升<color=#fb8037>&Param2&</color>。",
-                    "descJP": "セイナ（原点）の長剣による攻撃と光刃の与える&Param1&が<color=#fb8037>&Param2&</color>増加する。",
-                    "descKR": "세이나(기원)의 장검 공격과 「섬광」이 입히는 &Param1_kr1& <color=#fb8037>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)",
+                    "desc": "Increases the &Param1& dealt by Firstlight Noya's longsword attacks and Glows by <color=#fb8037>&Param2&</color>.\u000bHiddenParam1: &HiddenParam1& (OnceAdditionalAttribute,Lux Skill Crit Rate,16230011)",
+                    "descCN": "源初尘沙的长剑攻击和「流光」造成的&Param1&提升<color=#fb8037>&Param2&</color>。\u000bHiddenParam1: &HiddenParam1& (OnceAdditionalAttribute,Lux Skill Crit Rate,16230011)",
+                    "descJP": "セイナ（原点）の長剣による攻撃と光刃の与える&Param1&が<color=#fb8037>&Param2&</color>増加する。\u000bHiddenParam1: &HiddenParam1& (OnceAdditionalAttribute,Lux Skill Crit Rate,16230011)",
+                    "descKR": "세이나(기원)의 장검 공격과 「섬광」이 입히는 &Param1_kr1& <color=#fb8037>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (OnceAdditionalAttribute,Lux Skill Crit Rate,16230011)",
                     "damageType": [],
                     "effectType": [],
                     "addAttrType": [
@@ -161607,8 +161614,15 @@
                             "addAttrId": 16230011
                         }
                     ],
-                    "hiddenParams": [],
-                    "hiddenParamsTooltips": [],
+                    "hiddenParams": [
+                        "4%/6%/8%/11%/13%/15%/15%/15%/15%"
+                    ],
+                    "hiddenParamsTooltips": [
+                        {
+                            "addAttrType": "DMG multiplier (base), (Lux) Skill Crit Rate (base)",
+                            "addAttrId": 16230011
+                        }
+                    ],
                     "icon": "16201_Potential_23",
                     "corner": "Round",
                     "rarity": "common"
@@ -162587,10 +162601,10 @@
                         "nameCN": "极星闪耀于黑夜",
                         "nameJP": "闇夜に輝く一番星",
                         "nameKR": "어둠 속에 빛나는 별",
-                        "desc": "After triggering ##Lux Mark#1015#, Firstlight Noya's Auto Attack DMG increases by <color=#0abec5>&Param1&</color> for &Param2&s.",
-                        "descCN": "触发##光系印记#1015#后，源初尘沙造成的普攻伤害提升<color=#0abec5>&Param1&</color>，持续&Param2&秒。",
-                        "descJP": "セイナ（原点）が##光属性の印#1015#を発動させた後の&Param2&秒間、自身の通常攻撃ダメージが<color=#0abec5>&Param1&</color>増加する。",
-                        "descKR": "##빛 속성 표식#1015#을 발동한 후 세이나(기원)가 입히는 일반 공격 피해가 <color=#0abec5>&Param1&</color> 증가한다. &Param2&초간 지속된다.",
+                        "desc": "After triggering ##Lux Mark#1015#, Firstlight Noya's Auto Attack DMG increases by <color=#0abec5>&Param1&</color> for &Param2&s.\u000bHiddenParam1: &HiddenParam1& (EffectValue,Lux Skill DMG,16296421)",
+                        "descCN": "触发##光系印记#1015#后，源初尘沙造成的普攻伤害提升<color=#0abec5>&Param1&</color>，持续&Param2&秒。\u000bHiddenParam1: &HiddenParam1& (EffectValue,Lux Skill DMG,16296421)",
+                        "descJP": "セイナ（原点）が##光属性の印#1015#を発動させた後の&Param2&秒間、自身の通常攻撃ダメージが<color=#0abec5>&Param1&</color>増加する。\u000bHiddenParam1: &HiddenParam1& (EffectValue,Lux Skill DMG,16296421)",
+                        "descKR": "##빛 속성 표식#1015#을 발동한 후 세이나(기원)가 입히는 일반 공격 피해가 <color=#0abec5>&Param1&</color> 증가한다. &Param2&초간 지속된다.\u000bHiddenParam1: &HiddenParam1& (EffectValue,Lux Skill DMG,16296421)",
                         "effectType": [
                             "ELEMENTTYPE_:(Lux) Auto Attack DMG",
                             "ELEMENTTYPE_:(Lux) Skill DMG"
@@ -162613,6 +162627,15 @@
                             {
                                 "buffIcon": "No Icon",
                                 "buffId": 16296411
+                            }
+                        ],
+                        "hiddenParams": [
+                            "0%"
+                        ],
+                        "hiddenParamsTooltips": [
+                            {
+                                "effectType": "ELEMENTTYPE_:(Lux) Skill DMG",
+                                "effectId": 16296421
                             }
                         ]
                     },

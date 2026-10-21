@@ -521,6 +521,63 @@ function collectUnusedParamsFrom(obj, lang) {
     return paramKeys.map(k => `\u000b${k}: &${k}& (${obj[k].split(',')[0]}${obj[k].split(',')[3] ? `,${obj[k].split(',')[3]}` : ''}${obj[k].split(',')[0] === 'HitDamage' ? `,${DAMAGE_TYPE[HITDAMAGE[obj[k].split(',')[2]].DamageType]}` : ''})`).join(' ');
 }
 
+function getHiddenAddAttrParamsFrom(obj) {
+    if (!obj) return [];
+
+    const params = collectParamsFrom(obj).filter(p => p && p.startsWith('OnceAdditionalAttribute'));
+
+    const refs = params.map(param => {
+        const p = param.split(',');
+        let addAttrId = +p[2];
+        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) addAttrId += 10;
+        if (!ONCEADDITTIONALATTRIBUTEVALUE[addAttrId]) return;
+        return { addAttrId, field: p[3], scale: p[4] };
+    }).filter(Boolean);
+
+    const hidden = [];
+    const seen = new Set();
+
+    for (const addAttrId of [...new Set(refs.map(r => r.addAttrId))]) {
+        const value = ONCEADDITTIONALATTRIBUTEVALUE[addAttrId];
+        const sameAddAttr = refs.filter(r => r.addAttrId === addAttrId);
+        const scale = sameAddAttr.find(r => (r.field === 'Value1' || r.field === 'Value2') && r.scale)?.scale;
+
+        for (const effect of [
+            { field: 'Value1', type: value.AttributeType1, element: value.ElementType1 },
+            { field: 'Value2', type: value.AttributeType2, element: value.ElementType2 },
+        ]) {
+            if (!effect.type || !value[effect.field]) continue;
+            if (sameAddAttr.some(r => r.field === effect.field)) continue;
+
+            const key = `${addAttrId}:${effect.field}`;
+            if (seen.has(key)) continue;
+            seen.add(key);
+
+            hidden.push({ addAttrId, scale, ...effect });
+        }
+    }
+
+    return hidden;
+}
+
+function formatHiddenParams(hiddenHitDamageIds, hiddenAddAttrs) {
+    const desc = [
+        ...hiddenHitDamageIds.map((id, index) => `\u000bHiddenParam${index + 1}: &HiddenParam${index + 1}& (HitDamage,${DAMAGE_TYPE[HITDAMAGE[id].DamageType]},${id})`),
+        ...hiddenAddAttrs.map((hidden, index) => {
+            index += hiddenHitDamageIds.length + 1;
+            const element = hidden.element ? `${LANG_UITEXT[`UIText.T_Element_Attr_${hidden.element}.1`]} ` : '';
+            return `\u000bHiddenParam${index}: &HiddenParam${index}& (OnceAdditionalAttribute,${element}${ATTR_TYPE[hidden.type]},${hidden.addAttrId})`;
+        })
+    ].join(' ');
+
+    const params = [
+        ...hiddenHitDamageIds.map(id => `HitDamage,DamageNum,${id}`),
+        ...hiddenAddAttrs.map(hidden => `OnceAdditionalAttribute,LevelUp,${hidden.addAttrId},${hidden.field}${hidden.scale ? `,${hidden.scale}` : ''}`)
+    ];
+
+    return { desc, params };
+}
+
 function collectPotentialHiddenParamsFrom(obj, allSkillParams) {
     if (!obj) return { desc: '', params: [] };
 
@@ -533,6 +590,7 @@ function collectPotentialHiddenParamsFrom(obj, allSkillParams) {
     const stringifiedPotential = JSON.stringify(POTENTIAL);
     const params = collectParamsFrom(obj);
     const target = String(potId).padStart(2, '0');
+    const hiddenAddAttrs = getHiddenAddAttrParamsFrom(obj);
 
     const accepted = id => {
         if (stringifiedSkill.includes(`DamageNum,${id}`)) return false;
@@ -544,10 +602,7 @@ function collectPotentialHiddenParamsFrom(obj, allSkillParams) {
     const fromHotfix = getHiddenHitDamageIds(obj.Id).filter(accepted);
     const hiddenHitDamageIds = fromHotfix.slice();
 
-    if (getHotfixHitDamage().potential[obj.Id]) return {
-        desc: hiddenHitDamageIds.map((id, index) => `\u000bHiddenParam${index + 1}: &HiddenParam${index + 1}& (HitDamage,${DAMAGE_TYPE[HITDAMAGE[id].DamageType]},${id})`).join(' '),
-        params: hiddenHitDamageIds.map(id => `HitDamage,DamageNum,${id}`)
-    };
+    if (getHotfixHitDamage().potential[obj.Id]) return formatHiddenParams(hiddenHitDamageIds, hiddenAddAttrs);
 
     for (const id of Object.keys(HITDAMAGE)) {
         if (fromHotfix.includes(id)) continue;
@@ -571,10 +626,7 @@ function collectPotentialHiddenParamsFrom(obj, allSkillParams) {
         hiddenHitDamageIds.push(id);
     }
 
-    return {
-        desc: hiddenHitDamageIds.map((id, index) => `\u000bHiddenParam${index + 1}: &HiddenParam${index + 1}& (HitDamage,${DAMAGE_TYPE[HITDAMAGE[id].DamageType]},${id})`).join(' '),
-        params: hiddenHitDamageIds.map(id => `HitDamage,DamageNum,${id}`)
-    };
+    return formatHiddenParams(hiddenHitDamageIds, hiddenAddAttrs);
 }
 
 function collectUnusedDiscParamsFrom(obj, lang) {
