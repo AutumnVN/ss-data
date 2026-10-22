@@ -887,6 +887,22 @@ function getHitDamageNote(hitDamageId) {
     return notes;
 }
 
+const CONDITIONAL_NOTE = 'Conditional hit damage: ';
+
+function formatHitDamageNotes(notes) {
+    let seen = false;
+
+    return notes.map(note => {
+        if (!note.startsWith(CONDITIONAL_NOTE)) return note;
+        if (!seen) {
+            seen = true;
+            return note;
+        }
+
+        return note.slice(CONDITIONAL_NOTE.length);
+    }).join('; ');
+}
+
 function resolveParamsTooltips(params) {
     return params.map(param => {
         const hitDamageId = getHitDamageIdFromParam(param);
@@ -899,7 +915,7 @@ function resolveParamsTooltips(params) {
         return {
             damageType: getDamageTypeFromParam(param, damageTypeTags),
             hitDamageId,
-            hitDamageNote: hitDamageId && getHitDamageNote(hitDamageId).join('; ') || undefined,
+            hitDamageNote: hitDamageId && formatHitDamageNotes(getHitDamageNote(hitDamageId)) || undefined,
             summonAttrType: summonInfo?.summonAttrType,
             summonAttrPercent: summonInfo?.summonAttrPercent,
             areaEffect: areaEffectInfo?.areaEffect,

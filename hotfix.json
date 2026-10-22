@@ -1,0 +1,3268 @@
+{
+  "source": "Hotfix.cs",
+  "hidden": {
+    "potential": {
+      "516241": [
+        "162400006"
+      ],
+      "516201": [
+        "162310005"
+      ],
+      "516202": [
+        "162310009"
+      ],
+      "516223": [
+        "162320005"
+      ],
+      "516021": [
+        "160521003"
+      ],
+      "516022": [
+        "160521003"
+      ],
+      "516026": [
+        "160526001"
+      ],
+      "515803": [
+        "158503001"
+      ],
+      "515809": [
+        "158310001",
+        "158503001"
+      ],
+      "515828": [
+        "158528001",
+        "158528002"
+      ],
+      "515704": [
+        "157300005"
+      ],
+      "515722": [
+        "157300014"
+      ],
+      "515002": [
+        "150310201"
+      ],
+      "514041": [
+        "140541001"
+      ],
+      "514002": [
+        "140502001"
+      ],
+      "513403": [
+        "134503001"
+      ],
+      "513428": [
+        "134528001"
+      ],
+      "513226": [
+        "132526001"
+      ],
+      "513022": [
+        "130522002",
+        "130522001"
+      ],
+      "513025": [
+        "130525001"
+      ],
+      "512523": [
+        "125322301",
+        "125322302"
+      ],
+      "513905": [
+        "139400302",
+        "139543302"
+      ],
+      "513908": [
+        "139100201",
+        "139100202",
+        "139100203",
+        "139100204",
+        "139100205",
+        "139100206",
+        "139100207",
+        "139100208",
+        "139100209",
+        "139400201"
+      ]
+    },
+    "character": {
+      "118": [
+        "118000006",
+        "118000001",
+        "118000015",
+        "118000016",
+        "118000009"
+      ],
+      "162": [
+        "162100004"
+      ],
+      "158": [
+        "158000001",
+        "158310001",
+        "158503001"
+      ],
+      "157": [
+        "157000001",
+        "157300005"
+      ],
+      "150": [
+        "150310901"
+      ],
+      "141": [
+        "141000001"
+      ],
+      "139": [
+        "139000001",
+        "139100101",
+        "139100102",
+        "139100103",
+        "139100104",
+        "139100105",
+        "139100106",
+        "139100107",
+        "139100108",
+        "139100109",
+        "139400102",
+        "139400101",
+        "139543102"
+      ],
+      "134": [
+        "134000001"
+      ],
+      "125": [
+        "125320001",
+        "125320002"
+      ],
+      "117": [
+        "117000001",
+        "117400001",
+        "117503001",
+        "117503002"
+      ],
+      "115": [
+        "115110302"
+      ],
+      "108": [
+        "108000001",
+        "108525001"
+      ],
+      "160": [
+        "160521001",
+        "160522001",
+        "160521003"
+      ],
+      "147": [
+        "147300005"
+      ],
+      "156": [
+        "156310002",
+        "156310004"
+      ],
+      "144": [
+        "144311101",
+        "144311102",
+        "144310201",
+        "144310202",
+        "144310203",
+        "144310208",
+        "144310204",
+        "144310205",
+        "144310209",
+        "144310206",
+        "144310207",
+        "144310401",
+        "144310402",
+        "144310403",
+        "144320002",
+        "144322301"
+      ]
+    }
+  },
+  "notes": {
+    "130522001": [
+      "Conditional hit damage: only when Arrowfall Reckoning (513022) is active"
+    ],
+    "130522002": [
+      "Conditional hit damage: only when Arrowfall Reckoning (513022) is active"
+    ],
+    "134503001": [
+      "Conditional hit damage: only when Kitty Punch (513403) is active"
+    ],
+    "134528001": [
+      "Conditional hit damage: only when Multi-Blow Impact (513428) is active"
+    ],
+    "139100001": [
+      "Replaced by 139100101 when: hit deals no damage",
+      "Replaced by 139100201 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100002": [
+      "Replaced by 139100102 when: hit deals no damage",
+      "Replaced by 139100202 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100003": [
+      "Replaced by 139100103 when: hit deals no damage",
+      "Replaced by 139100203 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100004": [
+      "Replaced by 139100104 when: hit deals no damage",
+      "Replaced by 139100204 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100005": [
+      "Replaced by 139100105 when: hit deals no damage",
+      "Replaced by 139100205 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100006": [
+      "Replaced by 139100106 when: hit deals no damage",
+      "Replaced by 139100206 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100007": [
+      "Replaced by 139100107 when: hit deals no damage",
+      "Replaced by 139100207 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100008": [
+      "Replaced by 139100108 when: hit deals no damage",
+      "Replaced by 139100208 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100009": [
+      "Replaced by 139100109 when: hit deals no damage",
+      "Replaced by 139100209 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100101": [
+      "Replaces 139100001 when: hit deals no damage"
+    ],
+    "139100102": [
+      "Replaces 139100002 when: hit deals no damage"
+    ],
+    "139100103": [
+      "Replaces 139100003 when: hit deals no damage"
+    ],
+    "139100104": [
+      "Replaces 139100004 when: hit deals no damage"
+    ],
+    "139100105": [
+      "Replaces 139100005 when: hit deals no damage"
+    ],
+    "139100106": [
+      "Replaces 139100006 when: hit deals no damage"
+    ],
+    "139100107": [
+      "Replaces 139100007 when: hit deals no damage"
+    ],
+    "139100108": [
+      "Replaces 139100008 when: hit deals no damage"
+    ],
+    "139100109": [
+      "Replaces 139100009 when: hit deals no damage"
+    ],
+    "139100201": [
+      "Replaces 139100001 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100202": [
+      "Replaces 139100002 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100203": [
+      "Replaces 139100003 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100204": [
+      "Replaces 139100004 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100205": [
+      "Replaces 139100005 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100206": [
+      "Replaces 139100006 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100207": [
+      "Replaces 139100007 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100208": [
+      "Replaces 139100008 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139100209": [
+      "Replaces 139100009 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139400001": [
+      "Replaced by 139400101 when: hit deals no damage",
+      "Replaced by 139400201 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139400002": [
+      "Replaced by 139400102 when: hit deals no damage",
+      "Replaced by 139400302 when: Clothesline Stance (513905) is active and hit has damage tag 139_P05_Skill"
+    ],
+    "139400101": [
+      "Replaces 139400001 when: hit deals no damage"
+    ],
+    "139400102": [
+      "Replaces 139400002 when: hit deals no damage"
+    ],
+    "139400201": [
+      "Replaces 139400001 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark"
+    ],
+    "139400302": [
+      "Replaces 139400002 when: Clothesline Stance (513905) is active and hit has damage tag 139_P05_Skill"
+    ],
+    "139543002": [
+      "Replaced by 139543102 when: hit deals no damage",
+      "Replaced by 139543302 when: Clothesline Stance (513905) is active and hit has damage tag 139_P05_Skill"
+    ],
+    "139543102": [
+      "Replaces 139543002 when: hit deals no damage"
+    ],
+    "139543302": [
+      "Replaces 139543002 when: Clothesline Stance (513905) is active and hit has damage tag 139_P05_Skill"
+    ],
+    "140502001": [
+      "Conditional hit damage: only when Click-Clack Echoes (514002) is active"
+    ],
+    "140541001": [
+      "Conditional hit damage: only when Solution Support (514041) is active"
+    ],
+    "144310201": [
+      "Replaces 144310211 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310202": [
+      "Replaces 144310212 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310203": [
+      "Replaces 144310213 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310204": [
+      "Replaces 144310214 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310205": [
+      "Replaces 144310215 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310206": [
+      "Replaces 144310216 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310207": [
+      "Replaces 144310217 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310208": [
+      "Replaces 144310218 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310209": [
+      "Replaces 144310219 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310211": [
+      "Replaced by 144310201 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310212": [
+      "Replaced by 144310202 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310213": [
+      "Replaced by 144310203 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310214": [
+      "Replaced by 144310204 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310215": [
+      "Replaced by 144310205 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310216": [
+      "Replaced by 144310206 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310217": [
+      "Replaced by 144310207 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310218": [
+      "Replaced by 144310208 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310219": [
+      "Replaced by 144310209 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310401": [
+      "Replaces 144310411 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310402": [
+      "Replaces 144310412 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310403": [
+      "Replaces 144310413 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310411": [
+      "Replaced by 144310401 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310412": [
+      "Replaced by 144310402 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144310413": [
+      "Replaced by 144310403 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144311101": [
+      "Replaces 144311111 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144311102": [
+      "Replaces 144311112 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144311111": [
+      "Replaced by 144311101 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144311112": [
+      "Replaced by 144311102 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144320002": [
+      "Replaces 144320012 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144320012": [
+      "Replaced by 144320002 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144322301": [
+      "Replaces 144322311 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "144322311": [
+      "Replaced by 144322301 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "150310201": [
+      "Conditional hit damage: only when Arc Chain Laser (515002) is active"
+    ],
+    "156310001": [
+      "Replaced by 156310002 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "156310002": [
+      "Replaces 156310001 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "156310003": [
+      "Replaced by 156310004 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "156310004": [
+      "Replaces 156310003 when: hit comes from your own summon and hit deals no damage"
+    ],
+    "157300014": [
+      "Conditional hit damage: only when Dark Bite Mark (515722) is active"
+    ],
+    "158503001": [
+      "Conditional hit damage: only when Whipping Gale (515803) is active"
+    ],
+    "158528001": [
+      "Conditional hit damage: only when Heart\u0027s Benediction (515828) is active"
+    ],
+    "158528002": [
+      "Conditional hit damage: only when Heart\u0027s Benediction (515828) is active"
+    ],
+    "160526001": [
+      "Conditional hit damage: only when Hovering Gale (516026) is active"
+    ]
+  },
+  "interactions": [
+    {
+      "class": "Parallel",
+      "method": "OnElementMarkTrigger",
+      "line": 1042056,
+      "sink": "PlayAreaEffect",
+      "argument": "area_04",
+      "values": [
+        {
+          "value": "AreaEffect_123_FengTun_P4_JiGuang",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512304",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Death",
+      "method": "DoMainLogic",
+      "line": 1046876,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_110_Main_FenShen_DieBoom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_110_Main_FenShen_DieBoom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511004",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Death",
+      "method": "DoMainLogic",
+      "line": 1046880,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_110_Support_FenShen_DieBoom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_110_Support_FenShen_DieBoom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511029",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_NormalAttack",
+      "method": "OnCustomEvent",
+      "line": 1140783,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_162_LeiDianArea_P8\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_162_LeiDianArea_P8",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516208",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "OnCustomEvent",
+      "line": 1140977,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_162_LeiDianArea_P42\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_162_LeiDianArea_P42",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516242",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1142181,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_162_LeiDianArea_P21\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_162_LeiDianArea_P21",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516221",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1142201,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_162_LeiDianZhongJian_Fall_P22",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516222",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_162_LeiDianZhongJian_Fall_P22P25",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516222",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "516225",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnReceiveCustomEvent",
+      "line": 1147251,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16001_Main_P10\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16001_Main_P10",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516010",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "PerkLoigc_P4",
+      "line": 1147303,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16001_Main_P04\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16001_Main_P04",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516004",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ActionScript_Summoned_MainControl",
+      "method": "PerkLogic_P2",
+      "line": 1147945,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16001_Main_P02\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16001_Main_P02",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516002",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnReceiveCustomEvent",
+      "line": 1149029,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16001_Sup_P30_Red\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16001_Sup_P30_Red",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516030",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnReceiveCustomEvent",
+      "line": 1149035,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16001_Sup_P30_Blue\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16001_Sup_P30_Blue",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516030",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnSelfDamaged",
+      "line": 1155484,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_15801_Main_Skill_P04P09_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515804",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "515809",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_15801_Main_Skill_P04_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515804",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "515809",
+              "negated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnBulletFinish",
+      "line": 1157509,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_15801_Support_Skill_Cannon_Boom_P21_Fire",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515821",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_15801_Support_Skill_Cannon_Boom_P21P22_BigFire",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515821",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "515822",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "PerkLogic_P42",
+      "line": 1159551,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_157_P42_ShuiPao\u0022",
+      "values": [
+        {
+          "value": "Bullet_157_P42_ShuiPao",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515742",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnSelfDamaged",
+      "line": 1160528,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_157_P1_FishAtk\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_157_P1_FishAtk",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515701",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnSelfDamaged",
+      "line": 1160547,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_157_P5_FishAtk\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_157_P5_FishAtk",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515705",
+              "negated": false
+            },
+            {
+              "type": "damageType",
+              "value": "ULTIMATE",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillSciprt_Skill_Support",
+      "method": "OnReceiveDamage",
+      "line": 1161291,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_157_P24_Boom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_157_P24_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515724",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "OnCustomEvent",
+      "line": 1161797,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_156_P42_UltraXiYin\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_156_P42_UltraXiYin",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515642",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnSelfAttacked",
+      "line": 1163664,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_156_P25_ShotBoom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_156_P25_ShotBoom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515625",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnBulletFinish",
+      "line": 1163723,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_156_Sup_Skill_PenguinStatue",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_156_Sup_Skill_PenguinStatue_P21",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515621",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "515622",
+              "negated": true
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_156_Sup_Skill_PenguinStatue_P22P21",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515621",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "515622",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_156_Sup_Skill_PenguinStatue_P22",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515621",
+              "negated": true
+            },
+            {
+              "type": "perk",
+              "value": "515622",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "HeartArrowLogic",
+      "line": 1163778,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_156_Sup_Skill_HeartArrowBoom",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_156_Sup_Skill_HeartArrowBoom_P24",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515624",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "HeartArrowLogic",
+      "line": 1163798,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias2",
+      "values": [
+        {
+          "value": "AreaEffect_156_Sup_Skill_HeartArrowBoom",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_156_Sup_Skill_HeartArrowBoom_P24",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515624",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "PerkLogic_P27",
+      "line": 1163820,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_156_P27_PenguinStatueBoom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_156_P27_PenguinStatueBoom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515627",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "GenerateAttackAreaEffect",
+      "line": 1169993,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_150_Ultra_P41\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_150_Ultra_P41",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515041",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "TryTriggerElectricityExplosion_P2",
+      "line": 1170604,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_150_Main_Skill_P02_Boom_Big",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515002",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_150_Main_Skill_P02_Boom_Small",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515002",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_MainControl",
+      "method": "OnLaserCustomEvent",
+      "line": 1170924,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_150_Main_Skill_P01_ElectricGrid\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_150_Main_Skill_P01_ElectricGrid",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515001",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "LoopAttackLogic",
+      "line": 1171236,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_150_Support_Skill_P25_LightRain\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_150_Support_Skill_P25_LightRain",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515025",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "LoopAttackLogic",
+      "line": 1171237,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_150_Support_Skill_P25_LightRain_Ground\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_150_Support_Skill_P25_LightRain_Ground",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "515025",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1172976,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_14901_B2_Skill_Earthquake_Start",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514921",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_14901_B2P30_Skill_Earthquake_Start",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514930",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514921",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1172986,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_14901_B2_Skill_Earthquake_Start",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514921",
+              "negated": true
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_14901_B2P30_Skill_Earthquake_Start",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514930",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514921",
+              "negated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1173005,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias2",
+      "values": [
+        {
+          "value": "AreaEffect_14901_B2_Skill_Earthquake",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514921",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_14901_B2P30_Skill_Earthquake",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514930",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514921",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1173015,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias2",
+      "values": [
+        {
+          "value": "AreaEffect_14901_B2_Skill_Earthquake",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514921",
+              "negated": true
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_14901_B2P30_Skill_Earthquake",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514930",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514921",
+              "negated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1173030,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias3",
+      "values": [
+        {
+          "value": "AreaEffect_14901_B2_Skill_Earthquake_Self",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_14901_B2P30_Skill_Earthquake_Self",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514930",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "TryTriggerPerkLogic_P7",
+      "line": 1179192,
+      "sink": "PlayAreaEffect",
+      "argument": "text",
+      "values": [
+        {
+          "value": "AreaEffect_14401_B1P7_Snake1",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514407",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_14401_B1P7_Snake2",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514407",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_14401_B1P7_Snake3",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514407",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_14401_B1P7_Snake4",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514407",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnBuffRemoved",
+      "line": 1179820,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14401_B2P24_DelayFlash\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14401_B2P24_DelayFlash",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514424",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnSelfDamaged",
+      "line": 1179925,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14401_B2P24_DelayFlash\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14401_B2P24_DelayFlash",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514424",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnMonsterDied",
+      "line": 1179949,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14401_B2P24_DelayFlash\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14401_B2P24_DelayFlash",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514424",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_NormalAttack",
+      "method": "OnCustomEvent",
+      "line": 1180850,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_143_P10_JiGuang\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_143_P10_JiGuang",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514310",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_NormalAttack",
+      "method": "OnReceiveDamage",
+      "line": 1180883,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_143_P1_LongJuanFeng_P2",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514301",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514302",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_143_P1_LongJuanFeng",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514301",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514302",
+              "negated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "GenerateMainAreaEffect",
+      "line": 1181171,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_143_Ultra_WindDomain_P43_XiYin\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_143_Ultra_WindDomain_P43_XiYin",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514343",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_MainControl",
+      "method": "OnCustomEvent",
+      "line": 1182015,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_143_P1_LongJuanFeng_P2",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514302",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514301",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_143_P2_LongJuanFeng",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514302",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514301",
+              "negated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_MainControl",
+      "method": "Shoot",
+      "line": 1182045,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_143_P3_JiGuang\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_143_P3_JiGuang",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514303",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnSelfDamaged",
+      "line": 1182247,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_143_P25_JiGuang\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_143_P25_JiGuang",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514325",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnElementMarkTrigger",
+      "line": 1182291,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_143_P32_LongJuanFeng\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_143_P32_LongJuanFeng",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514332",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnStageOneCustomEvent",
+      "line": 1182381,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_143_P22_DiLie\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_143_P22_DiLie",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514322",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnStageTwoCustomEvent",
+      "line": 1182413,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_143_P21_LongJuanFeng\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_143_P21_LongJuanFeng",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514321",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript",
+      "method": "UltraSkillLogic",
+      "line": 1184698,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14101_Ultra_P42_FireWind\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14101_Ultra_P42_FireWind",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514142",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript",
+      "method": "PerkLogic_P43",
+      "line": 1184918,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14101_Ultra_P43_DragonBreathe\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14101_Ultra_P43_DragonBreathe",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514143",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "TriggerBurn",
+      "line": 1185903,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14101_Main_Skill_P03_Boom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14101_Main_Skill_P03_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514103",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnDied",
+      "line": 1185942,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14101_Main_Skill_P06_FirePit\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14101_Main_Skill_P06_FirePit",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514106",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "ShootSummonedTigerBullet",
+      "line": 1186734,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_14101_Support_Skill_Throw_P23_Tiger\u0022",
+      "values": [
+        {
+          "value": "Bullet_14101_Support_Skill_Throw_P23_Tiger",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514123",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "ShootAddBuffBulletToTiger",
+      "line": 1186764,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_14101_Support_Skill_Throw_P23_Buff\u0022",
+      "values": [
+        {
+          "value": "Bullet_14101_Support_Skill_Throw_P23_Buff",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514123",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "OnCustomEvent",
+      "line": 1188341,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_14001_Ultra_Boom",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_14001_Ultra_Boom_P42",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514042",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "PerkLogic_P11",
+      "line": 1189639,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_140_P11_Boom\u0022",
+      "values": [
+        {
+          "value": "Bullet_140_P11_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514011",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "PerkLogic_P11",
+      "line": 1189659,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_140_P11_Boom\u0022",
+      "values": [
+        {
+          "value": "Bullet_140_P11_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514011",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnBulletFinish",
+      "line": 1189734,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_140_Tank_P09\u0022",
+      "values": [
+        {
+          "value": "Bullet_140_Tank_P09",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514009",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnBulletFinish",
+      "line": 1189755,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_140_Tank_P09\u0022",
+      "values": [
+        {
+          "value": "Bullet_140_Tank_P09",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514009",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "514003",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_NormalAttack_Tank_MainControl",
+      "method": "OnCustomEvent",
+      "line": 1190410,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14001_Tank_P08\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14001_Tank_P08",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514008",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Tank_MainControl",
+      "method": "OnCustomEvent",
+      "line": 1190522,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_14001_Tank_P08P03\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_14001_Tank_P08P03",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514008",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ActionScript_Support",
+      "method": "PerkLogic_P24",
+      "line": 1190639,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_140_Support_Skill_P24_Boom\u0022",
+      "values": [
+        {
+          "value": "Bullet_140_Support_Skill_P24_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "514024",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "TriggerTide",
+      "line": 1193256,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_13901_WaterTrigger_P04\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_13901_WaterTrigger_P04",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513904",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1193874,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_13901_Sup",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_13901_Sup_P30P24",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513924",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "513930",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_13901_Sup_P24",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513924",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "513930",
+              "negated": true
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_13901_Sup_P30",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513924",
+              "negated": true
+            },
+            {
+              "type": "perk",
+              "value": "513930",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "PlayExtraExplodesSequence_513721",
+      "line": 1195727,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_137_SkillSup_JumpAtk_Boom_P21\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_137_SkillSup_JumpAtk_Boom_P21",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513721",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "CheckDroneAccumulate_513724",
+      "line": 1195859,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_137_P24_UAV_AtkAoe\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_137_P24_UAV_AtkAoe",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513724",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "PerkLogic_9",
+      "line": 1200009,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_13401_Main_Skill_P09_Boom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_13401_Main_Skill_P09_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513409",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnReceiveDamage",
+      "line": 1201326,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_13301_B2P24_PetalRegionAtk",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513324",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_13301_B2P23P24_PetalRegionAtk",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513324",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnReceiveDamage",
+      "line": 1201331,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffect_23",
+      "values": [
+        {
+          "value": "AreaEffect_13301_PetalRegion_Perk23",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513323",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnAreaEffectFinish",
+      "line": 1201446,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_13301_B2P30_Boom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_13301_B2P30_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513330",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnAreaEffectFinish",
+      "line": 1201450,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_13301_B2P30P23_Boom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_13301_B2P30P23_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513330",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_MainControl",
+      "method": "OnCustomEvent",
+      "line": 1201866,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_13301_B1P4_Wind\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_13301_B1P4_Wind",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513304",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_MainControl",
+      "method": "OnCustomEvent",
+      "line": 1201870,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_13301_B1P4_Wind2\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_13301_B1P4_Wind2",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513304",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "OnCustomEvent",
+      "line": 1202913,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_132_Ultra",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_132_Ultra_P42",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513242",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "OnCustomEvent",
+      "line": 1202918,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_132_Ultra_H6\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_132_Ultra_H6",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513243",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnSelfAttacked",
+      "line": 1203356,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_132_Main_S1_Burst_P08_Stun\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_132_Main_S1_Burst_P08_Stun",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513208",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "TriggerStarBuff",
+      "line": 1204326,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_132_Support_StarBurst",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_132_Support_StarBurst_P22_Big",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513222",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1204592,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_132_Support_P23\u0022",
+      "values": [
+        {
+          "value": "Bullet_132_Support_P23",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513223",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnSearchTargetFinish_P28",
+      "line": 1204675,
+      "sink": "Shoot",
+      "argument": "(_targets_P28.Count \u003E 1) ? bulletPathList_P28[TSRandom.Range(0, bulletPathList_P28.Count)] : bulletPathList_P28[num]",
+      "values": [
+        {
+          "value": "Bullet_132_Support_P28_1",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513228",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_132_Support_P28_2",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513228",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_132_Support_P28_3",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513228",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_132_Support_P28_4",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513228",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_MainControl_NormalAttack",
+      "method": "OnSearchTargetFinish_2",
+      "line": 1206235,
+      "sink": "Shoot",
+      "argument": "(_targets_2.Count \u003E 1) ? Config_MainControl.bulletPathList_P2[TSRandom.Range(0, Config_MainControl.bulletPathList_P2.Count)] : Config_MainControl.bulletPathList_P2[num]",
+      "values": [
+        {
+          "value": "Bullet_130_B1P02_Attack_1",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513002",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_130_B1P02_Attack_2",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513002",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_130_B1P02_Attack_3",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513002",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_130_B1P02_Attack_4",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513002",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Summoned",
+      "method": "OnRemoveShield",
+      "line": 1206656,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_130_Main_Skill_P10_Shield_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513010",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_130_Main_Skill_P10_Shield_Boom_Strengthen",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "513010",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "513008",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript",
+      "method": "PlayPhoenixEggAreaEffect",
+      "line": 1210563,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_12601_Ultra_PhoenixEgg",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_12601_Ultra_PhoenixEgg_Perk42Perk43",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512643",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "512642",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_12601_Ultra_PhoenixEgg_Perk43",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512643",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_12601_Ultra_PhoenixEgg_Perk42",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512643",
+              "negated": true
+            },
+            {
+              "type": "perk",
+              "value": "512642",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnBulletFinish",
+      "line": 1211017,
+      "sink": "Shoot",
+      "argument": "bulletAlias",
+      "values": [
+        {
+          "value": "Bullet_12601_Skill1P02_MagicHat_Return",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512602",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_12601_Skill1P01P02_MagicHat_Return",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512602",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "DoSkill",
+      "line": 1212690,
+      "sink": "Shoot",
+      "argument": "bulletAlias",
+      "values": [
+        {
+          "value": "Bullet_12601_Ultra_Phoenix",
+          "conditions": []
+        },
+        {
+          "value": "Bullet_12601_Ultra_Phoenix_Perk43",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512643",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_MainControl",
+      "method": "OnAttackLoop",
+      "line": 1214627,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_125_Main_P04P09_Axe",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512509",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_125_Main_P09_Axe",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512509",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "IceFlower",
+      "method": "ExplosionLogic",
+      "line": 1215237,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_125_Main_P27_IceFlower",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512527",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_125_Main_P27P21_IceFlower_Large",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512527",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "512521",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "PerkLogic_P24",
+      "line": 1215486,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_125_Main_P24_IceAOE\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_125_Main_P24_IceAOE",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512524",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Dodge",
+      "method": "OnCustomEvent",
+      "line": 1217882,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_123_FengBoom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512313",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_123_FengBoom_P2",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512313",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "512302",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnUpdate",
+      "line": 1220631,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_12001_B2P24_Wreath\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_12001_B2P24_Wreath",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "512024",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnReceiveDamage",
+      "line": 1224100,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffectAlias_perk_8",
+      "values": [
+        {
+          "value": "AreaEffect_118_P8_YaoShui",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511808",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "DelayPlayAreaEffect",
+      "line": 1224115,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffectAlias_24",
+      "values": [
+        {
+          "value": "AreaEffect_118_P24_YaoShui",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511824",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel_old",
+      "method": "OnDamage",
+      "line": 1227007,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffectAlias_perk_11",
+      "values": [
+        {
+          "value": "AreaEffect_117_Perk11_Repel",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511711",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnDamage",
+      "line": 1229114,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffectAlias_perk_12",
+      "values": [
+        {
+          "value": "AreaEffect_117_Perk12_Repel",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511712",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Support_Skill",
+      "method": "CustomAction",
+      "line": 1230198,
+      "sink": "PlayAreaEffect",
+      "argument": "(!flag) ? _areaEffectAlias_24 : _areaEffectAlias_2124",
+      "values": [
+        {
+          "value": "AreaEffect_117_B2P24_Skill_ElectricCircle_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511724",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_117_B2P21P24_Skill_ElectricCircle_LargeBoom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511724",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_MainControl",
+      "method": "Shoot",
+      "line": 1232208,
+      "sink": "Shoot",
+      "argument": "bulletAlias",
+      "values": [
+        {
+          "value": "Bullet_11601_MainSkill_Seed",
+          "conditions": []
+        },
+        {
+          "value": "Bullet_11601_MainSkill_Seed_Perk01",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511601",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "TriggerSeedExplosion",
+      "line": 1232853,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_11601_Skill_Sup_Seed_Perk30\u0022",
+      "values": [
+        {
+          "value": "Bullet_11601_Skill_Sup_Seed_Perk30",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511630",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Skill_Support",
+      "method": "OnCustomEvent",
+      "line": 1232971,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_11601_Skill_Sup_Seed",
+          "conditions": []
+        },
+        {
+          "value": "AreaEffect_11601_Skill_Sup_Seed",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511621",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_11601_Skill_Sup_Seed_Perk22",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511621",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "511622",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_11601_Skill_Sup_Seed_Perk22_Perk27",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511621",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "511622",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "511627",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_11601_Skill_Sup_Seed_Perk27",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511621",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "511622",
+              "negated": true
+            },
+            {
+              "type": "perk",
+              "value": "511627",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_11601_Skill_Sup_Seed_Perk22",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511622",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_11601_Skill_Sup_Seed_Perk22_Perk27",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511622",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "511627",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_11601_Skill_Sup_Seed_Perk27",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511622",
+              "negated": true
+            },
+            {
+              "type": "perk",
+              "value": "511627",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnSelfDamaged",
+      "line": 1234994,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_11501_Main_Skill_P06_Beam\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_11501_Main_Skill_P06_Beam",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511503",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnSelfCastSkill",
+      "line": 1235071,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_11501_LimitDodge_Stun\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_11501_LimitDodge_Stun",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511513",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnPlayerDamaged",
+      "line": 1236892,
+      "sink": "Shoot",
+      "argument": "bulletAlias",
+      "values": [
+        {
+          "value": "Bullet_11501_Support_Skill_P26_Boom",
+          "conditions": [
+            {
+              "type": "element",
+              "value": "LE",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "511526",
+              "negated": false
+            },
+            {
+              "type": "damageType",
+              "value": "SKILL",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_11501_Support_Skill_P26P21_Boom_Strengthen",
+          "conditions": [
+            {
+              "type": "element",
+              "value": "LE",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "511526",
+              "negated": false
+            },
+            {
+              "type": "damageType",
+              "value": "SKILL",
+              "negated": false
+            },
+            {
+              "type": "perk",
+              "value": "511522",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnSelfDamaged",
+      "line": 1236924,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_11501_Support_Skill_P22_Boom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_11501_Support_Skill_P22_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511522",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnSelfDamaged",
+      "line": 1236947,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_11501_Support_Skill_P30_Aoe\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_11501_Support_Skill_P30_Aoe",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511530",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "DoShootParabolaBombs",
+      "line": 1239626,
+      "sink": "Shoot",
+      "argument": "bulletAlias",
+      "values": [
+        {
+          "value": "Bullet_114_Support_Skill_P28_Ball_Small",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511428",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "Bullet_114_Support_Skill_P28_Ball_Big",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511428",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnMonsterKilled",
+      "line": 1247724,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffect_9",
+      "values": [
+        {
+          "value": "AreaEffect_11101_B2P29_Skill_IceWave_DeathBoom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511129",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnAreaEffectFinish",
+      "line": 1249322,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022Actor/Character/11001/Weapons/AreaEffect_110_Support_QuanZhang_Boom\u0022",
+      "values": [
+        {
+          "value": "Actor/Character/11001/Weapons/AreaEffect_110_Support_QuanZhang_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511022",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Zhiyuan_Skill",
+      "method": "OnCustomEvent",
+      "line": 1250290,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022Actor/Character/11001/Weapons/AreaEffect_110_Support_QuanZhang_LoopAOE\u0022",
+      "values": [
+        {
+          "value": "Actor/Character/11001/Weapons/AreaEffect_110_Support_QuanZhang_LoopAOE",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "511021",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "ShootLogic_24",
+      "line": 1252168,
+      "sink": "Shoot",
+      "argument": "\u0022Bullet_108_B2_Skill\u0022",
+      "values": [
+        {
+          "value": "Bullet_108_B2_Skill",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510824",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnBulletFinish",
+      "line": 1252205,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_108_B2P21_Skill_FirePit\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_108_B2P21_Skill_FirePit",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510821",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnShieldHit",
+      "line": 1253068,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_107_Support_Skill_P21_LightTag\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_107_Support_Skill_P21_LightTag",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510721",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnShieldHit",
+      "line": 1253081,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffect_p23",
+      "values": [
+        {
+          "value": "AreaEffect_107_Support_Skill_P23_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510730",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnShieldHit",
+      "line": 1253094,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffect_p23",
+      "values": [
+        {
+          "value": "AreaEffect_107_Support_Skill_P23_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510723",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel",
+      "method": "OnUpdate",
+      "line": 1253198,
+      "sink": "PlayAreaEffect",
+      "argument": "areaEffect_p25",
+      "values": [
+        {
+          "value": "AreaEffect_107_Support_Skill_P25_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510725",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Zhukong_Skill",
+      "method": "OnStart",
+      "line": 1253836,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_107_Main_Skill_P04_LightDefenseDown\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_107_Main_Skill_P04_LightDefenseDown",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510704",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Zhukong_Skill",
+      "method": "OnReceiveAttack",
+      "line": 1254003,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_107_Main_Skill_P06_Boom\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_107_Main_Skill_P06_Boom",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510706",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel_B2",
+      "method": "DoCastAreaEffect",
+      "line": 1255772,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_10301_Support_P25_Shadow\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_10301_Support_P25_Shadow",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510322",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel_B2",
+      "method": "DoCastAreaEffect",
+      "line": 1255793,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_10301_Support_P25_Shadow\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_10301_Support_P25_Shadow",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "510322",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

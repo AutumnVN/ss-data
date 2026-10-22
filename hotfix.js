@@ -11,10 +11,12 @@ const ITEM = require('./EN/bin/Item.json');
 const LANG_ITEM = require('./EN/language/en_US/Item.json');
 
 const OUTPUT = `${tmpdir()}/areaEffect.json`;
+const BULLET_FILE = `${tmpdir()}/bullet.json`;
 
 const ELEMENTS = { WE: 1, FE: 2, SE: 3, AE: 4, LE: 5, DE: 6 };
 const ELEMENTS_BY_NAME = { Water: 1, Fire: 2, Land: 3, Earth: 3, Air: 4, Wind: 4, Light: 5, Dark: 6 };
 const ELEMENT_NAMES = { 1: 'Aqua', 2: 'Ignis', 3: 'Terra', 4: 'Ventus', 5: 'Lux', 6: 'Umbra' };
+const DAMAGE_TYPE_NAMES = { NORMAL: 'Normal attack', SKILL: 'Skill', ULTIMATE: 'Ultimate', PASSIVE: 'Passive' };
 
 const SUMMON_ATTR_TYPE_LABEL = {
     Self: 'Self, uses its own stats',
@@ -131,12 +133,25 @@ function parseHitDamage(src) {
 let src = null;
 let hitDamage = null;
 let notes = null;
+let analyzerData = null;
 let scoreBossBuffs = null;
 let jointDrillBuffs = null;
 
 function getSource() {
     if (!src) src = readFileSync(HOTFIX_FILE, 'utf8');
     return src;
+}
+
+function getAnalyzerData() {
+    if (analyzerData) return analyzerData;
+
+    try {
+        analyzerData = JSON.parse(readFileSync(`${__dirname}/hotfix.json`, 'utf8'));
+    } catch {
+        analyzerData = {};
+    }
+
+    return analyzerData;
 }
 
 function getHotfixScoreBossBuffs() {
@@ -255,12 +270,147 @@ async function getHotfixData() {
 }
 
 function getHotfixHitDamage() {
-    if (!hitDamage) hitDamage = parseHitDamage(getSource());
+    if (hitDamage) return hitDamage;
+
+    const hidden = getAnalyzerData().hidden;
+    hitDamage = hidden || parseHitDamage(getSource());
     return hitDamage;
 }
 
+let interactionData = null;
+
+function joinConditions(items) {
+    if (items.length < 2) return items[0] || '';
+    return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+}
+
+function describeInteraction(conditions) {
+    const perks = conditions
+        .filter(condition => condition.type === 'perk' && !condition.negated)
+        .map(condition => potentialLabel(Number(condition.value)));
+
+    const element = conditions.find(condition => condition.type === 'element' && !condition.negated);
+    const damageType = conditions.find(condition => condition.type === 'damageType' && !condition.negated);
+    const elementName = element && ELEMENT_NAMES[ELEMENTS[element.value]];
+    const damageTypeName = damageType && DAMAGE_TYPE_NAMES[damageType.value];
+    const damage = [elementName, damageTypeName].filter(Boolean).join(' ');
+    const uniquePerks = [...new Set(perks)];
+
+    const details = [
+        uniquePerks.length && `only when ${joinConditions(uniquePerks)} ${uniquePerks.length === 1 ? 'is' : 'are'} active`,
+        damage && `only on ${damage} hits`,
+    ].filter(Boolean).join('; ');
+
+    return details ? `Conditional hit damage: ${details}` : '';
+}
+
+function getInteractionData() {
+    if (interactionData) return interactionData;
+
+    interactionData = { hitDamage: {}, notes: {}, noteKeys: {} };
+
+    const interactions = getAnalyzerData().interactions || [];
+
+    let bullets = {};
+    try {
+        bullets = JSON.parse(readFileSync(BULLET_FILE, 'utf8'));
+    } catch {}
+
+    const key = condition => `${condition.type}:${condition.value}:${condition.negated ? 1 : 0}`;
+    const same = (a, b) => key(a) === key(b);
+    const lookup = alias => {
+        if (bullets[alias] !== undefined) return bullets[alias];
+
+        const base = alias.split('/').pop();
+        if (bullets[base] !== undefined) return bullets[base];
+
+        const matches = Object.keys(bullets).filter(name => name.startsWith(base));
+        return matches.length === 1 ? bullets[matches[0]] : undefined;
+    };
+
+    for (const interaction of interactions) {
+        const values = interaction.values || [];
+        if (!values.length) continue;
+
+        const shared = values.length < 2
+            ? new Set()
+            : new Set(
+                (values[0].conditions || [])
+                    .filter(condition => values.every(value => (value.conditions || []).some(other => same(condition, other))))
+                    .map(key)
+            );
+        const allShared = values.length > 1 &&
+            values.every(value => (value.conditions || []).every(condition => shared.has(key(condition))));
+
+        for (const value of values) {
+            const bullet = lookup(value.value);
+            const ids = (Array.isArray(bullet) ? bullet : bullet === undefined ? [] : [bullet])
+                .map(String)
+                .filter(hitDamageId => {
+                    const hitDamage = HITDAMAGE[hitDamageId];
+                    return hitDamage && (hitDamage.LevelData || hitDamage.PerkId || hitDamage.SkillId);
+                });
+            if (!ids.length) continue;
+
+            const extra = (value.conditions || [])
+                .filter(condition => condition.type === 'perk' && !condition.negated && !shared.has(key(condition)));
+
+            const condition = extra[extra.length - 1] || (allShared
+                ? [...(value.conditions || [])]
+                    .reverse()
+                    .find(condition => condition.type === 'perk' && !condition.negated)
+                : undefined);
+            if (condition) {
+                const id = Number(condition.value);
+
+                if (id) {
+                    const list = interactionData.hitDamage[id] || (interactionData.hitDamage[id] = []);
+                    for (const hitDamageId of ids) {
+                        if (!list.includes(hitDamageId)) list.push(hitDamageId);
+                    }
+                }
+            }
+
+            if (!extra.length && values.length > 1 && !allShared) continue;
+
+            const note = describeInteraction(value.conditions || []);
+            if (!note) continue;
+
+            for (const hitDamageId of ids) {
+                const notes = interactionData.notes[hitDamageId] || (interactionData.notes[hitDamageId] = []);
+                const keys = interactionData.noteKeys[hitDamageId] || (interactionData.noteKeys[hitDamageId] = new Set());
+                const noteKey = (value.conditions || [])
+                    .map(condition => key(condition))
+                    .sort()
+                    .join('|');
+
+                if (!keys.has(noteKey)) {
+                    keys.add(noteKey);
+                    notes.push(note);
+                }
+            }
+        }
+    }
+
+    return interactionData;
+}
+
+function getInteractionHitDamage(potentialId) {
+    return getInteractionData().hitDamage[potentialId] || [];
+}
+
+function getInteractionHitDamageNote(hitDamageId) {
+    return getInteractionData().notes[hitDamageId] || [];
+}
+
 function getHiddenHitDamageIds(potentialId) {
-    return getHotfixHitDamage().potential[potentialId] || [];
+    const ids = [...(getHotfixHitDamage().potential[potentialId] || [])];
+
+    for (const id of getInteractionHitDamage(potentialId)) {
+        if (!ids.includes(id)) ids.push(id);
+    }
+
+    return ids;
 }
 
 let characterSummonInfo = null;
@@ -433,10 +583,7 @@ try {
 } catch {}
 
 function getHitDamageAreaEffectInfo(hitDamageId) {
-    const areaEffect = AREA_EFFECT_MAP[hitDamageId];
-    const copyBattleDataBeforeAttack = typeof areaEffect === 'boolean'
-        ? areaEffect
-        : areaEffect?.copyBattleDataBeforeAttack;
+    const copyBattleDataBeforeAttack = AREA_EFFECT_MAP[hitDamageId];
     if (typeof copyBattleDataBeforeAttack !== 'boolean') return;
 
     return {
@@ -602,29 +749,29 @@ function parseHitDamageNotes(source) {
         const conditions = [];
 
         for (const [, perkId] of guard.matchAll(GUARD_PERK)) {
-            conditions.push(`requires ${potentialLabel(+perkId)}`);
+            conditions.push(`${potentialLabel(+perkId)} is active`);
         }
 
         GUARD_ELEMENT.lastIndex = 0;
         for (const [, code] of guard.matchAll(GUARD_ELEMENT)) {
-            conditions.push(`all ${ELEMENT_NAMES[code]} trekkers`);
+            conditions.push(`all party members are ${ELEMENT_NAMES[code]}`);
         }
 
         const tag = GUARD_TAG.exec(guard);
         if (tag) {
             const value = damageTags.get(mapping.namespace)?.get(tag[1]);
-            conditions.push(value ? `damage tag ${value}` : 'a specific damage tag');
+            conditions.push(value ? `hit has damage tag ${value}` : 'hit has a specific damage tag');
         }
 
-        if (GUARD_SUMMON.test(guard)) conditions.push('own summon only');
+        if (GUARD_SUMMON.test(guard)) conditions.push('hit comes from your own summon');
 
-        if (methodAt[i] === NO_DAMAGE_METHOD) conditions.push('no damage only');
+        if (methodAt[i] === NO_DAMAGE_METHOD) conditions.push('hit deals no damage');
 
-        const suffix = conditions.length ? ` (${conditions.join(', ')})` : '';
+        const suffix = conditions.length ? ` when: ${joinConditions(conditions)}` : '';
 
         for (const { from, to } of mapping.entries) {
-            add(to, `Can replace ${from}${suffix}`);
-            add(from, `Can be replaced by ${to}${suffix}`);
+            add(to, `Replaces ${from}${suffix}`);
+            add(from, `Replaced by ${to}${suffix}`);
         }
     }
 
@@ -640,7 +787,10 @@ function parseHitDamageNotes(source) {
         if (unconditional) continue;
 
         const required = paths.reduce((kept, perks) => new Set([...kept].filter(id => perks.has(id))), paths[0]);
-        for (const perkId of required) add(id, `Requires ${potentialLabel(perkId)}`);
+        const labels = [...required].map(perkId => potentialLabel(perkId));
+        if (labels.length) {
+            add(id, `Conditional hit damage: only when ${joinConditions(labels)} ${labels.length === 1 ? 'is' : 'are'} active`);
+        }
     }
 
     return result;
@@ -654,6 +804,12 @@ function potentialLabel(potentialId) {
 }
 
 function getHitDamageNote(hitDamageId) {
+    const interactionNotes = getInteractionHitDamageNote(hitDamageId);
+    if (interactionNotes.length) return interactionNotes;
+
+    const analyzedNotes = getAnalyzerData().notes;
+    if (analyzedNotes) return analyzedNotes[hitDamageId] || [];
+
     if (!notes) notes = parseHitDamageNotes(getSource());
     return notes[hitDamageId] || [];
 }

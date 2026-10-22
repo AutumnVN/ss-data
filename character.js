@@ -1,5 +1,5 @@
 const { writeFileSync } = require('fs');
-const { collectParamsFrom, resolveParam, resolveParamsTooltips, getDamageTypeFromParam, ATTR_TYPE, DAMAGE_TYPE, EFFECT_TYPE, CORNER_TYPE, PARAM_TYPE, formatEffectType, formatAddAttrType, getSkillType, SKILL_SLOT_TYPE, collectUnusedParamsFrom, collectPotentialHiddenParamsFrom, iHateFloatingPointNumber, CHARACTER_ATTACK_TYPE, BULLET_TYPE, CHARGE_RATE_TYPE, badScaleAfterLevel } = require('./utils');
+const { collectParamsFrom, resolveParam, resolveParamsTooltips, ATTR_TYPE, DAMAGE_TYPE, EFFECT_TYPE, CORNER_TYPE, PARAM_TYPE, formatEffectType, formatAddAttrType, getSkillType, SKILL_SLOT_TYPE, collectUnusedParamsFrom, collectPotentialHiddenParamsFrom, iHateFloatingPointNumber, CHARACTER_ATTACK_TYPE, BULLET_TYPE, CHARGE_RATE_TYPE, badScaleAfterLevel } = require('./utils');
 const CHARACTER = require('./EN/bin/Character.json');
 const CHARACTERADVANCE = require('./EN/bin/CharacterAdvance.json');
 const CHARACTERDES = require('./EN/bin/CharacterDes.json');
@@ -312,16 +312,8 @@ function getSkillParamsTooltips(skillId) {
 }
 
 function getSkillDamageTypes(skillId) {
-    const damageTypes = [];
-
     const params = collectParamsFrom(SKILL[skillId]).filter(p => p && p.startsWith('HitDamage'));
-
-    for (const param of params) {
-        const damageType = getDamageTypeFromParam(param);
-        if (!damageType) continue;
-
-        damageTypes.push(damageType);
-    }
+    const damageTypes = resolveParamsTooltips(params).map(tooltip => tooltip.damageType).filter(Boolean);
 
     return [...new Set(damageTypes)];
 }
@@ -627,18 +619,12 @@ function getPotentialDamageTypes(potId) {
     const params = collectParamsFrom(POTENTIAL[potId]).filter(p => p && p.startsWith('HitDamage'));
     const hiddenParams = collectPotentialHiddenParamsFrom(POTENTIAL[potId], allSkillParams).params.filter(p => p && p.startsWith('HitDamage'));
 
-    for (const param of params) {
-        const damageType = getDamageTypeFromParam(param);
-        if (!damageType) continue;
-
-        damageTypes.push(damageType);
+    for (const tooltip of resolveParamsTooltips(params)) {
+        if (tooltip.damageType) damageTypes.push(tooltip.damageType);
     }
 
-    for (const param of hiddenParams) {
-        const damageType = getDamageTypeFromParam(param);
-        if (!damageType) continue;
-
-        damageTypes.push(`${damageType} (hidden)`);
+    for (const tooltip of resolveParamsTooltips(hiddenParams)) {
+        if (tooltip.damageType) damageTypes.push(`${tooltip.damageType} (hidden)`);
     }
 
     return [...new Set(damageTypes)];
