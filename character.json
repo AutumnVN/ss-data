@@ -41071,9 +41071,8 @@
                     "paramsTooltips": [
                         {},
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
-                            "hitDamageId": "117524001",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
+                            "damageType": "Skill (from Skill, scale with Skill)",
+                            "hitDamageId": "117524001"
                         }
                     ],
                     "hiddenParams": [],
@@ -60325,9 +60324,8 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, AreaEffect-Snapshot)",
-                            "hitDamageId": "125310901",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
+                            "damageType": "Skill (from Skill)",
+                            "hitDamageId": "125310901"
                         },
                         {},
                         {},
@@ -72194,11 +72192,10 @@
                         },
                         {},
                         {
-                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
+                            "damageType": "Minion (from Skill, scale with Skill, InheritByInitialSnapshot)",
                             "hitDamageId": "130504002",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "summonAttrPercent": 100,
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
+                            "summonAttrPercent": 100
                         },
                         {
                             "effectType": "Minion DMG (base)",
@@ -72496,11 +72493,10 @@
                         {},
                         {},
                         {
-                            "damageType": "Minion (from Skill, InheritByInitialSnapshot, AreaEffect-Snapshot)",
+                            "damageType": "Minion (from Skill, InheritByInitialSnapshot)",
                             "hitDamageId": "130510001",
                             "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "summonAttrPercent": 100,
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
+                            "summonAttrPercent": 100
                         },
                         {},
                         {},
@@ -73131,9 +73127,8 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Skill (from Skill, scale with Skill, AreaEffect-Snapshot)",
-                            "hitDamageId": "130524002",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
+                            "damageType": "Skill (from Skill, scale with Skill)",
+                            "hitDamageId": "130524002"
                         },
                         {
                             "addAttrType": "(Aqua) Skill DMG (base)",
@@ -96424,10 +96419,9 @@
                     "buffId": 13994011
                 },
                 {
-                    "damageType": "Ultimate (from Ultimate, scale with Ultimate, AreaEffect-Snapshot)",
+                    "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "139400002",
-                    "hitDamageNote": "Can be replaced by 139400102 (no damage only); Can be replaced by 139400302 (requires Clothesline Stance (513905), damage tag 139_P05_Skill)",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
+                    "hitDamageNote": "Can be replaced by 139400102 (no damage only); Can be replaced by 139400302 (requires Clothesline Stance (513905), damage tag 139_P05_Skill)"
                 },
                 {},
                 {},
@@ -120323,10 +120317,9 @@
                     ],
                     "paramsTooltips": [
                         {
-                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffect-Snapshot)",
+                            "damageType": "Ultimate (from Skill, scale with Skill)",
                             "hitDamageId": "145300002",
-                            "hitDamageNote": "Requires Subtle Tremor (514501)",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
+                            "hitDamageNote": "Requires Subtle Tremor (514501)"
                         },
                         {},
                         {}
@@ -120363,10 +120356,9 @@
                         {},
                         {},
                         {
-                            "damageType": "Ultimate (from Skill, scale with Skill, AreaEffect-Snapshot)",
+                            "damageType": "Ultimate (from Skill, scale with Skill)",
                             "hitDamageId": "145300002",
-                            "hitDamageNote": "Requires Subtle Tremor (514501)",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created"
+                            "hitDamageNote": "Requires Subtle Tremor (514501)"
                         }
                     ],
                     "hiddenParams": [],
