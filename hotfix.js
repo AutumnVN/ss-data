@@ -582,15 +582,80 @@ try {
     AREA_EFFECT_MAP = JSON.parse(readFileSync(OUTPUT, 'utf8'));
 } catch {}
 
+function getHitDamageAreaEffectEntry(hitDamageId) {
+    const entry = AREA_EFFECT_MAP[hitDamageId];
+    if (entry === undefined) return;
+
+    if (typeof entry === 'boolean') return { copyBattleDataBeforeAttack: entry, legacy: true };
+
+    return entry;
+}
+
 function getHitDamageAreaEffectInfo(hitDamageId) {
-    const copyBattleDataBeforeAttack = AREA_EFFECT_MAP[hitDamageId];
-    if (typeof copyBattleDataBeforeAttack !== 'boolean') return;
+    const entry = getHitDamageAreaEffectEntry(hitDamageId);
+    if (!entry || entry.copyBattleDataBeforeAttack === undefined) return;
+    if (!entry.legacy && entry.hits <= 1) return;
 
     return {
-        areaEffect: copyBattleDataBeforeAttack
+        areaEffect: entry.copyBattleDataBeforeAttack
             ? "AreaEffect-Refresh, refreshes summoner's stats before each attack"
             : "AreaEffect-Snapshot, snapshots summoner's stats when created",
     };
+}
+
+function getHitDamageAreaEffectDetail(hitDamageId) {
+    const entry = getHitDamageAreaEffectEntry(hitDamageId);
+    if (!entry || entry.hits === undefined) return;
+
+    const seconds = value => Math.round(value * 1e7) / 1e7;
+
+    return {
+        duration: entry.duration === undefined ? undefined : seconds(entry.duration),
+        hitDelay: entry.hitDelay === undefined ? undefined : seconds(entry.hitDelay),
+        hitInterval: entry.hitInterval === undefined ? undefined : seconds(entry.hitInterval),
+        hits: entry.hits,
+    };
+}
+
+function crc32(text) {
+    let crc = 0xffffffff;
+
+    for (let i = 0; i < text.length; i++) {
+        let c = (crc ^ text.charCodeAt(i)) & 0xff;
+        for (let j = 0; j < 8; j++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+        crc = (crc >>> 8) ^ c;
+    }
+
+    return (crc ^ 0xffffffff) | 0;
+}
+
+let damageTagNames = null;
+
+function getDamageTagNames() {
+    if (damageTagNames) return damageTagNames;
+
+    damageTagNames = new Map();
+    const values = new Set();
+    const source = getSource();
+
+    for (const match of source.matchAll(/(\w*[dD]amageTag\w*)\s*=\s*"([^"]+)"/g)) values.add(match[2]);
+    for (const match of source.matchAll(/CommonHelper\.StringToHash\("([^"]+)"\)/g)) values.add(match[1]);
+
+    for (const value of values) {
+        const hash = crc32(value);
+        if (!damageTagNames.has(hash)) damageTagNames.set(hash, value);
+    }
+
+    return damageTagNames;
+}
+
+function getHitDamageTags(hitDamageId) {
+    const hitDamage = HITDAMAGE[hitDamageId];
+    if (!hitDamage || !hitDamage.DamageTag) return [];
+
+    const names = getDamageTagNames();
+
+    return hitDamage.DamageTag.map(tag => names.get(tag) || String(tag));
 }
 
 function parseHitDamageNotes(source) {
@@ -814,4 +879,4 @@ function getHitDamageNote(hitDamageId) {
     return notes[hitDamageId] || [];
 }
 
-module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };
+module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getHitDamageAreaEffectDetail, getHitDamageTags, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };
