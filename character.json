@@ -16297,6 +16297,74 @@
                     "hitDelay": 0.2,
                     "hitInterval": 0.25,
                     "hits": 16,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.5,
+                            "hits": 8
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.25,
+                            "hits": 16
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.25,
+                            "hits": 16
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.5,
+                            "hits": 8
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.5,
+                            "hits": 8
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.5,
+                            "hits": 8
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.25,
+                            "hits": 16
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.25,
+                            "hits": 16
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.25,
+                            "hits": 16
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.25,
+                            "hits": 16
+                        },
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0.5,
+                            "hits": 8
+                        }
+                    ],
                     "damageTag": [
                         "Skill",
                         "111_P21"
@@ -16468,6 +16536,14 @@
                             "hitDelay": 0.6,
                             "hitInterval": 5,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 1.2,
+                                    "hitInterval": 5,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "Skill",
                                 "WaterTagTrigger",
@@ -17472,6 +17548,14 @@
                             "hitDelay": 1,
                             "hitInterval": 5,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 3,
+                                    "hitDelay": 1,
+                                    "hitInterval": 5,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "Skill"
                             ]
@@ -24797,6 +24881,14 @@
                             "hitDelay": 0.1,
                             "hitInterval": 1,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 1,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "MC",
                                 "Main_S1",
@@ -28668,8 +28760,16 @@
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 14.5,
                     "hitDelay": 0.5,
-                    "hitInterval": 1,
-                    "hits": 14,
+                    "hitInterval": 2,
+                    "hits": 7,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 14.5,
+                            "hitDelay": 0.5,
+                            "hitInterval": 1,
+                            "hits": 14
+                        }
+                    ],
                     "damageTag": [
                         "114_FireTag1_Trigger",
                         "Skill",
@@ -28799,10 +28899,18 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "114400001",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                    "duration": 1.6,
+                    "duration": 1,
                     "hitDelay": 0,
-                    "hitInterval": 0.2,
-                    "hits": 8,
+                    "hitInterval": 2,
+                    "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 1.6,
+                            "hitDelay": 0,
+                            "hitInterval": 0.2,
+                            "hits": 8
+                        }
+                    ],
                     "damageTag": [
                         "114_FireTag1_Trigger",
                         "Ultra"
@@ -29050,8 +29158,16 @@
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 14.5,
                             "hitDelay": 0.5,
-                            "hitInterval": 1,
-                            "hits": 14,
+                            "hitInterval": 2,
+                            "hits": 7,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 14.5,
+                                    "hitDelay": 0.5,
+                                    "hitInterval": 1,
+                                    "hits": 14
+                                }
+                            ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
                                 "Skill",
@@ -29064,8 +29180,16 @@
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 14.5,
                             "hitDelay": 0.5,
-                            "hitInterval": 1,
-                            "hits": 14,
+                            "hitInterval": 2,
+                            "hits": 7,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 14.5,
+                                    "hitDelay": 0.5,
+                                    "hitInterval": 1,
+                                    "hits": 14
+                                }
+                            ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
                                 "Skill",
@@ -29080,6 +29204,14 @@
                             "hitDelay": 0.5,
                             "hitInterval": 1,
                             "hits": 14,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 14.5,
+                                    "hitDelay": 0.5,
+                                    "hitInterval": 2,
+                                    "hits": 7
+                                }
+                            ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
                                 "Skill",
@@ -30097,6 +30229,14 @@
                             "hitDelay": 0,
                             "hitInterval": 2,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0,
+                                    "hitInterval": 2,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
                                 "Skill",
@@ -32972,6 +33112,14 @@
                     "hitDelay": 0.25,
                     "hitInterval": 5,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.3,
+                            "hitInterval": 5,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "1706365349"
                     ]
@@ -33702,6 +33850,14 @@
                             "hitDelay": 0.25,
                             "hitInterval": 5,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.3,
+                                    "hitInterval": 5,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "1706365349"
                             ]
@@ -37287,10 +37443,33 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "116320001",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                    "duration": 2.5999999,
+                    "duration": 2.5,
                     "hitDelay": 0.5,
-                    "hitInterval": 0.23,
-                    "hits": 10,
+                    "hitInterval": 0.33,
+                    "hits": 7,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2.5999999,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.23,
+                            "hits": 10,
+                            "requirement": "when Sense the Stir (511622) is active"
+                        },
+                        {
+                            "duration": 2.5999999,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.23,
+                            "hits": 10,
+                            "requirement": "when Sense the Stir (511622) and Bouquet Blast (511627) are active"
+                        },
+                        {
+                            "duration": 2.5,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.33,
+                            "hits": 7,
+                            "requirement": "when Bouquet Blast (511627) is active"
+                        }
+                    ],
                     "damageTag": [
                         "116_B2_Seed_Fall"
                     ]
@@ -37306,6 +37485,14 @@
                     "hitDelay": 0.1,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 0.6,
+                            "hitDelay": 0.1,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "116_B2_Seed_AttachExplosion"
                     ]
@@ -37344,6 +37531,14 @@
                     "hitDelay": 0,
                     "hitInterval": 0.46,
                     "hits": 5,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 3.4200001,
+                            "hitDelay": 1.3,
+                            "hitInterval": 0.46,
+                            "hits": 5
+                        }
+                    ],
                     "damageTag": [
                         "116_Ultra_AOE",
                         "116_SP"
@@ -41199,6 +41394,56 @@
                     "hitDelay": 0.3,
                     "hitInterval": 0.3,
                     "hits": 26,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.5,
+                            "hits": 15
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.5,
+                            "hits": 15
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.5,
+                            "hits": 15
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.3,
+                            "hitInterval": 0.3,
+                            "hits": 26
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.5,
+                            "hits": 15
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.3,
+                            "hitInterval": 0.3,
+                            "hits": 26
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.3,
+                            "hitInterval": 0.3,
+                            "hits": 26
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.5,
+                            "hits": 15
+                        }
+                    ],
                     "damageTag": [
                         "117_B2_Skill_Hit"
                     ]
@@ -42140,6 +42385,15 @@
                             "hitDelay": 0.1,
                             "hitInterval": 3,
                             "hits": 3,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 8.3000002,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 3,
+                                    "hits": 3,
+                                    "requirement": "when Thunderbolt: Circle (511724) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "117_B2_Skill_Hit"
                             ]
@@ -57048,7 +57302,16 @@
                     "duration": 1,
                     "hitDelay": 0.15,
                     "hitInterval": 0,
-                    "hits": 1
+                    "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 1,
+                            "hitDelay": 0.15,
+                            "hitInterval": 0,
+                            "hits": 1,
+                            "requirement": "when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active"
+                        }
+                    ]
                 },
                 {
                     "effectType": "ATK (%)",
@@ -57157,6 +57420,14 @@
                     "hitDelay": 0.1,
                     "hitInterval": 1,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 1,
+                            "hitDelay": 0.1,
+                            "hitInterval": 1,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "123NrmUltraBoom"
                     ]
@@ -57202,7 +57473,16 @@
                             "duration": 1,
                             "hitDelay": 0.15,
                             "hitInterval": 0,
-                            "hits": 1
+                            "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0.15,
+                                    "hitInterval": 0,
+                                    "hits": 1,
+                                    "requirement": "when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active"
+                                }
+                            ]
                         },
                         {
                             "effectType": "Mark DMG (base)",
@@ -57302,6 +57582,15 @@
                             "hitDelay": 0.1,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 0,
+                                    "hits": 1,
+                                    "requirement": "when Grand Debut (512304) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "331199967",
                                 "123FengBoom"
@@ -57366,6 +57655,15 @@
                             "hitDelay": 0.1,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 0,
+                                    "hits": 1,
+                                    "requirement": "when Grand Debut (512304) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "331199967",
                                 "123FengBoom"
@@ -57680,7 +57978,16 @@
                             "duration": 1,
                             "hitDelay": 0.15,
                             "hitInterval": 0,
-                            "hits": 1
+                            "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0.15,
+                                    "hitInterval": 0,
+                                    "hits": 1,
+                                    "requirement": "when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active"
+                                }
+                            ]
                         },
                         {
                             "effectType": "ATK (%)",
@@ -61741,6 +62048,15 @@
                             "hitDelay": 0.4,
                             "hitInterval": 5,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.4,
+                                    "hitInterval": 5,
+                                    "hits": 1,
+                                    "requirement": "when Limits of Oblivion (512509) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "125_WaterTag_Trigger",
                                 "125_Main_Skill_Damage",
@@ -62528,6 +62844,15 @@
                             "hitDelay": 2,
                             "hitInterval": 5,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2.2,
+                                    "hitDelay": 2,
+                                    "hitInterval": 5,
+                                    "hits": 1,
+                                    "requirement": "when Crackling Zero (512527) and Realm of Frost (512521) are active"
+                                }
+                            ],
                             "damageTag": [
                                 "-177771554",
                                 "125_Skill"
@@ -65656,6 +65981,29 @@
                     "hitDelay": 0.2,
                     "hitInterval": 1,
                     "hits": 8,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.2,
+                            "hitInterval": 1,
+                            "hits": 8,
+                            "requirement": "when Reincarnation of Fire (512643) and Weave of Annihilation (512642) are active"
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.2,
+                            "hitInterval": 1,
+                            "hits": 8,
+                            "requirement": "when Weave of Annihilation (512642) is active"
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.2,
+                            "hitInterval": 1,
+                            "hits": 8,
+                            "requirement": "when Reincarnation of Fire (512643) is active"
+                        }
+                    ],
                     "damageTag": [
                         "126_Ultra_FireRing"
                     ]
@@ -66311,6 +66659,15 @@
                             "hitDelay": 1.5,
                             "hitInterval": 1,
                             "hits": 7,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 8,
+                                    "hitDelay": 1.5,
+                                    "hitInterval": 1,
+                                    "hits": 7,
+                                    "requirement": "when Reincarnation of Fire (512643) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "126_Ultra_FireRing"
                             ]
@@ -69555,6 +69912,14 @@
                     "hitDelay": 0.2,
                     "hitInterval": 1,
                     "hits": 6,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 6,
+                            "hitDelay": 0.2,
+                            "hitInterval": 1,
+                            "hits": 6
+                        }
+                    ],
                     "damageTag": [
                         "127_B2Atk",
                         "127_B2Water",
@@ -73639,6 +74004,14 @@
                     "hitDelay": 0,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 0.5,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "130_Ultra"
                     ]
@@ -73877,6 +74250,14 @@
                             "hitDelay": 0.2,
                             "hitInterval": 0.5,
                             "hits": 8,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 4,
+                                    "hitDelay": 0.2,
+                                    "hitInterval": 0.5,
+                                    "hits": 8
+                                }
+                            ],
                             "damageTag": [
                                 "2057731101",
                                 "130_Main_Skill_Pet",
@@ -74188,6 +74569,15 @@
                             "hitDelay": 0.2,
                             "hitInterval": 5,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.2,
+                                    "hitInterval": 5,
+                                    "hits": 1,
+                                    "requirement": "when Hazy Curtain (513010) and Surging Tide (513008) are active"
+                                }
+                            ],
                             "damageTag": [
                                 "130_Main_Skill_Pet",
                                 "130_WaterTagTrigger"
@@ -74845,6 +75235,14 @@
                             "hitDelay": 0.05,
                             "hitInterval": 5,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.05,
+                                    "hitInterval": 5,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "130_B2_Water"
                             ]
@@ -78227,8 +78625,17 @@
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 5.5999999,
                     "hitDelay": 1.5,
-                    "hitInterval": 0.18,
-                    "hits": 23,
+                    "hitInterval": 0.25,
+                    "hits": 17,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 5.5999999,
+                            "hitDelay": 1.5,
+                            "hitInterval": 0.18,
+                            "hits": 23,
+                            "requirement": "when Flash of Starlight (513242) is active"
+                        }
+                    ],
                     "damageTag": [
                         "132_Ultra"
                     ]
@@ -82303,10 +82710,25 @@
                     "hitDamageId": "133320003",
                     "hitDamageNote": "Conditional hit damage: only when Flower Formation: Waves (513323) is active",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                    "duration": 10,
+                    "duration": 6,
                     "hitDelay": 1,
                     "hitInterval": 1,
-                    "hits": 9,
+                    "hits": 5,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 10,
+                            "hitDelay": 1,
+                            "hitInterval": 1,
+                            "hits": 9,
+                            "requirement": "when Flower Formation: Waves (513323) is active"
+                        },
+                        {
+                            "duration": 10,
+                            "hitDelay": 1,
+                            "hitInterval": 1,
+                            "hits": 9
+                        }
+                    ],
                     "damageTag": [
                         "133Hit",
                         "133_B2_PetalRegion",
@@ -82487,6 +82909,15 @@
                             "hitDelay": 0,
                             "hitInterval": 0.1,
                             "hits": 20,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0,
+                                    "hitInterval": 0.1,
+                                    "hits": 20,
+                                    "requirement": "when Spiral Vortex (513304) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "133Hit",
                                 "133_B1",
@@ -83276,6 +83707,15 @@
                             "hitDelay": 0.1,
                             "hitInterval": 4,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 4,
+                                    "hits": 1,
+                                    "requirement": "when Flower Formation: Turbulent (513324) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "133Hit",
                                 "133_B2_PetalRegion",
@@ -83531,6 +83971,15 @@
                             "hitDelay": 0,
                             "hitInterval": 4,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 3,
+                                    "hitDelay": 0,
+                                    "hitInterval": 4,
+                                    "hits": 1,
+                                    "requirement": "when Flower Formation: Blast (513330) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "133Hit",
                                 "133_B2_PetalRegion",
@@ -86502,10 +86951,18 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "134320001",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                    "duration": 2,
+                    "duration": 2.0999999,
                     "hitDelay": 0,
-                    "hitInterval": 0.13,
-                    "hits": 16,
+                    "hitInterval": 0.2,
+                    "hits": 11,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0.13,
+                            "hits": 16
+                        }
+                    ],
                     "damageTag": [
                         "134_Support_Hurt",
                         "134_Support_HurtTag",
@@ -90689,6 +91146,14 @@
                     "hitDelay": 0,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 1,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "135UltraAtk"
                     ]
@@ -91703,6 +92168,14 @@
                             "hitDelay": 1,
                             "hitInterval": 1,
                             "hits": 6,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 6.5999999,
+                                    "hitDelay": 1,
+                                    "hitInterval": 1,
+                                    "hits": 6
+                                }
+                            ],
                             "damageTag": [
                                 "135GhostDoorAtk",
                                 "135SupportSkillAtk"
@@ -94543,6 +95016,26 @@
                     "hitDelay": 0.2,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0,
+                            "hits": 1
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0,
+                            "hits": 1
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.2,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "137NrmAtk",
                         "137ShiZiZhanAtk",
@@ -94607,6 +95100,26 @@
                     "hitDelay": 0.1,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 1.1,
+                            "hitDelay": 0.1,
+                            "hitInterval": 0,
+                            "hits": 1
+                        },
+                        {
+                            "duration": 1.1,
+                            "hitDelay": 0.1,
+                            "hitInterval": 0,
+                            "hits": 1
+                        },
+                        {
+                            "duration": 0.7,
+                            "hitDelay": 0.1,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "1845967911",
                         "137MainUavAtk",
@@ -94655,6 +95168,14 @@
                     "hitDelay": 0.1,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 1.5,
+                            "hitDelay": 0.1,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "-19581704",
                         "137SkillSupZaDi"
@@ -94701,6 +95222,26 @@
                     "hitDelay": 0,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "137UltraAtk"
                     ]
@@ -94863,6 +95404,26 @@
                             "hitDelay": 0.1,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 0.7,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 0.7,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 1.1,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "1845967911",
                                 "137MainUavAtk",
@@ -94924,6 +95485,14 @@
                             "hitDelay": 0.7,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.7,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "137NrmAtk",
                                 "137WindTagTrigger"
@@ -95537,6 +96106,15 @@
                             "hitDelay": 0.1,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1.5,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 0,
+                                    "hits": 1,
+                                    "requirement": "when Chain Detonation (513721) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "-19581704",
                                 "137SkillSupZaDi"
@@ -98787,9 +99365,32 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "139320002",
                     "duration": 2,
-                    "hitDelay": 0.08,
+                    "hitDelay": 0.15,
                     "hitInterval": 3,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.08,
+                            "hitInterval": 3,
+                            "hits": 1,
+                            "requirement": "when Accidental Ruin (513924) and Crescent Icicle (513930) are active"
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.08,
+                            "hitInterval": 3,
+                            "hits": 1,
+                            "requirement": "when Accidental Ruin (513924) is active"
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.08,
+                            "hitInterval": 3,
+                            "hits": 1,
+                            "requirement": "when Crescent Icicle (513930) is active"
+                        }
+                    ],
                     "damageTag": [
                         "139_B2_End",
                         "139_Sup_P31",
@@ -98860,6 +99461,14 @@
                     "hitDelay": 0.08,
                     "hitInterval": 3,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.08,
+                            "hitInterval": 3,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "139_Sup_P31",
                         "139_P08_Mark",
@@ -98891,6 +99500,14 @@
                     "hitDelay": 0.05,
                     "hitInterval": 3,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.05,
+                            "hitInterval": 3,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "139_Sup_P31",
                         "139_P05_Skill",
@@ -98986,6 +99603,38 @@
                             "hitDelay": 0.38,
                             "hitInterval": 3,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.38,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.38,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.38,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.38,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.38,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "139_B1",
                                 "139_P02",
@@ -100017,6 +100666,28 @@
                             "hitDelay": 0.65,
                             "hitInterval": 3,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.65,
+                                    "hitInterval": 3,
+                                    "hits": 1,
+                                    "requirement": "when Accidental Ruin (513924) and Crescent Icicle (513930) are active"
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.65,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.65,
+                                    "hitInterval": 3,
+                                    "hits": 1,
+                                    "requirement": "when Accidental Ruin (513924) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "139_B2_End",
                                 "139_Sup_P31",
@@ -100229,6 +100900,26 @@
                             "hitDelay": 0.08,
                             "hitInterval": 3,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.08,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.08,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.08,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "139_B2_End",
                                 "139_Sup_P31",
@@ -102937,10 +103628,18 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "140400001",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                    "duration": 2.8,
-                    "hitDelay": 0.25,
+                    "duration": 2.5,
+                    "hitDelay": 0,
                     "hitInterval": 0.25,
-                    "hits": 11,
+                    "hits": 10,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2.8,
+                            "hitDelay": 0.25,
+                            "hitInterval": 0.25,
+                            "hits": 11
+                        }
+                    ],
                     "damageTag": [
                         "140_LandTag_Trigger",
                         "140_Ultra",
@@ -102954,6 +103653,15 @@
                     "hitDelay": 0.5,
                     "hitInterval": 5,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.5,
+                            "hitInterval": 5,
+                            "hits": 1,
+                            "requirement": "when Wonderland Bound (514042) is active"
+                        }
+                    ],
                     "damageTag": [
                         "140_LandTag_Trigger",
                         "140_Ultra",
@@ -107215,6 +107923,14 @@
                     "hitDelay": 0.3,
                     "hitInterval": 0.3,
                     "hits": 17,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 3.9000001,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.5,
+                            "hits": 7
+                        }
+                    ],
                     "damageTag": [
                         "141_Ignite",
                         "141_Ultra_Hurt"
@@ -111137,6 +111853,14 @@
                     "hitDelay": 0,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "142SkillSupAtk",
                         "142AddDarkMark1"
@@ -115437,6 +116161,22 @@
                             "hitDelay": 0,
                             "hitInterval": 0.5,
                             "hits": 8,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 4,
+                                    "hitDelay": 0,
+                                    "hitInterval": 0.5,
+                                    "hits": 8,
+                                    "requirement": "when Last Gasp of Gale (514301) is active"
+                                },
+                                {
+                                    "duration": 4,
+                                    "hitDelay": 0,
+                                    "hitInterval": 0.5,
+                                    "hits": 8,
+                                    "requirement": "when Twin Shadows (514302) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "143WindTagTrigger"
                             ]
@@ -115484,6 +116224,22 @@
                             "hitDelay": 0,
                             "hitInterval": 0.5,
                             "hits": 8,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 4,
+                                    "hitDelay": 0,
+                                    "hitInterval": 0.5,
+                                    "hits": 8,
+                                    "requirement": "when Last Gasp of Gale (514301) is active"
+                                },
+                                {
+                                    "duration": 4,
+                                    "hitDelay": 0,
+                                    "hitInterval": 0.5,
+                                    "hits": 8,
+                                    "requirement": "when Twin Shadows (514302) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "143WindTagTrigger"
                             ]
@@ -119884,6 +120640,29 @@
                             "hitDelay": 0.15,
                             "hitInterval": 0.2,
                             "hits": 2,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.15,
+                                    "hitInterval": 0.2,
+                                    "hits": 2,
+                                    "requirement": "when Aqueous Phantasm (514407) is active"
+                                },
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.15,
+                                    "hitInterval": 0.2,
+                                    "hits": 2,
+                                    "requirement": "when Aqueous Phantasm (514407) is active"
+                                },
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.15,
+                                    "hitInterval": 0.2,
+                                    "hits": 2,
+                                    "requirement": "when Aqueous Phantasm (514407) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "1642108325",
                                 "144_WaterTag_Trigger",
@@ -123592,6 +124371,26 @@
                             "hitDelay": 1,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "145DarkTagTrigger"
                             ]
@@ -123638,6 +124437,26 @@
                             "hitDelay": 1,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 1,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "145DarkTagTrigger"
                             ]
@@ -124411,6 +125230,20 @@
                             "hitDelay": 0.4,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.6,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.4,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "145AddDarkMark1",
                                 "145SkillSupRain"
@@ -124542,6 +125375,20 @@
                             "hitDelay": 0,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                },
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "145AddDarkMark1"
                             ]
@@ -127496,6 +128343,14 @@
                     "hitDelay": 0.12,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 1,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "147UltraAtk",
                         "147DarkTagTrigger"
@@ -127625,7 +128480,15 @@
                             "duration": 2,
                             "hitDelay": 0.2,
                             "hitInterval": 0,
-                            "hits": 1
+                            "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.2,
+                                    "hitInterval": 0,
+                                    "hits": 1
+                                }
+                            ]
                         },
                         {
                             "effectType": "Minion DMG (base)",
@@ -127856,10 +128719,18 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                            "duration": 2.6199999,
-                            "hitDelay": 0,
-                            "hitInterval": 0.2,
-                            "hits": 14,
+                            "duration": 1,
+                            "hitDelay": 0.12,
+                            "hitInterval": 0,
+                            "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2.6199999,
+                                    "hitDelay": 0,
+                                    "hitInterval": 0.2,
+                                    "hits": 14
+                                }
+                            ],
                             "damageTag": [
                                 "147DarkTagTrigger"
                             ]
@@ -131500,6 +132371,15 @@
                     "hitDelay": 0.1,
                     "hitInterval": 3,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 0.5,
+                            "hitDelay": 0.1,
+                            "hitInterval": 3,
+                            "hits": 1,
+                            "requirement": "when Hexacalamity: Famine (514930) is active"
+                        }
+                    ],
                     "damageTag": [
                         "149_B2_Earthquake",
                         "149_B2",
@@ -132417,6 +133297,28 @@
                             "hitDelay": 0.1,
                             "hitInterval": 3,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 3,
+                                    "hits": 1,
+                                    "requirement": "when Hexacalamity: Famine (514930) is active"
+                                },
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 3,
+                                    "hits": 1,
+                                    "requirement": "when Hexacalamity: Famine (514930) is active"
+                                },
+                                {
+                                    "duration": 1.21,
+                                    "hitDelay": 0.1,
+                                    "hitInterval": 3,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "149_B2_Earthquake",
                                 "149_B2",
@@ -132649,6 +133551,22 @@
                             "hitDelay": 0.3,
                             "hitInterval": 3,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.3,
+                                    "hitInterval": 3,
+                                    "hits": 1,
+                                    "requirement": "when Hexacalamity: Famine (514930) is active"
+                                },
+                                {
+                                    "duration": 0.5,
+                                    "hitDelay": 0.3,
+                                    "hitInterval": 3,
+                                    "hits": 1,
+                                    "requirement": "when Hexacalamity: Famine (514930) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "149_B2_Earthquake",
                                 "149_B2",
@@ -135488,6 +136406,14 @@
                     "hitDelay": 0.1,
                     "hitInterval": 0.1,
                     "hits": 5,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 1,
+                            "hitDelay": 0.15,
+                            "hitInterval": 0.15,
+                            "hits": 6
+                        }
+                    ],
                     "damageTag": [
                         "150_P02_Hurt_Trigger",
                         "150_Attack"
@@ -135595,6 +136521,14 @@
                     "hitDelay": 0.3,
                     "hitInterval": 0.3,
                     "hits": 13,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 4,
+                            "hitDelay": 0.3,
+                            "hitInterval": 0.3,
+                            "hits": 13
+                        }
+                    ],
                     "damageTag": [
                         "150_LightMark_Trigger",
                         "150_P30"
@@ -135607,6 +136541,14 @@
                     "hitDelay": 0.1,
                     "hitInterval": 5,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.1,
+                            "hitInterval": 5,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "150_LightMark_Trigger",
                         "150_Light",
@@ -135723,6 +136665,15 @@
                             "hitDelay": 0,
                             "hitInterval": 0.1,
                             "hits": 31,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 10,
+                                    "hitDelay": 0.5,
+                                    "hitInterval": 0.5,
+                                    "hits": 19,
+                                    "requirement": "when Aerial Suspension (515001) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "150_Skill",
                                 "150_P02_Hurt_Trigger",
@@ -136011,10 +136962,24 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "150310601",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                            "duration": 5,
-                            "hitDelay": 1.2,
-                            "hitInterval": 0.5,
-                            "hits": 8,
+                            "duration": 2,
+                            "hitDelay": 0.5,
+                            "hitInterval": 5,
+                            "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 5,
+                                    "hitDelay": 1.2,
+                                    "hitInterval": 0.5,
+                                    "hits": 8
+                                },
+                                {
+                                    "duration": 5,
+                                    "hitDelay": 1.2,
+                                    "hitInterval": 0.5,
+                                    "hits": 8
+                                }
+                            ],
                             "damageTag": [
                                 "150_Skill",
                                 "150_P02_Hurt_Trigger",
@@ -136500,6 +137465,14 @@
                             "hitDelay": 0.3,
                             "hitInterval": 0.3,
                             "hits": 3,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0.3,
+                                    "hitInterval": 0.3,
+                                    "hits": 3
+                                }
+                            ],
                             "damageTag": [
                                 "150_LightMark_Trigger",
                                 "150_Light",
@@ -144165,10 +145138,33 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "156320002",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                    "duration": 3,
+                    "duration": 2,
                     "hitDelay": 0,
                     "hitInterval": 0.3,
-                    "hits": 10,
+                    "hits": 7,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 3,
+                            "hitDelay": 0,
+                            "hitInterval": 0.3,
+                            "hits": 10,
+                            "requirement": "when Bold Assertion (515621) and Feel the Beat (515622) are active"
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0.3,
+                            "hits": 7,
+                            "requirement": "when Feel the Beat (515622) is active"
+                        },
+                        {
+                            "duration": 3,
+                            "hitDelay": 0,
+                            "hitInterval": 0.3,
+                            "hits": 10,
+                            "requirement": "when Bold Assertion (515621) is active"
+                        }
+                    ],
                     "damageTag": [
                         "156AddLandMark1",
                         "SkillType"
@@ -144183,10 +145179,26 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "156320004",
-                    "duration": 2,
+                    "duration": 1,
                     "hitDelay": 0.1,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0.1,
+                            "hitInterval": 0,
+                            "hits": 1,
+                            "requirement": "when Sweetheart Bloom (515624) is active"
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 1.6,
+                            "hitInterval": 0,
+                            "hits": 1,
+                            "requirement": "when Sweetheart Bloom (515624) is active"
+                        }
+                    ],
                     "damageTag": [
                         "156AddLandMark1",
                         "156SupSkillAllShot",
@@ -148164,6 +149176,26 @@
                     "hitDelay": 0,
                     "hitInterval": 0,
                     "hits": 1,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        },
+                        {
+                            "duration": 2,
+                            "hitDelay": 0,
+                            "hitInterval": 0,
+                            "hits": 1
+                        }
+                    ],
                     "damageTag": [
                         "-523431358",
                         "157P9Trigger"
@@ -152818,6 +153850,15 @@
                             "hitDelay": 0.2,
                             "hitInterval": 5,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 0.4,
+                                    "hitDelay": 0.2,
+                                    "hitInterval": 5,
+                                    "hits": 1,
+                                    "requirement": "when Crossing Welts (515804) and Wild Whip Waltz (515809) are active"
+                                }
+                            ],
                             "damageTag": [
                                 "158_P11"
                             ]
@@ -156843,6 +157884,14 @@
                     "hitDelay": 1,
                     "hitInterval": 0.8,
                     "hits": 7,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 6,
+                            "hitDelay": 1,
+                            "hitInterval": 0.8,
+                            "hits": 7
+                        }
+                    ],
                     "damageTag": [
                         "159_Sup_Withered",
                         "159_LandTagAdd",
@@ -160903,9 +161952,17 @@
                     "hitDamageId": "160320002",
                     "areaEffect": "AreaEffect-Refresh, refreshes owner's stats before each attack",
                     "duration": 50,
-                    "hitDelay": 0.5,
-                    "hitInterval": 1.5,
-                    "hits": 33,
+                    "hitDelay": 1,
+                    "hitInterval": 3,
+                    "hits": 17,
+                    "areaEffectVariants": [
+                        {
+                            "duration": 50,
+                            "hitDelay": 0.5,
+                            "hitInterval": 1.5,
+                            "hits": 33
+                        }
+                    ],
                     "damageTag": [
                         "160_WaterMark"
                     ]
@@ -161373,6 +162430,14 @@
                             "hitDelay": 0.2,
                             "hitInterval": 4,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 2,
+                                    "hitDelay": 0.2,
+                                    "hitInterval": 4,
+                                    "hits": 1
+                                }
+                            ],
                             "damageTag": [
                                 "1423934492",
                                 "160_P5",
@@ -166274,6 +167339,15 @@
                             "hitDelay": 0.3,
                             "hitInterval": 0,
                             "hits": 1,
+                            "areaEffectVariants": [
+                                {
+                                    "duration": 1,
+                                    "hitDelay": 0.3,
+                                    "hitInterval": 0,
+                                    "hits": 1,
+                                    "requirement": "when Inquisitor's Edge (516222) is active"
+                                }
+                            ],
                             "damageTag": [
                                 "162LightMarkTrigger",
                                 "Zhong"
