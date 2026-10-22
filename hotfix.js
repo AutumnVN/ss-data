@@ -20,8 +20,8 @@ const DAMAGE_TYPE_NAMES = { NORMAL: 'Normal attack', SKILL: 'Skill', ULTIMATE: '
 
 const SUMMON_ATTR_TYPE_LABEL = {
     Self: 'Self, uses its own stats',
-    Inherit: "Inherit, copies summoner's current stats (includes active buffs)",
-    InheritByInitialSnapshot: "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+    Inherit: "Inherit, copies owner's current stats (includes active buffs)",
+    InheritByInitialSnapshot: "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
 };
 
 const ELEMENT_CODES = /(?:\(\s*(?:int|elementType)\s*\)\s*[\w.]*)?elementType(?:\s*\)\s*|\s*[!=]=\s*)([1-6])\b/g;
@@ -284,20 +284,29 @@ function joinConditions(items) {
     return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
 }
 
-function describeInteraction(conditions) {
-    const perks = conditions
-        .filter(condition => condition.type === 'perk' && !condition.negated)
-        .map(condition => potentialLabel(Number(condition.value)));
+function describeInteraction(sets) {
+    const alternatives = sets.map(conditions => {
+        const perks = conditions
+            .filter(condition => condition.type === 'perk' && !condition.negated)
+            .map(condition => potentialLabel(Number(condition.value)));
 
+        const uniquePerks = [...new Set(perks)];
+
+        return uniquePerks.length
+            ? `only when ${joinConditions(uniquePerks)} ${uniquePerks.length === 1 ? 'is' : 'are'} active`
+            : '';
+    }).filter(Boolean);
+
+    const conditions = sets[0] || [];
     const element = conditions.find(condition => condition.type === 'element' && !condition.negated);
     const damageType = conditions.find(condition => condition.type === 'damageType' && !condition.negated);
     const elementName = element && ELEMENT_NAMES[ELEMENTS[element.value]];
     const damageTypeName = damageType && DAMAGE_TYPE_NAMES[damageType.value];
     const damage = [elementName, damageTypeName].filter(Boolean).join(' ');
-    const uniquePerks = [...new Set(perks)];
+    const unique = [...new Set(alternatives)];
 
     const details = [
-        uniquePerks.length && `only when ${joinConditions(uniquePerks)} ${uniquePerks.length === 1 ? 'is' : 'are'} active`,
+        unique.length && (unique.length > 1 ? unique.join(' or ') : unique[0]),
         damage && `only on ${damage} hits`,
     ].filter(Boolean).join('; ');
 
@@ -307,7 +316,7 @@ function describeInteraction(conditions) {
 function getInteractionData() {
     if (interactionData) return interactionData;
 
-    interactionData = { hitDamage: {}, notes: {}, noteKeys: {} };
+    interactionData = { hitDamage: {}, notes: {} };
 
     const interactions = getAnalyzerData().interactions || [];
 
@@ -328,6 +337,52 @@ function getInteractionData() {
         return matches.length === 1 ? bullets[matches[0]] : undefined;
     };
 
+    const groups = new Map();
+
+    const intersectConditions = list => {
+        if (!list.length) return [];
+
+        return list[0].filter(condition => list.every(conditions =>
+            conditions.some(other => same(other, condition))
+        ));
+    };
+
+    const idsOf = alias => {
+        const bullet = lookup(alias);
+
+        return (Array.isArray(bullet) ? bullet : bullet === undefined ? [] : [bullet])
+            .map(String)
+            .filter(hitDamageId => {
+                const hitDamage = HITDAMAGE[hitDamageId];
+                return hitDamage && (hitDamage.LevelData || hitDamage.PerkId || hitDamage.SkillId);
+            });
+    };
+
+    const usages = new Map();
+
+    for (const interaction of interactions) {
+        for (const value of interaction.values || []) {
+            const groupKey = `${interaction.class}|${interaction.method}|${value.value}`;
+            const list = usages.get(groupKey) || [];
+            list.push(value.conditions || []);
+            usages.set(groupKey, list);
+        }
+    }
+
+    const alwaysIds = new Set();
+
+    for (const [groupKey, list] of usages) {
+        const alias = groupKey.slice(groupKey.lastIndexOf('|') + 1);
+        const perks = list.map(conditions => conditions.filter(condition => condition.type === 'perk'));
+        const common = perks[0].filter(condition => perks.every(conditions =>
+            conditions.some(other => same(other, condition))
+        ));
+
+        if (common.some(condition => !condition.negated)) continue;
+
+        for (const hitDamageId of idsOf(alias)) alwaysIds.add(hitDamageId);
+    }
+
     for (const interaction of interactions) {
         const values = interaction.values || [];
         if (!values.length) continue;
@@ -343,13 +398,7 @@ function getInteractionData() {
             values.every(value => (value.conditions || []).every(condition => shared.has(key(condition))));
 
         for (const value of values) {
-            const bullet = lookup(value.value);
-            const ids = (Array.isArray(bullet) ? bullet : bullet === undefined ? [] : [bullet])
-                .map(String)
-                .filter(hitDamageId => {
-                    const hitDamage = HITDAMAGE[hitDamageId];
-                    return hitDamage && (hitDamage.LevelData || hitDamage.PerkId || hitDamage.SkillId);
-                });
+            const ids = idsOf(value.value).filter(hitDamageId => !alwaysIds.has(hitDamageId));
             if (!ids.length) continue;
 
             const extra = (value.conditions || [])
@@ -360,36 +409,51 @@ function getInteractionData() {
                     .reverse()
                     .find(condition => condition.type === 'perk' && !condition.negated)
                 : undefined);
-            if (condition) {
-                const id = Number(condition.value);
+            if (!condition) continue;
 
-                if (id) {
-                    const list = interactionData.hitDamage[id] || (interactionData.hitDamage[id] = []);
-                    for (const hitDamageId of ids) {
-                        if (!list.includes(hitDamageId)) list.push(hitDamageId);
-                    }
-                }
-            }
-
-            if (!extra.length && values.length > 1 && !allShared) continue;
-
-            const note = describeInteraction(value.conditions || []);
-            if (!note) continue;
+            const potentialId = Number(condition.value);
+            if (!potentialId) continue;
 
             for (const hitDamageId of ids) {
-                const notes = interactionData.notes[hitDamageId] || (interactionData.notes[hitDamageId] = []);
-                const keys = interactionData.noteKeys[hitDamageId] || (interactionData.noteKeys[hitDamageId] = new Set());
-                const noteKey = (value.conditions || [])
-                    .map(condition => key(condition))
-                    .sort()
-                    .join('|');
+                const groupKey = `${hitDamageId}|${potentialId}`;
+                let group = groups.get(groupKey);
 
-                if (!keys.has(noteKey)) {
-                    keys.add(noteKey);
-                    notes.push(note);
+                if (!group) {
+                    group = { hitDamageId, potentialId, conditions: [] };
+                    groups.set(groupKey, group);
                 }
+
+                group.conditions.push(value.conditions || []);
             }
         }
+    }
+
+    const byHitDamage = new Map();
+
+    for (const group of groups.values()) {
+        const list = interactionData.hitDamage[group.potentialId] || (interactionData.hitDamage[group.potentialId] = []);
+        if (!list.includes(group.hitDamageId)) list.push(group.hitDamageId);
+
+        const conditions = intersectConditions(group.conditions);
+        const set = new Set(conditions.map(condition => key(condition)));
+
+        const sets = byHitDamage.get(group.hitDamageId) || [];
+        if (!sets.some(other => other.set.size === set.size && [...set].every(item => other.set.has(item)))) {
+            sets.push({ set, conditions });
+        }
+        byHitDamage.set(group.hitDamageId, sets);
+    }
+
+    for (const [hitDamageId, sets] of byHitDamage) {
+        const kept = sets.filter(({ set }) => !sets.some(other =>
+            other.set.size < set.size && [...other.set].every(item => set.has(item))
+        ));
+
+        const note = describeInteraction(kept.map(entry => entry.conditions));
+        if (!note) continue;
+
+        const notes = interactionData.notes[hitDamageId] || (interactionData.notes[hitDamageId] = []);
+        if (!notes.includes(note)) notes.push(note);
     }
 
     return interactionData;
@@ -598,8 +662,8 @@ function getHitDamageAreaEffectInfo(hitDamageId) {
 
     return {
         areaEffect: entry.copyBattleDataBeforeAttack
-            ? "AreaEffect-Refresh, refreshes summoner's stats before each attack"
-            : "AreaEffect-Snapshot, snapshots summoner's stats when created",
+            ? "AreaEffect-Refresh, refreshes owner's stats before each attack"
+            : "AreaEffect-Snapshot, snapshots owner's stats when created",
     };
 }
 

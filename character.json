@@ -996,7 +996,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "103525001",
                             "hitDamageNote": "Conditional hit damage: only when Scattering Waltz (510322) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 2.5,
                             "hitDelay": 0,
                             "hitInterval": 0.25,
@@ -4233,7 +4233,7 @@
                 {
                     "damageType": "Skill (2.31e, from Skill, scale with Ultimate)",
                     "hitDamageId": "107400002",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 8,
                     "hitDelay": 1,
                     "hitInterval": 1,
@@ -5134,7 +5134,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "107322301",
-                            "hitDamageNote": "Conditional hit damage: only when Revealed Flaw (510730) is active; only when Perfect Spiral (510723) is active",
                             "duration": 2,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -5461,7 +5460,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "107322301",
-                            "hitDamageNote": "Conditional hit damage: only when Revealed Flaw (510730) is active; only when Perfect Spiral (510723) is active",
                             "duration": 2,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -9062,7 +9060,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "108521001",
                             "hitDamageNote": "Conditional hit damage: only when Heated Battle (510821) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 1,
                             "hitInterval": 1,
@@ -12170,7 +12168,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Normal attack)",
                     "hitDamageId": "110900001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "110DarkTagBoom"
@@ -12223,7 +12221,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "110900002",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "110DarkTagBoom"
@@ -12291,7 +12289,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "110900005",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "110SupportFenShenAtk",
@@ -12526,7 +12524,7 @@
                             "damageType": "Minion (scale with Skill)",
                             "hitDamageId": "110900004",
                             "hitDamageNote": "Requires Gloomy Veil (511008); Conditional hit damage: only when Shadow Step (511004) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
                             "hitDelay": 0,
@@ -13549,7 +13547,7 @@
                             "damageType": "Minion",
                             "hitDamageId": "110900006",
                             "hitDamageNote": "Requires Dark Resurgence (511029); Conditional hit damage: only when Dark Resurgence (511029) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
                             "hitDelay": 0,
@@ -16294,7 +16292,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "111320001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 4,
                     "hitDelay": 0.2,
                     "hitInterval": 0.25,
@@ -16332,7 +16330,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "111400001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 12,
                     "hitDelay": 0.1,
                     "hitInterval": 0.4,
@@ -16578,7 +16576,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "111504001",
                             "hitDamageNote": "Requires Keep Strangers at Bay (511111)",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 2.9000001,
                             "hitDelay": 1,
                             "hitInterval": 0.5,
@@ -20606,7 +20604,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "112100000",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0.4,
@@ -20661,7 +20659,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "112100000",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0.4,
@@ -20706,7 +20704,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "112100000",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0.4,
@@ -20840,7 +20838,7 @@
                         {
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "112100010",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 1,
                             "hitDelay": 0,
                             "hitInterval": 0.2,
@@ -25041,7 +25039,7 @@
                         {
                             "damageType": "Skill",
                             "hitDamageId": "113311001",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 11,
                             "hitDelay": 1,
                             "hitInterval": 1,
@@ -28667,7 +28665,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "114310002",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 14.5,
                     "hitDelay": 0.5,
                     "hitInterval": 1,
@@ -28800,7 +28798,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "114400001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1.6,
                     "hitDelay": 0,
                     "hitInterval": 0.2,
@@ -29049,7 +29047,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "114504001",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 14.5,
                             "hitDelay": 0.5,
                             "hitInterval": 1,
@@ -29063,7 +29061,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "114504002",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 14.5,
                             "hitDelay": 0.5,
                             "hitInterval": 1,
@@ -29077,7 +29075,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "114504003",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 14.5,
                             "hitDelay": 0.5,
                             "hitInterval": 1,
@@ -29948,7 +29946,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "114525001",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8.3999996,
                             "hitDelay": 0.1,
                             "hitInterval": 0.4,
@@ -33207,7 +33205,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "115506001",
                             "hitDamageNote": "Conditional hit damage: only when Firefly Glow: Convergence (511503) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 2.3,
                             "hitDelay": 0.2,
                             "hitInterval": 0.4,
@@ -34260,7 +34258,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "115322701",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 0.6,
                             "hitDelay": 0,
                             "hitInterval": 0.075,
@@ -37228,7 +37226,6 @@
                 {
                     "damageType": "Skill (10.17e, from Skill, scale with Skill)",
                     "hitDamageId": "116310001",
-                    "hitDamageNote": "Conditional hit damage: only when Let Nature Thrive (511601) is active",
                     "damageTag": [
                         "116_B1_Seed_Explosion",
                         "116_LandTag_Trigger"
@@ -37289,8 +37286,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "116320001",
-                    "hitDamageNote": "Conditional hit damage: only when Reblossom (511621) is active; only when Reblossom (511621) and Sense the Stir (511622) are active; only when Reblossom (511621), Sense the Stir (511622) and Bouquet Blast (511627) are active; only when Reblossom (511621) and Bouquet Blast (511627) are active; only when Sense the Stir (511622) is active; only when Sense the Stir (511622) and Bouquet Blast (511627) are active; only when Bouquet Blast (511627) is active",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 2.5999999,
                     "hitDelay": 0.5,
                     "hitInterval": 0.23,
@@ -37343,7 +37339,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "116400001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 2.1199999,
                     "hitDelay": 0,
                     "hitInterval": 0.46,
@@ -37394,7 +37390,6 @@
                         {
                             "damageType": "Skill (10.17e, from Skill, scale with Skill)",
                             "hitDamageId": "116310001",
-                            "hitDamageNote": "Conditional hit damage: only when Let Nature Thrive (511601) is active",
                             "damageTag": [
                                 "116_B1_Seed_Explosion",
                                 "116_LandTag_Trigger"
@@ -41199,7 +41194,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "117320001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 8,
                     "hitDelay": 0.3,
                     "hitInterval": 0.3,
@@ -42140,7 +42135,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "117524001",
                             "hitDamageNote": "Conditional hit damage: only when Thunderbolt: Circle (511724) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8.3000002,
                             "hitDelay": 0.1,
                             "hitInterval": 3,
@@ -45572,7 +45567,7 @@
                             "damageType": "Auto Attack",
                             "hitDamageId": "118000017",
                             "hitDamageNote": "Requires Toxin Infusion (511824); Conditional hit damage: only when Roaming Spectre (511808) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
@@ -46113,7 +46108,7 @@
                             "damageType": "Skill (scale with Skill)",
                             "hitDamageId": "118000011",
                             "hitDamageNote": "Requires Toxin Infusion (511824); Conditional hit damage: only when Toxin Infusion (511824) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
@@ -57037,7 +57032,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "123310001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "331199967",
@@ -57048,7 +57043,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "123310004",
                     "hitDamageNote": "Conditional hit damage: only when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "duration": 1,
                     "hitDelay": 0.15,
@@ -57202,7 +57197,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "123310004",
                             "hitDamageNote": "Conditional hit damage: only when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
                             "hitDelay": 0.15,
@@ -57301,7 +57296,7 @@
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "123310002",
                             "hitDamageNote": "Conditional hit damage: only when Grand Debut (512304) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 0.5,
                             "hitDelay": 0.1,
@@ -57365,7 +57360,7 @@
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "123310002",
                             "hitDamageNote": "Conditional hit damage: only when Grand Debut (512304) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 0.5,
                             "hitDelay": 0.1,
@@ -57680,7 +57675,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "123310004",
                             "hitDamageNote": "Conditional hit damage: only when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
                             "hitDelay": 0.15,
@@ -57979,7 +57974,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "123320002",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 99,
                             "hitDelay": 0.05,
                             "hitInterval": 1,
@@ -65514,7 +65509,7 @@
                     "damageType": "Skill (2.36e, from Skill, scale with Skill)",
                     "hitDamageId": "126310001",
                     "hitDamageNote": "Conditional hit damage: only when Ending Song (512602) is active",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "126_B1Hat"
@@ -65651,14 +65646,12 @@
             "paramsTooltips": [
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
-                    "hitDamageId": "126400001",
-                    "hitDamageNote": "Conditional hit damage: only when Reincarnation of Fire (512643) is active"
+                    "hitDamageId": "126400001"
                 },
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "126400002",
-                    "hitDamageNote": "Conditional hit damage: only when Reincarnation of Fire (512643) and Weave of Annihilation (512642) are active; only when Reincarnation of Fire (512643) is active; only when Weave of Annihilation (512642) is active",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 8,
                     "hitDelay": 0.2,
                     "hitInterval": 1,
@@ -65696,7 +65689,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "126501001",
                             "hitDamageNote": "Conditional hit damage: only when Ending Song (512602) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "damageTag": [
                                 "126_B1Hat"
@@ -66312,8 +66305,8 @@
                         {
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "126543001",
-                            "hitDamageNote": "Conditional hit damage: only when Reincarnation of Fire (512643) and Weave of Annihilation (512642) are active; only when Reincarnation of Fire (512643) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "hitDamageNote": "Conditional hit damage: only when Reincarnation of Fire (512643) is active",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 1.5,
                             "hitInterval": 1,
@@ -69499,7 +69492,7 @@
                 {
                     "damageType": "Skill (12.24e, from Skill, scale with Skill)",
                     "hitDamageId": "127310001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 0.15,
                     "hitDelay": 0,
                     "hitInterval": 0.05,
@@ -69557,7 +69550,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "127320002",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 6,
                     "hitDelay": 0.2,
                     "hitInterval": 1,
@@ -73491,7 +73484,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "130310002",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "130_Main_Skill_Pet",
@@ -73523,7 +73516,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "130000001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "duration": 2,
                     "hitDelay": 0,
@@ -73795,7 +73788,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "130503001",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "damageTag": [
                                 "130_Main_Skill_Pet",
@@ -73861,7 +73854,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "130504001",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "damageTag": [
                                 "2057731101",
@@ -73877,9 +73870,9 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "130504002",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 4,
                             "hitDelay": 0.2,
                             "hitInterval": 0.5,
@@ -74189,7 +74182,7 @@
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "130510001",
                             "hitDamageNote": "Conditional hit damage: only when Hazy Curtain (513010) and Surging Tide (513008) are active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 2,
                             "hitDelay": 0.2,
@@ -78072,7 +78065,7 @@
                 {
                     "damageType": "Auto Attack (0.52e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "132100005",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1.2,
                     "hitDelay": 0,
                     "hitInterval": 0.2,
@@ -78231,8 +78224,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "132400001",
-                    "hitDamageNote": "Conditional hit damage: only when Flash of Starlight (513242) is active",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 5.5999999,
                     "hitDelay": 1.5,
                     "hitInterval": 0.18,
@@ -79016,7 +79008,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "132400002",
                             "hitDamageNote": "Conditional hit damage: only when Weakness Strike (513243) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6.5,
                             "hitDelay": 5,
                             "hitInterval": 1,
@@ -82310,7 +82302,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "133320003",
                     "hitDamageNote": "Conditional hit damage: only when Flower Formation: Waves (513323) is active",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 10,
                     "hitDelay": 1,
                     "hitInterval": 1,
@@ -82490,7 +82482,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "133504001",
                             "hitDamageNote": "Conditional hit damage: only when Spiral Vortex (513304) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 2,
                             "hitDelay": 0,
                             "hitInterval": 0.1,
@@ -86509,7 +86501,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "134320001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 2,
                     "hitDelay": 0,
                     "hitInterval": 0.13,
@@ -90590,7 +90582,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "135900001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "135DarkTagBoom",
@@ -90600,7 +90592,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "135900002",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "135DarkTagBoom",
@@ -90654,7 +90646,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "135900005",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "duration": 1,
                     "hitDelay": 0,
@@ -90741,7 +90733,7 @@
                             "damageType": "Minion (scale with Skill)",
                             "hitDamageId": "135900004",
                             "hitDamageNote": "Requires Burst Shooting (513502)",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
                             "hitDelay": 0,
@@ -90862,7 +90854,7 @@
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "135900003",
                             "hitDamageNote": "Requires Thread the Needle (513504)",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "damageTag": [
                                 "135DarkTagBoom",
@@ -91706,7 +91698,7 @@
                             "damageType": "Skill",
                             "hitDamageId": "135900006",
                             "hitDamageNote": "Requires Malice (513528)",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6.5999999,
                             "hitDelay": 1,
                             "hitInterval": 1,
@@ -98794,7 +98786,6 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "139320002",
-                    "hitDamageNote": "Conditional hit damage: only when Accidental Ruin (513924) and Crescent Icicle (513930) are active; only when Accidental Ruin (513924) is active; only when Crescent Icicle (513930) is active",
                     "duration": 2,
                     "hitDelay": 0.08,
                     "hitInterval": 3,
@@ -100021,7 +100012,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "139524001",
-                            "hitDamageNote": "Conditional hit damage: only when Accidental Ruin (513924) and Crescent Icicle (513930) are active; only when Accidental Ruin (513924) is active",
+                            "hitDamageNote": "Conditional hit damage: only when Accidental Ruin (513924) and Crescent Icicle (513930) are active or only when Accidental Ruin (513924) is active",
                             "duration": 2,
                             "hitDelay": 0.65,
                             "hitInterval": 3,
@@ -102945,7 +102936,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "140400001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 2.8,
                     "hitDelay": 0.25,
                     "hitInterval": 0.25,
@@ -102959,7 +102950,6 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "140400002",
-                    "hitDamageNote": "Conditional hit damage: only when Wonderland Bound (514042) is active",
                     "duration": 2,
                     "hitDelay": 0.5,
                     "hitInterval": 5,
@@ -103454,7 +103444,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "140509001",
-                            "hitDamageNote": "Requires Ticking Aftershock (514009); Conditional hit damage: only when Ticking Aftershock (514009) is active; only when Ticking Aftershock (514009) and Fluffy Rechamber (514003) are active",
+                            "hitDamageNote": "Requires Ticking Aftershock (514009); Conditional hit damage: only when Ticking Aftershock (514009) is active",
                             "damageTag": [
                                 "140_LandTag_Trigger",
                                 "140_Tank",
@@ -107220,7 +107210,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "141400001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 5.1999998,
                     "hitDelay": 0.3,
                     "hitInterval": 0.3,
@@ -107448,7 +107438,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "141506001",
                             "hitDamageNote": "Conditional hit damage: only when Ashes of the Firepit (514106) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 1,
                             "hitInterval": 1,
@@ -107834,7 +107824,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "141442001",
                             "hitDamageNote": "Conditional hit damage: only when Blazing Vortex (514142) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 0.2,
                             "hitInterval": 0.5,
@@ -107875,7 +107865,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "141443001",
                             "hitDamageNote": "Conditional hit damage: only when Dragon Breath (514143) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 12,
                             "hitDelay": 3,
                             "hitInterval": 2,
@@ -115281,7 +115271,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "143000001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0.4,
@@ -115337,7 +115327,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "143000001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0.4,
@@ -115396,7 +115386,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "143000001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0.4,
@@ -115442,7 +115432,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "143300003",
                             "hitDamageNote": "Conditional hit damage: only when Last Gasp of Gale (514301) and Twin Shadows (514302) are active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 4,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
@@ -115489,7 +115479,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "143300003",
                             "hitDamageNote": "Conditional hit damage: only when Last Gasp of Gale (514301) and Twin Shadows (514302) are active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 4,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
@@ -116555,7 +116545,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "143310007",
                             "hitDamageNote": "Conditional hit damage: only when Avenger (514332) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
@@ -119253,7 +119243,7 @@
                 {
                     "damageType": "Auto Attack (1.14e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk5bf"
@@ -119262,7 +119252,7 @@
                 {
                     "damageType": "Auto Attack (2.27e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100002",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk5bf"
@@ -119271,7 +119261,7 @@
                 {
                     "damageType": "Auto Attack (2.27e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100003",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk5bf"
@@ -119280,7 +119270,7 @@
                 {
                     "damageType": "Auto Attack (1.14e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100004",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk5bf"
@@ -119289,7 +119279,7 @@
                 {
                     "damageType": "Auto Attack (1.14e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100005",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk5bf"
@@ -119298,7 +119288,7 @@
                 {
                     "damageType": "Auto Attack (2.27e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100006",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk6"
@@ -119307,7 +119297,7 @@
                 {
                     "damageType": "Auto Attack (2.27e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100007",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk6"
@@ -119316,7 +119306,7 @@
                 {
                     "damageType": "Auto Attack (2.27e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100008",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk5bf"
@@ -119325,7 +119315,7 @@
                 {
                     "damageType": "Auto Attack (2.27e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "144100009",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "-136849249",
                         "144_Atk5bf"
@@ -119363,8 +119353,8 @@
                 {
                     "damageType": "Skill (7.81e, from Skill, scale with Skill)",
                     "hitDamageId": "144310001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 0.3,
                     "hitDelay": 0,
                     "hitInterval": 0.18,
@@ -119377,7 +119367,7 @@
                 {
                     "damageType": "Skill (12.49e, from Skill, scale with Skill)",
                     "hitDamageId": "144310002",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 0.4,
                     "hitDelay": 0,
                     "hitInterval": 0.18,
@@ -119394,7 +119384,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "144000001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "duration": 2,
                     "hitDelay": 0,
                     "hitInterval": 5,
@@ -119433,8 +119423,8 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "144320001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 0.55,
                     "hitDelay": 0,
                     "hitInterval": 0.15,
@@ -119448,7 +119438,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "144320002",
                     "hitDamageNote": "Replaces 144320012 when: hit comes from your own summon and hit deals no damage",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "144_B2_Shadow",
                         "144_WaterTag_Trigger"
@@ -119457,7 +119447,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "144000001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "duration": 2,
                     "hitDelay": 0,
                     "hitInterval": 5,
@@ -119519,7 +119509,7 @@
                 {
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "144000001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "duration": 2,
                     "hitDelay": 0,
                     "hitInterval": 5,
@@ -119569,7 +119559,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Normal attack)",
                             "hitDamageId": "144311101",
                             "hitDamageNote": "Replaces 144311111 when: hit comes from your own summon and hit deals no damage",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "-136849249",
                                 "1642108325",
@@ -119584,7 +119574,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Normal attack)",
                             "hitDamageId": "144311102",
                             "hitDamageNote": "Replaces 144311112 when: hit comes from your own summon and hit deals no damage",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "-136849249",
                                 "1642108325",
@@ -119665,7 +119655,7 @@
                         {
                             "damageType": "Skill (3.86e, from Skill, scale with Skill)",
                             "hitDamageId": "144310301",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 0.45,
                             "hitDelay": 0,
                             "hitInterval": 0.14,
@@ -119889,7 +119879,7 @@
                             "damageType": "Auto Attack (from Normal attack)",
                             "hitDamageId": "144310701",
                             "hitDamageNote": "Requires Aqueous Phantasm (514407); Conditional hit damage: only when Aqueous Phantasm (514407) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 0.5,
                             "hitDelay": 0.15,
                             "hitInterval": 0.2,
@@ -120370,8 +120360,8 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "144322201",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 0.55,
                             "hitDelay": 0,
                             "hitInterval": 0.15,
@@ -120411,7 +120401,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "144322301",
                             "hitDamageNote": "Replaces 144322311 when: hit comes from your own summon and hit deals no damage",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "144_B2_Shadow",
                                 "144_WaterTag_Trigger"
@@ -120447,7 +120437,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "144322401",
                             "hitDamageNote": "Conditional hit damage: only when Where Shadows Drown (514424) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "duration": 0.1,
                             "hitDelay": 0.02,
                             "hitInterval": 0,
@@ -123474,7 +123464,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "145300006",
-                    "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack",
+                    "areaEffect": "AreaEffect-Refresh, refreshes owner's stats before each attack",
                     "duration": 4,
                     "hitDelay": 0,
                     "hitInterval": 0.5,
@@ -123558,7 +123548,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "145400002",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 2,
                     "hitDelay": 0,
                     "hitInterval": 0.3,
@@ -124482,7 +124472,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "145300012",
                             "hitDamageNote": "Requires Evening Rain (514524)",
-                            "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack",
+                            "areaEffect": "AreaEffect-Refresh, refreshes owner's stats before each attack",
                             "duration": 4,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
@@ -127366,7 +127356,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "147300001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "147DarkTagTrigger"
@@ -127375,7 +127365,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "147300002",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
                         "147DarkTagTrigger"
@@ -127630,7 +127620,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "147300003",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 2,
                             "hitDelay": 0.2,
@@ -127863,9 +127853,9 @@
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "147300004",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 2.6199999,
                             "hitDelay": 0,
                             "hitInterval": 0.2,
@@ -128092,7 +128082,7 @@
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "147300005",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100
                         }
                     ],
@@ -131506,7 +131496,6 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "149320002",
-                    "hitDamageNote": "Conditional hit damage: only when Hexacalamity: Famine (514930) and Deeper into Sin (514921) are active; only when Hexacalamity: Famine (514930) is active",
                     "duration": 1.5,
                     "hitDelay": 0.1,
                     "hitInterval": 3,
@@ -132424,7 +132413,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "149323101",
-                            "hitDamageNote": "Conditional hit damage: only when Hexacalamity: Famine (514930) and Deeper into Sin (514921) are active; only when Hexacalamity: Famine (514930) is active",
                             "duration": 1.5,
                             "hitDelay": 0.1,
                             "hitInterval": 3,
@@ -132656,7 +132644,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "149330101",
-                            "hitDamageNote": "Requires Hexacalamity: Hallowed Chains (514927); Conditional hit damage: only when Hexacalamity: Famine (514930) and Deeper into Sin (514921) are active; only when Hexacalamity: Famine (514930) is active",
+                            "hitDamageNote": "Requires Hexacalamity: Hallowed Chains (514927); Conditional hit damage: only when Hexacalamity: Famine (514930) is active",
                             "duration": 0.5,
                             "hitDelay": 0.3,
                             "hitInterval": 3,
@@ -135495,7 +135483,7 @@
                 {
                     "damageType": "Auto Attack (0.58e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "150100007",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 0.6,
                     "hitDelay": 0.1,
                     "hitInterval": 0.1,
@@ -135602,7 +135590,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "150320003",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 4,
                     "hitDelay": 0.3,
                     "hitInterval": 0.3,
@@ -135730,7 +135718,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150310101",
                             "hitDamageNote": "Conditional hit damage: only when Aerial Suspension (515001) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3.0999999,
                             "hitDelay": 0,
                             "hitInterval": 0.1,
@@ -136022,7 +136010,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "150310601",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 5,
                             "hitDelay": 1.2,
                             "hitInterval": 0.5,
@@ -136378,7 +136366,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "150404101",
                             "hitDamageNote": "Conditional hit damage: only when Lancefall: Light Realm (515041) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 10,
                             "hitDelay": 0.5,
                             "hitInterval": 0.5,
@@ -136507,7 +136495,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150322101",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 1,
                             "hitDelay": 0.3,
                             "hitInterval": 0.3,
@@ -136597,7 +136585,7 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150322302",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 1,
                             "hitDelay": 0.3,
                             "hitInterval": 0.3,
@@ -136675,7 +136663,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "150322501",
                             "hitDamageNote": "Conditional hit damage: only when Radiant Downpour (515025) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6,
                             "hitDelay": 0.1,
                             "hitInterval": 0.3,
@@ -144109,7 +144097,7 @@
                     "damageType": "Skill (12.5e, from Skill, scale with Skill)",
                     "hitDamageId": "156310002",
                     "hitDamageNote": "Replaces 156310001 when: hit comes from your own summon and hit deals no damage",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "156AddLandMark1",
                         "PenguinDollAtk",
@@ -144176,8 +144164,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "156320002",
-                    "hitDamageNote": "Conditional hit damage: only when Bold Assertion (515621) is active; only when Bold Assertion (515621) and Feel the Beat (515622) are active; only when Feel the Beat (515622) is active",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 3,
                     "hitDelay": 0,
                     "hitInterval": 0.3,
@@ -144196,7 +144183,6 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "156320004",
-                    "hitDamageNote": "Conditional hit damage: only when Sweetheart Bloom (515624) is active",
                     "duration": 2,
                     "hitDelay": 0.1,
                     "hitInterval": 0,
@@ -144393,7 +144379,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "156310004",
                             "hitDamageNote": "Requires Wobble Dance (515602); Replaces 156310003 when: hit comes from your own summon and hit deals no damage",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "156AddLandMark1",
                                 "PenguinDollAtk",
@@ -144647,7 +144633,7 @@
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "156310005",
                             "hitDamageNote": "Requires Clean Sweep (515608)",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "156AddLandMark1"
                             ]
@@ -148392,7 +148378,7 @@
                             "damageType": "Ultimate (from Skill, scale with Skill)",
                             "hitDamageId": "157300003",
                             "hitDamageNote": "Conditional hit damage: only when Predator's Vortex (515701) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 1.5,
                             "hitDelay": 0,
                             "hitInterval": 0.2,
@@ -148421,7 +148407,7 @@
                             "damageType": "Auto Attack",
                             "hitDamageId": "80157025",
                             "hitDamageNote": "Conditional hit damage: only when Predator's Vortex (515701) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 1.5,
                             "hitDelay": 0,
                             "hitInterval": 0.6,
@@ -148815,7 +148801,7 @@
                         {
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "157300008",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 1,
                             "hitDelay": 0,
                             "hitInterval": 0.1,
@@ -152434,7 +152420,7 @@
                 {
                     "damageType": "Minion (from Normal attack, scale with Normal attack)",
                     "hitDamageId": "158100006",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "158_Morale",
                         "158_P07",
@@ -152448,7 +152434,7 @@
                 {
                     "damageType": "Minion (from Normal attack, scale with Normal attack)",
                     "hitDamageId": "158100007",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "158_Morale",
                         "158_P07",
@@ -152500,7 +152486,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "158310002",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "158_P07",
                         "158_P04",
@@ -152510,7 +152496,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "158310003",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "158_P07",
                         "158_P04"
@@ -152574,7 +152560,7 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "158320003",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)"
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)"
                 }
             ],
             "icon": "15801_Skill_Support"
@@ -152624,7 +152610,7 @@
                 {
                     "damageType": "Ultimate (1.35e, from Ultimate, scale with Ultimate)",
                     "hitDamageId": "158400003",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 3.2,
                     "hitDelay": 2,
                     "hitInterval": 0.25,
@@ -152680,7 +152666,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "158501001",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_P07",
                                 "158_P04",
@@ -152690,7 +152676,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "158501002",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_P07",
                                 "158_P04"
@@ -152699,7 +152685,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "158501003",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_P07"
                             ]
@@ -152707,7 +152693,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "158501004",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_P07"
                             ]
@@ -152748,7 +152734,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "158502001",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_P07"
                             ]
@@ -152927,8 +152913,8 @@
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "158506001",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
+                            "areaEffect": "AreaEffect-Refresh, refreshes owner's stats before each attack",
                             "duration": 9999,
                             "hitDelay": 0.5,
                             "hitInterval": 1,
@@ -153113,7 +153099,7 @@
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "158511001",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_P11_2"
                             ]
@@ -153122,7 +153108,7 @@
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "158511002",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "duration": 2,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -153609,7 +153595,7 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "158523001",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_FireTag_Add"
                             ]
@@ -153672,12 +153658,12 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "158524001",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)"
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "158524002",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_FireTag_Add"
                             ]
@@ -153873,13 +153859,13 @@
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "158528001",
                             "hitDamageNote": "Conditional hit damage: only when Heart's Benediction (515828) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)"
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)"
                         },
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "158528002",
                             "hitDamageNote": "Conditional hit damage: only when Heart's Benediction (515828) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "damageTag": [
                                 "158_FireTag_Add"
                             ]
@@ -156779,7 +156765,7 @@
                 {
                     "damageType": "Skill (32.33e, from Skill, scale with Skill)",
                     "hitDamageId": "159310001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0.05,
@@ -156838,7 +156824,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "159320001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 6,
                     "hitDelay": 1,
                     "hitInterval": 0.8,
@@ -156852,7 +156838,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "159320002",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 6,
                     "hitDelay": 1,
                     "hitInterval": 0.8,
@@ -156903,7 +156889,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "159400001",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0.02,
@@ -156917,7 +156903,7 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "159400002",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 0.78,
                     "hitDelay": 0,
                     "hitInterval": 0.09,
@@ -160840,7 +160826,7 @@
                 {
                     "damageType": "Skill (14.5825e, from Skill, scale with Skill)",
                     "hitDamageId": "160310001",
-                    "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                    "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "damageTag": [
                         "1423934492",
                         "160_BubbleDoll",
@@ -160915,7 +160901,7 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "160320002",
-                    "areaEffect": "AreaEffect-Refresh, refreshes summoner's stats before each attack",
+                    "areaEffect": "AreaEffect-Refresh, refreshes owner's stats before each attack",
                     "duration": 50,
                     "hitDelay": 0.5,
                     "hitInterval": 1.5,
@@ -161099,8 +161085,8 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "160502001",
                             "hitDamageNote": "Conditional hit damage: only when Rippling Radiance (516002) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 20,
                             "hitDelay": 1,
                             "hitInterval": 1,
@@ -161210,7 +161196,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "160504001",
                             "hitDamageNote": "Conditional hit damage: only when Rainbow Rebound (516004) is active",
-                            "summonAttrType": "InheritByInitialSnapshot, copies summoner's stats from the start of battle (later buffs excluded)",
+                            "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "duration": 2,
                             "hitDelay": 0.25,
                             "hitInterval": 3,
@@ -165403,7 +165389,7 @@
                 {
                     "damageType": "Skill (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "162400004",
-                    "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                    "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 3.3,
                     "hitDelay": 0.8,
                     "hitInterval": 0.35,
@@ -165824,7 +165810,7 @@
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "162310010",
                             "hitDamageNote": "Conditional hit damage: only when Eclipse Phantom (516208) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
@@ -166147,7 +166133,7 @@
                             "damageType": "Auto Attack (from Ultimate)",
                             "hitDamageId": "162400007",
                             "hitDamageNote": "Conditional hit damage: only when Empyrean Starfall: Devil's End (516242) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
@@ -166244,7 +166230,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "162320006",
                             "hitDamageNote": "Conditional hit damage: only when Tempest Scourge (516221) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots summoner's stats when created",
+                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3,
                             "hitDelay": 0,
                             "hitInterval": 0.5,
