@@ -1,4 +1,4 @@
-const { readFileSync } = require('fs');
+﻿const { readFileSync } = require('fs');
 const { tmpdir } = require('os');
 
 const HOTFIX_FILE = `${__dirname}/hotfix/out/Hotfix.cs`;
@@ -358,20 +358,37 @@ function getInteractionData() {
             });
     };
 
-    const usages = new Map();
+    const aliasConditions = new Map();
 
     for (const interaction of interactions) {
         for (const value of interaction.values || []) {
             const groupKey = `${interaction.class}|${interaction.method}|${value.value}`;
-            const list = usages.get(groupKey) || [];
+            const list = aliasConditions.get(groupKey) || [];
             list.push(value.conditions || []);
-            usages.set(groupKey, list);
+            aliasConditions.set(groupKey, list);
         }
     }
 
     const alwaysIds = new Set();
 
-    for (const [groupKey, list] of usages) {
+    const aliasRequirements = new Map();
+
+    for (const [groupKey, list] of aliasConditions) {
+        const alias = groupKey.slice(groupKey.lastIndexOf('|') + 1);
+        const perks = list.map(conditions => conditions.filter(condition => condition.type === 'perk'));
+        const common = perks[0].filter(condition => perks.every(conditions =>
+            conditions.some(other => same(other, condition))
+        )).filter(condition => !condition.negated);
+
+        const known = aliasRequirements.get(alias) || [];
+        if (!known.length || common.length < known.length) aliasRequirements.set(alias, common);
+    }
+
+    interactionData.requirements = {};
+
+    for (const [alias, conditions] of aliasRequirements) interactionData.requirements[alias] = conditions;
+
+    for (const [groupKey, list] of aliasConditions) {
         const alias = groupKey.slice(groupKey.lastIndexOf('|') + 1);
         const perks = list.map(conditions => conditions.filter(condition => condition.type === 'perk'));
         const common = perks[0].filter(condition => perks.every(conditions =>
@@ -672,12 +689,39 @@ function getHitDamageAreaEffectDetail(hitDamageId) {
     if (!entry || entry.hits === undefined) return;
 
     const seconds = value => Math.round(value * 1e7) / 1e7;
+    const requirements = getInteractionData().requirements || {};
+
+    const requirementOf = alias => {
+        const conditions = requirements[alias.split('/').pop()] || [];
+
+        return conditions
+            .filter(condition => condition.type === 'perk' && !condition.negated)
+            .map(condition => potentialLabel(Number(condition.value)));
+    };
+
+    const variants = (entry.variants || []).map(variant => ({
+        ...variant,
+        requirement: requirementOf(variant.alias || ''),
+    }));
+
+    const base = variants.find(variant => !variant.requirement.length);
+    const primary = base || variants.reduce((a, b) => b.hits > a.hits ? b : a, variants[0]);
+    const others = variants.filter(variant => variant !== primary);
 
     return {
-        duration: entry.duration === undefined ? undefined : seconds(entry.duration),
-        hitDelay: entry.hitDelay === undefined ? undefined : seconds(entry.hitDelay),
-        hitInterval: entry.hitInterval === undefined ? undefined : seconds(entry.hitInterval),
-        hits: entry.hits,
+        duration: primary.duration === undefined ? undefined : seconds(primary.duration),
+        hitDelay: primary.hitDelay === undefined ? undefined : seconds(primary.hitDelay),
+        hitInterval: primary.hitInterval === undefined ? undefined : seconds(primary.hitInterval),
+        hits: primary.hits,
+        areaEffectVariants: others.length ? others.map(variant => ({
+            duration: variant.duration === undefined ? undefined : seconds(variant.duration),
+            hitDelay: variant.hitDelay === undefined ? undefined : seconds(variant.hitDelay),
+            hitInterval: variant.hitInterval === undefined ? undefined : seconds(variant.hitInterval),
+            hits: variant.hits,
+            requirement: variant.requirement.length
+                ? `when ${variant.requirement.join(' and ')} ${variant.requirement.length === 1 ? 'is' : 'are'} active`
+                : undefined,
+        })) : undefined,
     };
 }
 

@@ -1,4 +1,4 @@
-const CHARACTER = require('./EN/bin/Character.json');
+﻿const CHARACTER = require('./EN/bin/Character.json');
 const HITDAMAGE = require('./EN/bin/HitDamage.json');
 const EFFECT = require('./EN/bin/Effect.json');
 const EFFECTVALUE = require('./EN/bin/EffectValue.json');
@@ -921,7 +921,7 @@ function resolveParamsTooltips(params) {
             hitDelay: areaEffectDetail?.hitDelay,
             hitInterval: areaEffectDetail?.hitInterval,
             hits: areaEffectDetail?.hits,
-            damageTag: damageTags && damageTags.length ? damageTags : undefined,
+            areaEffectVariants: areaEffectDetail?.areaEffectVariants,            damageTag: damageTags && damageTags.length ? damageTags : undefined,
             effectType: getEffectTypeFromParam(param),
             effectId: getEffectIdFromParam(param),
             addAttrType: getAddAttrTypeFromParam(param),

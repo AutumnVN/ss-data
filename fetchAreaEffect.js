@@ -1,4 +1,4 @@
-const { rmSync, writeFileSync } = require('fs');
+﻿const { rmSync, writeFileSync } = require('fs');
 const { tmpdir } = require('os');
 
 const URL = 'https://raw.githubusercontent.com/AutumnVN/ssassets/main/areaEffect.json';
@@ -32,7 +32,31 @@ function clear(entry) {
         ? getHits(duration, hitDelay, hitInterval)
         : entry.hits;
 
-    return { ...entry, duration, hitDelay, hitInterval, hits };
+    const variants = (entry.variants || []).map(variant => {
+        const variantDuration = variant.duration === undefined ? undefined : round(variant.duration);
+        const variantHitDelay = variant.hitDelay === undefined ? undefined : round(variant.hitDelay);
+        const variantHitInterval = variant.hitInterval === undefined ? undefined : round(variant.hitInterval);
+        const variantTimerOnly = !(variant.triggers || []).length;
+
+        return {
+            ...variant,
+            duration: variantDuration,
+            hitDelay: variantHitDelay,
+            hitInterval: variantHitInterval,
+            hits: variantTimerOnly && variantDuration !== undefined && variantHitDelay !== undefined && variantHitInterval !== undefined
+                ? getHits(variantDuration, variantHitDelay, variantHitInterval)
+                : variant.hits,
+        };
+    });
+
+    return {
+        ...entry,
+        duration,
+        hitDelay,
+        hitInterval,
+        hits,
+        variants: variants.length ? variants : undefined,
+    };
 }
 
 rmSync(OUTPUT, { force: true });
