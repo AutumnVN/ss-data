@@ -8,6 +8,8 @@ const HITDAMAGE = require('./EN/bin/HitDamage.json');
 const SKILL = require('./EN/bin/Skill.json');
 const POTENTIAL = require('./EN/bin/Potential.json');
 const ITEM = require('./EN/bin/Item.json');
+const BUFF = require('./EN/bin/Buff.json');
+const BUFFVALUE = require('./EN/bin/BuffValue.json');
 const LANG_ITEM = require('./EN/language/en_US/Item.json');
 
 const OUTPUT = `${tmpdir()}/areaEffect.json`;
@@ -316,9 +318,12 @@ function describeInteraction(sets) {
 function getInteractionData() {
     if (interactionData) return interactionData;
 
-    interactionData = { hitDamage: {}, notes: {} };
+    interactionData = { hitDamage: {}, notes: {}, runtime: {}, buffs: {} };
 
     const interactions = getAnalyzerData().interactions || [];
+    const spawnInteractions = interactions.filter(interaction =>
+        interaction.sink !== 'ModifyAreaEffectLeftTime' && interaction.sink !== 'AddAreaEffectLeftTime'
+    );
 
     let bullets = {};
     try {
@@ -349,8 +354,9 @@ function getInteractionData() {
 
     const idsOf = alias => {
         const bullet = lookup(alias);
+        const hits = Array.isArray(bullet) ? bullet : bullet?.hits;
 
-        return (Array.isArray(bullet) ? bullet : bullet === undefined ? [] : [bullet])
+        return (hits || [])
             .map(String)
             .filter(hitDamageId => {
                 const hitDamage = HITDAMAGE[hitDamageId];
@@ -360,7 +366,7 @@ function getInteractionData() {
 
     const aliasConditions = new Map();
 
-    for (const interaction of interactions) {
+    for (const interaction of spawnInteractions) {
         for (const value of interaction.values || []) {
             const groupKey = `${interaction.class}|${interaction.method}|${value.value}`;
             const list = aliasConditions.get(groupKey) || [];
@@ -400,7 +406,7 @@ function getInteractionData() {
         for (const hitDamageId of idsOf(alias)) alwaysIds.add(hitDamageId);
     }
 
-    for (const interaction of interactions) {
+    for (const interaction of spawnInteractions) {
         const values = interaction.values || [];
         if (!values.length) continue;
 
@@ -471,6 +477,63 @@ function getInteractionData() {
 
         const notes = interactionData.notes[hitDamageId] || (interactionData.notes[hitDamageId] = []);
         if (!notes.includes(note)) notes.push(note);
+    }
+
+    interactionData.buffs = {};
+
+    for (const interaction of interactions) {
+        if (interaction.sink !== 'AddBuff') continue;
+
+        for (const value of interaction.values || []) {
+            const buffId = Number(value.value);
+            if (!BUFF[buffId]) continue;
+
+            const condition = [...(value.conditions || [])]
+                .reverse()
+                .find(condition => condition.type === 'perk' && !condition.negated);
+            if (!condition) continue;
+
+            const list = interactionData.buffs[condition.value] || (interactionData.buffs[condition.value] = []);
+            if (!list.includes(buffId)) list.push(buffId);
+        }
+    }
+
+    const areaAliases = new Map();
+
+    for (const [hitDamageId, entry] of Object.entries(AREA_EFFECT_MAP)) {
+        for (const variant of entry?.variants || []) {
+            if (!variant.alias) continue;
+
+            const alias = variant.alias.split('/').pop();
+            const ids = areaAliases.get(alias) || [];
+            if (!ids.includes(hitDamageId)) ids.push(hitDamageId);
+            areaAliases.set(alias, ids);
+        }
+    }
+
+    for (const interaction of interactions) {
+        if (interaction.sink !== 'ModifyAreaEffectLeftTime' && interaction.sink !== 'AddAreaEffectLeftTime') continue;
+
+        const action = interaction.sink === 'ModifyAreaEffectLeftTime'
+            ? (interaction.time ? `Duration set to ${interaction.time}s at runtime` : 'Duration set at runtime')
+            : (interaction.time ? `Duration extended by ${interaction.time}s at runtime` : 'Duration extended at runtime');
+
+        for (const value of interaction.values || []) {
+            const ids = areaAliases.get(value.value.split('/').pop()) || [];
+            if (!ids.length) continue;
+
+            const perks = (value.conditions || [])
+                .filter(condition => condition.type === 'perk' && !condition.negated)
+                .map(condition => potentialLabel(Number(condition.value)));
+            const note = perks.length
+                ? `${action} when ${joinConditions(perks)} ${perks.length === 1 ? 'is' : 'are'} active`
+                : action;
+
+            for (const hitDamageId of ids) {
+                const notes = interactionData.runtime[hitDamageId] || (interactionData.runtime[hitDamageId] = []);
+                if (!notes.includes(note)) notes.push(note);
+            }
+        }
     }
 
     return interactionData;
@@ -692,37 +755,192 @@ function getHitDamageAreaEffectDetail(hitDamageId) {
     const requirements = getInteractionData().requirements || {};
 
     const requirementOf = alias => {
-        const conditions = requirements[alias.split('/').pop()] || [];
+        const conditions = requirements[alias.split('/').pop()];
+        if (!conditions) return null;
 
         return conditions
             .filter(condition => condition.type === 'perk' && !condition.negated)
             .map(condition => potentialLabel(Number(condition.value)));
     };
 
-    const variants = (entry.variants || []).map(variant => ({
+    const variants = (entry.variants && entry.variants.length ? entry.variants : [entry]).map(variant => ({
         ...variant,
         requirement: requirementOf(variant.alias || ''),
     }));
 
-    const base = variants.find(variant => !variant.requirement.length);
-    const primary = base || variants.reduce((a, b) => b.hits > a.hits ? b : a, variants[0]);
-    const others = variants.filter(variant => variant !== primary);
+    const merged = [];
+
+    const timing = variant => [
+        variant.duration,
+        variant.hitDelay,
+        variant.hitInterval,
+        variant.hits,
+        variant.shape,
+        variant.radius,
+        variant.innerRadius,
+        variant.angle,
+        variant.width,
+        variant.length,
+        variant.height,
+    ].join('|');
+
+    for (const variant of variants) {
+        const key = timing(variant);
+        let item = merged.find(known => known.key === key);
+
+        if (!item) {
+            item = { ...variant, key, known: [] };
+            merged.push(item);
+        }
+
+        if (variant.requirement) item.known.push(variant.requirement);
+    }
+
+    for (const item of merged) {
+        const first = item.known[0];
+        const agree = item.known.length && item.known.every(requirement =>
+            requirement.length === first.length && requirement.every((name, index) => name === first[index])
+        );
+
+        item.requirement = agree ? first : null;
+    }
+
+    const explicit = merged.filter(variant => variant.requirement && !variant.requirement.length);
+    const unrecorded = merged.filter(variant => !variant.known.length);
+    const base = (explicit.length ? explicit : unrecorded)
+        .sort((a, b) => a.hits - b.hits)[0];
+    const primary = base || merged.reduce((a, b) => b.hits > a.hits ? b : a, merged[0]);
+    const others = merged.filter(variant => variant !== primary);
+
+    const shape = variant => ({
+        shape: variant.shape,
+        radius: variant.radius === undefined ? undefined : seconds(variant.radius),
+        innerRadius: variant.innerRadius === undefined ? undefined : seconds(variant.innerRadius),
+        angle: variant.angle === undefined ? undefined : seconds(variant.angle),
+        width: variant.width === undefined ? undefined : seconds(variant.width),
+        length: variant.length === undefined ? undefined : seconds(variant.length),
+        height: variant.height === undefined ? undefined : seconds(variant.height),
+    });
+
+    const dimensions = variant => JSON.stringify(shape(variant));
+
+    const describeSize = (variant, reference) => {
+        if (dimensions(variant) === dimensions(reference)) return undefined;
+
+        const box = shape(variant);
+        if (box.shape === 'rectangle') return `${box.width} × ${box.length}`;
+        if (box.shape === 'fan') return `radius ${box.radius}, ${box.angle}°`;
+        return box.radius === undefined ? undefined : `radius ${box.radius}`;
+    };
 
     return {
         duration: primary.duration === undefined ? undefined : seconds(primary.duration),
         hitDelay: primary.hitDelay === undefined ? undefined : seconds(primary.hitDelay),
         hitInterval: primary.hitInterval === undefined ? undefined : seconds(primary.hitInterval),
         hits: primary.hits,
+        ...shape(primary),
         areaEffectVariants: others.length ? others.map(variant => ({
             duration: variant.duration === undefined ? undefined : seconds(variant.duration),
             hitDelay: variant.hitDelay === undefined ? undefined : seconds(variant.hitDelay),
             hitInterval: variant.hitInterval === undefined ? undefined : seconds(variant.hitInterval),
             hits: variant.hits,
-            requirement: variant.requirement.length
+            ...shape(variant),
+            size: describeSize(variant, primary),
+            requirement: variant.requirement && variant.requirement.length
                 ? `when ${variant.requirement.join(' and ')} ${variant.requirement.length === 1 ? 'is' : 'are'} active`
                 : undefined,
         })) : undefined,
     };
+}
+
+function getBuffValue(buffId) {
+    const value = BUFFVALUE[buffId];
+    if (value) return value;
+
+    const levels = [];
+
+    for (let level = 1; level <= 9; level++) {
+        const scaled = BUFFVALUE[buffId + level * 10];
+        if (scaled) levels.push(scaled);
+    }
+
+    const [first] = levels;
+    if (!first) return;
+
+    const same = levels.every(other =>
+        other.Time === first.Time &&
+        other.LaminatedNum === first.LaminatedNum &&
+        other.Num === first.Num
+    );
+
+    return same ? first : undefined;
+}
+
+function getBuffDetail(buffId) {
+    const buff = BUFF[buffId];
+    if (!buff) return;
+
+    const value = getBuffValue(buffId);
+    const stacks = value ? Math.max(value.LaminatedNum || 0, value.Num || 0) : 0;
+    const duration = value && value.Time > 0 ? Math.round(value.Time / 10000 * 1e7) / 1e7 : undefined;
+
+    return {
+        id: buffId,
+        icon: buff.Icon ? buff.Icon.split('/').pop() : undefined,
+        duration: duration !== undefined && duration < 99999 ? duration : undefined,
+        stacks: stacks > 1 ? stacks : undefined,
+    };
+}
+
+function getPotentialBuffs(potentialId) {
+    return (getInteractionData().buffs[potentialId] || []).map(getBuffDetail).filter(Boolean);
+}
+
+let bulletData = null;
+
+function getBulletData() {
+    if (bulletData) return bulletData;
+
+    bulletData = { prefabs: {}, byHitDamage: {} };
+
+    let raw = {};
+    try {
+        raw = JSON.parse(readFileSync(BULLET_FILE, 'utf8'));
+    } catch {}
+
+    for (const [name, value] of Object.entries(raw)) {
+        const entry = Array.isArray(value) ? { hits: value } : value;
+        bulletData.prefabs[name] = entry;
+
+        for (const hitDamageId of entry.hits || []) {
+            const list = bulletData.byHitDamage[hitDamageId] || (bulletData.byHitDamage[hitDamageId] = []);
+            list.push(name);
+        }
+    }
+
+    return bulletData;
+}
+
+function getHitDamageBullet(hitDamageId) {
+    const data = getBulletData();
+    const names = data.byHitDamage[hitDamageId];
+    if (!names) return;
+
+    const seen = new Set();
+    const variants = [];
+
+    for (const name of names) {
+        const { hits, ...stats } = data.prefabs[name];
+        if (!Object.keys(stats).length) continue;
+
+        const key = JSON.stringify(stats);
+        if (seen.has(key)) continue;
+
+        seen.add(key);
+        variants.push(stats);
+    }
+
+    return variants.length ? variants : undefined;
 }
 
 function crc32(text) {
@@ -977,14 +1195,16 @@ function potentialLabel(potentialId) {
 }
 
 function getHitDamageNote(hitDamageId) {
+    const runtime = getInteractionData().runtime[hitDamageId] || [];
     const interactionNotes = getInteractionHitDamageNote(hitDamageId);
-    if (interactionNotes.length) return interactionNotes;
-
     const analyzedNotes = getAnalyzerData().notes;
-    if (analyzedNotes) return analyzedNotes[hitDamageId] || [];
+    const base = interactionNotes.length
+        ? interactionNotes
+        : analyzedNotes
+            ? analyzedNotes[hitDamageId] || []
+            : (notes || (notes = parseHitDamageNotes(getSource())))[hitDamageId] || [];
 
-    if (!notes) notes = parseHitDamageNotes(getSource());
-    return notes[hitDamageId] || [];
+    return [...base, ...runtime.filter(note => !base.includes(note))];
 }
 
-module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getHitDamageAreaEffectDetail, getHitDamageTags, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };
+module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getPotentialBuffs, getBuffDetail, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };

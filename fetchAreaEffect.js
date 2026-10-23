@@ -20,6 +20,18 @@ function getHits(duration, hitDelay, hitInterval) {
     return Math.max(1, Math.ceil(ratio));
 }
 
+const SHAPE_FIELDS = ['radius', 'innerRadius', 'angle', 'width', 'length', 'height'];
+
+function clearShape(entry) {
+    const shape = { shape: entry.shape };
+
+    for (const field of SHAPE_FIELDS) {
+        if (entry[field] !== undefined) shape[field] = round(entry[field]);
+    }
+
+    return shape;
+}
+
 function clear(entry) {
     if (!entry || typeof entry !== 'object') return entry;
 
@@ -40,6 +52,7 @@ function clear(entry) {
 
         return {
             ...variant,
+            ...clearShape(variant),
             duration: variantDuration,
             hitDelay: variantHitDelay,
             hitInterval: variantHitInterval,
@@ -51,6 +64,7 @@ function clear(entry) {
 
     return {
         ...entry,
+        ...clearShape(entry),
         duration,
         hitDelay,
         hitInterval,

@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
@@ -33,7 +34,8 @@ foreach (var cls in classes)
         if (method.Body is null) continue;
         if (!method.DescendantNodes().OfType<InvocationExpressionSyntax>().Any(i =>
                 i.Expression is MemberAccessExpressionSyntax member &&
-                member.Name.Identifier.Text is "Shoot" or "PlayAreaEffect")) continue;
+                member.Name.Identifier.Text is "Shoot" or "PlayAreaEffect" or "AddBuff"
+                    or "ModifyAreaEffectLeftTime" or "AddAreaEffectLeftTime")) continue;
 
         var collector = new Collector(cls.Identifier.Text, method, constants, collections, data);
         collector.Run();
@@ -79,17 +81,42 @@ static Dictionary<string, string> GetConstants(ClassDeclarationSyntax cls)
 
     foreach (var field in cls.Members.OfType<FieldDeclarationSyntax>())
     {
-        if (!field.Modifiers.Any(SyntaxKind.ConstKeyword) &&
-            !field.Modifiers.Any(SyntaxKind.ReadOnlyKeyword)) continue;
+        var isConstant = field.Modifiers.Any(SyntaxKind.ConstKeyword) ||
+                         field.Modifiers.Any(SyntaxKind.ReadOnlyKeyword);
+        var isFixedPoint = field.Declaration.Type.ToString() == "FP";
 
         foreach (var variable in field.Declaration.Variables)
         {
-            if (variable.Initializer?.Value is not LiteralExpressionSyntax literal) continue;
-            constants[variable.Identifier.Text] = literal.Token.ValueText;
+            var value = variable.Initializer?.Value;
+
+            if (value is LiteralExpressionSyntax literal)
+            {
+                constants[variable.Identifier.Text] = literal.Token.ValueText;
+                continue;
+            }
+
+            if (!isConstant && !isFixedPoint) continue;
+            if (value is not InvocationExpressionSyntax invocation) continue;
+            if (InvocationNameOf(invocation) != "op_Implicit") continue;
+            if (invocation.ArgumentList.Arguments.Count != 1) continue;
+            if (invocation.ArgumentList.Arguments[0].Expression is not LiteralExpressionSyntax argument) continue;
+
+            constants[variable.Identifier.Text] = argument.Token.ValueText.TrimEnd('f', 'F', 'd', 'D', 'm', 'M');
         }
     }
 
     return constants;
+}
+
+static string? InvocationNameOf(InvocationExpressionSyntax invocation)
+{
+    return invocation.Expression switch
+    {
+        MemberAccessExpressionSyntax member => member.Name.Identifier.Text,
+        IdentifierNameSyntax identifier => identifier.Identifier.Text,
+        GenericNameSyntax generic => generic.Identifier.Text,
+        _ => null,
+    };
 }
 
 static Dictionary<string, List<string>> GetCollections(ClassDeclarationSyntax cls)
@@ -112,7 +139,12 @@ static Dictionary<string, List<string>> GetCollections(ClassDeclarationSyntax cl
 
 static IEnumerable<string> StringValues(ExpressionSyntax? expression)
 {
-    if (expression is ObjectCreationExpressionSyntax creation && creation.Initializer is not null)
+    if (expression is AssignmentExpressionSyntax assignment)
+    {
+        foreach (var value in StringValues(assignment.Right))
+            yield return value;
+    }
+    else if (expression is ObjectCreationExpressionSyntax creation && creation.Initializer is not null)
     {
         foreach (var item in creation.Initializer.Expressions)
         foreach (var value in StringValues(item))
@@ -281,7 +313,8 @@ internal sealed record Interaction(
     int Line,
     string Sink,
     string Argument,
-    IReadOnlyList<Value> Values
+    IReadOnlyList<Value> Values,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] string? Time = null
 );
 
 internal sealed record Value([property: JsonPropertyName("value")] string Text, IReadOnlyList<Condition> Conditions);
@@ -298,6 +331,8 @@ internal sealed class GameData
     public Dictionary<string, ItemRecord> Items { get; } = new();
     public Dictionary<string, string> LangItems { get; } = new();
     public Dictionary<string, int> PotentialByChar { get; } = new();
+    public Dictionary<string, ScriptParameterRecord> ScriptParameters { get; } = new();
+    public Dictionary<string, long> ScriptParameterValues { get; } = new();
 
     public static GameData Load(string dataPath)
     {
@@ -314,11 +349,24 @@ internal sealed class GameData
             data.Items[id] = item;
         foreach (var (key, value) in Read<Dictionary<string, string>>(Path.Combine(dataPath, "language", "en_US", "Item.json")))
             data.LangItems[key] = value;
+        foreach (var (id, parameter) in Read<Dictionary<string, ScriptParameterRecord>>(Path.Combine(bin, "ScriptParameter.json")))
+            data.ScriptParameters[id] = parameter;
+        foreach (var (id, parameter) in Read<Dictionary<string, ScriptParameterValueRecord>>(Path.Combine(bin, "ScriptParameterValue.json")))
+            if (parameter.CommonData is { } value) data.ScriptParameterValues[id] = value;
 
         foreach (var (_, potential) in data.Potentials)
             data.PotentialByChar[$"{potential.CharId}_{potential.Id % 100}"] = potential.Id;
 
         return data;
+    }
+
+    public string? ScriptValue(int id)
+    {
+        if (!ScriptParameters.TryGetValue(id.ToString(), out var parameter)) return null;
+        if (parameter.LevelTypeData != 0) return null;
+        if (!ScriptParameterValues.TryGetValue(id.ToString(), out var value)) return null;
+
+        return (value / 10000m).ToString("0.####", CultureInfo.InvariantCulture);
     }
 
     public string? GetCharId(string hitDamageId)
@@ -356,6 +404,18 @@ internal sealed class GameData
     internal sealed class ItemRecord
     {
         public string? Title { get; set; }
+    }
+
+    internal sealed class ScriptParameterRecord
+    {
+        public int Id { get; set; }
+        public int LevelTypeData { get; set; }
+    }
+
+    internal sealed class ScriptParameterValueRecord
+    {
+        public int Id { get; set; }
+        public long? CommonData { get; set; }
     }
 }
 
@@ -906,6 +966,7 @@ internal sealed class Collector
     private readonly Dictionary<string, List<string>> _collections;
     private readonly GameData _data;
     private readonly Dictionary<string, List<Value>> _env = new();
+    private readonly Dictionary<string, List<Value>> _areas = new();
 
     public Collector(
         string cls,
@@ -956,6 +1017,7 @@ internal sealed class Collector
                     foreach (var variable in local.Declaration.Variables)
                     {
                         if (variable.Initializer is null) continue;
+                        TrackArea(variable.Identifier.Text, variable.Initializer.Value, env, active);
                         var values = Eval(variable.Initializer.Value, env, active);
                         if (values.Count > 0) env[variable.Identifier.Text] = values;
                         WalkExpression(variable.Initializer.Value, env, active);
@@ -1073,6 +1135,7 @@ internal sealed class Collector
         {
             if (assignment.Left is IdentifierNameSyntax target)
             {
+                TrackArea(target.Identifier.Text, assignment.Right, env, active);
                 var values = Eval(assignment.Right, env, active);
                 if (values.Count > 0) env[target.Identifier.Text] = values;
             }
@@ -1137,6 +1200,32 @@ internal sealed class Collector
     private void EmitAliasSink(InvocationExpressionSyntax invocation, Dictionary<string, List<Value>> env, List<Condition> active)
     {
         var arguments = invocation.ArgumentList.Arguments;
+        var line = invocation.GetLocation().GetLineSpan().StartLinePosition.Line + 1;
+
+        if ((IsNamed(invocation, "ModifyAreaEffectLeftTime") || IsNamed(invocation, "AddAreaEffectLeftTime")) &&
+            arguments.Count > 1 &&
+            arguments[0].Expression is IdentifierNameSyntax area &&
+            _areas.TryGetValue(area.Identifier.Text, out var areas) &&
+            areas.Count > 0)
+        {
+            var time = arguments[1].Expression;
+            var areaValues = Dedupe(areas
+                .Select(value => value with { Conditions = active })
+                .ToList());
+
+            Interactions.Add(new Interaction(
+                _class,
+                _method.Identifier.Text,
+                line,
+                InvocationName(invocation)!,
+                time.ToString(),
+                areaValues,
+                ResolveTime(time)
+            ));
+
+            return;
+        }
+
         string? sink = null;
         ExpressionSyntax? alias = null;
 
@@ -1148,18 +1237,18 @@ internal sealed class Collector
         else if (IsNamed(invocation, "PlayAreaEffect"))
         {
             sink = "PlayAreaEffect";
-            alias = arguments.FirstOrDefault(argument =>
-                    argument.NameColon?.Name.Identifier.Text is "alias" or "areaEffect" or "areaEffectAlias" or "fxAlias")
-                ?.Expression
-                ?? (arguments.Count > 1 ? arguments[1].Expression : null);
+            alias = AreaEffectAlias(invocation);
+        }
+        else if (IsNamed(invocation, "AddBuff") && arguments.Count > 0)
+        {
+            sink = "AddBuff";
+            alias = arguments[0].Expression;
         }
 
         if (sink is null || alias is null) return;
 
         var values = Dedupe(Eval(alias, env, active));
         if (values.Count == 0) return;
-
-        var line = invocation.GetLocation().GetLineSpan().StartLinePosition.Line + 1;
 
         Interactions.Add(new Interaction(
             _class,
@@ -1169,6 +1258,67 @@ internal sealed class Collector
             alias.ToString(),
             values
         ));
+    }
+
+    private static ExpressionSyntax? AreaEffectAlias(InvocationExpressionSyntax invocation)
+    {
+        var arguments = invocation.ArgumentList.Arguments;
+
+        return arguments.FirstOrDefault(argument =>
+                argument.NameColon?.Name.Identifier.Text is "alias" or "areaEffect" or "areaEffectAlias" or "fxAlias")
+            ?.Expression
+            ?? (arguments.Count > 1 ? arguments[1].Expression : null);
+    }
+
+    private void TrackArea(string name, ExpressionSyntax expression, Dictionary<string, List<Value>> env, List<Condition> active)
+    {
+        if (expression is not InvocationExpressionSyntax invocation) return;
+        if (!IsNamed(invocation, "PlayAreaEffect")) return;
+
+        var alias = AreaEffectAlias(invocation);
+        if (alias is null) return;
+
+        var values = Dedupe(Eval(alias, env, active))
+            .Where(value => value.Text.Length > 0)
+            .ToList();
+        if (values.Count > 0) _areas[name] = values;
+    }
+
+    private string? ResolveTime(ExpressionSyntax expression)
+    {
+        if (expression is InvocationExpressionSyntax invocation &&
+            InvocationName(invocation) == "op_Implicit" &&
+            invocation.ArgumentList.Arguments.Count == 1)
+        {
+            return ResolveTime(invocation.ArgumentList.Arguments[0].Expression);
+        }
+
+        if (expression is InvocationExpressionSyntax scriptValue &&
+            InvocationName(scriptValue) == "GetScriptValue")
+        {
+            var id = scriptValue.ArgumentList.Arguments
+                .Select(argument => argument.Expression)
+                .OfType<LiteralExpressionSyntax>()
+                .Where(literal => literal.IsKind(SyntaxKind.NumericLiteralExpression))
+                .Select(literal => (int?)Convert.ToInt32(literal.Token.Value))
+                .FirstOrDefault(value => value is not null);
+
+            return id is null ? null : _data.ScriptValue(id.Value);
+        }
+
+        if (expression is LiteralExpressionSyntax literal)
+        {
+            return literal.Token.ValueText.TrimEnd('f', 'F', 'd', 'D', 'm', 'M');
+        }
+
+        var name = expression switch
+        {
+            IdentifierNameSyntax identifier => identifier.Identifier.Text,
+            MemberAccessExpressionSyntax member => member.Name.Identifier.Text,
+            _ => null,
+        };
+
+        return name is not null && _constants.TryGetValue(name, out var value) ? value : null;
     }
 
     private List<Value> Eval(ExpressionSyntax expression, Dictionary<string, List<Value>> env, List<Condition> active)

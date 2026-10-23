@@ -13,7 +13,7 @@ const SCOREBOSSABILITY = require('./EN/bin/ScoreBossAbility.json');
 const SCOREBOSSGETCONTROL = require('./EN/bin/ScoreBossGetControl.json');
 const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
 const ITEM = require('./EN/bin/Item.json');
-const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getHitDamageAreaEffectDetail, getHitDamageTags, potentialLabel } = require('./hotfix');
+const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getBuffDetail, potentialLabel } = require('./hotfix');
 const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
 const LANG_SKILL = require('./EN/language/en_US/Skill.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
@@ -909,7 +909,10 @@ function resolveParamsTooltips(params) {
         const summonInfo = hitDamageId && getHitDamageSummonInfo(hitDamageId);
         const areaEffectInfo = hitDamageId && getHitDamageAreaEffectInfo(hitDamageId);
         const areaEffectDetail = hitDamageId && getHitDamageAreaEffectDetail(hitDamageId);
+        const bullets = hitDamageId && getHitDamageBullet(hitDamageId);
         const damageTags = hitDamageId && getHitDamageTags(hitDamageId);
+        const buffId = getBuffIdFromParam(param);
+        const buffDetail = buffId && getBuffDetail(buffId);
         return {
             damageType: getDamageTypeFromParam(param),
             hitDamageId,
@@ -921,15 +924,55 @@ function resolveParamsTooltips(params) {
             hitDelay: areaEffectDetail?.hitDelay,
             hitInterval: areaEffectDetail?.hitInterval,
             hits: areaEffectDetail?.hits,
-            areaEffectVariants: areaEffectDetail?.areaEffectVariants,            damageTag: damageTags && damageTags.length ? damageTags : undefined,
+            areaShape: formatAreaShape(areaEffectDetail),
+            areaEffectVariants: areaEffectDetail?.areaEffectVariants,
+            projectile: formatBullet(bullets),
+            damageTag: damageTags && damageTags.length ? damageTags : undefined,
             effectType: getEffectTypeFromParam(param),
             effectId: getEffectIdFromParam(param),
             addAttrType: getAddAttrTypeFromParam(param),
             addAttrId: getAddAttrIdFromParam(param),
             buffIcon: getBuffIconFromParam(param),
-            buffId: getBuffIdFromParam(param)
+            buffId,
+            buffDuration: buffDetail?.duration,
+            buffStacks: buffDetail?.stacks
         };
     });
+}
+
+function formatAreaShape(detail) {
+    if (!detail?.shape) return;
+
+    if (detail.shape === 'rectangle') return `Rectangle (${detail.width} × ${detail.length})`;
+
+    if (detail.shape === 'fan') {
+        const inner = detail.innerRadius ? `, inner ${detail.innerRadius}` : '';
+        return `Fan (radius ${detail.radius}${inner}, ${detail.angle}°)`;
+    }
+
+    return detail.radius === undefined ? undefined : `Circle (radius ${detail.radius})`;
+}
+
+function formatBullet(variants) {
+    const items = (variants || []).map(variant => {
+        const homing = variant.homing
+            ? [
+                variant.homing.range === undefined ? null : `${variant.homing.range} range`,
+                variant.homing.rotateSpeed === undefined ? null : `${variant.homing.rotateSpeed}°/s`,
+            ].filter(Boolean).join(', ')
+            : '';
+
+        return [
+            variant.speed === undefined ? null : `${variant.speed} speed`,
+            variant.lifetime === undefined ? null : `${variant.lifetime}s lifetime`,
+            variant.acceleration ? `${variant.acceleration} acceleration` : null,
+            homing ? `homing (${homing})` : null,
+            variant.pierce ? 'pierce' : null,
+            variant.splitCount ? `splits into ${variant.splitCount}` : null,
+        ].filter(Boolean).join(', ');
+    }).filter(Boolean);
+
+    return items.length ? [...new Set(items)].join(' / ') : undefined;
 }
 
 function getHitDamageIdFromParam(param) {

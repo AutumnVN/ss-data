@@ -74,7 +74,7 @@ const KR_FORCE = require('./KR/language/ko_KR/Force.json');
 const KR_CHARACTERDES = require('./KR/language/ko_KR/CharacterDes.json');
 const KR_CHARACTERARCHIVEBASEINFO = require('./KR/language/ko_KR/CharacterArchiveBaseInfo.json');
 const characterId = require('./characterid.json');
-const { getHotfixData } = require('./hotfix');
+const { getHotfixData, getPotentialBuffs } = require('./hotfix');
 
 const character = {};
 const unreleased = {};
@@ -488,6 +488,7 @@ function getPotentials(charId) {
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
             buffIcon: getPotentialBuffIcons(id),
+            buffs: getPotentialBuffs(id).length ? getPotentialBuffs(id) : undefined,
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
             hiddenParams: getPotentialHiddenParams(id),
@@ -510,6 +511,7 @@ function getPotentials(charId) {
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
             buffIcon: getPotentialBuffIcons(id),
+            buffs: getPotentialBuffs(id).length ? getPotentialBuffs(id) : undefined,
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
             hiddenParams: getPotentialHiddenParams(id),
@@ -533,6 +535,7 @@ function getPotentials(charId) {
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
             buffIcon: getPotentialBuffIcons(id),
+            buffs: getPotentialBuffs(id).length ? getPotentialBuffs(id) : undefined,
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
             hiddenParams: getPotentialHiddenParams(id),
@@ -556,6 +559,7 @@ function getPotentials(charId) {
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
             buffIcon: getPotentialBuffIcons(id),
+            buffs: getPotentialBuffs(id).length ? getPotentialBuffs(id) : undefined,
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
             hiddenParams: getPotentialHiddenParams(id),
@@ -578,6 +582,7 @@ function getPotentials(charId) {
             effectType: getPotentialEffectTypes(id),
             addAttrType: getPotentialAddAttrTypes(id),
             buffIcon: getPotentialBuffIcons(id),
+            buffs: getPotentialBuffs(id).length ? getPotentialBuffs(id) : undefined,
             params: getPotentialParams(id),
             paramsTooltips: getPotentialParamsTooltips(id),
             hiddenParams: getPotentialHiddenParams(id),
