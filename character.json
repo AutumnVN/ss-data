@@ -995,7 +995,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "103525001",
-                            "hitDamageNote": "Conditional hit damage: only when Scattering Waltz (510322) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 2.5,
                             "hitDelay": 0,
@@ -4537,7 +4536,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "107310601",
-                            "hitDamageNote": "Conditional hit damage: only when Block Enhancement: ATK (510706) is active",
                             "duration": 2,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -5240,7 +5238,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "107322501",
-                            "hitDamageNote": "Conditional hit damage: only when Enemy Counter (510725) is active",
                             "duration": 2,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -8321,7 +8318,6 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "108320001",
-                    "hitDamageNote": "Conditional hit damage: only when Precision Guidance (510824) is active",
                     "damageTag": [
                         "108_B2",
                         "108_Support_Skill",
@@ -9059,7 +9055,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "108521001",
-                            "hitDamageNote": "Conditional hit damage: only when Heated Battle (510821) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 1,
@@ -12276,7 +12271,6 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "110300004",
-                    "hitDamageNote": "Conditional hit damage: only when Shadow Flicker (511022) is active",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0,
@@ -12523,7 +12517,7 @@
                         {
                             "damageType": "Minion (scale with Skill)",
                             "hitDamageId": "110900004",
-                            "hitDamageNote": "Requires Gloomy Veil (511008); Conditional hit damage: only when Shadow Step (511004) is active",
+                            "hitDamageNote": "Requires Gloomy Veil (511008)",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
@@ -13117,7 +13111,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "110300006",
-                            "hitDamageNote": "Conditional hit damage: only when Shadow Nail (511021) is active",
                             "duration": 1,
                             "hitDelay": 0,
                             "hitInterval": 0,
@@ -13157,7 +13150,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "110300004",
-                            "hitDamageNote": "Conditional hit damage: only when Shadow Flicker (511022) is active",
                             "duration": 1,
                             "hitDelay": 0,
                             "hitInterval": 0,
@@ -13546,7 +13538,7 @@
                         {
                             "damageType": "Minion",
                             "hitDamageId": "110900006",
-                            "hitDamageNote": "Requires Dark Resurgence (511029); Conditional hit damage: only when Dark Resurgence (511029) is active",
+                            "hitDamageNote": "Requires Dark Resurgence (511029)",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
@@ -17982,7 +17974,7 @@
                         {
                             "damageType": "Skill",
                             "hitDamageId": "111529001",
-                            "hitDamageNote": "Requires Distressed Asset (511129); Conditional hit damage: only when Distressed Asset (511129) is active",
+                            "hitDamageNote": "Requires Distressed Asset (511129)",
                             "duration": 1.5,
                             "hitDelay": 0,
                             "hitInterval": 5,
@@ -28899,16 +28891,16 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "114400001",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                    "duration": 1,
+                    "duration": 1.6,
                     "hitDelay": 0,
-                    "hitInterval": 2,
-                    "hits": 1,
+                    "hitInterval": 0.2,
+                    "hits": 8,
                     "areaEffectVariants": [
                         {
-                            "duration": 1.6,
+                            "duration": 1,
                             "hitDelay": 0,
-                            "hitInterval": 0.2,
-                            "hits": 8
+                            "hitInterval": 2,
+                            "hits": 1
                         }
                     ],
                     "damageTag": [
@@ -29180,14 +29172,14 @@
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 14.5,
                             "hitDelay": 0.5,
-                            "hitInterval": 2,
-                            "hits": 7,
+                            "hitInterval": 1,
+                            "hits": 14,
                             "areaEffectVariants": [
                                 {
                                     "duration": 14.5,
                                     "hitDelay": 0.5,
-                                    "hitInterval": 1,
-                                    "hits": 14
+                                    "hitInterval": 2,
+                                    "hits": 7
                                 }
                             ],
                             "damageTag": [
@@ -29328,7 +29320,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "114506002",
-                            "hitDamageNote": "Requires Efficient Use (511406); Conditional hit damage: only when One Stone Two Birds (511428) is active",
+                            "hitDamageNote": "Requires Efficient Use (511406)",
                             "damageTag": [
                                 "114_FireTag1_Trigger",
                                 "Skill",
@@ -30187,13 +30179,12 @@
                     "nameCN": "一石二鸟",
                     "nameJP": "ツインショット",
                     "nameKR": "일석이조",
-                    "desc": "Increases Chaton's &Param2& by <color=#ec6d21>&Param3&</color>.\u000bEach time &Param1& (Support Skill) fires, shoots 2 additional Meow Bombs.\u000bThe bombs shoot forward in a straight line 3 times, dealing <color=#ec6d21>&Param4&</color> of ATK as AoE Ignis Skill DMG each time.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descCN": "猫眼的&Param2&提升<color=#ec6d21>&Param3&</color>。\u000b援护技「&Param1&」每次射击时，额外发射2颗「猫猫炸弹」。\u000b「猫猫炸弹」会向前直线弹射3次，每次造成攻击力<color=#ec6d21>&Param4&</color>的范围火系技能伤害。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descJP": "シャトンは自身の&Param2&が<color=#ec6d21>&Param3&</color>増加する。\u000b支援スキルの各射撃時、追加で2発のぷにぷにボムを発射する。\u000bぷにぷにボムは前方直線上に3回跳ね、そのたび範囲内に攻撃力の<color=#ec6d21>&Param4&</color>の火属性のスキルダメージを敵に与える。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descKR": "샤통의 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다. \u000b지원 스킬 &Param1_kr1& 사격할 때마다 「냥냥 폭탄」 2개를 추가로 발사한다. \u000b「냥냥 폭탄」이 전방 직선을 향해 3회 튕기며, 매회 공격력 <color=#ec6d21>&Param4&</color>의 불 속성 범위 스킬 피해를 입힌다.\u000bParam1: &Param1& (Skill,Title) \u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
+                    "desc": "Increases Chaton's &Param2& by <color=#ec6d21>&Param3&</color>.\u000bEach time &Param1& (Support Skill) fires, shoots 2 additional Meow Bombs.\u000bThe bombs shoot forward in a straight line 3 times, dealing <color=#ec6d21>&Param4&</color> of ATK as AoE Ignis Skill DMG each time.",
+                    "descCN": "猫眼的&Param2&提升<color=#ec6d21>&Param3&</color>。\u000b援护技「&Param1&」每次射击时，额外发射2颗「猫猫炸弹」。\u000b「猫猫炸弹」会向前直线弹射3次，每次造成攻击力<color=#ec6d21>&Param4&</color>的范围火系技能伤害。",
+                    "descJP": "シャトンは自身の&Param2&が<color=#ec6d21>&Param3&</color>増加する。\u000b支援スキルの各射撃時、追加で2発のぷにぷにボムを発射する。\u000bぷにぷにボムは前方直線上に3回跳ね、そのたび範囲内に攻撃力の<color=#ec6d21>&Param4&</color>の火属性のスキルダメージを敵に与える。\u000bParam1: &Param1& (Skill,Title)",
+                    "descKR": "샤통의 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다. \u000b지원 스킬 &Param1_kr1& 사격할 때마다 「냥냥 폭탄」 2개를 추가로 발사한다. \u000b「냥냥 폭탄」이 전방 직선을 향해 3회 튕기며, 매회 공격력 <color=#ec6d21>&Param4&</color>의 불 속성 범위 스킬 피해를 입힌다.\u000bParam1: &Param1& (Skill,Title) \u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype)",
                     "damageType": [
-                        "Skill (from Skill)",
-                        "Skill (from Skill) (hidden)"
+                        "Skill (from Skill)"
                     ],
                     "effectType": [
                         "ELEMENTTYPE_:(Ignis) Skill DMG"
@@ -30244,21 +30235,8 @@
                             ]
                         }
                     ],
-                    "hiddenParams": [
-                        "7.81%/10.41%/13.01%/15.61%/18.21%/20.81%/23.41%/26.01%/28.61%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill)",
-                            "hitDamageId": "114506002",
-                            "hitDamageNote": "Requires Efficient Use (511406); Conditional hit damage: only when One Stone Two Birds (511428) is active",
-                            "damageTag": [
-                                "114_FireTag1_Trigger",
-                                "Skill",
-                                "114_Long_Bullet"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "11401_Potential_28",
                     "corner": "Diamond",
                     "rarity": "rare"
@@ -33352,7 +33330,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "115506001",
-                            "hitDamageNote": "Conditional hit damage: only when Firefly Glow: Convergence (511503) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 2.3,
                             "hitDelay": 0.2,
@@ -33740,7 +33717,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "115211301",
-                            "hitDamageNote": "Conditional hit damage: only when Phantom Blast (511513) is active",
                             "duration": 2,
                             "hitDelay": 0.6,
                             "hitInterval": 5,
@@ -34089,13 +34065,12 @@
                     "nameCN": "辉剑·萤火",
                     "nameJP": "きらきらモード",
                     "nameKR": "휘검·반딧불",
-                    "desc": "Increases the &Param1& of Avalanche: Flying Blade by <color=#0abec5>&Param2&</color> when it deals DMG.\u000bWhenever Avalanche: Flying Blade deals DMG, it deals an additional <color=#0abec5>&Param3&</color> of ATK as AoE Lux Skill DMG and inflicts ##Lux Mark: Radiance#2016#.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,115322602)",
-                    "descCN": "使「雪崩·飞刃」造成伤害时的&Param1&提升<color=#0abec5>&Param2&</color>。\u000b每当「雪崩·飞刃」造成伤害时，额外造成攻击力<color=#0abec5>&Param3&</color>的范围光系技能伤害，并附加##光系印记：光明#2016#。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,115322602)",
-                    "descJP": "アバランチ・ウィングがダメージを与える時の&Param1&が<color=#0abec5>&Param2&</color>上昇する。\u000bアバランチ・ウィングがダメージを与えるたびに、追加で範囲内に攻撃力の<color=#0abec5>&Param3&</color>の光属性のスキルダメージを与え、##光属性の印：光明#2016#を付与する。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,115322602)",
-                    "descKR": "「아발란체·비도」가 피해를 입힐 때의 &Param1_kr1& <color=#0abec5>&Param2&</color> 증가한다. \u000b「아발란체·비도」가 피해를 입힐 때마다 공격력 <color=#0abec5>&Param3&</color>의 빛 속성 범위 스킬 피해를 추가로 입히고 ##빛 속성 표식: 광명#2016#을 부여한다.\u000bParam1: &Param1& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,115322602)",
+                    "desc": "Increases the &Param1& of Avalanche: Flying Blade by <color=#0abec5>&Param2&</color> when it deals DMG.\u000bWhenever Avalanche: Flying Blade deals DMG, it deals an additional <color=#0abec5>&Param3&</color> of ATK as AoE Lux Skill DMG and inflicts ##Lux Mark: Radiance#2016#.",
+                    "descCN": "使「雪崩·飞刃」造成伤害时的&Param1&提升<color=#0abec5>&Param2&</color>。\u000b每当「雪崩·飞刃」造成伤害时，额外造成攻击力<color=#0abec5>&Param3&</color>的范围光系技能伤害，并附加##光系印记：光明#2016#。",
+                    "descJP": "アバランチ・ウィングがダメージを与える時の&Param1&が<color=#0abec5>&Param2&</color>上昇する。\u000bアバランチ・ウィングがダメージを与えるたびに、追加で範囲内に攻撃力の<color=#0abec5>&Param3&</color>の光属性のスキルダメージを与え、##光属性の印：光明#2016#を付与する。",
+                    "descKR": "「아발란체·비도」가 피해를 입힐 때의 &Param1_kr1& <color=#0abec5>&Param2&</color> 증가한다. \u000b「아발란체·비도」가 피해를 입힐 때마다 공격력 <color=#0abec5>&Param3&</color>의 빛 속성 범위 스킬 피해를 추가로 입히고 ##빛 속성 표식: 광명#2016#을 부여한다.\u000bParam1: &Param1& (OnceAdditionalAttributeValue,AttributeType1)",
                     "damageType": [
-                        "Skill (from Normal attack, scale with Skill)",
-                        "Skill (from Skill) (hidden)"
+                        "Skill (from Normal attack, scale with Skill)"
                     ],
                     "effectType": [],
                     "addAttrType": [
@@ -34119,7 +34094,6 @@
                         {
                             "damageType": "Skill (from Normal attack, scale with Skill)",
                             "hitDamageId": "115122202",
-                            "hitDamageNote": "Conditional hit damage: only when Radiance Blade: Firefly (511522) is active",
                             "duration": 1,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -34130,22 +34104,8 @@
                             ]
                         }
                     ],
-                    "hiddenParams": [
-                        "53%/84%/116%/147%/179%/211%/242%/274%/305%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill)",
-                            "hitDamageId": "115322602",
-                            "hitDamageNote": "Conditional hit damage: only when Stellar Crash (511526) and Radiance Blade: Firefly (511522) are active; only on Lux Skill hits",
-                            "damageTag": [
-                                "115_FlyBlade",
-                                "115_LightTag_Add",
-                                "115_P22",
-                                "115_P26"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "11501_Potential_22",
                     "rarity": "core"
                 },
@@ -34531,7 +34491,6 @@
                         {
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "115323001",
-                            "hitDamageNote": "Conditional hit damage: only when Radiant Ripple (511530) is active",
                             "duration": 1,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -37527,14 +37486,14 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "116400001",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                    "duration": 2.1199999,
-                    "hitDelay": 0,
+                    "duration": 3.4200001,
+                    "hitDelay": 1.3,
                     "hitInterval": 0.46,
                     "hits": 5,
                     "areaEffectVariants": [
                         {
-                            "duration": 3.4200001,
-                            "hitDelay": 1.3,
+                            "duration": 2.1199999,
+                            "hitDelay": 0,
                             "hitInterval": 0.46,
                             "hits": 5
                         }
@@ -38565,7 +38524,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "116530001",
-                            "hitDamageNote": "Requires Cone Bomb (511630); Conditional hit damage: only when Cone Bomb (511630) is active"
+                            "hitDamageNote": "Requires Cone Bomb (511630)"
                         }
                     ],
                     "hiddenParams": [],
@@ -41403,21 +41362,21 @@
                         },
                         {
                             "duration": 8,
-                            "hitDelay": 0.5,
-                            "hitInterval": 0.5,
-                            "hits": 15
-                        },
-                        {
-                            "duration": 8,
-                            "hitDelay": 0.5,
-                            "hitInterval": 0.5,
-                            "hits": 15
-                        },
-                        {
-                            "duration": 8,
                             "hitDelay": 0.3,
                             "hitInterval": 0.3,
                             "hits": 26
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.5,
+                            "hits": 15
+                        },
+                        {
+                            "duration": 8,
+                            "hitDelay": 0.5,
+                            "hitInterval": 0.5,
+                            "hits": 15
                         },
                         {
                             "duration": 8,
@@ -42022,7 +41981,7 @@
                         {
                             "damageType": "Skill",
                             "hitDamageId": "117512001",
-                            "hitDamageNote": "Requires Neutral Left, Live Right, Ground Below (511712); Conditional hit damage: only when Neutral Left, Live Right, Ground Below (511712) is active",
+                            "hitDamageNote": "Requires Neutral Left, Live Right, Ground Below (511712)",
                             "duration": 1,
                             "hitDelay": 0.2,
                             "hitInterval": 2,
@@ -42379,7 +42338,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "117524001",
-                            "hitDamageNote": "Conditional hit damage: only when Thunderbolt: Circle (511724) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8.3000002,
                             "hitDelay": 0.1,
@@ -45820,7 +45778,7 @@
                         {
                             "damageType": "Auto Attack",
                             "hitDamageId": "118000017",
-                            "hitDamageNote": "Requires Toxin Infusion (511824); Conditional hit damage: only when Roaming Spectre (511808) is active",
+                            "hitDamageNote": "Requires Toxin Infusion (511824)",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6,
                             "hitDelay": 0,
@@ -46361,7 +46319,7 @@
                         {
                             "damageType": "Skill (scale with Skill)",
                             "hitDamageId": "118000011",
-                            "hitDamageNote": "Requires Toxin Infusion (511824); Conditional hit damage: only when Toxin Infusion (511824) is active",
+                            "hitDamageNote": "Requires Toxin Infusion (511824)",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6,
                             "hitDelay": 0,
@@ -54255,7 +54213,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "120524001",
-                            "hitDamageNote": "Conditional hit damage: only when Grants Blooming Esthetics (512024) is active",
                             "duration": 3,
                             "hitDelay": 0.12,
                             "hitInterval": 4,
@@ -57296,7 +57253,6 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "123310004",
-                    "hitDamageNote": "Conditional hit damage: only when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active",
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "duration": 1,
@@ -57467,7 +57423,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "123310004",
-                            "hitDamageNote": "Conditional hit damage: only when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
@@ -57575,7 +57530,6 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "123310002",
-                            "hitDamageNote": "Conditional hit damage: only when Grand Debut (512304) is active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 0.5,
@@ -57648,7 +57602,6 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "123310002",
-                            "hitDamageNote": "Conditional hit damage: only when Grand Debut (512304) is active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 0.5,
@@ -57972,7 +57925,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "123310004",
-                            "hitDamageNote": "Conditional hit damage: only when Zephyr Caress (512313) and Stone Dust Tempest (512302) are active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 1,
@@ -62043,7 +61995,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "125310901",
-                            "hitDamageNote": "Conditional hit damage: only when Limits of Oblivion (512509) is active",
                             "duration": 2,
                             "hitDelay": 0.4,
                             "hitInterval": 5,
@@ -62668,7 +62619,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "125322401",
-                            "hitDamageNote": "Conditional hit damage: only when Frost Warning (512524) is active",
                             "duration": 2,
                             "hitDelay": 0,
                             "hitInterval": 5,
@@ -62839,7 +62789,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "125322701",
-                            "hitDamageNote": "Conditional hit damage: only when Crackling Zero (512527) and Realm of Frost (512521) are active",
                             "duration": 2.2,
                             "hitDelay": 2,
                             "hitInterval": 5,
@@ -65833,7 +65782,6 @@
                 {
                     "damageType": "Skill (2.36e, from Skill, scale with Skill)",
                     "hitDamageId": "126310001",
-                    "hitDamageNote": "Conditional hit damage: only when Ending Song (512602) is active",
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "damageTag": [
@@ -66036,7 +65984,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "126501001",
-                            "hitDamageNote": "Conditional hit damage: only when Ending Song (512602) is active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "damageTag": [
@@ -66653,7 +66600,6 @@
                         {
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "126543001",
-                            "hitDamageNote": "Conditional hit damage: only when Reincarnation of Fire (512643) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 1.5,
@@ -74107,7 +74053,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "130502001",
-                            "hitDamageNote": "Conditional hit damage: only when Azure Night (513002) is active",
                             "damageTag": [
                                 "130_WaterTagTrigger",
                                 "130_Main_Skill_Shoot",
@@ -74562,7 +74507,6 @@
                         {
                             "damageType": "Minion (from Skill)",
                             "hitDamageId": "130510001",
-                            "hitDamageNote": "Conditional hit damage: only when Hazy Curtain (513010) and Surging Tide (513008) are active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 2,
@@ -79042,7 +78986,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "132310801",
-                            "hitDamageNote": "Conditional hit damage: only when Radiant Glow (513208) is active",
                             "duration": 1,
                             "hitDelay": 0.5,
                             "hitInterval": 5,
@@ -79414,7 +79357,6 @@
                         {
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "132400002",
-                            "hitDamageNote": "Conditional hit damage: only when Weakness Strike (513243) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6.5,
                             "hitDelay": 5,
@@ -79427,7 +79369,6 @@
                         {
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "132400003",
-                            "hitDamageNote": "Conditional hit damage: only when Weakness Strike (513243) is active",
                             "duration": 6.5,
                             "hitDelay": 6,
                             "hitInterval": 5,
@@ -79488,12 +79429,11 @@
                     "nameCN": "闪耀爆裂",
                     "nameJP": "閃光爆裂",
                     "nameKR": "섬광 폭발",
-                    "desc": "Increases the Attack Range of Astral Hex by <color=#0abec5>50%</color> and its Skill DMG by <color=#0abec5>&Param2&</color>.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80132020) \u000bHiddenParam2: &HiddenParam2& (HitDamage,Skill,132522001)",
-                    "descCN": "「星芒」伤害范围提升<color=#0abec5>50%</color>，造成的技能伤害提升<color=#0abec5>&Param2&</color>。\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80132020) \u000bHiddenParam2: &HiddenParam2& (HitDamage,Skill,132522001)",
-                    "descJP": "星芒の与えるスキルダメージが<color=#0abec5>&Param2&</color>増加し、ダメージ範囲が<color=#0abec5>50%</color>拡大する。\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80132020) \u000bHiddenParam2: &HiddenParam2& (HitDamage,Skill,132522001)",
-                    "descKR": "「성망」의 피해 범위가 <color=#0abec5>50%</color> 증가하고, 입히는 스킬 피해가 <color=#0abec5>&Param2&</color> 증가한다.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80132020) \u000bHiddenParam2: &HiddenParam2& (HitDamage,Skill,132522001)",
+                    "desc": "Increases the Attack Range of Astral Hex by <color=#0abec5>50%</color> and its Skill DMG by <color=#0abec5>&Param2&</color>.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132522001)",
+                    "descCN": "「星芒」伤害范围提升<color=#0abec5>50%</color>，造成的技能伤害提升<color=#0abec5>&Param2&</color>。\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132522001)",
+                    "descJP": "星芒の与えるスキルダメージが<color=#0abec5>&Param2&</color>増加し、ダメージ範囲が<color=#0abec5>50%</color>拡大する。\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132522001)",
+                    "descKR": "「성망」의 피해 범위가 <color=#0abec5>50%</color> 증가하고, 입히는 스킬 피해가 <color=#0abec5>&Param2&</color> 증가한다.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132522001)",
                     "damageType": [
-                        "Auto Attack (hidden)",
                         "Skill (from Skill, scale with Skill) (hidden)"
                     ],
                     "effectType": [],
@@ -79518,26 +79458,12 @@
                         }
                     ],
                     "hiddenParams": [
-                        "80%",
                         "185%/213%/240%/323%/349%/375%/427%/449%/471%/516%/553%/590%/626%"
                     ],
                     "hiddenParamsTooltips": [
                         {
-                            "damageType": "Auto Attack",
-                            "hitDamageId": "80132020",
-                            "hitDamageNote": "Conditional hit damage: only when Radiant Burst (513222) is active",
-                            "duration": 1,
-                            "hitDelay": 0.1,
-                            "hitInterval": 5,
-                            "hits": 1,
-                            "damageTag": [
-                                "132_Main_S2Extra_Boom"
-                            ]
-                        },
-                        {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "132522001",
-                            "hitDamageNote": "Conditional hit damage: only when Radiant Burst (513222) is active",
                             "duration": 1,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -79759,7 +79685,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "132528001",
-                            "hitDamageNote": "Conditional hit damage: only when Perfect Arc (513228) is active",
                             "damageTag": [
                                 "1341892246",
                                 "132_P28"
@@ -82708,7 +82633,6 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "133320003",
-                    "hitDamageNote": "Conditional hit damage: only when Flower Formation: Waves (513323) is active",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 6,
                     "hitDelay": 1,
@@ -82903,7 +82827,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "133504001",
-                            "hitDamageNote": "Conditional hit damage: only when Spiral Vortex (513304) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 2,
                             "hitDelay": 0,
@@ -83702,7 +83625,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "133524001",
-                            "hitDamageNote": "Conditional hit damage: only when Flower Formation: Turbulent (513324) is active",
                             "duration": 1,
                             "hitDelay": 0.1,
                             "hitInterval": 4,
@@ -83966,7 +83888,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "133530001",
-                            "hitDamageNote": "Conditional hit damage: only when Flower Formation: Blast (513330) is active",
                             "duration": 3,
                             "hitDelay": 0,
                             "hitInterval": 4,
@@ -87473,7 +87394,7 @@
                         {
                             "damageType": "Skill",
                             "hitDamageId": "134509001",
-                            "hitDamageNote": "Requires Blast Chase (513409); Conditional hit damage: only when Blast Chase (513409) is active",
+                            "hitDamageNote": "Requires Blast Chase (513409)",
                             "duration": 1.1,
                             "hitDelay": 0.2,
                             "hitInterval": 5,
@@ -95096,7 +95017,7 @@
                 {
                     "damageType": "Skill (7.37e, from Skill, scale with Skill)",
                     "hitDamageId": "137300002",
-                    "duration": 0.7,
+                    "duration": 1.1,
                     "hitDelay": 0.1,
                     "hitInterval": 0,
                     "hits": 1,
@@ -95108,7 +95029,7 @@
                             "hits": 1
                         },
                         {
-                            "duration": 1.1,
+                            "duration": 0.7,
                             "hitDelay": 0.1,
                             "hitInterval": 0,
                             "hits": 1
@@ -96068,13 +95989,11 @@
                     "nameCN": "连锁引爆",
                     "nameJP": "ペイントバースト",
                     "nameKR": "연쇄 폭발",
-                    "desc": "Increases the &Param1& of jump slam explosions from Armed Assault (Support Skill) by <color=#0abec5>&Param2&</color>. Increases the number of explosions of each jump slam by 1. Resets when the Support Skill ends.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,137300012)",
-                    "descCN": "援护技「武装强袭」下砸爆炸的&Param1&提升<color=#0abec5>&Param2&</color>。援护技「武装强袭」每次跳跃下砸时，引发的爆炸会比上一次增加1次，援护技结束时清除该效果。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,137300012)",
-                    "descJP": "支援スキルの叩きつけ爆発による&Param1&が<color=#0abec5>&Param2&</color>上昇する。支援スキルでジャンプして叩きつけるたびに、発生する爆発回数が前回より1回増加する。支援スキル終了時、この効果は解除される。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,137300012)",
-                    "descKR": "지원 스킬 「무장 습격」 찍어내리기 폭파의 &Param1_kr1& <color=#0abec5>&Param2&</color> 증가한다. 지원 스킬 「무장 습격」이 점프하여 찍어내릴 때 발생하는 폭파가 이전보다 1회 증가하며, 지원 스킬 종료 시 해당 효과가 제거된다.\u000bParam1: &Param1& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,137300012)",
-                    "damageType": [
-                        "Skill (from Skill, scale with Skill) (hidden)"
-                    ],
+                    "desc": "Increases the &Param1& of jump slam explosions from Armed Assault (Support Skill) by <color=#0abec5>&Param2&</color>. Increases the number of explosions of each jump slam by 1. Resets when the Support Skill ends.",
+                    "descCN": "援护技「武装强袭」下砸爆炸的&Param1&提升<color=#0abec5>&Param2&</color>。援护技「武装强袭」每次跳跃下砸时，引发的爆炸会比上一次增加1次，援护技结束时清除该效果。",
+                    "descJP": "支援スキルの叩きつけ爆発による&Param1&が<color=#0abec5>&Param2&</color>上昇する。支援スキルでジャンプして叩きつけるたびに、発生する爆発回数が前回より1回増加する。支援スキル終了時、この効果は解除される。",
+                    "descKR": "지원 스킬 「무장 습격」 찍어내리기 폭파의 &Param1_kr1& <color=#0abec5>&Param2&</color> 증가한다. 지원 스킬 「무장 습격」이 점프하여 찍어내릴 때 발생하는 폭파가 이전보다 1회 증가하며, 지원 스킬 종료 시 해당 효과가 제거된다.\u000bParam1: &Param1& (OnceAdditionalAttributeValue,AttributeType1)",
+                    "damageType": [],
                     "effectType": [],
                     "addAttrType": [
                         "(Ventus) Skill Crit Rate (base)"
@@ -96094,33 +96013,8 @@
                             "addAttrId": 13721011
                         }
                     ],
-                    "hiddenParams": [
-                        "78%/90%/102%/137%/148%/159%/181%/190%/200%/219%/234%/250%/266%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "137300012",
-                            "hitDamageNote": "Conditional hit damage: only when Chain Detonation (513721) is active",
-                            "duration": 1,
-                            "hitDelay": 0.1,
-                            "hitInterval": 0,
-                            "hits": 1,
-                            "areaEffectVariants": [
-                                {
-                                    "duration": 1.5,
-                                    "hitDelay": 0.1,
-                                    "hitInterval": 0,
-                                    "hits": 1,
-                                    "requirement": "when Chain Detonation (513721) is active"
-                                }
-                            ],
-                            "damageTag": [
-                                "-19581704",
-                                "137SkillSupZaDi"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "13701_Potential_21",
                     "rarity": "core"
                 },
@@ -96261,7 +96155,6 @@
                         {
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "137300013",
-                            "hitDamageNote": "Conditional hit damage: only when Cluster Barrage (513724) is active",
                             "duration": 1.1,
                             "hitDelay": 0.1,
                             "hitInterval": 0,
@@ -99718,7 +99611,6 @@
                         {
                             "damageType": "Mark (scale with Upgrade)",
                             "hitDamageId": "139504001",
-                            "hitDamageNote": "Conditional hit damage: only when Sweep Extension (513904) is active",
                             "duration": 2,
                             "hitDelay": 0.2,
                             "hitInterval": 3,
@@ -100661,7 +100553,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "139524001",
-                            "hitDamageNote": "Conditional hit damage: only when Accidental Ruin (513924) and Crescent Icicle (513930) are active or only when Accidental Ruin (513924) is active",
                             "duration": 2,
                             "hitDelay": 0.65,
                             "hitInterval": 3,
@@ -100671,14 +100562,14 @@
                                     "duration": 2,
                                     "hitDelay": 0.65,
                                     "hitInterval": 3,
-                                    "hits": 1,
-                                    "requirement": "when Accidental Ruin (513924) and Crescent Icicle (513930) are active"
+                                    "hits": 1
                                 },
                                 {
                                     "duration": 2,
                                     "hitDelay": 0.65,
                                     "hitInterval": 3,
-                                    "hits": 1
+                                    "hits": 1,
+                                    "requirement": "when Accidental Ruin (513924) and Crescent Icicle (513930) are active"
                                 },
                                 {
                                     "duration": 2,
@@ -104056,13 +103947,12 @@
                     "nameCN": "旋钮气浪",
                     "nameJP": "天才の切り札",
                     "nameKR": "다이얼 기류",
-                    "desc": "When Sparkla is in ##Bunny Jaws Mode#4033#, each shot deals <color=#ec6d21>&Param1& of ATK</color> as AoE Terra Skill DMG to enemies in front and knocks them back. Can trigger ##Terra Mark#1020#.\u000bWhen casting Bunny Roar, each shot deals <color=#ec6d21>&Param2& of ATK</color> as AoE Terra Skill DMG to enemies in front and knocks them back. Can trigger ##Terra Mark#1020#.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80140026)",
-                    "descCN": "斯帕克拉处于##兔兔大开口模式#4033#期间，每次射击时对前方造成攻击力<color=#ec6d21>&Param1&</color>的范围地系技能伤害并击退目标，可触发##地系印记#1020#。\u000b「兔兔吼」射击时对前方造成攻击力<color=#ec6d21>&Param2&</color>的范围地系技能伤害并击退目标，可触发##地系印记#1020#。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80140026)",
-                    "descJP": "スパクルの##タンクモード#4033#持続中、射撃のたびに前方の範囲内へ攻撃力の<color=#ec6d21>&Param1&</color>の地属性のスキルダメージを与え、敵をノックバックさせる。この攻撃は##地属性の印#1020#を発動させることができる。\u000b「固定ラビキャノン」による射撃時、前方の範囲内へ攻撃力の<color=#ec6d21>&Param2&</color>の地属性のスキルダメージを与え、敵をノックバックさせる。この攻撃は##地属性の印#1020#を発動させることができる。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80140026)",
-                    "descKR": "스파클이 ##토끼 대개방 모드#4033#일 때, 사격할 때마다 전방에 공격력 <color=#ec6d21>&Param1&</color>의 땅 속성 범위 스킬 피해를 입히고, 목표를 넉백시킨다. ##땅 속성 표식#1020#을 발동할 수 있다. \u000b「토끼의 포효」 사격 시 전방에 공격력 <color=#ec6d21>&Param2&</color>의 땅 속성 범위 스킬 피해를 입히고, 목표를 넉백시킨다. ##땅 속성 표식#1020#을 발동할 수 있다.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80140026)",
+                    "desc": "When Sparkla is in ##Bunny Jaws Mode#4033#, each shot deals <color=#ec6d21>&Param1& of ATK</color> as AoE Terra Skill DMG to enemies in front and knocks them back. Can trigger ##Terra Mark#1020#.\u000bWhen casting Bunny Roar, each shot deals <color=#ec6d21>&Param2& of ATK</color> as AoE Terra Skill DMG to enemies in front and knocks them back. Can trigger ##Terra Mark#1020#.",
+                    "descCN": "斯帕克拉处于##兔兔大开口模式#4033#期间，每次射击时对前方造成攻击力<color=#ec6d21>&Param1&</color>的范围地系技能伤害并击退目标，可触发##地系印记#1020#。\u000b「兔兔吼」射击时对前方造成攻击力<color=#ec6d21>&Param2&</color>的范围地系技能伤害并击退目标，可触发##地系印记#1020#。",
+                    "descJP": "スパクルの##タンクモード#4033#持続中、射撃のたびに前方の範囲内へ攻撃力の<color=#ec6d21>&Param1&</color>の地属性のスキルダメージを与え、敵をノックバックさせる。この攻撃は##地属性の印#1020#を発動させることができる。\u000b「固定ラビキャノン」による射撃時、前方の範囲内へ攻撃力の<color=#ec6d21>&Param2&</color>の地属性のスキルダメージを与え、敵をノックバックさせる。この攻撃は##地属性の印#1020#を発動させることができる。",
+                    "descKR": "스파클이 ##토끼 대개방 모드#4033#일 때, 사격할 때마다 전방에 공격력 <color=#ec6d21>&Param1&</color>의 땅 속성 범위 스킬 피해를 입히고, 목표를 넉백시킨다. ##땅 속성 표식#1020#을 발동할 수 있다. \u000b「토끼의 포효」 사격 시 전방에 공격력 <color=#ec6d21>&Param2&</color>의 땅 속성 범위 스킬 피해를 입히고, 목표를 넉백시킨다. ##땅 속성 표식#1020#을 발동할 수 있다.",
                     "damageType": [
-                        "Skill (from Skill)",
-                        "Auto Attack (hidden)"
+                        "Skill (from Skill)"
                     ],
                     "effectType": [],
                     "addAttrType": [],
@@ -104075,7 +103965,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "140508001",
-                            "hitDamageNote": "Requires Cyclone Dial (514008); Conditional hit damage: only when Cyclone Dial (514008) is active",
+                            "hitDamageNote": "Requires Cyclone Dial (514008)",
                             "duration": 1.8,
                             "hitDelay": 0.1,
                             "hitInterval": 0,
@@ -104089,7 +103979,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "140508002",
-                            "hitDamageNote": "Requires Cyclone Dial (514008); Conditional hit damage: only when Cyclone Dial (514008) is active",
+                            "hitDamageNote": "Requires Cyclone Dial (514008)",
                             "duration": 1.8,
                             "hitDelay": 0.1,
                             "hitInterval": 0,
@@ -104102,23 +103992,8 @@
                             ]
                         }
                     ],
-                    "hiddenParams": [
-                        "25%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Auto Attack",
-                            "hitDamageId": "80140026",
-                            "hitDamageNote": "Conditional hit damage: only when Cyclone Dial (514008) is active",
-                            "duration": 1.8,
-                            "hitDelay": 0.1,
-                            "hitInterval": 0,
-                            "hits": 1,
-                            "damageTag": [
-                                "140_P01"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "14001_Potential_08",
                     "corner": "Diamond",
                     "rarity": "common"
@@ -104152,7 +104027,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "140509001",
-                            "hitDamageNote": "Requires Ticking Aftershock (514009); Conditional hit damage: only when Ticking Aftershock (514009) is active",
+                            "hitDamageNote": "Requires Ticking Aftershock (514009)",
                             "damageTag": [
                                 "140_LandTag_Trigger",
                                 "140_Tank",
@@ -104224,7 +104099,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "140511001",
-                            "hitDamageNote": "Requires Harmonic Barrage (514011); Conditional hit damage: only when Harmonic Barrage (514011) is active",
+                            "hitDamageNote": "Requires Harmonic Barrage (514011)",
                             "damageTag": [
                                 "140_LandTag_Trigger",
                                 "737008453"
@@ -104727,7 +104602,7 @@
                         {
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "140524001",
-                            "hitDamageNote": "Requires Incendiary Volley (514024); Conditional hit damage: only when Incendiary Volley (514024) is active",
+                            "hitDamageNote": "Requires Incendiary Volley (514024)",
                             "damageTag": [
                                 "140_P24",
                                 "140_P23"
@@ -107871,7 +107746,6 @@
                 {
                     "damageType": "Minion (from Skill, scale with Skill)",
                     "hitDamageId": "141320001",
-                    "hitDamageNote": "Conditional hit damage: only when Sigil Unleashed: Tiger of the East (514123) is active",
                     "damageTag": [
                         "-1975843378"
                     ]
@@ -108048,7 +107922,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "141503001",
-                            "hitDamageNote": "Conditional hit damage: only when Flame-Stained Ink (514103) is active",
                             "duration": 2,
                             "hitDelay": 1.2,
                             "hitInterval": 5,
@@ -108153,7 +108026,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "141506001",
-                            "hitDamageNote": "Conditional hit damage: only when Ashes of the Firepit (514106) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 1,
@@ -108539,7 +108411,6 @@
                         {
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "141442001",
-                            "hitDamageNote": "Conditional hit damage: only when Blazing Vortex (514142) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 0.2,
@@ -108580,7 +108451,6 @@
                         {
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "141443001",
-                            "hitDamageNote": "Conditional hit damage: only when Dragon Breath (514143) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 12,
                             "hitDelay": 3,
@@ -115981,7 +115851,6 @@
                 {
                     "damageType": "Skill (1.87e, from Skill, scale with Skill)",
                     "hitDamageId": "143300002",
-                    "hitDamageNote": "Conditional hit damage: only when Storm-Piercing Surge (514303) is active",
                     "duration": 1,
                     "hitDelay": 0,
                     "hitInterval": 0,
@@ -116155,7 +116024,6 @@
                         {
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "143300003",
-                            "hitDamageNote": "Conditional hit damage: only when Last Gasp of Gale (514301) and Twin Shadows (514302) are active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 4,
                             "hitDelay": 0,
@@ -116218,7 +116086,6 @@
                         {
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "143300003",
-                            "hitDamageNote": "Conditional hit damage: only when Last Gasp of Gale (514301) and Twin Shadows (514302) are active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 4,
                             "hitDelay": 0,
@@ -116697,7 +116564,6 @@
                         {
                             "damageType": "Skill (from Normal attack)",
                             "hitDamageId": "143300005",
-                            "hitDamageNote": "Conditional hit damage: only when Tracewind Blink (514310) is active",
                             "duration": 1,
                             "hitDelay": 0,
                             "hitInterval": 0,
@@ -116901,7 +116767,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "143310004",
-                            "hitDamageNote": "Conditional hit damage: only when Underbarrel Launcher (514321) is active",
                             "duration": 0.2,
                             "hitDelay": 0,
                             "hitInterval": 0,
@@ -116940,7 +116805,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "143310005",
-                            "hitDamageNote": "Conditional hit damage: only when Suppressive Wind-Splitting Round (514322) is active",
                             "duration": 0.2,
                             "hitDelay": 0,
                             "hitInterval": 0,
@@ -117038,7 +116902,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "143310008",
-                            "hitDamageNote": "Conditional hit damage: only when Ominous Vibe (514325) is active",
                             "duration": 1,
                             "hitDelay": 0,
                             "hitInterval": 0,
@@ -117300,7 +117163,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "143310007",
-                            "hitDamageNote": "Conditional hit damage: only when Avenger (514332) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 8,
                             "hitDelay": 0,
@@ -120634,7 +120496,7 @@
                         {
                             "damageType": "Auto Attack (from Normal attack)",
                             "hitDamageId": "144310701",
-                            "hitDamageNote": "Requires Aqueous Phantasm (514407); Conditional hit damage: only when Aqueous Phantasm (514407) is active",
+                            "hitDamageNote": "Requires Aqueous Phantasm (514407)",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 0.5,
                             "hitDelay": 0.15,
@@ -121215,7 +121077,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "144322401",
-                            "hitDamageNote": "Conditional hit damage: only when Where Shadows Drown (514424) is active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "duration": 0.1,
                             "hitDelay": 0.02,
@@ -133546,7 +133407,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "149330101",
-                            "hitDamageNote": "Requires Hexacalamity: Hallowed Chains (514927); Conditional hit damage: only when Hexacalamity: Famine (514930) is active",
+                            "hitDamageNote": "Requires Hexacalamity: Hallowed Chains (514927)",
                             "duration": 0.5,
                             "hitDelay": 0.3,
                             "hitInterval": 3,
@@ -136659,21 +136520,11 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150310101",
-                            "hitDamageNote": "Conditional hit damage: only when Aerial Suspension (515001) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3.0999999,
                             "hitDelay": 0,
                             "hitInterval": 0.1,
                             "hits": 31,
-                            "areaEffectVariants": [
-                                {
-                                    "duration": 10,
-                                    "hitDelay": 0.5,
-                                    "hitInterval": 0.5,
-                                    "hits": 19,
-                                    "requirement": "when Aerial Suspension (515001) is active"
-                                }
-                            ],
                             "damageTag": [
                                 "150_Skill",
                                 "150_P02_Hurt_Trigger",
@@ -136693,13 +136544,12 @@
                     "nameCN": "电链镭射",
                     "nameJP": "ライトエギング",
                     "nameKR": "전격 사슬",
-                    "desc": "The laser inflicts Shock on targets for 10s. When dealing damage to Shocked targets, deals an additional <color=#0abec5>&Param2& of ATK</color> as Lux Skill DMG. With the 20th hit, deals <color=#0abec5>&Param3& of ATK</color> as AoE Lux Skill DMG and removes Shock.\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,150310202)",
-                    "descCN": "激光对目标附加「感电」，持续10秒。对「感电」目标造成伤害时，额外造成攻击力<color=#0abec5>&Param2&</color>的光系技能伤害，累计20次时，再造成攻击力<color=#0abec5>&Param3&</color>的范围光系技能伤害并结束「感电」。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,150310202)",
-                    "descJP": "レーザーは敵に、10秒間持続する感電を付与するようになる。感電が付与されている敵にダメージを与えた時、その敵に攻撃力の<color=#0abec5>&Param2&</color>の光属性スキルダメージを追加で与える。この効果のダメージを累計20回与えた時、範囲内に攻撃力の<color=#0abec5>&Param3&</color>の光属性スキルダメージを与え、感電を解除させる。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,150310202)",
-                    "descKR": "레이저가 목표에게 「감전」을 부여한다. 10초간 지속된다. 「감전」 목표에게 피해를 입히면 공격력 <color=#0abec5>&Param2&</color>의 빛 속성 스킬 피해를 추가로 입힌다. 20회 누적 시 다시 공격력 <color=#0abec5>&Param3&</color>의 빛 속성 범위 스킬 피해를 입히고 「감전」이 종료된다.\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,150310202)",
+                    "desc": "The laser inflicts Shock on targets for 10s. When dealing damage to Shocked targets, deals an additional <color=#0abec5>&Param2& of ATK</color> as Lux Skill DMG. With the 20th hit, deals <color=#0abec5>&Param3& of ATK</color> as AoE Lux Skill DMG and removes Shock.\u000bParam1: &Param1& (Skill,Title)",
+                    "descCN": "激光对目标附加「感电」，持续10秒。对「感电」目标造成伤害时，额外造成攻击力<color=#0abec5>&Param2&</color>的光系技能伤害，累计20次时，再造成攻击力<color=#0abec5>&Param3&</color>的范围光系技能伤害并结束「感电」。\u000bParam1: &Param1& (Skill,Title)",
+                    "descJP": "レーザーは敵に、10秒間持続する感電を付与するようになる。感電が付与されている敵にダメージを与えた時、その敵に攻撃力の<color=#0abec5>&Param2&</color>の光属性スキルダメージを追加で与える。この効果のダメージを累計20回与えた時、範囲内に攻撃力の<color=#0abec5>&Param3&</color>の光属性スキルダメージを与え、感電を解除させる。\u000bParam1: &Param1& (Skill,Title)",
+                    "descKR": "레이저가 목표에게 「감전」을 부여한다. 10초간 지속된다. 「감전」 목표에게 피해를 입히면 공격력 <color=#0abec5>&Param2&</color>의 빛 속성 스킬 피해를 추가로 입힌다. 20회 누적 시 다시 공격력 <color=#0abec5>&Param3&</color>의 빛 속성 범위 스킬 피해를 입히고 「감전」이 종료된다.\u000bParam1: &Param1& (Skill,Title)",
                     "damageType": [
-                        "Skill (from Skill, scale with Skill)",
-                        "Skill (from Skill, scale with Skill) (hidden)"
+                        "Skill (from Skill, scale with Skill)"
                     ],
                     "effectType": [],
                     "addAttrType": [],
@@ -136724,7 +136574,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150310203",
-                            "hitDamageNote": "Conditional hit damage: only when Arc Chain Laser (515002) is active",
                             "duration": 2,
                             "hitDelay": 0.1,
                             "hitInterval": 5,
@@ -136736,25 +136585,8 @@
                             ]
                         }
                     ],
-                    "hiddenParams": [
-                        "37.4%/41.2%/44.9%/56.1%/59.9%/63.6%/71.1%/74.9%/78.6%/86.1%/89.8%/93.6%/97.3%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "150310202",
-                            "hitDamageNote": "Conditional hit damage: only when Arc Chain Laser (515002) is active",
-                            "duration": 2,
-                            "hitDelay": 0.1,
-                            "hitInterval": 5,
-                            "hits": 1,
-                            "damageTag": [
-                                "150_Skill",
-                                "150_P07",
-                                "150_LightMark_Trigger"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "15001_Potential_02",
                     "rarity": "core"
                 },
@@ -137330,7 +137162,6 @@
                         {
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "150404101",
-                            "hitDamageNote": "Conditional hit damage: only when Lancefall: Light Realm (515041) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 10,
                             "hitDelay": 0.5,
@@ -137635,7 +137466,6 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "150322501",
-                            "hitDamageNote": "Conditional hit damage: only when Radiant Downpour (515025) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 6,
                             "hitDelay": 0.1,
@@ -146215,7 +146045,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "156320005",
-                            "hitDamageNote": "Requires Feather Frenzy (515625); Conditional hit damage: only when Feather Frenzy (515625) is active",
+                            "hitDamageNote": "Requires Feather Frenzy (515625)",
                             "duration": 1,
                             "hitDelay": 0.1,
                             "hitInterval": 0,
@@ -146303,7 +146133,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "156320006",
-                            "hitDamageNote": "Requires Twinkle Toss (515627); Conditional hit damage: only when Twinkle Toss (515627) is active",
+                            "hitDamageNote": "Requires Twinkle Toss (515627)",
                             "duration": 1,
                             "hitDelay": 0.1,
                             "hitInterval": 0,
@@ -149386,13 +149216,12 @@
                     "nameCN": "猎群涡流",
                     "nameJP": "フィッシュネード",
                     "nameKR": "포식자의 소용돌이",
-                    "desc": "Boss Shark's attacks summon a vortex of fish, dealing <color=#0abec5>&Param1& x7</color> of ATK as AoE Umbra Ultimate DMG and triggering ##Umbra Mark#1019#. This effect can only be triggered once every &Param4&s. Increases Karin's &Param2& against targets inflicted with ##Dark Burn#2028# by <color=#0abec5>&Param3&</color>.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80157025)",
-                    "descCN": "「鲨老大」发动攻击可引来鱼群涡流，造成攻击力<color=#0abec5>&Param1&x7</color>的范围暗系绝招伤害并触发##暗系印记#1019#，该效果每&Param4&秒可触发1次。花铃对附带##暗灼#2028#的目标造成的&Param2&提升<color=#0abec5>&Param3&</color>。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80157025)",
-                    "descJP": "サメ大将が攻撃を行うと魚群の渦を呼び寄せ、範囲内に攻撃力の<color=#0abec5>&Param1&x7</color>の闇属性の必殺技ダメージを与え、##闇属性の印#1019#を発動させることができる。この効果は&Param4&秒ごとに1回発動できる。\nカリンは##暗灼#2028#が付与された敵に対して&Param2&が<color=#0abec5>&Param3&</color>上昇する。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80157025)",
-                    "descKR": "「상어 대장」이 공격을 발동해 물고기떼 소용돌이를 일으켜 공격력 <color=#0abec5>&Param1&x7</color>의 어둠 속성 범위 필살기 피해를 입히며 ##어둠 속성 표식#1019#을 발동한다. 해당 효과는 &Param4&초마다 1회 발동할 수 있다. 카린이 ##어둠 작열#2028#을 보유한 목표에게 입히는 &Param2_kr1& <color=#0abec5>&Param3&</color> 증가한다.\u000bParam2: &Param2& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80157025)",
+                    "desc": "Boss Shark's attacks summon a vortex of fish, dealing <color=#0abec5>&Param1& x7</color> of ATK as AoE Umbra Ultimate DMG and triggering ##Umbra Mark#1019#. This effect can only be triggered once every &Param4&s. Increases Karin's &Param2& against targets inflicted with ##Dark Burn#2028# by <color=#0abec5>&Param3&</color>.",
+                    "descCN": "「鲨老大」发动攻击可引来鱼群涡流，造成攻击力<color=#0abec5>&Param1&x7</color>的范围暗系绝招伤害并触发##暗系印记#1019#，该效果每&Param4&秒可触发1次。花铃对附带##暗灼#2028#的目标造成的&Param2&提升<color=#0abec5>&Param3&</color>。",
+                    "descJP": "サメ大将が攻撃を行うと魚群の渦を呼び寄せ、範囲内に攻撃力の<color=#0abec5>&Param1&x7</color>の闇属性の必殺技ダメージを与え、##闇属性の印#1019#を発動させることができる。この効果は&Param4&秒ごとに1回発動できる。\nカリンは##暗灼#2028#が付与された敵に対して&Param2&が<color=#0abec5>&Param3&</color>上昇する。",
+                    "descKR": "「상어 대장」이 공격을 발동해 물고기떼 소용돌이를 일으켜 공격력 <color=#0abec5>&Param1&x7</color>의 어둠 속성 범위 필살기 피해를 입히며 ##어둠 속성 표식#1019#을 발동한다. 해당 효과는 &Param4&초마다 1회 발동할 수 있다. 카린이 ##어둠 작열#2028#을 보유한 목표에게 입히는 &Param2_kr1& <color=#0abec5>&Param3&</color> 증가한다.\u000bParam2: &Param2& (OnceAdditionalAttributeValue,AttributeType1)",
                     "damageType": [
-                        "Ultimate (from Skill, scale with Skill)",
-                        "Auto Attack (hidden)"
+                        "Ultimate (from Skill, scale with Skill)"
                     ],
                     "effectType": [],
                     "addAttrType": [
@@ -149409,7 +149238,6 @@
                         {
                             "damageType": "Ultimate (from Skill, scale with Skill)",
                             "hitDamageId": "157300003",
-                            "hitDamageNote": "Conditional hit damage: only when Predator's Vortex (515701) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 1.5,
                             "hitDelay": 0,
@@ -149431,21 +149259,8 @@
                         },
                         {}
                     ],
-                    "hiddenParams": [
-                        "50%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Auto Attack",
-                            "hitDamageId": "80157025",
-                            "hitDamageNote": "Conditional hit damage: only when Predator's Vortex (515701) is active",
-                            "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
-                            "duration": 1.5,
-                            "hitDelay": 0,
-                            "hitInterval": 0.6,
-                            "hits": 3
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "15701_Potential_01",
                     "rarity": "core"
                 },
@@ -149676,7 +149491,6 @@
                         {
                             "damageType": "Ultimate (from Skill)",
                             "hitDamageId": "157300007",
-                            "hitDamageNote": "Conditional hit damage: only when Crashing Wave (515705) is active; only on Ultimate hits",
                             "duration": 1,
                             "hitDelay": 0.2,
                             "hitInterval": 0,
@@ -150389,7 +150203,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "157300015",
-                            "hitDamageNote": "Conditional hit damage: only when Undercurrent Blast (515724) is active",
                             "duration": 1,
                             "hitDelay": 0,
                             "hitInterval": 0,
@@ -153845,7 +153658,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "158504001",
-                            "hitDamageNote": "Conditional hit damage: only when Crossing Welts (515804) and Wild Whip Waltz (515809) are active",
                             "duration": 0.4,
                             "hitDelay": 0.2,
                             "hitInterval": 5,
@@ -162141,7 +161953,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "160502001",
-                            "hitDamageNote": "Conditional hit damage: only when Rippling Radiance (516002) is active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 20,
@@ -162252,7 +162063,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "160504001",
-                            "hitDamageNote": "Conditional hit damage: only when Rainbow Rebound (516004) is active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "duration": 2,
                             "hitDelay": 0.25,
@@ -162698,7 +162508,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "160510001",
-                            "hitDamageNote": "Requires Wavering Glow (516010); Conditional hit damage: only when Wavering Glow (516010) is active",
+                            "hitDamageNote": "Requires Wavering Glow (516010)",
                             "duration": 2,
                             "hitDelay": 0.25,
                             "hitInterval": 2,
@@ -163386,7 +163196,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "160530001",
-                            "hitDamageNote": "Requires Prismatic Bubbles (516030); Conditional hit damage: only when Prismatic Bubbles (516030) is active",
+                            "hitDamageNote": "Requires Prismatic Bubbles (516030)",
                             "duration": 1.5,
                             "hitDelay": 1.4,
                             "hitInterval": 3,
@@ -163429,7 +163239,7 @@
                         {
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "160530002",
-                            "hitDamageNote": "Requires Prismatic Bubbles (516030); Conditional hit damage: only when Prismatic Bubbles (516030) is active",
+                            "hitDamageNote": "Requires Prismatic Bubbles (516030)",
                             "duration": 1.5,
                             "hitDelay": 1.4,
                             "hitInterval": 3,
@@ -166874,7 +166684,6 @@
                         {
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "162310010",
-                            "hitDamageNote": "Conditional hit damage: only when Eclipse Phantom (516208) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3,
                             "hitDelay": 0,
@@ -167197,7 +167006,6 @@
                         {
                             "damageType": "Auto Attack (from Ultimate)",
                             "hitDamageId": "162400007",
-                            "hitDamageNote": "Conditional hit damage: only when Empyrean Starfall: Devil's End (516242) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3,
                             "hitDelay": 0,
@@ -167294,7 +167102,6 @@
                         {
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "162320006",
-                            "hitDamageNote": "Conditional hit damage: only when Tempest Scourge (516221) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3,
                             "hitDelay": 0,
@@ -167334,7 +167141,6 @@
                         {
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "162320004",
-                            "hitDamageNote": "Conditional hit damage: only when Inquisitor's Edge (516222) and Radiant Sever (516225) are active",
                             "duration": 1,
                             "hitDelay": 0.3,
                             "hitInterval": 0,
