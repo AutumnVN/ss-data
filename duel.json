@@ -345,11 +345,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29041701
+                            "buffId": 29041701,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29041701
+                            "buffId": 29041701,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -382,11 +386,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29041702
+                            "buffId": 29041702,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29041702
+                            "buffId": 29041702,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -419,11 +427,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29041703
+                            "buffId": 29041703,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29041703
+                            "buffId": 29041703,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -550,7 +562,8 @@
                             "effectType": "Final DMG Taken (base)",
                             "effectId": 29041201,
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29041201
+                            "buffId": 29041201,
+                            "buffStacks": 45
                         },
                         {
                             "effectType": "ADDBUFF:Final DMG Taken",
@@ -562,7 +575,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29041201
+                            "buffId": 29041201,
+                            "buffStacks": 45
                         }
                     ],
                     "effectType": [],
@@ -591,7 +605,8 @@
                             "effectType": "Final DMG Taken (base)",
                             "effectId": 29041202,
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29041202
+                            "buffId": 29041202,
+                            "buffStacks": 80
                         },
                         {
                             "effectType": "ADDBUFF:Final DMG Taken",
@@ -603,7 +618,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29041202
+                            "buffId": 29041202,
+                            "buffStacks": 80
                         }
                     ],
                     "effectType": [],
@@ -634,13 +650,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_SkillDamageDown",
-                            "buffId": 29040701
+                            "buffId": 29040701,
+                            "buffDuration": 5
                         },
                         {
                             "effectType": "ADDBUFF",
                             "effectId": 29040701,
                             "buffIcon": "Icon_CommonBuff_SkillDamageDown",
-                            "buffId": 29040701
+                            "buffId": 29040701,
+                            "buffDuration": 5
                         }
                     ],
                     "effectType": [
@@ -673,13 +691,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_SkillDamageDown",
-                            "buffId": 29040702
+                            "buffId": 29040702,
+                            "buffDuration": 5
                         },
                         {
                             "effectType": "ADDBUFF",
                             "effectId": 29040702,
                             "buffIcon": "Icon_CommonBuff_SkillDamageDown",
-                            "buffId": 29040702
+                            "buffId": 29040702,
+                            "buffDuration": 5
                         }
                     ],
                     "effectType": [
@@ -740,7 +760,8 @@
                     "paramsTooltips": [
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 29040501
+                            "buffId": 29040501,
+                            "buffDuration": 10
                         },
                         {
                             "effectType": "PLAYER_",
@@ -779,11 +800,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseDown",
-                            "buffId": 29041601
+                            "buffId": 29041601,
+                            "buffDuration": 5,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseDown",
-                            "buffId": 29041601
+                            "buffId": 29041601,
+                            "buffDuration": 5,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -816,11 +841,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseDown",
-                            "buffId": 29041602
+                            "buffId": 29041602,
+                            "buffDuration": 5,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseDown",
-                            "buffId": 29041602
+                            "buffId": 29041602,
+                            "buffDuration": 5,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -855,7 +884,9 @@
                             "effectType": "DMG Dealt (base)",
                             "effectId": 29040601,
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29040601
+                            "buffId": 29040601,
+                            "buffDuration": 8,
+                            "buffStacks": 2
                         },
                         {
                             "effectType": "DMG Dealt (base)",
@@ -863,11 +894,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29040601
+                            "buffId": 29040601,
+                            "buffDuration": 8,
+                            "buffStacks": 2
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29040601
+                            "buffId": 29040601,
+                            "buffDuration": 8,
+                            "buffStacks": 2
                         }
                     ],
                     "effectType": [
@@ -968,7 +1003,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29041401
+                            "buffId": 29041401,
+                            "buffStacks": 12
                         }
                     ],
                     "effectType": [],
@@ -1003,7 +1039,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29041402
+                            "buffId": 29041402,
+                            "buffStacks": 12
                         }
                     ],
                     "effectType": [],
@@ -1038,7 +1075,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29041403
+                            "buffId": 29041403,
+                            "buffStacks": 12
                         }
                     ],
                     "effectType": [],
@@ -1098,7 +1136,8 @@
                             "effectType": "EFFECT_MUL",
                             "effectId": 29041901,
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29041901
+                            "buffId": 29041901,
+                            "buffDuration": 20
                         },
                         {
                             "effectType": "EFFECT_HP_RECOVERY",
@@ -1106,7 +1145,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29041901
+                            "buffId": 29041901,
+                            "buffDuration": 20
                         },
                         {
                             "effectType": "DMG Dealt (base)",
@@ -1116,7 +1156,8 @@
                             "effectType": "EFFECT_MUL",
                             "effectId": 29041901,
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29041901
+                            "buffId": 29041901,
+                            "buffDuration": 20
                         }
                     ],
                     "effectType": [],
@@ -1182,7 +1223,9 @@
                             "effectType": "DMG Dealt (base)",
                             "effectId": 29040401,
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29040401
+                            "buffId": 29040401,
+                            "buffDuration": 5,
+                            "buffStacks": 20
                         },
                         {
                             "effectType": "DMG Dealt (base)",
@@ -1190,11 +1233,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29040401
+                            "buffId": 29040401,
+                            "buffDuration": 5,
+                            "buffStacks": 20
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29040401
+                            "buffId": 29040401,
+                            "buffDuration": 5,
+                            "buffStacks": 20
                         }
                     ],
                     "effectType": [
@@ -1225,7 +1272,8 @@
                             "effectType": "DMG Dealt (base)",
                             "effectId": 29040402,
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29040402
+                            "buffId": 29040402,
+                            "buffDuration": 5
                         },
                         {
                             "effectType": "DMG Dealt (base)",
@@ -1233,7 +1281,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29040402
+                            "buffId": 29040402,
+                            "buffDuration": 5
                         }
                     ],
                     "effectType": [
@@ -2168,11 +2217,15 @@
                             "effectType": "ADDBUFF",
                             "effectId": 290204011,
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 290204011
+                            "buffId": 290204011,
+                            "buffDuration": 2,
+                            "buffStacks": 99
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 290204011
+                            "buffId": 290204011,
+                            "buffDuration": 2,
+                            "buffStacks": 99
                         }
                     ],
                     "effectType": [
@@ -2232,11 +2285,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29020601
+                            "buffId": 29020601,
+                            "buffDuration": 4,
+                            "buffStacks": 3
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29020601
+                            "buffId": 29020601,
+                            "buffDuration": 4,
+                            "buffStacks": 3
                         }
                     ],
                     "effectType": [
@@ -2363,11 +2420,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseDown",
-                            "buffId": 29020801
+                            "buffId": 29020801,
+                            "buffDuration": 12,
+                            "buffStacks": 5
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseDown",
-                            "buffId": 29020801
+                            "buffId": 29020801,
+                            "buffDuration": 12,
+                            "buffStacks": 5
                         }
                     ],
                     "effectType": [
@@ -2540,7 +2601,9 @@
                             "effectType": "ADDBUFF",
                             "effectId": 290216011,
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 290216011
+                            "buffId": 290216011,
+                            "buffDuration": 99,
+                            "buffStacks": 99
                         },
                         {
                             "effectType": "Final DMG (base)",
@@ -2573,7 +2636,9 @@
                             "effectType": "ADDBUFF",
                             "effectId": 290216021,
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 290216021
+                            "buffId": 290216021,
+                            "buffDuration": 99,
+                            "buffStacks": 99
                         },
                         {
                             "effectType": "Final DMG (base)",
@@ -2606,7 +2671,9 @@
                             "effectType": "ADDBUFF",
                             "effectId": 290216031,
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 290216031
+                            "buffId": 290216031,
+                            "buffDuration": 99,
+                            "buffStacks": 99
                         },
                         {
                             "effectType": "Final DMG (base)",
@@ -3584,11 +3651,15 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 290304011
+                            "buffId": 290304011,
+                            "buffDuration": 3,
+                            "buffStacks": 30
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 290304011
+                            "buffId": 290304011,
+                            "buffDuration": 3,
+                            "buffStacks": 30
                         }
                     ],
                     "effectType": [
@@ -3946,7 +4017,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29031601
+                            "buffId": 29031601,
+                            "buffDuration": 5
                         }
                     ],
                     "effectType": [
@@ -3977,7 +4049,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackUp",
-                            "buffId": 29031602
+                            "buffId": 29031602,
+                            "buffDuration": 5
                         }
                     ],
                     "effectType": [
@@ -4042,13 +4115,15 @@
                             "effectType": "REDUCE_HP_BY_CURRENTHP",
                             "effectId": 290319011,
                             "buffIcon": "Icon_CommonBuff_Tie",
-                            "buffId": 290319021
+                            "buffId": 290319021,
+                            "buffDuration": 4
                         },
                         {
                             "effectType": "REDUCE_HP_BY_CURRENTHP",
                             "effectId": 290319011,
                             "buffIcon": "Icon_CommonBuff_Tie",
-                            "buffId": 290319021
+                            "buffId": 290319021,
+                            "buffDuration": 4
                         },
                         {
                             "effectType": "EFFECT_HP_RECOVERY",
@@ -4081,7 +4156,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_Tie",
-                            "buffId": 290319021
+                            "buffId": 290319021,
+                            "buffDuration": 4
                         }
                     ],
                     "effectType": [
@@ -4205,7 +4281,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseDown",
-                            "buffId": 29030801
+                            "buffId": 29030801,
+                            "buffDuration": 4
                         }
                     ],
                     "effectType": [
@@ -4238,7 +4315,8 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 29030701
+                            "buffId": 29030701,
+                            "buffDuration": 10
                         }
                     ],
                     "effectType": [
@@ -4311,7 +4389,8 @@
                             "effectType": "ADDBUFF",
                             "effectId": 290310012,
                             "buffIcon": "Icon_CommonBuff_AttackDown",
-                            "buffId": 290310012
+                            "buffId": 290310012,
+                            "buffStacks": 999
                         }
                     ],
                     "effectType": [
@@ -4432,17 +4511,23 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031701
+                            "buffId": 29031701,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031701
+                            "buffId": 29031701,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "effectType": "ADDBUFF",
                             "effectId": 29031701,
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031701
+                            "buffId": 29031701,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -4477,17 +4562,23 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031702
+                            "buffId": 29031702,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031702
+                            "buffId": 29031702,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "effectType": "ADDBUFF",
                             "effectId": 29031702,
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031702
+                            "buffId": 29031702,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -4522,17 +4613,23 @@
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031703
+                            "buffId": 29031703,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031703
+                            "buffId": 29031703,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         },
                         {
                             "effectType": "ADDBUFF",
                             "effectId": 29031703,
                             "buffIcon": "Icon_CommonBuff_DefenseUp",
-                            "buffId": 29031703
+                            "buffId": 29031703,
+                            "buffDuration": 3,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -5342,11 +5439,15 @@
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054310
+                            "buffId": 709054310,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054310
+                            "buffId": 709054310,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -5379,11 +5480,15 @@
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054320
+                            "buffId": 709054320,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054320
+                            "buffId": 709054320,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -5416,11 +5521,15 @@
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054330
+                            "buffId": 709054330,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054330
+                            "buffId": 709054330,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [
@@ -5451,7 +5560,8 @@
                             "effectType": "ADDBUFF",
                             "effectId": 709054211,
                             "buffIcon": "No Icon",
-                            "buffId": 709054211
+                            "buffId": 709054211,
+                            "buffStacks": 99
                         },
                         {
                             "effectType": "Final DMG (base)",
@@ -5484,7 +5594,8 @@
                             "effectType": "ADDBUFF",
                             "effectId": 709054221,
                             "buffIcon": "No Icon",
-                            "buffId": 709054221
+                            "buffId": 709054221,
+                            "buffStacks": 99
                         },
                         {
                             "effectType": "Final DMG (base)",
@@ -5557,11 +5668,15 @@
                         {},
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054080
+                            "buffId": 709054080,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054080
+                            "buffId": 709054080,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [],
@@ -5596,11 +5711,15 @@
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054090
+                            "buffId": 709054090,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054090
+                            "buffId": 709054090,
+                            "buffDuration": 4,
+                            "buffStacks": 10
                         }
                     ],
                     "effectType": [],
@@ -5758,7 +5877,8 @@
                             "effectType": "Auto Attack DMG (%)",
                             "effectId": 709054201,
                             "buffIcon": "No Icon",
-                            "buffId": 709054211
+                            "buffId": 709054211,
+                            "buffStacks": 99
                         },
                         {
                             "effectType": "Ultimate DMG (%)",
@@ -5828,11 +5948,15 @@
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054120
+                            "buffId": 709054120,
+                            "buffDuration": 4,
+                            "buffStacks": 4
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054120
+                            "buffId": 709054120,
+                            "buffDuration": 4,
+                            "buffStacks": 4
                         }
                     ],
                     "effectType": [
@@ -5865,11 +5989,15 @@
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054130
+                            "buffId": 709054130,
+                            "buffDuration": 4,
+                            "buffStacks": 4
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054130
+                            "buffId": 709054130,
+                            "buffDuration": 4,
+                            "buffStacks": 4
                         }
                     ],
                     "effectType": [
@@ -5935,7 +6063,8 @@
                     "paramsTooltips": [
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054160
+                            "buffId": 709054160,
+                            "buffDuration": 60
                         },
                         {
                             "effectType": "PLAYER_:FRONT_ADD_ENERGY (base)",
@@ -5968,7 +6097,8 @@
                     "paramsTooltips": [
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054170
+                            "buffId": 709054170,
+                            "buffDuration": 30
                         },
                         {
                             "effectType": "PLAYER_:FRONT_ADD_ENERGY (base)",
@@ -5976,7 +6106,8 @@
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054178
+                            "buffId": 709054178,
+                            "buffDuration": 120
                         }
                     ],
                     "effectType": [
@@ -6014,7 +6145,8 @@
                         {},
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054150
+                            "buffId": 709054150,
+                            "buffDuration": 10
                         },
                         {
                             "effectType": "Final DMG Taken (base)",
@@ -6150,7 +6282,8 @@
                         {},
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054350
+                            "buffId": 709054350,
+                            "buffDuration": 30
                         },
                         {
                             "effectType": "Final DMG (base)",
@@ -6183,7 +6316,8 @@
                         },
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054360
+                            "buffId": 709054360,
+                            "buffDuration": 5
                         }
                     ],
                     "effectType": [
@@ -6242,7 +6376,8 @@
                     "paramsTooltips": [
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054290
+                            "buffId": 709054290,
+                            "buffDuration": 2
                         }
                     ],
                     "effectType": [
@@ -6267,7 +6402,8 @@
                     "paramsTooltips": [
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054300
+                            "buffId": 709054300,
+                            "buffDuration": 6
                         }
                     ],
                     "effectType": [
@@ -6294,7 +6430,8 @@
                     "paramsTooltips": [
                         {
                             "buffIcon": "No Icon",
-                            "buffId": 709054140
+                            "buffId": 709054140,
+                            "buffDuration": 4
                         }
                     ],
                     "effectType": [
