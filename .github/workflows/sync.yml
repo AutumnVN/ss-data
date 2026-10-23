@@ -38,8 +38,7 @@ jobs:
         git fetch --all --prune
         git merge --allow-unrelated-histories -X theirs --no-edit upstream/main
 
-        node fetchAreaEffect.js
-        node fetchBullet.js
+        node fetchHitSource.js
 
         dotnet run --project hotfix/analyze -- hotfix/out/Hotfix.cs hotfix.json
 

@@ -12,8 +12,57 @@ const BUFF = require('./EN/bin/Buff.json');
 const BUFFVALUE = require('./EN/bin/BuffValue.json');
 const LANG_ITEM = require('./EN/language/en_US/Item.json');
 
-const OUTPUT = `${tmpdir()}/areaEffect.json`;
-const BULLET_FILE = `${tmpdir()}/bullet.json`;
+const HIT_SOURCE_FILE = `${tmpdir()}/hitSource.json`;
+
+const AREA_EFFECT_CLASSES = new Set(['AreaEffectEntity', 'LineAreaWeaponEntity', 'SpikeweedEneity']);
+
+let HIT_SOURCE_DATA = {};
+try {
+    HIT_SOURCE_DATA = JSON.parse(readFileSync(HIT_SOURCE_FILE, 'utf8'));
+} catch {}
+
+if (!HIT_SOURCE_DATA || typeof HIT_SOURCE_DATA !== 'object' || Array.isArray(HIT_SOURCE_DATA)) HIT_SOURCE_DATA = {};
+
+const BULLET_MAP = {};
+const AREA_EFFECT_MAP = {};
+
+for (const [hitDamageId, entry] of Object.entries(HIT_SOURCE_DATA)) {
+    const sources = entry?.sources || [];
+    const areaSources = sources.filter(source => AREA_EFFECT_CLASSES.has(source.class));
+
+    for (const source of sources) {
+        if (AREA_EFFECT_CLASSES.has(source.class) || !source.name) continue;
+
+        const bullet = BULLET_MAP[source.name] || (BULLET_MAP[source.name] = { hits: [] });
+        const id = Number(hitDamageId);
+        if (!bullet.hits.includes(id)) bullet.hits.push(id);
+    }
+
+    if (!areaSources.length) continue;
+
+    const variants = areaSources.map(source => ({
+        alias: source.alias || source.name,
+        duration: source.duration,
+        hitDelay: source.hitDelay,
+        hitInterval: source.hitInterval,
+        hits: source.hits,
+        triggers: source.triggers || [],
+        shape: source.shape,
+        radius: source.radius,
+        innerRadius: source.innerRadius,
+        angle: source.angle,
+        width: source.width,
+        length: source.length,
+        height: source.height,
+        class: source.class,
+        snapshot: source.snapshot,
+    }));
+
+    AREA_EFFECT_MAP[hitDamageId] = {
+        variants,
+        hits: Math.max(...variants.map(variant => variant.hits || 0)),
+    };
+}
 
 const ELEMENTS = { WE: 1, FE: 2, SE: 3, AE: 4, LE: 5, DE: 6 };
 const ELEMENTS_BY_NAME = { Water: 1, Fire: 2, Land: 3, Earth: 3, Air: 4, Wind: 4, Light: 5, Dark: 6 };
@@ -325,21 +374,16 @@ function getInteractionData() {
         interaction.sink !== 'ModifyAreaEffectLeftTime' && interaction.sink !== 'AddAreaEffectLeftTime'
     );
 
-    let bullets = {};
-    try {
-        bullets = JSON.parse(readFileSync(BULLET_FILE, 'utf8'));
-    } catch {}
-
     const key = condition => `${condition.type}:${condition.value}:${condition.negated ? 1 : 0}`;
     const same = (a, b) => key(a) === key(b);
     const lookup = alias => {
-        if (bullets[alias] !== undefined) return bullets[alias];
+        if (BULLET_MAP[alias] !== undefined) return BULLET_MAP[alias];
 
         const base = alias.split('/').pop();
-        if (bullets[base] !== undefined) return bullets[base];
+        if (BULLET_MAP[base] !== undefined) return BULLET_MAP[base];
 
-        const matches = Object.keys(bullets).filter(name => name.startsWith(base));
-        return matches.length === 1 ? bullets[matches[0]] : undefined;
+        const matches = Object.keys(BULLET_MAP).filter(name => name.startsWith(base));
+        return matches.length === 1 ? BULLET_MAP[matches[0]] : undefined;
     };
 
     const groups = new Map();
@@ -737,30 +781,8 @@ function getHitDamageSummonInfo(hitDamageId) {
     };
 }
 
-let AREA_EFFECT_MAP = {};
-try {
-    AREA_EFFECT_MAP = JSON.parse(readFileSync(OUTPUT, 'utf8'));
-} catch {}
-
 function getHitDamageAreaEffectEntry(hitDamageId) {
-    const entry = AREA_EFFECT_MAP[hitDamageId];
-    if (entry === undefined) return;
-
-    if (typeof entry === 'boolean') return { copyBattleDataBeforeAttack: entry, legacy: true };
-
-    return entry;
-}
-
-function getHitDamageAreaEffectInfo(hitDamageId) {
-    const entry = getHitDamageAreaEffectEntry(hitDamageId);
-    if (!entry || entry.copyBattleDataBeforeAttack === undefined) return;
-    if (!entry.legacy && entry.hits <= 1) return;
-
-    return {
-        areaEffect: entry.copyBattleDataBeforeAttack
-            ? "AreaEffect-Refresh, refreshes owner's stats before each attack"
-            : "AreaEffect-Snapshot, snapshots owner's stats when created",
-    };
+    return AREA_EFFECT_MAP[hitDamageId];
 }
 
 function getHitDamageAreaEffectDetail(hitDamageId) {
@@ -787,6 +809,8 @@ function getHitDamageAreaEffectDetail(hitDamageId) {
     const merged = [];
 
     const timing = variant => [
+        variant.class,
+        variant.snapshot,
         variant.duration,
         variant.hitDelay,
         variant.hitInterval,
@@ -850,12 +874,16 @@ function getHitDamageAreaEffectDetail(hitDamageId) {
     };
 
     return {
+        class: primary.class,
+        snapshot: primary.snapshot,
         duration: primary.duration === undefined ? undefined : seconds(primary.duration),
         hitDelay: primary.hitDelay === undefined ? undefined : seconds(primary.hitDelay),
         hitInterval: primary.hitInterval === undefined ? undefined : seconds(primary.hitInterval),
         hits: primary.hits,
         ...shape(primary),
         areaEffectVariants: others.length ? others.map(variant => ({
+            class: variant.class,
+            snapshot: variant.snapshot,
             duration: variant.duration === undefined ? undefined : seconds(variant.duration),
             hitDelay: variant.hitDelay === undefined ? undefined : seconds(variant.hitDelay),
             hitInterval: variant.hitInterval === undefined ? undefined : seconds(variant.hitInterval),
@@ -912,43 +940,23 @@ function getPotentialBuffs(potentialId) {
     return (getInteractionData().buffs[potentialId] || []).map(getBuffDetail).filter(Boolean);
 }
 
-let bulletData = null;
-
-function getBulletData() {
-    if (bulletData) return bulletData;
-
-    bulletData = { prefabs: {}, byHitDamage: {} };
-
-    let raw = {};
-    try {
-        raw = JSON.parse(readFileSync(BULLET_FILE, 'utf8'));
-    } catch {}
-
-    for (const [name, value] of Object.entries(raw)) {
-        const entry = Array.isArray(value) ? { hits: value } : value;
-        bulletData.prefabs[name] = entry;
-
-        for (const hitDamageId of entry.hits || []) {
-            const list = bulletData.byHitDamage[hitDamageId] || (bulletData.byHitDamage[hitDamageId] = []);
-            list.push(name);
-        }
-    }
-
-    return bulletData;
-}
-
 function getHitDamageBullet(hitDamageId) {
-    const data = getBulletData();
-    const names = data.byHitDamage[hitDamageId];
-    if (!names) return;
+    const allSources = HIT_SOURCE_DATA[hitDamageId]?.sources || [];
+    const areaNames = new Set(
+        allSources
+            .filter(source => AREA_EFFECT_CLASSES.has(source.class) && source.name)
+            .map(source => source.name)
+    );
+    const sources = allSources.filter(source =>
+        !AREA_EFFECT_CLASSES.has(source.class) && !areaNames.has(source.name)
+    );
+    if (!sources.length) return;
 
     const seen = new Set();
     const variants = [];
 
-    for (const name of names) {
-        const { hits, ...stats } = data.prefabs[name];
-        if (!Object.keys(stats).length) continue;
-
+    for (const source of sources) {
+        const { name, alias, ...stats } = source;
         const key = JSON.stringify(stats);
         if (seen.has(key)) continue;
 
@@ -1223,4 +1231,4 @@ function getHitDamageNote(hitDamageId) {
     return [...base, ...runtime.filter(note => !base.includes(note))];
 }
 
-module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getPotentialBuffs, getBuffDetail, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };
+module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getPotentialBuffs, getBuffDetail, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };

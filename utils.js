@@ -13,7 +13,7 @@ const SCOREBOSSABILITY = require('./EN/bin/ScoreBossAbility.json');
 const SCOREBOSSGETCONTROL = require('./EN/bin/ScoreBossGetControl.json');
 const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
 const ITEM = require('./EN/bin/Item.json');
-const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getBuffDetail, potentialLabel } = require('./hotfix');
+const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getBuffDetail, potentialLabel } = require('./hotfix');
 const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
 const LANG_SKILL = require('./EN/language/en_US/Skill.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
@@ -907,26 +907,23 @@ function resolveParamsTooltips(params) {
     return params.map(param => {
         const hitDamageId = getHitDamageIdFromParam(param);
         const summonInfo = hitDamageId && getHitDamageSummonInfo(hitDamageId);
-        const areaEffectInfo = hitDamageId && getHitDamageAreaEffectInfo(hitDamageId);
         const areaEffectDetail = hitDamageId && getHitDamageAreaEffectDetail(hitDamageId);
         const bullets = hitDamageId && getHitDamageBullet(hitDamageId);
         const damageTags = hitDamageId && getHitDamageTags(hitDamageId);
         const buffId = getBuffIdFromParam(param);
         const buffDetail = buffId && getBuffDetail(buffId);
+        const hitSources = [
+            formatAreaEffectSource(areaEffectDetail),
+            ...(bullets || []).map(formatBulletSource),
+        ].filter(Boolean);
         return {
             damageType: getDamageTypeFromParam(param),
             hitDamageId,
             hitDamageNote: hitDamageId && formatHitDamageNotes(getHitDamageNote(hitDamageId)) || undefined,
             summonAttrType: summonInfo?.summonAttrType,
             summonAttrPercent: summonInfo?.summonAttrPercent,
-            areaEffect: areaEffectInfo?.areaEffect,
-            duration: areaEffectDetail?.duration,
-            hitDelay: areaEffectDetail?.hitDelay,
-            hitInterval: areaEffectDetail?.hitInterval,
-            hits: areaEffectDetail?.hits,
-            areaShape: formatAreaShape(areaEffectDetail),
+            hitSources: hitSources.length ? hitSources : undefined,
             areaEffectVariants: areaEffectDetail?.areaEffectVariants,
-            projectile: formatBullet(bullets),
             damageTag: damageTags && damageTags.length ? damageTags : undefined,
             effectType: getEffectTypeFromParam(param),
             effectId: getEffectIdFromParam(param),
@@ -940,39 +937,80 @@ function resolveParamsTooltips(params) {
     });
 }
 
-function formatAreaShape(detail) {
-    if (!detail?.shape) return;
-
-    if (detail.shape === 'rectangle') return `Rectangle (${detail.width} × ${detail.length})`;
-
-    if (detail.shape === 'fan') {
-        const inner = detail.innerRadius ? `, inner ${detail.innerRadius}` : '';
-        return `Fan (radius ${detail.radius}${inner}, ${detail.angle}°)`;
-    }
-
-    return detail.radius === undefined ? undefined : `Circle (radius ${detail.radius})`;
+function formatSourceLabel(source) {
+    return `${source.class}${source.snapshot ? '(Snapshot)' : ''}`;
 }
 
-function formatBullet(variants) {
-    const items = (variants || []).map(variant => {
-        const homing = variant.homing
-            ? [
-                variant.homing.range === undefined ? null : `${variant.homing.range} range`,
-                variant.homing.rotateSpeed === undefined ? null : `${variant.homing.rotateSpeed}°/s`,
-            ].filter(Boolean).join(', ')
-            : '';
+function formatShape(source) {
+    if (!source?.shape) return;
 
-        return [
-            variant.speed === undefined ? null : `${variant.speed} speed`,
-            variant.lifetime === undefined ? null : `${variant.lifetime}s lifetime`,
-            variant.acceleration ? `${variant.acceleration} acceleration` : null,
-            homing ? `homing (${homing})` : null,
-            variant.pierce ? 'pierce' : null,
-            variant.splitCount ? `splits into ${variant.splitCount}` : null,
+    if (source.shape === 'rectangle') {
+        return source.width === undefined || source.length === undefined
+            ? 'Rectangle'
+            : `Rectangle (${source.width} × ${source.length})`;
+    }
+
+    if (source.shape === 'fan') {
+        if (source.radius === undefined || source.angle === undefined) return 'Fan';
+
+        const inner = source.innerRadius ? `, inner ${source.innerRadius}` : '';
+        return `Fan (radius ${source.radius}${inner}, ${source.angle}°)`;
+    }
+
+    return source.radius === undefined ? 'Circle' : `Circle (radius ${source.radius})`;
+}
+
+function formatAreaEffectSource(detail) {
+    if (!detail?.class) return;
+
+    const parts = [];
+
+    if (detail.duration !== undefined) parts.push(`duration ${detail.duration}s`);
+    if (detail.hitDelay !== undefined) parts.push(`hit delay ${detail.hitDelay}s`);
+    if (detail.hitInterval !== undefined) parts.push(`hit interval ${detail.hitInterval}s`);
+    if (detail.hits !== undefined) parts.push(`${detail.hits} hits`);
+
+    const shape = formatShape(detail);
+    if (shape) parts.push(shape);
+
+    return parts.length ? `${formatSourceLabel(detail)}: ${parts.join(', ')}` : formatSourceLabel(detail);
+}
+
+function formatBulletSource(source) {
+    if (!source?.class) return;
+
+    const parts = [];
+
+    if (source.speed !== undefined) parts.push(`${source.speed} speed`);
+    if (source.lifetime !== undefined) parts.push(`${source.lifetime}s lifetime`);
+    if (source.acceleration !== undefined) parts.push(`${source.acceleration} acceleration`);
+    if (source.duration !== undefined) parts.push(`${source.duration}s duration`);
+    if (source.hitDelay !== undefined) parts.push(`hit delay ${source.hitDelay}s`);
+    if (source.hitInterval !== undefined) parts.push(`${source.hitInterval}s interval`);
+    if (source.hits !== undefined) parts.push(`${source.hits} hits`);
+    if (source.rotateSpeed !== undefined) parts.push(`${source.rotateSpeed}°/s rotate speed`);
+    if (source.searchRadius !== undefined) parts.push(`search radius ${source.searchRadius}`);
+    if (source.triggerRadius !== undefined) parts.push(`trigger radius ${source.triggerRadius}`);
+    if (source.catchRadius !== undefined) parts.push(`catch radius ${source.catchRadius}`);
+    if (source.reboundCount !== undefined) parts.push(`${source.reboundCount} rebounds`);
+
+    if (source.homing) {
+        const homing = [
+            source.homing.range === undefined ? null : `${source.homing.range} range`,
+            source.homing.rotateSpeed === undefined ? null : `${source.homing.rotateSpeed}°/s`,
         ].filter(Boolean).join(', ');
-    }).filter(Boolean);
 
-    return items.length ? [...new Set(items)].join(' / ') : undefined;
+        if (homing) parts.push(`homing (${homing})`);
+    }
+
+    if (source.pierce) parts.push('pierce');
+    if (source.splitCount !== undefined) parts.push(`splits into ${source.splitCount}`);
+
+    const shape = formatShape(source);
+    if (shape) parts.push(shape);
+    else if (source.length !== undefined) parts.push(`length ${source.length}`);
+
+    return parts.length ? `${formatSourceLabel(source)}: ${parts.join(', ')}` : formatSourceLabel(source);
 }
 
 function getHitDamageIdFromParam(param) {
