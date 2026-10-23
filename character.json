@@ -60481,7 +60481,6 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "123310002",
-                            "hitDamageNote": "Conditional hit damage: only when Grand Debut (512304) is active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 0.5,
@@ -60555,7 +60554,6 @@
                         {
                             "damageType": "Minion (from Skill, scale with Skill)",
                             "hitDamageId": "123310002",
-                            "hitDamageNote": "Conditional hit damage: only when Grand Debut (512304) is active",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "duration": 0.5,
@@ -86887,7 +86885,6 @@
                 {
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "133320003",
-                    "hitDamageNote": "Conditional hit damage: only when Flower Formation: Waves (513323) is active",
                     "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                     "duration": 6,
                     "hitDelay": 1,
@@ -143617,7 +143614,6 @@
                         {
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150310101",
-                            "hitDamageNote": "Conditional hit damage: only when Aerial Suspension (515001) is active",
                             "areaEffect": "AreaEffect-Snapshot, snapshots owner's stats when created",
                             "duration": 3.0999999,
                             "hitDelay": 0,
