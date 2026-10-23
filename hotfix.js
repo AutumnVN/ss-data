@@ -380,7 +380,7 @@ function getInteractionData() {
     const aliasRequirements = new Map();
 
     for (const [groupKey, list] of aliasConditions) {
-        const alias = groupKey.slice(groupKey.lastIndexOf('|') + 1);
+        const alias = groupKey.slice(groupKey.lastIndexOf('|') + 1).split('/').pop();
         const perks = list.map(conditions => conditions.filter(condition => condition.type === 'perk'));
         const common = perks[0].filter(condition => perks.every(conditions =>
             conditions.some(other => same(other, condition))
@@ -404,6 +404,22 @@ function getInteractionData() {
         if (common.some(condition => !condition.negated)) continue;
 
         for (const hitDamageId of idsOf(alias)) alwaysIds.add(hitDamageId);
+    }
+
+    for (const [hitDamageId, entry] of Object.entries(AREA_EFFECT_MAP)) {
+        if (!entry || typeof entry !== 'object' || !Array.isArray(entry.variants)) continue;
+
+        const unconditional = entry.variants.some(variant => {
+            const alias = (variant.alias || '').split('/').pop();
+            const match = [...aliasRequirements.keys()]
+                .filter(key => alias.startsWith(key))
+                .sort((a, b) => b.length - a.length)[0];
+            const conditions = match ? aliasRequirements.get(match) : undefined;
+
+            return !conditions || !conditions.some(condition => !condition.negated);
+        });
+
+        if (unconditional) alwaysIds.add(String(hitDamageId));
     }
 
     for (const interaction of spawnInteractions) {
