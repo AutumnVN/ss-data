@@ -9320,7 +9320,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "10801_Potential_03",
                     "corner": "Triangle",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 8
                 },
                 {
                     "id": 510811,
@@ -36241,7 +36242,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "11501_Potential_22",
                     "corner": "Diamond",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 8
                 },
                 {
                     "id": 511526,
@@ -70200,7 +70202,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "12601_Potential_41",
                     "corner": "Diamond",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 8
                 },
                 {
                     "id": 512642,
@@ -132207,7 +132210,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_15",
                     "corner": "Round",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 },
                 {
                     "id": 514528,
@@ -140651,7 +140655,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "14901_Potential_23",
                     "corner": "Diamond",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 8
                 },
                 {
                     "id": 514930,
@@ -158190,7 +158195,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "15701_Potential_41",
                     "corner": "Diamond",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 },
                 {
                     "id": 515742,
@@ -163164,7 +163170,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "15801_Potential_22",
                     "corner": "Triangle",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 6
                 },
                 {
                     "id": 515827,
@@ -163425,7 +163432,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_11",
                     "corner": "Diamond",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 },
                 {
                     "id": 515832,
@@ -175891,7 +175899,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_14",
                     "corner": "Round",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 },
                 {
                     "id": 516208,
@@ -175941,7 +175950,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "16201_Potential_04",
                     "corner": "Diamond",
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "badScaleAfterLevel": 8
                 },
                 {
                     "id": 516209,
@@ -176101,7 +176111,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_15",
                     "corner": "Diamond",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 },
                 {
                     "id": 516212,
@@ -176187,7 +176198,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "Common_Potential_7",
                     "corner": "Round",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 }
             ],
             "common": [
@@ -176237,7 +176249,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "16201_Potential_41",
                     "corner": "Diamond",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 },
                 {
                     "id": 516242,
@@ -176287,7 +176300,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "16201_Potential_42",
                     "corner": "Triangle",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 },
                 {
                     "id": 516243,
@@ -176342,7 +176356,8 @@
                     "hiddenParamsTooltips": [],
                     "icon": "16201_Potential_43",
                     "corner": "Round",
-                    "rarity": "common"
+                    "rarity": "common",
+                    "badScaleAfterLevel": 7
                 }
             ],
             "supportCore": [

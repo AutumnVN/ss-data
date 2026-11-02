@@ -1182,6 +1182,11 @@ function badScaleAfterLevel(params) {
     const diffsByParam = levelParams.map(levels => levels.slice(1).map((value, index) => value - levels[index]));
 
     const average = values => values.reduce((sum, value) => sum + value, 0) / values.length;
+    const median = values => {
+        const sorted = [...values].sort((a, b) => a - b);
+        const middle = Math.floor(sorted.length / 2);
+        return sorted.length % 2 === 0 ? (sorted[middle - 1] + sorted[middle]) / 2 : sorted[middle];
+    };
 
     for (let i = 2; i < 9; i++) {
         for (const diffs of diffsByParam) {
@@ -1192,10 +1197,10 @@ function badScaleAfterLevel(params) {
 
             const headDiffs = diffs.slice(0, i - 1);
             const tailDiffs = diffs.slice(i - 1);
-            const headAverage = average(headDiffs);
+            const headMedian = median(headDiffs);
             const tailAverage = average(tailDiffs);
 
-            if (tailDiffs[0] <= headAverage * 0.5 && tailAverage <= headAverage * 0.5) {
+            if (tailDiffs[0] <= headMedian * 0.5 && tailAverage <= headMedian * 0.5) {
                 return i;
             }
         }
