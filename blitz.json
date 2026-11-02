@@ -60883,7 +60883,8 @@
                     "HP (%)"
                 ],
                 "buffIcon": [
-                    "Icon_CommonBuff_SkillDamageDown"
+                    "Icon_CommonBuff_SkillDamageDown",
+                    "No Icon"
                 ]
             }
         ],
