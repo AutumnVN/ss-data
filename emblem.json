@@ -4,29 +4,29 @@
             {
                 "weight": "30%",
                 "attr": [
-                    "HP: 680 / 850 / 1020 / 2040",
-                    "ATK: 70 / 88 / 105 / 210",
-                    "DEF: 35 / 44 / 53 / 105",
+                    "HP: 680 / 850 / 1020 / 2040x",
+                    "ATK: 70 / 88 / 105 / 210x",
+                    "DEF: 35 / 44 / 53 / 105x",
                     "HP: 4% / 5% / 6% / 12%",
                     "ATK: 4% / 5% / 6% / 12%",
-                    "DEF: 10% / 12.5% / 15% / 30%"
+                    "DEF: 10% / 12.5% / 15% / 30%x"
                 ]
             },
             {
                 "weight": "27.65%",
                 "attr": [
-                    "Auto Attack Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Skill Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Ultimate Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Mark Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Minion Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Derivative Crit Rate: 5% / 6.3% / 7.5% / 15%"
+                    "Auto Attack Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Skill Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Ultimate Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Mark Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Minion Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Derivative Crit Rate: 5% / 6.3% / 7.5% / 15%x"
                 ]
             },
             {
                 "weight": "34.35%",
                 "attr": [
-                    "Crit DMG: 8% / 10% / 12% / 24%",
+                    "Crit DMG: 8% / 10% / 12% / 24%x",
                     "Elemental DMG: 4% / 5% / 6% / 12%",
                     "Auto Attack DMG: 10% / 12.5% / 15% / 30%",
                     "Skill DMG: 7% / 8% / 10% / 20%",
@@ -52,29 +52,29 @@
             {
                 "weight": "30%",
                 "attr": [
-                    "HP: 680 / 850 / 1020 / 2040",
-                    "ATK: 70 / 88 / 105 / 210",
-                    "DEF: 35 / 44 / 53 / 105",
+                    "HP: 680 / 850 / 1020 / 2040x",
+                    "ATK: 70 / 88 / 105 / 210x",
+                    "DEF: 35 / 44 / 53 / 105x",
                     "HP: 4% / 5% / 6% / 12%",
                     "ATK: 4% / 5% / 6% / 12%",
-                    "DEF: 10% / 12.5% / 15% / 30%"
+                    "DEF: 10% / 12.5% / 15% / 30%x"
                 ]
             },
             {
                 "weight": "27.65%",
                 "attr": [
-                    "Auto Attack Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Skill Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Ultimate Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Mark Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Minion Crit Rate: 5% / 6.3% / 7.5% / 15%",
-                    "Derivative Crit Rate: 5% / 6.3% / 7.5% / 15%"
+                    "Auto Attack Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Skill Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Ultimate Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Mark Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Minion Crit Rate: 5% / 6.3% / 7.5% / 15%x",
+                    "Derivative Crit Rate: 5% / 6.3% / 7.5% / 15%x"
                 ]
             },
             {
                 "weight": "34.35%",
                 "attr": [
-                    "Crit DMG: 8% / 10% / 12% / 24%",
+                    "Crit DMG: 8% / 10% / 12% / 24%x",
                     "Elemental DMG: 4% / 5% / 6% / 12%",
                     "Auto Attack DMG: 10% / 12.5% / 15% / 30%",
                     "Skill DMG: 7% / 8% / 10% / 20%",
@@ -116,18 +116,18 @@
             {
                 "weight": "51.17%",
                 "attr": [
-                    "HP: 680 / 850 / 1020 / 2040",
-                    "ATK: 70 / 88 / 105 / 210",
-                    "DEF: 35 / 44 / 53 / 105",
+                    "HP: 680 / 850 / 1020 / 2040x",
+                    "ATK: 70 / 88 / 105 / 210x",
+                    "DEF: 35 / 44 / 53 / 105x",
                     "HP: 4% / 5% / 6% / 12%",
                     "ATK: 4% / 5% / 6% / 12%",
-                    "DEF: 10% / 12.5% / 15% / 30%"
+                    "DEF: 10% / 12.5% / 15% / 30%x"
                 ]
             },
             {
                 "weight": "48.83%",
                 "attr": [
-                    "Crit DMG: 8% / 10% / 12% / 24%",
+                    "Crit DMG: 8% / 10% / 12% / 24%x",
                     "Elemental DMG: 4% / 5% / 6% / 12%",
                     "Auto Attack DMG: 10% / 12.5% / 15% / 30%",
                     "Skill DMG: 7% / 8% / 10% / 20%",

@@ -76,6 +76,16 @@ const MAP = {
     '43号潜能提升': 'Potential',
 }
 
+const formatAttr = (t) => {
+    const entries = Object.values(CHARGEMATTRVALUE).filter(a => a.TypeId === t.Id);
+    const vals = entries.map((a, i) => {
+        const val = a.Value.includes('.') ? iHateFloatingPointNumber(a.Value, '*', 100) + '%' : a.Value;
+        const text = val + (a.Rare ? '*' : '') + (i > 0 && !entries[i - 1].OverlockCount ? 'x' : '');
+        return text;
+    }).join(' / ');
+    return `${MAP[t.AttrType] || t.AttrType}: ${vals}`;
+};
+
 const emblem = {};
 
 for (const id in CHARGEMSLOTCONTROL) {
@@ -84,13 +94,7 @@ for (const id in CHARGEMSLOTCONTROL) {
             const group = Object.values(CHARGEMATTRGROUP).find(g => g.GroupId === gid);
             return {
                 weight: group.Weight / 100 + '%',
-                attr: [...new Set(Object.values(CHARGEMATTRTYPE).filter(t => t.GroupId === gid).map(t => {
-                    const vals = Object.values(CHARGEMATTRVALUE).filter(a => a.TypeId === t.Id).map(a => {
-                        const val = a.Value.includes('.') ? iHateFloatingPointNumber(a.Value, '*', 100) + '%' : a.Value;
-                        return val + (a.Rare ? '*' : '');
-                    }).join(' / ');
-                    return `${MAP[t.AttrType] || t.AttrType}: ${vals}`;
-                }))],
+                attr: [...new Set(Object.values(CHARGEMATTRTYPE).filter(t => t.GroupId === gid).map(formatAttr))],
             };
         }),
         uniqueAttrGroup: CHARGEMSLOTCONTROL[id].UniqueAttrGroupId ? (() => {
@@ -99,13 +103,7 @@ for (const id in CHARGEMSLOTCONTROL) {
                 uniqueAttrGroupProb: CHARGEMSLOTCONTROL[id].UniqueAttrGroupProb / 100 + '%',
                 guaranteeCount: CHARGEMSLOTCONTROL[id].GuaranteeCount,
                 uniqueAttrNumWeight: Object.fromEntries(Object.entries(JSON.parse(group.UniqueAttrNumWeight)).map(([k, v]) => [k, v / 100 + '%'])),
-                attr: [...new Set(Object.values(CHARGEMATTRTYPE).filter(t => t.GroupId === CHARGEMSLOTCONTROL[id].UniqueAttrGroupId).map(t => {
-                    const vals = Object.values(CHARGEMATTRVALUE).filter(a => a.TypeId === t.Id).map(a => {
-                        const val = a.Value.includes('.') ? iHateFloatingPointNumber(a.Value, '*', 100) + '%' : a.Value;
-                        return val + (a.Rare ? '*' : '');
-                    }).join(' / ');
-                    return `${MAP[t.AttrType] || t.AttrType}: ${vals}`;
-                }))],
+                attr: [...new Set(Object.values(CHARGEMATTRTYPE).filter(t => t.GroupId === CHARGEMSLOTCONTROL[id].UniqueAttrGroupId).map(formatAttr))],
             };
         })() : undefined,
     }
