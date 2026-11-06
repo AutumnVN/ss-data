@@ -19,6 +19,30 @@ const LANG_SKILL = require('./EN/language/en_US/Skill.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
 const LANG_ITEM = require('./EN/language/en_US/Item.json');
 
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function fetchWithRetry(url, options = {}, { attempts = 10, delayMs = 500 } = {}) {
+    let lastError;
+
+    for (let attempt = 1; attempt <= attempts; attempt++) {
+        try {
+            const response = await fetch(url, options);
+            if (response.ok) return response;
+            lastError = new Error(`HTTP ${response.status} ${response.statusText} for ${url}`);
+        } catch (error) {
+            lastError = error;
+        }
+
+        if (attempt < attempts) {
+            await wait(delayMs);
+        }
+    }
+
+    throw new Error(`Failed to fetch ${url} after ${attempts} attempts: ${lastError?.message || lastError}`);
+}
+
 const ATTR_TYPE = {
     1: 'ATK',
     2: 'DEF',
@@ -1210,6 +1234,7 @@ function badScaleAfterLevel(params) {
 }
 
 module.exports = {
+    fetchWithRetry,
     collectParamsFrom,
     collectUnusedParamsFrom,
     collectPotentialHiddenParamsFrom,

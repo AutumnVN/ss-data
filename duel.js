@@ -77,7 +77,7 @@ for (const id in TRAVELERDUELBOSSLEVEL) {
             'Lux RES': monsterValueTemplateAdjust.LERFix,
             'Umbra RES': monsterValueTemplateAdjust.DERFix,
         },
-        diff: Object.values(TRAVELERDUELCHALLENGEDIFFICULTY).slice(0, 151).map(diff => {
+        diff: Object.values(TRAVELERDUELCHALLENGEDIFFICULTY).map(diff => {
             if (!diff.EffectId) return {};
 
             const effects = Object.fromEntries(diff.EffectId.filter(effectId => EFFECT_TYPE[EFFECTVALUE[effectId].EffectType] === 'ATTR_FIX').map(effectId => {

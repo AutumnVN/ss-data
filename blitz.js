@@ -32,7 +32,7 @@ for (const id in SCOREBOSSLEVEL) {
     const scoreBossLevel = SCOREBOSSLEVEL[id];
     if (!scoreBossLevel.SummonLevelUp || ["998", "999"].includes(id)) continue;
 
-    const scoreGetSwitch = SCOREGETSWITCH[`${scoreBossLevel.ScoreGetSwitchGroup}001`];
+    const scoreSwitchRate = SCOREGETSWITCH[`${scoreBossLevel.ScoreGetSwitchGroup}001`]?.SwitchRate;
     const monster = MONSTER[scoreBossLevel.MonsterId];
     const monsterManual = MONSTERMANUAL[MONSTERSKIN[monster?.FAId]?.MonsterManual];
     const monsterValueTemplateAdjust = MONSTERVALUETEMPLETEADJUST[(monster?.Templete || scoreBossLevel.MonsterId)];
@@ -69,7 +69,7 @@ for (const id in SCOREBOSSLEVEL) {
         ],
         weakTo: monsterValueTemplateAdjust?.WeakEET?.map(type => LANG_UITEXT[`UIText.T_Element_Attr_${type}.1`]) || ['None'],
         resistTo: LANG_UITEXT[`UIText.T_Element_Attr_${monsterValueTemplateAdjust?.EET}.1`] || 'None',
-        damagePerScore: scoreGetSwitch.SwitchRate,
+        damagePerScore: scoreSwitchRate,
         stat: monsterValueTemplate && monsterValueTemplateAdjust && monsterValueTemplateModify.map((modify, index) => {
             const cumulativeHpFix = monsterValueTemplateModify.slice(0, index + 1).reduce((sum, curr) => sum + (+curr.HpFix || 0), 0);
             const cumulativeAtkFix = monsterValueTemplateModify.slice(0, index + 1).reduce((sum, curr) => sum + (+curr.AtkFix || 0), 0);
@@ -92,7 +92,7 @@ for (const id in SCOREBOSSLEVEL) {
                 'Level': modify.Lv,
                 'HP': Math.floor((monsterValueTemplate.Hp * (1 + (monsterValueTemplateAdjust.HpRatio / 10000 || 0)) + (cumulativeHpFix || 0) + (monsterValueTemplateAdjust.HpFix || 0))),
                 'Cumulative HP': cumulativeHp(index),
-                'Estimated Score Damage': [Math.floor(cumulativeHp(index - 1) / scoreGetSwitch.SwitchRate), Math.floor(cumulativeHp(index) / scoreGetSwitch.SwitchRate)].map(value => value.toLocaleString()).join(' - '),
+                'Estimated Score Damage': scoreSwitchRate ? [Math.floor(cumulativeHp(index - 1) / scoreSwitchRate), Math.floor(cumulativeHp(index) / scoreSwitchRate)].map(value => value.toLocaleString()).join(' - ') : undefined,
                 'ATK': Math.floor(monsterValueTemplate.Atk * (1 + (monsterValueTemplateAdjust.AtkRatio / 10000 || 0)) + (cumulativeAtkFix || 0) + (monsterValueTemplateAdjust.AtkFix || 0)),
                 'DEF': Math.floor(monsterValueTemplate.Def * (1 + (monsterValueTemplateAdjust.DefRatio || 0)) + (cumulativeDefFix || 0) + (monsterValueTemplateAdjust.DefFix || 0)),
                 'Environment Adjustment': `${parseFloat(((1 + (cumulativeEnvAmendFix || 0)) * 100).toFixed(4))}%`,

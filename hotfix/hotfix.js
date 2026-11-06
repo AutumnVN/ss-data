@@ -1,5 +1,5 @@
 import { spawnSync } from 'child_process';
-import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -294,9 +294,7 @@ const res = spawnSync('ilspycmd', [outDll, '-o', OUT], { stdio: 'inherit', env: 
 if (res.error) die(`cannot run ilspycmd: ${res.error.message}`);
 if (res.status !== 0) die(`ilspycmd failed (exit code ${res.status})`);
 
-const outCs = join(OUT, 'Hotfix.cs');
-const generated = join(OUT, 'Hotfix.decompiled.cs');
-if (existsSync(generated)) renameSync(generated, outCs);
+const outCs = join(OUT, 'Hotfix.decompiled.cs');
 console.log(`decompiled -> ${outCs}`);
 
 function die(msg) {

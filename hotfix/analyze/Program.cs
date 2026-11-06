@@ -6,9 +6,9 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-var sourcePath = args.Length > 0 ? args[0] : "hotfix/out/Hotfix.cs";
-var outputPath = args.Length > 1 ? args[1] : "hotfix.json";
-var dataPath = args.Length > 2 ? args[2] : "EN";
+var sourcePath = "hotfix/out/Hotfix.decompiled.cs";
+var outputPath = "hotfix.json";
+var dataPath = "EN";
 
 var source = File.ReadAllText(sourcePath);
 var root = CSharpSyntaxTree.ParseText(source, new CSharpParseOptions(LanguageVersion.Latest)).GetRoot();

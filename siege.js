@@ -62,11 +62,16 @@ for (const id in TRACEHUNTBOSS) {
                 'HP': Math.floor((monsterValueTemplate.Hp * (1 + (monsterValueTemplateAdjust.HpRatio / 10000 || 0)) + (cumulativeHpFix || 0) + (monsterValueTemplateAdjust.HpFix || 0))),
                 'Cumulative HP': cumulativeHp(index),
                 'Estimated Score Damage': formatByDifficulty(floorGroups, floorGroup => {
-                    const rate = getScoreSwitch(floorGroup, modify.Lv) || 0;
+                    const rate = getScoreSwitch(floorGroup, modify.Lv);
+                    if (!rate) return;
                     const high = Math.floor(cumulativeHp(index) / rate);
                     return `${[Math.floor(cumulativeHp(index - 1) / rate), high].map(value => value.toLocaleString()).join(' - ')} (${getStar(floorGroup, high)}*)`;
                 }),
-                'Damage Per Score': formatByDifficulty(floorGroups, floorGroup => (getScoreSwitch(floorGroup, modify.Lv) || 0).toLocaleString()),
+                'Damage Per Score': formatByDifficulty(floorGroups, floorGroup => {
+                    const rate = getScoreSwitch(floorGroup, modify.Lv);
+                    if (!rate) return;
+                    return rate.toLocaleString();
+                }),
                 'ATK': monsterValueTemplate.Atk === undefined ? undefined : Math.floor(monsterValueTemplate.Atk * (1 + (monsterValueTemplateAdjust.AtkRatio / 10000 || 0)) + (cumulativeAtkFix || 0) + (monsterValueTemplateAdjust.AtkFix || 0)),
                 'DEF': Math.floor(monsterValueTemplate.Def * (1 + (monsterValueTemplateAdjust.DefRatio || 0)) + (cumulativeDefFix || 0) + (monsterValueTemplateAdjust.DefFix || 0)),
                 'Environment Adjustment': `${parseFloat(((1 + (cumulativeEnvAmendFix || 0)) * 100).toFixed(4))}%`,
@@ -95,13 +100,16 @@ writeFileSync('./siege.json', JSON.stringify(siege, null, 4));
 
 function formatByDifficulty(floorGroups, valueFn) {
     const sorted = [...floorGroups].sort((a, b) => a.Difficult - b.Difficult);
-    if (sorted.length <= 1) return sorted.map(valueFn).join(' / ');
-    return sorted.map(floorGroup => `${DIFFICULTY_LABEL[floorGroup.Difficult]}: ${valueFn(floorGroup)}`).join(' / ');
+    const values = sorted.map(floorGroup => ({ floorGroup, value: valueFn(floorGroup) })).filter(({ value }) => value !== undefined);
+
+    if (values.length === 0) return;
+    if (sorted.length <= 1) return values[0].value;
+    return values.map(({ floorGroup, value }) => `${DIFFICULTY_LABEL[floorGroup.Difficult]}: ${value}`).join(' / ');
 }
 
 function getStar(floorGroup, score) {
     const stars = Object.values(TRACEHUNTSTAR).filter(star => star.Difficulty === floorGroup.Difficult).sort((a, b) => b.ScoreNeed - a.ScoreNeed);
-    return stars.find(star => score >= star.ScoreNeed)?.Star || 0;
+    return stars.find(star => score >= star.ScoreNeed).Star;
 }
 
 function getScoreSwitch(floorGroup, level) {

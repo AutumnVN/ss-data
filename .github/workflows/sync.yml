@@ -40,7 +40,7 @@ jobs:
 
         node fetchHitSource.js
 
-        dotnet run --project hotfix/analyze -- hotfix/out/Hotfix.cs hotfix.json
+        dotnet run --project hotfix/analyze
 
         SCRIPTS=(arena.js ascension.js blitz.js cata.js characterid.js character.js disc.js duel.js gacha.js ground.js item.js raid.js siege.js word.js)
         for script in "${SCRIPTS[@]}"; do

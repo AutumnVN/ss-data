@@ -1,7 +1,7 @@
 ﻿const { readFileSync } = require('fs');
 const { tmpdir } = require('os');
 
-const HOTFIX_FILE = `${__dirname}/hotfix/out/Hotfix.cs`;
+const HOTFIX_FILE = `${__dirname}/hotfix/out/Hotfix.decompiled.cs`;
 
 const CHARACTER = require('./EN/bin/Character.json');
 const HITDAMAGE = require('./EN/bin/HitDamage.json');
@@ -20,8 +20,6 @@ let HIT_SOURCE_DATA = {};
 try {
     HIT_SOURCE_DATA = JSON.parse(readFileSync(HIT_SOURCE_FILE, 'utf8'));
 } catch {}
-
-if (!HIT_SOURCE_DATA || typeof HIT_SOURCE_DATA !== 'object' || Array.isArray(HIT_SOURCE_DATA)) HIT_SOURCE_DATA = {};
 
 const BULLET_MAP = {};
 const AREA_EFFECT_MAP = {};
@@ -60,7 +58,7 @@ for (const [hitDamageId, entry] of Object.entries(HIT_SOURCE_DATA)) {
 
     AREA_EFFECT_MAP[hitDamageId] = {
         variants,
-        hits: Math.max(...variants.map(variant => variant.hits || 0)),
+        hits: Math.max(...variants.map(variant => variant.hits)),
     };
 }
 

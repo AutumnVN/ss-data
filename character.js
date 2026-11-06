@@ -433,7 +433,7 @@ function getUpgrades(charId) {
                 if (!a[tidKey]) break;
 
                 const tid = a[tidKey];
-                const qty = a[qtyKey] || 0;
+                const qty = a[qtyKey];
                 const itemTitle = ITEM[tid] && ITEM[tid].Title;
                 const name = LANG_ITEM[itemTitle];
 
