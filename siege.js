@@ -109,7 +109,7 @@ function formatByDifficulty(floorGroups, valueFn) {
 
 function getStar(floorGroup, score) {
     const stars = Object.values(TRACEHUNTSTAR).filter(star => star.Difficulty === floorGroup.Difficult).sort((a, b) => b.ScoreNeed - a.ScoreNeed);
-    return stars.find(star => score >= star.ScoreNeed).Star;
+    return stars.find(star => score >= star.ScoreNeed)?.Star ?? 0;
 }
 
 function getScoreSwitch(floorGroup, level) {
