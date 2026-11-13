@@ -297,7 +297,7 @@ async function getHotfixData() {
     let depth = 0, id = 0, start = 0;
 
     for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].replace(/"(?:[^"\\]|\\.)*"/g, '""');
+        const line = lines[i].replace(/"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'/g, '""');
         const namespace = /^namespace AIScript\.Character\._(\d{3})01/.exec(line);
         if (namespace) id = +namespace[1];
         if (depth === 1 && /^\s*(?:public|internal)\s+(?:sealed |abstract |partial )*class (?:Action|ActionScript)\b/.test(line)) start = i;
