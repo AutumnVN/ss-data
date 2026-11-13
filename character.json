@@ -175177,6 +175177,9 @@
                 {
                     "damageType": "Auto Attack (3.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "161100001",
+                    "hitSources": [
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
+                    ],
                     "damageTag": [
                         "16101_NormalAtk",
                         "16101_NormalAtk_Res"
@@ -175185,6 +175188,9 @@
                 {
                     "damageType": "Auto Attack (3.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "161100002",
+                    "hitSources": [
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
+                    ],
                     "damageTag": [
                         "16101_NormalAtk",
                         "16101_NormalAtk_Res"
@@ -175193,6 +175199,9 @@
                 {
                     "damageType": "Auto Attack (3.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "161100003",
+                    "hitSources": [
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
+                    ],
                     "damageTag": [
                         "16101_NormalAtk",
                         "16101_NormalAtk_Res"
@@ -175230,6 +175239,9 @@
                 {
                     "damageType": "Skill (10e, from Skill, scale with Skill)",
                     "hitDamageId": "161310001",
+                    "hitSources": [
+                        "AdventureBullet(Snapshot): 30 speed, 0.35s lifetime, pierce, Rectangle (5 × 1.5)"
+                    ],
                     "damageTag": [
                         "16101_LandTag_Trigger"
                     ]
@@ -175244,7 +175256,10 @@
                 },
                 {
                     "damageType": "Mark (scale with Upgrade)",
-                    "hitDamageId": "161000001"
+                    "hitDamageId": "161000001",
+                    "hitSources": [
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 3s, 1 hits, Circle (radius 2)"
+                    ]
                 }
             ],
             "icon": "16101_Skill_Main"
@@ -175274,6 +175289,9 @@
                 {
                     "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                     "hitDamageId": "161320001",
+                    "hitSources": [
+                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.35s, hit interval 3s, 1 hits, Circle (radius 6)"
+                    ],
                     "damageTag": [
                         "16101_FWB_Mark",
                         "16101_Camp_Sup_TanCha",
@@ -175283,6 +175301,21 @@
                 {
                     "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                     "hitDamageId": "161320002",
+                    "hitSources": [
+                        "AreaEffectEntity: duration 30s, hit delay 0s, hit interval 2s, 15 hits, Circle (radius 6)"
+                    ],
+                    "areaEffectVariants": [
+                        {
+                            "class": "AreaEffectEntity",
+                            "snapshot": false,
+                            "duration": 30,
+                            "hitDelay": 0,
+                            "hitInterval": 1,
+                            "hits": 30,
+                            "shape": "circle",
+                            "radius": 6
+                        }
+                    ],
                     "damageTag": [
                         "16101_FWB_Mark",
                         "16101_Camp_Sup_CeHui"
@@ -175316,6 +175349,21 @@
                 {
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "161400001",
+                    "hitSources": [
+                        "AreaEffectEntity: duration 20s, hit delay 0s, hit interval 3s, 7 hits, Circle (radius 9)"
+                    ],
+                    "areaEffectVariants": [
+                        {
+                            "class": "AreaEffectEntity",
+                            "snapshot": false,
+                            "duration": 20,
+                            "hitDelay": 0,
+                            "hitInterval": 2,
+                            "hits": 10,
+                            "shape": "circle",
+                            "radius": 9
+                        }
+                    ],
                     "damageTag": [
                         "16101_Ultra"
                     ]
@@ -175360,6 +175408,9 @@
                         {
                             "damageType": "Auto Attack (3.9e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "161100004",
+                            "hitSources": [
+                                "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
+                            ],
                             "damageTag": [
                                 "16101_LandTag_Trigger",
                                 "16101_NormalAtk",
@@ -175437,6 +175488,9 @@
                         {
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "161310003",
+                            "hitSources": [
+                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 3s, 1 hits, Circle (radius 8)"
+                            ],
                             "damageTag": [
                                 "16101_LandTag_Trigger",
                                 "16101_Camp_Main"
@@ -176404,6 +176458,9 @@
                         {
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "161320004",
+                            "hitSources": [
+                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.35s, hit interval 3s, 1 hits, Circle (radius 6)"
+                            ],
                             "damageTag": [
                                 "16101_FWB_Mark",
                                 "16101_Camp_Sup_TanCha",
