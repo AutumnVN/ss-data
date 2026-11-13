@@ -2344,7 +2344,7 @@
                 "effectId": 700010030,
                 "addAttrType": "Auto Attack DMG Taken",
                 "addAttrId": 700010030,
-                "value": "60%/60%/40%/20%/20%/-",
+                "value": "60%/60%/40%/20%/20%/20%",
                 "buffIcon": "No Icon",
                 "buffId": 700010030
             }
