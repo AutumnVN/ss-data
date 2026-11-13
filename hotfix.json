@@ -1098,6 +1098,434 @@
       ]
     },
     {
+      "class": "ParallelScript_MainControl",
+      "method": "OnHitPost",
+      "line": 1143798,
+      "sink": "AddBuff",
+      "argument": "buff_5",
+      "values": [
+        {
+          "value": "16105011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516105",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnHitPost",
+      "line": 1143805,
+      "sink": "AddBuff",
+      "argument": "buff_9",
+      "values": [
+        {
+          "value": "16109011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516109",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnCastSkill",
+      "line": 1143816,
+      "sink": "AddBuff",
+      "argument": "buff_11",
+      "values": [
+        {
+          "value": "16111011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516111",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnCastEndSkill",
+      "line": 1143826,
+      "sink": "AddBuff",
+      "argument": "buff_12",
+      "values": [
+        {
+          "value": "16112011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516112",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_MainControl",
+      "method": "OnDropFinish",
+      "line": 1143875,
+      "sink": "AddBuff",
+      "argument": "16104011",
+      "values": [
+        {
+          "value": "16104011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516104",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnEnable",
+      "line": 1144117,
+      "sink": "AddBuff",
+      "argument": "buff_33",
+      "values": [
+        {
+          "value": "16133011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516133",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnHitPost",
+      "line": 1144274,
+      "sink": "AddBuff",
+      "argument": "buff_31",
+      "values": [
+        {
+          "value": "16131011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516131",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnHitPost",
+      "line": 1144278,
+      "sink": "AddBuff",
+      "argument": "buff_21",
+      "values": [
+        {
+          "value": "16121011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516121",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnHitPost",
+      "line": 1144282,
+      "sink": "AddBuff",
+      "argument": "buff_27",
+      "values": [
+        {
+          "value": "16127011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516127",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnHitPost",
+      "line": 1144287,
+      "sink": "AddBuff",
+      "argument": "buff_23",
+      "values": [
+        {
+          "value": "16123012",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516123",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnHitPost",
+      "line": 1144302,
+      "sink": "AddBuff",
+      "argument": "buff_29",
+      "values": [
+        {
+          "value": "16129011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516129",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnHitPost",
+      "line": 1144307,
+      "sink": "AddBuff",
+      "argument": "buff_29_vul",
+      "values": [
+        {
+          "value": "16129013",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516129",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnHitPost",
+      "line": 1144313,
+      "sink": "AddBuff",
+      "argument": "buff_32",
+      "values": [
+        {
+          "value": "16132011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516132",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "OnReceiveDamageForP28",
+      "line": 1144329,
+      "sink": "AddBuff",
+      "argument": "16123011",
+      "values": [
+        {
+          "value": "16123011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516128",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "ParallelScript_Support",
+      "method": "ApplyDebuffInFWBRange",
+      "line": 1144499,
+      "sink": "AddBuff",
+      "argument": "buff_25",
+      "values": [
+        {
+          "value": "16125011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516125",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "OnCustomEvent",
+      "line": 1145233,
+      "sink": "PlayAreaEffect",
+      "argument": "fxAlias",
+      "values": [
+        {
+          "value": "AreaEffect_16101_Ultra_P42",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516142",
+              "negated": false
+            }
+          ]
+        },
+        {
+          "value": "AreaEffect_16101_Ultra",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516142",
+              "negated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_Ultra",
+      "method": "OnCustomEvent",
+      "line": 1145236,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16101_Ultra_P43\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16101_Ultra_P43",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516143",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Action_JuDian",
+      "method": "OnSpecialEnable",
+      "line": 1145345,
+      "sink": "AddBuff",
+      "argument": "16104012",
+      "values": [
+        {
+          "value": "16104012",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516104",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Action_JuDian",
+      "method": "OnCastSkill",
+      "line": 1145374,
+      "sink": "AddBuff",
+      "argument": "16103011",
+      "values": [
+        {
+          "value": "16103011",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516103",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Action_JuDian",
+      "method": "OnCastSkill",
+      "line": 1145377,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16101_JuDian\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16101_JuDian",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516103",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Parallel_JuDian",
+      "method": "DelayPlayAura_8",
+      "line": 1145477,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16101_JuDian_Debuff\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16101_JuDian_Debuff",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516108",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "SkillScript_FangWeiBiao_Death",
+      "method": "DoMainLogic",
+      "line": 1145927,
+      "sink": "PlayAreaEffect",
+      "argument": "\u0022AreaEffect_16101_ChaCha\u0022",
+      "values": [
+        {
+          "value": "AreaEffect_16101_ChaCha",
+          "conditions": [
+            {
+              "type": "perk",
+              "value": "516123",
+              "negated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "class": "ParallelScript",
       "method": "OnReceiveDamage",
       "line": 1146266,
