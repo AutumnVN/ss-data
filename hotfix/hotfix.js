@@ -10,7 +10,7 @@ const OPSTABLE = join(HERE, 'opstable.json');
 const OUT = join(HERE, 'out');
 const KEY_CHECK = 'Hello, HybridCLR';
 
-const input = join(GAME_DIR, 'Persistent_Store', 'Scripts', 'Hotfix.dll');
+const input = process.argv[2] ?? join(GAME_DIR, 'Persistent_Store', 'Scripts', 'Hotfix.dll');
 
 if (!existsSync(input)) {
     die(`Hotfix.dll not found: ${input}`);

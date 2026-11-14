@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -40,13 +44,59 @@ jobs:
 
         node fetchHitSource.js
 
-        dotnet run --project hotfix/analyze
-
         SCRIPTS=(arena.js ascension.js blitz.js cata.js characterid.js character.js disc.js duel.js gacha.js ground.js item.js raid.js siege.js word.js)
         for script in "${SCRIPTS[@]}"; do
           echo "Running $script"
           node "$script"
         done
+
+    - name: Hotfix
+      shell: bash
+      run: |
+        set -euo pipefail
+
+        FETCHER_VERSION=v0.4.3
+        FETCHER_DIR="$RUNNER_TEMP/resourcefetcher"
+        mkdir -p "$FETCHER_DIR"
+        curl -fsSL "https://github.com/MakoStar/ss-resource-fetcher/releases/download/$FETCHER_VERSION/ResourceFetcher-$FETCHER_VERSION-linux-x64.tar.gz" \
+          | tar -xz -C "$FETCHER_DIR"
+        chmod +x "$FETCHER_DIR/ResourceFetcher"
+
+        SETTINGS=(
+          -s GLOBAL.DEFAULT_REGION=EN
+          -s GLOBAL.DEFAULT_PLATFORM=win
+          -s TASK.CLIENT.FLAGS.OP.USE_RESOURCE_REGEX=true
+          -s 'TASK.CLIENT.REGISTRY.RES_PATTERNS=[^ss_win\.mani$,^hotfix\.arch$]'
+        )
+
+        (cd "$FETCHER_DIR" && ./ResourceFetcher client -r \
+          -s TASK.CLIENT.FLAGS.OP.DOWNLOAD_RESOURCE=false "${SETTINGS[@]}")
+        MANIFEST="$FETCHER_DIR/output/Manifest/EN/win_resource_manifest.json"
+        version="$(jq -er '[to_entries[]
+          | select(.key == "hotfix.arch" or (.key | test("^p_[0-9]+_[un][.]hotfix[.]arch$")))
+          | .value.Version] | max' "$MANIFEST")"
+
+        current=""
+        if [[ -f hotfix/out/version.json ]]; then
+          current="$(jq -r '.version' hotfix/out/version.json)"
+        fi
+
+        if [[ "$version" == "$current" ]]; then
+          echo "Hotfix already at version $version"
+        else
+          echo "Updating hotfix ${current:-none} -> $version"
+          (cd "$FETCHER_DIR" && ./ResourceFetcher client "${SETTINGS[@]}")
+
+          dotnet tool install --global ilspycmd --version 9.1.0.7988
+          export PATH="$HOME/.dotnet/tools:$PATH"
+
+          unzip -p "$FETCHER_DIR/output/Unpack/EN/win/hotfix.arch" Hotfix.dll > "$RUNNER_TEMP/Hotfix.dll"
+          node hotfix/hotfix.js "$RUNNER_TEMP/Hotfix.dll"
+
+          printf '{ "version": %s }\n' "$version" > hotfix/out/version.json
+        fi
+
+        dotnet run --project hotfix/analyze
 
     - name: Note
       continue-on-error: true
