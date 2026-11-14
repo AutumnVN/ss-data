@@ -412,25 +412,6 @@ const checks = [
         },
     },
     {
-        heading: 'Leafia > Terra DMG Etching',
-        check() {
-            const potential = findPotential('161', 516125);
-            const source = getHotfix();
-            const radiusMatch = source.match(/private\s+FP\s+radius_25\s*=\s*FP\.op_Implicit\((\d+)\);/);
-            const radius = radiusMatch ? Number(radiusMatch[1]) : null;
-            const method = extractMethod(source, 'private void ApplyDebuffInFWBRange()');
-            const usesFwb = method.includes('_fwbList') && method.includes('radius_25');
-            const usesMapping = /CeHui|_ceHui|areaEffect/i.test(method);
-            const active = radius === 6 && usesFwb && !usesMapping;
-
-            return {
-                active,
-                text: potential.desc,
-                detail: `radius_25 = ${radius}; uses _fwbList = ${usesFwb}; references Tactical Mapping = ${usesMapping}`,
-            };
-        },
-    },
-    {
         heading: 'Colors Pierce the Grey > Street Spirit',
         check() {
             const skill = DISC['214023'].secondarySkill1;
