@@ -1,11 +1,78 @@
 {
-  "Tilia > Ultimate: Glorious Smite": true,
-  "Tilia > Perfect Spiral": true,
-  "Tilia > Revealed Flaw": true,
-  "Shimiao > Cascade Glow": true,
-  "Nanoha > Blossom Rhyme": true,
-  "Freesia > Doomsday Blessing": true,
-  "Gerie > Samsara's Judgment": true,
-  "Leafia > Terra DMG Etching": true,
-  "Colors Pierce the Grey > Street Spirit": true
+  "Tilia > Ultimate: Glorious Smite": {
+    "active": true,
+    "text": "Leaps and slams down onto the ground, dealing <color=#fb8037>&Param1&</color> of ATK as Lux Ultimate DMG in a large area. Meanwhile, creates a sphere that deals <color=#fb8037>&Param2&</color> of ATK as AoE Lux Skill DMG and inflicts ##Lux Mark: Radiance#2016# for 8s."
+  },
+  "Tilia > Perfect Spiral": {
+    "active": true,
+    "text": "Aegis of Light shields the main Trekker and then ricochets.\u000bUpon hitting the main Trekker, it creates a Lightning Array: Deals <color=#0abec5>&Param2& of Tilia's ATK</color> as AoE Lux Skill DMG and increases the Skill DMG taken by nearby enemies by <color=#0abec5>&Param3&</color>, lasting for &Param4&s. Stacks up to &Param5& times.\u000bParam1: &Param1& (Skill,Title) \u000bParam6: &Param6& (EffectValue,EffectTypeFirstSubtype)"
+  },
+  "Tilia > Revealed Flaw": {
+    "active": true,
+    "text": "When Aegis of Light hits a target with HP below <color=#ec6d21>&Param2&</color>, it creates a Lightning Array: Deals &Param3& of Tilia's ATK as AoE Lux Skill DMG and increases the Skill DMG they take by &Param4& for &Param5&s, stacking up to &Param6& times.\u000bThis effect can only be triggered once every &Param8&s.\u000bParam1: &Param1& (Skill,Title) \u000bParam7: &Param7& (EffectValue,EffectTypeFirstSubtype)"
+  },
+  "Shimiao > Cascade Glow": {
+    "active": true,
+    "text": "In Phase 2, increases the &Param10& dealt to targets with ##Chill#1027#/##Frozen#1002# by <color=#ec6d21>&Param1&</color>. The lower the target's HP, the higher the DMG, up to a <color=#ec6d21>&Param9&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,Value1) \u000bParam3: &Param3& (OnceAdditionalAttribute,Value1) \u000bParam4: &Param4& (OnceAdditionalAttribute,Value1) \u000bParam5: &Param5& (OnceAdditionalAttribute,Value1) \u000bParam6: &Param6& (OnceAdditionalAttribute,Value1) \u000bParam7: &Param7& (OnceAdditionalAttribute,Value1) \u000bParam8: &Param8& (OnceAdditionalAttribute,Value1)"
+  },
+  "Nanoha > Blossom Rhyme": {
+    "active": true,
+    "text": "The clones now follow the main Trekker into combat.\u000bIncreases the clones' &Param2& by <color=#ec6d21>&Param1&</color>."
+  },
+  "Freesia > Doomsday Blessing": {
+    "active": true,
+    "text": "When &Param10& (Main Skill) ends, increases Freesia's ATK by <color=#ec6d21>&Param1&</color> for &Param2&s."
+  },
+  "Freesia > Frost Warning": {
+    "active": true,
+    "text": "When Freesia hits targets inflicted with ##Chill#1027#/##Frozen#1002#, deals an additional <color=#0abec5>&Param1& of ATK</color> as AoE Aqua Skill DMG.\u000bParam10: &Param10& (Skill,Title)"
+  },
+  "Minova > Skill: Syou: Pulsar Streak": {
+    "active": true,
+    "text": "Swings the baseball bat, dealing <color=#fb8037>&Param1&</color> of ATK as Lux Skill DMG. Then, activates the second phase, Two Base Hit: Charges at the target, delivering rapid strikes. Hold to deal <color=#fb8037>&Param2&</color> of ATK as Lux Skill DMG every 0.3s for a total of 3s. Finishes with a powerful smash, dealing <color=#fb8037>&Param3&</color> of ATK as Lux Skill DMG.\u000bBoth Syou: Pulsar Streak (Main Skill) and Two Base Hit can trigger ##Lux Mark#1015# and summon a Thunderbolt, dealing &Param4& of ATK as Lux Mark DMG."
+  },
+  "Minova > Unyielding Strength": {
+    "active": true,
+    "text": "When Minova hits a target with an Auto Attack, increases her next Main Skill's Skill DMG by <color=#ec6d21>&Param2&</color>, stacking up to &Param3& times.\u000bParam1: &Param1& (Skill,Title) \u000bParam4: &Param4& (Effect,EffectTypeFirstSubtype)"
+  },
+  "Minova > Board Tricks": {
+    "active": true,
+    "text": "Increases the DMG Multiplier of &Param1& (Main Skill) by <color=#0abec5>&Param2&</color>.\u000bWhen ##Lux Mark#1015# is triggered, increases the Skill DMG taken by the target by <color=#0abec5>&Param3&</color> for &Param4&s.\u000bParam5: &Param5& (EffectValue,EffectTypeFirstSubtype)"
+  },
+  "Minova > Oath Satellite": {
+    "active": true,
+    "text": "When casting &Param1& (Support Skill), the main Trekker gains a shield equal to <color=#0abec5>&Param2&</color> of Minova's Max HP, lasting for &Param3&s."
+  },
+  "Minova > Optimal Hit Zone": {
+    "active": true,
+    "text": "Increases Minova's Skill DMG dealt to targets inflicted with Astral Hex. Each Astral Hex increases the Skill DMG by <color=#ec6d21>&Param1&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,AttributeType1)"
+  },
+  "Nazuka > Self-Improvement": {
+    "active": true,
+    "text": "When there is a Flower Formation on the battlefield, increases Nazuka's &Param1& by <color=#ec6d21>&Param2&</color>."
+  },
+  "Chitose > Aqueous Phantasm": {
+    "active": true,
+    "text": "When the Coiling Serpent hits a target, summons another Coiling Serpent, dealing <color=#fb8037>&Param1&x2</color> of ATK as Aqua Auto Attack DMG. This effect can only be triggered 3 times every 3s. Can trigger ##Aqua Mark#1018#."
+  },
+  "Chitose > Dance of Elegance": {
+    "active": true,
+    "text": "When the Coiling Serpent deals DMG, increases &Param1& by <color=#ec6d21>&Param2&</color> for &Param5&s, stacking up to &Param6& times. Also, increases &Param7& of the last strike of Chitose's of Auto Attacks by <color=#ec6d21>&Param8&</color>, stacking up to 8 times. This bonus can be triggered once per 0.4s and expires after Chitose releases the last strike of her Auto Attacks."
+  },
+  "Gerie > Samsara's Judgment": {
+    "active": true,
+    "text": "When casting Divine Retribution of Evil (Ultimate), increases Gerie's DMG to nearby targets by <color=#ec6d21>&Param2&</color> for &Param3&s. Also inflicts ##Fear#4501# on normal targets for 2s.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)"
+  },
+  "Suntide Willow > Foam Echo": {
+    "active": true,
+    "text": "When ##Echoing Soundwave#4047# deal DMG, increases own and non-Aqua Squadmates' &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times."
+  },
+  "Leafia > Terra DMG Etching": {
+    "active": true,
+    "text": "In an all-Terra squad, generating Observation Points increases the &Param1& of targets within Tactical Mapping by <color=#ec6d21>&Param2&</color> for &Param3&s."
+  },
+  "Colors Pierce the Grey > Street Spirit": {
+    "active": true,
+    "text": "Increases Terra Trekkers' Terra DMG dealt to targets with Terra VUL by <color=#ec6d21>{1}</color>.\u000bReduces the DMG taken by the main Terra Trekker by {2}."
+  }
 }
