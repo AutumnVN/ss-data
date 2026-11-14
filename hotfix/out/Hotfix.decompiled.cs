@@ -1133,13 +1133,13 @@ public sealed class ActorAdditionalAttrInfo
 			elementOrDamageType = (int)damageType;
 		}
 		int key = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: false, isAssignValue: true);
-		int num = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: true, isAssignValue: false);
-		int num2 = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: false, isAssignValue: false);
+		int key2 = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: true, isAssignValue: false);
+		int key3 = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: false, isAssignValue: false);
 		if (attributeWithElementOrDamageTypeDict.TryGetValue(key, out var value))
 		{
 			return value;
 		}
-		return (CollectionExtensions.GetValueOrDefault<int, FDP>((IReadOnlyDictionary<int, FDP>)attributeWithElementOrDamageTypeDict, num, FDP.Zero) + GetAttributeBaseValue(type)) * (FDP.One + GetAttributePercentAmendValue(type) + CollectionExtensions.GetValueOrDefault<int, FDP>((IReadOnlyDictionary<int, FDP>)attributeWithElementOrDamageTypeDict, num2, FDP.Zero)) + GetAttributeAbsAmendValue(type);
+		return (attributeWithElementOrDamageTypeDict.GetValueOrDefault(key2, FDP.Zero) + GetAttributeBaseValue(type)) * (FDP.One + GetAttributePercentAmendValue(type) + attributeWithElementOrDamageTypeDict.GetValueOrDefault(key3, FDP.Zero)) + GetAttributeAbsAmendValue(type);
 	}
 
 	public void CopyFrom(AttributeList list, Dictionary<int, FDP> attributeWithElementOrDamageType)
@@ -4054,7 +4054,7 @@ public class ActorAttackFSM : ActorFSM
 		void GetEventsByTag(ComboClip clip, string tag, int skinId)
 		{
 			clip.selectedComboEvents.Clear();
-			CommonHelper.TryParseStringParamToInt(tag.Split(':', StringSplitOptions.None)[0], out var intValue);
+			CommonHelper.TryParseStringParamToInt(tag.Split(':')[0], out var intValue);
 			if (intValue > 0 && clip.enableExtraEventGroup)
 			{
 				if (clip.EventGroups != null && clip.EventGroups.Length > intValue - 1)
@@ -10120,13 +10120,13 @@ public class ActorInfo : LogicComponent
 			elementOrDamageType = (int)damageType;
 		}
 		int key = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: false, isAssignValue: true);
-		int num = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: true, isAssignValue: false);
-		int num2 = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: false, isAssignValue: false);
+		int key2 = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: true, isAssignValue: false);
+		int key3 = CommonHelper.ConvertAttributeTypeAndElementOrDamageTypeToKey((int)type, elementOrDamageType, isElementType, isBaseValue: false, isAssignValue: false);
 		if (attributeWithElementOrDamageTypeDict.TryGetValue(key, out var value))
 		{
 			return value;
 		}
-		return (CollectionExtensions.GetValueOrDefault<int, FDP>((IReadOnlyDictionary<int, FDP>)attributeWithElementOrDamageTypeDict, num, FDP.Zero) + GetAttributeBaseValue()) * (FDP.One + GetAttributePercentAmendValue() + CollectionExtensions.GetValueOrDefault<int, FDP>((IReadOnlyDictionary<int, FDP>)attributeWithElementOrDamageTypeDict, num2, FDP.Zero)) + GetAttributeAbsAmendValue();
+		return (attributeWithElementOrDamageTypeDict.GetValueOrDefault(key2, FDP.Zero) + GetAttributeBaseValue()) * (FDP.One + GetAttributePercentAmendValue() + attributeWithElementOrDamageTypeDict.GetValueOrDefault(key3, FDP.Zero)) + GetAttributeAbsAmendValue();
 		FDP GetAttributeAbsAmendValue()
 		{
 			//IL_001c: Unknown result type (might be due to invalid IL or missing references)
@@ -14677,21 +14677,16 @@ public class AdventureActor : LogicEntity, IHitBoxContext, IDeterministicCollisi
 		bool result = false;
 		List<KeyValuePair<AnimationClip, AnimationClip>> list = new List<KeyValuePair<AnimationClip, AnimationClip>>();
 		val.GetOverrides(list);
-		AnimationClip val2 = default(AnimationClip);
-		AnimationClip val3 = default(AnimationClip);
-		foreach (KeyValuePair<AnimationClip, AnimationClip> item in list)
+		foreach (var (val4, val5) in list)
 		{
-			item.Deconstruct(ref val2, ref val3);
-			AnimationClip obj2 = val2;
-			AnimationClip val4 = val3;
-			if (((Object)obj2).name.Equals("Special_Lostcontrol_Start_Anim") && (Object)(object)val4 != (Object)null)
+			if (((Object)val4).name.Equals("Special_Lostcontrol_Start_Anim") && (Object)(object)val5 != (Object)null)
 			{
 				result = true;
-				specialLostControlStartClipLen = val4.length;
+				specialLostControlStartClipLen = val5.length;
 			}
-			if (((Object)obj2).name.Equals("Special_Lostcontrol_End_Anim") && (Object)(object)val4 != (Object)null)
+			if (((Object)val4).name.Equals("Special_Lostcontrol_End_Anim") && (Object)(object)val5 != (Object)null)
 			{
-				specialLostControlEndClipLen = val4.length;
+				specialLostControlEndClipLen = val5.length;
 			}
 		}
 		return result;
@@ -15395,15 +15390,15 @@ public class AdventureActor : LogicEntity, IHitBoxContext, IDeterministicCollisi
 				dmgData.To.BuffIDs.AddRange((IEnumerable<int>)buffComponent.GetBuffIds);
 			}
 			dmgData.From.OnceAttributes.Clear();
-			int num2 = default(int);
-			int num3 = default(int);
+			int value;
+			int key;
 			if (fromAdditionalAttrDict.Count > 0)
 			{
 				foreach (KeyValuePair<int, int> item in fromAdditionalAttrDict.ToList())
 				{
-					item.Deconstruct(ref num2, ref num3);
-					int id = num2;
-					int count = num3;
+					item.Deconstruct(out value, out key);
+					int id = value;
+					int count = key;
 					OnceAttribute val2 = new OnceAttribute
 					{
 						Id = id,
@@ -15417,9 +15412,9 @@ public class AdventureActor : LogicEntity, IHitBoxContext, IDeterministicCollisi
 			{
 				foreach (KeyValuePair<int, int> item2 in toAdditionalAttrDict.ToList())
 				{
-					item2.Deconstruct(ref num3, ref num2);
-					int id2 = num3;
-					int count2 = num2;
+					item2.Deconstruct(out key, out value);
+					int id2 = key;
+					int count2 = value;
 					OnceAttribute val3 = new OnceAttribute
 					{
 						Id = id2,
@@ -23383,7 +23378,7 @@ public class AdventureActor : LogicEntity, IHitBoxContext, IDeterministicCollisi
 		{
 			return 0;
 		}
-		return CollectionExtensions.GetValueOrDefault<int, int>((IReadOnlyDictionary<int, int>)tags, myTagHash, 0);
+		return tags.GetValueOrDefault(myTagHash, 0);
 	}
 
 	public void AddTagByGroup(string myTag)
@@ -30346,12 +30341,7 @@ public class PlayerAdventureActor : AdventureActor, IActorBehaviourState
 
 	public string GetLocalData(string key)
 	{
-		SerializableDictionary<string, string> serializableDictionary = localData;
-		if (serializableDictionary == null)
-		{
-			return null;
-		}
-		return CollectionExtensions.GetValueOrDefault<string, string>((IReadOnlyDictionary<string, string>)serializableDictionary, key, (string)null);
+		return localData?.GetValueOrDefault(key, null);
 	}
 
 	public void SetLocalData(string key, string value)
@@ -30908,7 +30898,7 @@ public class PlayerSkillCd : LogicComponent
 
 	public SkillEnergyInfo GetSkillEnergyInfo(int skillId)
 	{
-		return CollectionExtensions.GetValueOrDefault<int, SkillEnergyInfo>((IReadOnlyDictionary<int, SkillEnergyInfo>)dicSkillEnergy, skillId);
+		return dicSkillEnergy.GetValueOrDefault(skillId);
 	}
 
 	public void ChangeSkillGetEnergyLimit(int skillId, FP getEnergyLimit)
@@ -32151,7 +32141,8 @@ public class SkillInfo
 			yield return null;
 		}
 		_locking = false;
-		Debug.LogWarning((object)("触发技能cd锁定时长上限，自动解锁，请检查！skillId:" + skillId));
+		int num = skillId;
+		Debug.LogWarning((object)("触发技能cd锁定时长上限，自动解锁，请检查！skillId:" + num));
 	}
 }
 public class SkillEnergyInfo
@@ -36111,7 +36102,7 @@ public class AdventureModuleController : ModuleController<AdventureModuleControl
 
 	public int GetNoteCount(int noteId)
 	{
-		return CollectionExtensions.GetValueOrDefault<int, int>((IReadOnlyDictionary<int, int>)_noteCountDic, noteId, 0);
+		return _noteCountDic.GetValueOrDefault(noteId, 0);
 	}
 
 	public int GetAllNoteCount()
@@ -36390,9 +36381,9 @@ public class AdventureModuleController : ModuleController<AdventureModuleControl
 	{
 		if (!isStage)
 		{
-			return CollectionExtensions.GetValueOrDefault<int, long>((IReadOnlyDictionary<int, long>)_damageRecordDic, dataId, 0L);
+			return _damageRecordDic.GetValueOrDefault(dataId, 0L);
 		}
-		return CollectionExtensions.GetValueOrDefault<int, long>((IReadOnlyDictionary<int, long>)_stageDamageRecordDic, dataId, 0L);
+		return _stageDamageRecordDic.GetValueOrDefault(dataId, 0L);
 	}
 
 	public long GetActorTotalDamageInfo(int dataId)
@@ -66000,7 +65991,7 @@ public abstract class LogicEntity : MonoBehaviour, ILogicEntity, ICoroutineOwner
 
 	public override int GetHashCode()
 	{
-		return HashCode.Combine<int, long>(((Object)this).GetHashCode(), Id);
+		return HashCode.Combine(((Object)this).GetHashCode(), Id);
 	}
 
 	protected virtual void OnActive()
@@ -66913,7 +66904,7 @@ public class TrueSyncWaypointMove : LogicComponent
 			if (_fromWaypointIndex >= __waypoints.Length - 1)
 			{
 				_fromWaypointIndex = 0;
-				Array.Reverse<TSVector2>(__waypoints);
+				Array.Reverse(__waypoints);
 			}
 			Rotate();
 		}
@@ -70327,7 +70318,7 @@ public class AdventureEffect
 			return MonoSingleton<GameController>.Instance.Random_Roguelike(FP.Zero, FP.One) >= FP.FromPercent((long)intValue);
 		case HotfixEnum.takeEffect.CERTAIN_LEVEL_TYPE:
 		{
-			string[] array2 = parmas1.Split(',', StringSplitOptions.None);
+			string[] array2 = parmas1.Split(',');
 			for (int j = 0; j < array2.Length; j++)
 			{
 				if (!TryParseStringParamToInt(array2[j], out intValue))
@@ -70356,7 +70347,7 @@ public class AdventureEffect
 			{
 				return false;
 			}
-			string[] array = parmas1.Split(',', StringSplitOptions.None);
+			string[] array = parmas1.Split(',');
 			for (int i = 0; i < array.Length; i++)
 			{
 				if (!TryParseStringParamToInt(array[i], out intValue))
@@ -70396,7 +70387,7 @@ public class AdventureEffect
 			{
 				return false;
 			}
-			string[] first = parmas1.Split(',', StringSplitOptions.None);
+			string[] first = parmas1.Split(',');
 			List<string> second = new List<string>
 			{
 				monsterAdventureActor.monsterInfo.Tag1,
@@ -70499,7 +70490,7 @@ public class AdventureEffect
 			{
 				return false;
 			}
-			string[] array3 = parmas1.Split(',', StringSplitOptions.None);
+			string[] array3 = parmas1.Split(',');
 			if (array3 == null || array3.Length == 0)
 			{
 				return false;
@@ -70678,8 +70669,7 @@ public class AdventureEffect
 
 	public void PostExecute()
 	{
-		AdventureEffectBase adventureEffectBase = default(AdventureEffectBase);
-		if (!_effectStack.TryPop(ref adventureEffectBase))
+		if (!_effectStack.TryPop(out var result))
 		{
 			return;
 		}
@@ -70696,9 +70686,9 @@ public class AdventureEffect
 				ModuleController<AdventureModuleController>.Instance.DispatchEvent((BaseAdventureEvent)adventureActorEffectPostExecute);
 			}
 		}
-		adventureEffectBase.PostExecute();
-		adventureEffectBase.RemoveListener();
-		adventureEffectBase.OnClear();
+		result.PostExecute();
+		result.RemoveListener();
+		result.OnClear();
 	}
 
 	public void Clear()
@@ -70850,14 +70840,13 @@ public class AdventureEffect
 
 	public bool CheckExecuteEffectInfoIsEqual(int effectId, string effectTag)
 	{
-		AdventureEffectBase adventureEffectBase = default(AdventureEffectBase);
-		if (_effectStack.TryPeek(ref adventureEffectBase))
+		if (_effectStack.TryPeek(out var result))
 		{
 			return false;
 		}
-		if (adventureEffectBase != null && adventureEffectBase.executeEffectInfo != null)
+		if (result != null && result.executeEffectInfo != null)
 		{
-			return adventureEffectBase.executeEffectInfo.IsEqual(effectId, effectTag);
+			return result.executeEffectInfo.IsEqual(effectId, effectTag);
 		}
 		return false;
 	}
@@ -71304,7 +71293,7 @@ public class BaseAttriFix : AdventureEffectBase
 			{
 				return;
 			}
-			string[] array = base.effectValueConfig.EffectTypeParam3.Split(';', StringSplitOptions.None);
+			string[] array = base.effectValueConfig.EffectTypeParam3.Split(';');
 			if (array.Length != 4)
 			{
 				Debug.LogError((object)$"属性修改 效果参数3错误，正确格式为 1;1;1;1（属性来源;属性类型;元素组合类型;伤害组合类型）, effectValueId:{base.effectValueConfig.Id}");
@@ -73122,7 +73111,7 @@ public class HitElementTypeExtend : AdventureEffectBase
 	public override void Execute()
 	{
 		base.Execute();
-		string[] array = base.effectValueConfig.EffectTypeParam1.Split(',', StringSplitOptions.None);
+		string[] array = base.effectValueConfig.EffectTypeParam1.Split(',');
 		for (int i = 0; i < array.Length; i++)
 		{
 			if (!TryParseStringParamToInt(array[i], out var intValue))
@@ -82387,7 +82376,7 @@ public class MonsterStrollSchemes : MonoBehaviour
 			}
 			set
 			{
-				((object)value).Equals((object)parent);
+				((object)value).Equals((object?)parent);
 			}
 		}
 
@@ -91219,7 +91208,7 @@ public class AdventureLevelController : MonoBehaviour
 					}
 					else
 					{
-						if ((Object)null != (Object)(object)gameObject && !((object)actorRootNode).Equals((object)gameObject.transform.parent))
+						if ((Object)null != (Object)(object)gameObject && !((object)actorRootNode).Equals((object?)gameObject.transform.parent))
 						{
 							gameObject.transform.SetParent(actorRootNode);
 						}
@@ -91363,7 +91352,7 @@ public class AdventureLevelController : MonoBehaviour
 					}
 					else
 					{
-						if ((Object)null != (Object)(object)gameObject && !((object)actorRootNode).Equals((object)gameObject.transform.parent))
+						if ((Object)null != (Object)(object)gameObject && !((object)actorRootNode).Equals((object?)gameObject.transform.parent))
 						{
 							gameObject.transform.SetParent(actorRootNode);
 						}
@@ -91619,7 +91608,7 @@ public class AdventureLevelController : MonoBehaviour
 			GameObject gameObject = poolObj.gameObject;
 			if ((Object)(object)gameObject != (Object)null)
 			{
-				if (!((object)actorRootNode).Equals((object)gameObject.transform.parent))
+				if (!((object)actorRootNode).Equals((object?)gameObject.transform.parent))
 				{
 					gameObject.transform.SetParent(actorRootNode);
 				}
@@ -91959,17 +91948,17 @@ public class AdventureLevelController : MonoBehaviour
 		//IL_02b6: Unknown result type (might be due to invalid IL or missing references)
 		if (dicIndexChestBoss.Count == 0)
 		{
-			string[] array = Singleton<GameDataController>.Instance.GetConfig("RoguelikeChestBoss").Value.Split(',', StringSplitOptions.None);
+			string[] array = Singleton<GameDataController>.Instance.GetConfig("RoguelikeChestBoss").Value.Split(',');
 			for (int i = 0; i < array.Length; i++)
 			{
 				dicIndexChestBoss.Add(i + 1, CommonHelper.ParseStringParamToInt(array[i]));
 			}
-			string[] array2 = Singleton<GameDataController>.Instance.GetConfig("RoguelikeChestMiniBoss").Value.Split(',', StringSplitOptions.None);
+			string[] array2 = Singleton<GameDataController>.Instance.GetConfig("RoguelikeChestMiniBoss").Value.Split(',');
 			for (int j = 0; j < array2.Length; j++)
 			{
 				dicIndexChestMiniBoss.Add(j + 1, CommonHelper.ParseStringParamToInt(array2[j]));
 			}
-			string[] array3 = Singleton<GameDataController>.Instance.GetConfig("RoguelikeChestSpecCom").Value.Split(',', StringSplitOptions.None);
+			string[] array3 = Singleton<GameDataController>.Instance.GetConfig("RoguelikeChestSpecCom").Value.Split(',');
 			for (int k = 0; k < array3.Length; k++)
 			{
 				dicIndexChestSpecCom.Add(k + 1, CommonHelper.ParseStringParamToInt(array3[k]));
@@ -93607,7 +93596,7 @@ public class AdventureLevelObjectConfig : ScriptableObject
 		public void UpdateLightingmaps(Texture2D map, int index)
 		{
 			//IL_0040: Unknown result type (might be due to invalid IL or missing references)
-			if (!((Object)null == (Object)(object)gameObject) && !((Object)null == (Object)(object)savedLightingmap) && ((object)savedLightingmap).Equals((object)map))
+			if (!((Object)null == (Object)(object)gameObject) && !((Object)null == (Object)(object)savedLightingmap) && ((object)savedLightingmap).Equals((object?)map))
 			{
 				MeshRenderer component = gameObject.GetComponent<MeshRenderer>();
 				((Renderer)component).lightmapIndex = index;
@@ -94146,7 +94135,7 @@ public class AdventureLevelObjPoolMgr : SceneSingleton<AdventureLevelObjPoolMgr>
 			case PoolType.Actor:
 			case PoolType.Monster:
 			{
-				string[] array2 = loadPath.Split('$', StringSplitOptions.None);
+				string[] array2 = loadPath.Split('$');
 				if (array2.Length != 0)
 				{
 					ref Object reference4 = ref asset;
@@ -94164,7 +94153,7 @@ public class AdventureLevelObjPoolMgr : SceneSingleton<AdventureLevelObjPoolMgr>
 			}
 			case PoolType.SkillTemplate:
 			{
-				string[] array = loadPath.Split('$', StringSplitOptions.None);
+				string[] array = loadPath.Split('$');
 				if (array.Length != 0)
 				{
 					ref Object reference3 = ref asset;
@@ -94770,8 +94759,7 @@ public class AutoBattleBalanceLevelController : AdventureLevelController
 		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + floorData.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -95620,8 +95608,7 @@ public class PrologueBattleLevelController : AdventureLevelController
 		//IL_0074: Unknown result type (might be due to invalid IL or missing references)
 		//IL_008e: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00af: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		MainlineFloor mainlineFloorData = base.levelLoadParams.mainlineFloorData;
 		string text2 = scenePath + "/" + mainlineFloorData.ConfigPrefabName + ".prefab";
@@ -95864,8 +95851,7 @@ public class PrologueBattleLevelController : AdventureLevelController
 			Debug.LogError((object)"主线层数据为空");
 			return;
 		}
-		string[] array = mainlineFloorData.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = mainlineFloorData.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -96063,8 +96049,7 @@ public class PrologueLevelControler : AdventureLevelController
 			MonoSingleton<ClientManager>.Instance.UpdateLoadingView((float)process / 100f, (string)null);
 			if (process == 200)
 			{
-				string[] array = sceneName.Split('/', StringSplitOptions.None);
-				string text = array[array.Length - 1];
+				string text = sceneName.Split('/')[^1];
 				Scene sceneByName = SceneManager.GetSceneByName(text);
 				string text2 = scenePath + "/" + mainlineFloorData.ConfigPrefabName + ".prefab";
 				Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -96665,8 +96650,7 @@ public class StarTowerLevelController : AdventureLevelController
 			Vector3 localScale = val.transform.localScale;
 			val.transform.localScale = new Vector3(0f - localScale.x, localScale.y, localScale.z);
 		}
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		sceneName = array[array.Length - 1];
+		sceneName = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(sceneName);
 		GameObject[] rootGameObjects = ((Scene)(ref sceneByName)).GetRootGameObjects();
 		GameObject val2 = null;
@@ -96705,7 +96689,7 @@ public class StarTowerLevelController : AdventureLevelController
 			instance.reversalCameraRotationAngle = ((!sceneDoMir) ? 1 : (-1));
 		}
 		Transform val5 = TransformExtensions.FindInChildren(configPrefab.transform, "==== Triggers ====");
-		TriggerCom[] array2 = null;
+		TriggerCom[] array = null;
 		List<InteractiveSimple> simple = null;
 		if ((Object)null == (Object)(object)val5)
 		{
@@ -96715,8 +96699,8 @@ public class StarTowerLevelController : AdventureLevelController
 		{
 			if (!base.isReconnected || !base.isBattleFinish)
 			{
-				array2 = ((Component)val5).GetComponentsInChildren<TriggerCom>();
-				Singleton<TriggerManager>.Instance.AddTriggers(array2, -1, -1);
+				array = ((Component)val5).GetComponentsInChildren<TriggerCom>();
+				Singleton<TriggerManager>.Instance.AddTriggers(array, -1, -1);
 			}
 			interactiveNpc = ((Component)((Component)val5).transform).GetComponentsInChildren<InteractiveNpc>(true).ToList();
 			simple = ((Component)((Component)val5).transform).GetComponentsInChildren<InteractiveSimple>(true).ToList();
@@ -96788,10 +96772,10 @@ public class StarTowerLevelController : AdventureLevelController
 		else
 		{
 			teleporters = ports.GetTeleporters();
-			StarTowerPort[] array3 = ports.Ports;
-			if ((Object)null != (Object)(object)val2 && array3 != null)
+			StarTowerPort[] array2 = ports.Ports;
+			if ((Object)null != (Object)(object)val2 && array2 != null)
 			{
-				foreach (StarTowerPort starTowerPort in array3)
+				foreach (StarTowerPort starTowerPort in array2)
 				{
 					if (!((Object)null == (Object)(object)starTowerPort))
 					{
@@ -96822,7 +96806,7 @@ public class StarTowerLevelController : AdventureLevelController
 				starTowerMap = this.starTowerMap,
 				isBattleFinish = base.isBattleFinish,
 				isReconnected = base.isReconnected,
-				triggerComs = array2,
+				triggerComs = array,
 				npc = interactiveNpc,
 				simple = simple
 			};
@@ -100866,8 +100850,8 @@ public class TowerDefenseMapLineController : MonoBehaviour
 			{
 				lineRenderer.SetPosition(i, points[i]);
 			}
-			Vector3 val = points[points.Length - 2];
-			Vector3 val2 = points[points.Length - 1];
+			Vector3 val = points[^2];
+			Vector3 val2 = points[^1];
 			Vector3 forward = val2 - val;
 			arrow.transform.position = val2;
 			arrow.transform.forward = forward;
@@ -102015,13 +101999,11 @@ public static class AdventureModuleHelper
 
 	public static void ResetActorSkillInfo(MapField<int, RepeatedField<Lua2CSharpInfo_ResetSkillInfo>> skillInfos)
 	{
-		int num = default(int);
-		RepeatedField<Lua2CSharpInfo_ResetSkillInfo> val = default(RepeatedField<Lua2CSharpInfo_ResetSkillInfo>);
 		foreach (KeyValuePair<int, RepeatedField<Lua2CSharpInfo_ResetSkillInfo>> skillInfo in skillInfos)
 		{
-			skillInfo.Deconstruct(ref num, ref val);
-			int dataID = num;
-			RepeatedField<Lua2CSharpInfo_ResetSkillInfo> val2 = val;
+			skillInfo.Deconstruct(out var key, out var value);
+			int dataID = key;
+			RepeatedField<Lua2CSharpInfo_ResetSkillInfo> val = value;
 			LogicEntity logicEntity = ModuleController<AdventureModuleController>.Instance.QueryPlayerEntityByDataID(dataID);
 			if (logicEntity == null)
 			{
@@ -102032,7 +102014,7 @@ public static class AdventureModuleHelper
 			{
 				continue;
 			}
-			foreach (Lua2CSharpInfo_ResetSkillInfo item in val2)
+			foreach (Lua2CSharpInfo_ResetSkillInfo item in val)
 			{
 				logicComponent.ResetSkillInfo(item.skillId, item.cd, item.currentSectionAmount, item.currentResumeTime, item.currentUseTimeHint, item.energy);
 			}
@@ -102052,13 +102034,11 @@ public static class AdventureModuleHelper
 	public static void ResetBuff(MapField<int, RepeatedField<Lua2CSharpInfo_ResetBuffInfo>> buffInfo)
 	{
 		//IL_0078: Unknown result type (might be due to invalid IL or missing references)
-		int num = default(int);
-		RepeatedField<Lua2CSharpInfo_ResetBuffInfo> val = default(RepeatedField<Lua2CSharpInfo_ResetBuffInfo>);
 		foreach (KeyValuePair<int, RepeatedField<Lua2CSharpInfo_ResetBuffInfo>> item in buffInfo)
 		{
-			item.Deconstruct(ref num, ref val);
-			int dataID = num;
-			RepeatedField<Lua2CSharpInfo_ResetBuffInfo> val2 = val;
+			item.Deconstruct(out var key, out var value);
+			int dataID = key;
+			RepeatedField<Lua2CSharpInfo_ResetBuffInfo> val = value;
 			LogicEntity logicEntity = ModuleController<AdventureModuleController>.Instance.QueryPlayerEntityByDataID(dataID);
 			if (logicEntity == null)
 			{
@@ -102069,7 +102049,7 @@ public static class AdventureModuleHelper
 			{
 				continue;
 			}
-			foreach (Lua2CSharpInfo_ResetBuffInfo item2 in val2)
+			foreach (Lua2CSharpInfo_ResetBuffInfo item2 in val)
 			{
 				logicComponent.ResetBuff(item2.Id, item2.buffNum, new FP(item2.Cd));
 			}
@@ -108677,8 +108657,7 @@ public class PerformManager : SceneSingleton<PerformManager>
 		{
 			if (process == 200)
 			{
-				string[] array = scenePath.Split('/', StringSplitOptions.None);
-				string name = array[array.Length - 1];
+				string name = scenePath.Split('/')[^1];
 				if (_settlementPerformPlayer == null)
 				{
 					_settlementPerformPlayer = new SettlementPerformPlayer();
@@ -111038,12 +111017,12 @@ public class AdventurePlayerController : SceneSingleton<AdventurePlayerControlle
 
 	public PlayerAdventureActor GetFirstSlotActor()
 	{
-		return CollectionExtensions.GetValueOrDefault<int, PlayerAdventureActor>((IReadOnlyDictionary<int, PlayerAdventureActor>)_actorDicts, _firstSlotActorId);
+		return _actorDicts.GetValueOrDefault(_firstSlotActorId);
 	}
 
 	public PlayerAdventureActor GetSecondSlotActor()
 	{
-		return CollectionExtensions.GetValueOrDefault<int, PlayerAdventureActor>((IReadOnlyDictionary<int, PlayerAdventureActor>)_actorDicts, _secondSlotActorId);
+		return _actorDicts.GetValueOrDefault(_secondSlotActorId);
 	}
 
 	[BlackList]
@@ -111877,7 +111856,7 @@ public class AdventurePlayerController : SceneSingleton<AdventurePlayerControlle
 	{
 		if (add && _Enity is MonsterAdventureActor monsterAdventureActor && monsterAdventureActor.monsterInfo.subType == HotfixEnum.monsterSubType.Monster)
 		{
-			alertEntity.TryAdd(monsterAdventureActor.Id, (AdventureActor)monsterAdventureActor);
+			alertEntity.TryAdd(monsterAdventureActor.Id, monsterAdventureActor);
 		}
 		else
 		{
@@ -112714,7 +112693,7 @@ public class AdventurePlayerController : SceneSingleton<AdventurePlayerControlle
 		mainCameraAdditionalCameraData.volumeTrigger = playerAgent.transform;
 		universalAdditionalCameraData.volumeTrigger = playerAgent.transform;
 		instance.SetMainCameraBrainDefaultBlendSetting(mainCameraBlendStyle, mainCameraBlendTime);
-		CinemachineCore.GetBlendOverride = (GetBlendOverrideDelegate)Delegate.Combine((Delegate)(object)CinemachineCore.GetBlendOverride, (Delegate)new GetBlendOverrideDelegate(VirtualCameraBlendOverride));
+		CinemachineCore.GetBlendOverride = (GetBlendOverrideDelegate)Delegate.Combine((Delegate?)(object)CinemachineCore.GetBlendOverride, (Delegate?)new GetBlendOverrideDelegate(VirtualCameraBlendOverride));
 		_closeupCameraAdditionalCameraData = universalAdditionalCameraData;
 		_closeupCameraNearClipPlane = closeupCamera.nearClipPlane;
 		_closeupCameraFarClipPlane = closeupCamera.farClipPlane;
@@ -112737,7 +112716,7 @@ public class AdventurePlayerController : SceneSingleton<AdventurePlayerControlle
 			instance.RemoveCameraFromCameraStack(closeupCamera);
 			instance.RemoveCameraFromCameraStack(hudCamera);
 			instance.DisableMainCameraBrainDefaultBlendSetting();
-			CinemachineCore.GetBlendOverride = (GetBlendOverrideDelegate)Delegate.Remove((Delegate)(object)CinemachineCore.GetBlendOverride, (Delegate)new GetBlendOverrideDelegate(VirtualCameraBlendOverride));
+			CinemachineCore.GetBlendOverride = (GetBlendOverrideDelegate)Delegate.Remove((Delegate?)(object)CinemachineCore.GetBlendOverride, (Delegate?)new GetBlendOverrideDelegate(VirtualCameraBlendOverride));
 			vCamList.Clear();
 		}
 	}
@@ -122647,7 +122626,7 @@ public class TriggerBubbleDialogEnd : TriggerConditionBase
 		{
 			return;
 		}
-		string[] array = text.Split('|', StringSplitOptions.None);
+		string[] array = text.Split('|');
 		if (array.Length >= 2)
 		{
 			string text2 = array[0];
@@ -127188,8 +127167,7 @@ public class GMMonsterAI : MonoBehaviour
 			}
 			if (logicTag.Key == "Monster_In_State")
 			{
-				string[] array = logicTag.Value.stringValue.Split(',', StringSplitOptions.None);
-				CommonHelper.TryParseStringParamToInt(array[array.Length - 1], out var intValue);
+				CommonHelper.TryParseStringParamToInt(logicTag.Value.stringValue.Split(',')[^1], out var intValue);
 				((TMP_Text)texStage).text = intValue.ToString();
 			}
 		}
@@ -130154,7 +130132,7 @@ public class BattleTestBedUI : MonoBehaviour, IBeginDragHandler, IEventSystemHan
 				list.Add(item.Value.CharId);
 				num++;
 				classSkin classSkin2 = new classSkin();
-				string[] array = item.Value.Name.Split("_", StringSplitOptions.None);
+				string[] array = item.Value.Name.Split("_");
 				classSkin2.name = item.Value.CharId + "_" + array[0];
 				classSkin2.charId = item.Value.CharId;
 				classSkin2.Id = item.Value.Id;
@@ -130167,7 +130145,7 @@ public class BattleTestBedUI : MonoBehaviour, IBeginDragHandler, IEventSystemHan
 			else
 			{
 				classSkin classSkin3 = new classSkin();
-				item.Value.Name.Split("_", StringSplitOptions.None);
+				item.Value.Name.Split("_");
 				classSkin3.charId = item.Value.CharId;
 				classSkin3.Id = item.Value.Id;
 				classSkin3.skinName = item.Value.Id + "_" + item.Value.Name;
@@ -197942,8 +197920,8 @@ public class DormCameraController : SceneSingleton<DormCameraController>
 		else if (_isFocusing)
 		{
 			_cameraDepth = val.x * updateCameraDepthValue;
-			float num = Mathf.Min(Mathf.Max(_focusMinDepth, 0f), val.x);
-			_cameraDepth = Math.Clamp(_cameraDepth, num, val.x);
+			float min = Mathf.Min(Mathf.Max(_focusMinDepth, 0f), val.x);
+			_cameraDepth = Math.Clamp(_cameraDepth, min, val.x);
 		}
 		else
 		{
@@ -207242,8 +207220,7 @@ public class ActivityLevelsInstanceController : AdventureLevelController
 		//IL_0079: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0093: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00b9: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		bool mir = floorData.Mir;
 		string text2 = scenePath + "/" + floorData.ConfigPrefabName + ".prefab";
@@ -207561,8 +207538,7 @@ public class ActivityLevelsInstanceController : AdventureLevelController
 			Debug.LogError((object)"主线层数据为空");
 			return;
 		}
-		string[] array = floorData.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = floorData.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -207870,8 +207846,7 @@ public class ActivityStoryLevelController : AdventureLevelController
 		//IL_0076: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0090: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00b6: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		GameObject val = null;
 		if (!isTestingSceneMode)
@@ -208100,8 +208075,7 @@ public class ActivityStoryLevelController : AdventureLevelController
 			Debug.LogError((object)"主线层数据为空");
 			return;
 		}
-		string[] array = activityFloorData.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = activityFloorData.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -210965,8 +210939,7 @@ public class BrickBreakerController : AdventureLevelController
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0231: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0236: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + floorData.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -216914,8 +216887,7 @@ public class DailyInstanceLevelController : AdventureLevelController
 		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + dailyInstanceFloor.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -217163,8 +217135,7 @@ public class DailyInstanceLevelController : AdventureLevelController
 			Debug.LogError((object)"主线层数据为空");
 			return;
 		}
-		string[] array = dailyInstanceFloor.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = dailyInstanceFloor.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -235890,8 +235861,7 @@ public class EquipmentInstanceLevelController : AdventureLevelController
 		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + equipmentInstanceFloor.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -236139,8 +236109,7 @@ public class EquipmentInstanceLevelController : AdventureLevelController
 			Debug.LogError((object)"主线层数据为空");
 			return;
 		}
-		string[] array = equipmentInstanceFloor.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = equipmentInstanceFloor.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -236402,8 +236371,7 @@ public class InfinityTowerLevelController : AdventureLevelController
 		//IL_008a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00a4: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00ca: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		Scene sceneByName = SceneManager.GetSceneByName(array[array.Length - 1]);
+		Scene sceneByName = SceneManager.GetSceneByName(sceneName.Split('/')[^1]);
 		string text = (isContinue ? mapData.ContinuePrefabName : mapData.ConfigPrefabName);
 		string text2 = scenePath + "/" + text + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -236426,15 +236394,15 @@ public class InfinityTowerLevelController : AdventureLevelController
 			}
 		}
 		Transform val3 = configPrefab.transform.Find("==== Triggers ====");
-		TriggerCom[] array2 = null;
+		TriggerCom[] array = null;
 		if ((Object)null == (Object)(object)val3)
 		{
 			Debug.LogError((object)"没有找到触发器节点==== Triggers ====");
 		}
 		else
 		{
-			array2 = ((Component)val3).GetComponentsInChildren<TriggerCom>();
-			Singleton<TriggerManager>.Instance.AddTriggers(array2, -1, -1);
+			array = ((Component)val3).GetComponentsInChildren<TriggerCom>();
+			Singleton<TriggerManager>.Instance.AddTriggers(array, -1, -1);
 		}
 		Transform val4 = configPrefab.transform.Find("==== SpawnPoints ====");
 		if ((Object)null == (Object)(object)val4)
@@ -237169,8 +237137,7 @@ public class JointDrillLevelController_2 : AdventureLevelController
 		//IL_0034: Unknown result type (might be due to invalid IL or missing references)
 		ILRuntimeAPI.LoadConfigPrefab(scenePath, floorData.ConfigPrefabName);
 		base.LevelLoadComplete(sceneName);
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		sceneName = array[array.Length - 1];
+		sceneName = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(sceneName);
 		GameObject[] rootGameObjects = ((Scene)(ref sceneByName)).GetRootGameObjects();
 		foreach (GameObject val in rootGameObjects)
@@ -237665,7 +237632,7 @@ public class JointDrillLevelController_2 : AdventureLevelController
 			if (playerAdventureActor != null)
 			{
 				int dataID = playerAdventureActor.dataID;
-				long valueOrDefault = CollectionExtensions.GetValueOrDefault<int, long>((IReadOnlyDictionary<int, long>)damageRecordDic, dataID, 0L);
+				long valueOrDefault = damageRecordDic.GetValueOrDefault(dataID, 0L);
 				charDamageValue[dataID] = valueOrDefault;
 				damageValue += valueOrDefault;
 			}
@@ -238187,8 +238154,7 @@ public class MainlineLevelController : AdventureLevelController
 		//IL_00ee: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00f5: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00fc: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		MainlineFloor mainlineFloorData = base.levelLoadParams.mainlineFloorData;
 		GameObject val = null;
@@ -238424,8 +238390,7 @@ public class MainlineLevelController : AdventureLevelController
 			Debug.LogError((object)"主线层数据为空");
 			return;
 		}
-		string[] array = mainlineFloorData.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = mainlineFloorData.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -238541,8 +238506,7 @@ public class RegionBossLevelController : AdventureLevelController
 		//IL_0074: Unknown result type (might be due to invalid IL or missing references)
 		//IL_008e: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00af: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		RegionBossFloor regionBossFloor = base.levelLoadParams.RegionBoss_GenerateFloorData();
 		string text2 = scenePath + "/" + regionBossFloor.ConfigPrefabName + ".prefab";
@@ -238824,8 +238788,7 @@ public class RegionBossLevelController : AdventureLevelController
 			Debug.LogError((object)"地区boss层数据为空");
 			return;
 		}
-		string[] array = regionBossFloor.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = regionBossFloor.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -239039,8 +239002,7 @@ public class ScoreBossLevelController : AdventureLevelController
 		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + floorData.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -239883,8 +239845,7 @@ public class SkillInstanceLevelController : AdventureLevelController
 		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + skillInstanceFloor.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -240132,8 +240093,7 @@ public class SkillInstanceLevelController : AdventureLevelController
 			Debug.LogError((object)"主线层数据为空");
 			return;
 		}
-		string[] array = skillInstanceFloor.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = skillInstanceFloor.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -241597,8 +241557,7 @@ public class SoldierLevelController : AdventureLevelController, ICoroutineOwner
 		//IL_00a8: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0220: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0234: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		Scene sceneByName = SceneManager.GetSceneByName(array[array.Length - 1]);
+		Scene sceneByName = SceneManager.GetSceneByName(sceneName.Split('/')[^1]);
 		string text = scenePath + "/" + soldierFloor.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text, typeof(GameObject), (LoadSceneMode)1);
 		GameObject val = (GameObject)(object)((obj is GameObject) ? obj : null);
@@ -242813,8 +242772,7 @@ public class TraceHuntLevelController : AdventureLevelController
 		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + floorData.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -243421,8 +243379,7 @@ public class TravelerduelController : AdventureLevelController
 		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + floorData.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -244026,8 +243983,7 @@ public class VampireInstanceLevelController : AdventureLevelController
 		//IL_0083: Unknown result type (might be due to invalid IL or missing references)
 		//IL_009d: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00c3: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		Scene sceneByName = SceneManager.GetSceneByName(array[array.Length - 1]);
+		Scene sceneByName = SceneManager.GetSceneByName(sceneName.Split('/')[^1]);
 		string text = scenePath + "/" + vampireMapData.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text, typeof(GameObject), (LoadSceneMode)1);
 		GameObject val = (GameObject)(object)((obj is GameObject) ? obj : null);
@@ -244049,15 +244005,15 @@ public class VampireInstanceLevelController : AdventureLevelController
 			}
 		}
 		Transform val3 = configPrefab.transform.Find("==== Triggers ====");
-		TriggerCom[] array2 = null;
+		TriggerCom[] array = null;
 		if ((Object)null == (Object)(object)val3)
 		{
 			Debug.LogError((object)"没有找到触发器节点==== Triggers ====");
 		}
 		else
 		{
-			array2 = ((Component)val3).GetComponentsInChildren<TriggerCom>();
-			Singleton<TriggerManager>.Instance.AddTriggers(array2, -1, -1);
+			array = ((Component)val3).GetComponentsInChildren<TriggerCom>();
+			Singleton<TriggerManager>.Instance.AddTriggers(array, -1, -1);
 		}
 		Transform val4 = configPrefab.transform.Find("==== SpawnPoints ====");
 		if ((Object)null == (Object)(object)val4)
@@ -244514,8 +244470,7 @@ public class WeeklyCopiesLevelController : AdventureLevelController
 		//IL_006a: Unknown result type (might be due to invalid IL or missing references)
 		//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 		//IL_00aa: Unknown result type (might be due to invalid IL or missing references)
-		string[] array = sceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = sceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		string text2 = scenePath + "/" + weekBossFloor.ConfigPrefabName + ".prefab";
 		Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -244796,8 +244751,7 @@ public class WeeklyCopiesLevelController : AdventureLevelController
 			Debug.LogError((object)"地区boss层数据为空");
 			return;
 		}
-		string[] array = weekBossFloor.SceneName.Split('/', StringSplitOptions.None);
-		string text = array[array.Length - 1];
+		string text = weekBossFloor.SceneName.Split('/')[^1];
 		Scene sceneByName = SceneManager.GetSceneByName(text);
 		if (!((Scene)(ref sceneByName)).IsValid())
 		{
@@ -244985,8 +244939,7 @@ public class MainMenuModuleController : ModuleController<MainMenuModuleControlle
 			//IL_0052: Unknown result type (might be due to invalid IL or missing references)
 			if (process == 200)
 			{
-				string[] array = scenePath.Split('/', StringSplitOptions.None);
-				Scene sceneByName = SceneManager.GetSceneByName(array[array.Length - 1]);
+				Scene sceneByName = SceneManager.GetSceneByName(scenePath.Split('/')[^1]);
 				GameObject[] rootGameObjects = ((Scene)(ref sceneByName)).GetRootGameObjects();
 				for (int i = 0; i < rootGameObjects.Length; i++)
 				{
@@ -245064,8 +245017,7 @@ public class MainMenuModuleController : ModuleController<MainMenuModuleControlle
 				//IL_004d: Unknown result type (might be due to invalid IL or missing references)
 				if (process == 200)
 				{
-					string[] array = scenePath.Split('/', StringSplitOptions.None);
-					Scene sceneByName = SceneManager.GetSceneByName(array[array.Length - 1]);
+					Scene sceneByName = SceneManager.GetSceneByName(scenePath.Split('/')[^1]);
 					loadedScenes.Add(scenePathConfig[idx].sceneConfigName, sceneByName);
 					callback();
 					return true;
@@ -248723,7 +248675,7 @@ public class MathParkourModuleController : ModuleController<MathParkourModuleCon
 		instance.SetCameraMode(uiCamera, (CameraMode)4);
 		instance.InsertCameraToCameraStack(hudCamera, 1, (CameraMode)3);
 		instance.SetMainCameraBrainDefaultBlendSetting(mainCameraBlendStyle, mainCameraBlendTime);
-		CinemachineCore.GetBlendOverride = (GetBlendOverrideDelegate)Delegate.Combine((Delegate)(object)CinemachineCore.GetBlendOverride, (Delegate)new GetBlendOverrideDelegate(VirtualCameraBlendOverride));
+		CinemachineCore.GetBlendOverride = (GetBlendOverrideDelegate)Delegate.Combine((Delegate?)(object)CinemachineCore.GetBlendOverride, (Delegate?)new GetBlendOverrideDelegate(VirtualCameraBlendOverride));
 	}
 
 	[BlackList]
@@ -248741,7 +248693,7 @@ public class MathParkourModuleController : ModuleController<MathParkourModuleCon
 			instance.RemoveCameraFromCameraStack(closeupCamera);
 			instance.RemoveCameraFromCameraStack(hudCamera);
 			instance.DisableMainCameraBrainDefaultBlendSetting();
-			CinemachineCore.GetBlendOverride = (GetBlendOverrideDelegate)Delegate.Remove((Delegate)(object)CinemachineCore.GetBlendOverride, (Delegate)new GetBlendOverrideDelegate(VirtualCameraBlendOverride));
+			CinemachineCore.GetBlendOverride = (GetBlendOverrideDelegate)Delegate.Remove((Delegate?)(object)CinemachineCore.GetBlendOverride, (Delegate?)new GetBlendOverrideDelegate(VirtualCameraBlendOverride));
 		}
 	}
 
@@ -326414,7 +326366,7 @@ namespace XLua.CSObjectWrap
 			//IL_1425: Unknown result type (might be due to invalid IL or missing references)
 			//IL_142f: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(AdventureModuleHelper);
+			Type? typeFromHandle = typeof(AdventureModuleHelper);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 0, 0, 0, -1);
 			Utils.EndObjectRegister(typeFromHandle, L, val, (lua_CSFunction)null, (lua_CSFunction)null, (Type)null, (lua_CSFunction)null, (lua_CSFunction)null);
 			Utils.BeginClassRegister(typeFromHandle, L, new lua_CSFunction(__CreateInstance), 191, 7, 7);
@@ -330182,7 +330134,7 @@ namespace XLua.CSObjectWrap
 			//IL_00eb: Unknown result type (might be due to invalid IL or missing references)
 			//IL_00f5: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(DormModuleHelper_HotFix);
+			Type? typeFromHandle = typeof(DormModuleHelper_HotFix);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 0, 0, 0, -1);
 			Utils.EndObjectRegister(typeFromHandle, L, val, (lua_CSFunction)null, (lua_CSFunction)null, (Type)null, (lua_CSFunction)null, (lua_CSFunction)null);
 			Utils.BeginClassRegister(typeFromHandle, L, new lua_CSFunction(__CreateInstance), 8, 0, 0);
@@ -330359,7 +330311,7 @@ namespace XLua.CSObjectWrap
 			//IL_0039: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0046: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(FRIndicator);
+			Type? typeFromHandle = typeof(FRIndicator);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 0, 0, 0, -1);
 			Utils.EndObjectRegister(typeFromHandle, L, val, (lua_CSFunction)null, (lua_CSFunction)null, (Type)null, (lua_CSFunction)null, (lua_CSFunction)null);
 			Utils.BeginClassRegister(typeFromHandle, L, new lua_CSFunction(__CreateInstance), 1, 0, 0);
@@ -330425,7 +330377,7 @@ namespace XLua.CSObjectWrap
 			//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0091: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(HpBarCanvasGroup);
+			Type? typeFromHandle = typeof(HpBarCanvasGroup);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 3, 0, 0, -1);
 			Utils.RegisterFunc(L, -3, "Stop", new lua_CSFunction(_m_Stop));
 			Utils.RegisterFunc(L, -3, "SetTarget", new lua_CSFunction(_m_SetTarget));
@@ -330516,7 +330468,7 @@ namespace XLua.CSObjectWrap
 			//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0091: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(HpBarColor);
+			Type? typeFromHandle = typeof(HpBarColor);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 3, 0, 0, -1);
 			Utils.RegisterFunc(L, -3, "Stop", new lua_CSFunction(_m_Stop));
 			Utils.RegisterFunc(L, -3, "SetTarget", new lua_CSFunction(_m_SetTarget));
@@ -330610,7 +330562,7 @@ namespace XLua.CSObjectWrap
 			//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0091: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(HpBarRectTransform);
+			Type? typeFromHandle = typeof(HpBarRectTransform);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 3, 0, 0, -1);
 			Utils.RegisterFunc(L, -3, "Stop", new lua_CSFunction(_m_Stop));
 			Utils.RegisterFunc(L, -3, "SetTarget", new lua_CSFunction(_m_SetTarget));
@@ -330704,7 +330656,7 @@ namespace XLua.CSObjectWrap
 			//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0091: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(HpBarRotation);
+			Type? typeFromHandle = typeof(HpBarRotation);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 3, 0, 0, -1);
 			Utils.RegisterFunc(L, -3, "Stop", new lua_CSFunction(_m_Stop));
 			Utils.RegisterFunc(L, -3, "SetTarget", new lua_CSFunction(_m_SetTarget));
@@ -330832,7 +330784,7 @@ namespace XLua.CSObjectWrap
 			//IL_0249: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0253: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(InteractiveManager);
+			Type? typeFromHandle = typeof(InteractiveManager);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 18, 1, 1, -1);
 			Utils.RegisterFunc(L, -3, "ClearData", new lua_CSFunction(_m_ClearData));
 			Utils.RegisterFunc(L, -3, "AddInteractiveGroup", new lua_CSFunction(_m_AddInteractiveGroup));
@@ -331279,7 +331231,7 @@ namespace XLua.CSObjectWrap
 			//IL_0087: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0091: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(MainMenuModuleHelper);
+			Type? typeFromHandle = typeof(MainMenuModuleHelper);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 0, 0, 0, -1);
 			Utils.EndObjectRegister(typeFromHandle, L, val, (lua_CSFunction)null, (lua_CSFunction)null, (Type)null, (lua_CSFunction)null, (lua_CSFunction)null);
 			Utils.BeginClassRegister(typeFromHandle, L, new lua_CSFunction(__CreateInstance), 4, 0, 0);
@@ -331388,7 +331340,7 @@ namespace XLua.CSObjectWrap
 			//IL_01ff: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0209: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(NovaAPIHotfix);
+			Type? typeFromHandle = typeof(NovaAPIHotfix);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 0, 0, 0, -1);
 			Utils.EndObjectRegister(typeFromHandle, L, val, (lua_CSFunction)null, (lua_CSFunction)null, (Type)null, (lua_CSFunction)null, (lua_CSFunction)null);
 			Utils.BeginClassRegister(typeFromHandle, L, new lua_CSFunction(__CreateInstance), 18, 1, 0);
@@ -332348,7 +332300,7 @@ namespace XLua.CSObjectWrap
 			//IL_1da3: Unknown result type (might be due to invalid IL or missing references)
 			//IL_1dad: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(NovaAPI);
+			Type? typeFromHandle = typeof(NovaAPI);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 0, 0, 0, -1);
 			Utils.EndObjectRegister(typeFromHandle, L, val, (lua_CSFunction)null, (lua_CSFunction)null, (Type)null, (lua_CSFunction)null, (lua_CSFunction)null);
 			Utils.BeginClassRegister(typeFromHandle, L, new lua_CSFunction(__CreateInstance), 295, 5, 2);
@@ -338238,7 +338190,7 @@ namespace XLua.CSObjectWrap
 			//IL_0651: Unknown result type (might be due to invalid IL or missing references)
 			//IL_065e: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(SoldierActor);
+			Type? typeFromHandle = typeof(SoldierActor);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 21, 24, 18, -1);
 			Utils.RegisterFunc(L, -3, "LoadData", new lua_CSFunction(_m_LoadData));
 			Utils.RegisterFunc(L, -3, "GetPotentialLv", new lua_CSFunction(_m_GetPotentialLv));
@@ -339459,7 +339411,7 @@ namespace XLua.CSObjectWrap
 			//IL_034b: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0358: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(SoldierLevelController.SoldierAttr);
+			Type? typeFromHandle = typeof(SoldierLevelController.SoldierAttr);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 0, 16, 16, -1);
 			Utils.RegisterFunc(L, -2, "Hp", new lua_CSFunction(_g_get_Hp));
 			Utils.RegisterFunc(L, -2, "HpMax", new lua_CSFunction(_g_get_HpMax));
@@ -340088,7 +340040,7 @@ namespace XLua.CSObjectWrap
 			//IL_012f: Unknown result type (might be due to invalid IL or missing references)
 			//IL_013c: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(SoldierLevelController.SoldierLevelMsg);
+			Type? typeFromHandle = typeof(SoldierLevelController.SoldierLevelMsg);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 2, 4, 4, -1);
 			Utils.RegisterFunc(L, -3, "AddPartner", new lua_CSFunction(_m_AddPartner));
 			Utils.RegisterFunc(L, -3, "ToJson", new lua_CSFunction(_m_ToJson));
@@ -340338,7 +340290,7 @@ namespace XLua.CSObjectWrap
 			//IL_012e: Unknown result type (might be due to invalid IL or missing references)
 			//IL_013b: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(SoldierLevelController.SoldierMsg);
+			Type? typeFromHandle = typeof(SoldierLevelController.SoldierMsg);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 0, 5, 5, -1);
 			Utils.RegisterFunc(L, -2, "nSoldierId", new lua_CSFunction(_g_get_nSoldierId));
 			Utils.RegisterFunc(L, -2, "nBattleRole", new lua_CSFunction(_g_get_nBattleRole));
@@ -340672,7 +340624,7 @@ namespace XLua.CSObjectWrap
 			//IL_04fd: Unknown result type (might be due to invalid IL or missing references)
 			//IL_050a: Expected O, but got Unknown
 			ObjectTranslator val = ObjectTranslatorPool.Instance.Find(L);
-			Type typeFromHandle = typeof(SoldierLevelController);
+			Type? typeFromHandle = typeof(SoldierLevelController);
 			Utils.BeginObjectRegister(typeFromHandle, L, val, 0, 35, 8, 6, -1);
 			Utils.RegisterFunc(L, -3, "GetMainControlActor", new lua_CSFunction(_m_GetMainControlActor));
 			Utils.RegisterFunc(L, -3, "Load", new lua_CSFunction(_m_Load));
@@ -714692,8 +714644,7 @@ namespace AdventureBehaviour
 			{
 				return;
 			}
-			string[] array = scenePath.Split('/', StringSplitOptions.None);
-			string text = array[array.Length - 1];
+			string text = scenePath.Split('/')[^1];
 			Scene sceneByName = SceneManager.GetSceneByName(text);
 			string text2 = scenePath + "/" + configPrefabName + ".prefab";
 			Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text2, typeof(GameObject), (LoadSceneMode)1);
@@ -715208,18 +715159,17 @@ namespace AdventureBehaviour
 			//IL_001a: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0026: Expected O, but got Unknown
 			HitBoxContext hitBoxContext = GetHitBoxContext(owner);
-			HitBox hitBox = default(HitBox);
-			if (!_hitBoxPool.TryDequeue(ref hitBox))
+			if (!_hitBoxPool.TryDequeue(out var result))
 			{
-				hitBox = HitBox.Setup(new GameObject("OnceHitBox"), owner, hitBoxContext);
+				result = HitBox.Setup(new GameObject("OnceHitBox"), owner, hitBoxContext);
 			}
 			else
 			{
-				hitBox.owner = owner;
-				hitBox.context = hitBoxContext;
+				result.owner = owner;
+				result.context = hitBoxContext;
 			}
-			hitBox.hurtEffectSource = hurtEffectSource;
-			return hitBox;
+			result.hurtEffectSource = hurtEffectSource;
+			return result;
 		}
 
 		private static HitBoxContext GetHitBoxContext(LogicEntity owner)
@@ -730983,7 +730933,7 @@ namespace AIScript
 			{
 				for (int j = -num2; j < num - num2; j++)
 				{
-					if (!(MathF.Abs((float)(i - num3)) + MathF.Abs((float)(j - num3)) <= (float)num2))
+					if (!(MathF.Abs(i - num3) + MathF.Abs(j - num3) <= (float)num2))
 					{
 						continue;
 					}
@@ -733482,7 +733432,7 @@ namespace AIScript
 				if (host.TryGetRoleIdByGrid(gridIndex, out var roleId))
 				{
 					((BaseEvent)val).sender = roleId.ToString();
-					val.data = ((object)System.Runtime.CompilerServices.Unsafe.As<FP, FP>(ref sprayEffectData.value)/*cast due to .constrained prefix*/).ToString();
+					val.data = ((object)Unsafe.As<FP, FP>(ref sprayEffectData.value)/*cast due to .constrained prefix*/).ToString();
 					ModuleController<AdventureModuleController>.Instance.DispatchEvent((IEvent)(object)val);
 				}
 			}
@@ -734771,7 +734721,7 @@ namespace AIScript
 
 		protected bool MonsterInState(int state)
 		{
-			string[] array = _actor.logicVariable.GetLogicTagStringValue("Monster_In_State").Split(',', StringSplitOptions.None);
+			string[] array = _actor.logicVariable.GetLogicTagStringValue("Monster_In_State").Split(',');
 			for (int i = 0; i < array.Length - 1; i++)
 			{
 				CommonUtils.TryParseStringParamToInt(array[i], out var intValue);
@@ -737754,7 +737704,7 @@ namespace AIScript
 
 		protected bool MonsterInState(int state)
 		{
-			string[] array = _actor.logicVariable.GetLogicTagStringValue("Monster_In_State").Split(',', StringSplitOptions.None);
+			string[] array = _actor.logicVariable.GetLogicTagStringValue("Monster_In_State").Split(',');
 			for (int i = 0; i < array.Length - 1; i++)
 			{
 				CommonUtils.TryParseStringParamToInt(array[i], out var intValue);
@@ -746390,7 +746340,7 @@ namespace AIScript.ThemePerk
 			//IL_006b: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0071: Unknown result type (might be due to invalid IL or missing references)
 			base.OnBulletFinish(_evt);
-			string[] array = _evt.tag.Split('_', StringSplitOptions.None);
+			string[] array = _evt.tag.Split('_');
 			if (array.Length < 3 && !string.Equals(array[0], "CloudBottleBullet"))
 			{
 				return;
@@ -757481,7 +757431,7 @@ namespace AIScript.Prologue
 			{
 				return;
 			}
-			string[] array = ((string)val.data).Split('|', StringSplitOptions.None);
+			string[] array = ((string)val.data).Split('|');
 			if (array.Length != 0)
 			{
 				_ = array[0];
@@ -761601,7 +761551,7 @@ namespace AIScript.LevelAndGroupController.Group
 
 		protected bool MonsterInState(MonsterAdventureActor actor, int state)
 		{
-			string[] array = actor.logicVariable.GetLogicTagStringValue("Monster_In_State").Split(',', StringSplitOptions.None);
+			string[] array = actor.logicVariable.GetLogicTagStringValue("Monster_In_State").Split(',');
 			for (int i = 0; i < array.Length - 1; i++)
 			{
 				CommonUtils.TryParseStringParamToInt(array[i], out var intValue);
@@ -773132,7 +773082,7 @@ namespace AIScript.Utils
 					NovaLogger.Error($"ai branch active or deactive condition param convert error，branch id:{info.baseInfo.Id}, param:{info.baseInfo.ActiveParam2}");
 					break;
 				}
-				string[] array = text.Split(',', StringSplitOptions.None);
+				string[] array = text.Split(',');
 				FP fpValue4;
 				FP fpValue5;
 				if (array.Length != 2)
@@ -773180,7 +773130,7 @@ namespace AIScript.Utils
 					NovaLogger.Error($"ai branch active or deactive condition param convert error，branch id:{info.baseInfo.Id}, param:{info.baseInfo.ActiveParam2}");
 					break;
 				}
-				string[] array2 = text.Split(',', StringSplitOptions.None);
+				string[] array2 = text.Split(',');
 				FP fpValue6;
 				FP fpValue7;
 				if (array2.Length != 2)
@@ -773335,7 +773285,7 @@ namespace AIScript.Utils
 				return;
 			}
 			List<int> list = new List<int>();
-			string[] array = param.Split(',', StringSplitOptions.None);
+			string[] array = param.Split(',');
 			for (int i = 0; i < array.Length; i++)
 			{
 				if (!CommonUtils.TryParseStringParamToInt(array[i], out var intValue))
@@ -781908,8 +781858,7 @@ namespace AIScript.DynamicLevel
 			//IL_0034: Unknown result type (might be due to invalid IL or missing references)
 			ILRuntimeAPI.LoadConfigPrefab(scenePath, floorData.ConfigPrefabName);
 			base.LevelLoadComplete(sceneName);
-			string[] array = sceneName.Split('/', StringSplitOptions.None);
-			sceneName = array[array.Length - 1];
+			sceneName = sceneName.Split('/')[^1];
 			Scene sceneByName = SceneManager.GetSceneByName(sceneName);
 			GameObject[] rootGameObjects = ((Scene)(ref sceneByName)).GetRootGameObjects();
 			foreach (GameObject val in rootGameObjects)
@@ -782261,7 +782210,7 @@ namespace AIScript.DynamicLevel
 				if (playerAdventureActor != null)
 				{
 					int dataID = playerAdventureActor.dataID;
-					long valueOrDefault = CollectionExtensions.GetValueOrDefault<int, long>((IReadOnlyDictionary<int, long>)damageRecordDic, dataID, 0L);
+					long valueOrDefault = damageRecordDic.GetValueOrDefault(dataID, 0L);
 					charDamageValue[dataID] = valueOrDefault;
 					damageValue += valueOrDefault;
 				}
@@ -782801,8 +782750,7 @@ namespace AIScript.DynamicLevel
 			//IL_0019: Unknown result type (might be due to invalid IL or missing references)
 			//IL_001e: Unknown result type (might be due to invalid IL or missing references)
 			base.LevelLoadComplete(sceneName);
-			string[] array = sceneName.Split('/', StringSplitOptions.None);
-			sceneName = array[array.Length - 1];
+			sceneName = sceneName.Split('/')[^1];
 			Scene sceneByName = SceneManager.GetSceneByName(sceneName);
 			GameObject[] rootGameObjects = ((Scene)(ref sceneByName)).GetRootGameObjects();
 			foreach (GameObject val in rootGameObjects)
@@ -784326,7 +784274,7 @@ namespace AIScript.DynamicLevel
 			if (enterDynamicLevelParams != null && enterDynamicLevelParams.Length >= 2)
 			{
 				CommonUtils.TryParseStringParamToInt(enterDynamicLevelParams[0], out itemID);
-				string[] array = enterDynamicLevelParams[1].Split(',', StringSplitOptions.None);
+				string[] array = enterDynamicLevelParams[1].Split(',');
 				if (array != null && array.Length != 0)
 				{
 					selRoles = new List<int>();
@@ -784358,8 +784306,7 @@ namespace AIScript.DynamicLevel
 			//IL_00b4: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0384: Unknown result type (might be due to invalid IL or missing references)
 			base.LevelLoadComplete(sceneName);
-			string[] array = scenePath.Split('/', StringSplitOptions.None);
-			Scene sceneByName = SceneManager.GetSceneByName(array[array.Length - 1]);
+			Scene sceneByName = SceneManager.GetSceneByName(scenePath.Split('/')[^1]);
 			string text = scenePath + "/" + floorData.ConfigPrefabName + ".prefab";
 			Object obj = MonoSingleton<SceneLoaderController>.Instance.LoadAsset(scenePath, text, typeof(GameObject), (LoadSceneMode)1);
 			GameObject val = (GameObject)(object)((obj is GameObject) ? obj : null);
@@ -784677,7 +784624,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -784765,7 +784717,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -784853,7 +784810,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -784941,7 +784903,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785026,7 +784993,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785113,7 +785085,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785198,7 +785175,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785283,7 +785265,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785371,7 +785358,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785459,7 +785451,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785547,7 +785544,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785635,7 +785637,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785723,7 +785730,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785811,7 +785823,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785898,7 +785915,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -785985,7 +786007,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -786073,7 +786100,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -786161,7 +786193,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -786248,7 +786285,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -786336,7 +786378,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -786423,7 +786470,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -786512,7 +786564,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -786601,7 +786658,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -786689,7 +786751,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -786777,7 +786844,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -786865,7 +786937,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -787507,7 +787584,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -787602,7 +787684,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -787697,7 +787784,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -787792,7 +787884,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -787887,7 +787984,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -787991,7 +788093,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 			}
 		}
@@ -788085,7 +788192,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788180,7 +788292,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788275,7 +788392,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788370,7 +788492,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788465,7 +788592,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788560,7 +788692,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788655,7 +788792,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788750,7 +788892,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788845,7 +788992,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -788940,7 +789092,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789035,7 +789192,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789130,7 +789292,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789225,7 +789392,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789320,7 +789492,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789415,7 +789592,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789510,7 +789692,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789605,7 +789792,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789700,7 +789892,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789795,7 +789992,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789890,7 +790092,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -789985,7 +790192,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790080,7 +790292,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790175,7 +790392,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790270,7 +790492,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790365,7 +790592,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790460,7 +790692,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790555,7 +790792,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790650,7 +790892,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790745,7 +790992,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790840,7 +791092,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -790935,7 +791192,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791030,7 +791292,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791125,7 +791392,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791220,7 +791492,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791315,7 +791592,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791410,7 +791692,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791505,7 +791792,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791600,7 +791892,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791709,7 +792006,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791817,7 +792119,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -791912,7 +792219,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792007,7 +792319,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792102,7 +792419,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792197,7 +792519,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792292,7 +792619,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792387,7 +792719,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792482,7 +792819,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792577,7 +792919,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792672,7 +793019,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792767,7 +793119,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792862,7 +793219,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -792957,7 +793319,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793052,7 +793419,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793147,7 +793519,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793242,7 +793619,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793337,7 +793719,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793432,7 +793819,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793527,7 +793919,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793622,7 +794019,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793717,7 +794119,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793812,7 +794219,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -793907,7 +794319,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794002,7 +794419,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794097,7 +794519,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794192,7 +794619,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794287,7 +794719,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794382,7 +794819,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794477,7 +794919,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794572,7 +795019,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794667,7 +795119,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794762,7 +795219,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794857,7 +795319,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -794952,7 +795419,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795047,7 +795519,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795142,7 +795619,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795237,7 +795719,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795332,7 +795819,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795427,7 +795919,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795522,7 +796019,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795617,7 +796119,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795712,7 +796219,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795807,7 +796319,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795902,7 +796419,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -795997,7 +796519,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796092,7 +796619,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796187,7 +796719,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796282,7 +796819,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796377,7 +796919,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796472,7 +797019,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796567,7 +797119,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796662,7 +797219,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796757,7 +797319,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796852,7 +797419,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -796947,7 +797519,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -797042,7 +797619,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -797137,7 +797719,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -797232,7 +797819,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -797327,7 +797919,12 @@ namespace AIScript.DynamicLevel
 			{
 				SendTaskProcessToServer();
 				ActiveMonsterSpawnWave(waveName_taskD);
-				Singleton<InteractiveManager>.Instance?.setInteractiveObjActiveState(interactiveId_Wall.ToString(), InteractiveManager.processState.state1, null);
+				InteractiveManager instance = Singleton<InteractiveManager>.Instance;
+				if (instance != null)
+				{
+					int num = interactiveId_Wall;
+					instance.setInteractiveObjActiveState(num.ToString(), InteractiveManager.processState.state1, null);
+				}
 				OpenTeleporters(teleportName);
 				DropItemEnegy();
 			}
@@ -800828,7 +801425,7 @@ namespace AIScript.FateCardTheme
 			//IL_004f: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0055: Unknown result type (might be due to invalid IL or missing references)
 			base.OnBulletFinish(_evt);
-			string[] array = _evt.tag.Split('_', StringSplitOptions.None);
+			string[] array = _evt.tag.Split('_');
 			if (array.Length >= 3 || string.Equals(array[0], "CloudBottleBullet"))
 			{
 				CommonUtils.TryParseStringParamToInt(array[1], out var intValue);
@@ -858437,7 +859034,7 @@ namespace AIScript.Monster._72001ShuangZiQi
 						}
 					}
 				}
-				WarningEffectName = "fx_common_base_Fire_YuJing_circular_" + ((object)System.Runtime.CompilerServices.Unsafe.As<FP, FP>(ref AttackRadius)/*cast due to .constrained prefix*/).ToString();
+				WarningEffectName = "fx_common_base_Fire_YuJing_circular_" + ((object)Unsafe.As<FP, FP>(ref AttackRadius)/*cast due to .constrained prefix*/).ToString();
 				Skill_Attack_Soldier skill_Attack_Soldier2 = this;
 				string warningEffectName = WarningEffectName;
 				float duration = (float)HitFrameTime / 60f;
@@ -858447,7 +859044,7 @@ namespace AIScript.Monster._72001ShuangZiQi
 				BeginDashActorForward(1, FP.op_Implicit(10), DashDistance, FP.op_Implicit(0), comboWithAttack: true, isAngle: false, notChangeForward: false, triggerObstacleStop: false, triggerEnemyStop: false, triggerFriendStop: false);
 				SetCloseBlockEnable();
 				yield return WaitCustomEvent("HitFrame");
-				string fxAlias = "fx_m72003_base_Attack_hit_R" + ((object)System.Runtime.CompilerServices.Unsafe.As<FP, FP>(ref AttackRadius)/*cast due to .constrained prefix*/).ToString() + "m_" + Color;
+				string fxAlias = "fx_m72003_base_Attack_hit_R" + ((object)Unsafe.As<FP, FP>(ref AttackRadius)/*cast due to .constrained prefix*/).ToString() + "m_" + Color;
 				Skill_Attack_Soldier skill_Attack_Soldier3 = this;
 				TSVector2 position2 = GetPosition();
 				FP radius = AttackRadius - FP.op_Implicit(0.25);
@@ -858597,9 +859194,9 @@ namespace AIScript.Monster._72001ShuangZiQi
 				Color = "green";
 			}
 			SpawnFXName = "fx_m72003_base_Spawn_" + Color;
-			AttackFXName = "fx_m72003_base_Attack_hit_R" + ((object)System.Runtime.CompilerServices.Unsafe.As<FP, FP>(ref AttackRadius)/*cast due to .constrained prefix*/).ToString() + "m_" + Color;
+			AttackFXName = "fx_m72003_base_Attack_hit_R" + ((object)Unsafe.As<FP, FP>(ref AttackRadius)/*cast due to .constrained prefix*/).ToString() + "m_" + Color;
 			HitFXName = "fx_common_hit_" + Color;
-			WarningEffectName = "fx_common_base_Fire_YuJing_circular_" + ((object)System.Runtime.CompilerServices.Unsafe.As<FP, FP>(ref AttackRadius)/*cast due to .constrained prefix*/).ToString();
+			WarningEffectName = "fx_common_base_Fire_YuJing_circular_" + ((object)Unsafe.As<FP, FP>(ref AttackRadius)/*cast due to .constrained prefix*/).ToString();
 		}
 
 		private void RanSe(TSVector2 Index)
@@ -1151373,6 +1151970,8 @@ namespace AIScript.Character._16101
 
 		public const string areaEffect_FWB_CeHui = "AreaEffect_16101_CeHui";
 
+		public static readonly int areaTag_CeHui = CommonHelper.StringToHash("161_Sup_SummonArea");
+
 		public static readonly int summonEvt = CommonHelper.StringToHash("summonEvt");
 
 		public static readonly int summonFWBEvt = CommonHelper.StringToHash("summonFWBEvt");
@@ -1152599,6 +1153198,8 @@ namespace AIScript.Character._16101
 
 		private readonly Dictionary<long, FP> _chachaCd28Time = new Dictionary<long, FP>();
 
+		private readonly List<TSVector2> _p25AreaPositions = new List<TSVector2>();
+
 		private int _seTeamCount;
 
 		private bool _isAllTeamEarth;
@@ -1152609,6 +1153210,8 @@ namespace AIScript.Character._16101
 			//IL_00b2: Unknown result type (might be due to invalid IL or missing references)
 			//IL_016e: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0178: Expected O, but got Unknown
+			//IL_018a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0194: Expected O, but got Unknown
 			base.OnEnable();
 			summonCfg_FWB = new SummonCfg
 			{
@@ -1152652,14 +1153255,18 @@ namespace AIScript.Character._16101
 				}
 			}
 			ModuleController<AdventureModuleController>.Instance.AddEventListener("ADVENTURE_ACTOR_RECEIVE_DAMAGE", new EventDelegate(OnReceiveDamageForP28));
+			ModuleController<AdventureModuleController>.Instance.AddEventListener("AREA_EFFECT_BEGIN", new EventDelegate(OnAreaEffectBeginForP25));
 		}
 
 		public override void OnDisable()
 		{
 			//IL_001d: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0027: Expected O, but got Unknown
+			//IL_003f: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0049: Expected O, but got Unknown
 			base.OnDisable();
 			ModuleController<AdventureModuleController>.Instance?.RemoveEventListener("ADVENTURE_ACTOR_RECEIVE_DAMAGE", new EventDelegate(OnReceiveDamageForP28));
+			ModuleController<AdventureModuleController>.Instance?.RemoveEventListener("AREA_EFFECT_BEGIN", new EventDelegate(OnAreaEffectBeginForP25));
 			for (int i = 0; i < _fwbList.Count; i++)
 			{
 				if (_fwbList[i] != null && _fwbList[i].actorHealthInfo.isAlive)
@@ -1152891,13 +1153498,17 @@ namespace AIScript.Character._16101
 
 		public override void OnCustomEvent(AdventureActorCustomEvent evt)
 		{
-			//IL_0029: Unknown result type (might be due to invalid IL or missing references)
-			//IL_002f: Unknown result type (might be due to invalid IL or missing references)
 			if (evt.eventHashCode == Config.summonFWBEvt)
 			{
 				DoSummonFangWeiBiao();
 			}
-			else if (evt.eventHashCode == Config.debuffP25Evt && GetPerk(516125))
+		}
+
+		private void OnAreaEffectBeginForP25(IEvent evt)
+		{
+			//IL_0008: Unknown result type (might be due to invalid IL or missing references)
+			//IL_000e: Unknown result type (might be due to invalid IL or missing references)
+			if (GetPerk(516125) && evt is AdventureAreaEffectBeginEvent adventureAreaEffectBeginEvent && ((BaseEvent)adventureAreaEffectBeginEvent).sender is AreaEffectEntity areaEffectEntity && areaEffectEntity.CheckTag(Config.areaTag_CeHui))
 			{
 				ApplyDebuffInFWBRange();
 			}
@@ -1153004,30 +1153615,38 @@ namespace AIScript.Character._16101
 
 		private void ApplyDebuffInFWBRange()
 		{
-			//IL_0030: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0036: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0078: Unknown result type (might be due to invalid IL or missing references)
+			//IL_007e: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0050: Unknown result type (might be due to invalid IL or missing references)
 			if (!_isAllTeamEarth)
 			{
 				return;
 			}
-			CleanDeadFWB();
-			for (int i = 0; i < _fwbList.Count; i++)
+			_p25AreaPositions.Clear();
+			List<AreaEffectEntity> allAreaEffect = SceneSingleton<AreaEffectManager>.Instance.GetAllAreaEffect();
+			if (allAreaEffect != null)
 			{
-				MonsterAdventureActor monsterAdventureActor = _fwbList[i];
-				if (monsterAdventureActor == null)
+				for (int i = 0; i < allAreaEffect.Count; i++)
 				{
-					continue;
+					AreaEffectEntity areaEffectEntity = allAreaEffect[i];
+					if (areaEffectEntity != null && areaEffectEntity.CheckTag(Config.areaTag_CeHui))
+					{
+						_p25AreaPositions.Add(areaEffectEntity.tsTransform.Position);
+					}
 				}
-				List<LogicEntity> list = ILRuntimeAPI.SearchByRangeAndPosition(monsterAdventureActor, monsterAdventureActor.tsTransform.Position, radius_25, null, isConfront: true);
+			}
+			for (int j = 0; j < _p25AreaPositions.Count; j++)
+			{
+				List<LogicEntity> list = ILRuntimeAPI.SearchByRangeAndPosition(_actor, _p25AreaPositions[j], radius_25, null, isConfront: true);
 				if (list == null)
 				{
 					continue;
 				}
-				for (int j = 0; j < list.Count; j++)
+				for (int k = 0; k < list.Count; k++)
 				{
-					if (list[j] is MonsterAdventureActor monsterAdventureActor2)
+					if (list[k] is MonsterAdventureActor monsterAdventureActor)
 					{
-						monsterAdventureActor2.buffComponent.AddBuff(buff_25, _actor);
+						monsterAdventureActor.buffComponent.AddBuff(buff_25, _actor);
 					}
 				}
 			}
@@ -1153647,13 +1154266,6 @@ namespace AIScript.Character._16101
 				((BaseEvent)adventureActorCustomEvent).sender = _actor;
 				adventureActorCustomEvent.eventHashCode = Config.summonFWBEvt;
 				_actor.DispatchEvent(adventureActorCustomEvent);
-			}
-			else if (evt.Equals("P25DebuffEvt"))
-			{
-				AdventureActorCustomEvent adventureActorCustomEvent2 = AdventureActorCustomEvent.Generate();
-				((BaseEvent)adventureActorCustomEvent2).sender = _actor;
-				adventureActorCustomEvent2.eventHashCode = Config.debuffP25Evt;
-				_actor.DispatchEvent(adventureActorCustomEvent2);
 			}
 		}
 

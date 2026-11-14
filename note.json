@@ -68,7 +68,7 @@
     "text": "When ##Echoing Soundwave#4047# deal DMG, increases own and non-Aqua Squadmates' &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times."
   },
   "Leafia > Terra DMG Etching": {
-    "active": true,
+    "active": false,
     "text": "In an all-Terra squad, generating Observation Points increases the &Param1& of targets within Tactical Mapping by <color=#ec6d21>&Param2&</color> for &Param3&s."
   },
   "Colors Pierce the Grey > Street Spirit": {

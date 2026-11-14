@@ -449,7 +449,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveHit",
-      "line": 1050091,
+      "line": 1050688,
       "sink": "AddBuff",
       "argument": "buffId_8",
       "values": [
@@ -468,7 +468,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveHit",
-      "line": 1050099,
+      "line": 1050696,
       "sink": "AddBuff",
       "argument": "buffId_10",
       "values": [
@@ -487,7 +487,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1050637,
+      "line": 1051234,
       "sink": "AddBuff",
       "argument": "buff_p4",
       "values": [
@@ -506,7 +506,7 @@
     {
       "class": "Parallel",
       "method": "OnPlayerEnter",
-      "line": 1050672,
+      "line": 1051269,
       "sink": "AddBuff",
       "argument": "12308011",
       "values": [
@@ -525,7 +525,7 @@
     {
       "class": "Parallel",
       "method": "OnElementMarkTrigger",
-      "line": 1050685,
+      "line": 1051282,
       "sink": "PlayAreaEffect",
       "argument": "area_04",
       "values": [
@@ -544,7 +544,7 @@
     {
       "class": "Action",
       "method": "OnReceiveDamage",
-      "line": 1055370,
+      "line": 1055967,
       "sink": "AddBuff",
       "argument": "11030011",
       "values": [
@@ -563,7 +563,7 @@
     {
       "class": "SkillScript_Death",
       "method": "DoMainLogic",
-      "line": 1055505,
+      "line": 1056102,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_110_Main_FenShen_DieBoom\u0022",
       "values": [
@@ -582,7 +582,7 @@
     {
       "class": "SkillScript_Death",
       "method": "DoMainLogic",
-      "line": 1055509,
+      "line": 1056106,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_110_Support_FenShen_DieBoom\u0022",
       "values": [
@@ -601,7 +601,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1146394,
+      "line": 1146991,
       "sink": "AddBuff",
       "argument": "13551011",
       "values": [
@@ -620,7 +620,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1146451,
+      "line": 1147048,
       "sink": "AddBuff",
       "argument": "buff_8",
       "values": [
@@ -639,7 +639,7 @@
     {
       "class": "SkillScript_Death",
       "method": "DoMainLogic",
-      "line": 1146575,
+      "line": 1147172,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_5",
       "values": [
@@ -658,7 +658,7 @@
     {
       "class": "SkillScript_Death",
       "method": "DoMainLogic",
-      "line": 1146592,
+      "line": 1147189,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_1",
       "values": [
@@ -677,7 +677,7 @@
     {
       "class": "ParallelScript",
       "method": "OnReceiveDamage",
-      "line": 1149125,
+      "line": 1149722,
       "sink": "AddBuff",
       "argument": "buffID",
       "values": [
@@ -700,7 +700,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "OnSkillEnable",
-      "line": 1149327,
+      "line": 1149924,
       "sink": "AddBuff",
       "argument": "16290001",
       "values": [
@@ -719,7 +719,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "OnCustomEvent",
-      "line": 1149473,
+      "line": 1150070,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_162_LeiDianArea_P8\u0022",
       "values": [
@@ -738,7 +738,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnStart",
-      "line": 1149589,
+      "line": 1150186,
       "sink": "AddBuff",
       "argument": "buffID",
       "values": [
@@ -761,7 +761,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnCustomEvent",
-      "line": 1149667,
+      "line": 1150264,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_162_LeiDianArea_P42\u0022",
       "values": [
@@ -780,7 +780,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "OnButtonBPress",
-      "line": 1150110,
+      "line": 1150707,
       "sink": "AddBuff",
       "argument": "16207011",
       "values": [
@@ -799,7 +799,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "OnButtonBPress",
-      "line": 1150114,
+      "line": 1150711,
       "sink": "AddBuff",
       "argument": "16207012",
       "values": [
@@ -823,7 +823,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "OnButtonBPress",
-      "line": 1150120,
+      "line": 1150717,
       "sink": "AddBuff",
       "argument": "16209011",
       "values": [
@@ -842,7 +842,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerSwordAura",
-      "line": 1150225,
+      "line": 1150822,
       "sink": "AddBuff",
       "argument": "16202011",
       "values": [
@@ -861,7 +861,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "PerkLogic_P4",
-      "line": 1150425,
+      "line": 1151022,
       "sink": "AddBuff",
       "argument": "16204011",
       "values": [
@@ -880,7 +880,7 @@
     {
       "class": "SkillScript_ExtraSkill_MainControl",
       "method": "OnSkillEnable",
-      "line": 1150498,
+      "line": 1151095,
       "sink": "AddBuff",
       "argument": "16290002",
       "values": [
@@ -899,7 +899,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnPlayerCastSkill",
-      "line": 1150730,
+      "line": 1151327,
       "sink": "AddBuff",
       "argument": "16232011",
       "values": [
@@ -923,7 +923,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnPlayerCastSkill",
-      "line": 1150734,
+      "line": 1151331,
       "sink": "AddBuff",
       "argument": "16233011",
       "values": [
@@ -947,7 +947,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1150761,
+      "line": 1151358,
       "sink": "AddBuff",
       "argument": "16226011",
       "values": [
@@ -966,7 +966,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1150765,
+      "line": 1151362,
       "sink": "AddBuff",
       "argument": "16229011",
       "values": [
@@ -985,7 +985,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1150871,
+      "line": 1151468,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_162_LeiDianArea_P21\u0022",
       "values": [
@@ -1004,7 +1004,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1150886,
+      "line": 1151483,
       "sink": "AddBuff",
       "argument": "16225011",
       "values": [
@@ -1028,7 +1028,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1150891,
+      "line": 1151488,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -1062,7 +1062,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1150912,
+      "line": 1151509,
       "sink": "AddBuff",
       "argument": "16290001",
       "values": [
@@ -1081,7 +1081,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1150917,
+      "line": 1151514,
       "sink": "AddBuff",
       "argument": "16290002",
       "values": [
@@ -1100,7 +1100,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1152319,
+      "line": 1152918,
       "sink": "AddBuff",
       "argument": "buff_5",
       "values": [
@@ -1119,7 +1119,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1152326,
+      "line": 1152925,
       "sink": "AddBuff",
       "argument": "buff_9",
       "values": [
@@ -1138,7 +1138,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1152338,
+      "line": 1152937,
       "sink": "AddBuff",
       "argument": "buff_11",
       "values": [
@@ -1157,7 +1157,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastEndSkill",
-      "line": 1152348,
+      "line": 1152947,
       "sink": "AddBuff",
       "argument": "buff_12",
       "values": [
@@ -1176,7 +1176,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnDropFinish",
-      "line": 1152397,
+      "line": 1152996,
       "sink": "AddBuff",
       "argument": "16104011",
       "values": [
@@ -1195,7 +1195,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1152640,
+      "line": 1153243,
       "sink": "AddBuff",
       "argument": "buff_33",
       "values": [
@@ -1214,7 +1214,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1152792,
+      "line": 1153399,
       "sink": "AddBuff",
       "argument": "buff_31",
       "values": [
@@ -1233,7 +1233,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1152799,
+      "line": 1153406,
       "sink": "AddBuff",
       "argument": "buff_21",
       "values": [
@@ -1252,7 +1252,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1152803,
+      "line": 1153410,
       "sink": "AddBuff",
       "argument": "buff_27",
       "values": [
@@ -1271,7 +1271,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1152808,
+      "line": 1153415,
       "sink": "AddBuff",
       "argument": "buff_23",
       "values": [
@@ -1290,7 +1290,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1152823,
+      "line": 1153430,
       "sink": "AddBuff",
       "argument": "buff_29",
       "values": [
@@ -1309,7 +1309,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1152828,
+      "line": 1153435,
       "sink": "AddBuff",
       "argument": "buff_29_vul",
       "values": [
@@ -1328,7 +1328,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1152834,
+      "line": 1153441,
       "sink": "AddBuff",
       "argument": "buff_32",
       "values": [
@@ -1347,7 +1347,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnReceiveDamageForP28",
-      "line": 1152850,
+      "line": 1153457,
       "sink": "AddBuff",
       "argument": "16123011",
       "values": [
@@ -1366,7 +1366,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "ApplyDebuffInFWBRange",
-      "line": 1153030,
+      "line": 1153649,
       "sink": "AddBuff",
       "argument": "buff_25",
       "values": [
@@ -1385,7 +1385,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnCustomEvent",
-      "line": 1153764,
+      "line": 1154376,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -1414,7 +1414,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnCustomEvent",
-      "line": 1153767,
+      "line": 1154379,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16101_Ultra_P43\u0022",
       "values": [
@@ -1433,7 +1433,7 @@
     {
       "class": "Action_JuDian",
       "method": "OnSpecialEnable",
-      "line": 1153876,
+      "line": 1154488,
       "sink": "AddBuff",
       "argument": "16104012",
       "values": [
@@ -1452,7 +1452,7 @@
     {
       "class": "Action_JuDian",
       "method": "OnCastSkill",
-      "line": 1153905,
+      "line": 1154517,
       "sink": "AddBuff",
       "argument": "16103011",
       "values": [
@@ -1471,7 +1471,7 @@
     {
       "class": "Action_JuDian",
       "method": "OnCastSkill",
-      "line": 1153908,
+      "line": 1154520,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16101_JuDian\u0022",
       "values": [
@@ -1490,7 +1490,7 @@
     {
       "class": "Parallel_JuDian",
       "method": "DelayPlayAura_8",
-      "line": 1154008,
+      "line": 1154620,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16101_JuDian_Debuff\u0022",
       "values": [
@@ -1509,7 +1509,7 @@
     {
       "class": "SkillScript_FangWeiBiao_Death",
       "method": "DoMainLogic",
-      "line": 1154458,
+      "line": 1155070,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16101_ChaCha\u0022",
       "values": [
@@ -1528,7 +1528,7 @@
     {
       "class": "ParallelScript",
       "method": "OnReceiveDamage",
-      "line": 1154797,
+      "line": 1155409,
       "sink": "AddBuff",
       "argument": "16043011",
       "values": [
@@ -1547,7 +1547,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillDisable",
-      "line": 1155098,
+      "line": 1155710,
       "sink": "AddBuff",
       "argument": "16011011",
       "values": [
@@ -1566,7 +1566,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnCustomEvent",
-      "line": 1155253,
+      "line": 1155865,
       "sink": "AddBuff",
       "argument": "16042011",
       "values": [
@@ -1585,7 +1585,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnReceiveCustomEvent",
-      "line": 1156080,
+      "line": 1156692,
       "sink": "AddBuff",
       "argument": "16009011",
       "values": [
@@ -1604,7 +1604,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnReceiveCustomEvent",
-      "line": 1156083,
+      "line": 1156695,
       "sink": "AddBuff",
       "argument": "16009012",
       "values": [
@@ -1623,7 +1623,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnReceiveCustomEvent",
-      "line": 1156095,
+      "line": 1156707,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16001_Main_P10\u0022",
       "values": [
@@ -1642,7 +1642,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "PerkLoigc_P4",
-      "line": 1156147,
+      "line": 1156759,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16001_Main_P04\u0022",
       "values": [
@@ -1661,7 +1661,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnGetBuff",
-      "line": 1156186,
+      "line": 1156798,
       "sink": "AddBuff",
       "argument": "16006011",
       "values": [
@@ -1680,7 +1680,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1156325,
+      "line": 1156937,
       "sink": "AddBuff",
       "argument": "16005011",
       "values": [
@@ -1699,7 +1699,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1156333,
+      "line": 1156945,
       "sink": "AddBuff",
       "argument": "16008011",
       "values": [
@@ -1718,7 +1718,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnElementMarkTrigger",
-      "line": 1156372,
+      "line": 1156984,
       "sink": "AddBuff",
       "argument": "16006011",
       "values": [
@@ -1737,7 +1737,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSummonedSpawn",
-      "line": 1156393,
+      "line": 1157005,
       "sink": "AddBuff",
       "argument": "16013011",
       "values": [
@@ -1756,7 +1756,7 @@
     {
       "class": "ActionScript_Summoned_MainControl",
       "method": "PerkLogic_P2",
-      "line": 1156789,
+      "line": 1157401,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16001_Main_P02\u0022",
       "values": [
@@ -1775,7 +1775,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnStart",
-      "line": 1157227,
+      "line": 1157839,
       "sink": "AddBuff",
       "argument": "16032011",
       "values": [
@@ -1794,7 +1794,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnReceiveCustomEvent",
-      "line": 1157873,
+      "line": 1158485,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16001_Sup_P30_Red\u0022",
       "values": [
@@ -1813,7 +1813,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnReceiveCustomEvent",
-      "line": 1157879,
+      "line": 1158491,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_16001_Sup_P30_Blue\u0022",
       "values": [
@@ -1832,7 +1832,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1157975,
+      "line": 1158587,
       "sink": "AddBuff",
       "argument": "buffID",
       "values": [
@@ -1866,7 +1866,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1157984,
+      "line": 1158596,
       "sink": "AddBuff",
       "argument": "buffID2",
       "values": [
@@ -1900,7 +1900,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1157988,
+      "line": 1158600,
       "sink": "AddBuff",
       "argument": "16024011",
       "values": [
@@ -1919,7 +1919,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1157992,
+      "line": 1158604,
       "sink": "AddBuff",
       "argument": "16025001",
       "values": [
@@ -1938,7 +1938,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnDecibelChange",
-      "line": 1158051,
+      "line": 1158663,
       "sink": "AddBuff",
       "argument": "16029011",
       "values": [
@@ -1957,7 +1957,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnterExitAreaEffect",
-      "line": 1158138,
+      "line": 1158750,
       "sink": "AddBuff",
       "argument": "16028011",
       "values": [
@@ -1976,7 +1976,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnAreaEffectFinish",
-      "line": 1158222,
+      "line": 1158834,
       "sink": "AddBuff",
       "argument": "16030012",
       "values": [
@@ -1995,7 +1995,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnAreaEffectFinish",
-      "line": 1158223,
+      "line": 1158835,
       "sink": "AddBuff",
       "argument": "16030012",
       "values": [
@@ -2014,7 +2014,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnAreaEffectFinish",
-      "line": 1158227,
+      "line": 1158839,
       "sink": "AddBuff",
       "argument": "16030011",
       "values": [
@@ -2033,7 +2033,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnAreaEffectFinish",
-      "line": 1158238,
+      "line": 1158850,
       "sink": "AddBuff",
       "argument": "16030012",
       "values": [
@@ -2052,7 +2052,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnElementMarkTrigger",
-      "line": 1158267,
+      "line": 1158879,
       "sink": "AddBuff",
       "argument": "4011",
       "values": [
@@ -2071,7 +2071,7 @@
     {
       "class": "ParallelScript",
       "method": "OnHitPost",
-      "line": 1159858,
+      "line": 1160470,
       "sink": "AddBuff",
       "argument": "buff_41",
       "values": [
@@ -2095,7 +2095,7 @@
     {
       "class": "ParallelScript",
       "method": "OnHitPost",
-      "line": 1159862,
+      "line": 1160474,
       "sink": "AddBuff",
       "argument": "buff_43",
       "values": [
@@ -2114,7 +2114,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastEndSkill",
-      "line": 1160238,
+      "line": 1160850,
       "sink": "AddBuff",
       "argument": "buff_12",
       "values": [
@@ -2133,7 +2133,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1160298,
+      "line": 1160910,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_4_B",
       "values": [
@@ -2152,7 +2152,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1160328,
+      "line": 1160940,
       "sink": "AddBuff",
       "argument": "buff_6",
       "values": [
@@ -2171,7 +2171,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1160332,
+      "line": 1160944,
       "sink": "AddBuff",
       "argument": "buff_9",
       "values": [
@@ -2190,7 +2190,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerMasked",
-      "line": 1160356,
+      "line": 1160968,
       "sink": "AddBuff",
       "argument": "buff_11",
       "values": [
@@ -2209,7 +2209,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "DoEnterCystal",
-      "line": 1160657,
+      "line": 1161269,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_4_A",
       "values": [
@@ -2228,7 +2228,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1160881,
+      "line": 1161493,
       "sink": "AddBuff",
       "argument": "buff_21",
       "values": [
@@ -2247,7 +2247,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPre",
-      "line": 1160966,
+      "line": 1161578,
       "sink": "AddBuff",
       "argument": "buff_26",
       "values": [
@@ -2266,7 +2266,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPre",
-      "line": 1160970,
+      "line": 1161582,
       "sink": "AddBuff",
       "argument": "buff_27",
       "values": [
@@ -2285,7 +2285,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1161007,
+      "line": 1161619,
       "sink": "AddBuff",
       "argument": "buff_30",
       "values": [
@@ -2304,7 +2304,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1161014,
+      "line": 1161626,
       "sink": "AddBuff",
       "argument": "buff_32",
       "values": [
@@ -2323,7 +2323,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnAreaEffectFinish",
-      "line": 1161072,
+      "line": 1161684,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_21",
       "values": [
@@ -2342,7 +2342,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "onCustomEvent",
-      "line": 1161645,
+      "line": 1162257,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -2365,7 +2365,7 @@
     {
       "class": "ParallelScript",
       "method": "OnReceiveDamage",
-      "line": 1162514,
+      "line": 1163126,
       "sink": "AddBuff",
       "argument": "15842011",
       "values": [
@@ -2384,7 +2384,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1164268,
+      "line": 1164880,
       "sink": "AddBuff",
       "argument": "15812011",
       "values": [
@@ -2403,7 +2403,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1164273,
+      "line": 1164885,
       "sink": "AddBuff",
       "argument": "15813011",
       "values": [
@@ -2422,7 +2422,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1164274,
+      "line": 1164886,
       "sink": "AddBuff",
       "argument": "15813012",
       "values": [
@@ -2441,7 +2441,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "PerkLogic_P13",
-      "line": 1164304,
+      "line": 1164916,
       "sink": "AddBuff",
       "argument": "15813011",
       "values": [
@@ -2460,7 +2460,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1164328,
+      "line": 1164940,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -2499,7 +2499,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1164333,
+      "line": 1164945,
       "sink": "AddBuff",
       "argument": "15808011",
       "values": [
@@ -2518,7 +2518,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1164337,
+      "line": 1164949,
       "sink": "AddBuff",
       "argument": "15810011",
       "values": [
@@ -2537,7 +2537,7 @@
     {
       "class": "SummonedController_MainControl",
       "method": "OnReceiveDamage",
-      "line": 1165108,
+      "line": 1165720,
       "sink": "AddBuff",
       "argument": "15811011",
       "values": [
@@ -2556,7 +2556,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnStart",
-      "line": 1166076,
+      "line": 1166688,
       "sink": "AddBuff",
       "argument": "15831011",
       "values": [
@@ -2580,7 +2580,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnCastUltimate",
-      "line": 1166107,
+      "line": 1166719,
       "sink": "AddBuff",
       "argument": "15832011",
       "values": [
@@ -2599,7 +2599,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnBulletFinish",
-      "line": 1166353,
+      "line": 1166965,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -2633,7 +2633,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1166381,
+      "line": 1166993,
       "sink": "AddBuff",
       "argument": "15822011",
       "values": [
@@ -2652,7 +2652,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1166385,
+      "line": 1166997,
       "sink": "AddBuff",
       "argument": "15826011",
       "values": [
@@ -2671,7 +2671,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1166389,
+      "line": 1167001,
       "sink": "AddBuff",
       "argument": "15833011",
       "values": [
@@ -2690,7 +2690,7 @@
     {
       "class": "SkillScript_Skill_Transfrom",
       "method": "OnSkillEnable",
-      "line": 1167755,
+      "line": 1168367,
       "sink": "AddBuff",
       "argument": "15841011",
       "values": [
@@ -2709,7 +2709,7 @@
     {
       "class": "SkillSciprt_Dodge",
       "method": "OnSkillEnable",
-      "line": 1167945,
+      "line": 1168557,
       "sink": "AddBuff",
       "argument": "15712011",
       "values": [
@@ -2728,7 +2728,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnSkillEnable",
-      "line": 1168241,
+      "line": 1168853,
       "sink": "AddBuff",
       "argument": "15743011",
       "values": [
@@ -2747,7 +2747,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "PerkLogic_P42",
-      "line": 1168395,
+      "line": 1169007,
       "sink": "Shoot",
       "argument": "\u0022Bullet_157_P42_ShuiPao\u0022",
       "values": [
@@ -2766,7 +2766,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1169372,
+      "line": 1169984,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_157_P1_FishAtk\u0022",
       "values": [
@@ -2785,7 +2785,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1169391,
+      "line": 1170003,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_157_P5_FishAtk\u0022",
       "values": [
@@ -2809,7 +2809,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1169400,
+      "line": 1170012,
       "sink": "AddBuff",
       "argument": "15706011",
       "values": [
@@ -2828,7 +2828,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1169405,
+      "line": 1170017,
       "sink": "AddBuff",
       "argument": "15706012",
       "values": [
@@ -2852,7 +2852,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerDarkMark",
-      "line": 1169415,
+      "line": 1170027,
       "sink": "AddBuff",
       "argument": "15710011",
       "values": [
@@ -2871,7 +2871,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerDarkMark",
-      "line": 1169419,
+      "line": 1170031,
       "sink": "AddBuff",
       "argument": "15711011",
       "values": [
@@ -2890,7 +2890,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillDisable",
-      "line": 1169510,
+      "line": 1170122,
       "sink": "AddBuff",
       "argument": "15702011",
       "values": [
@@ -2909,7 +2909,7 @@
     {
       "class": "SkillScript_SpecialNormalAttack_MainControl",
       "method": "OnSkillEnable",
-      "line": 1169524,
+      "line": 1170136,
       "sink": "AddBuff",
       "argument": "15704011",
       "values": [
@@ -2928,7 +2928,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1169938,
+      "line": 1170550,
       "sink": "AddBuff",
       "argument": "15731011",
       "values": [
@@ -2952,7 +2952,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1169954,
+      "line": 1170566,
       "sink": "AddBuff",
       "argument": "15730011",
       "values": [
@@ -2976,7 +2976,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1169998,
+      "line": 1170610,
       "sink": "AddBuff",
       "argument": "15721011",
       "values": [
@@ -2995,7 +2995,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1170003,
+      "line": 1170615,
       "sink": "AddBuff",
       "argument": "15726011",
       "values": [
@@ -3014,7 +3014,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1170007,
+      "line": 1170619,
       "sink": "AddBuff",
       "argument": "15728011",
       "values": [
@@ -3033,7 +3033,7 @@
     {
       "class": "SkillSciprt_Skill_Support",
       "method": "OnSkillEnable",
-      "line": 1170029,
+      "line": 1170641,
       "sink": "AddBuff",
       "argument": "15732011",
       "values": [
@@ -3052,7 +3052,7 @@
     {
       "class": "SkillSciprt_Skill_Support",
       "method": "OnReceiveDamage",
-      "line": 1170135,
+      "line": 1170747,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_157_P24_Boom\u0022",
       "values": [
@@ -3071,7 +3071,7 @@
     {
       "class": "ParallelScript",
       "method": "OnReceiveDamage",
-      "line": 1170268,
+      "line": 1170880,
       "sink": "AddBuff",
       "argument": "15643011",
       "values": [
@@ -3090,7 +3090,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillEnable",
-      "line": 1170371,
+      "line": 1170983,
       "sink": "AddBuff",
       "argument": "15611011",
       "values": [
@@ -3109,7 +3109,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnSkillEnable",
-      "line": 1170554,
+      "line": 1171166,
       "sink": "AddBuff",
       "argument": "15641011",
       "values": [
@@ -3128,7 +3128,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnCustomEvent",
-      "line": 1170641,
+      "line": 1171253,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_156_P42_UltraXiYin\u0022",
       "values": [
@@ -3147,7 +3147,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1171307,
+      "line": 1171919,
       "sink": "AddBuff",
       "argument": "15612011",
       "values": [
@@ -3166,7 +3166,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "UpdateSummonedCount",
-      "line": 1171344,
+      "line": 1171956,
       "sink": "AddBuff",
       "argument": "15606011",
       "values": [
@@ -3185,7 +3185,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "UpdateSkillCDState",
-      "line": 1171370,
+      "line": 1171982,
       "sink": "AddBuff",
       "argument": "15610011",
       "values": [
@@ -3204,7 +3204,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1171438,
+      "line": 1172050,
       "sink": "AddBuff",
       "argument": "15601011",
       "values": [
@@ -3223,7 +3223,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnBeginReload",
-      "line": 1171465,
+      "line": 1172077,
       "sink": "AddBuff",
       "argument": "15607011",
       "values": [
@@ -3242,7 +3242,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnBeginReload",
-      "line": 1171475,
+      "line": 1172087,
       "sink": "AddBuff",
       "argument": "15609011",
       "values": [
@@ -3261,7 +3261,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillEnable",
-      "line": 1171551,
+      "line": 1172163,
       "sink": "AddBuff",
       "argument": "15613011",
       "values": [
@@ -3280,7 +3280,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnCustomEvent",
-      "line": 1171593,
+      "line": 1172205,
       "sink": "AddBuff",
       "argument": "15601021",
       "values": [
@@ -3299,7 +3299,7 @@
     {
       "class": "SkillScript_Skill_Summoned",
       "method": "OnCustomEvent",
-      "line": 1171911,
+      "line": 1172523,
       "sink": "AddBuff",
       "argument": "15602011",
       "values": [
@@ -3318,7 +3318,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnStart",
-      "line": 1172036,
+      "line": 1172648,
       "sink": "AddBuff",
       "argument": "15631011",
       "values": [
@@ -3337,7 +3337,7 @@
     {
       "class": "ActionScript_Support",
       "method": "Raffle",
-      "line": 1172223,
+      "line": 1172835,
       "sink": "AddBuff",
       "argument": "15632011",
       "values": [
@@ -3356,7 +3356,7 @@
     {
       "class": "ActionScript_Support",
       "method": "Raffle",
-      "line": 1172229,
+      "line": 1172841,
       "sink": "AddBuff",
       "argument": "15633011",
       "values": [
@@ -3375,7 +3375,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnRaffleSkillFinish",
-      "line": 1172262,
+      "line": 1172874,
       "sink": "AddBuff",
       "argument": "buffID2",
       "values": [
@@ -3398,7 +3398,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnRaffleSkillFinish",
-      "line": 1172278,
+      "line": 1172890,
       "sink": "AddBuff",
       "argument": "buffID",
       "values": [
@@ -3421,7 +3421,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnRaffleSkillFinish",
-      "line": 1172291,
+      "line": 1172903,
       "sink": "AddBuff",
       "argument": "15626011",
       "values": [
@@ -3440,7 +3440,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnRaffleSkillFinish",
-      "line": 1172299,
+      "line": 1172911,
       "sink": "AddBuff",
       "argument": "15629011",
       "values": [
@@ -3459,7 +3459,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfAttacked",
-      "line": 1172508,
+      "line": 1173120,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_156_P25_ShotBoom\u0022",
       "values": [
@@ -3478,7 +3478,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1172541,
+      "line": 1173153,
       "sink": "AddBuff",
       "argument": "15628011",
       "values": [
@@ -3497,7 +3497,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnBulletFinish",
-      "line": 1172567,
+      "line": 1173179,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -3555,7 +3555,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "HeartArrowLogic",
-      "line": 1172621,
+      "line": 1173233,
       "sink": "AddBuff",
       "argument": "buffID",
       "values": [
@@ -3578,7 +3578,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "HeartArrowLogic",
-      "line": 1172622,
+      "line": 1173234,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -3601,7 +3601,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "HeartArrowLogic",
-      "line": 1172642,
+      "line": 1173254,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias2",
       "values": [
@@ -3624,7 +3624,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "PerkLogic_P27",
-      "line": 1172664,
+      "line": 1173276,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_156_P27_PenguinStatueBoom\u0022",
       "values": [
@@ -3643,7 +3643,7 @@
     {
       "class": "ParallelScript",
       "method": "OnCastSkill",
-      "line": 1173797,
+      "line": 1174409,
       "sink": "AddBuff",
       "argument": "buff_42",
       "values": [
@@ -3662,7 +3662,7 @@
     {
       "class": "ParallelScript",
       "method": "OnCrit",
-      "line": 1173873,
+      "line": 1174485,
       "sink": "AddBuff",
       "argument": "15541011",
       "values": [
@@ -3681,7 +3681,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1174507,
+      "line": 1175119,
       "sink": "AddBuff",
       "argument": "buffId_3",
       "values": [
@@ -3700,7 +3700,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1174511,
+      "line": 1175123,
       "sink": "AddBuff",
       "argument": "buffId_4",
       "values": [
@@ -3719,7 +3719,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1174582,
+      "line": 1175194,
       "sink": "AddBuff",
       "argument": "buffId_1",
       "values": [
@@ -3738,7 +3738,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1174595,
+      "line": 1175207,
       "sink": "AddBuff",
       "argument": "buffId_2",
       "values": [
@@ -3757,7 +3757,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerMasked",
-      "line": 1174615,
+      "line": 1175227,
       "sink": "AddBuff",
       "argument": "buff_7",
       "values": [
@@ -3776,7 +3776,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerMasked",
-      "line": 1174619,
+      "line": 1175231,
       "sink": "AddBuff",
       "argument": "buff_12",
       "values": [
@@ -3795,7 +3795,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSpecialEntitySpawn",
-      "line": 1174682,
+      "line": 1175294,
       "sink": "AddBuff",
       "argument": "buff_11",
       "values": [
@@ -3814,7 +3814,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSummonSpawned",
-      "line": 1174752,
+      "line": 1175364,
       "sink": "AddBuff",
       "argument": "buff_10",
       "values": [
@@ -3833,7 +3833,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1174960,
+      "line": 1175572,
       "sink": "AddBuff",
       "argument": "buff_33",
       "values": [
@@ -3857,7 +3857,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPre",
-      "line": 1175136,
+      "line": 1175748,
       "sink": "AddBuff",
       "argument": "buff_29",
       "values": [
@@ -3876,7 +3876,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPre",
-      "line": 1175140,
+      "line": 1175752,
       "sink": "AddBuff",
       "argument": "buff_28_stun",
       "values": [
@@ -3895,7 +3895,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1175161,
+      "line": 1175773,
       "sink": "AddBuff",
       "argument": "buff_31",
       "values": [
@@ -3914,7 +3914,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoAreaEffect",
-      "line": 1175403,
+      "line": 1176015,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect",
       "values": [
@@ -3933,7 +3933,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnTriggerMasked",
-      "line": 1175420,
+      "line": 1176032,
       "sink": "AddBuff",
       "argument": "buff_27",
       "values": [
@@ -3952,7 +3952,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnTriggerMasked",
-      "line": 1175424,
+      "line": 1176036,
       "sink": "AddBuff",
       "argument": "buff_32",
       "values": [
@@ -3971,7 +3971,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoAddBuff",
-      "line": 1175432,
+      "line": 1176044,
       "sink": "AddBuff",
       "argument": "buff_30",
       "values": [
@@ -3990,7 +3990,7 @@
     {
       "class": "Skill_Atk_BB",
       "method": "OnCustomEvent",
-      "line": 1177285,
+      "line": 1177897,
       "sink": "Shoot",
       "argument": "weaponAlias",
       "values": [
@@ -4019,7 +4019,7 @@
     {
       "class": "Skill_AtkBase_LB",
       "method": "OnCustomEvent",
-      "line": 1177806,
+      "line": 1178418,
       "sink": "Shoot",
       "argument": "weaponAlias",
       "values": [
@@ -4068,7 +4068,7 @@
     {
       "class": "ParallelScript",
       "method": "OnReceiveAttack",
-      "line": 1178379,
+      "line": 1178991,
       "sink": "AddBuff",
       "argument": "15043011",
       "values": [
@@ -4087,7 +4087,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "GenerateAttackAreaEffect",
-      "line": 1178854,
+      "line": 1179466,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_150_Ultra_P41\u0022",
       "values": [
@@ -4106,7 +4106,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfAttacked",
-      "line": 1179317,
+      "line": 1179929,
       "sink": "AddBuff",
       "argument": "15008011",
       "values": [
@@ -4125,7 +4125,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfAttacked",
-      "line": 1179327,
+      "line": 1179939,
       "sink": "AddBuff",
       "argument": "15013011",
       "values": [
@@ -4144,7 +4144,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1179401,
+      "line": 1180013,
       "sink": "AddBuff",
       "argument": "15002011",
       "values": [
@@ -4163,7 +4163,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1179406,
+      "line": 1180018,
       "sink": "AddBuff",
       "argument": "15007011",
       "values": [
@@ -4182,7 +4182,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1179410,
+      "line": 1180022,
       "sink": "AddBuff",
       "argument": "15010011",
       "values": [
@@ -4201,7 +4201,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerLightMark",
-      "line": 1179428,
+      "line": 1180040,
       "sink": "AddBuff",
       "argument": "15012011",
       "values": [
@@ -4220,7 +4220,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "TryTriggerElectricityExplosion_P2",
-      "line": 1179465,
+      "line": 1180077,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -4249,7 +4249,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "SweepAttack",
-      "line": 1179638,
+      "line": 1180250,
       "sink": "AddBuff",
       "argument": "15004011",
       "values": [
@@ -4268,7 +4268,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "ShootLaser",
-      "line": 1179703,
+      "line": 1180315,
       "sink": "AddBuff",
       "argument": "15004012",
       "values": [
@@ -4287,7 +4287,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnLaserCustomEvent",
-      "line": 1179785,
+      "line": 1180397,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_150_Main_Skill_P01_ElectricGrid\u0022",
       "values": [
@@ -4306,7 +4306,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillDisable",
-      "line": 1179816,
+      "line": 1180428,
       "sink": "AddBuff",
       "argument": "15005011",
       "values": [
@@ -4325,7 +4325,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1179867,
+      "line": 1180479,
       "sink": "AddBuff",
       "argument": "15032011",
       "values": [
@@ -4344,7 +4344,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1179875,
+      "line": 1180487,
       "sink": "AddBuff",
       "argument": "15033011",
       "values": [
@@ -4368,7 +4368,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1179890,
+      "line": 1180502,
       "sink": "AddBuff",
       "argument": "15029011",
       "values": [
@@ -4387,7 +4387,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfAttacked",
-      "line": 1179911,
+      "line": 1180523,
       "sink": "AddBuff",
       "argument": "15030011",
       "values": [
@@ -4406,7 +4406,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1179959,
+      "line": 1180571,
       "sink": "AddBuff",
       "argument": "15026011",
       "values": [
@@ -4425,7 +4425,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnTriggerLightMark",
-      "line": 1179968,
+      "line": 1180580,
       "sink": "AddBuff",
       "argument": "15031011",
       "values": [
@@ -4444,7 +4444,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "LoopAttackLogic",
-      "line": 1180097,
+      "line": 1180709,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_150_Support_Skill_P25_LightRain\u0022",
       "values": [
@@ -4463,7 +4463,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "LoopAttackLogic",
-      "line": 1180098,
+      "line": 1180710,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_150_Support_Skill_P25_LightRain_Ground\u0022",
       "values": [
@@ -4482,7 +4482,7 @@
     {
       "class": "ParallelScript",
       "method": "TriggerEarthMark",
-      "line": 1180419,
+      "line": 1181031,
       "sink": "AddBuff",
       "argument": "14931011",
       "values": [
@@ -4501,7 +4501,7 @@
     {
       "class": "ParallelScript",
       "method": "TriggerEarthMark",
-      "line": 1180423,
+      "line": 1181035,
       "sink": "AddBuff",
       "argument": "14942011",
       "values": [
@@ -4520,7 +4520,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnStart",
-      "line": 1180514,
+      "line": 1181126,
       "sink": "AddBuff",
       "argument": "14911011",
       "values": [
@@ -4539,7 +4539,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnStart",
-      "line": 1180701,
+      "line": 1181313,
       "sink": "AddBuff",
       "argument": "14943011",
       "values": [
@@ -4558,7 +4558,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnStart",
-      "line": 1180704,
+      "line": 1181316,
       "sink": "AddBuff",
       "argument": "14943012",
       "values": [
@@ -4577,7 +4577,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1181210,
+      "line": 1181822,
       "sink": "AddBuff",
       "argument": "14913011",
       "values": [
@@ -4596,7 +4596,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1181232,
+      "line": 1181844,
       "sink": "AddBuff",
       "argument": "14909011",
       "values": [
@@ -4615,7 +4615,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1181264,
+      "line": 1181876,
       "sink": "AddBuff",
       "argument": "14905011",
       "values": [
@@ -4634,7 +4634,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "LogicUpdate",
-      "line": 1181347,
+      "line": 1181959,
       "sink": "AddBuff",
       "argument": "14901011",
       "values": [
@@ -4653,7 +4653,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1181556,
+      "line": 1182168,
       "sink": "AddBuff",
       "argument": "14933011",
       "values": [
@@ -4672,7 +4672,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1181657,
+      "line": 1182269,
       "sink": "AddBuff",
       "argument": "14927012",
       "values": [
@@ -4691,7 +4691,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1181662,
+      "line": 1182274,
       "sink": "AddBuff",
       "argument": "14927011",
       "values": [
@@ -4710,7 +4710,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1181673,
+      "line": 1182285,
       "sink": "AddBuff",
       "argument": "14932011",
       "values": [
@@ -4729,7 +4729,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnStart",
-      "line": 1181727,
+      "line": 1182339,
       "sink": "AddBuff",
       "argument": "14925011",
       "values": [
@@ -4748,7 +4748,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1181837,
+      "line": 1182449,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -4782,7 +4782,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1181847,
+      "line": 1182459,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -4816,7 +4816,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1181866,
+      "line": 1182478,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias2",
       "values": [
@@ -4850,7 +4850,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1181876,
+      "line": 1182488,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias2",
       "values": [
@@ -4884,7 +4884,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1181891,
+      "line": 1182503,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias3",
       "values": [
@@ -4907,7 +4907,7 @@
     {
       "class": "ParallelScript",
       "method": "OnCastSkill",
-      "line": 1182536,
+      "line": 1183148,
       "sink": "AddBuff",
       "argument": "buff_42",
       "values": [
@@ -4926,7 +4926,7 @@
     {
       "class": "ParallelScript",
       "method": "OnHitPost",
-      "line": 1182592,
+      "line": 1183204,
       "sink": "AddBuff",
       "argument": "buff_43",
       "values": [
@@ -4945,7 +4945,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1182839,
+      "line": 1183451,
       "sink": "AddBuff",
       "argument": "buff_10",
       "values": [
@@ -4964,7 +4964,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastEndSkill",
-      "line": 1182849,
+      "line": 1183461,
       "sink": "AddBuff",
       "argument": "buff_6",
       "values": [
@@ -4983,7 +4983,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCustomEvent",
-      "line": 1182890,
+      "line": 1183502,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_8",
       "values": [
@@ -5002,7 +5002,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCustomEvent",
-      "line": 1182897,
+      "line": 1183509,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_8_2",
       "values": [
@@ -5021,7 +5021,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCustomEvent",
-      "line": 1182928,
+      "line": 1183540,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -5055,7 +5055,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerMask",
-      "line": 1182950,
+      "line": 1183562,
       "sink": "AddBuff",
       "argument": "buff_2",
       "values": [
@@ -5074,7 +5074,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerMask",
-      "line": 1182957,
+      "line": 1183569,
       "sink": "AddBuff",
       "argument": "buff_13",
       "values": [
@@ -5093,7 +5093,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "Link",
-      "line": 1183027,
+      "line": 1183639,
       "sink": "AddBuff",
       "argument": "buff_7",
       "values": [
@@ -5112,7 +5112,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "Link",
-      "line": 1183031,
+      "line": 1183643,
       "sink": "AddBuff",
       "argument": "buff_9",
       "values": [
@@ -5131,7 +5131,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1183183,
+      "line": 1183795,
       "sink": "AddBuff",
       "argument": "buff_33",
       "values": [
@@ -5155,7 +5155,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1183303,
+      "line": 1183915,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_22",
       "values": [
@@ -5174,7 +5174,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1183315,
+      "line": 1183927,
       "sink": "AddBuff",
       "argument": "buff_29",
       "values": [
@@ -5193,7 +5193,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnTriggerMask",
-      "line": 1183324,
+      "line": 1183936,
       "sink": "AddBuff",
       "argument": "buff_31",
       "values": [
@@ -5212,7 +5212,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillDisable",
-      "line": 1183370,
+      "line": 1183982,
       "sink": "AddBuff",
       "argument": "buff_11",
       "values": [
@@ -5231,7 +5231,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "DoMainLogic",
-      "line": 1183647,
+      "line": 1184259,
       "sink": "AddBuff",
       "argument": "buff_5",
       "values": [
@@ -5250,7 +5250,7 @@
     {
       "class": "SkillScript_Support",
       "method": "Shoot",
-      "line": 1183981,
+      "line": 1184593,
       "sink": "AddBuff",
       "argument": "buff_28",
       "values": [
@@ -5269,7 +5269,7 @@
     {
       "class": "ParallelScript",
       "method": "OnCastSkill",
-      "line": 1184908,
+      "line": 1185520,
       "sink": "AddBuff",
       "argument": "buffId_43",
       "values": [
@@ -5288,7 +5288,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerCharGamePlayLogicCommonEvent",
-      "line": 1185182,
+      "line": 1185794,
       "sink": "AddBuff",
       "argument": "buff_6",
       "values": [
@@ -5307,7 +5307,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1185203,
+      "line": 1185815,
       "sink": "AddBuff",
       "argument": "buff_11",
       "values": [
@@ -5326,7 +5326,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1185210,
+      "line": 1185822,
       "sink": "AddBuff",
       "argument": "buff_7",
       "values": [
@@ -5345,7 +5345,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1185214,
+      "line": 1185826,
       "sink": "AddBuff",
       "argument": "buff_8",
       "values": [
@@ -5364,7 +5364,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerMask",
-      "line": 1185368,
+      "line": 1185980,
       "sink": "AddBuff",
       "argument": "buff_13",
       "values": [
@@ -5383,7 +5383,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1185650,
+      "line": 1186262,
       "sink": "AddBuff",
       "argument": "buff_31",
       "values": [
@@ -5402,7 +5402,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1185697,
+      "line": 1186309,
       "sink": "AddBuff",
       "argument": "buff_27",
       "values": [
@@ -5426,7 +5426,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1185801,
+      "line": 1186413,
       "sink": "AddBuff",
       "argument": "num2",
       "values": [
@@ -5455,7 +5455,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1185807,
+      "line": 1186419,
       "sink": "AddBuff",
       "argument": "buff_29",
       "values": [
@@ -5474,7 +5474,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnShootBomb",
-      "line": 1185905,
+      "line": 1186517,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -5493,7 +5493,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnShootBomb",
-      "line": 1185912,
+      "line": 1186524,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias2",
       "values": [
@@ -5512,7 +5512,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoAddBuff",
-      "line": 1185929,
+      "line": 1186541,
       "sink": "AddBuff",
       "argument": "buff_26",
       "values": [
@@ -5531,7 +5531,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastAreaEffect",
-      "line": 1185956,
+      "line": 1186568,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_25_1",
       "values": [
@@ -5555,7 +5555,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastAreaEffect",
-      "line": 1185958,
+      "line": 1186570,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_25_2",
       "values": [
@@ -5579,7 +5579,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastAreaEffect",
-      "line": 1185960,
+      "line": 1186572,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_25_3",
       "values": [
@@ -5603,7 +5603,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "onCustomEvent",
-      "line": 1186228,
+      "line": 1186840,
       "sink": "PlayAreaEffect",
       "argument": "areadEffect_2",
       "values": [
@@ -5622,7 +5622,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "onCustomEvent",
-      "line": 1186235,
+      "line": 1186847,
       "sink": "AddBuff",
       "argument": "buff_10_Invincible",
       "values": [
@@ -5641,7 +5641,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "onCustomEvent",
-      "line": 1186250,
+      "line": 1186862,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -5670,7 +5670,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "onCustomEvent",
-      "line": 1186254,
+      "line": 1186866,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -5699,7 +5699,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillEnable",
-      "line": 1186990,
+      "line": 1187602,
       "sink": "AddBuff",
       "argument": "14411011",
       "values": [
@@ -5718,7 +5718,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnSkillEnable",
-      "line": 1187296,
+      "line": 1187908,
       "sink": "AddBuff",
       "argument": "14442011",
       "values": [
@@ -5737,7 +5737,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "TryTriggerPerkLogic_P7",
-      "line": 1188053,
+      "line": 1188665,
       "sink": "PlayAreaEffect",
       "argument": "text",
       "values": [
@@ -5786,7 +5786,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfBeAttacked",
-      "line": 1188076,
+      "line": 1188688,
       "sink": "AddBuff",
       "argument": "14412011",
       "values": [
@@ -5805,7 +5805,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1188164,
+      "line": 1188776,
       "sink": "AddBuff",
       "argument": "14406011",
       "values": [
@@ -5824,7 +5824,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1188168,
+      "line": 1188780,
       "sink": "AddBuff",
       "argument": "14406012",
       "values": [
@@ -5843,7 +5843,7 @@
     {
       "class": "SkillScript_Skill_Normal_MainControl",
       "method": "OnSkillEnable",
-      "line": 1188330,
+      "line": 1188942,
       "sink": "AddBuff",
       "argument": "14401011",
       "values": [
@@ -5862,7 +5862,7 @@
     {
       "class": "SkillScript_Skill_Normal_MainControl",
       "method": "OnSkillEnable",
-      "line": 1188334,
+      "line": 1188946,
       "sink": "AddBuff",
       "argument": "14401011",
       "values": [
@@ -5881,7 +5881,7 @@
     {
       "class": "SkillScript_Skill_Normal_MainControl",
       "method": "OnSkillEnable",
-      "line": 1188338,
+      "line": 1188950,
       "sink": "AddBuff",
       "argument": "14408011",
       "values": [
@@ -5900,7 +5900,7 @@
     {
       "class": "SkillScript_Skill_Normal_MainControl",
       "method": "OnSkillEnable",
-      "line": 1188342,
+      "line": 1188954,
       "sink": "AddBuff",
       "argument": "14412011",
       "values": [
@@ -5919,7 +5919,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1188666,
+      "line": 1189278,
       "sink": "AddBuff",
       "argument": "14433011",
       "values": [
@@ -5938,7 +5938,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnBuffRemoved",
-      "line": 1188681,
+      "line": 1189293,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14401_B2P24_DelayFlash\u0022",
       "values": [
@@ -5957,7 +5957,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1188786,
+      "line": 1189398,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14401_B2P24_DelayFlash\u0022",
       "values": [
@@ -5976,7 +5976,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1188788,
+      "line": 1189400,
       "sink": "AddBuff",
       "argument": "14424011",
       "values": [
@@ -5995,7 +5995,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnMonsterDied",
-      "line": 1188810,
+      "line": 1189422,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14401_B2P24_DelayFlash\u0022",
       "values": [
@@ -6014,7 +6014,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnReceiveDamage",
-      "line": 1189106,
+      "line": 1189718,
       "sink": "AddBuff",
       "argument": "14425011",
       "values": [
@@ -6033,7 +6033,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillEnable",
-      "line": 1189476,
+      "line": 1190088,
       "sink": "AddBuff",
       "argument": "14311011",
       "values": [
@@ -6052,7 +6052,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "OnCustomEvent",
-      "line": 1189711,
+      "line": 1190323,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_143_P10_JiGuang\u0022",
       "values": [
@@ -6071,7 +6071,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "OnReceiveDamage",
-      "line": 1189744,
+      "line": 1190356,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -6110,7 +6110,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnSkillEnable",
-      "line": 1189825,
+      "line": 1190437,
       "sink": "AddBuff",
       "argument": "14342011",
       "values": [
@@ -6129,7 +6129,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "GenerateMainAreaEffect",
-      "line": 1190032,
+      "line": 1190644,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_143_Ultra_WindDomain_P43_XiYin\u0022",
       "values": [
@@ -6148,7 +6148,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1190511,
+      "line": 1191123,
       "sink": "AddBuff",
       "argument": "14312011",
       "values": [
@@ -6167,7 +6167,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1190612,
+      "line": 1191224,
       "sink": "AddBuff",
       "argument": "14307011",
       "values": [
@@ -6186,7 +6186,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1190619,
+      "line": 1191231,
       "sink": "AddBuff",
       "argument": "14309011",
       "values": [
@@ -6205,7 +6205,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerWindMark",
-      "line": 1190630,
+      "line": 1191242,
       "sink": "AddBuff",
       "argument": "14313011",
       "values": [
@@ -6224,7 +6224,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillEnable",
-      "line": 1190691,
+      "line": 1191303,
       "sink": "AddBuff",
       "argument": "14308011",
       "values": [
@@ -6243,7 +6243,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnComboLoop",
-      "line": 1190757,
+      "line": 1191369,
       "sink": "AddBuff",
       "argument": "14308011",
       "values": [
@@ -6262,7 +6262,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnCustomEvent",
-      "line": 1190876,
+      "line": 1191488,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -6301,7 +6301,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "Shoot",
-      "line": 1190906,
+      "line": 1191518,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_143_P3_JiGuang\u0022",
       "values": [
@@ -6320,7 +6320,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillDisable",
-      "line": 1190945,
+      "line": 1191557,
       "sink": "AddBuff",
       "argument": "14301011",
       "values": [
@@ -6339,7 +6339,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillDisable",
-      "line": 1190954,
+      "line": 1191566,
       "sink": "AddBuff",
       "argument": "14310011",
       "values": [
@@ -6358,7 +6358,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1191077,
+      "line": 1191689,
       "sink": "AddBuff",
       "argument": "14326011",
       "values": [
@@ -6377,7 +6377,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1191081,
+      "line": 1191693,
       "sink": "AddBuff",
       "argument": "14328011",
       "values": [
@@ -6396,7 +6396,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1191108,
+      "line": 1191720,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_143_P25_JiGuang\u0022",
       "values": [
@@ -6415,7 +6415,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnElementMarkTrigger",
-      "line": 1191152,
+      "line": 1191764,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_143_P32_LongJuanFeng\u0022",
       "values": [
@@ -6434,7 +6434,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnStageOneCustomEvent",
-      "line": 1191242,
+      "line": 1191854,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_143_P22_DiLie\u0022",
       "values": [
@@ -6453,7 +6453,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnStageTwoCustomEvent",
-      "line": 1191274,
+      "line": 1191886,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_143_P21_LongJuanFeng\u0022",
       "values": [
@@ -6472,7 +6472,7 @@
     {
       "class": "ParallelScript",
       "method": "OnHitPost",
-      "line": 1192001,
+      "line": 1192613,
       "sink": "AddBuff",
       "argument": "buff_42",
       "values": [
@@ -6491,7 +6491,7 @@
     {
       "class": "ParallelScript",
       "method": "OnHitPost",
-      "line": 1192005,
+      "line": 1192617,
       "sink": "AddBuff",
       "argument": "buff_43",
       "values": [
@@ -6510,7 +6510,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1192262,
+      "line": 1192874,
       "sink": "AddBuff",
       "argument": "buff_11",
       "values": [
@@ -6534,7 +6534,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1192267,
+      "line": 1192879,
       "sink": "AddBuff",
       "argument": "buff_12",
       "values": [
@@ -6558,7 +6558,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1192333,
+      "line": 1192945,
       "sink": "AddBuff",
       "argument": "14205011",
       "values": [
@@ -6577,7 +6577,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1192354,
+      "line": 1192966,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_P2",
       "values": [
@@ -6596,7 +6596,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "TriggerMask",
-      "line": 1192370,
+      "line": 1192982,
       "sink": "AddBuff",
       "argument": "buff_4",
       "values": [
@@ -6615,7 +6615,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "TriggerMask",
-      "line": 1192372,
+      "line": 1192984,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_P4",
       "values": [
@@ -6634,7 +6634,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnElementMarkTrigger",
-      "line": 1192387,
+      "line": 1192999,
       "sink": "AddBuff",
       "argument": "buff_13",
       "values": [
@@ -6658,7 +6658,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1192488,
+      "line": 1193100,
       "sink": "AddBuff",
       "argument": "buff_33",
       "values": [
@@ -6682,7 +6682,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1192519,
+      "line": 1193131,
       "sink": "AddBuff",
       "argument": "buff_32",
       "values": [
@@ -6701,7 +6701,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1192534,
+      "line": 1193146,
       "sink": "AddBuff",
       "argument": "buff_32",
       "values": [
@@ -6720,7 +6720,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1192601,
+      "line": 1193213,
       "sink": "AddBuff",
       "argument": "buff_25",
       "values": [
@@ -6739,7 +6739,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1192610,
+      "line": 1193222,
       "sink": "AddBuff",
       "argument": "buff_28_stuff",
       "values": [
@@ -6758,7 +6758,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1192646,
+      "line": 1193258,
       "sink": "AddBuff",
       "argument": "buff_30",
       "values": [
@@ -6782,7 +6782,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnActorEnter",
-      "line": 1192657,
+      "line": 1193269,
       "sink": "AddBuff",
       "argument": "buff_31",
       "values": [
@@ -6801,7 +6801,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastDarkArea",
-      "line": 1192700,
+      "line": 1193312,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -6830,7 +6830,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "onCustomEvent",
-      "line": 1192996,
+      "line": 1193608,
       "sink": "AddBuff",
       "argument": "buff_3",
       "values": [
@@ -6849,7 +6849,7 @@
     {
       "class": "SkillScript_Support",
       "method": "onCustomEvent",
-      "line": 1193278,
+      "line": 1193890,
       "sink": "AddBuff",
       "argument": "buff_27",
       "values": [
@@ -6868,7 +6868,7 @@
     {
       "class": "SkillScript_Support",
       "method": "onCustomEvent",
-      "line": 1193290,
+      "line": 1193902,
       "sink": "AddBuff",
       "argument": "buff_27",
       "values": [
@@ -6887,7 +6887,7 @@
     {
       "class": "SkillScript_Support",
       "method": "onCustomEvent",
-      "line": 1193298,
+      "line": 1193910,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_24",
       "values": [
@@ -6906,7 +6906,7 @@
     {
       "class": "SkillScript_Support",
       "method": "onCustomEvent",
-      "line": 1193306,
+      "line": 1193918,
       "sink": "AddBuff",
       "argument": "buff_27",
       "values": [
@@ -6925,7 +6925,7 @@
     {
       "class": "ParallelScript",
       "method": "UltraSkillLogic",
-      "line": 1193559,
+      "line": 1194171,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14101_Ultra_P42_FireWind\u0022",
       "values": [
@@ -6944,7 +6944,7 @@
     {
       "class": "ParallelScript",
       "method": "OnReceiveDamage",
-      "line": 1193619,
+      "line": 1194231,
       "sink": "AddBuff",
       "argument": "14141011",
       "values": [
@@ -6963,7 +6963,7 @@
     {
       "class": "ParallelScript",
       "method": "PerkLogic_P43",
-      "line": 1193779,
+      "line": 1194391,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14101_Ultra_P43_DragonBreathe\u0022",
       "values": [
@@ -6982,7 +6982,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "PerkLogic_P13",
-      "line": 1194710,
+      "line": 1195322,
       "sink": "AddBuff",
       "argument": "14113011",
       "values": [
@@ -7001,7 +7001,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1194748,
+      "line": 1195360,
       "sink": "AddBuff",
       "argument": "14109011",
       "values": [
@@ -7020,7 +7020,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "TriggerBurn",
-      "line": 1194764,
+      "line": 1195376,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14101_Main_Skill_P03_Boom\u0022",
       "values": [
@@ -7039,7 +7039,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "TriggerBurn",
-      "line": 1194766,
+      "line": 1195378,
       "sink": "AddBuff",
       "argument": "14103012",
       "values": [
@@ -7058,7 +7058,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerBurn",
-      "line": 1194779,
+      "line": 1195391,
       "sink": "AddBuff",
       "argument": "14109012",
       "values": [
@@ -7077,7 +7077,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerFireMark",
-      "line": 1194788,
+      "line": 1195400,
       "sink": "AddBuff",
       "argument": "14111011",
       "values": [
@@ -7096,7 +7096,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerFireMark",
-      "line": 1194792,
+      "line": 1195404,
       "sink": "AddBuff",
       "argument": "14112011",
       "values": [
@@ -7115,7 +7115,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnDied",
-      "line": 1194803,
+      "line": 1195415,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14101_Main_Skill_P06_FirePit\u0022",
       "values": [
@@ -7134,7 +7134,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnAnticipationEnd",
-      "line": 1194926,
+      "line": 1195538,
       "sink": "AddBuff",
       "argument": "14107011",
       "values": [
@@ -7153,7 +7153,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "PerkLogic_P2",
-      "line": 1194948,
+      "line": 1195560,
       "sink": "AddBuff",
       "argument": "14102013",
       "values": [
@@ -7172,7 +7172,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "PerkLogic_P2",
-      "line": 1194953,
+      "line": 1195565,
       "sink": "AddBuff",
       "argument": "14102011",
       "values": [
@@ -7191,7 +7191,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "PerkLogic_P2",
-      "line": 1194958,
+      "line": 1195570,
       "sink": "AddBuff",
       "argument": "14102012",
       "values": [
@@ -7210,7 +7210,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "PerkLogic_P2",
-      "line": 1194961,
+      "line": 1195573,
       "sink": "AddBuff",
       "argument": "14102013",
       "values": [
@@ -7229,7 +7229,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "PerkLogic_P4",
-      "line": 1194975,
+      "line": 1195587,
       "sink": "AddBuff",
       "argument": "14104011",
       "values": [
@@ -7248,7 +7248,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1195209,
+      "line": 1195821,
       "sink": "AddBuff",
       "argument": "14133011",
       "values": [
@@ -7272,7 +7272,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1195235,
+      "line": 1195847,
       "sink": "AddBuff",
       "argument": "1011",
       "values": [
@@ -7291,7 +7291,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1195246,
+      "line": 1195858,
       "sink": "AddBuff",
       "argument": "14132011",
       "values": [
@@ -7310,7 +7310,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "ShootSummonedTigerBullet",
-      "line": 1195595,
+      "line": 1196207,
       "sink": "Shoot",
       "argument": "\u0022Bullet_14101_Support_Skill_Throw_P23_Tiger\u0022",
       "values": [
@@ -7329,7 +7329,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "ShootAddBuffBulletToTiger",
-      "line": 1195625,
+      "line": 1196237,
       "sink": "Shoot",
       "argument": "\u0022Bullet_14101_Support_Skill_Throw_P23_Buff\u0022",
       "values": [
@@ -7348,7 +7348,7 @@
     {
       "class": "ParallelScript",
       "method": "OnReceiveDamage",
-      "line": 1196807,
+      "line": 1197419,
       "sink": "AddBuff",
       "argument": "14042011",
       "values": [
@@ -7372,7 +7372,7 @@
     {
       "class": "ParallelScript",
       "method": "TriggerLandMark",
-      "line": 1196855,
+      "line": 1197467,
       "sink": "AddBuff",
       "argument": "14043011",
       "values": [
@@ -7391,7 +7391,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnCustomEvent",
-      "line": 1197202,
+      "line": 1197814,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -7414,7 +7414,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnSkillDisable",
-      "line": 1197272,
+      "line": 1197884,
       "sink": "AddBuff",
       "argument": "14032012",
       "values": [
@@ -7433,7 +7433,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "OnButtonAPress",
-      "line": 1197970,
+      "line": 1198582,
       "sink": "AddBuff",
       "argument": "14012011",
       "values": [
@@ -7452,7 +7452,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "OnButtonBPress",
-      "line": 1197998,
+      "line": 1198610,
       "sink": "AddBuff",
       "argument": "14007011",
       "values": [
@@ -7471,7 +7471,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "TransformToTank",
-      "line": 1198070,
+      "line": 1198682,
       "sink": "AddBuff",
       "argument": "14009011",
       "values": [
@@ -7490,7 +7490,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "PerkLogic_P4",
-      "line": 1198095,
+      "line": 1198707,
       "sink": "AddBuff",
       "argument": "14004011",
       "values": [
@@ -7509,7 +7509,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "PerkLogic_P10",
-      "line": 1198122,
+      "line": 1198734,
       "sink": "AddBuff",
       "argument": "14010012",
       "values": [
@@ -7528,7 +7528,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "TransformToMiniGun",
-      "line": 1198177,
+      "line": 1198789,
       "sink": "AddBuff",
       "argument": "14006011",
       "values": [
@@ -7547,7 +7547,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "TransformSuccess",
-      "line": 1198210,
+      "line": 1198822,
       "sink": "AddBuff",
       "argument": "14011011",
       "values": [
@@ -7566,7 +7566,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "PerkLogic_P11",
-      "line": 1198500,
+      "line": 1199112,
       "sink": "Shoot",
       "argument": "\u0022Bullet_140_P11_Boom\u0022",
       "values": [
@@ -7585,7 +7585,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "PerkLogic_P11",
-      "line": 1198520,
+      "line": 1199132,
       "sink": "Shoot",
       "argument": "\u0022Bullet_140_P11_Boom\u0022",
       "values": [
@@ -7604,7 +7604,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnBulletFinish",
-      "line": 1198595,
+      "line": 1199207,
       "sink": "Shoot",
       "argument": "\u0022Bullet_140_Tank_P09\u0022",
       "values": [
@@ -7623,7 +7623,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnBulletFinish",
-      "line": 1198616,
+      "line": 1199228,
       "sink": "Shoot",
       "argument": "\u0022Bullet_140_Tank_P09\u0022",
       "values": [
@@ -7647,7 +7647,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1198667,
+      "line": 1199279,
       "sink": "AddBuff",
       "argument": "14002011",
       "values": [
@@ -7666,7 +7666,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1198671,
+      "line": 1199283,
       "sink": "AddBuff",
       "argument": "14002012",
       "values": [
@@ -7685,7 +7685,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1198672,
+      "line": 1199284,
       "sink": "AddBuff",
       "argument": "14002013",
       "values": [
@@ -7704,7 +7704,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerLandMark",
-      "line": 1198681,
+      "line": 1199293,
       "sink": "AddBuff",
       "argument": "14005011",
       "values": [
@@ -7723,7 +7723,7 @@
     {
       "class": "SkillScript_NormalAttack_Tank_MainControl",
       "method": "OnCustomEvent",
-      "line": 1199271,
+      "line": 1199883,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14001_Tank_P08\u0022",
       "values": [
@@ -7742,7 +7742,7 @@
     {
       "class": "SkillScript_Skill_Tank_MainControl",
       "method": "OnCustomEvent",
-      "line": 1199383,
+      "line": 1199995,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_14001_Tank_P08P03\u0022",
       "values": [
@@ -7761,7 +7761,7 @@
     {
       "class": "ActionScript_Support",
       "method": "PerkLogic_P24",
-      "line": 1199500,
+      "line": 1200112,
       "sink": "Shoot",
       "argument": "\u0022Bullet_140_Support_Skill_P24_Boom\u0022",
       "values": [
@@ -7780,7 +7780,7 @@
     {
       "class": "ActionScript_Support",
       "method": "PerkLogic_P29",
-      "line": 1199520,
+      "line": 1200132,
       "sink": "AddBuff",
       "argument": "14029011",
       "values": [
@@ -7799,7 +7799,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1199761,
+      "line": 1200373,
       "sink": "AddBuff",
       "argument": "14031011",
       "values": [
@@ -7818,7 +7818,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1199765,
+      "line": 1200377,
       "sink": "AddBuff",
       "argument": "14032011",
       "values": [
@@ -7837,7 +7837,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1199773,
+      "line": 1200385,
       "sink": "AddBuff",
       "argument": "14033011",
       "values": [
@@ -7856,7 +7856,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnTriggerLandMark",
-      "line": 1199951,
+      "line": 1200563,
       "sink": "AddBuff",
       "argument": "14027011",
       "values": [
@@ -7875,7 +7875,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnSkillEnable",
-      "line": 1199992,
+      "line": 1200604,
       "sink": "AddBuff",
       "argument": "14026011",
       "values": [
@@ -7894,7 +7894,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1200056,
+      "line": 1200668,
       "sink": "AddBuff",
       "argument": "14022011",
       "values": [
@@ -7913,7 +7913,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnSkillDisable",
-      "line": 1200140,
+      "line": 1200752,
       "sink": "AddBuff",
       "argument": "14030011",
       "values": [
@@ -7932,7 +7932,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillEnable",
-      "line": 1200468,
+      "line": 1201080,
       "sink": "AddBuff",
       "argument": "13911011",
       "values": [
@@ -7951,7 +7951,7 @@
     {
       "class": "SkillScript_Ultra_FirstStage",
       "method": "OnCustomEvent",
-      "line": 1201037,
+      "line": 1201649,
       "sink": "AddBuff",
       "argument": "13903012",
       "values": [
@@ -7970,7 +7970,7 @@
     {
       "class": "SkillScript_Ultra_FirstStage",
       "method": "OnCustomEvent",
-      "line": 1201041,
+      "line": 1201653,
       "sink": "AddBuff",
       "argument": "13903011",
       "values": [
@@ -7989,7 +7989,7 @@
     {
       "class": "SkillScript_Ultra_FirstStage",
       "method": "OnCustomEvent",
-      "line": 1201046,
+      "line": 1201658,
       "sink": "AddBuff",
       "argument": "13904011",
       "values": [
@@ -8008,7 +8008,7 @@
     {
       "class": "SkillScript_Ultra_FirstStage",
       "method": "OnCustomEvent",
-      "line": 1201054,
+      "line": 1201666,
       "sink": "AddBuff",
       "argument": "13941011",
       "values": [
@@ -8027,7 +8027,7 @@
     {
       "class": "SkillScript_Ultra_SecondStage",
       "method": "OnCustomEvent",
-      "line": 1201167,
+      "line": 1201779,
       "sink": "AddBuff",
       "argument": "13941011",
       "values": [
@@ -8046,7 +8046,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1201817,
+      "line": 1202429,
       "sink": "AddBuff",
       "argument": "13907012",
       "values": [
@@ -8065,7 +8065,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1201821,
+      "line": 1202433,
       "sink": "AddBuff",
       "argument": "0",
       "values": [
@@ -8084,7 +8084,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfCastSkill",
-      "line": 1201909,
+      "line": 1202521,
       "sink": "AddBuff",
       "argument": "13905011",
       "values": [
@@ -8103,7 +8103,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfCastSkillEnd",
-      "line": 1201928,
+      "line": 1202540,
       "sink": "AddBuff",
       "argument": "13907001",
       "values": [
@@ -8122,7 +8122,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfGetBuff",
-      "line": 1201961,
+      "line": 1202573,
       "sink": "AddBuff",
       "argument": "13906011",
       "values": [
@@ -8141,7 +8141,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnAddShield",
-      "line": 1202033,
+      "line": 1202645,
       "sink": "AddBuff",
       "argument": "13911011",
       "values": [
@@ -8160,7 +8160,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1202086,
+      "line": 1202698,
       "sink": "AddBuff",
       "argument": "13912011",
       "values": [
@@ -8179,7 +8179,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "TriggerTide",
-      "line": 1202117,
+      "line": 1202729,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_13901_WaterTrigger_P04\u0022",
       "values": [
@@ -8198,7 +8198,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerTide",
-      "line": 1202149,
+      "line": 1202761,
       "sink": "AddBuff",
       "argument": "13909011",
       "values": [
@@ -8217,7 +8217,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerTide",
-      "line": 1202150,
+      "line": 1202762,
       "sink": "AddBuff",
       "argument": "13909012",
       "values": [
@@ -8236,7 +8236,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1202471,
+      "line": 1203083,
       "sink": "AddBuff",
       "argument": "13933011",
       "values": [
@@ -8255,7 +8255,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "PerkLogic_P27",
-      "line": 1202495,
+      "line": 1203107,
       "sink": "AddBuff",
       "argument": "13927011",
       "values": [
@@ -8274,7 +8274,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1202735,
+      "line": 1203347,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -8332,7 +8332,7 @@
     {
       "class": "ParallelScript",
       "method": "OnSelfDamaged",
-      "line": 1203028,
+      "line": 1203640,
       "sink": "AddBuff",
       "argument": "13742011",
       "values": [
@@ -8351,7 +8351,7 @@
     {
       "class": "ParallelScript",
       "method": "OnCastSkill",
-      "line": 1203079,
+      "line": 1203691,
       "sink": "AddBuff",
       "argument": "13741011",
       "values": [
@@ -8370,7 +8370,7 @@
     {
       "class": "ParallelScript",
       "method": "TryAddTeamWindSkillBuff",
-      "line": 1203139,
+      "line": 1203751,
       "sink": "AddBuff",
       "argument": "13743011",
       "values": [
@@ -8389,7 +8389,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "OnStart",
-      "line": 1203291,
+      "line": 1203903,
       "sink": "AddBuff",
       "argument": "13703011",
       "values": [
@@ -8408,7 +8408,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "OnStart",
-      "line": 1203295,
+      "line": 1203907,
       "sink": "AddBuff",
       "argument": "13706011",
       "values": [
@@ -8427,7 +8427,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1204229,
+      "line": 1204841,
       "sink": "AddBuff",
       "argument": "13710011",
       "values": [
@@ -8446,7 +8446,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1204249,
+      "line": 1204861,
       "sink": "AddBuff",
       "argument": "13704011",
       "values": [
@@ -8465,7 +8465,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfGetBuff",
-      "line": 1204267,
+      "line": 1204879,
       "sink": "AddBuff",
       "argument": "13707011",
       "values": [
@@ -8484,7 +8484,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnElementMarkTrigger",
-      "line": 1204292,
+      "line": 1204904,
       "sink": "AddBuff",
       "argument": "13713011",
       "values": [
@@ -8503,7 +8503,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "PlayExtraExplodesSequence_513721",
-      "line": 1204588,
+      "line": 1205200,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_137_SkillSup_JumpAtk_Boom_P21\u0022",
       "values": [
@@ -8522,7 +8522,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "CheckDroneAccumulate_513724",
-      "line": 1204720,
+      "line": 1205332,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_137_P24_UAV_AtkAoe\u0022",
       "values": [
@@ -8541,7 +8541,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnElementMarkTrigger",
-      "line": 1204758,
+      "line": 1205370,
       "sink": "AddBuff",
       "argument": "13731011",
       "values": [
@@ -8560,7 +8560,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1204783,
+      "line": 1205395,
       "sink": "AddBuff",
       "argument": "13732011",
       "values": [
@@ -8579,7 +8579,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1204786,
+      "line": 1205398,
       "sink": "AddBuff",
       "argument": "2011",
       "values": [
@@ -8598,7 +8598,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1204795,
+      "line": 1205407,
       "sink": "AddBuff",
       "argument": "13726011",
       "values": [
@@ -8617,7 +8617,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1204799,
+      "line": 1205411,
       "sink": "AddBuff",
       "argument": "13726021",
       "values": [
@@ -8636,7 +8636,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "AddTeamWindDamageBuff_513733",
-      "line": 1204846,
+      "line": 1205458,
       "sink": "AddBuff",
       "argument": "13733011",
       "values": [
@@ -8655,7 +8655,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "PlayJumpAtkAreaEffect",
-      "line": 1205041,
+      "line": 1205653,
       "sink": "AddBuff",
       "argument": "13723011",
       "values": [
@@ -8674,7 +8674,7 @@
     {
       "class": "ParallelScript",
       "method": "OnCastSkill",
-      "line": 1205821,
+      "line": 1206433,
       "sink": "AddBuff",
       "argument": "13554111",
       "values": [
@@ -8693,7 +8693,7 @@
     {
       "class": "ParallelScript",
       "method": "OnCastSkill",
-      "line": 1205828,
+      "line": 1206440,
       "sink": "AddBuff",
       "argument": "13554211",
       "values": [
@@ -8712,7 +8712,7 @@
     {
       "class": "ParallelScript",
       "method": "OnHitPost",
-      "line": 1205863,
+      "line": 1206475,
       "sink": "AddBuff",
       "argument": "13554311",
       "values": [
@@ -8731,7 +8731,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastEndSkill",
-      "line": 1206217,
+      "line": 1206829,
       "sink": "AddBuff",
       "argument": "13551211",
       "values": [
@@ -8750,7 +8750,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1206248,
+      "line": 1206860,
       "sink": "AddBuff",
       "argument": "13551111",
       "values": [
@@ -8769,7 +8769,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1206258,
+      "line": 1206870,
       "sink": "AddBuff",
       "argument": "13551311",
       "values": [
@@ -8788,7 +8788,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "DoSummon",
-      "line": 1206424,
+      "line": 1207036,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -8807,7 +8807,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnMonsterDied",
-      "line": 1206503,
+      "line": 1207115,
       "sink": "AddBuff",
       "argument": "13550711",
       "values": [
@@ -8826,7 +8826,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1206643,
+      "line": 1207255,
       "sink": "AddBuff",
       "argument": "13553311",
       "values": [
@@ -8850,7 +8850,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1206695,
+      "line": 1207307,
       "sink": "AddBuff",
       "argument": "buffId_DarkMark",
       "values": [
@@ -8869,7 +8869,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1206699,
+      "line": 1207311,
       "sink": "AddBuff",
       "argument": "buffId_DarkMark",
       "values": [
@@ -8888,7 +8888,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCustomEvent",
-      "line": 1206751,
+      "line": 1207363,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -8917,7 +8917,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "SummonActor",
-      "line": 1206967,
+      "line": 1207579,
       "sink": "AddBuff",
       "argument": "13552911",
       "values": [
@@ -8936,7 +8936,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "SummonActor",
-      "line": 1206973,
+      "line": 1207585,
       "sink": "AddBuff",
       "argument": "13552611",
       "values": [
@@ -8955,7 +8955,7 @@
     {
       "class": "ParallelScript",
       "method": "TriggerFireMark",
-      "line": 1207619,
+      "line": 1208231,
       "sink": "AddBuff",
       "argument": "13441011",
       "values": [
@@ -8974,7 +8974,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1208728,
+      "line": 1209340,
       "sink": "AddBuff",
       "argument": "13411011",
       "values": [
@@ -8993,7 +8993,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "RefreshPerkLogic_4",
-      "line": 1208751,
+      "line": 1209363,
       "sink": "AddBuff",
       "argument": "13404011",
       "values": [
@@ -9012,7 +9012,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1208817,
+      "line": 1209429,
       "sink": "AddBuff",
       "argument": "13403011",
       "values": [
@@ -9031,7 +9031,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1208860,
+      "line": 1209472,
       "sink": "AddBuff",
       "argument": "13412011",
       "values": [
@@ -9050,7 +9050,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "PerkLogic_9",
-      "line": 1208870,
+      "line": 1209482,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_13401_Main_Skill_P09_Boom\u0022",
       "values": [
@@ -9069,7 +9069,7 @@
     {
       "class": "SkillScript_NormalAttack_MainControl",
       "method": "OnStrengthNormalAttackFinish",
-      "line": 1209007,
+      "line": 1209619,
       "sink": "AddBuff",
       "argument": "13407011",
       "values": [
@@ -9088,7 +9088,7 @@
     {
       "class": "ActionScript_Support",
       "method": "PerkLogic_25",
-      "line": 1209131,
+      "line": 1209743,
       "sink": "AddBuff",
       "argument": "13425011",
       "values": [
@@ -9107,7 +9107,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1209174,
+      "line": 1209786,
       "sink": "AddBuff",
       "argument": "13433011",
       "values": [
@@ -9131,7 +9131,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "PerkLogic_27",
-      "line": 1209217,
+      "line": 1209829,
       "sink": "AddBuff",
       "argument": "13427011",
       "values": [
@@ -9150,7 +9150,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1209245,
+      "line": 1209857,
       "sink": "AddBuff",
       "argument": "13432011",
       "values": [
@@ -9169,7 +9169,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "PerkLogic_29",
-      "line": 1209346,
+      "line": 1209958,
       "sink": "AddBuff",
       "argument": "13429011",
       "values": [
@@ -9188,7 +9188,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1209916,
+      "line": 1210528,
       "sink": "AddBuff",
       "argument": "13351111",
       "values": [
@@ -9207,7 +9207,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1209937,
+      "line": 1210549,
       "sink": "AddBuff",
       "argument": "13354111",
       "values": [
@@ -9226,7 +9226,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1210112,
+      "line": 1210724,
       "sink": "AddBuff",
       "argument": "13350511",
       "values": [
@@ -9245,7 +9245,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1210136,
+      "line": 1210748,
       "sink": "AddBuff",
       "argument": "13351211",
       "values": [
@@ -9264,7 +9264,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1210187,
+      "line": 1210799,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -9293,7 +9293,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1210192,
+      "line": 1210804,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_23",
       "values": [
@@ -9312,7 +9312,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1210219,
+      "line": 1210831,
       "sink": "AddBuff",
       "argument": "13352511",
       "values": [
@@ -9331,7 +9331,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1210223,
+      "line": 1210835,
       "sink": "AddBuff",
       "argument": "13352911",
       "values": [
@@ -9350,7 +9350,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1210227,
+      "line": 1210839,
       "sink": "AddBuff",
       "argument": "2011",
       "values": [
@@ -9369,7 +9369,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1210231,
+      "line": 1210843,
       "sink": "AddBuff",
       "argument": "13354311",
       "values": [
@@ -9388,7 +9388,7 @@
     {
       "class": "Parallel",
       "method": "OnAreaEffectFinish",
-      "line": 1210307,
+      "line": 1210919,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_13301_B2P30_Boom\u0022",
       "values": [
@@ -9407,7 +9407,7 @@
     {
       "class": "Parallel",
       "method": "OnAreaEffectFinish",
-      "line": 1210311,
+      "line": 1210923,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_13301_B2P30P23_Boom\u0022",
       "values": [
@@ -9426,7 +9426,7 @@
     {
       "class": "Parallel",
       "method": "OnWeaponBorn",
-      "line": 1210402,
+      "line": 1211014,
       "sink": "AddBuff",
       "argument": "13352711",
       "values": [
@@ -9445,7 +9445,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillDisable",
-      "line": 1210555,
+      "line": 1211167,
       "sink": "AddBuff",
       "argument": "13351311",
       "values": [
@@ -9464,7 +9464,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "OnStart",
-      "line": 1210704,
+      "line": 1211316,
       "sink": "AddBuff",
       "argument": "13350611",
       "values": [
@@ -9483,7 +9483,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "OnCustomEvent",
-      "line": 1210727,
+      "line": 1211339,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_13301_B1P4_Wind\u0022",
       "values": [
@@ -9502,7 +9502,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "OnCustomEvent",
-      "line": 1210731,
+      "line": 1211343,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_13301_B1P4_Wind2\u0022",
       "values": [
@@ -9521,7 +9521,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "OnRecoveryBegin",
-      "line": 1210748,
+      "line": 1211360,
       "sink": "AddBuff",
       "argument": "13351011",
       "values": [
@@ -9540,7 +9540,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "DoMainLogic",
-      "line": 1210777,
+      "line": 1211389,
       "sink": "AddBuff",
       "argument": "13350811",
       "values": [
@@ -9559,7 +9559,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "DoMainLogic",
-      "line": 1210783,
+      "line": 1211395,
       "sink": "AddBuff",
       "argument": "13350111",
       "values": [
@@ -9578,7 +9578,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnCustomEvent",
-      "line": 1211774,
+      "line": 1212386,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -9601,7 +9601,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnCustomEvent",
-      "line": 1211779,
+      "line": 1212391,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_132_Ultra_H6\u0022",
       "values": [
@@ -9620,7 +9620,7 @@
     {
       "class": "ActionScript_MainControl",
       "method": "OnButtonBPress",
-      "line": 1211920,
+      "line": 1212532,
       "sink": "AddBuff",
       "argument": "13209011",
       "values": [
@@ -9639,7 +9639,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfAttacked",
-      "line": 1212217,
+      "line": 1212829,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_132_Main_S1_Burst_P08_Stun\u0022",
       "values": [
@@ -9658,7 +9658,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "TriggerStarBuff",
-      "line": 1213187,
+      "line": 1213799,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -9681,7 +9681,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "TryTriggerPerkLogic_P29",
-      "line": 1213324,
+      "line": 1213936,
       "sink": "AddBuff",
       "argument": "13229011",
       "values": [
@@ -9700,7 +9700,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "TryTriggerPerkLogic_P29",
-      "line": 1213324,
+      "line": 1213936,
       "sink": "AddBuff",
       "argument": "13229011",
       "values": [
@@ -9724,7 +9724,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1213453,
+      "line": 1214065,
       "sink": "Shoot",
       "argument": "\u0022Bullet_132_Support_P23\u0022",
       "values": [
@@ -9743,7 +9743,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnSearchTargetFinish_P28",
-      "line": 1213536,
+      "line": 1214148,
       "sink": "Shoot",
       "argument": "(_targets_P28.Count \u003E 1) ? bulletPathList_P28[TSRandom.Range(0, bulletPathList_P28.Count)] : bulletPathList_P28[num]",
       "values": [
@@ -9792,7 +9792,7 @@
     {
       "class": "ParallelScript",
       "method": "OnAreaEffectEnterExit",
-      "line": 1213768,
+      "line": 1214380,
       "sink": "AddBuff",
       "argument": "13042011",
       "values": [
@@ -9811,7 +9811,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1214875,
+      "line": 1215487,
       "sink": "AddBuff",
       "argument": "13005011",
       "values": [
@@ -9830,7 +9830,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1214881,
+      "line": 1215493,
       "sink": "AddBuff",
       "argument": "13005012",
       "values": [
@@ -9849,7 +9849,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerWaterCorrosion",
-      "line": 1214924,
+      "line": 1215536,
       "sink": "AddBuff",
       "argument": "13013011",
       "values": [
@@ -9868,7 +9868,7 @@
     {
       "class": "SkillScript_MainControl_NormalAttack",
       "method": "OnSearchTargetFinish_2",
-      "line": 1215096,
+      "line": 1215708,
       "sink": "Shoot",
       "argument": "(_targets_2.Count \u003E 1) ? Config_MainControl.bulletPathList_P2[TSRandom.Range(0, Config_MainControl.bulletPathList_P2.Count)] : Config_MainControl.bulletPathList_P2[num]",
       "values": [
@@ -9917,7 +9917,7 @@
     {
       "class": "SkillScript_MainControl_Skill",
       "method": "OnSkillDisable",
-      "line": 1215249,
+      "line": 1215861,
       "sink": "AddBuff",
       "argument": "13011011",
       "values": [
@@ -9936,7 +9936,7 @@
     {
       "class": "ParallelScript_Summoned",
       "method": "OnRemoveShield",
-      "line": 1215517,
+      "line": 1216129,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -9970,7 +9970,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1215702,
+      "line": 1216314,
       "sink": "AddBuff",
       "argument": "13033011",
       "values": [
@@ -9989,7 +9989,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1215881,
+      "line": 1216493,
       "sink": "AddBuff",
       "argument": "13025013",
       "values": [
@@ -10008,7 +10008,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1215887,
+      "line": 1216499,
       "sink": "AddBuff",
       "argument": "13025012",
       "values": [
@@ -10027,7 +10027,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1215891,
+      "line": 1216503,
       "sink": "AddBuff",
       "argument": "13025011",
       "values": [
@@ -10046,7 +10046,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1215905,
+      "line": 1216517,
       "sink": "AddBuff",
       "argument": "13026011",
       "values": [
@@ -10065,7 +10065,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1215936,
+      "line": 1216548,
       "sink": "AddBuff",
       "argument": "13028011",
       "values": [
@@ -10084,7 +10084,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1215948,
+      "line": 1216560,
       "sink": "AddBuff",
       "argument": "13029012",
       "values": [
@@ -10103,7 +10103,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1215953,
+      "line": 1216565,
       "sink": "AddBuff",
       "argument": "4011",
       "values": [
@@ -10122,7 +10122,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnElementTrigger",
-      "line": 1215961,
+      "line": 1216573,
       "sink": "AddBuff",
       "argument": "13032011",
       "values": [
@@ -10141,7 +10141,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1217268,
+      "line": 1217880,
       "sink": "AddBuff",
       "argument": "12750612",
       "values": [
@@ -10160,7 +10160,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1217272,
+      "line": 1217884,
       "sink": "AddBuff",
       "argument": "12750611",
       "values": [
@@ -10179,7 +10179,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1217283,
+      "line": 1217895,
       "sink": "AddBuff",
       "argument": "12751211",
       "values": [
@@ -10198,7 +10198,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnShieldAdd",
-      "line": 1217325,
+      "line": 1217937,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_3",
       "values": [
@@ -10217,7 +10217,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnShieldAdd",
-      "line": 1217333,
+      "line": 1217945,
       "sink": "AddBuff",
       "argument": "12751111",
       "values": [
@@ -10236,7 +10236,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1217535,
+      "line": 1218147,
       "sink": "AddBuff",
       "argument": "12753311",
       "values": [
@@ -10255,7 +10255,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnOtherHitPost",
-      "line": 1217599,
+      "line": 1218211,
       "sink": "PlayAreaEffect",
       "argument": "areaEfffect_22",
       "values": [
@@ -10274,7 +10274,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnOtherHitPost",
-      "line": 1217607,
+      "line": 1218219,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_30",
       "values": [
@@ -10293,7 +10293,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnShieldAdd",
-      "line": 1217635,
+      "line": 1218247,
       "sink": "AddBuff",
       "argument": "buffId_21",
       "values": [
@@ -10312,7 +10312,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnShieldAdd",
-      "line": 1217639,
+      "line": 1218251,
       "sink": "AddBuff",
       "argument": "buffId_25",
       "values": [
@@ -10331,7 +10331,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnShieldAdd",
-      "line": 1217640,
+      "line": 1218252,
       "sink": "AddBuff",
       "argument": "12752512",
       "values": [
@@ -10350,7 +10350,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnShieldAdd",
-      "line": 1217644,
+      "line": 1218256,
       "sink": "AddBuff",
       "argument": "buffId_26",
       "values": [
@@ -10369,7 +10369,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnShieldAdd",
-      "line": 1217648,
+      "line": 1218260,
       "sink": "AddBuff",
       "argument": "buffId_27",
       "values": [
@@ -10388,7 +10388,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1217694,
+      "line": 1218306,
       "sink": "AddBuff",
       "argument": "buffId_28",
       "values": [
@@ -10407,7 +10407,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastWaterArea",
-      "line": 1217753,
+      "line": 1218365,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -10430,7 +10430,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastWaterArea",
-      "line": 1217804,
+      "line": 1218416,
       "sink": "ModifyAreaEffectLeftTime",
       "argument": "leftTime_23",
       "values": [
@@ -10460,7 +10460,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoAddBuff",
-      "line": 1217839,
+      "line": 1218451,
       "sink": "AddBuff",
       "argument": "buffId_29",
       "values": [
@@ -10479,7 +10479,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoAddBuff",
-      "line": 1217845,
+      "line": 1218457,
       "sink": "AddBuff",
       "argument": "buffId_29",
       "values": [
@@ -10498,7 +10498,7 @@
     {
       "class": "ParallelScript",
       "method": "OnHitPre",
-      "line": 1219331,
+      "line": 1219943,
       "sink": "AddBuff",
       "argument": "buffId_41",
       "values": [
@@ -10517,7 +10517,7 @@
     {
       "class": "ParallelScript",
       "method": "PlayPhoenixEggAreaEffect",
-      "line": 1219424,
+      "line": 1220036,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -10570,7 +10570,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1219628,
+      "line": 1220240,
       "sink": "AddBuff",
       "argument": "buffId_12",
       "values": [
@@ -10589,7 +10589,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1219651,
+      "line": 1220263,
       "sink": "AddBuff",
       "argument": "buffId_3",
       "values": [
@@ -10608,7 +10608,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1219655,
+      "line": 1220267,
       "sink": "AddBuff",
       "argument": "buffId_11",
       "values": [
@@ -10627,7 +10627,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnGetBuff",
-      "line": 1219777,
+      "line": 1220389,
       "sink": "AddBuff",
       "argument": "buffId_13",
       "values": [
@@ -10646,7 +10646,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1219788,
+      "line": 1220400,
       "sink": "AddBuff",
       "argument": "buffId_6",
       "values": [
@@ -10665,7 +10665,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1219794,
+      "line": 1220406,
       "sink": "AddBuff",
       "argument": "buffId_8",
       "values": [
@@ -10684,7 +10684,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1219802,
+      "line": 1220414,
       "sink": "AddBuff",
       "argument": "buffId_10",
       "values": [
@@ -10703,7 +10703,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnBulletFinish",
-      "line": 1219878,
+      "line": 1220490,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -10732,7 +10732,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCustomEvent",
-      "line": 1220173,
+      "line": 1220785,
       "sink": "AddBuff",
       "argument": "buffId_23",
       "values": [
@@ -10756,7 +10756,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCustomEvent",
-      "line": 1220177,
+      "line": 1220789,
       "sink": "AddBuff",
       "argument": "buffId_27",
       "values": [
@@ -10775,7 +10775,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCustomEvent",
-      "line": 1220186,
+      "line": 1220798,
       "sink": "AddBuff",
       "argument": "buffId_31",
       "values": [
@@ -10799,7 +10799,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1220411,
+      "line": 1221023,
       "sink": "AddBuff",
       "argument": "buffId_21",
       "values": [
@@ -10818,7 +10818,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1220415,
+      "line": 1221027,
       "sink": "AddBuff",
       "argument": "buffId_33",
       "values": [
@@ -10837,7 +10837,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCrit",
-      "line": 1220448,
+      "line": 1221060,
       "sink": "AddBuff",
       "argument": "buffId_28",
       "values": [
@@ -10856,7 +10856,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCrit",
-      "line": 1220453,
+      "line": 1221065,
       "sink": "AddBuff",
       "argument": "buffId_32",
       "values": [
@@ -10875,7 +10875,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "UpdateCheck_Prep26",
-      "line": 1220479,
+      "line": 1221091,
       "sink": "AddBuff",
       "argument": "buffId_26",
       "values": [
@@ -10894,7 +10894,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "DoSkill",
-      "line": 1221551,
+      "line": 1222163,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -10917,7 +10917,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerWaterCorrosion",
-      "line": 1223160,
+      "line": 1223772,
       "sink": "AddBuff",
       "argument": "12512011",
       "values": [
@@ -10936,7 +10936,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillEnable",
-      "line": 1223251,
+      "line": 1223863,
       "sink": "AddBuff",
       "argument": "12507011",
       "values": [
@@ -10955,7 +10955,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillEnable",
-      "line": 1223255,
+      "line": 1223867,
       "sink": "AddBuff",
       "argument": "12542011",
       "values": [
@@ -10974,7 +10974,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnAttackLoop",
-      "line": 1223488,
+      "line": 1224100,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -11003,7 +11003,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnSkillDisable",
-      "line": 1223643,
+      "line": 1224255,
       "sink": "AddBuff",
       "argument": "12505001",
       "values": [
@@ -11022,7 +11022,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnCastSkill",
-      "line": 1223773,
+      "line": 1224385,
       "sink": "AddBuff",
       "argument": "12533011",
       "values": [
@@ -11041,7 +11041,7 @@
     {
       "class": "IceFlower",
       "method": "ExplosionLogic",
-      "line": 1224098,
+      "line": 1224710,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -11075,7 +11075,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "PerkLogic_P24",
-      "line": 1224347,
+      "line": 1224959,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_125_Main_P24_IceAOE\u0022",
       "values": [
@@ -11094,7 +11094,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnSkillEnable",
-      "line": 1224415,
+      "line": 1225027,
       "sink": "AddBuff",
       "argument": "12542011",
       "values": [
@@ -11113,7 +11113,7 @@
     {
       "class": "SkillScript_B2_Skill",
       "method": "DoMainLogic",
-      "line": 1225747,
+      "line": 1226359,
       "sink": "PlayAreaEffect",
       "argument": "area_5",
       "values": [
@@ -11132,7 +11132,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1226257,
+      "line": 1226869,
       "sink": "AddBuff",
       "argument": "12354211",
       "values": [
@@ -11151,7 +11151,7 @@
     {
       "class": "Parallel",
       "method": "OnPlayerEnter",
-      "line": 1226339,
+      "line": 1226951,
       "sink": "AddBuff",
       "argument": "12308011",
       "values": [
@@ -11170,7 +11170,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1226392,
+      "line": 1227004,
       "sink": "AddBuff",
       "argument": "12352511",
       "values": [
@@ -11189,7 +11189,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1226396,
+      "line": 1227008,
       "sink": "AddBuff",
       "argument": "12352811",
       "values": [
@@ -11208,7 +11208,7 @@
     {
       "class": "Parallel",
       "method": "OnAreaEnterOrExit",
-      "line": 1226467,
+      "line": 1227079,
       "sink": "AddBuff",
       "argument": "12353011",
       "values": [
@@ -11227,7 +11227,7 @@
     {
       "class": "Parallel",
       "method": "OnAreaEnterOrExit",
-      "line": 1226474,
+      "line": 1227086,
       "sink": "AddBuff",
       "argument": "12352211",
       "values": [
@@ -11246,7 +11246,7 @@
     {
       "class": "Parallel",
       "method": "OnAreaEnterOrExit",
-      "line": 1226478,
+      "line": 1227090,
       "sink": "AddBuff",
       "argument": "12352911",
       "values": [
@@ -11265,7 +11265,7 @@
     {
       "class": "Parallel",
       "method": "OnBulletBlock",
-      "line": 1226496,
+      "line": 1227108,
       "sink": "AddBuff",
       "argument": "12352711",
       "values": [
@@ -11284,7 +11284,7 @@
     {
       "class": "Parallel",
       "method": "OnElementMarkTrigger",
-      "line": 1226523,
+      "line": 1227135,
       "sink": "AddBuff",
       "argument": "12309011",
       "values": [
@@ -11303,7 +11303,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnStart",
-      "line": 1226704,
+      "line": 1227316,
       "sink": "AddBuff",
       "argument": "12311011",
       "values": [
@@ -11322,7 +11322,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnCustomEvent",
-      "line": 1226743,
+      "line": 1227355,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -11356,7 +11356,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnCustomEvent",
-      "line": 1226749,
+      "line": 1227361,
       "sink": "AddBuff",
       "argument": "12313011",
       "values": [
@@ -11375,7 +11375,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1228867,
+      "line": 1229479,
       "sink": "AddBuff",
       "argument": "12003011",
       "values": [
@@ -11394,7 +11394,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1228881,
+      "line": 1229493,
       "sink": "AddBuff",
       "argument": "12033011",
       "values": [
@@ -11413,7 +11413,7 @@
     {
       "class": "Parallel",
       "method": "OnCastSkill",
-      "line": 1228964,
+      "line": 1229576,
       "sink": "AddBuff",
       "argument": "12008011",
       "values": [
@@ -11432,7 +11432,7 @@
     {
       "class": "Parallel",
       "method": "OnCastSkill",
-      "line": 1228975,
+      "line": 1229587,
       "sink": "AddBuff",
       "argument": "12013011",
       "values": [
@@ -11451,7 +11451,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1229123,
+      "line": 1229735,
       "sink": "AddBuff",
       "argument": "2011",
       "values": [
@@ -11470,7 +11470,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1229127,
+      "line": 1229739,
       "sink": "AddBuff",
       "argument": "12042011",
       "values": [
@@ -11489,7 +11489,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1229132,
+      "line": 1229744,
       "sink": "AddBuff",
       "argument": "12012011",
       "values": [
@@ -11508,7 +11508,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1229138,
+      "line": 1229750,
       "sink": "AddBuff",
       "argument": "12025011",
       "values": [
@@ -11527,7 +11527,7 @@
     {
       "class": "Parallel",
       "method": "OnUpdate",
-      "line": 1229471,
+      "line": 1230083,
       "sink": "AddBuff",
       "argument": "12006012",
       "values": [
@@ -11546,7 +11546,7 @@
     {
       "class": "Parallel",
       "method": "OnUpdate",
-      "line": 1229485,
+      "line": 1230097,
       "sink": "AddBuff",
       "argument": "12030011",
       "values": [
@@ -11565,7 +11565,7 @@
     {
       "class": "Parallel",
       "method": "OnUpdate",
-      "line": 1229492,
+      "line": 1230104,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_12001_B2P24_Wreath\u0022",
       "values": [
@@ -11584,7 +11584,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnUseSkill",
-      "line": 1230162,
+      "line": 1230774,
       "sink": "AddBuff",
       "argument": "12043011",
       "values": [
@@ -11603,7 +11603,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1231281,
+      "line": 1231893,
       "sink": "AddBuff",
       "argument": "buffId_2",
       "values": [
@@ -11622,7 +11622,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1231307,
+      "line": 1231919,
       "sink": "AddBuff",
       "argument": "11951111",
       "values": [
@@ -11641,7 +11641,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1231312,
+      "line": 1231924,
       "sink": "AddBuff",
       "argument": "11951311",
       "values": [
@@ -11660,7 +11660,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnBeforeHit",
-      "line": 1231344,
+      "line": 1231956,
       "sink": "PlayAreaEffect",
       "argument": "area_1",
       "values": [
@@ -11679,7 +11679,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1231387,
+      "line": 1231999,
       "sink": "AddBuff",
       "argument": "11950911",
       "values": [
@@ -11698,7 +11698,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCrit",
-      "line": 1231397,
+      "line": 1232009,
       "sink": "AddBuff",
       "argument": "11950711",
       "values": [
@@ -11717,7 +11717,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSpecialEntityBegin",
-      "line": 1231411,
+      "line": 1232023,
       "sink": "AddBuff",
       "argument": "11950511",
       "values": [
@@ -11736,7 +11736,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnElementMarkTrigger",
-      "line": 1231419,
+      "line": 1232031,
       "sink": "AddBuff",
       "argument": "11951211",
       "values": [
@@ -11755,7 +11755,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnMainControlCastSkill",
-      "line": 1231672,
+      "line": 1232284,
       "sink": "AddBuff",
       "argument": "11953111",
       "values": [
@@ -11774,7 +11774,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1231771,
+      "line": 1232383,
       "sink": "AddBuff",
       "argument": "buffId_24",
       "values": [
@@ -11793,7 +11793,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1231791,
+      "line": 1232403,
       "sink": "AddBuff",
       "argument": "11952611",
       "values": [
@@ -11812,7 +11812,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1231797,
+      "line": 1232409,
       "sink": "AddBuff",
       "argument": "11952611",
       "values": [
@@ -11831,7 +11831,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1231830,
+      "line": 1232442,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -11850,7 +11850,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1232722,
+      "line": 1233334,
       "sink": "AddBuff",
       "argument": "buffId_perk_1",
       "values": [
@@ -11869,7 +11869,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1232726,
+      "line": 1233338,
       "sink": "AddBuff",
       "argument": "buffId_perk_5",
       "values": [
@@ -11888,7 +11888,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1232730,
+      "line": 1233342,
       "sink": "AddBuff",
       "argument": "buffId_perk_8",
       "values": [
@@ -11907,7 +11907,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1232734,
+      "line": 1233346,
       "sink": "AddBuff",
       "argument": "buffId_perk_11",
       "values": [
@@ -11926,7 +11926,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1232743,
+      "line": 1233355,
       "sink": "AddBuff",
       "argument": "buffId_perk_31",
       "values": [
@@ -11945,7 +11945,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1232747,
+      "line": 1233359,
       "sink": "AddBuff",
       "argument": "buffId_perk_32",
       "values": [
@@ -11964,7 +11964,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1232757,
+      "line": 1233369,
       "sink": "AddBuff",
       "argument": "buffId_perk_33",
       "values": [
@@ -11988,7 +11988,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1232878,
+      "line": 1233490,
       "sink": "AddBuff",
       "argument": "buffId_perk_27",
       "values": [
@@ -12007,7 +12007,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1232886,
+      "line": 1233498,
       "sink": "AddBuff",
       "argument": "buffId_perk_30",
       "values": [
@@ -12026,7 +12026,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1232939,
+      "line": 1233551,
       "sink": "AddBuff",
       "argument": "buffId_perk_26",
       "values": [
@@ -12045,7 +12045,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1232956,
+      "line": 1233568,
       "sink": "AddBuff",
       "argument": "buffId_perk_9",
       "values": [
@@ -12064,7 +12064,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1232961,
+      "line": 1233573,
       "sink": "PlayAreaEffect",
       "argument": "areaEffectAlias_perk_8",
       "values": [
@@ -12083,7 +12083,7 @@
     {
       "class": "Parallel",
       "method": "DelayPlayAreaEffect",
-      "line": 1232976,
+      "line": 1233588,
       "sink": "PlayAreaEffect",
       "argument": "areaEffectAlias_24",
       "values": [
@@ -12102,7 +12102,7 @@
     {
       "class": "Parallel",
       "method": "OnCastSkill",
-      "line": 1233000,
+      "line": 1233612,
       "sink": "AddBuff",
       "argument": "buffId_42",
       "values": [
@@ -12121,7 +12121,7 @@
     {
       "class": "Parallel",
       "method": "OnCastSkill",
-      "line": 1233014,
+      "line": 1233626,
       "sink": "AddBuff",
       "argument": "buffId_perk_3",
       "values": [
@@ -12140,7 +12140,7 @@
     {
       "class": "Parallel",
       "method": "OnCastSkill",
-      "line": 1233021,
+      "line": 1233633,
       "sink": "AddBuff",
       "argument": "buffId_perk_10",
       "values": [
@@ -12159,7 +12159,7 @@
     {
       "class": "Parallel",
       "method": "OnCastSkill",
-      "line": 1233025,
+      "line": 1233637,
       "sink": "AddBuff",
       "argument": "buffId_perk_13",
       "values": [
@@ -12178,7 +12178,7 @@
     {
       "class": "SkillScript_NormalAttack",
       "method": "OnStart",
-      "line": 1233558,
+      "line": 1234170,
       "sink": "AddBuff",
       "argument": "buffId_perk_3",
       "values": [
@@ -12197,7 +12197,7 @@
     {
       "class": "Parallel_old",
       "method": "OnDamage",
-      "line": 1235868,
+      "line": 1236480,
       "sink": "PlayAreaEffect",
       "argument": "areaEffectAlias_perk_11",
       "values": [
@@ -12216,7 +12216,7 @@
     {
       "class": "Parallel_old",
       "method": "OnCastSkill",
-      "line": 1235909,
+      "line": 1236521,
       "sink": "PlayAreaEffect",
       "argument": "areaEffectDict_perk_10[perkLevel2]",
       "values": [
@@ -12235,7 +12235,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1237661,
+      "line": 1238273,
       "sink": "AddBuff",
       "argument": "buff_p1",
       "values": [
@@ -12254,7 +12254,7 @@
     {
       "class": "Parallel",
       "method": "OnReciveAttack",
-      "line": 1237761,
+      "line": 1238373,
       "sink": "AddBuff",
       "argument": "3011",
       "values": [
@@ -12273,7 +12273,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1237841,
+      "line": 1238453,
       "sink": "AddBuff",
       "argument": "11709011",
       "values": [
@@ -12292,7 +12292,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1237846,
+      "line": 1238458,
       "sink": "AddBuff",
       "argument": "11706011",
       "values": [
@@ -12311,7 +12311,7 @@
     {
       "class": "Parallel",
       "method": "OnDamage",
-      "line": 1237966,
+      "line": 1238578,
       "sink": "AddBuff",
       "argument": "11729011",
       "values": [
@@ -12330,7 +12330,7 @@
     {
       "class": "Parallel",
       "method": "OnDamage",
-      "line": 1237975,
+      "line": 1238587,
       "sink": "PlayAreaEffect",
       "argument": "areaEffectAlias_perk_12",
       "values": [
@@ -12349,7 +12349,7 @@
     {
       "class": "Parallel",
       "method": "OnAreaEnterOrExit",
-      "line": 1238031,
+      "line": 1238643,
       "sink": "AddBuff",
       "argument": "11730011",
       "values": [
@@ -12368,7 +12368,7 @@
     {
       "class": "Parallel",
       "method": "OnLightTrigger",
-      "line": 1238230,
+      "line": 1238842,
       "sink": "AddBuff",
       "argument": "11713011",
       "values": [
@@ -12387,7 +12387,7 @@
     {
       "class": "Parallel",
       "method": "OnUpdate",
-      "line": 1238339,
+      "line": 1238951,
       "sink": "AddBuff",
       "argument": "11708011",
       "values": [
@@ -12406,7 +12406,7 @@
     {
       "class": "SkillScript_Support_Skill",
       "method": "CustomAction",
-      "line": 1239051,
+      "line": 1239663,
       "sink": "AddAreaEffectLeftTime",
       "argument": "CommonUtils.GetScriptValue(_actor, 11726011)",
       "values": [
@@ -12486,7 +12486,7 @@
     {
       "class": "SkillScript_Support_Skill",
       "method": "CustomAction",
-      "line": 1239059,
+      "line": 1239671,
       "sink": "PlayAreaEffect",
       "argument": "(!flag) ? _areaEffectAlias_24 : _areaEffectAlias_2124",
       "values": [
@@ -12515,7 +12515,7 @@
     {
       "class": "SkillScript_Support_Skill",
       "method": "CustomAction",
-      "line": 1239062,
+      "line": 1239674,
       "sink": "AddAreaEffectLeftTime",
       "argument": "CommonUtils.GetScriptValue(_actor, 11726011)",
       "values": [
@@ -12555,7 +12555,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillEnable",
-      "line": 1239501,
+      "line": 1240113,
       "sink": "AddBuff",
       "argument": "11611011",
       "values": [
@@ -12574,7 +12574,7 @@
     {
       "class": "SkillScript_Ultra",
       "method": "OnSkillEnable",
-      "line": 1239881,
+      "line": 1240493,
       "sink": "AddBuff",
       "argument": "11643011",
       "values": [
@@ -12593,7 +12593,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1240819,
+      "line": 1241431,
       "sink": "AddBuff",
       "argument": "buffID",
       "values": [
@@ -12616,7 +12616,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerLandMark",
-      "line": 1240837,
+      "line": 1241449,
       "sink": "AddBuff",
       "argument": "11613011",
       "values": [
@@ -12635,7 +12635,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "OnCustomEvent",
-      "line": 1240918,
+      "line": 1241530,
       "sink": "AddBuff",
       "argument": "buffID",
       "values": [
@@ -12658,7 +12658,7 @@
     {
       "class": "SkillScript_Skill_MainControl",
       "method": "Shoot",
-      "line": 1241069,
+      "line": 1241681,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -12681,7 +12681,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1241550,
+      "line": 1242162,
       "sink": "AddBuff",
       "argument": "11629012",
       "values": [
@@ -12705,7 +12705,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1241555,
+      "line": 1242167,
       "sink": "AddBuff",
       "argument": "11629011",
       "values": [
@@ -12729,7 +12729,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1241557,
+      "line": 1242169,
       "sink": "AddBuff",
       "argument": "buffID",
       "values": [
@@ -12752,7 +12752,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1241594,
+      "line": 1242206,
       "sink": "AddBuff",
       "argument": "6011",
       "values": [
@@ -12771,7 +12771,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1241598,
+      "line": 1242210,
       "sink": "AddBuff",
       "argument": "11626011",
       "values": [
@@ -12790,7 +12790,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1241602,
+      "line": 1242214,
       "sink": "AddBuff",
       "argument": "6011",
       "values": [
@@ -12809,7 +12809,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "TriggerSeedExplosion",
-      "line": 1241686,
+      "line": 1242298,
       "sink": "AddBuff",
       "argument": "11691014",
       "values": [
@@ -12828,7 +12828,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "TriggerSeedExplosion",
-      "line": 1241714,
+      "line": 1242326,
       "sink": "Shoot",
       "argument": "\u0022Bullet_11601_Skill_Sup_Seed_Perk30\u0022",
       "values": [
@@ -12847,7 +12847,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "OnCustomEvent",
-      "line": 1241832,
+      "line": 1242444,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -12965,7 +12965,7 @@
     {
       "class": "SkillScript_Skill_Support",
       "method": "PerkLogic_P25",
-      "line": 1241859,
+      "line": 1242471,
       "sink": "AddBuff",
       "argument": "11625011",
       "values": [
@@ -12984,7 +12984,7 @@
     {
       "class": "ParallelScript",
       "method": "OnCastSkill",
-      "line": 1242086,
+      "line": 1242698,
       "sink": "AddBuff",
       "argument": "11541011",
       "values": [
@@ -13003,7 +13003,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnEnable",
-      "line": 1243761,
+      "line": 1244373,
       "sink": "AddBuff",
       "argument": "11511011",
       "values": [
@@ -13022,7 +13022,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1243834,
+      "line": 1244446,
       "sink": "AddBuff",
       "argument": "11502011",
       "values": [
@@ -13041,7 +13041,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1243838,
+      "line": 1244450,
       "sink": "AddBuff",
       "argument": "11502012",
       "values": [
@@ -13060,7 +13060,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1243855,
+      "line": 1244467,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_11501_Main_Skill_P06_Beam\u0022",
       "values": [
@@ -13079,7 +13079,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1243864,
+      "line": 1244476,
       "sink": "AddBuff",
       "argument": "11503011",
       "values": [
@@ -13098,7 +13098,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1243870,
+      "line": 1244482,
       "sink": "AddBuff",
       "argument": "11505011",
       "values": [
@@ -13117,7 +13117,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1243887,
+      "line": 1244499,
       "sink": "AddBuff",
       "argument": "11510011",
       "values": [
@@ -13136,7 +13136,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerLightMark",
-      "line": 1243896,
+      "line": 1244508,
       "sink": "AddBuff",
       "argument": "11511012",
       "values": [
@@ -13155,7 +13155,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerLightMark",
-      "line": 1243900,
+      "line": 1244512,
       "sink": "AddBuff",
       "argument": "11512011",
       "values": [
@@ -13174,7 +13174,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfCastSkill",
-      "line": 1243932,
+      "line": 1244544,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_11501_LimitDodge_Stun\u0022",
       "values": [
@@ -13193,7 +13193,7 @@
     {
       "class": "ActionScript_Support",
       "method": "OnCastSkill",
-      "line": 1245145,
+      "line": 1245757,
       "sink": "AddBuff",
       "argument": "11532011",
       "values": [
@@ -13217,7 +13217,7 @@
     {
       "class": "ActionScript_Support",
       "method": "PerkLogic_P28",
-      "line": 1245249,
+      "line": 1245861,
       "sink": "AddBuff",
       "argument": "11528011",
       "values": [
@@ -13236,7 +13236,7 @@
     {
       "class": "ActionScript_Support",
       "method": "PerkLogic_P28",
-      "line": 1245264,
+      "line": 1245876,
       "sink": "AddBuff",
       "argument": "11528012",
       "values": [
@@ -13255,7 +13255,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1245615,
+      "line": 1246227,
       "sink": "AddBuff",
       "argument": "11533011",
       "values": [
@@ -13274,7 +13274,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnPlayerEnter",
-      "line": 1245641,
+      "line": 1246253,
       "sink": "AddBuff",
       "argument": "11533012",
       "values": [
@@ -13293,7 +13293,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnPlayerDamaged",
-      "line": 1245753,
+      "line": 1246365,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -13347,7 +13347,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1245781,
+      "line": 1246393,
       "sink": "AddBuff",
       "argument": "11521011",
       "values": [
@@ -13366,7 +13366,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1245785,
+      "line": 1246397,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_11501_Support_Skill_P22_Boom\u0022",
       "values": [
@@ -13385,7 +13385,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1245797,
+      "line": 1246409,
       "sink": "AddBuff",
       "argument": "11527011",
       "values": [
@@ -13404,7 +13404,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfDamaged",
-      "line": 1245808,
+      "line": 1246420,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_11501_Support_Skill_P30_Aoe\u0022",
       "values": [
@@ -13423,7 +13423,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnLightMarkTrigger",
-      "line": 1245826,
+      "line": 1246438,
       "sink": "AddBuff",
       "argument": "11525011",
       "values": [
@@ -13447,7 +13447,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnLightMarkTrigger",
-      "line": 1245828,
+      "line": 1246440,
       "sink": "AddBuff",
       "argument": "11525014",
       "values": [
@@ -13471,7 +13471,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnLightMarkTrigger",
-      "line": 1245841,
+      "line": 1246453,
       "sink": "AddBuff",
       "argument": "11529011",
       "values": [
@@ -13495,7 +13495,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnLightMarkTrigger",
-      "line": 1245845,
+      "line": 1246457,
       "sink": "AddBuff",
       "argument": "11529012",
       "values": [
@@ -13519,7 +13519,7 @@
     {
       "class": "ParallelScript",
       "method": "BerserkState",
-      "line": 1247241,
+      "line": 1247853,
       "sink": "AddBuff",
       "argument": "buff_12_atkspk",
       "values": [
@@ -13538,7 +13538,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1247498,
+      "line": 1248110,
       "sink": "AddBuff",
       "argument": "buff_11",
       "values": [
@@ -13557,7 +13557,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1247600,
+      "line": 1248212,
       "sink": "AddBuff",
       "argument": "buffId_S2_4_1",
       "values": [
@@ -13576,7 +13576,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1247605,
+      "line": 1248217,
       "sink": "AddBuff",
       "argument": "buffId_S2_4_2",
       "values": [
@@ -13595,7 +13595,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1247610,
+      "line": 1248222,
       "sink": "AddBuff",
       "argument": "buffId_S2_4_3",
       "values": [
@@ -13614,7 +13614,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1247614,
+      "line": 1248226,
       "sink": "AddBuff",
       "argument": "buffId_S2_4_3",
       "values": [
@@ -13633,7 +13633,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1247618,
+      "line": 1248230,
       "sink": "AddBuff",
       "argument": "buffId_S2",
       "values": [
@@ -13652,7 +13652,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCrit",
-      "line": 1247683,
+      "line": 1248295,
       "sink": "AddBuff",
       "argument": "buffId_7",
       "values": [
@@ -13671,7 +13671,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCrit",
-      "line": 1247687,
+      "line": 1248299,
       "sink": "AddBuff",
       "argument": "buff_9",
       "values": [
@@ -13690,7 +13690,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCrit",
-      "line": 1247696,
+      "line": 1248308,
       "sink": "AddBuff",
       "argument": "buff_10",
       "values": [
@@ -13709,7 +13709,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCustomEvent",
-      "line": 1247729,
+      "line": 1248341,
       "sink": "AddBuff",
       "argument": "buff_6_dmg",
       "values": [
@@ -13728,7 +13728,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerMask",
-      "line": 1247743,
+      "line": 1248355,
       "sink": "AddBuff",
       "argument": "buff_12",
       "values": [
@@ -13747,7 +13747,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "DoAddBuff",
-      "line": 1247756,
+      "line": 1248368,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -13766,7 +13766,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "DoAddBuff",
-      "line": 1247761,
+      "line": 1248373,
       "sink": "AddBuff",
       "argument": "buff_6",
       "values": [
@@ -13785,7 +13785,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "DotShoot",
-      "line": 1247857,
+      "line": 1248469,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_1",
       "values": [
@@ -13804,7 +13804,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1248045,
+      "line": 1248657,
       "sink": "AddBuff",
       "argument": "buff_28",
       "values": [
@@ -13823,7 +13823,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1248053,
+      "line": 1248665,
       "sink": "AddBuff",
       "argument": "buff_31",
       "values": [
@@ -13842,7 +13842,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1248065,
+      "line": 1248677,
       "sink": "AddBuff",
       "argument": "buff_33",
       "values": [
@@ -13866,7 +13866,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1248119,
+      "line": 1248731,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_25",
       "values": [
@@ -13885,7 +13885,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnCastSkill",
-      "line": 1248140,
+      "line": 1248752,
       "sink": "AddBuff",
       "argument": "buff_32",
       "values": [
@@ -13904,7 +13904,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248329,
+      "line": 1248941,
       "sink": "AddBuff",
       "argument": "buff_1_2",
       "values": [
@@ -13923,7 +13923,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248334,
+      "line": 1248946,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias",
       "values": [
@@ -13942,7 +13942,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248339,
+      "line": 1248951,
       "sink": "AddBuff",
       "argument": "buff_1_3",
       "values": [
@@ -13961,7 +13961,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248344,
+      "line": 1248956,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias2",
       "values": [
@@ -13980,7 +13980,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248348,
+      "line": 1248960,
       "sink": "AddBuff",
       "argument": "buff_1_3",
       "values": [
@@ -13999,7 +13999,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248353,
+      "line": 1248965,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias3",
       "values": [
@@ -14018,7 +14018,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248358,
+      "line": 1248970,
       "sink": "AddBuff",
       "argument": "buff_1",
       "values": [
@@ -14037,7 +14037,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248363,
+      "line": 1248975,
       "sink": "PlayAreaEffect",
       "argument": "fxAlias4",
       "values": [
@@ -14056,7 +14056,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1248400,
+      "line": 1249012,
       "sink": "AddBuff",
       "argument": "buff_29",
       "values": [
@@ -14075,7 +14075,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnActorEnergyChange",
-      "line": 1248456,
+      "line": 1249068,
       "sink": "AddBuff",
       "argument": "buff_31",
       "values": [
@@ -14094,7 +14094,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoAddBuff",
-      "line": 1248467,
+      "line": 1249079,
       "sink": "AddBuff",
       "argument": "buff_27",
       "values": [
@@ -14113,7 +14113,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoShootParabolaBombs",
-      "line": 1248487,
+      "line": 1249099,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -14142,7 +14142,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1251172,
+      "line": 1251784,
       "sink": "AddBuff",
       "argument": "buffId_5_1",
       "values": [
@@ -14161,7 +14161,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastEndSkill",
-      "line": 1251231,
+      "line": 1251843,
       "sink": "AddBuff",
       "argument": "buff_11",
       "values": [
@@ -14180,7 +14180,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1251304,
+      "line": 1251916,
       "sink": "AddBuff",
       "argument": "buffId_1",
       "values": [
@@ -14199,7 +14199,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1251308,
+      "line": 1251920,
       "sink": "AddBuff",
       "argument": "buffId_3",
       "values": [
@@ -14218,7 +14218,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1251313,
+      "line": 1251925,
       "sink": "AddBuff",
       "argument": "buffId_8",
       "values": [
@@ -14237,7 +14237,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1251327,
+      "line": 1251939,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_9",
       "values": [
@@ -14256,7 +14256,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1251331,
+      "line": 1251943,
       "sink": "AddBuff",
       "argument": "buffId_12",
       "values": [
@@ -14275,7 +14275,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHurt",
-      "line": 1251340,
+      "line": 1251952,
       "sink": "AddBuff",
       "argument": "buffId_5_2",
       "values": [
@@ -14294,7 +14294,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "CastArea",
-      "line": 1251374,
+      "line": 1251986,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_10",
       "values": [
@@ -14313,7 +14313,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "CastArea",
-      "line": 1251379,
+      "line": 1251991,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_10",
       "values": [
@@ -14332,7 +14332,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1251587,
+      "line": 1252199,
       "sink": "AddBuff",
       "argument": "buffId_25",
       "values": [
@@ -14351,7 +14351,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1251593,
+      "line": 1252205,
       "sink": "AddBuff",
       "argument": "buffId_26_1",
       "values": [
@@ -14370,7 +14370,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1251597,
+      "line": 1252209,
       "sink": "AddBuff",
       "argument": "buffId_27",
       "values": [
@@ -14389,7 +14389,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1251601,
+      "line": 1252213,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_30",
       "values": [
@@ -14408,7 +14408,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoAddBuff",
-      "line": 1251663,
+      "line": 1252275,
       "sink": "AddBuff",
       "argument": "buffId_26_2",
       "values": [
@@ -14427,7 +14427,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoAddBuff2",
-      "line": 1251679,
+      "line": 1252291,
       "sink": "AddBuff",
       "argument": "buffId_28",
       "values": [
@@ -14446,7 +14446,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "DoCastArea",
-      "line": 1251699,
+      "line": 1252311,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_29",
       "values": [
@@ -14465,7 +14465,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "onCustomEvent",
-      "line": 1251960,
+      "line": 1252572,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_P03_04",
       "values": [
@@ -14484,7 +14484,7 @@
     {
       "class": "SkillScript_MainControl",
       "method": "onCustomEvent",
-      "line": 1251964,
+      "line": 1252576,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_P04",
       "values": [
@@ -14503,7 +14503,7 @@
     {
       "class": "SkillScript_MainControl_S2",
       "method": "onCustomEvent",
-      "line": 1252125,
+      "line": 1252737,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_P03_04",
       "values": [
@@ -14522,7 +14522,7 @@
     {
       "class": "SkillScript_MainControl_S2",
       "method": "onCustomEvent",
-      "line": 1252129,
+      "line": 1252741,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_P04",
       "values": [
@@ -14541,7 +14541,7 @@
     {
       "class": "SkillScript_Support_NormalAttack",
       "method": "onCustomEvent",
-      "line": 1252643,
+      "line": 1253255,
       "sink": "Shoot",
       "argument": "bullut_WaterArrowB",
       "values": [
@@ -14560,7 +14560,7 @@
     {
       "class": "SkillScript_Support_NormalAttack",
       "method": "onCustomEvent",
-      "line": 1252657,
+      "line": 1253269,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -14583,7 +14583,7 @@
     {
       "class": "SkillScript_Support_NormalAttack",
       "method": "ShootBezier",
-      "line": 1252693,
+      "line": 1253305,
       "sink": "Shoot",
       "argument": "bulletAlias",
       "values": [
@@ -14642,7 +14642,7 @@
     {
       "class": "SkillScript_Support_NormalAttack",
       "method": "ShootBezier",
-      "line": 1252694,
+      "line": 1253306,
       "sink": "AddBuff",
       "argument": "buffId_22",
       "values": [
@@ -14661,7 +14661,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1253412,
+      "line": 1254024,
       "sink": "AddBuff",
       "argument": "buffID_10",
       "values": [
@@ -14680,7 +14680,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1253450,
+      "line": 1254062,
       "sink": "AddBuff",
       "argument": "11254311",
       "values": [
@@ -14699,7 +14699,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1253542,
+      "line": 1254154,
       "sink": "AddBuff",
       "argument": "buffId_27",
       "values": [
@@ -14718,7 +14718,7 @@
     {
       "class": "Parallel",
       "method": "OnElementMarkTrigger",
-      "line": 1253635,
+      "line": 1254247,
       "sink": "AddBuff",
       "argument": "buff_31",
       "values": [
@@ -14737,7 +14737,7 @@
     {
       "class": "ParallelScript",
       "method": "TriggerMask",
-      "line": 1255906,
+      "line": 1256518,
       "sink": "AddBuff",
       "argument": "buffId_10",
       "values": [
@@ -14756,7 +14756,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnCastSkill",
-      "line": 1256145,
+      "line": 1256757,
       "sink": "AddBuff",
       "argument": "buffId_9",
       "values": [
@@ -14775,7 +14775,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1256230,
+      "line": 1256842,
       "sink": "AddBuff",
       "argument": "buffId_1",
       "values": [
@@ -14794,7 +14794,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1256233,
+      "line": 1256845,
       "sink": "AddBuff",
       "argument": "buffId_1_Fbx",
       "values": [
@@ -14813,7 +14813,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1256250,
+      "line": 1256862,
       "sink": "PlayAreaEffect",
       "argument": "aoe_2_small",
       "values": [
@@ -14832,7 +14832,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1256254,
+      "line": 1256866,
       "sink": "PlayAreaEffect",
       "argument": "aoe_2_big",
       "values": [
@@ -14851,7 +14851,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPre",
-      "line": 1256260,
+      "line": 1256872,
       "sink": "AddBuff",
       "argument": "11151311",
       "values": [
@@ -14870,7 +14870,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1256302,
+      "line": 1256914,
       "sink": "AddBuff",
       "argument": "buffId_12",
       "values": [
@@ -14889,7 +14889,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHitPost",
-      "line": 1256332,
+      "line": 1256944,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_4",
       "values": [
@@ -14908,7 +14908,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnHurt",
-      "line": 1256353,
+      "line": 1256965,
       "sink": "PlayAreaEffect",
       "argument": "aoe_11",
       "values": [
@@ -14927,7 +14927,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "IntervalBuff",
-      "line": 1256397,
+      "line": 1257009,
       "sink": "AddBuff",
       "argument": "11150711",
       "values": [
@@ -14946,7 +14946,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnEnable",
-      "line": 1256498,
+      "line": 1257110,
       "sink": "AddBuff",
       "argument": "11153211",
       "values": [
@@ -14965,7 +14965,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPre",
-      "line": 1256554,
+      "line": 1257166,
       "sink": "AddBuff",
       "argument": "11152711",
       "values": [
@@ -14984,7 +14984,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnHitPost",
-      "line": 1256572,
+      "line": 1257184,
       "sink": "AddBuff",
       "argument": "buffId_9",
       "values": [
@@ -15003,7 +15003,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnMonsterKilled",
-      "line": 1256585,
+      "line": 1257197,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_9",
       "values": [
@@ -15022,7 +15022,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnAreaEffectFinish",
-      "line": 1256600,
+      "line": 1257212,
       "sink": "PlayAreaEffect",
       "argument": "text",
       "values": [
@@ -15061,7 +15061,7 @@
     {
       "class": "SkillScript_Support",
       "method": "onCustomEvent",
-      "line": 1257479,
+      "line": 1258091,
       "sink": "AddAreaEffectLeftTime",
       "argument": "CommonUtils.GetScriptValue(_actor, 11152611)",
       "values": [
@@ -15221,7 +15221,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1258121,
+      "line": 1258733,
       "sink": "AddBuff",
       "argument": "11053311",
       "values": [
@@ -15245,7 +15245,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1258125,
+      "line": 1258737,
       "sink": "AddBuff",
       "argument": "11051111",
       "values": [
@@ -15269,7 +15269,7 @@
     {
       "class": "Parallel",
       "method": "OnAreaEffectFinish",
-      "line": 1258183,
+      "line": 1258795,
       "sink": "PlayAreaEffect",
       "argument": "\u0022Actor/Character/11001/Weapons/AreaEffect_110_Support_QuanZhang_Boom\u0022",
       "values": [
@@ -15288,7 +15288,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1258305,
+      "line": 1258917,
       "sink": "AddBuff",
       "argument": "11050711",
       "values": [
@@ -15307,7 +15307,7 @@
     {
       "class": "Parallel",
       "method": "OnReceiveDamage",
-      "line": 1258309,
+      "line": 1258921,
       "sink": "AddBuff",
       "argument": "11052711",
       "values": [
@@ -15326,7 +15326,7 @@
     {
       "class": "Parallel",
       "method": "OnDarkHit",
-      "line": 1258360,
+      "line": 1258972,
       "sink": "AddBuff",
       "argument": "11050611",
       "values": [
@@ -15345,7 +15345,7 @@
     {
       "class": "Parallel",
       "method": "OnDarkHit",
-      "line": 1258364,
+      "line": 1258976,
       "sink": "AddBuff",
       "argument": "11043011",
       "values": [
@@ -15364,7 +15364,7 @@
     {
       "class": "Parallel",
       "method": "OnSummonAvatar",
-      "line": 1258470,
+      "line": 1259082,
       "sink": "AddBuff",
       "argument": "11050811",
       "values": [
@@ -15383,7 +15383,7 @@
     {
       "class": "Parallel",
       "method": "OnSummonAvatar",
-      "line": 1258474,
+      "line": 1259086,
       "sink": "AddBuff",
       "argument": "11050911",
       "values": [
@@ -15402,7 +15402,7 @@
     {
       "class": "Parallel",
       "method": "OnSummonAvatar",
-      "line": 1258478,
+      "line": 1259090,
       "sink": "AddBuff",
       "argument": "11051011",
       "values": [
@@ -15421,7 +15421,7 @@
     {
       "class": "Parallel",
       "method": "OnSummonAvatar",
-      "line": 1258482,
+      "line": 1259094,
       "sink": "AddBuff",
       "argument": "11051211",
       "values": [
@@ -15440,7 +15440,7 @@
     {
       "class": "Parallel",
       "method": "OnSummonAvatar",
-      "line": 1258486,
+      "line": 1259098,
       "sink": "AddBuff",
       "argument": "11053111",
       "values": [
@@ -15459,7 +15459,7 @@
     {
       "class": "SkillScript_Dodge",
       "method": "OnSkillEnable",
-      "line": 1258681,
+      "line": 1259293,
       "sink": "AddBuff",
       "argument": "11051311",
       "values": [
@@ -15478,7 +15478,7 @@
     {
       "class": "SkillScript_Zhiyuan_Skill",
       "method": "OnCustomEvent",
-      "line": 1259150,
+      "line": 1259762,
       "sink": "AddAreaEffectLeftTime",
       "argument": "Parallel.addTime_21",
       "values": [
@@ -15497,7 +15497,7 @@
     {
       "class": "SkillScript_Zhiyuan_Skill",
       "method": "OnCustomEvent",
-      "line": 1259151,
+      "line": 1259763,
       "sink": "PlayAreaEffect",
       "argument": "\u0022Actor/Character/11001/Weapons/AreaEffect_110_Support_QuanZhang_LoopAOE\u0022",
       "values": [
@@ -15516,7 +15516,7 @@
     {
       "class": "ParallelScript",
       "method": "OnReceiveAttack",
-      "line": 1259477,
+      "line": 1260089,
       "sink": "AddBuff",
       "argument": "10854101",
       "values": [
@@ -15535,7 +15535,7 @@
     {
       "class": "ParallelScript",
       "method": "OnDied",
-      "line": 1259647,
+      "line": 1260259,
       "sink": "AddBuff",
       "argument": "10854301",
       "values": [
@@ -15554,7 +15554,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfAttacked",
-      "line": 1260353,
+      "line": 1260965,
       "sink": "AddBuff",
       "argument": "10850801",
       "values": [
@@ -15573,7 +15573,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnSelfDamaged",
-      "line": 1260400,
+      "line": 1261012,
       "sink": "AddBuff",
       "argument": "10850711",
       "values": [
@@ -15592,7 +15592,7 @@
     {
       "class": "ParallelScript_MainControl",
       "method": "OnTriggerFireMark",
-      "line": 1260411,
+      "line": 1261023,
       "sink": "AddBuff",
       "argument": "10851301",
       "values": [
@@ -15611,7 +15611,7 @@
     {
       "class": "SkillScript_MainControl_NormalAttack",
       "method": "OnSkillEnable",
-      "line": 1260496,
+      "line": 1261108,
       "sink": "AddBuff",
       "argument": "10850901",
       "values": [
@@ -15630,7 +15630,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "ShootLogic_24",
-      "line": 1261029,
+      "line": 1261641,
       "sink": "Shoot",
       "argument": "\u0022Bullet_108_B2_Skill\u0022",
       "values": [
@@ -15649,7 +15649,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnBulletFinish",
-      "line": 1261066,
+      "line": 1261678,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_108_B2P21_Skill_FirePit\u0022",
       "values": [
@@ -15668,7 +15668,7 @@
     {
       "class": "ParallelScript_Support",
       "method": "OnSelfAttacked",
-      "line": 1261097,
+      "line": 1261709,
       "sink": "AddBuff",
       "argument": "1011",
       "values": [
@@ -15687,7 +15687,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1261654,
+      "line": 1262266,
       "sink": "AddBuff",
       "argument": "10710011",
       "values": [
@@ -15706,7 +15706,7 @@
     {
       "class": "Parallel",
       "method": "OnEnable",
-      "line": 1261661,
+      "line": 1262273,
       "sink": "AddBuff",
       "argument": "10733011",
       "values": [
@@ -15725,7 +15725,7 @@
     {
       "class": "Parallel",
       "method": "OnActorEnter",
-      "line": 1261744,
+      "line": 1262356,
       "sink": "AddBuff",
       "argument": "10731011",
       "values": [
@@ -15744,7 +15744,7 @@
     {
       "class": "Parallel",
       "method": "OnBeforeHit",
-      "line": 1261791,
+      "line": 1262403,
       "sink": "AddBuff",
       "argument": "10741011",
       "values": [
@@ -15763,7 +15763,7 @@
     {
       "class": "Parallel",
       "method": "OnGetBuff",
-      "line": 1261867,
+      "line": 1262479,
       "sink": "AddBuff",
       "argument": "10726011",
       "values": [
@@ -15782,7 +15782,7 @@
     {
       "class": "Parallel",
       "method": "OnGetBuff",
-      "line": 1261871,
+      "line": 1262483,
       "sink": "AddBuff",
       "argument": "10711011",
       "values": [
@@ -15801,7 +15801,7 @@
     {
       "class": "Parallel",
       "method": "OnShieldHit",
-      "line": 1261929,
+      "line": 1262541,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_107_Support_Skill_P21_LightTag\u0022",
       "values": [
@@ -15820,7 +15820,7 @@
     {
       "class": "Parallel",
       "method": "OnShieldHit",
-      "line": 1261942,
+      "line": 1262554,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_p23",
       "values": [
@@ -15839,7 +15839,7 @@
     {
       "class": "Parallel",
       "method": "OnShieldHit",
-      "line": 1261955,
+      "line": 1262567,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_p23",
       "values": [
@@ -15858,7 +15858,7 @@
     {
       "class": "Parallel",
       "method": "OnShieldHit",
-      "line": 1261959,
+      "line": 1262571,
       "sink": "AddBuff",
       "argument": "10728011",
       "values": [
@@ -15877,7 +15877,7 @@
     {
       "class": "Parallel",
       "method": "OnShieldHit",
-      "line": 1261971,
+      "line": 1262583,
       "sink": "AddBuff",
       "argument": "10729011",
       "values": [
@@ -15896,7 +15896,7 @@
     {
       "class": "Parallel",
       "method": "OnUpdate",
-      "line": 1262043,
+      "line": 1262655,
       "sink": "AddBuff",
       "argument": "10713011",
       "values": [
@@ -15915,7 +15915,7 @@
     {
       "class": "Parallel",
       "method": "OnUpdate",
-      "line": 1262059,
+      "line": 1262671,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_p25",
       "values": [
@@ -15934,7 +15934,7 @@
     {
       "class": "Parallel",
       "method": "OnUpdate",
-      "line": 1262060,
+      "line": 1262672,
       "sink": "AddBuff",
       "argument": "10725011",
       "values": [
@@ -15953,7 +15953,7 @@
     {
       "class": "SkillScript_Zhukong_Skill",
       "method": "OnStart",
-      "line": 1262697,
+      "line": 1263309,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_107_Main_Skill_P04_LightDefenseDown\u0022",
       "values": [
@@ -15972,7 +15972,7 @@
     {
       "class": "SkillScript_Zhukong_Skill",
       "method": "OnReceiveAttack",
-      "line": 1262858,
+      "line": 1263470,
       "sink": "AddBuff",
       "argument": "10705011",
       "values": [
@@ -15991,7 +15991,7 @@
     {
       "class": "SkillScript_Zhukong_Skill",
       "method": "OnReceiveAttack",
-      "line": 1262864,
+      "line": 1263476,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_107_Main_Skill_P06_Boom\u0022",
       "values": [
@@ -16010,7 +16010,7 @@
     {
       "class": "Parallel",
       "method": "OnCastEndSkill",
-      "line": 1263772,
+      "line": 1264384,
       "sink": "AddBuff",
       "argument": "10354101",
       "values": [
@@ -16029,7 +16029,7 @@
     {
       "class": "Parallel",
       "method": "OnCastEndSkill",
-      "line": 1263777,
+      "line": 1264389,
       "sink": "AddBuff",
       "argument": "buffId_2",
       "values": [
@@ -16048,7 +16048,7 @@
     {
       "class": "Parallel",
       "method": "OnHitPre",
-      "line": 1263809,
+      "line": 1264421,
       "sink": "AddBuff",
       "argument": "buffId_3",
       "values": [
@@ -16067,7 +16067,7 @@
     {
       "class": "Parallel_B1",
       "method": "OnCastSkill",
-      "line": 1264114,
+      "line": 1264726,
       "sink": "AddBuff",
       "argument": "10350701",
       "values": [
@@ -16086,7 +16086,7 @@
     {
       "class": "Parallel_B1",
       "method": "OnCastEndSkill",
-      "line": 1264140,
+      "line": 1264752,
       "sink": "AddBuff",
       "argument": "10350801",
       "values": [
@@ -16105,7 +16105,7 @@
     {
       "class": "Parallel_B1",
       "method": "OnHitPre",
-      "line": 1264231,
+      "line": 1264843,
       "sink": "PlayAreaEffect",
       "argument": "areaEffect_4",
       "values": [
@@ -16124,7 +16124,7 @@
     {
       "class": "Parallel_B1",
       "method": "OnHitPost",
-      "line": 1264251,
+      "line": 1264863,
       "sink": "AddBuff",
       "argument": "10303011",
       "values": [
@@ -16143,7 +16143,7 @@
     {
       "class": "Parallel_B1",
       "method": "OnHitPost",
-      "line": 1264271,
+      "line": 1264883,
       "sink": "AddBuff",
       "argument": "buffId_11",
       "values": [
@@ -16162,7 +16162,7 @@
     {
       "class": "Parallel_B1",
       "method": "OnCrit",
-      "line": 1264292,
+      "line": 1264904,
       "sink": "AddBuff",
       "argument": "10351301",
       "values": [
@@ -16181,7 +16181,7 @@
     {
       "class": "Parallel_B1",
       "method": "OnCrit",
-      "line": 1264311,
+      "line": 1264923,
       "sink": "AddBuff",
       "argument": "buffId_5",
       "values": [
@@ -16200,7 +16200,7 @@
     {
       "class": "Parallel_B2",
       "method": "OnEnable",
-      "line": 1264434,
+      "line": 1265046,
       "sink": "AddBuff",
       "argument": "10353311",
       "values": [
@@ -16224,7 +16224,7 @@
     {
       "class": "Parallel_B2",
       "method": "OnCastSkill",
-      "line": 1264463,
+      "line": 1265075,
       "sink": "AddBuff",
       "argument": "buffId_7",
       "values": [
@@ -16243,7 +16243,7 @@
     {
       "class": "Parallel_B2",
       "method": "OnCastEndSkill",
-      "line": 1264496,
+      "line": 1265108,
       "sink": "AddBuff",
       "argument": "10352801",
       "values": [
@@ -16262,7 +16262,7 @@
     {
       "class": "Parallel_B2",
       "method": "OnCastEndSkill",
-      "line": 1264501,
+      "line": 1265113,
       "sink": "AddBuff",
       "argument": "10352901",
       "values": [
@@ -16281,7 +16281,7 @@
     {
       "class": "Parallel_B2",
       "method": "OnHitPre",
-      "line": 1264537,
+      "line": 1265149,
       "sink": "AddBuff",
       "argument": "10353001",
       "values": [
@@ -16300,7 +16300,7 @@
     {
       "class": "Parallel_B2",
       "method": "DoCastAreaEffect",
-      "line": 1264633,
+      "line": 1265245,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_10301_Support_P25_Shadow\u0022",
       "values": [
@@ -16319,7 +16319,7 @@
     {
       "class": "Parallel_B2",
       "method": "DoCastAreaEffect",
-      "line": 1264654,
+      "line": 1265266,
       "sink": "PlayAreaEffect",
       "argument": "\u0022AreaEffect_10301_Support_P25_Shadow\u0022",
       "values": [
