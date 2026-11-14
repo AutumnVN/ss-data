@@ -171445,7 +171445,12 @@
                         "Skill (from Skill)"
                     ],
                     "effectType": [
-                        "Aqua DMG Taken (base)"
+                        "Aqua DMG Taken (base)",
+                        "Ignis DMG Taken (base)",
+                        "Terra DMG Taken (base)",
+                        "Ventus DMG Taken (base)",
+                        "Lux DMG Taken (base)",
+                        "Umbra DMG Taken (base)"
                     ],
                     "addAttrType": [],
                     "buffIcon": [

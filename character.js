@@ -658,7 +658,17 @@ function getPotentialEffectTypes(potId) {
             const effectIds = BUFFVALUE[buffId].Effects || [];
 
             for (const effectId of effectIds) {
-                if (!EFFECTVALUE[effectId]) continue;
+                if (EFFECTVALUE[effectId]) {
+                    params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
+                    continue;
+                }
+
+                const sibling = EFFECTVALUE[effectId + 10];
+                if (!sibling) continue;
+
+                const type = sibling.EffectTypeFirstSubtype
+                    || EFFECTVALUE[sibling.EffectTypeParam1]?.EffectTypeFirstSubtype;
+                if (!type) continue;
 
                 params.push(`EffectValue,NoLevel,${effectId},EffectTypeFirstSubtype,Enum,EAT`);
             }
