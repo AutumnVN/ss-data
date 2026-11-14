@@ -48,17 +48,30 @@ jobs:
           node "$script"
         done
 
+    - name: Note
+      continue-on-error: true
+      env:
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      run: node note.js
+
+    - name: Commit and push
+      id: commit
+      run: |
         git add .
         if git diff --cached --quiet; then
           echo "No changes to commit"
+          echo "changed=false" >> "$GITHUB_OUTPUT"
           exit 0
         fi
         git commit -m 'sync'
         git push origin main
+        echo "changed=true" >> "$GITHUB_OUTPUT"
 
+    - name: Deploy
+      if: steps.commit.outputs.changed == 'true'
+      run: |
         if [ -n "${{ secrets.DEPLOY_HOOK_URL }}" ]; then
           curl -s -o /dev/null -w "%{http_code}" -d "" "${{ secrets.DEPLOY_HOOK_URL }}"
         else
           echo "No deploy hook URL configured"
         fi
-
