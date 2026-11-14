@@ -462,6 +462,7 @@ function formatDiscordPayload(notifications) {
     const hasActive = notifications.some(item => item.active);
 
     return {
+        content: '<@393694671383166998>',
         username: 'stelladb',
         avatar_url: AVATAR_URL,
         embeds: [{
