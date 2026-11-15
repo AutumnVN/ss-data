@@ -8,7 +8,9 @@ const INACTIVE_COLOR = 0xff9966;
 
 const CHARACTER = require('./character.json');
 const DISC = require('./disc.json');
+const EFFECT = require('./EN/bin/Effect.json');
 const EFFECTVALUE = require('./EN/bin/EffectValue.json');
+const BUFFVALUE = require('./EN/bin/BuffValue.json');
 const ONCEADDITIONALATTRIBUTEVALUE = require('./EN/bin/OnceAdditionalAttributeValue.json');
 
 function findPotential(charId, potentialId) {
@@ -421,6 +423,23 @@ const checks = [
                 active,
                 text: skill.desc,
                 detail: skill.effectType.join(', '),
+            };
+        },
+    },
+    {
+        heading: 'Dream Factory of ☆Truth > Dream Factory of ☆Truth',
+        check() {
+            const skill = DISC['214032'].mainSkill;
+            const effect = EFFECT['4032021'];
+            const buff = BUFFVALUE['4032021'];
+            const active = buff.Effects.includes(4032021)
+                && effect.Trigger === 1
+                && effect.Target1 === 2;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `effect 4032021 Trigger = ${effect.Trigger}; Target1 = ${effect.Target1}`,
             };
         },
     },

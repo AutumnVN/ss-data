@@ -70,5 +70,9 @@
   "Colors Pierce the Grey > Street Spirit": {
     "active": true,
     "text": "Increases Terra Trekkers' Terra DMG dealt to targets with Terra VUL by <color=#ec6d21>{1}</color>.\u000bReduces the DMG taken by the main Terra Trekker by {2}."
+  },
+  "Dream Factory of ☆Truth > Dream Factory of ☆Truth": {
+    "active": true,
+    "text": "Increases the squad's Umbra DMG by <color=#ec6d21>{1}</color>.\u000bWhen any Umbra Trekker deal non-Auto Attack DMG to a target, there is a {2} chance to inflict Corrosion: increases Umbra DMG taken by {3} for {4}s.\u000bReduces the DMG taken by the main Umbra Trekker from targets inflicted with Corrosion by {5}."
   }
 }
