@@ -443,6 +443,38 @@ const checks = [
             };
         },
     },
+    {
+        heading: 'Dancing with the Bones > Dancing with the Bones',
+        check() {
+            const skill = DISC['214033'].mainSkill;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214033 : DiscScriptBase');
+            const method = extractMethod(classSource, 'private IEnumerator DoAddBuff()');
+            const addsToAllTerra = method.includes('buff_1_dehurt[stage_1]')
+                && method.includes('HotfixEnum.elementType.SE')
+                && method.includes('ActorLs');
+            const active = skill.desc.includes('main Terra Trekker gains Boulder') && addsToAllTerra;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `DoAddBuff adds 4033041 to all SE actors = ${addsToAllTerra}`,
+            };
+        },
+    },
+    {
+        heading: 'Dancing with the Bones > Buried Past',
+        check() {
+            const skill = DISC['214033'].secondarySkill2;
+            const active = skill.desc.includes('ATK')
+                && skill.effectType.includes('Skill DMG (base)');
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `text says ATK; effectType = ${skill.effectType.join(', ')}`,
+            };
+        },
+    },
 ];
 
 function readState() {
