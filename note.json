@@ -67,9 +67,33 @@
     "active": true,
     "text": "When ##Echoing Soundwave#4047# deal DMG, increases own and non-Aqua Squadmates' &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times."
   },
+  "Soaring Blue > Horn of Departure": {
+    "active": true,
+    "text": "If a target is inflicted with Bright Tide, each stack increases the Skill DMG dealt by Aqua Trekkers to the target by <color=#ec6d21>{1}</color>."
+  },
+  "New Star Prelude > Starlit Winds": {
+    "active": true,
+    "text": "When the Ventus Main Trekker gains a shield, increases all friendly units' Ventus DMG by <color=#ec6d21>{1}</color> for {2}s."
+  },
+  "Fireworks > Fireworks": {
+    "active": true,
+    "text": "The main Ignis Trekker gains {1} stacks of Explosive Flame after casting a skill. Each stack increases Auto Attack DMG by <color=#ec6d21>{2}</color>, stacking up to {3} times. Each ammo used by the main Ignis Trekker grants one additional stack.\u000bWhen Explosive Flame is at max stacks, increases the main Ignis Trekker's Ignis Auto Attack DMG to targets by <color=#ec6d21>{4}</color> for {5}s. All Explosive Flame stacks are removed after {6}s."
+  },
+  "United by Fate > Moment of Unity": {
+    "active": true,
+    "text": "Increases the Auto Attack DMG and Skill DMG of Aqua Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bFor every {2} targets killed, increases this effect by an additional {3}, stacking up to {4} times."
+  },
   "Colors Pierce the Grey > Street Spirit": {
     "active": true,
     "text": "Increases Terra Trekkers' Terra DMG dealt to targets with Terra VUL by <color=#ec6d21>{1}</color>.\u000bReduces the DMG taken by the main Terra Trekker by {2}."
+  },
+  "Sword Against Stream > Splashing Moves": {
+    "active": true,
+    "text": "After the main Aqua Trekker deals DMG {1} times in total, increases Aqua squadmates' ATK by <color=#ec6d21>{2}</color> for {3}s. This effect can only be triggered once every {4}s."
+  },
+  "Daylight Garden > Swaying Petals": {
+    "active": true,
+    "text": "After the main Ventus Trekker deals DMG to the same target {1} times, increases the Ventus DMG the target takes by <color=#ec6d21>{2}</color> for {3}s. This effect can only be triggered once every {4}s for the same target."
   },
   "Dream Factory of ☆Truth > Dream Factory of ☆Truth": {
     "active": true,
@@ -82,5 +106,29 @@
   "Dancing with the Bones > Buried Past": {
     "active": true,
     "text": "When the target is killed, if the main Trekker is inflicted with Boulder, increases Terra squadmates' ATK by <color=#ec6d21>{1}</color> for {2}s, stacking up to {3} times."
+  },
+  "Veiled Dawn of Spring > Blossom's Requiring": {
+    "active": true,
+    "text": "After the main Terra Trekker deals DMG to targets inflicted with Spring Blossom {1} times, increases Terra squadmates' Skill DMG by <color=#ec6d21>{2}</color> for {3}s."
+  },
+  "Petals of Blooming Mirage > Lunar Mirage": {
+    "active": true,
+    "text": "When an Umbra Versatile Trekker deals Ultimate DMG to a target with max stacks of Dark Sakura, the Main Umbra Trekker gains Flower Feast for {1}s.\u000bWhen the Main Umbra Trekker with Flower Feast triggers a mark that inflicts ##Dark Burn#2028#, increases own Skill Crit Rate by <color=#ec6d21>{2}</color> for {3}s.\u000bWhen the Main Umbra Trekker with Flower Feast triggers a mark to activate the effects of ##Dark Shackles#2020#, increases own Auto Attack Crit DMG by <color=#ec6d21>{4}</color> for {5}s."
+  },
+  "Phantom of the Banquet > Umbral Harmony": {
+    "active": true,
+    "text": "Increases Umbra Versatile Trekkers' Ultimate DMG by <color=#ec6d21>{1}</color>.\u000bBlossom Glow gains an additional effect: Each stack increases own Skill DMG and Ultimate DMG by <color=#ec6d21>{2}</color>."
+  },
+  "Touch of Miracle > Touch of Miracle": {
+    "active": true,
+    "text": "When a Terra Vanguard Trekker casts a skill, they gain Assembly for {1}s, stacking up to 2 times.\u000bWhen a Terra Vanguard Trekker has 1 stack of Assembly, increases their Skill DMG by <color=#ec6d21>{2}</color>.\u000bWhen a Terra Vanguard Trekker has 2 stacks of Assembly, increases their ATK by <color=#ec6d21>{3}</color>."
+  },
+  "Little Paradise > Symphony Box": {
+    "active": true,
+    "text": "Loaded can stack up to 3 times.\u000bWhen a Terra Vanguard Trekker has 3 stacks of Loaded, increases own ATK by <color=#ec6d21>{1}</color>"
+  },
+  "Eternal Brilliance > Light of Humanity": {
+    "active": true,
+    "text": "When a Lux Support Trekker casts a skill, grants the Main Trekker 1 stack of Eternity.\u000bEternity can stack up to 20 times. When Eternity is at max stacks, increases own Lux DMG dealt by <color=#ec6d21>{1}</color>."
   }
 }

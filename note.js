@@ -414,6 +414,77 @@ const checks = [
         },
     },
     {
+        heading: 'Soaring Blue > Horn of Departure',
+        check() {
+            const skill = DISC['214008'].secondarySkill2;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214008 : DiscScriptBase');
+            const beforeHit = extractMethod(classSource, 'protected override void OnBeforeHit(AdventureActorReceiveDamageBeforeHitEvent damageEvent)');
+            const aquaSource = beforeHit.includes('playerAdventureActor.actorElementInfo.elementType == HotfixEnum.elementType.WE');
+            const active = skill.desc.includes('Aqua Trekkers')
+                && !aquaSource;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `OnBeforeHit checks the damage source element = ${aquaSource}`,
+            };
+        },
+    },
+    {
+        heading: 'New Star Prelude > Starlit Winds',
+        check() {
+            const skill = DISC['214009'].secondarySkill1;
+            const effect = EFFECT['4009101'];
+            const checksOwnerIsMain = effect.TriggerTarget === 1
+                && effect.TriggerCondition2 === 41;
+            const active = skill.desc.includes('Ventus Main Trekker gains a shield')
+                && !checksOwnerIsMain;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `effect 4009101 trigger target = ${effect.TriggerTarget} (6 = main), trigger condition 2 = ${effect.TriggerCondition2 ?? 'none'} (41 = self is main)`,
+            };
+        },
+    },
+    {
+        heading: 'Fireworks > Fireworks',
+        check() {
+            const skill = DISC['214017'].mainSkill;
+            const value = EFFECTVALUE['4017021'];
+            const generic = value.EffectType === 12 && value.EffectTypeFirstSubtype === 60;
+            const active = skill.desc.includes('Ignis Auto Attack DMG')
+                && generic;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `buff 4017021 effectType = ${value.EffectType}, subtype = ${value.EffectTypeFirstSubtype} (generic auto dmg taken)`,
+            };
+        },
+    },
+    {
+        heading: 'United by Fate > Moment of Unity',
+        check() {
+            const skill = DISC['214021'].secondarySkill2;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214021 : DiscScriptBase');
+            const receive = extractMethod(classSource, 'protected override void OnReceiveDamage(AdventureActorReceiveDamageEvent evt)');
+            const resets = receive.includes('RemoveBuffByBuffId(buff_s3_extra[stage_3])')
+                && receive.includes('AddBuff(buff_s3_extra[stage_3]')
+                && !receive.includes('AddBuffNum(buff_s3_extra[stage_3]');
+            const maxStacks = BUFFVALUE['4021240'].LaminatedNum;
+            const active = skill.desc.includes('stacking up to {4} times')
+                && resets
+                && maxStacks === 10;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `OnReceiveDamage resets buff_s3_extra to 1 stack = ${resets}; buff 4021240 max stacks = ${maxStacks}`,
+            };
+        },
+    },
+    {
         heading: 'Colors Pierce the Grey > Street Spirit',
         check() {
             const skill = DISC['214023'].secondarySkill1;
@@ -423,6 +494,48 @@ const checks = [
                 active,
                 text: skill.desc,
                 detail: skill.effectType.join(', '),
+            };
+        },
+    },
+    {
+        heading: 'Sword Against Stream > Splashing Moves',
+        check() {
+            const skill = DISC['214026'].secondarySkill1;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214026 : DiscScriptBase');
+            const damaged = extractMethod(classSource, 'protected override void OnMainPlayerActorDamaged(PlayerAdventureActor actor, MonsterAdventureActor target, AdventureActorReceiveDamageEvent damageEvent)');
+            const hasCooldown = damaged.includes('LogicTime')
+                || damaged.includes('cd_')
+                || damaged.includes('Cd');
+            const buff = BUFFVALUE['4026101'];
+            const duration = buff.Time / 10000;
+            const active = skill.desc.includes('once every {4}s')
+                && !hasCooldown
+                && duration === 10;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `OnMainPlayerActorDamaged has cooldown = ${hasCooldown}; buff 4026101 duration = ${duration}s; text says once every 15s`,
+            };
+        },
+    },
+    {
+        heading: 'Daylight Garden > Swaying Petals',
+        check() {
+            const skill = DISC['214028'].secondarySkill2;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214028 : DiscScriptBase');
+            const damaged = extractMethod(classSource, 'protected override void OnPlayerActorDamaged(PlayerAdventureActor actor, MonsterAdventureActor monster, AdventureActorReceiveDamageEvent damageEvent)');
+            const checksMain = damaged.includes('isAssist')
+                || damaged.includes('actorElementInfo')
+                || damaged.includes('actor == _actor')
+                || damaged.includes('CheckActorIs');
+            const active = skill.desc.includes('main Ventus Trekker deals DMG to the same target')
+                && !checksMain;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `OnPlayerActorDamaged checks main ventus = ${checksMain}; text says only the main ventus trekker's damage counts`,
             };
         },
     },
@@ -472,6 +585,127 @@ const checks = [
                 active,
                 text: skill.desc,
                 detail: `text says ATK; effectType = ${skill.effectType.join(', ')}`,
+            };
+        },
+    },
+    {
+        heading: "Veiled Dawn of Spring > Blossom's Requiring",
+        check() {
+            const skill = DISC['214044'].secondarySkill2;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214044 : DiscScriptBase');
+            const damaged = extractMethod(classSource, 'protected override void OnPlayerActorDamaged(PlayerAdventureActor actor, MonsterAdventureActor target, AdventureActorReceiveDamageEvent damageEvent)');
+            const skillOnly = damaged.includes('damageType != HotfixEnum.damageType.SKILL');
+            const active = skillOnly && skill.desc.includes('deals DMG');
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `hit counter requires damageType.SKILL = ${skillOnly}; en text says DMG, jp/kr/tw/cn text all say skill damage`,
+            };
+        },
+    },
+    {
+        heading: 'Petals of Blooming Mirage > Lunar Mirage',
+        check() {
+            const skill = DISC['214045'].secondarySkill2;
+            const effect = EFFECTVALUE['4045221'];
+            const active = effect.EffectTypeFirstSubtype === 78
+                && skill.desc.includes('Auto Attack Crit DMG');
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `Dark Shackles buff 4045221 subtype = ${effect.EffectTypeFirstSubtype} (78 = Skill Crit DMG); en text says Auto Attack Crit DMG, jp/kr/tw/cn text all say Skill Crit DMG`,
+            };
+        },
+    },
+    {
+        heading: 'Phantom of the Banquet > Umbral Harmony',
+        check() {
+            const skill = DISC['214050'].secondarySkill1;
+            const buff = BUFFVALUE['4050124'];
+            const broken = buff.Effects.includes(4051044);
+            const missing = EFFECT['4051044'] === undefined
+                && EFFECTVALUE['4051044'] === undefined;
+            const correct = EFFECTVALUE['4050144'];
+            const active = broken && missing && correct !== undefined;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `stage 4 buff 4050124 effects: ${buff.Effects.join(', ')}; 4051044 exists = ${!missing}; correct 4050144 = ${correct ? correct.EffectTypeParam1 : 'missing'}`,
+            };
+        },
+    },
+    {
+        heading: 'Touch of Miracle > Touch of Miracle',
+        check() {
+            const skill = DISC['214052'].mainSkill;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214052 : DiscScriptBase');
+            const castSkill = extractMethod(classSource, 'protected override void OnPlayerActorCastSkill(PlayerAdventureActor actor, AdventureActorCastSkillEvent castSkillEvent)');
+            const atkBuff = BUFFVALUE['4052021'];
+            const addsAtkBuff = castSkill.includes('buffId_1_atk[stage_s1]')
+                && castSkill.includes('GetBuffNumByID(_activeKlaBuffId) >= 2');
+            const removesAtkBuff = classSource.includes('RemoveBuffByBuffId')
+                || classSource.includes('OnRemoveBuff');
+            const permanent = atkBuff.Time === -10000;
+            const active = skill.desc.includes('2 stacks of Assembly')
+                && addsAtkBuff
+                && permanent
+                && !removesAtkBuff;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `atk buff 4052021 added at 2 stacks = ${addsAtkBuff}; permanent = ${permanent}; removed when Assembly drops = ${removesAtkBuff}`,
+            };
+        },
+    },
+    {
+        heading: 'Little Paradise > Symphony Box',
+        check() {
+            const skill = DISC['214054'].secondarySkill2;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214054 : DiscScriptBase');
+            const castSkill = extractMethod(classSource, 'protected override void OnPlayerActorCastSkillEnd(PlayerAdventureActor actor, AdventureActorCastSkillEndEvent castSkillEvent)');
+            const atkBuff = BUFFVALUE['4054201'];
+            const addsAtkBuff = castSkill.includes('buffId_3_atk[stage_s3]')
+                && castSkill.includes('GetBuffNumByID(_activeSpaBuffId) >= 3');
+            const removesAtkBuff = classSource.includes('RemoveBuffByBuffId')
+                || classSource.includes('OnRemoveBuff');
+            const permanent = atkBuff.Time === -10000;
+            const active = skill.desc.includes('3 stacks of Loaded')
+                && addsAtkBuff
+                && permanent
+                && !removesAtkBuff;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `atk buff 4054201 added at 3 stacks = ${addsAtkBuff}; permanent = ${permanent}; removed when Loaded drops = ${removesAtkBuff}`,
+            };
+        },
+    },
+    {
+        heading: 'Eternal Brilliance > Light of Humanity',
+        check() {
+            const skill = DISC['214067'].secondarySkill2;
+            const classSource = extractMethod(getHotfix(), 'public class Disc_214067 : DiscScriptBase');
+            const addEternal = extractMethod(classSource, 'private void AddEternal()');
+            const removeBuff = extractMethod(classSource, 'private void OnRemoveBuff(IEvent evt)');
+            const maxBuff = BUFFVALUE['4067201'];
+            const addsMaxBuff = addEternal.includes('buffId_3_full[stage_s3]')
+                && addEternal.includes('HaveBuffNumMax(_eternalBuffId)');
+            const removesMaxBuff = removeBuff.includes('buffId_3_full[stage_s3]');
+            const permanent = maxBuff.Time === -10000;
+            const active = skill.desc.includes('When Eternity is at max stacks')
+                && addsMaxBuff
+                && permanent
+                && !removesMaxBuff;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `max-stack buff 4067201 added = ${addsMaxBuff}; permanent = ${permanent}; removed when Eternity drops = ${removesMaxBuff}`,
             };
         },
     },
