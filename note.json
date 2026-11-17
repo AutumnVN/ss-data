@@ -27,6 +27,18 @@
     "active": true,
     "text": "When Freesia hits targets inflicted with ##Chill#1027#/##Frozen#1002#, deals an additional <color=#0abec5>&Param1& of ATK</color> as AoE Aqua Skill DMG.\u000bParam10: &Param10& (Skill,Title)"
   },
+  "Donna > Condensation Orbs": {
+    "active": true,
+    "text": "When the ##Advertising Doll#4017# disappears, extends the duration of ##Agile#2015# State by <color=#0abec5>&Param2&</color>s.\u000bWhile ##Agile#2015# State is active, every 10 Auto Attacks generate 1 water orb, accumulating up to <color=#0abec5>7</color> orbs. When ##Agile#2015# State ends, the next Auto Attack fires all water orbs to pierce through the target, with each orb dealing <color=#0abec5>&Param1&</color> of ATK as Aqua Skill DMG.\u000bParam10: &Param10& (Skill,Title)"
+  },
+  "Donna > Rime Shatterer": {
+    "active": true,
+    "text": "While Donna is in ##Agile#2015# State, her Auto Attacks immediately defeat normal targets with HP below &Param1&. She also deals <color=#ec6d21>&Param2&</color> more &Param3& to elite or higher-tier targets with HP below &Param1&.\u000bParam10: &Param10& (Skill,Title)"
+  },
+  "Donna > Freezing Stasis": {
+    "active": true,
+    "text": "Each time &Param10& (Ultimate) hits a target inflicted with ##Frozen#1002#/##Chill#1027#, increases rain of arrows' duration by &Param1&s and its &Param3& dealt by <color=#ec6d21>&Param2&</color>. This effect can only be triggered &Param4& times."
+  },
   "Minova > Skill: Syou: Pulsar Streak": {
     "active": true,
     "text": "Swings the baseball bat, dealing <color=#fb8037>&Param1&</color> of ATK as Lux Skill DMG. Then, activates the second phase, Two Base Hit: Charges at the target, delivering rapid strikes. Hold to deal <color=#fb8037>&Param2&</color> of ATK as Lux Skill DMG every 0.3s for a total of 3s. Finishes with a powerful smash, dealing <color=#fb8037>&Param3&</color> of ATK as Lux Skill DMG.\u000bBoth Syou: Pulsar Streak (Main Skill) and Two Base Hit can trigger ##Lux Mark#1015# and summon a Thunderbolt, dealing &Param4& of ATK as Lux Mark DMG."

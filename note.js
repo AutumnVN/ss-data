@@ -130,6 +130,15 @@ function getLevelValues(source, prefix) {
     return levels;
 }
 
+function crc32(text) {
+    let crc = -1;
+    for (const byte of Buffer.from(text)) {
+        crc ^= byte;
+        for (let bit = 0; bit < 8; bit++) crc = (crc >>> 1) ^ (0xedb88320 & -(crc & 1));
+    }
+    return ~crc | 0;
+}
+
 function getOnceAdditionalLevels(prefix) {
     return getLevelValues(ONCEADDITIONALATTRIBUTEVALUE, prefix);
 }
@@ -242,6 +251,59 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `${extraHit}; Ultimate ${ultraHasTag ? 'has' : 'lacks'} ${triggerTag}`,
+            };
+        },
+    },
+    {
+        heading: 'Donna > Condensation Orbs',
+        check() {
+            const potential = findPotential('130', 513001);
+            const source = getHotfix();
+            const setIndex = source.indexOf('ToggleLogicTag("TriggerPerk_P1", value: true)');
+            const setOnSkillEnd = setIndex >= 0
+                && source.slice(Math.max(0, setIndex - 300), setIndex).includes('OnSkillDisable()');
+            const firesOnShoot = source.includes('GetLogicTagToggle("TriggerPerk_P1")');
+            const saysAgileEnd = potential.desc.includes('##Agile#2015# State ends');
+            const active = setOnSkillEnd && firesOnShoot && saysAgileEnd;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `orbs fire when TriggerPerk_P1 is set = ${firesOnShoot}; flag set in the main skill's OnSkillDisable = ${setOnSkillEnd}; text says Agile ends = ${saysAgileEnd}`,
+            };
+        },
+    },
+    {
+        heading: 'Donna > Rime Shatterer',
+        check() {
+            const potential = findPotential('130', 513007);
+            const config = getHotfix().slice(getHotfix().indexOf('areaEffectTag_UltraSkill = CommonHelper.StringToHash("130_Ultra_Area")'));
+            const tag = config.match(/damageTag_Trigger_P7 = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const hash = crc32(tag);
+            const hits = Object.values(HITDAMAGE)
+                .filter(hit => Array.isArray(hit.DamageTag) && hit.DamageTag.includes(hash));
+            const bonusAttr = getOnceAdditionalLevels(13007011)[0].AttributeType1;
+            const active = bonusAttr === 57 && hits.some(hit => hit.DamageType === 1);
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `elite bonus is skill dmg (attr ${bonusAttr}) but ${tag} is only on ${hits.map(hit => `${hit.Id} (damage type ${hit.DamageType})`).join(', ')}`,
+            };
+        },
+    },
+    {
+        heading: 'Donna > Freezing Stasis',
+        check() {
+            const potential = findPotential('130', 513043);
+            const condition = getHotfix().match(/if \(to\.isFrozen[^)]*\)/)[0];
+            const saysChill = potential.desc.includes('##Chill#1027#');
+            const active = saysChill && !/Cold/.test(condition);
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `trigger condition "${condition}" only checks frozen; text says Frozen and Chill = ${saysChill}`,
             };
         },
     },
