@@ -13,7 +13,7 @@ const SCOREBOSSABILITY = require('./EN/bin/ScoreBossAbility.json');
 const SCOREBOSSGETCONTROL = require('./EN/bin/ScoreBossGetControl.json');
 const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
 const ITEM = require('./EN/bin/Item.json');
-const { getHiddenHitDamageIds, getHotfixHitDamage, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getBuffDetail, potentialLabel } = require('./hotfix');
+const { getHiddenHitDamageIds, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getBuffDetail, potentialLabel } = require('./hotfix');
 const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
 const LANG_SKILL = require('./EN/language/en_US/Skill.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
@@ -602,18 +602,12 @@ function formatHiddenParams(hiddenHitDamageIds, hiddenAddAttrs) {
     return { desc, params };
 }
 
-function collectPotentialHiddenParamsFrom(obj, allSkillParams) {
+function collectPotentialHiddenParamsFrom(obj) {
     if (!obj) return { desc: '', params: [] };
-
-    const charId = obj.CharId;
-    const potId = obj.Id % 100;
-
-    const slice58Group = [107, 112, 113, 125, 144, 150, 155];
 
     const stringifiedSkill = JSON.stringify(SKILL);
     const stringifiedPotential = JSON.stringify(POTENTIAL);
     const params = collectParamsFrom(obj);
-    const target = String(potId).padStart(2, '0');
     const hiddenAddAttrs = getHiddenAddAttrParamsFrom(obj);
 
     const accepted = id => {
@@ -623,32 +617,7 @@ function collectPotentialHiddenParamsFrom(obj, allSkillParams) {
         return true;
     };
 
-    const fromHotfix = getHiddenHitDamageIds(obj.Id).filter(accepted);
-    const hiddenHitDamageIds = fromHotfix.slice();
-
-    if (getHotfixHitDamage().potential[obj.Id]) return formatHiddenParams(hiddenHitDamageIds, hiddenAddAttrs);
-
-    for (const id of Object.keys(HITDAMAGE)) {
-        if (fromHotfix.includes(id)) continue;
-        if (['103522002', '134506002'].includes(id)) continue;
-        if (id.length !== 9) continue;
-        if (!id.startsWith(charId)) continue;
-        if (['01', '02', '03', '04'].includes(target) && !['1', '2', '4', '5'].includes(id.slice(3, 4))) continue;
-        if (['21', '22', '23', '24'].includes(target) && !['1', '3', '4', '5'].includes(id.slice(3, 4))) continue;
-        if (!['01', '02', '03', '04', '21', '22', '23', '24'].includes(target) && !['5'].includes(id.slice(3, 4))) continue;
-        if (!accepted(id)) continue;
-
-        const slice = !slice58Group.includes(charId) ? id.slice(4, 7) : id.slice(5, 8);
-        if (slice !== `${target}0`) continue;
-
-        const resolved = resolveParam([`HitDamage,DamageNum,${id}`])[0];
-        if (!resolved) continue;
-        if (`HitDamage,DamageNum,${id}` === resolved) continue;
-        if ([... new Set(resolved.split('/').map(r => r.trim()))].length < 9) continue;
-        if (allSkillParams.includes(resolved)) continue;
-
-        hiddenHitDamageIds.push(id);
-    }
+    const hiddenHitDamageIds = getHiddenHitDamageIds(obj.Id).filter(accepted);
 
     return formatHiddenParams(hiddenHitDamageIds, hiddenAddAttrs);
 }

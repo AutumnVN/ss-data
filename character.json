@@ -5568,13 +5568,11 @@
                     "nameCN": "回转的奥义",
                     "nameJP": "ナイトキック",
                     "nameKR": "회전의 오의",
-                    "desc": "When casting &Param1& (Support Skill), Tilia throws Aegis of Light at up to <color=#0abec5>5</color> targets simultaneously.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,107322401)",
-                    "descCN": "援护技「&Param1&」对最多<color=#0abec5>5</color>个目标同时掷出「圣光之盾」。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,107322401)",
-                    "descJP": "ティリアの支援スキルは、最大<color=#0abec5>5</color>体の敵に同時に聖光の盾を投げるようになる。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,107322401)",
-                    "descKR": "지원 스킬 「&Param1&」가 최대 <color=#0abec5>5</color>명의 목표에게 동시에 「성광의 방패」를 투척한다.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,107322401)",
-                    "damageType": [
-                        "Skill (from Skill, scale with Skill) (hidden)"
-                    ],
+                    "desc": "When casting &Param1& (Support Skill), Tilia throws Aegis of Light at up to <color=#0abec5>5</color> targets simultaneously.",
+                    "descCN": "援护技「&Param1&」对最多<color=#0abec5>5</color>个目标同时掷出「圣光之盾」。",
+                    "descJP": "ティリアの支援スキルは、最大<color=#0abec5>5</color>体の敵に同時に聖光の盾を投げるようになる。\u000bParam1: &Param1& (Skill,Title)",
+                    "descKR": "지원 스킬 「&Param1&」가 최대 <color=#0abec5>5</color>명의 목표에게 동시에 「성광의 방패」를 투척한다.",
+                    "damageType": [],
                     "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
@@ -5584,21 +5582,8 @@
                     "paramsTooltips": [
                         {}
                     ],
-                    "hiddenParams": [
-                        "56.7%/62.4%/68%/85.1%/90.7%/96.4%/107.7%/113.4%/119.1%/130.4%/136.1%/141.8%/147.4%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "107322401",
-                            "hitSources": [
-                                "AdventureFlyShield: 25 speed, 2s duration, search radius 8, trigger radius 1, 6 rebounds"
-                            ],
-                            "damageTag": [
-                                "107_Support_Skill"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "10701_Potential_24",
                     "rarity": "core"
                 }
@@ -30668,13 +30653,11 @@
                     "nameCN": "黑暗轮回",
                     "nameJP": "漆黒の輪舞曲",
                     "nameKR": "암흑의 윤회",
-                    "desc": "Increases the &Param2& dealt by ##Dark Ray#4036# by <color=#0abec5>&Param3&</color>.\u000bEnhances Dark Mark when the laser hits a target inflicted with Dark Mark, increasing the DMG Multiplier dealt by Dark Mark by <color=#0abec5>&Param4&</color>, stacking up to 3 times.\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114504001) \u000bHiddenParam2: &HiddenParam2& (HitDamage,Skill,114504002) \u000bHiddenParam3: &HiddenParam3& (HitDamage,Skill,114504003)",
-                    "descCN": "##黑暗射线#4036#造成的&Param2&提升<color=#0abec5>&Param3&</color>。\u000b激光命中附带「暗黑标记」的目标时，强化「暗黑标记」，使「暗黑标记」造成的伤害倍率提升<color=#0abec5>&Param4&</color>，该效果可以叠加3次。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114504001) \u000bHiddenParam2: &HiddenParam2& (HitDamage,Skill,114504002) \u000bHiddenParam3: &HiddenParam3& (HitDamage,Skill,114504003)",
-                    "descJP": "##空に堕ちる焔#4036#の与える&Param2&が<color=#0abec5>&Param3&</color>増加する。\u000b魔痕が付与されている敵にポジトロンシュートが命中時、魔痕のダメージ倍率を<color=#0abec5>&Param4&</color>増加させる。この効果は3回まで重複できる。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114504001) \u000bHiddenParam2: &HiddenParam2& (HitDamage,Skill,114504002) \u000bHiddenParam3: &HiddenParam3& (HitDamage,Skill,114504003)",
-                    "descKR": "##암흑 레이저#4036#가 입히는 &Param2_kr1& <color=#0abec5>&Param3&</color> 증가한다.\u000b레이저가 「암흑 표식」을 보유한 목표를 명중하면 「암흑 표식」이 강화되어, 「암흑 표식」이 입히는 피해 배율이 <color=#0abec5>&Param4&</color> 증가한다. 해당 효과는 최대 3회 중첩된다.\u000bParam1: &Param1& (Skill,Title) \u000bParam2: &Param2& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114504001) \u000bHiddenParam2: &HiddenParam2& (HitDamage,Skill,114504002) \u000bHiddenParam3: &HiddenParam3& (HitDamage,Skill,114504003)",
-                    "damageType": [
-                        "Skill (from Skill, scale with Skill) (hidden)"
-                    ],
+                    "desc": "Increases the &Param2& dealt by ##Dark Ray#4036# by <color=#0abec5>&Param3&</color>.\u000bEnhances Dark Mark when the laser hits a target inflicted with Dark Mark, increasing the DMG Multiplier dealt by Dark Mark by <color=#0abec5>&Param4&</color>, stacking up to 3 times.\u000bParam1: &Param1& (Skill,Title)",
+                    "descCN": "##黑暗射线#4036#造成的&Param2&提升<color=#0abec5>&Param3&</color>。\u000b激光命中附带「暗黑标记」的目标时，强化「暗黑标记」，使「暗黑标记」造成的伤害倍率提升<color=#0abec5>&Param4&</color>，该效果可以叠加3次。\u000bParam1: &Param1& (Skill,Title)",
+                    "descJP": "##空に堕ちる焔#4036#の与える&Param2&が<color=#0abec5>&Param3&</color>増加する。\u000b魔痕が付与されている敵にポジトロンシュートが命中時、魔痕のダメージ倍率を<color=#0abec5>&Param4&</color>増加させる。この効果は3回まで重複できる。\u000bParam1: &Param1& (Skill,Title)",
+                    "descKR": "##암흑 레이저#4036#가 입히는 &Param2_kr1& <color=#0abec5>&Param3&</color> 증가한다.\u000b레이저가 「암흑 표식」을 보유한 목표를 명중하면 「암흑 표식」이 강화되어, 「암흑 표식」이 입히는 피해 배율이 <color=#0abec5>&Param4&</color> 증가한다. 해당 효과는 최대 3회 중첩된다.\u000bParam1: &Param1& (Skill,Title) \u000bParam2: &Param2& (OnceAdditionalAttributeValue,AttributeType1)",
+                    "damageType": [],
                     "effectType": [],
                     "addAttrType": [
                         "(Ignis) Skill DMG (base)"
@@ -30724,85 +30707,8 @@
                         },
                         {}
                     ],
-                    "hiddenParams": [
-                        "118%/136%/154%/207%/224%/240%/274%/288%/302%/330%/354%/378%/401%",
-                        "173%/199%/225%/302%/327%/351%/399%/420%/441%/482%/517%/551%/586%",
-                        "227%/261%/295%/398%/429%/461%/525%/552%/579%/634%/679%/725%/770%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "114504001",
-                            "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 14.5s, hit delay 0.5s, hit interval 2s, 7 hits, Circle (radius 0.5)"
-                            ],
-                            "areaEffectVariants": [
-                                {
-                                    "class": "AreaEffectEntity",
-                                    "snapshot": true,
-                                    "duration": 14.5,
-                                    "hitDelay": 0.5,
-                                    "hitInterval": 1,
-                                    "hits": 14,
-                                    "shape": "circle",
-                                    "radius": 0.5
-                                }
-                            ],
-                            "damageTag": [
-                                "114_FireTag1_Trigger",
-                                "Skill",
-                                "114_Short_DoT"
-                            ]
-                        },
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "114504002",
-                            "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 14.5s, hit delay 0.5s, hit interval 2s, 7 hits, Circle (radius 0.5)"
-                            ],
-                            "areaEffectVariants": [
-                                {
-                                    "class": "AreaEffectEntity",
-                                    "snapshot": true,
-                                    "duration": 14.5,
-                                    "hitDelay": 0.5,
-                                    "hitInterval": 1,
-                                    "hits": 14,
-                                    "shape": "circle",
-                                    "radius": 0.5
-                                }
-                            ],
-                            "damageTag": [
-                                "114_FireTag1_Trigger",
-                                "Skill",
-                                "114_Short_DoT"
-                            ]
-                        },
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "114504003",
-                            "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 14.5s, hit delay 0.5s, hit interval 2s, 7 hits, Circle (radius 0.5)"
-                            ],
-                            "areaEffectVariants": [
-                                {
-                                    "class": "AreaEffectEntity",
-                                    "snapshot": true,
-                                    "duration": 14.5,
-                                    "hitDelay": 0.5,
-                                    "hitInterval": 1,
-                                    "hits": 14,
-                                    "shape": "circle",
-                                    "radius": 0.5
-                                }
-                            ],
-                            "damageTag": [
-                                "114_FireTag1_Trigger",
-                                "Skill",
-                                "114_Short_DoT"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "11401_Potential_04",
                     "rarity": "core"
                 }
@@ -56312,34 +56218,18 @@
                     "nameCN": "众星拥戴",
                     "nameJP": "生徒の支持",
                     "nameKR": "별빛의 가호",
-                    "desc": "Summons <color=#0abec5>3</color> additional Flying Leaves.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,120501001)",
-                    "descCN": "额外生成<color=#0abec5>3</color>个「飞叶」。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,120501001)",
-                    "descJP": "追加で<color=#0abec5>3</color>つの飛葉を生成するようになる。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,120501001)",
-                    "descKR": "「흩날리는 잎사귀」 <color=#0abec5>3</color>개를 추가로 생성한다.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,120501001)",
-                    "damageType": [
-                        "Skill (0.55e, from Skill, scale with Skill) (hidden)"
-                    ],
+                    "desc": "Summons <color=#0abec5>3</color> additional Flying Leaves.",
+                    "descCN": "额外生成<color=#0abec5>3</color>个「飞叶」。",
+                    "descJP": "追加で<color=#0abec5>3</color>つの飛葉を生成するようになる。",
+                    "descKR": "「흩날리는 잎사귀」 <color=#0abec5>3</color>개를 추가로 생성한다.",
+                    "damageType": [],
                     "effectType": [],
                     "addAttrType": [],
                     "buffIcon": [],
                     "params": [],
                     "paramsTooltips": [],
-                    "hiddenParams": [
-                        "16.8%/18.5%/20.2%/25.2%/26.9%/28.6%/32%/33.6%/35.3%/38.7%/40.4%/42%/43.7%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (0.55e, from Skill, scale with Skill)",
-                            "hitDamageId": "120501001",
-                            "hitSources": [
-                                "AdventureRotateWeapon: 7.3000002s duration, 0.5s interval, 15 hits, 150°/s rotate speed, Fan"
-                            ],
-                            "damageTag": [
-                                "120_B1",
-                                "120WindTagBoom"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "12001_Potential_01",
                     "rarity": "core"
                 },
@@ -83834,13 +83724,11 @@
                     "nameCN": "闪耀爆裂",
                     "nameJP": "閃光爆裂",
                     "nameKR": "섬광 폭발",
-                    "desc": "Increases the Attack Range of Astral Hex by <color=#0abec5>50%</color> and its Skill DMG by <color=#0abec5>&Param2&</color>.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132522001)",
-                    "descCN": "「星芒」伤害范围提升<color=#0abec5>50%</color>，造成的技能伤害提升<color=#0abec5>&Param2&</color>。\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132522001)",
-                    "descJP": "星芒の与えるスキルダメージが<color=#0abec5>&Param2&</color>増加し、ダメージ範囲が<color=#0abec5>50%</color>拡大する。\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132522001)",
-                    "descKR": "「성망」의 피해 범위가 <color=#0abec5>50%</color> 증가하고, 입히는 스킬 피해가 <color=#0abec5>&Param2&</color> 증가한다.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132522001)",
-                    "damageType": [
-                        "Skill (from Skill, scale with Skill) (hidden)"
-                    ],
+                    "desc": "Increases the Attack Range of Astral Hex by <color=#0abec5>50%</color> and its Skill DMG by <color=#0abec5>&Param2&</color>.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)",
+                    "descCN": "「星芒」伤害范围提升<color=#0abec5>50%</color>，造成的技能伤害提升<color=#0abec5>&Param2&</color>。\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)",
+                    "descJP": "星芒の与えるスキルダメージが<color=#0abec5>&Param2&</color>増加し、ダメージ範囲が<color=#0abec5>50%</color>拡大する。\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)",
+                    "descKR": "「성망」의 피해 범위가 <color=#0abec5>50%</color> 증가하고, 입히는 스킬 피해가 <color=#0abec5>&Param2&</color> 증가한다.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (OnceAdditionalAttributeValue,AttributeType1)",
+                    "damageType": [],
                     "effectType": [],
                     "addAttrType": [
                         "Skill DMG (base)"
@@ -83862,22 +83750,8 @@
                             "addAttrId": 13222011
                         }
                     ],
-                    "hiddenParams": [
-                        "185%/213%/240%/323%/349%/375%/427%/449%/471%/516%/553%/590%/626%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "132522001",
-                            "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 7)"
-                            ],
-                            "damageTag": [
-                                "1341892246",
-                                "132_Support_StarBoom"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "13201_Potential_22",
                     "rarity": "core"
                 },
@@ -106007,13 +105881,11 @@
                     "nameCN": "反复清理",
                     "nameJP": "効率重視",
                     "nameKR": "반복 청소",
-                    "desc": "Cycling Slashes can deal <color=#0abec5>8</color> more hits, and its &Param1& dealt is increased by <color=#0abec5>&Param2&</color>.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,139522001)",
-                    "descCN": "「循环斩击」次数提升<color=#0abec5>8</color>次，且造成的&Param1&提升<color=#0abec5>&Param2&</color>。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,139522001)",
-                    "descJP": "「スイープスラッシュ」の攻撃回数が<color=#0abec5>8</color>回増加し、与える&Param1&が<color=#0abec5>&Param2&</color>増加する。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,139522001)",
-                    "descKR": "「순환 참격」 횟수가 <color=#0abec5>8</color>회 증가하고, 해당 공격으로 입히는 &Param1_kr1& <color=#0abec5>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttributeValue,AttributeType1)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,139522001)",
-                    "damageType": [
-                        "Skill (from Skill, scale with Skill) (hidden)"
-                    ],
+                    "desc": "Cycling Slashes can deal <color=#0abec5>8</color> more hits, and its &Param1& dealt is increased by <color=#0abec5>&Param2&</color>.",
+                    "descCN": "「循环斩击」次数提升<color=#0abec5>8</color>次，且造成的&Param1&提升<color=#0abec5>&Param2&</color>。",
+                    "descJP": "「スイープスラッシュ」の攻撃回数が<color=#0abec5>8</color>回増加し、与える&Param1&が<color=#0abec5>&Param2&</color>増加する。",
+                    "descKR": "「순환 참격」 횟수가 <color=#0abec5>8</color>회 증가하고, 해당 공격으로 입히는 &Param1_kr1& <color=#0abec5>&Param2&</color> 증가한다.\u000bParam1: &Param1& (OnceAdditionalAttributeValue,AttributeType1)",
+                    "damageType": [],
                     "effectType": [],
                     "addAttrType": [
                         "Aqua DMG (base)"
@@ -106033,15 +105905,8 @@
                             "addAttrId": 13922011
                         }
                     ],
-                    "hiddenParams": [
-                        "36%/41%/46%/62%/67%/72%/82%/87%/91%/99%/107%/114%/121%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "139522001"
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "13901_Potential_22",
                     "rarity": "core"
                 },
@@ -114606,13 +114471,12 @@
                     "nameCN": "符启·寅虎",
                     "nameJP": "護符・虎の巻",
                     "nameKR": "부적·인호",
-                    "desc": "##Crimson Dragon#4018# enhances into ##Tiger of the East#4019#. Increases ##Tiger of the East#4019#'s Minion DMG by <color=#0abec5>&Param1&</color> every 2s.\u000b##Tiger of the East#4019# deals <color=#0abec5>&Param2&</color>, <color=#0abec5>&Param3&</color>, and <color=#0abec5>&Param4& x2</color> of ATK as AoE Ignis Minion DMG and inflicts ##Ignis Mark: Sacred Flame#2013#.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Minion,141523001)",
-                    "descCN": "##「赤龙」#4018#强化为##「寅虎」#4019#，并每2秒使##「寅虎」#4019#的仆从伤害提升<color=#0abec5>&Param1&</color>。\u000b##「寅虎」#4019#造成攻击力<color=#0abec5>&Param2&</color>、<color=#0abec5>&Param3&</color>、<color=#0abec5>&Param4&x2</color>的范围火系仆从伤害，并附加##火系印记：圣焰#2013#。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Minion,141523001)",
-                    "descJP": "##赤龍#4018#が強化され、##猛虎#4019#になる。2秒ごとに従者ダメージが<color=#0abec5>&Param1&</color>増加する。##猛虎#4019#は15秒間持続し、範囲内に攻撃力の<color=#0abec5>&Param2&</color>、<color=#0abec5>&Param3&</color>、<color=#0abec5>&Param4&x2</color>の火属性の従者ダメージを与え、##火属性の印：聖炎#2013#を付与する。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Minion,141523001)",
-                    "descKR": "##「붉은 용」#4018#이 ##「인호」#4019#로 강화되고, 2초마다 ##「인호」#4019#의 소환물 피해가 <color=#0abec5>&Param1&</color> 증가한다. \u000b##「인호」#4019#가 공격력 <color=#0abec5>&Param2&</color>, <color=#0abec5>&Param3&</color>, <color=#0abec5>&Param4&x2</color>의 불 속성 범위 소환물 피해를 입히고, ##불 속성 표식: 성염#2013#을 부여한다.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Minion,141523001)",
+                    "desc": "##Crimson Dragon#4018# enhances into ##Tiger of the East#4019#. Increases ##Tiger of the East#4019#'s Minion DMG by <color=#0abec5>&Param1&</color> every 2s.\u000b##Tiger of the East#4019# deals <color=#0abec5>&Param2&</color>, <color=#0abec5>&Param3&</color>, and <color=#0abec5>&Param4& x2</color> of ATK as AoE Ignis Minion DMG and inflicts ##Ignis Mark: Sacred Flame#2013#.",
+                    "descCN": "##「赤龙」#4018#强化为##「寅虎」#4019#，并每2秒使##「寅虎」#4019#的仆从伤害提升<color=#0abec5>&Param1&</color>。\u000b##「寅虎」#4019#造成攻击力<color=#0abec5>&Param2&</color>、<color=#0abec5>&Param3&</color>、<color=#0abec5>&Param4&x2</color>的范围火系仆从伤害，并附加##火系印记：圣焰#2013#。",
+                    "descJP": "##赤龍#4018#が強化され、##猛虎#4019#になる。2秒ごとに従者ダメージが<color=#0abec5>&Param1&</color>増加する。##猛虎#4019#は15秒間持続し、範囲内に攻撃力の<color=#0abec5>&Param2&</color>、<color=#0abec5>&Param3&</color>、<color=#0abec5>&Param4&x2</color>の火属性の従者ダメージを与え、##火属性の印：聖炎#2013#を付与する。",
+                    "descKR": "##「붉은 용」#4018#이 ##「인호」#4019#로 강화되고, 2초마다 ##「인호」#4019#의 소환물 피해가 <color=#0abec5>&Param1&</color> 증가한다. \u000b##「인호」#4019#가 공격력 <color=#0abec5>&Param2&</color>, <color=#0abec5>&Param3&</color>, <color=#0abec5>&Param4&x2</color>의 불 속성 범위 소환물 피해를 입히고, ##불 속성 표식: 성염#2013#을 부여한다.",
                     "damageType": [
-                        "Minion (from Skill, scale with Skill)",
-                        "Minion (from Skill, scale with Skill) (hidden)"
+                        "Minion (from Skill, scale with Skill)"
                     ],
                     "effectType": [
                         "Minion DMG (base)"
@@ -114665,18 +114529,8 @@
                             ]
                         }
                     ],
-                    "hiddenParams": [
-                        "57%/66%/74%/100%/108%/116%/132%/139%/146%/160%/171%/183%/194%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "141523001",
-                            "damageTag": [
-                                "-1975843378"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "14101_Potential_23",
                     "rarity": "core"
                 },
@@ -114686,13 +114540,12 @@
                     "nameCN": "寅虎·炽鳞",
                     "nameJP": "豪虎・灼燐",
                     "nameKR": "인호·화염 비늘",
-                    "desc": "The first minion summoned by &Param2& (Support Skill) is inflicted with Blazing Barrier, dealing <color=#0abec5>&Param1& of ATK</color> as AoE Ignis Minion DMG to nearby targets every <color=#0abec5>0.5</color>s.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Minion,141524002)",
-                    "descCN": "援护技「&Param2&」召唤的首个仆从附带「炽火结界」，每<color=#0abec5>0.5</color>秒对周围目标造成攻击力<color=#0abec5>&Param1&</color>的范围火系仆从伤害。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Minion,141524002)",
-                    "descJP": "チーシアの支援スキルで召喚した最初の従者は烈焔の結界を保持し、<color=#0abec5>0.5</color>秒ごとに、周囲に攻撃力の<color=#0abec5>&Param1&</color>の火属性の従者ダメージを与えるようになる。\u000bParam2: &Param2& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Minion,141524002)",
-                    "descKR": "지원 스킬 「&Param2&」이 소환한 첫 소환물이 「화염 결계」를 동반하여, <color=#0abec5>0.5</color>초마다 주변 목표에게 공격력 <color=#0abec5>&Param1&</color>의 불 속성 범위 소환물 피해를 입힌다.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Minion,141524002)",
+                    "desc": "The first minion summoned by &Param2& (Support Skill) is inflicted with Blazing Barrier, dealing <color=#0abec5>&Param1& of ATK</color> as AoE Ignis Minion DMG to nearby targets every <color=#0abec5>0.5</color>s.",
+                    "descCN": "援护技「&Param2&」召唤的首个仆从附带「炽火结界」，每<color=#0abec5>0.5</color>秒对周围目标造成攻击力<color=#0abec5>&Param1&</color>的范围火系仆从伤害。",
+                    "descJP": "チーシアの支援スキルで召喚した最初の従者は烈焔の結界を保持し、<color=#0abec5>0.5</color>秒ごとに、周囲に攻撃力の<color=#0abec5>&Param1&</color>の火属性の従者ダメージを与えるようになる。\u000bParam2: &Param2& (Skill,Title)",
+                    "descKR": "지원 스킬 「&Param2&」이 소환한 첫 소환물이 「화염 결계」를 동반하여, <color=#0abec5>0.5</color>초마다 주변 목표에게 공격력 <color=#0abec5>&Param1&</color>의 불 속성 범위 소환물 피해를 입힌다.",
                     "damageType": [
-                        "Minion (from Skill, scale with Skill)",
-                        "Minion (from Skill, scale with Skill) (hidden)"
+                        "Minion (from Skill, scale with Skill)"
                     ],
                     "effectType": [],
                     "addAttrType": [],
@@ -114711,18 +114564,8 @@
                         },
                         {}
                     ],
-                    "hiddenParams": [
-                        "8.3%/9.5%/10.8%/14.5%/15.7%/16.8%/19.1%/20.1%/21.1%/23.1%/24.8%/26.4%/28.1%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Minion (from Skill, scale with Skill)",
-                            "hitDamageId": "141524002",
-                            "damageTag": [
-                                "-1975843378"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "14101_Potential_24",
                     "rarity": "core"
                 }
@@ -162806,13 +162649,11 @@
                     "nameCN": "特别装药",
                     "nameJP": "サプライズプレゼント",
                     "nameKR": "특별 화약",
-                    "desc": "Increases the Attack Range of Gift Box Shells by <color=#0abec5>50%</color> and Skill DMG by <color=#0abec5>&Param5&</color>.\u000bIf the squad is Ignis-Trekker only, when Gift Box Shells deal DMG to the target, increases the target's Skill DMG Taken by <color=#0abec5>&Param2&</color> for <color=#0abec5>&Param3&</color>s, up to <color=#0abec5>&Param4&</color> stacks.\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,158322003)",
-                    "descCN": "「礼盒炮弹」的伤害范围提升<color=#0abec5>50%</color>，造成技能伤害提升<color=#0abec5>&Param5&</color>。\u000b当全队角色为火系，「礼盒炮弹」对目标造成伤害时，会使目标受到技能伤害提升<color=#0abec5>&Param2&</color>，持续<color=#0abec5>&Param3&</color>秒，可叠加<color=#0abec5>&Param4&</color>层。\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,158322003)",
-                    "descJP": "プレゼント砲弾の攻撃範囲が<color=#0abec5>50%</color>拡大し、与えるスキルダメージが<color=#0abec5>&Param5&</color>増加する。\u000bチーム内の全ての巡遊者が火属性の場合、プレゼント砲弾がダメージを与えた時、&Param3&秒間、その敵が受けるスキルダメージが<color=#0abec5>&Param2&</color>増加する。この効果は<color=#0abec5>&Param4&</color>回まで重複できる。\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,158322003)",
-                    "descKR": "「상자 포탄」의 피해 범위가 <color=#0abec5>50%</color> 증가하고, 입히는 스킬 피해가 <color=#0abec5>&Param5&</color> 증가한다.\u000b팀 전체가 불 속성 캐릭터일 경우, 「상자 포탄」이 목표에게 피해를 입히면, 목표가 받는 스킬 피해가 <color=#0abec5>&Param2&</color> 증가한다. <color=#0abec5>&Param3&</color>초간 지속되며, 최대 <color=#0abec5>&Param4&</color>스택 중첩된다.\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,158322003)",
-                    "damageType": [
-                        "Skill (from Skill, scale with Skill) (hidden)"
-                    ],
+                    "desc": "Increases the Attack Range of Gift Box Shells by <color=#0abec5>50%</color> and Skill DMG by <color=#0abec5>&Param5&</color>.\u000bIf the squad is Ignis-Trekker only, when Gift Box Shells deal DMG to the target, increases the target's Skill DMG Taken by <color=#0abec5>&Param2&</color> for <color=#0abec5>&Param3&</color>s, up to <color=#0abec5>&Param4&</color> stacks.\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype)",
+                    "descCN": "「礼盒炮弹」的伤害范围提升<color=#0abec5>50%</color>，造成技能伤害提升<color=#0abec5>&Param5&</color>。\u000b当全队角色为火系，「礼盒炮弹」对目标造成伤害时，会使目标受到技能伤害提升<color=#0abec5>&Param2&</color>，持续<color=#0abec5>&Param3&</color>秒，可叠加<color=#0abec5>&Param4&</color>层。\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype)",
+                    "descJP": "プレゼント砲弾の攻撃範囲が<color=#0abec5>50%</color>拡大し、与えるスキルダメージが<color=#0abec5>&Param5&</color>増加する。\u000bチーム内の全ての巡遊者が火属性の場合、プレゼント砲弾がダメージを与えた時、&Param3&秒間、その敵が受けるスキルダメージが<color=#0abec5>&Param2&</color>増加する。この効果は<color=#0abec5>&Param4&</color>回まで重複できる。\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype)",
+                    "descKR": "「상자 포탄」의 피해 범위가 <color=#0abec5>50%</color> 증가하고, 입히는 스킬 피해가 <color=#0abec5>&Param5&</color> 증가한다.\u000b팀 전체가 불 속성 캐릭터일 경우, 「상자 포탄」이 목표에게 피해를 입히면, 목표가 받는 스킬 피해가 <color=#0abec5>&Param2&</color> 증가한다. <color=#0abec5>&Param3&</color>초간 지속되며, 최대 <color=#0abec5>&Param4&</color>스택 중첩된다.\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype)",
+                    "damageType": [],
                     "effectType": [
                         "ELEMENTTYPE_:(Ignis) Skill DMG Taken"
                     ],
@@ -162875,21 +162716,8 @@
                             "buffStacks": 20
                         }
                     ],
-                    "hiddenParams": [
-                        "37%/42%/48%/64%/69%/75%/85%/89%/94%/103%/106%/110%/114%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "158322003",
-                            "damageTag": [
-                                "158_P25",
-                                "158_FireTag_Add",
-                                "158_P22",
-                                "158_P33"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "15801_Potential_22",
                     "rarity": "core"
                 },
@@ -172267,13 +172095,12 @@
                     "nameCN": "异色水泡",
                     "nameJP": "異色の水泡",
                     "nameKR": "알록달록 물방울",
-                    "desc": "For every 8 shots fired by Willow, a blue bubble is generated near targets inside Bubble Bath, dealing <color=#ec6d21>&Param1&</color> of ATK as AoE Aqua Skill DMG, while increasing the squad's &Param2& by <color=#ec6d21>&Param4&</color> for &Param8&s. When a blue bubble is generated, there is a 50% chance it turns into a red bubble, additionally increasing Main Trekker's &Param6& by <color=#ec6d21>&Param7&</color> for &Param8&s.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160530002)",
-                    "descCN": "薇洛每发动8次射击，处于「泡泡浴场」内的目标附近生成1个蓝色水泡，造成攻击力<color=#ec6d21>&Param1&</color>范围水系技能伤害，同时全队&Param2&提升<color=#ec6d21>&Param4&</color>，持续&Param8&秒。产生蓝色水泡时，有50%概率变成红色水泡，主控角色&Param6&额外提升<color=#ec6d21>&Param7&</color>，持续&Param8&秒。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160530002)",
-                    "descJP": "ウィロー（水着）が8回射撃を行うごとに、バブルエリア内にいる敵の付近にブルーバブルが1個生成され、範囲内に攻撃力の<color=#ec6d21>&Param1&</color>の水属性のスキルダメージを与える。同時に&Param8&秒間、チーム全体の&Param2&が<color=#ec6d21>&Param4&</color>上昇する。ブルーバブルが生成時、50%の確率でレッドバブルに変化し、&Param8&秒間、追加で主力巡遊者の&Param6&<color=#ec6d21>&Param7&</color>上昇する。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160530002)",
-                    "descKR": "윌로가 사격을 8회 발동할 때마다 「버블 스파」 내에 있는 목표 주변에 파란색 물방울 1개가 생성되어, 공격력 <color=#ec6d21>&Param1&</color>의 물 속성 범위 스킬 피해를 입힌다. 또한 팀 전체의 &Param2_kr1& <color=#ec6d21>&Param4&</color> 증가한다. &Param8&초간 지속된다. 파란색 물방울을 생성할 때, 50% 확률로 빨간색 물방울로 변경되어, 메인 캐릭터의 &Param6_kr1& 추가로 <color=#ec6d21>&Param7&</color> 증가한다. &Param8&초간 지속된다.\u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype) \u000bParam6: &Param6& (Effect,EffectTypeFirstSubtype)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160530002)",
+                    "desc": "For every 8 shots fired by Willow, a blue bubble is generated near targets inside Bubble Bath, dealing <color=#ec6d21>&Param1&</color> of ATK as AoE Aqua Skill DMG, while increasing the squad's &Param2& by <color=#ec6d21>&Param4&</color> for &Param8&s. When a blue bubble is generated, there is a 50% chance it turns into a red bubble, additionally increasing Main Trekker's &Param6& by <color=#ec6d21>&Param7&</color> for &Param8&s.",
+                    "descCN": "薇洛每发动8次射击，处于「泡泡浴场」内的目标附近生成1个蓝色水泡，造成攻击力<color=#ec6d21>&Param1&</color>范围水系技能伤害，同时全队&Param2&提升<color=#ec6d21>&Param4&</color>，持续&Param8&秒。产生蓝色水泡时，有50%概率变成红色水泡，主控角色&Param6&额外提升<color=#ec6d21>&Param7&</color>，持续&Param8&秒。",
+                    "descJP": "ウィロー（水着）が8回射撃を行うごとに、バブルエリア内にいる敵の付近にブルーバブルが1個生成され、範囲内に攻撃力の<color=#ec6d21>&Param1&</color>の水属性のスキルダメージを与える。同時に&Param8&秒間、チーム全体の&Param2&が<color=#ec6d21>&Param4&</color>上昇する。ブルーバブルが生成時、50%の確率でレッドバブルに変化し、&Param8&秒間、追加で主力巡遊者の&Param6&<color=#ec6d21>&Param7&</color>上昇する。",
+                    "descKR": "윌로가 사격을 8회 발동할 때마다 「버블 스파」 내에 있는 목표 주변에 파란색 물방울 1개가 생성되어, 공격력 <color=#ec6d21>&Param1&</color>의 물 속성 범위 스킬 피해를 입힌다. 또한 팀 전체의 &Param2_kr1& <color=#ec6d21>&Param4&</color> 증가한다. &Param8&초간 지속된다. 파란색 물방울을 생성할 때, 50% 확률로 빨간색 물방울로 변경되어, 메인 캐릭터의 &Param6_kr1& 추가로 <color=#ec6d21>&Param7&</color> 증가한다. &Param8&초간 지속된다.\u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype) \u000bParam6: &Param6& (Effect,EffectTypeFirstSubtype)",
                     "damageType": [
-                        "Skill (from Skill)",
-                        "Skill (from Skill) (hidden)"
+                        "Skill (from Skill)"
                     ],
                     "effectType": [
                         "Crit Rate (base)",
@@ -172347,22 +172174,8 @@
                             "buffDuration": 9
                         }
                     ],
-                    "hiddenParams": [
-                        "41%/65%/89%/114%/138%/163%/187%/211%/236%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill)",
-                            "hitDamageId": "160530002",
-                            "hitDamageNote": "Requires Prismatic Bubbles (516030)",
-                            "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.5s, hit delay 1.4s, hit interval 3s, 1 hits, Circle (radius 3)"
-                            ],
-                            "damageTag": [
-                                "-841558618"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "16001_Potential_23",
                     "corner": "Round",
                     "rarity": "rare",
