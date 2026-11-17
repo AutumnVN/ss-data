@@ -12,6 +12,7 @@ const EFFECT = require('./EN/bin/Effect.json');
 const EFFECTVALUE = require('./EN/bin/EffectValue.json');
 const BUFFVALUE = require('./EN/bin/BuffValue.json');
 const ONCEADDITIONALATTRIBUTEVALUE = require('./EN/bin/OnceAdditionalAttributeValue.json');
+const SCRIPTPARAMETERVALUE = require('./EN/bin/ScriptParameterValue.json');
 
 function findPotential(charId, potentialId) {
     const character = CHARACTER[charId];
@@ -328,6 +329,39 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `Optimal Hit Zone adds +1 hex from _inTriggerSet while astral hex dmg is active = ${countsTriggerSet}`,
+            };
+        },
+    },
+    {
+        heading: 'Eleanor > Flicker Sequence',
+        check() {
+            const potential = findPotential('137', 513712);
+            const percent = SCRIPTPARAMETERVALUE['13712011'].CommonData / 10000;
+            const applied = getHotfix().includes('ModifySectionResumeTimePercentAmend(100 - num, ActionKey.A)');
+            const active = applied && percent !== 25;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `13712011 = ${percent}, so ActionKey.A resume time is set to ${100 - percent}% (${percent}% less cooldown), text says 25%`,
+            };
+        },
+    },
+    {
+        heading: 'Eleanor > Chain Detonation',
+        check() {
+            const potential = findPotential('137', 513721);
+            const source = getHotfix();
+            const usesJumpIndex = source.includes('int loops = (int)(long)logicTagValue2;')
+                && source.includes('logicTagValue2 >= FP.op_Implicit(1)')
+                && source.includes('_actor.logicVariable.SetLogicTagValue("JumpAtkJumpIndex", FP.op_Implicit(_loopTimes));');
+            const saysOneEach = potential.desc.includes('explosions of each jump slam by 1');
+            const active = usesJumpIndex && saysOneEach;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `extra explodes loop JumpAtkJumpIndex times, so slam 1 gets 0 and each later slam 1 more than the previous = ${usesJumpIndex}, which is better than the text overall (36 extras instead of 9); en text says +1 for each = ${saysOneEach}`,
             };
         },
     },

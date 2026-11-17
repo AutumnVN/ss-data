@@ -47,6 +47,14 @@
     "active": true,
     "text": "Increases Minova's Skill DMG dealt to targets inflicted with Astral Hex. Each Astral Hex increases the Skill DMG by <color=#ec6d21>&Param1&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,AttributeType1)"
   },
+  "Eleanor > Flicker Sequence": {
+    "active": true,
+    "text": "Decreases Dodge cooldown by 25%. Increases Eleanor's &Param1& by <color=#ec6d21>&Param2&</color>."
+  },
+  "Eleanor > Chain Detonation": {
+    "active": true,
+    "text": "Increases the &Param1& of jump slam explosions from Armed Assault (Support Skill) by <color=#0abec5>&Param2&</color>. Increases the number of explosions of each jump slam by 1. Resets when the Support Skill ends."
+  },
   "Chixia > Flame-Stained Ink": {
     "active": true,
     "text": "Ink can stack up to <color=#0abec5>4</color> times on targets. When a target with 4 stacks of Ink triggers ##Burn#2027#, deals <color=#0abec5>&Param1& of ATK</color> as AoE Ignis Skill DMG."
