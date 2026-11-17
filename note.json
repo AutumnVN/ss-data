@@ -47,6 +47,14 @@
     "active": true,
     "text": "Increases Minova's Skill DMG dealt to targets inflicted with Astral Hex. Each Astral Hex increases the Skill DMG by <color=#ec6d21>&Param1&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,AttributeType1)"
   },
+  "Nazuka > Youth: Annihilation": {
+    "active": true,
+    "text": "The Flower Petal has a 15% chance to kill a normal target immediately, and its &Param1& is increased by <color=#ec6d21>&Param2&</color>."
+  },
+  "Nazuka > Flower Formation: Convergence": {
+    "active": true,
+    "text": "Increases Flower Formation's &Param1& by <color=#ec6d21>&Param2&</color>. When there are 2 or more targets caught in Flower Formation, additionally increases its DMG by <color=#ec6d21>&Param4&</color>.\u000bParam3: &Param3& (OnceAdditionalAttribute,AttributeType1)"
+  },
   "Eleanor > Flicker Sequence": {
     "active": true,
     "text": "Decreases Dodge cooldown by 25%. Increases Eleanor's &Param1& by <color=#ec6d21>&Param2&</color>."

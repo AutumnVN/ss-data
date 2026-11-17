@@ -333,6 +333,37 @@ const checks = [
         },
     },
     {
+        heading: 'Nazuka > Youth: Annihilation',
+        check() {
+            const potential = findPotential('133', 513326);
+            const chance = Number(getHotfix().match(/per_26 = FP\.op_Implicit\(([\d.]+)\)/)[1]);
+            const textChance = Number(potential.desc.match(/(\d+)% chance/)[1]);
+            const active = chance !== textChance;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `petal execute chance is ${chance}% in the code vs ${textChance}% in the text`,
+            };
+        },
+    },
+    {
+        heading: 'Nazuka > Flower Formation: Convergence',
+        check() {
+            const potential = findPotential('133', 513328);
+            const source = getHotfix();
+            const required = Number(source.match(/num_28 = (\d+)/)[1]);
+            const textTargets = Number(potential.desc.match(/(\d+) or more targets/)[1]);
+            const active = required !== textTargets;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `extra DMG needs list_p24.Count >= ${required}, text says ${textTargets} or more targets`,
+            };
+        },
+    },
+    {
         heading: 'Eleanor > Flicker Sequence',
         check() {
             const potential = findPotential('137', 513712);
