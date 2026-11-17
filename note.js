@@ -238,6 +238,64 @@ const checks = [
         },
     },
     {
+        heading: 'Freesia > Elemental Sublimation',
+        check() {
+            const potential = findPotential('125', 512506);
+            const source = getHotfix();
+            const ultBonus = ONCEADDITIONALATTRIBUTEVALUE['12506011'];
+            const stacks = BUFFVALUE['12506011'].LaminatedNum;
+            const addedPerCast = source.includes('_actor.buffComponent?.AddBuff(12506011, _actor)');
+            const removedOnUlt = source.includes('_actor.buffComponent?.RemoveBuffByBuffId(12506011)');
+            const scaledByStacks = source.includes('AdventureActor.AddFromAttr(12506001, _actor, buffNumByID)');
+            const active = addedPerCast && removedOnUlt && scaledByStacks
+                && stacks > 1 && ultBonus.AttributeType1 === 58;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `ult bonus ${ultBonus.Value1 / 100}% (attr ${ultBonus.AttributeType1}) is applied with count = buff stacks (max ${stacks}); buff added per main skill cast = ${addedPerCast}, removed on ult end = ${removedOnUlt}`,
+            };
+        },
+    },
+    {
+        heading: 'Freesia > Frost Gift',
+        check() {
+            const potential = findPotential('125', 512508);
+            const source = getHotfix();
+            const namespaceStart = source.indexOf('namespace AIScript.Character._12501');
+            const tag = source.slice(namespaceStart, namespaceStart + 200000)
+                .match(/damageTag_Trigger_P8 = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const autoHits = CHARACTER['125'].normalAtk.paramsTooltips
+                .filter(hit => (hit.damageTag || []).includes(tag));
+            const ultraHits = CHARACTER['125'].ultimate.paramsTooltips
+                .filter(hit => (hit.damageTag || []).includes(tag));
+            const active = tag === '125_Main_Skill_Damage'
+                && autoHits.length === 0 && ultraHits.length === 0;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `elite bonus needs hits tagged ${tag}; auto attack hits with it = ${autoHits.length}, ultimate hits with it = ${ultraHits.length}`,
+            };
+        },
+    },
+    {
+        heading: 'Freesia > Desperate Counterattack',
+        check() {
+            const potential = findPotential('125', 512513);
+            const used = SCRIPTPARAMETERVALUE['12513012'].CommonData / 10000;
+            const shown = SCRIPTPARAMETERVALUE['12513011'].CommonData / 10000;
+            const usesUndisplayed = getHotfix().includes('GetScriptValue(_actor, 12513012)');
+            const active = usesUndisplayed && used !== shown && +potential.params[1] === shown;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `cooldown uses 12513012 = ${used}s; text Param2 uses 12513011 = ${shown}s`,
+            };
+        },
+    },
+    {
         heading: 'Freesia > Frost Warning',
         check() {
             const potential = findPotential('125', 512524);

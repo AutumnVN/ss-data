@@ -23,6 +23,18 @@
     "active": true,
     "text": "When &Param10& (Main Skill) ends, increases Freesia's ATK by <color=#ec6d21>&Param1&</color> for &Param2&s."
   },
+  "Freesia > Elemental Sublimation": {
+    "active": true,
+    "text": "Casting &Param10& (Main Skill) increases the DMG of the next Ultimate's Ultimate DMG by <color=#ec6d21>&Param1&</color>. While Freesia is in ##Berserk#2014#, increases her Auto Attack DMG by <color=#ec6d21>&Param2&</color>, up to &Param3& stacks.\u000bParam9: &Param9& (Skill,Title)"
+  },
+  "Freesia > Frost Gift": {
+    "active": true,
+    "text": "When &Param10& (Main Skill) deals DMG to a normal target with ##Frozen#1002#, there is a &Param1& chance to trigger ##Shattered Ice#2007#.\u000bWhen dealing DMG to an elite or boss target with ##Chill#1027#/##Frozen#1002#, there is a &Param1& chance to increase the DMG dealt by <color=#ec6d21>&Param2&</color>."
+  },
+  "Freesia > Desperate Counterattack": {
+    "active": true,
+    "text": "Freesia can dodge one more time.\u000bWhen Freesia triggers ##Aqua Mark: Torrent#1018#, she gains <color=#ec6d21>&Param1&</color> Energy. This effect can only be triggered once every &Param2&s.\u000bParam10: &Param10& (Skill,Title)"
+  },
   "Freesia > Frost Warning": {
     "active": true,
     "text": "When Freesia hits targets inflicted with ##Chill#1027#/##Frozen#1002#, deals an additional <color=#0abec5>&Param1& of ATK</color> as AoE Aqua Skill DMG.\u000bParam10: &Param10& (Skill,Title)"
