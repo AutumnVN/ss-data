@@ -47,6 +47,14 @@
     "active": true,
     "text": "Increases Minova's Skill DMG dealt to targets inflicted with Astral Hex. Each Astral Hex increases the Skill DMG by <color=#ec6d21>&Param1&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,AttributeType1)"
   },
+  "Chixia > Flame-Stained Ink": {
+    "active": true,
+    "text": "Ink can stack up to <color=#0abec5>4</color> times on targets. When a target with 4 stacks of Ink triggers ##Burn#2027#, deals <color=#0abec5>&Param1& of ATK</color> as AoE Ignis Skill DMG."
+  },
+  "Chixia > Blazing Rainbow Array": {
+    "active": true,
+    "text": "Increases the Attack Range of Purifying Flames (Main Skill). \u000bIncreases Skill DMG by <color=#0abec5>&Param1&</color>. This effect gradually diminishes over 3s."
+  },
   "Chitose > Aqueous Phantasm": {
     "active": true,
     "text": "When the Coiling Serpent hits a target, summons another Coiling Serpent, dealing <color=#fb8037>&Param1&x2</color> of ATK as Aqua Auto Attack DMG. This effect can only be triggered 3 times every 3s. Can trigger ##Aqua Mark#1018#."

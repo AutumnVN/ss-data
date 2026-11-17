@@ -332,6 +332,45 @@ const checks = [
         },
     },
     {
+        heading: 'Chixia > Flame-Stained Ink',
+        check() {
+            const potential = findPotential('141', 514103);
+            const effect = EFFECTVALUE['14103012'];
+            const source = getHotfix();
+            const addsAtkSpeed = source.includes('monster.buffComponent.GetBuffNum(0, 0, Config.buffTag_Ink) >= 4')
+                && source.includes('_actor.buffComponent.AddBuff(14103012, _actor)');
+            const mentioned = /attack speed/i.test(potential.desc);
+            const active = addsAtkSpeed
+                && effect.EffectType === 12
+                && effect.EffectTypeFirstSubtype === 47
+                && effect.EffectTypeSecondSubtype === 1
+                && !mentioned;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `burn on a 4-ink target adds buff 14103012 (+${effect.EffectTypeParam1 * 100}% attack speed, ${BUFFVALUE['14103012'].Time / 10000}s) = ${addsAtkSpeed}; text mentions attack speed = ${mentioned}`,
+            };
+        },
+    },
+    {
+        heading: 'Chixia > Blazing Rainbow Array',
+        check() {
+            const potential = findPotential('141', 514104);
+            const perStack = ONCEADDITIONALATTRIBUTEVALUE['14104011'];
+            const advertised = ONCEADDITIONALATTRIBUTEVALUE['14104012'];
+            const maxStacks = BUFFVALUE['14104011'].LaminatedNum;
+            const hits = getHotfix().includes('AdventureActor.AddFromAttr(14104011, _actor, buffNumByID)');
+            const active = hits && perStack.Value1 * maxStacks < advertised.Value1;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `14104011 adds ${perStack.Value1 / 100}% per stack, max ${maxStacks} stacks = ${perStack.Value1 * maxStacks / 100}%, text advertises ${advertised.Value1 / 100}%`,
+            };
+        },
+    },
+    {
         heading: 'Chitose > Aqueous Phantasm',
         check() {
             const potential = findPotential('144', 514407);
