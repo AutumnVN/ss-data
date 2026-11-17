@@ -47,10 +47,6 @@
     "active": true,
     "text": "Increases Minova's Skill DMG dealt to targets inflicted with Astral Hex. Each Astral Hex increases the Skill DMG by <color=#ec6d21>&Param1&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,AttributeType1)"
   },
-  "Nazuka > Self-Improvement": {
-    "active": true,
-    "text": "When there is a Flower Formation on the battlefield, increases Nazuka's &Param1& by <color=#ec6d21>&Param2&</color>."
-  },
   "Chitose > Aqueous Phantasm": {
     "active": true,
     "text": "When the Coiling Serpent hits a target, summons another Coiling Serpent, dealing <color=#fb8037>&Param1&x2</color> of ATK as Aqua Auto Attack DMG. This effect can only be triggered 3 times every 3s. Can trigger ##Aqua Mark#1018#."
@@ -98,10 +94,6 @@
   "Dream Factory of ☆Truth > Dream Factory of ☆Truth": {
     "active": true,
     "text": "Increases the squad's Umbra DMG by <color=#ec6d21>{1}</color>.\u000bWhen any Umbra Trekker deal non-Auto Attack DMG to a target, there is a {2} chance to inflict Corrosion: increases Umbra DMG taken by {3} for {4}s.\u000bReduces the DMG taken by the main Umbra Trekker from targets inflicted with Corrosion by {5}."
-  },
-  "Dancing with the Bones > Dancing with the Bones": {
-    "active": true,
-    "text": "Increases the squad's Terra DMG by <color=#ec6d21>{1}</color>.\u000bWhen the main Terra Trekker's HP is above {2} when any Terra Trekker deals Skill DMG, increases the DMG of this hit by {3}. The main Terra Trekker gains Boulder: reduces DMG taken by {4}."
   },
   "Dancing with the Bones > Buried Past": {
     "active": true,

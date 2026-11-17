@@ -332,22 +332,6 @@ const checks = [
         },
     },
     {
-        heading: 'Nazuka > Self-Improvement',
-        check() {
-            const potential = findPotential('133', 513332);
-            const bouquet = CHARACTER['133'].supportSkill.paramsTooltips[0];
-            const usesSup32 = getHotfix().includes('CommonUtils.CheckHitByTag(adventureActorReceiveDamageBeforeHitEvent.hitDamageTag, atk_Sup32) && GetPerk(perk_32) && totleCount > 0');
-            const hasTag = (bouquet.damageTag || []).includes('133_Sup32');
-            const active = usesSup32 && !hasTag;
-
-            return {
-                active,
-                text: potential.desc,
-                detail: `flower bouquet hit ${bouquet.hitDamageId} ${hasTag ? 'has' : 'lacks'} 133_Sup32; buff checks 133_Sup32 = ${usesSup32}`,
-            };
-        },
-    },
-    {
         heading: 'Chitose > Aqueous Phantasm',
         check() {
             const potential = findPotential('144', 514407);
@@ -553,24 +537,6 @@ const checks = [
                 active,
                 text: skill.desc,
                 detail: `effect 4032021 Trigger = ${effect.Trigger}; Target1 = ${effect.Target1}`,
-            };
-        },
-    },
-    {
-        heading: 'Dancing with the Bones > Dancing with the Bones',
-        check() {
-            const skill = DISC['214033'].mainSkill;
-            const classSource = extractMethod(getHotfix(), 'public class Disc_214033 : DiscScriptBase');
-            const method = extractMethod(classSource, 'private IEnumerator DoAddBuff()');
-            const addsToAllTerra = method.includes('buff_1_dehurt[stage_1]')
-                && method.includes('HotfixEnum.elementType.SE')
-                && method.includes('ActorLs');
-            const active = skill.desc.includes('main Terra Trekker gains Boulder') && addsToAllTerra;
-
-            return {
-                active,
-                text: skill.desc,
-                detail: `DoAddBuff adds 4033041 to all SE actors = ${addsToAllTerra}`,
             };
         },
     },
