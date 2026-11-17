@@ -208,6 +208,145 @@ const checks = [
         },
     },
     {
+        heading: 'Firefly > Flash Resonance',
+        check() {
+            const potential = findPotential('115', 511510);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11501');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onSelfDamaged = extractMethod(main, 'protected override void OnSelfDamaged(');
+            const onCastSkill = extractMethod(main, 'protected override void OnSelfCastSkill(');
+            const perMonster = onSelfDamaged.includes('_triggerSet_P10.Add(monster.Id)')
+                && onSelfDamaged.includes('if (!_triggerSet_P10.Add(monster.Id))');
+            const clearsOnMain = onCastSkill.includes('skillSlotType.B')
+                && onCastSkill.includes('_triggerSet_P10?.Clear()');
+            const stacks = BUFFVALUE['11510011'].LaminatedNum;
+            const textStacks = +potential.params[2];
+            const active = perMonster && clearsOnMain && stacks === textStacks;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `only the first 115_Main_Laser hit per monster grants a stack = ${perMonster}; the set is cleared only on slot B cast = ${clearsOnMain}; buff 11510011 stacks up to ${stacks} (text Param3 ${textStacks})`,
+            };
+        },
+    },
+    {
+        heading: 'Firefly > Lightforged Blade',
+        check() {
+            const potential = findPotential('115', 511525);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11501');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onBeforeHit = extractMethod(support, 'protected override void OnBeforeSelfHit(');
+            const action = extractMethod(namespace, 'public class ActionScript_Support : ActionScript');
+            const onCastSkill = extractMethod(action, 'protected override void OnCastSkill(');
+            const glowValues = getOnceAdditionalLevels(11525011);
+            const haloValues = getOnceAdditionalLevels(11525012);
+            const glowAttr = glowValues[0].AttributeType1;
+            const haloAttr = haloValues[0].AttributeType1;
+            const glowBonus = +glowValues[0].Value1 / 100;
+            const haloBonus = +haloValues[0].Value1 / 100;
+            const textGlow = potential.params[2];
+            const textHalo = potential.params[5];
+            const converts = onCastSkill.includes('AddBuffNum(11525013')
+                && onCastSkill.includes('RemoveBuffByBuffId(11525011)')
+                && onCastSkill.includes('AddBuffNum(11525015')
+                && onCastSkill.includes('RemoveBuffByBuffId(11525014)');
+            const wiring = /GetBuffNumByID\(11525013\)[\s\S]*?AddFromAttr\(11525001/.test(onBeforeHit)
+                && /GetBuffNumByID\(11525015\)[\s\S]*?AddFromAttr\(11525002/.test(onBeforeHit);
+            const active = converts && wiring
+                && glowAttr === 57 && haloAttr === 71
+                && textGlow === 'Skill Crit Rate' && textHalo === 'Skill DMG';
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `glow stacks (11525013) give attr ${glowAttr} = ${glowBonus}% per stack; halo stacks (11525015) give attr ${haloAttr} = ${haloBonus}% per stack; text says glow gives ${textGlow} and halo gives ${textHalo}`,
+            };
+        },
+    },
+    {
+        heading: 'Nanoha > Growth Tempest',
+        check() {
+            const potential = findPotential('119', 511901);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11901');
+            const base = extractMethod(namespace, 'public class ParallelScript : ParallelBase');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const hitTag = base.match(/hitTag_Normal = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const hits = CHARACTER['119'].normalAtk.paramsTooltips.filter(hit => hit.hitDamageId);
+            const taggedHits = hits.filter(hit => (HITDAMAGE[hit.hitDamageId].DamageTag || []).includes(crc32(hitTag)));
+            const count = +main.match(/private int count_1 = (\d+);/)[1];
+            const textCount = +potential.desc.match(/Auto Attacks <color=[^>]+>(\d+)<\/color>/)[1];
+            const active = count !== textCount && taggedHits.length === hits.length;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `aoe needs ${count} ${hitTag} hits on one target; text says ${textCount}; auto attack hits with the tag = ${taggedHits.length}/${hits.length}`,
+            };
+        },
+    },
+    {
+        heading: 'Nanoha > Sun Chaser',
+        check() {
+            const potential = findPotential('119', 511907);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11901');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onCrit = extractMethod(main, 'public override void OnCrit(');
+            const onBeforeHit = extractMethod(main, 'public override void OnBeforeHit(');
+            const onHitPost = extractMethod(main, 'public override void OnHitPost(');
+            const buff = '11950711';
+            const addedOnCrit = onCrit.includes(`AddBuff(${buff}`);
+            const addedOnHit = onBeforeHit.includes(buff) || onHitPost.includes(buff);
+            const saysAnyDamage = potential.desc.startsWith('When Nanoha deals DMG');
+            const active = addedOnCrit && !addedOnHit && saysAnyDamage;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff ${buff} added only in OnCrit = ${addedOnCrit}; added on normal hit paths = ${addedOnHit}; text says any dmg = ${saysAnyDamage}`,
+            };
+        },
+    },
+    {
+        heading: 'Nanoha > Blooming Flowers',
+        check() {
+            const potential = findPotential('119', 511912);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11901');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const handler = extractMethod(main, 'private void OnElementMarkTrigger(');
+            const checksActor = /triggerActor|fromActor/.test(handler);
+            const stacks = BUFFVALUE['11951211'].LaminatedNum;
+            const active = handler.includes('elementType.AE') && handler.includes('AddBuff(11951211')
+                && !checksActor && stacks === +potential.params[3];
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `any AE mark event adds 11951211; checks the triggering actor = ${checksActor}; buff stacks up to ${stacks} (text Param4 ${potential.params[3]})`,
+            };
+        },
+    },
+    {
+        heading: 'Nanoha > Unfulfilled Enthusiasm',
+        check() {
+            const potential = findPotential('119', 511924);
+            const buff = BUFFVALUE['11952411'];
+            const textStacks = +potential.desc.match(/stacking up to <color=[^>]+>(\d+)<\/color>/)[1];
+            const detonation = ONCEADDITIONALATTRIBUTEVALUE['11924001'];
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11901');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onceId = +support.match(/private int once_24 = (\d+);/)[1];
+            const scaledByStacks = support.includes('AddFromAttr(once_24, _actor, buffNumByID2)');
+            const active = buff.LaminatedNum !== textStacks && onceId === 11924001 && scaledByStacks;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff 11952411 stacks up to ${buff.LaminatedNum}; text says ${textStacks}; detonation adds ${detonation.Value1 / 100}% skill dmg per stack = ${scaledByStacks}`,
+            };
+        },
+    },
+    {
         heading: 'Nanoha > Blossom Rhyme',
         check() {
             const potential = findPotential('119', 511941);
@@ -219,6 +358,32 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `L1 ${levels[0].Value1} type ${levels[0].ParameterType1}; L6 ${level6.Value1} type ${level6.ParameterType1}`,
+            };
+        },
+    },
+    {
+        heading: 'Nanoha > Rejuvenating Spring',
+        check() {
+            const talent = CHARACTER['119'].talent
+                .find(entry => entry.name === 'Rejuvenating Spring').boost[0];
+            const main = extractMethod(getHotfix(), 'namespace AIScript.Character._11901');
+            const base = extractMethod(main, 'public class ParallelScript : ParallelBase');
+            const mainTrigger = extractMethod(base, 'public void TriggerWindMark(AdventureActor target)');
+            const clone = extractMethod(getHotfix(), 'namespace AIScript.Monster._11901111Hanahara');
+            const cloneTrigger = extractMethod(clone, 'public void TriggerWindMark(AdventureActor target)');
+            const ultHits = CHARACTER['119'].ultimate.paramsTooltips
+                .filter(hit => (hit.damageTag || []).includes('WindTag1Boom'));
+            const addsInMain = mainTrigger.includes('CheckTalentLevel(2)')
+                && mainTrigger.includes('AddBuff(buffId_F2');
+            const cloneTriggersMark = cloneTrigger.includes('CheckTriggerElementMarkCD(summoner')
+                && cloneTrigger.includes('TriggerElementMarkEvent') && cloneTrigger.includes('summoner');
+            const active = talent.buffs[0].id === 11996211 && addsInMain && cloneTriggersMark
+                && !cloneTrigger.includes('AddBuff') && ultHits.length > 0;
+
+            return {
+                active,
+                text: talent.desc,
+                detail: `talent buff 11996211 added in the main TriggerWindMark = ${addsInMain}; the clone TriggerWindMark dispatches the mark event as nanoha = ${cloneTriggersMark} but adds the buff = ${cloneTrigger.includes('AddBuff')}; ult hits tagged WindTag1Boom = ${ultHits.length}`,
             };
         },
     },
