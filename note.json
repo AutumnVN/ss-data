@@ -59,6 +59,10 @@
     "active": true,
     "text": "When casting Divine Retribution of Evil (Ultimate), increases Gerie's DMG to nearby targets by <color=#ec6d21>&Param2&</color> for &Param3&s. Also inflicts ##Fear#4501# on normal targets for 2s.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)"
   },
+  "Shia > Kick the Wave": {
+    "active": true,
+    "text": "When Shia deals DMG with surfing, increases the surfing Skill DMG taken by the target by <color=#ec6d21>&Param1&</color> for &Param2&s, stacking up to &Param3& times.\u000bParam10: &Param10& (Skill,Title)"
+  },
   "Suntide Willow > Foam Echo": {
     "active": true,
     "text": "When ##Echoing Soundwave#4047# deal DMG, increases own and non-Aqua Squadmates' &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times."

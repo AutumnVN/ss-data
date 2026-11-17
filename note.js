@@ -381,6 +381,24 @@ const checks = [
         },
     },
     {
+        heading: 'Shia > Kick the Wave',
+        check() {
+            const potential = findPotential('155', 515529);
+            const once = ONCEADDITIONALATTRIBUTEVALUE['15529011'];
+            const source = getHotfix();
+            const buffOnAttacker = source.includes('adventureActor.buffComponent.AddBuff(buff_29, adventureActor)');
+            const active = buffOnAttacker
+                && once.AttributeType1 === 57
+                && potential.desc.includes('Skill DMG taken');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff 15529011 is added to the attacker and OA 15529011 subtype = ${once.AttributeType1} (57 = Skill DMG), text says the target takes more surfing skill dmg`,
+            };
+        },
+    },
+    {
         heading: 'Suntide Willow > Foam Echo',
         check() {
             const potential = findPotential('160', 516008);
