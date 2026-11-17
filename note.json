@@ -47,6 +47,10 @@
     "active": true,
     "text": "Increases Minova's Skill DMG dealt to targets inflicted with Astral Hex. Each Astral Hex increases the Skill DMG by <color=#ec6d21>&Param1&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,AttributeType1)"
   },
+  "Minova > Shutout Desire": {
+    "active": true,
+    "text": "When the main Trekker deals damage to a target inflicted with Astral Hex, deals an additional <color=#ec6d21>&Param1& of Minova's ATK</color> as Lux Skill DMG. This effect can only be triggered once per second.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,132526001)"
+  },
   "Nazuka > Youth: Annihilation": {
     "active": true,
     "text": "The Flower Petal has a 15% chance to kill a normal target immediately, and its &Param1& is increased by <color=#ec6d21>&Param2&</color>."

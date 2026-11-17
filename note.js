@@ -13,6 +13,7 @@ const EFFECTVALUE = require('./EN/bin/EffectValue.json');
 const BUFFVALUE = require('./EN/bin/BuffValue.json');
 const ONCEADDITIONALATTRIBUTEVALUE = require('./EN/bin/OnceAdditionalAttributeValue.json');
 const SCRIPTPARAMETERVALUE = require('./EN/bin/ScriptParameterValue.json');
+const HITDAMAGE = require('./EN/bin/HitDamage.json');
 
 function findPotential(charId, potentialId) {
     const character = CHARACTER[charId];
@@ -329,6 +330,24 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `Optimal Hit Zone adds +1 hex from _inTriggerSet while astral hex dmg is active = ${countsTriggerSet}`,
+            };
+        },
+    },
+    {
+        heading: 'Minova > Shutout Desire',
+        check() {
+            const potential = findPotential('132', 513226);
+            const textLevels = getLevelValues(SCRIPTPARAMETERVALUE, 13226011)
+                .map(row => row.CommonData / 10000);
+            const hitLevels = HITDAMAGE['132526001'].SkillPercentAmend
+                .slice(0, textLevels.length)
+                .map(value => value / 10000);
+            const active = textLevels.some((value, index) => value !== hitLevels[index]);
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `extra hit deals ${hitLevels[0]}% to ${hitLevels.at(-1)}% of ATK (HiddenParam1 132526001) vs ${textLevels[0]}% to ${textLevels.at(-1)}% shown (Param1 SPV 13226001)`,
             };
         },
     },
