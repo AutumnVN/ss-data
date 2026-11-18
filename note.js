@@ -805,6 +805,86 @@ const checks = [
         },
     },
     {
+        heading: 'Cosette > Nocturn Mark',
+        check() {
+            const potential = findPotential('142', 514204);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14201');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const triggerMask = extractMethod(main, 'private void TriggerMask(');
+            const sharedCounter = triggerMask.includes('++curCount_4 >= count_4') && triggerMask.includes('CheckCd(perkId_4, cd_4)');
+            const perTarget = /curCount_4\s*\[|Dictionary<[^>]*curCount_4/.test(main);
+            const cdField = main.match(/private FP cd_4 = FP\.op_Implicit\(([\d.]+)\)/);
+            const cdSeconds = cdField ? +cdField[1] : NaN;
+            const sameTarget = potential.desc.includes('on the same target for the 3rd time');
+            const oncePerSecond = potential.desc.includes('once per second');
+            const active = sharedCounter && !perTarget && cdSeconds < 1 && sameTarget && oncePerSecond;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the 3rd-mark counter is one field shared by every target = ${sharedCounter} (per-target storage = ${perTarget}); text counts the 3rd mark on the same target = ${sameTarget}; the internal cooldown is ${cdSeconds}s while the text says once per second = ${oncePerSecond}`,
+            };
+        },
+    },
+    {
+        heading: 'Cosette > Dark: Hallucination',
+        check() {
+            const potential = findPotential('142', 514228);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14201');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onHitPost = extractMethod(support, 'public override void OnHitPost(');
+            const rolls = onHitPost.includes('GetPerkLv(514228') && onHitPost.includes('paramId_28_pro');
+            const cooldown = onHitPost.includes('CheckCd(514228');
+            const text = potential.desc.includes('once every 0.5s');
+            const active = rolls && !cooldown && text;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the 30% roll uses 14228011 on every support-skill hit = ${rolls}; there is no CheckCd(514228) = ${!cooldown}; text limits it to once every 0.5s = ${text}`,
+            };
+        },
+    },
+    {
+        heading: 'Cosette > Dark: Form Breaker',
+        check() {
+            const potential = findPotential('142', 514229);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14201');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onHitPost = extractMethod(support, 'public override void OnHitPost(');
+            const reduces = onHitPost.includes('DamageToToughness');
+            const cdField = support.match(/private FP cd_29 = FP\.op_Implicit\(([\d.]+)\)/);
+            const cdSeconds = cdField ? +cdField[1] : NaN;
+            const text = potential.desc.includes('once every 0.5s');
+            const active = reduces && cdSeconds > 0.5 && text;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the toughness reduction uses the level-scaled 14229002 percentage = ${reduces}; the internal cooldown is ${cdSeconds}s while the text says 0.5s = ${text}`,
+            };
+        },
+    },
+    {
+        heading: 'Cosette > Phantom Shelter',
+        check() {
+            const potential = findPotential('142', 514232);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14201');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onCastSkill = extractMethod(support, 'public override void OnCastSkill(');
+            const onSupportSkill = /skillSlotType\.B[\s\S]*?AddBuff\(buff_32/.test(onCastSkill);
+            const onUltimate = /skillSlotType\.D[\s\S]*?AddBuff\(buff_32/.test(onCastSkill);
+            const text = potential.desc.includes('casting the Support Skill');
+            const active = onSupportSkill && onUltimate && text;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff 14232011 is added on the support skill cast = ${onSupportSkill} and also on the ultimate cast = ${onUltimate}; text only names the support skill = ${text}`,
+            };
+        },
+    },
+    {
         heading: 'Chitose > Aqueous Phantasm',
         check() {
             const potential = findPotential('144', 514407);

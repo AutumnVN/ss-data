@@ -139,6 +139,22 @@
     "active": true,
     "text": "Increases the Attack Range of Purifying Flames (Main Skill). \u000bIncreases Skill DMG by <color=#0abec5>&Param1&</color>. This effect gradually diminishes over 3s."
   },
+  "Cosette > Nocturn Mark": {
+    "active": true,
+    "text": "When Cosette inflicts ##Umbra Mark: Gloom#2018# on the same target for the 3rd time, leaves claw marks, dealing <color=#0abec5>&Param1& of ATK</color> as AoE Umbra Skill DMG, increasing the target's &Param2& by <color=#0abec5>&Param3&</color> for &Param4&s, and inflicting ##Umbra Mark: Gloom#2018#. This effect can only be triggered once per second."
+  },
+  "Cosette > Dark: Hallucination": {
+    "active": true,
+    "text": "When Abyssal Hunter (Support Skill) deals DMG, there is a 30% chance to stun the target for 3s. Also increases all friendly units' &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s. This effect can only be triggered once every 0.5s."
+  },
+  "Cosette > Dark: Form Breaker": {
+    "active": true,
+    "text": "When Abyssal Hunter (Support Skill) deals DMG, there is a 30% chance to reduce the target's Resilience by <color=#ec6d21>&Param1&</color>. This effect can only be triggered once every 0.5s."
+  },
+  "Cosette > Phantom Shelter": {
+    "active": true,
+    "text": "While Cosette is casting the Support Skill, increases the main Trekker's &Param1& by <color=#ec6d21>&Param2&</color>."
+  },
   "Chitose > Aqueous Phantasm": {
     "active": true,
     "text": "When the Coiling Serpent hits a target, summons another Coiling Serpent, dealing <color=#fb8037>&Param1&x2</color> of ATK as Aqua Auto Attack DMG. This effect can only be triggered 3 times every 3s. Can trigger ##Aqua Mark#1018#."
