@@ -13,7 +13,9 @@ const EFFECTVALUE = require('./EN/bin/EffectValue.json');
 const BUFFVALUE = require('./EN/bin/BuffValue.json');
 const ONCEADDITIONALATTRIBUTEVALUE = require('./EN/bin/OnceAdditionalAttributeValue.json');
 const SCRIPTPARAMETERVALUE = require('./EN/bin/ScriptParameterValue.json');
+const SCRIPTPARAMETER = require('./EN/bin/ScriptParameter.json');
 const HITDAMAGE = require('./EN/bin/HitDamage.json');
+const { getHitDamageAreaEffectDetail } = require('./hotfix');
 
 function findPotential(charId, potentialId) {
     const character = CHARACTER[charId];
@@ -253,6 +255,24 @@ const checks = [
         },
     },
     {
+        heading: 'Kasimira > Heated Battle',
+        check() {
+            const potential = findPotential('108', 510821);
+            const hit = potential.paramsTooltips[0];
+            const area = getHitDamageAreaEffectDetail(hit.hitDamageId);
+            const interval = +potential.desc.match(/every <color=[^>]+>([\d.]+)<\/color>s/)[1];
+            const duration = +potential.desc.match(/total of ([\d.]+)s/)[1];
+            const active = interval === 0.5 && area.hitInterval === 1
+                && area.duration === duration && area.hits === 7;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the crater hits every ${area.hitInterval}s for ${area.hits} hits over ${area.duration}s, and the text says every ${interval}s for ${duration}s`,
+            };
+        },
+    },
+    {
         heading: 'Firenze > High Risk',
         check() {
             const potential = findPotential('110', 511005);
@@ -272,6 +292,141 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `the boosted chance uses de_All (whole squad Umbra) = ${usesSquad}; chances 11005011/11005012 = ${chances.join(' / ')}; the target's Dark Burn buff 11090000 is never checked = ${!checksBurn}; text says ${potential.params[1]} -> ${potential.params[2]} vs Umbra Burn = ${textBurn}`,
+            };
+        },
+    },
+    {
+        heading: 'Iris > Vector: Shatter',
+        check() {
+            const potential = findPotential('111', 511102);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11101');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onBulletBorn = extractMethod(main, 'private void OnBulletBorn(IEvent evt)');
+            const onBulletFinish = extractMethod(main, 'private void OnBulletFinish(IEvent evt)');
+            const onHitPre = extractMethod(main, 'public override void OnHitPre(');
+            const cooldown = +main.match(/interval_2 = FP\.op_Implicit\((\d+)\)/)[1];
+            const gatePerBullet = onBulletBorn.includes('hit_2 = true')
+                && onBulletFinish.includes('hit_2 = false')
+                && onHitPre.includes('GetPerkLv(511102') && onHitPre.includes('hit_2');
+            const gatePerHit = onHitPre.includes('CheckCd(511102');
+            const bothHits = onHitPre.includes('aoe_2_small') && onHitPre.includes('aoe_2_big');
+            const pierces = CHARACTER['111'].skill.paramsTooltips
+                .some(tooltip => (tooltip.hitSources || []).some(source => source.includes('pierce')));
+            const active = gatePerBullet && !gatePerHit && bothHits && pierces && cooldown === 12;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the ${cooldown}s gate is set once when the greatarrow is born and cleared when it finishes (${gatePerBullet}), there is no per-hit cooldown (${gatePerHit}), both extra aoe dmg hits are behind the same gate (${bothHits}), and the greatarrow pierces (${pierces})`,
+            };
+        },
+    },
+    {
+        heading: 'Iris > Oops I Did It Again',
+        check() {
+            const potential = findPotential('111', 511105);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11101');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onBeforeHit = extractMethod(main, 'public override void OnBeforeHit(');
+            const levels = getOnceAdditionalLevels(11150511);
+            const attr = levels[0].AttributeType1;
+            const meleeHasNormal = (HITDAMAGE['111100005'].DamageTag || []).includes(crc32('Normal'));
+            const onNormal = onBeforeHit.includes('bool num = CommonUtils.CheckHitByTag(evt.hitDamageTag, hitTag_Normal)')
+                && onBeforeHit.includes('if (GetPerkLv(511105')
+                && onBeforeHit.includes('AddFromAttr(11150501');
+            const active = onNormal && attr === 56 && meleeHasNormal;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the ${levels[0].Value1 / 100}% auto attack dmg bonus is applied to every hit tagged Normal (${onNormal}), and the school bag melee hit 111100005 also has that tag (${meleeHasNormal})`,
+            };
+        },
+    },
+    {
+        heading: 'Iris > Cold Snap',
+        check() {
+            const potential = findPotential('111', 511110);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11101');
+            const parallel = extractMethod(namespace, 'public class ParallelScript : ParallelBase');
+            const triggerMask = extractMethod(parallel, 'public virtual bool TriggerMask(');
+            const cooldown = +SCRIPTPARAMETERVALUE['11151011'].CommonData / 10000;
+            const buff = BUFFVALUE['11151011'].Time / 10000;
+            const noGate = triggerMask.includes('GetPerkLv(511110')
+                && !triggerMask.includes('CheckCd(511110');
+            const reducesCd = triggerMask.includes('ModifyResumeTimeAbs(-CommonUtils.GetScriptValue(_actor, 11151011)');
+            const active = noGate && reducesCd && cooldown === 1 && buff === 6;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the chill to frozen branch has no 12s CheckCd (${noGate}), so every conversion cuts the main skill cooldown by ${cooldown}s and refreshes the ${buff}s buff`,
+            };
+        },
+    },
+    {
+        heading: 'Iris > Keep Strangers at Bay',
+        check() {
+            const potential = findPotential('111', 511111);
+            const parameter = SCRIPTPARAMETER['11151101'];
+            const levelCount = potential.params[0].split('/').length;
+            const cooldowns = Array.from({ length: levelCount }, (_, index) =>
+                +SCRIPTPARAMETERVALUE[11151101 + (index + 1) * 10].CommonData / 10000);
+            const levelScaled = parameter.levelTypeData === 1 && parameter.LevelData === 511111;
+            const active = levelScaled
+                && cooldowns[0] === 12
+                && cooldowns[levelCount - 1] === 8
+                && potential.params[2] === cooldowns[0];
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the cooldown resolves through ScriptParameter 11151101 at perk level, so it goes ${cooldowns.join('s, ')}s over levels 1-${levelCount}, while text Param3 is fixed at the level 1 value of ${potential.params[2]}s`,
+            };
+        },
+    },
+    {
+        heading: 'Iris > Prolonged Winter',
+        check() {
+            const potential = findPotential('111', 511126);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11101');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onBeforeHit = extractMethod(support, 'public override void OnBeforeHit(');
+            const triggerTag = support.match(/hitTag_6 = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const usesTag = onBeforeHit.includes('hitTag_6')
+                && onBeforeHit.includes('AddFromAttr(11152601');
+            const hits = CHARACTER['111'].supportSkill.paramsTooltips.filter(hit => hit.hitDamageId);
+            const tagged = hits.filter(hit => (HITDAMAGE[hit.hitDamageId].DamageTag || []).includes(crc32(triggerTag)));
+            const active = usesTag && tagged.length === 0;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the skill dmg bonus only checks hits tagged ${triggerTag} (${crc32(triggerTag)}), and ${tagged.length}/${hits.length} glacier array hits have that tag`,
+            };
+        },
+    },
+    {
+        heading: 'Iris > Gleaming Snow',
+        check() {
+            const potential = findPotential('111', 511142);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11101');
+            const parallel = extractMethod(namespace, 'public class ParallelScript : ParallelBase');
+            const onHitPost = extractMethod(parallel, 'public virtual void OnHitPost(');
+            const onAreaEffectFinish = extractMethod(parallel, 'public virtual void OnAreaEffectFinish(');
+            const cap = +parallel.match(/maxCount_2 = (\d+)/)[1];
+            const countsAnyKill = onHitPost.includes('GetPerkLv(511142')
+                && onHitPost.includes('evt.isKill')
+                && onHitPost.includes('curCount_2++');
+            const noAreaCheck = !onHitPost.includes('areaEntity_A');
+            const resetOnFinish = onAreaEffectFinish.includes('curCount_2 = 0')
+                && onAreaEffectFinish.includes('areaEntity_A');
+            const active = countsAnyKill && noAreaCheck && resetOnFinish && cap === 10;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `kills are counted on any hit while the pot is active (${countsAnyKill}) with no ultimate area check (${noAreaCheck}), and the counter is only reset when the ultimate area finishes (${resetOnFinish}), up to ${cap} stacks`,
             };
         },
     },
@@ -384,6 +539,165 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `glow stacks (11525013) give attr ${glowAttr} = ${glowBonus}% per stack; halo stacks (11525015) give attr ${haloAttr} = ${haloBonus}% per stack; text says glow gives ${textGlow} and halo gives ${textHalo}`,
+            };
+        },
+    },
+    {
+        heading: 'Ridge > Hardened Cone',
+        check() {
+            const potential = findPotential('116', 511609);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11601');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onBeforeSelfHit = extractMethod(main, 'protected override void OnBeforeSelfHit(');
+            const triggerTag = namespace.match(/damageTag_Trigger_P9 = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const usesTag = onBeforeSelfHit.includes('damageTag_Trigger_P9')
+                && onBeforeSelfHit.includes('AddFromAttr(11609001');
+            const hits = CHARACTER['116'].normalAtk.paramsTooltips.filter(hit => hit.hitDamageId);
+            const tagged = hits.filter(hit => (HITDAMAGE[hit.hitDamageId].DamageTag || []).includes(crc32(triggerTag)));
+            const active = usesTag && tagged.length === 0 && potential.params[3].startsWith('30%');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the resilience break efficiency bonus only checks hits tagged ${triggerTag} (${crc32(triggerTag)}), and ${tagged.length}/${hits.length} auto attack hits have that tag`,
+            };
+        },
+    },
+    {
+        heading: 'Ridge > Power Slide',
+        check() {
+            const potential = findPotential('116', 511611);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11601');
+            const dodge = extractMethod(namespace, 'public class SkillScript_Dodge : SkillAdvancedBase');
+            const onEnable = extractMethod(dodge, 'protected override void OnSkillEnable()');
+            const cooldown = +SCRIPTPARAMETERVALUE['11611011'].CommonData / 10000;
+            const gated = onEnable.includes('LastTriggerTime_P11')
+                && onEnable.includes('GetScriptValue(_actor, 11611011)')
+                && onEnable.includes('AddBuff(11611011');
+            const active = gated && cooldown === 8 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the buff is only re-applied when 11611011 = ${cooldown}s have passed since the last trigger, and the text has no cooldown`,
+            };
+        },
+    },
+    {
+        heading: 'Ridge > Hasty Growth',
+        check() {
+            const potential = findPotential('116', 511623);
+            const base = BUFFVALUE['11691011'].Time / 10000;
+            const upgraded = BUFFVALUE['11623011'].Time / 10000;
+            const active = base === 3 && upgraded === base * 2 && potential.desc.includes('50%');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the seed orb buff lasts ${base}s normally and ${upgraded}s with the pot, a ${(upgraded / base - 1) * 100}% increase, and the text says 50%`,
+            };
+        },
+    },
+    {
+        heading: 'Ridge > Needle Seed',
+        check() {
+            const potential = findPotential('116', 511625);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11601');
+            const support = extractMethod(namespace, 'public class SkillScript_Skill_Support : SkillAdvancedBase');
+            const onEnable = extractMethod(support, 'protected override void OnSkillEnable()');
+            const onDisable = extractMethod(support, 'protected override void OnSkillDisable()');
+            const clearsOnCast = onEnable.includes('RemoveBuffByBuffId(11625011)');
+            const clearsOnEnd = onDisable.includes('11625011');
+            const duration = BUFFVALUE['11625011'].Time / 10000;
+            const active = clearsOnCast && !clearsOnEnd && duration === 10 && potential.desc.includes('skill ends');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff 11625011 is only removed when the next support skill starts (${clearsOnCast}) and not when the skill ends (${clearsOnEnd}); it lasts ${duration}s after the last stack`,
+            };
+        },
+    },
+    {
+        heading: 'Ridge > Cone Bomb',
+        check() {
+            const potential = findPotential('116', 511630);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11601');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const explosion = extractMethod(support, 'private bool TriggerSeedExplosion(');
+            const config = extractMethod(namespace, 'public class Config_Support');
+            const radius = +config.match(/searchRadius_P30 = FP\.op_Implicit\((\d+)\)/)[1];
+            const picksRandom = explosion.includes('list[TSRandom.Range(0, list.Count)]');
+            const searchesRange = explosion.includes('SearchByRangeAndPosition');
+            const active = picksRandom && searchesRange && potential.desc.includes('nearest target');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the extra seed picks a random entity within ${radius}m (${picksRandom}) instead of the nearest one (${searchesRange})`,
+            };
+        },
+    },
+    {
+        heading: 'Jinglin > Energy Storage: Bind',
+        check() {
+            const potential = findPotential('117', 511701);
+            const value = EFFECTVALUE['11701011'];
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11701');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const cdAmend = extractMethod(getHotfix(), 'public class SkillCDMaxAmend : AdventureEffectBase');
+            const addsBuff = parallel.includes('AddBuff(buff_p1, _actor)');
+            const allSlots = cdAmend.includes('slots.Add(ActionKey.A)')
+                && cdAmend.includes('slots.Add(ActionKey.B)')
+                && cdAmend.includes('slots.Add(ActionKey.D)');
+            const active = addsBuff
+                && value.EffectType === 3
+                && value.EffectTypeFirstSubtype === 5
+                && +value.EffectTypeParam1 === -2
+                && allSlots
+                && potential.desc.includes('(Main Skill)');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff 11701011 applies effect value 11701011 = ${value.EffectTypeParam1}s with slot group ${value.EffectTypeFirstSubtype}, which amends the dodge, skill and ultimate cooldowns = ${allSlots}; the text only names the main skill`,
+            };
+        },
+    },
+    {
+        heading: 'Jinglin > Energy Storage: Knot',
+        check() {
+            const potential = findPotential('117', 511702);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11701');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onBeforeHit = extractMethod(parallel, 'protected virtual void OnBeforeHit(');
+            const mainSkill = extractMethod(namespace, 'public class SkillScript_MainControl_Skill : SkillAdvancedBase');
+            const perStack = +getOnceAdditionalLevels(11702011)[0].Value1 / 100;
+            const cycle = +onBeforeHit.match(/\(mainSkill_index - 1\) % (\d+)/)[1];
+            const countsShots = mainSkill.includes('Parallel.mainSkill_index++');
+            const textStacks = +potential.desc.match(/up to (\d+) stacks/)[1];
+            const active = countsShots && cycle === 4 && perStack === 32 && textStacks === 3;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the multiplier is ${perStack}% x ((mainSkill_index - 1) % ${cycle} + 1), so it cycles 1..${cycle} stacks = up to ${perStack * cycle}% per shot, and nothing clears it at ${textStacks} stacks; the text caps it at ${textStacks}`,
+            };
+        },
+    },
+    {
+        heading: 'Jinglin > Thunderbolt: Character',
+        check() {
+            const potential = findPotential('117', 511723);
+            const stun = BUFFVALUE['11723011'];
+            const seconds = stun.Time / 10000;
+            const textSeconds = +potential.desc.match(/them for (\d+)s/)[1];
+            const active = potential.buffs[0].id === 11723011 && seconds === 2 && textSeconds === 1;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff 11723011 (the stun) lasts ${seconds}s, and the text says ${textSeconds}s`,
             };
         },
     },

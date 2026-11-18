@@ -23,9 +23,37 @@
     "active": true,
     "text": "When Aegis of Light hits a target with HP below <color=#ec6d21>&Param2&</color>, it creates a Lightning Array: Deals &Param3& of Tilia's ATK as AoE Lux Skill DMG and increases the Skill DMG they take by &Param4& for &Param5&s, stacking up to &Param6& times.\u000bThis effect can only be triggered once every &Param8&s.\u000bParam1: &Param1& (Skill,Title) \u000bParam7: &Param7& (EffectValue,EffectTypeFirstSubtype)"
   },
+  "Kasimira > Heated Battle": {
+    "active": true,
+    "text": "After casting Precision Strike (Support Skill), a burning bomb crater remains on the battlefield, dealing <color=#0abec5>&Param1& of ATK</color> as AoE Ignis Skill DMG every <color=#0abec5>0.5</color>s for a total of 8s, and inflicting ##Ignis Mark: Sacred Flame#2013#."
+  },
   "Firenze > High Risk": {
     "active": true,
     "text": "When Firenze deals Skill DMG, there is a &Param2& chance to deal an additional <color=#ec6d21>&Param1&</color> of ATK as Umbra Skill DMG. The chance is increased to &Param3& if the target is inflicted with ##Umbra Burn#2028#. This effect can only be triggered &Param4& times every second."
+  },
+  "Iris > Vector: Shatter": {
+    "active": true,
+    "text": "When &Param10& (Main Skill) hits a target, deals an additional <color=#0abec5>&Param1& of ATK</color> as AoE Aqua Skill DMG. \u000bWhen &Param4& hits a target, deals an additional <color=#0abec5>&Param2& of ATK</color> as AoE Aqua Skill DMG and inflicts ##Frozen#1002# to the target for &Param3&s. \u000bThis effect can only be triggered once every 12s."
+  },
+  "Iris > Oops I Did It Again": {
+    "active": true,
+    "text": "Increases Frost Arrows' Auto Attack DMG by <color=#ec6d21>&Param1&</color>, allowing them to pierce through targets.\u000bParam10: &Param10& (Skill,Title)"
+  },
+  "Iris > Cold Snap": {
+    "active": true,
+    "text": "When Iris changes a target's status from ##Chill#1027# to ##Frozen#1002#, reduces &Param4& (Main Skill)'s Cooldown by &Param1&s. Also increases &Param5& by <color=#ec6d21>&Param2&</color> for &Param3&s. This effect can only be triggered once every 12s."
+  },
+  "Iris > Keep Strangers at Bay": {
+    "active": true,
+    "text": "When Iris is hit by a melee strike, deals <color=#ec6d21>&Param1& of ATK</color> as AoE Aqua Skill DMG and inflicts ##Frozen#1002# on nearby targets for &Param2&s. This effect can only be triggered once every &Param3&s.\u000bParam10: &Param10& (Skill,Title)"
+  },
+  "Iris > Prolonged Winter": {
+    "active": true,
+    "text": "Increases the duration of Glacier Array by 50% and its Skill DMG by <color=#ec6d21>&Param1&</color>.\u000bParam10: &Param10& (Skill,Title)"
+  },
+  "Iris > Gleaming Snow": {
+    "active": true,
+    "text": "While &Param10& (Ultimate) is active, each time a target is killed, increases &Param2& by <color=#ec6d21>&Param1&</color>."
   },
   "Shimiao > Cascade Glow": {
     "active": true,
@@ -46,6 +74,38 @@
   "Firefly > Lightforged Blade": {
     "active": true,
     "text": "When the Main Trekker triggers ##Lux Mark#1015#, Firefly gains 1 stack of Glow. When ##Lucent#4028# is generated afterwards, Firefly gains 1 stack of Halo. Both effects can stack up to &Param7& times.\u000bWhen casting &Param1& (Support Skill), Firefly consumes all stacks of Glow and Halo. For the current ##Sword Form#4031#'s active duration, increases Avalanche: Flying Blade's &Param3& by <color=#ec6d21>&Param2&</color> for each stack of Glow consumed; increases Avalanche: Flying Blade's &Param6& by <color=#ec6d21>&Param5&</color> for each stack of Halo consumed.\u000bParam4: &Param4& (BuffValue,LaminatedNum)"
+  },
+  "Ridge > Hardened Cone": {
+    "active": true,
+    "text": "Increases Ridge's &Param1& by <color=#ec6d21>&Param2&</color> and her Auto Attack's &Param3& by an additional <color=#ec6d21>&Param4&</color>."
+  },
+  "Ridge > Power Slide": {
+    "active": true,
+    "text": "Ridge can dodge one more time. When dodging, increases her &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s.\u000bParam4: &Param4& (BuffValue,LaminatedNum)"
+  },
+  "Ridge > Hasty Growth": {
+    "active": true,
+    "text": "Increases Seed Orb's duration by <color=#0abec5>50%</color> and its &Param1& by <color=#0abec5>&Param2&</color>. Can also inflict ##Terra Mark: Earth Vein#2029#."
+  },
+  "Ridge > Needle Seed": {
+    "active": true,
+    "text": "When casting Floral Storm (Support Skill), increases Ridge's Skill DMG by <color=#ec6d21>&Param2&</color> every 0.5s. Resets when the skill ends.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)"
+  },
+  "Ridge > Cone Bomb": {
+    "active": true,
+    "text": "Increases &Param1& of Seed Orb by <color=#ec6d21>&Param2&</color>.\u000bWhen Seed Orb deals DMG, fires 1 seed to the nearest target, dealing <color=#ec6d21>&Param3& of ATK</color> as Terra Skill DMG."
+  },
+  "Jinglin > Energy Storage: Bind": {
+    "active": true,
+    "text": "Reduces the Cooldown of &Param1& (Main Skill) by <color=#0abec5>&Param2&</color>s. \u000bCasting the Main Skill will automatically launch continuous attacks on the target until available charges run out."
+  },
+  "Jinglin > Energy Storage: Knot": {
+    "active": true,
+    "text": "After casting &Param1& (Main Skill), increases the DMG Multiplier of the next Skill by <color=#0abec5>&Param2&</color>, up to 3 stacks.\u000bAt 3 stacks, casting the Main Skill again will remove the buff.\u000bParam3: &Param3& (HitDamage,Skill) \u000bParam4: &Param4& (HitDamage,Skill)"
+  },
+  "Jinglin > Thunderbolt: Character": {
+    "active": true,
+    "text": "When targets enter or leave the Lightning Domain, <color=#0abec5>stuns</color> them for 1s, and increases the Lux DMG they take by <color=#0abec5>&Param2&</color> for &Param3&s.\u000bParam1: &Param1& (BuffValue,Time) \u000bParam4: &Param4& (EffectValue,EffectTypeFirstSubtype)"
   },
   "Coronis > Spiritual Tome": {
     "active": true,
