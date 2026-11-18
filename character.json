@@ -30756,13 +30756,12 @@
                     "nameCN": "节约使用",
                     "nameJP": "収束する業火",
                     "nameKR": "절약 사용",
-                    "desc": "When a Bouncing Bomb runs out of bounces, it returns to Chaton and grants her Spark.\u000bWhen holding &Param1& (Main Skill), Chaton consumes Spark to increase her &Param2& by <color=#ec6d21>&Param3&</color> for &Param4&s and throws an Explosive Bomb at the target, dealing <color=#ec6d21>&Param5&</color> of ATK as AoE Ignis Skill DMG.\u000bThe Explosive Bomb cannot bounce.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descCN": "「弹球炸弹」的弹射次数用尽后会返回猫眼身边，使猫眼获得「火苗」。\u000b长按主控技「&Param1&」时，猫眼会消耗「火苗」，自身&Param2&提升<color=#ec6d21>&Param3&</color>，持续&Param4&秒，并对目标掷出一颗「爆裂弹球」，造成攻击力<color=#ec6d21>&Param5&</color>的范围火系技能伤害。\u000b「爆裂弹球」不会弹射。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descJP": "跳ね返り回数が無くなるとネコ神爆弾はシャトンの元に戻り、シャトンは火種を獲得する。\u000b主力スキルを長押しした時、シャトンは火種を消費し、&Param4&秒間、自身の&Param2&が<color=#ec6d21>&Param3&</color>増加する。さらに敵にネコ神爆弾改を1つ投擲するようになり、範囲内に攻撃力の<color=#ec6d21>&Param5&</color>の火属性のスキルダメージを与える。\u000bネコ神爆弾改は跳ね返らない。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descKR": "「통통 폭탄」이 튕기기 횟수를 전부 사용한 후 샤통 주변으로 돌아가, 샤통이 「불씨」를 획득한다. \u000b메인 스킬 &Param1_kr3& 길게 누르면 샤통이 「불씨」를 소모해 자신의 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다. &Param4&초간 지속된다. 또한 목표에게 「폭발 구슬」 1개를 던져 공격력 <color=#ec6d21>&Param5&</color>의 불 속성 범위 스킬 피해를 입힌다. \u000b「폭발 구슬」은 튕기지 않는다.\u000bParam1: &Param1& (Skill,Title) \u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
+                    "desc": "When a Bouncing Bomb runs out of bounces, it returns to Chaton and grants her Spark.\u000bWhen holding &Param1& (Main Skill), Chaton consumes Spark to increase her &Param2& by <color=#ec6d21>&Param3&</color> for &Param4&s and throws an Explosive Bomb at the target, dealing <color=#ec6d21>&Param5&</color> of ATK as AoE Ignis Skill DMG.\u000bThe Explosive Bomb cannot bounce.",
+                    "descCN": "「弹球炸弹」的弹射次数用尽后会返回猫眼身边，使猫眼获得「火苗」。\u000b长按主控技「&Param1&」时，猫眼会消耗「火苗」，自身&Param2&提升<color=#ec6d21>&Param3&</color>，持续&Param4&秒，并对目标掷出一颗「爆裂弹球」，造成攻击力<color=#ec6d21>&Param5&</color>的范围火系技能伤害。\u000b「爆裂弹球」不会弹射。",
+                    "descJP": "跳ね返り回数が無くなるとネコ神爆弾はシャトンの元に戻り、シャトンは火種を獲得する。\u000b主力スキルを長押しした時、シャトンは火種を消費し、&Param4&秒間、自身の&Param2&が<color=#ec6d21>&Param3&</color>増加する。さらに敵にネコ神爆弾改を1つ投擲するようになり、範囲内に攻撃力の<color=#ec6d21>&Param5&</color>の火属性のスキルダメージを与える。\u000bネコ神爆弾改は跳ね返らない。\u000bParam1: &Param1& (Skill,Title)",
+                    "descKR": "「통통 폭탄」이 튕기기 횟수를 전부 사용한 후 샤통 주변으로 돌아가, 샤통이 「불씨」를 획득한다. \u000b메인 스킬 &Param1_kr3& 길게 누르면 샤통이 「불씨」를 소모해 자신의 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다. &Param4&초간 지속된다. 또한 목표에게 「폭발 구슬」 1개를 던져 공격력 <color=#ec6d21>&Param5&</color>의 불 속성 범위 스킬 피해를 입힌다. \u000b「폭발 구슬」은 튕기지 않는다.\u000bParam1: &Param1& (Skill,Title) \u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype)",
                     "damageType": [
-                        "Skill (from Skill)",
-                        "Skill (from Skill) (hidden)"
+                        "Skill (from Skill)"
                     ],
                     "effectType": [
                         "ELEMENTTYPE_:(Ignis) Skill Crit DMG"
@@ -30823,27 +30822,8 @@
                             ]
                         }
                     ],
-                    "hiddenParams": [
-                        "7.81%/10.41%/13.01%/15.61%/18.21%/20.81%/23.41%/26.01%/28.61%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill)",
-                            "hitDamageId": "114506002",
-                            "hitDamageNote": "Requires Efficient Use (511406); Conditional hit damage: only when Efficient Use (511406) is active or only when One Stone Two Birds (511428) is active",
-                            "hitSources": [
-                                "AdventureProjectile(Snapshot): 16 speed",
-                                "AdventureProjectile(Snapshot): 16 speed, homing (20 range, 60°/s)",
-                                "AdventureBezierBullet(Snapshot): 1s duration",
-                                "AdventureProjectile(Snapshot): 12 speed, 2s lifetime, homing (20 range, 60°/s)"
-                            ],
-                            "damageTag": [
-                                "114_FireTag1_Trigger",
-                                "Skill",
-                                "114_Long_Bullet"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "11401_Potential_06",
                     "corner": "Triangle",
                     "rarity": "rare"
@@ -31800,13 +31780,12 @@
                     "nameCN": "一石二鸟",
                     "nameJP": "ツインショット",
                     "nameKR": "일석이조",
-                    "desc": "Increases Chaton's &Param2& by <color=#ec6d21>&Param3&</color>.\u000bEach time &Param1& (Support Skill) fires, shoots 2 additional Meow Bombs.\u000bThe bombs shoot forward in a straight line 3 times, dealing <color=#ec6d21>&Param4&</color> of ATK as AoE Ignis Skill DMG each time.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descCN": "猫眼的&Param2&提升<color=#ec6d21>&Param3&</color>。\u000b援护技「&Param1&」每次射击时，额外发射2颗「猫猫炸弹」。\u000b「猫猫炸弹」会向前直线弹射3次，每次造成攻击力<color=#ec6d21>&Param4&</color>的范围火系技能伤害。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descJP": "シャトンは自身の&Param2&が<color=#ec6d21>&Param3&</color>増加する。\u000b支援スキルの各射撃時、追加で2発のぷにぷにボムを発射する。\u000bぷにぷにボムは前方直線上に3回跳ね、そのたび範囲内に攻撃力の<color=#ec6d21>&Param4&</color>の火属性のスキルダメージを敵に与える。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
-                    "descKR": "샤통의 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다. \u000b지원 스킬 &Param1_kr1& 사격할 때마다 「냥냥 폭탄」 2개를 추가로 발사한다. \u000b「냥냥 폭탄」이 전방 직선을 향해 3회 튕기며, 매회 공격력 <color=#ec6d21>&Param4&</color>의 불 속성 범위 스킬 피해를 입힌다.\u000bParam1: &Param1& (Skill,Title) \u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,114506002)",
+                    "desc": "Increases Chaton's &Param2& by <color=#ec6d21>&Param3&</color>.\u000bEach time &Param1& (Support Skill) fires, shoots 2 additional Meow Bombs.\u000bThe bombs shoot forward in a straight line 3 times, dealing <color=#ec6d21>&Param4&</color> of ATK as AoE Ignis Skill DMG each time.",
+                    "descCN": "猫眼的&Param2&提升<color=#ec6d21>&Param3&</color>。\u000b援护技「&Param1&」每次射击时，额外发射2颗「猫猫炸弹」。\u000b「猫猫炸弹」会向前直线弹射3次，每次造成攻击力<color=#ec6d21>&Param4&</color>的范围火系技能伤害。",
+                    "descJP": "シャトンは自身の&Param2&が<color=#ec6d21>&Param3&</color>増加する。\u000b支援スキルの各射撃時、追加で2発のぷにぷにボムを発射する。\u000bぷにぷにボムは前方直線上に3回跳ね、そのたび範囲内に攻撃力の<color=#ec6d21>&Param4&</color>の火属性のスキルダメージを敵に与える。\u000bParam1: &Param1& (Skill,Title)",
+                    "descKR": "샤통의 &Param2_kr1& <color=#ec6d21>&Param3&</color> 증가한다. \u000b지원 스킬 &Param1_kr1& 사격할 때마다 「냥냥 폭탄」 2개를 추가로 발사한다. \u000b「냥냥 폭탄」이 전방 직선을 향해 3회 튕기며, 매회 공격력 <color=#ec6d21>&Param4&</color>의 불 속성 범위 스킬 피해를 입힌다.\u000bParam1: &Param1& (Skill,Title) \u000bParam2: &Param2& (Effect,EffectTypeFirstSubtype)",
                     "damageType": [
-                        "Skill (from Skill)",
-                        "Skill (from Skill) (hidden)"
+                        "Skill (from Skill)"
                     ],
                     "effectType": [
                         "ELEMENTTYPE_:(Ignis) Skill DMG"
@@ -31866,27 +31845,8 @@
                             ]
                         }
                     ],
-                    "hiddenParams": [
-                        "7.81%/10.41%/13.01%/15.61%/18.21%/20.81%/23.41%/26.01%/28.61%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill)",
-                            "hitDamageId": "114506002",
-                            "hitDamageNote": "Requires Efficient Use (511406); Conditional hit damage: only when Efficient Use (511406) is active or only when One Stone Two Birds (511428) is active",
-                            "hitSources": [
-                                "AdventureProjectile(Snapshot): 16 speed",
-                                "AdventureProjectile(Snapshot): 16 speed, homing (20 range, 60°/s)",
-                                "AdventureBezierBullet(Snapshot): 1s duration",
-                                "AdventureProjectile(Snapshot): 12 speed, 2s lifetime, homing (20 range, 60°/s)"
-                            ],
-                            "damageTag": [
-                                "114_FireTag1_Trigger",
-                                "Skill",
-                                "114_Long_Bullet"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "11401_Potential_28",
                     "corner": "Diamond",
                     "rarity": "rare"
@@ -95974,13 +95934,11 @@
                     "nameCN": "超长曝光",
                     "nameJP": "助手との連携",
                     "nameKR": "장노출",
-                    "desc": "While in Exposure status, if the maximum number of ##Pumpka Phantoms#4007# are on the battlefield, increases their duration. Also increases ##Pumpka Phantoms#4007#' &Param1& by <color=#0abec5>&Param2&</color> every 3s, up to &Param3& stacks.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80135023)",
-                    "descCN": "「显影」状态下，如果##「南瓜影灵」#4007#数量达到上限，延长其存在时间，同时场上##「南瓜影灵」#4007#每3秒&Param1&提升<color=#0abec5>&Param2&</color>，可叠加&Param3&层。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80135023)",
-                    "descJP": "現像状態で##かぼちゃおばけ#4007#の数が上限に達すると、その持続時間が延長され、フィールドにいる##かぼちゃおばけ#4007#は3秒ごとに&Param1&が<color=#0abec5>&Param2&</color>増加する。この効果は&Param3&回重複できる。\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80135023)",
-                    "descKR": "「현상」 상태에서 ##호박 유령#4007# 수량이 최대에 달한 경우, 지속 시간이 늘어나고, 3초마다 필드에 있는 ##호박 유령#4007#의 &Param1&가 <color=#0abec5>&Param2&</color> 증가한다. 최대 &Param3&스택 중첩된다.\u000bHiddenParam1: &HiddenParam1& (HitDamage,Auto Attack,80135023)",
-                    "damageType": [
-                        "Auto Attack (hidden)"
-                    ],
+                    "desc": "While in Exposure status, if the maximum number of ##Pumpka Phantoms#4007# are on the battlefield, increases their duration. Also increases ##Pumpka Phantoms#4007#' &Param1& by <color=#0abec5>&Param2&</color> every 3s, up to &Param3& stacks.",
+                    "descCN": "「显影」状态下，如果##「南瓜影灵」#4007#数量达到上限，延长其存在时间，同时场上##「南瓜影灵」#4007#每3秒&Param1&提升<color=#0abec5>&Param2&</color>，可叠加&Param3&层。",
+                    "descJP": "現像状態で##かぼちゃおばけ#4007#の数が上限に達すると、その持続時間が延長され、フィールドにいる##かぼちゃおばけ#4007#は3秒ごとに&Param1&が<color=#0abec5>&Param2&</color>増加する。この効果は&Param3&回重複できる。",
+                    "descKR": "「현상」 상태에서 ##호박 유령#4007# 수량이 최대에 달한 경우, 지속 시간이 늘어나고, 3초마다 필드에 있는 ##호박 유령#4007#의 &Param1&가 <color=#0abec5>&Param2&</color> 증가한다. 최대 &Param3&스택 중첩된다.",
+                    "damageType": [],
                     "effectType": [
                         "Minion DMG (base)"
                     ],
@@ -96020,19 +95978,8 @@
                             "buffStacks": 4
                         }
                     ],
-                    "hiddenParams": [
-                        ""
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Auto Attack",
-                            "hitDamageId": "80135023",
-                            "hitDamageNote": "Conditional hit damage: only when Extended Exposure (513503) is active",
-                            "hitSources": [
-                                "AdventureBezierBullet(Snapshot): 0.4s duration"
-                            ]
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "13501_Potential_03",
                     "rarity": "core"
                 },
@@ -171565,13 +171512,12 @@
                     "nameCN": "水花飞溅",
                     "nameJP": "飛び散るしぶき",
                     "nameKR": "흩날리는 물꽃",
-                    "desc": "##Gentle Warning#4042# gains additional stat bonuses from ##Safety Alert#4043#. For every <color=#0abec5>10</color> shots fired by Willow while under Gentle Warning, she fires a straight-line water column attack that deals <color=#0abec5>&Param1&x3</color> of ATK as Aqua Skill DMG and increases Decibels by <color=#0abec5>30</color>, inflicting ##Smiling Sanction#4040# and ##Aqua Mark: Torrent#2008#.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160521003)",
-                    "descCN": "##「柔声劝导」#4042#可获得##「安全警告」#4043#额外的属性增益。薇洛每发动<color=#0abec5>10</color>次射击，并且当前处于「柔声劝导」状态时，会发射水柱直线攻击，造成攻击力<color=#0abec5>&Param1&x3</color>的水系技能伤害，提升<color=#0abec5>30</color>分贝值，同时附加##「微笑制裁」#4040#和##水系印记：水流#2008#。\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160521003)",
-                    "descJP": "##メロウ状態#4042#も##ラウド状態#4043#のステータス増加効果を獲得するようになる。ウィロー（水着）が<color=#0abec5>10</color>回射撃を行うごとに、かつメロウ状態である場合、直線上に水柱を発射して攻撃を行い、攻撃力の<color=#0abec5>&Param1&x3</color>の水属性のスキルダメージを与え、デシベル値が<color=#0abec5>30</color>増加する。さらに敵に##スマイルパニッシュ#4040#と##水属性の印：水流#2008#を付与する。\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160521003)",
-                    "descKR": "##「다정한 설득」#4042#이 ##「안전 경고」#4043#의 추가 속성 버프를 획득할 수 있다. 윌로가 <color=#0abec5>10</color>회 사격할 때마다, 「다정한 설득」 상태일 경우 물기둥을 발사하여 직선으로 공격해 공격력 <color=#0abec5>&Param1&x3</color>의 물 속성 스킬 피해를 입히고, 데시벨이 <color=#0abec5>30</color> 증가한다. 또한 ##「미소의 제재」#4040#와 ##물 속성 표식: 수류#2008#를 부여할 수 있다.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160521003)",
+                    "desc": "##Gentle Warning#4042# gains additional stat bonuses from ##Safety Alert#4043#. For every <color=#0abec5>10</color> shots fired by Willow while under Gentle Warning, she fires a straight-line water column attack that deals <color=#0abec5>&Param1&x3</color> of ATK as Aqua Skill DMG and increases Decibels by <color=#0abec5>30</color>, inflicting ##Smiling Sanction#4040# and ##Aqua Mark: Torrent#2008#.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)",
+                    "descCN": "##「柔声劝导」#4042#可获得##「安全警告」#4043#额外的属性增益。薇洛每发动<color=#0abec5>10</color>次射击，并且当前处于「柔声劝导」状态时，会发射水柱直线攻击，造成攻击力<color=#0abec5>&Param1&x3</color>的水系技能伤害，提升<color=#0abec5>30</color>分贝值，同时附加##「微笑制裁」#4040#和##水系印记：水流#2008#。\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)",
+                    "descJP": "##メロウ状態#4042#も##ラウド状態#4043#のステータス増加効果を獲得するようになる。ウィロー（水着）が<color=#0abec5>10</color>回射撃を行うごとに、かつメロウ状態である場合、直線上に水柱を発射して攻撃を行い、攻撃力の<color=#0abec5>&Param1&x3</color>の水属性のスキルダメージを与え、デシベル値が<color=#0abec5>30</color>増加する。さらに敵に##スマイルパニッシュ#4040#と##水属性の印：水流#2008#を付与する。\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)",
+                    "descKR": "##「다정한 설득」#4042#이 ##「안전 경고」#4043#의 추가 속성 버프를 획득할 수 있다. 윌로가 <color=#0abec5>10</color>회 사격할 때마다, 「다정한 설득」 상태일 경우 물기둥을 발사하여 직선으로 공격해 공격력 <color=#0abec5>&Param1&x3</color>의 물 속성 스킬 피해를 입히고, 데시벨이 <color=#0abec5>30</color> 증가한다. 또한 ##「미소의 제재」#4040#와 ##물 속성 표식: 수류#2008#를 부여할 수 있다.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)",
                     "damageType": [
-                        "Skill (from Skill, scale with Skill)",
-                        "Skill (from Skill, scale with Skill) (hidden)"
+                        "Skill (from Skill, scale with Skill)"
                     ],
                     "effectType": [
                         "ELEMENTTYPE_:(Aqua) Mark DMG Taken"
@@ -171634,15 +171580,8 @@
                             "buffStacks": 6
                         }
                     ],
-                    "hiddenParams": [
-                        "99%/120%/120%/120%/120%/120%/120%/120%/120%/120%/120%/120%/120%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "160521003"
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "16001_Potential_21",
                     "rarity": "core"
                 },
@@ -171652,13 +171591,12 @@
                     "nameCN": "激流覆岸",
                     "nameJP": "岸を覆う激流",
                     "nameKR": "해안을 덮치는 격류",
-                    "desc": "When Decibels ≥<color=#0abec5>40</color>, immediately consumes <color=#0abec5>40</color> Decibels to launch a rotating water jet attack, dealing <color=#0abec5>&Param1&x3</color> of ATK as AoE Aqua Skill DMG, inflicting ##Smiling Sanction#4040# and ##Aqua Mark: Torrent#2008#.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160521003)",
-                    "descCN": "当前分贝值≥<color=#0abec5>40</color>时，会立即消耗<color=#0abec5>40</color>点分贝值，发射水柱进行旋转攻击，造成攻击力<color=#0abec5>&Param1&x3</color>的大范围水系技能伤害，同时附加##「微笑制裁」#4040#和##水系印记：水流#2008#。\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160521003)",
-                    "descJP": "現在のデシベル値が<color=#0abec5>40</color>以上の時、即座にデシベル値を<color=#0abec5>40</color>消費し、回転しながら水柱を発射して攻撃を行い、広範囲に攻撃力の<color=#0abec5>&Param1&x3</color>の水属性のスキルダメージを与える。さらに敵に##スマイルパニッシュ#4040#と##水属性の印：水流#2008#を付与する。\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160521003)",
-                    "descKR": "현재 데시벨이 <color=#0abec5>40</color> 이상일 때 데시벨 <color=#0abec5>40</color>을 즉시 소모해 물기둥을 발사하여 회전 공격을 하고, 큰 범위에 공격력 <color=#0abec5>&Param1&x3</color>의 물 속성 스킬 피해를 입힌다. 또한 ##「미소의 제재」#4040#와 ##물 속성 표식: 수류#2008#를 부여한다.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,160521003)",
+                    "desc": "When Decibels ≥<color=#0abec5>40</color>, immediately consumes <color=#0abec5>40</color> Decibels to launch a rotating water jet attack, dealing <color=#0abec5>&Param1&x3</color> of ATK as AoE Aqua Skill DMG, inflicting ##Smiling Sanction#4040# and ##Aqua Mark: Torrent#2008#.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)",
+                    "descCN": "当前分贝值≥<color=#0abec5>40</color>时，会立即消耗<color=#0abec5>40</color>点分贝值，发射水柱进行旋转攻击，造成攻击力<color=#0abec5>&Param1&x3</color>的大范围水系技能伤害，同时附加##「微笑制裁」#4040#和##水系印记：水流#2008#。\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)",
+                    "descJP": "現在のデシベル値が<color=#0abec5>40</color>以上の時、即座にデシベル値を<color=#0abec5>40</color>消費し、回転しながら水柱を発射して攻撃を行い、広範囲に攻撃力の<color=#0abec5>&Param1&x3</color>の水属性のスキルダメージを与える。さらに敵に##スマイルパニッシュ#4040#と##水属性の印：水流#2008#を付与する。\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)",
+                    "descKR": "현재 데시벨이 <color=#0abec5>40</color> 이상일 때 데시벨 <color=#0abec5>40</color>을 즉시 소모해 물기둥을 발사하여 회전 공격을 하고, 큰 범위에 공격력 <color=#0abec5>&Param1&x3</color>의 물 속성 스킬 피해를 입힌다. 또한 ##「미소의 제재」#4040#와 ##물 속성 표식: 수류#2008#를 부여한다.\u000bParam2: &Param2& (EffectValue,EffectTypeFirstSubtype) \u000bParam3: &Param3& (EffectValue,EffectTypeParam1) \u000bParam4: &Param4& (BuffValue,Time) \u000bParam5: &Param5& (BuffValue,LaminatedNum)",
                     "damageType": [
-                        "Skill (from Skill, scale with Skill)",
-                        "Skill (from Skill, scale with Skill) (hidden)"
+                        "Skill (from Skill, scale with Skill)"
                     ],
                     "effectType": [
                         "ELEMENTTYPE_:(Aqua) Mark DMG Taken"
@@ -171721,15 +171659,8 @@
                             "buffStacks": 6
                         }
                     ],
-                    "hiddenParams": [
-                        "99%/120%/120%/120%/120%/120%/120%/120%/120%/120%/120%/120%/120%"
-                    ],
-                    "hiddenParamsTooltips": [
-                        {
-                            "damageType": "Skill (from Skill, scale with Skill)",
-                            "hitDamageId": "160521003"
-                        }
-                    ],
+                    "hiddenParams": [],
+                    "hiddenParamsTooltips": [],
                     "icon": "16001_Potential_22",
                     "rarity": "core"
                 },

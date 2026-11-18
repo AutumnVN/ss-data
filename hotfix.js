@@ -19,7 +19,7 @@ const AREA_EFFECT_CLASSES = new Set(['AreaEffectEntity', 'LineAreaWeaponEntity',
 let HIT_SOURCE_DATA = {};
 try {
     HIT_SOURCE_DATA = JSON.parse(readFileSync(HIT_SOURCE_FILE, 'utf8'));
-} catch {}
+} catch { }
 
 const BULLET_MAP = {};
 const AREA_EFFECT_MAP = {};
@@ -66,7 +66,7 @@ const ELEMENTS = { WE: 1, FE: 2, SE: 3, AE: 4, LE: 5, DE: 6 };
 const ELEMENTS_BY_NAME = { Water: 1, Fire: 2, Land: 3, Earth: 3, Air: 4, Wind: 4, Light: 5, Dark: 6 };
 const ELEMENT_NAMES = { 1: 'Aqua', 2: 'Ignis', 3: 'Terra', 4: 'Ventus', 5: 'Lux', 6: 'Umbra' };
 const DAMAGE_TYPE_NAMES = { NORMAL: 'Normal attack', SKILL: 'Skill', ULTIMATE: 'Ultimate', PASSIVE: 'Passive' };
-
+const DAMAGING_EFFECT_TYPES = new Set([1, 2, 4]);
 const SUMMON_ATTR_TYPE_LABEL = {
     Self: 'Self, uses its own stats',
     Inherit: "Inherit, copies owner's current stats (includes active buffs)",
@@ -612,7 +612,7 @@ function getHiddenHitDamageIds(potentialId) {
         if (!ids.includes(id)) ids.push(id);
     }
 
-    return ids;
+    return ids.filter(id => DAMAGING_EFFECT_TYPES.has(HITDAMAGE[id]?.EffectType));
 }
 
 let characterSummonInfo = null;
