@@ -1957,6 +1957,32 @@ const checks = [
         },
     },
     {
+        heading: 'Suntide Willow > Luminous Leaper',
+        check() {
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._16001');
+            const config = extractMethod(namespace, 'public class Config_MainControl');
+            const cooldown = +config.match(/triggerCD_AddBuff_Summoned = FP\.op_Implicit\(([\d.]+)\)/)[1];
+            const buffId = +config.match(/buffId_ForPlayer_Summoned = (\d+)/)[1];
+            const onSelfDamaged = extractMethod(namespace, 'protected override void OnSelfDamaged(');
+            const gated = onSelfDamaged.includes('_lastTriggerTime_AddBuff_Summoned')
+                && onSelfDamaged.includes('Config_MainControl.triggerCD_AddBuff_Summoned');
+            const addsBuff = onSelfDamaged.includes('AddBuff(Config_MainControl.buffId_ForPlayer_Summoned');
+            const buff = BUFFVALUE[buffId];
+            const tooltip = CHARACTER['160'].skill.paramsTooltips.find(item => item.buffId === buffId);
+            const active = cooldown === 1
+                && gated
+                && addsBuff
+                && buff.LaminatedNum === 5
+                && tooltip.effectType === 'ATK (%)';
+
+            return {
+                active,
+                text: CHARACTER['160'].skill.desc,
+                detail: `buff ${buffId} is gated by triggerCD_AddBuff_Summoned = ${cooldown}s, so one aoe impact can only add one stack per second`,
+            };
+        },
+    },
+    {
         heading: 'Suntide Willow > Foam Echo',
         check() {
             const potential = findPotential('160', 516008);

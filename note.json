@@ -367,6 +367,10 @@
     "active": true,
     "text": "When Nazuna performs an Auto Attack, there is a 20% chance to throw a golden egg, dealing <color=#ec6d21>&Param1& of ATK</color> as AoE Terra Auto Attack DMG and inflicting ##Terra Mark: Earth Vein#2029#."
   },
+  "Suntide Willow > Luminous Leaper": {
+    "active": true,
+    "text": "When tapping the Main Skill button, different effects occur based on the current ##Decibels#4038#.\u000b<color=#0abec5>Current Decibels below 100:</color>\u000bSwitches back and forth between Bubble Machine and Megaphone modes.\u000b<color=#0abec5>Current Decibels at 100:</color>\u000bConsumes all Decibels at once and launches a Bubble Frog: every bounce creates an impact dealing <color=#fb8037>&Param1&</color> of ATK as AoE Aqua Skill DMG and inflicting ##Aqua Mark: Torrent#2008#, bouncing once every 3s. When Bubble Frog deals DMG, increases the squad's &Param2& by <color=#fb8037>&Param3&</color> for &Param4&s, stacking up to &Param5& times."
+  },
   "Suntide Willow > Foam Echo": {
     "active": true,
     "text": "When ##Echoing Soundwave#4047# deal DMG, increases own and non-Aqua Squadmates' &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times."
