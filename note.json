@@ -43,6 +43,10 @@
     "active": true,
     "text": "When Nanoha deals DMG, there is a 30% chance to increase her &Param4& by <color=#ec6d21>&Param1&</color> and &Param5& by <color=#ec6d21>&Param2&</color> for &Param3&s."
   },
+  "Nanoha > Splendid Vortex": {
+    "active": true,
+    "text": "When Flowers Dance (Main Skill) triggers a ##Ventus Mark#1017#, increases &Param4& by <color=#ec6d21>&Param1&</color> for &Param2&s, stacking up to &Param3& times."
+  },
   "Nanoha > Blooming Flowers": {
     "active": true,
     "text": "When Nanoha triggers ##Ventus Mark#1017#, increases her &Param3& by <color=#ec6d21>&Param1&</color> for &Param2&s, stacking up to &Param4& times."
@@ -78,6 +82,18 @@
   "Freesia > Frost Warning": {
     "active": true,
     "text": "When Freesia hits targets inflicted with ##Chill#1027#/##Frozen#1002#, deals an additional <color=#0abec5>&Param1& of ATK</color> as AoE Aqua Skill DMG.\u000bParam10: &Param10& (Skill,Title)"
+  },
+  "Teresa > Muddy Engulf": {
+    "active": true,
+    "text": "When Teresa deals Skill DMG, increases the target's &Param3& by <color=#ec6d21>&Param1&</color> for &Param4&s.\u000bIf the target does not have broken resilience, increases their &Param3& by <color=#ec6d21>&Param2&</color> instead."
+  },
+  "Teresa > Hold On!": {
+    "active": true,
+    "text": "While Surging Shield is active, increases the main Trekker's &Param2& by <color=#ec6d21>&Param1&</color>.\u000bWhen the main Trekker is attacked, reduces the Cooldown of Billowing Tide (Support Skill) by 1s. This effect can only be triggered once every 4s."
+  },
+  "Teresa > How About This!": {
+    "active": true,
+    "text": "When the main Aqua Trekker within Tidal Domain deals DMG, there is a 50% chance to create a geyser at the target's location, dealing <color=#ec6d21>&Param1& of ATK</color> as AoE Aqua Skill DMG and inflicting ##Aqua Mark: Torrent#2008#."
   },
   "Donna > Condensation Orbs": {
     "active": true,

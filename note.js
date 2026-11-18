@@ -373,6 +373,28 @@ const checks = [
         },
     },
     {
+        heading: 'Nanoha > Splendid Vortex',
+        check() {
+            const potential = findPotential('119', 511909);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11901');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onHitPost = extractMethod(main, 'public override void OnHitPost(');
+            const onElementMarkTrigger = extractMethod(main, 'private void OnElementMarkTrigger(');
+            const checksTagAndMark = onHitPost.includes('CheckHitByTag(evt.hitDamageTag, windHitTag)')
+                && onHitPost.includes('CheckElementMark(CommonDefine.Wind, monster)')
+                && onHitPost.includes('AddBuff(11950911');
+            const usesTriggerEvent = onElementMarkTrigger.includes('11950911');
+            const stacks = BUFFVALUE['11950911'].LaminatedNum;
+            const active = checksTagAndMark && !usesTriggerEvent && stacks === +potential.params[2];
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the stack needs a windHitTag hit on a target that already has a ventus mark = ${checksTagAndMark}; wired to the real mark trigger event = ${usesTriggerEvent}; buff stacks up to ${stacks} (text Param3 ${potential.params[2]})`,
+            };
+        },
+    },
+    {
         heading: 'Nanoha > Blooming Flowers',
         check() {
             const potential = findPotential('119', 511912);
@@ -539,6 +561,67 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `${extraHit}; Ultimate ${ultraHasTag ? 'has' : 'lacks'} ${triggerTag}`,
+            };
+        },
+    },
+    {
+        heading: 'Teresa > Muddy Engulf',
+        check() {
+            const potential = findPotential('127', 512706);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12701');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onHitPost = extractMethod(main, 'public override void OnHitPost(');
+            const eliteGetsHigher = /monster\.monsterInfo\.epicType == HotfixEnum\.monsterEpicType\.ELITE \|\| monster\.IsBossMonster\(\)[\s\S]*?AddBuff\(12750612/.test(onHitPost);
+            const normalGetsBase = /else[\s\S]*?AddBuff\(12750611/.test(onHitPost);
+            const base = +EFFECTVALUE['12750611'].EffectTypeParam1;
+            const higher = +EFFECTVALUE['12750612'].EffectTypeParam1;
+            const checksBroken = /Broken|broken|resilience/.test(onHitPost);
+            const active = eliteGetsHigher && normalGetsBase && higher > base && !checksBroken;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `elite and boss targets get buff 12750612 (${higher}), everyone else gets 12750611 (${base}), and nothing checks broken resilience = ${!checksBroken}`,
+            };
+        },
+    },
+    {
+        heading: 'Teresa > Hold On!',
+        check() {
+            const potential = findPotential('127', 512726);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12701');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onOtherHurt = extractMethod(support, 'public override void OnOtherHurt(');
+            const onOtherHitPost = extractMethod(support, 'public override void OnOtherHitPost(');
+            const reducesOnHurt = onOtherHurt.includes('ModifyResumeTimeAbs(-cdReduce_26, ActionKey.B)');
+            const reducesOnHit = onOtherHitPost.includes('ModifyResumeTimeAbs(-cdReduce_26, ActionKey.B)');
+            const shieldOnHit = /GetPerkLv\(512726[\s\S]{0,120}?CheckShieldByTag/.test(onOtherHitPost);
+            const active = reducesOnHurt && reducesOnHit && !shieldOnHit;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `support skill cd is reduced when she is attacked = ${reducesOnHurt} and when the main trekker deals damage = ${reducesOnHit}; the damage branch needs the surging shield = ${shieldOnHit}`,
+            };
+        },
+    },
+    {
+        heading: 'Teresa > How About This!',
+        check() {
+            const potential = findPotential('127', 512730);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12701');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onOtherHitPost = extractMethod(support, 'public override void OnOtherHitPost(');
+            const playsGeyser = onOtherHitPost.includes('PlayAreaEffect(_actor, areaEffect_30');
+            const checksAqua = onOtherHitPost.includes('elementType.WE');
+            const hasCd = onOtherHitPost.includes('CheckCd(512730, cd_30)');
+            const cdSeconds = /private FP cd_30 = FP\.op_Implicit\((\d+(?:\.\d+)?)\);/.exec(support)?.[1];
+            const active = playsGeyser && !checksAqua && hasCd && +cdSeconds === 1 && potential.desc.includes('main Aqua Trekker');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the geyser branch plays areaEffect_30 = ${playsGeyser}, with no aqua element check on the main trekker = ${!checksAqua}, and a hidden ${cdSeconds}s cooldown = ${hasCd}`,
             };
         },
     },
