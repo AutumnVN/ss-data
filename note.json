@@ -1,4 +1,12 @@
 {
+  "Amber > Greed Gunfire": {
+    "active": true,
+    "text": "When Amber lands &Param4& Crit Hits, immediately fully reloads the magazine, and increases Auto Attack DMG by <color=#ec6d21>&Param1&</color> for &Param2&s.\u000bThis effect can only be triggered once every &Param3&s."
+  },
+  "Amber > Overloaded Spark": {
+    "active": true,
+    "text": "Casting Spark of Finality resets Skill Cooldown. Within &Param1&s after the Ultimate ends, reduces Amber's Skill Cooldown by 50% and increases &Param3& by <color=#ec6d21>&Param2&</color>."
+  },
   "Tilia > Ultimate: Glorious Smite": {
     "active": true,
     "text": "Leaps and slams down onto the ground, dealing <color=#fb8037>&Param1&</color> of ATK as Lux Ultimate DMG in a large area. Meanwhile, creates a sphere that deals <color=#fb8037>&Param2&</color> of ATK as AoE Lux Skill DMG and inflicts ##Lux Mark: Radiance#2016# for 8s."
@@ -26,6 +34,10 @@
   "Kasimira > Heated Battle": {
     "active": true,
     "text": "After casting Precision Strike (Support Skill), a burning bomb crater remains on the battlefield, dealing <color=#0abec5>&Param1& of ATK</color> as AoE Ignis Skill DMG every <color=#0abec5>0.5</color>s for a total of 8s, and inflicting ##Ignis Mark: Sacred Flame#2013#."
+  },
+  "Kasimira > Gradual Heat-Up": {
+    "active": true,
+    "text": "Sweeping Blast (Ultimate) can inflict ##Ignis Mark: Sacred Flame#2013#. \u000bAlso increases Kasimira's &Param3& by <color=#ec6d21>&Param2&</color>.\u000bParam1: &Param1& (ScriptParameter,CommonData)"
   },
   "Firenze > High Risk": {
     "active": true,
@@ -199,6 +211,10 @@
     "active": true,
     "text": "When Freesia hits targets inflicted with ##Chill#1027#/##Frozen#1002#, deals an additional <color=#0abec5>&Param1& of ATK</color> as AoE Aqua Skill DMG.\u000bParam10: &Param10& (Skill,Title)"
   },
+  "Freesia > Ocean of Law": {
+    "active": true,
+    "text": "While Freesia is in ##Berserk#2014#, after her Auto Attacks hit targets inflicted with ##Chill#1027#/##Frozen#1002#, increases her ATK by <color=#ec6d21>&Param1&</color> for &Param2&s, stacking up to &Param3& times.\u000bParam10: &Param10& (Skill,Title)"
+  },
   "Flora > Perfect Acting": {
     "active": true,
     "text": "When casting Flutter Flare (Support Skill), increases the main Trekker's &Param4& by <color=#ec6d21>&Param1&</color> for &Param2&s. \u000bWhen the main Trekker lands a Crit Hit, spawns a ##Scorched Butterfly#2019#, dealing <color=#ec6d21>&Param3& of ATK</color> as Ignis Skill DMG. This effect can only be triggered once per second."
@@ -259,6 +275,10 @@
     "active": true,
     "text": "Increases Flower Formation's &Param1& by <color=#ec6d21>&Param2&</color>. When there are 2 or more targets caught in Flower Formation, additionally increases its DMG by <color=#ec6d21>&Param4&</color>.\u000bParam3: &Param3& (OnceAdditionalAttribute,AttributeType1)"
   },
+  "Mistique > Abominable Fester": {
+    "active": true,
+    "text": "When a ##Pumpka Phantom#4007# deals DMG, there is a &Param1&% chance to increase its DMG by <color=#ec6d21>&Param2&</color> and stun the target for 1s.\u000bParam3: &Param3& (OnceAdditionalAttribute,AttributeType1)"
+  },
   "Eleanor > Flicker Sequence": {
     "active": true,
     "text": "Decreases Dodge cooldown by 25%. Increases Eleanor's &Param1& by <color=#ec6d21>&Param2&</color>."
@@ -267,6 +287,10 @@
     "active": true,
     "text": "Increases the &Param1& of jump slam explosions from Armed Assault (Support Skill) by <color=#0abec5>&Param2&</color>. Increases the number of explosions of each jump slam by 1. Resets when the Support Skill ends."
   },
+  "Sparkla > Ticking Aftershock": {
+    "active": true,
+    "text": "When Sparkla is in ##Bunny Jaws Mode#4033#, gains Super Armor and increases own &Param2& by <color=#ec6d21>&Param3&</color>.\u000bAfter the shells fired in ##Bunny Jaws Mode#4033# explode, 5 Booby Traps are randomly deployed within the blast radius, each Booby Trap dealing <color=#ec6d21>&Param1& of ATK</color> as Terra Skill DMG. Can trigger ##Terra Mark#1020#.\u000bShells fired by Bunny Roar scatter 10 Booby Traps over a much larger area."
+  },
   "Chixia > Flame-Stained Ink": {
     "active": true,
     "text": "Ink can stack up to <color=#0abec5>4</color> times on targets. When a target with 4 stacks of Ink triggers ##Burn#2027#, deals <color=#0abec5>&Param1& of ATK</color> as AoE Ignis Skill DMG."
@@ -274,6 +298,10 @@
   "Chixia > Blazing Rainbow Array": {
     "active": true,
     "text": "Increases the Attack Range of Purifying Flames (Main Skill). \u000bIncreases Skill DMG by <color=#0abec5>&Param1&</color>. This effect gradually diminishes over 3s."
+  },
+  "Cosette > Nightscar Trace": {
+    "active": true,
+    "text": "When any other friendly unit lands a Crit Hit, reduces the Cooldown of Nocturn Hooks (Main Skill) by <color=#0abec5>1</color>s, and leaves claw marks at the target's location, dealing <color=#0abec5>&Param1&</color> of Cosette's ATK as AoE Umbra Skill DMG and inflicting ##Umbra Mark: Gloom#2018#.\u000bThis effect can only be triggered 5 times per Skill cast."
   },
   "Cosette > Nocturn Mark": {
     "active": true,
@@ -290,6 +318,10 @@
   "Cosette > Phantom Shelter": {
     "active": true,
     "text": "While Cosette is casting the Support Skill, increases the main Trekker's &Param1& by <color=#ec6d21>&Param2&</color>."
+  },
+  "Wraith > Ominous Vibe": {
+    "active": true,
+    "text": "When Rolling Bungee (Support Skill) deals DMG, there is a 50% chance to fire lasers, dealing <color=#ec6d21>&Param1&</color> of Wraith's ATK as Ventus Skill DMG. Can trigger ##Ventus Mark#1017#."
   },
   "Chitose > Aqueous Phantasm": {
     "active": true,
@@ -311,13 +343,37 @@
     "active": true,
     "text": "When casting Divine Retribution of Evil (Ultimate), increases Gerie's DMG to nearby targets by <color=#ec6d21>&Param2&</color> for &Param3&s. Also inflicts ##Fear#4501# on normal targets for 2s.\u000bParam1: &Param1& (OnceAdditionalAttribute,AttributeType1)"
   },
+  "Laru > Arc Chain Laser": {
+    "active": true,
+    "text": "The laser inflicts Shock on targets for 10s. When dealing damage to Shocked targets, deals an additional <color=#0abec5>&Param2& of ATK</color> as Lux Skill DMG. With the 20th hit, deals <color=#0abec5>&Param3& of ATK</color> as AoE Lux Skill DMG and removes Shock.\u000bParam1: &Param1& (Skill,Title)"
+  },
+  "Laru > Radiant Ascent": {
+    "active": true,
+    "text": "Thunder Domain can knock targets into the air. Also increases its Skill DMG to airborne targets by <color=#ec6d21>&Param2&</color>.\u000bParam1: &Param1& (Skill,Title)"
+  },
+  "Laru > Lancefall: Electro Bind": {
+    "active": true,
+    "text": "When &Param1& hits an elite or higher-tier target, increases the Ultimate DMG dealt by the Ultimate by <color=#ec6d21>&Param2&</color>. Also grants Laru &Param3& Energy.\u000bParam4: &Param4& (ScriptParameterValue,CommonData)"
+  },
+  "Laru > Lancefall: Thunder Surge": {
+    "active": true,
+    "text": "Each time &Param1& (Ultimate) hits a different target, increases ATK by <color=#ec6d21>&Param2&</color> for &Param3&s, up to &Param4& stacks."
+  },
   "Shia > Kick the Wave": {
     "active": true,
     "text": "When Shia deals DMG with surfing, increases the surfing Skill DMG taken by the target by <color=#ec6d21>&Param1&</color> for &Param2&s, stacking up to &Param3& times.\u000bParam10: &Param10& (Skill,Title)"
   },
+  "Nazuna > Clean Sweep": {
+    "active": true,
+    "text": "When Nazuna performs an Auto Attack, there is a 20% chance to throw a golden egg, dealing <color=#ec6d21>&Param1& of ATK</color> as AoE Terra Auto Attack DMG and inflicting ##Terra Mark: Earth Vein#2029#."
+  },
   "Suntide Willow > Foam Echo": {
     "active": true,
     "text": "When ##Echoing Soundwave#4047# deal DMG, increases own and non-Aqua Squadmates' &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s, stacking up to &Param4& times."
+  },
+  "Firstlight Noya > Dawnflare": {
+    "active": true,
+    "text": "Firing a total of <color=#0abec5>&Param1&</color> Glows grants Radiance Flurry (Special Main Skill): swings the longsword to unleash a massive blade light that deals <color=#0abec5>&Param2& x6</color> of Max HP as Lux Skill DMG and can trigger ##Lux Mark#1015#.\u000bLongsword sprint attacks during Auto Attacks now fire <color=#0abec5>3</color> Glows, each dealing <color=#0abec5>&Param3&</color> of Max HP as Lux Skill DMG."
   },
   "Soaring Blue > Horn of Departure": {
     "active": true,

@@ -15,7 +15,8 @@ const ONCEADDITIONALATTRIBUTEVALUE = require('./EN/bin/OnceAdditionalAttributeVa
 const SCRIPTPARAMETERVALUE = require('./EN/bin/ScriptParameterValue.json');
 const SCRIPTPARAMETER = require('./EN/bin/ScriptParameter.json');
 const HITDAMAGE = require('./EN/bin/HitDamage.json');
-const { getHitDamageAreaEffectDetail } = require('./hotfix');
+const SKILL = require('./EN/bin/Skill.json');
+const { getHitDamageAreaEffectDetail, getBuffDetail } = require('./hotfix');
 
 function findPotential(charId, potentialId) {
     const character = CHARACTER[charId];
@@ -147,6 +148,52 @@ function getOnceAdditionalLevels(prefix) {
 
 const checks = [
     {
+        heading: 'Amber > Greed Gunfire',
+        check() {
+            const potential = findPotential('103', 510305);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._10301');
+            const main = extractMethod(namespace, 'public class Parallel_B1 : Parallel');
+            const onCrit = extractMethod(main, 'public override void OnCrit(AdventureActorReceiveCritDamageEvent evt)');
+            const countParam = +main.match(/private int paramId_5_Count = (\d+)/)[1];
+            const required = +SCRIPTPARAMETERVALUE[countParam].CommonData / 10000;
+            const textCrits = +potential.params[3];
+            const incrementsFirst = onCrit.indexOf('curCrit++') < onCrit.indexOf('curCrit > num');
+            const active = incrementsFirst && /curCrit > num/.test(onCrit) && required === textCrits;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the counter is incremented before the check (curCrit++ then curCrit > ${required}), so it triggers on the ${required + 1}th crit while the text says ${textCrits}`,
+            };
+        },
+    },
+    {
+        heading: 'Amber > Overloaded Spark',
+        check() {
+            const potential = findPotential('103', 510342);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._10301');
+            const main = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onCastEnd = extractMethod(main, 'public virtual void OnCastEndSkill(AdventureActorCastSkillEndEvent evt)');
+            const buffId = +main.match(/private int buffId_2 = (\d+)/)[1];
+            const windowParam = +main.match(/private int paramId_2_time = (\d+)/)[1];
+            const buff = getBuffDetail(buffId);
+            const textSeconds = +potential.params[0];
+            const windowSeconds = +SCRIPTPARAMETERVALUE[windowParam + 10].CommonData / 10000;
+            const parameter = SCRIPTPARAMETER[windowParam];
+            const active = /case HotfixEnum\.skillSlotType\.D:[\s\S]*AddBuff\(buffId_2/.test(onCastEnd)
+                && parameter.levelTypeData === 1
+                && parameter.LevelData === 510342
+                && windowSeconds === textSeconds
+                && buff.duration !== textSeconds;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff ${buffId} lasts ${buff.duration}s while the text says ${textSeconds}s, and the ${windowSeconds}s window only gates the skill cooldown cut`,
+            };
+        },
+    },
+    {
         heading: 'Tilia > Ultimate: Glorious Smite',
         check() {
             const sphere = CHARACTER['107'].ultimate.paramsTooltips[1];
@@ -269,6 +316,26 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `the crater hits every ${area.hitInterval}s for ${area.hits} hits over ${area.duration}s, and the text says every ${interval}s for ${duration}s`,
+            };
+        },
+    },
+    {
+        heading: 'Kasimira > Gradual Heat-Up',
+        check() {
+            const potential = findPotential('108', 510831);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._10801');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onSelfAttacked = extractMethod(support, 'protected override void OnSelfAttacked(AdventureActorReceiveAttackEvent attackEvent)');
+            const cooldown = +support.match(/private readonly FP cd_31 = FP\.op_Implicit\(([\d.]+)\)/)[1];
+            const gated = onSelfAttacked.includes('_lastTriggerTime_31')
+                && onSelfAttacked.includes('_actor.LogicTime - _lastTriggerTime_31 > cd_31')
+                && onSelfAttacked.includes('AddBuff(1011');
+            const active = gated && cooldown === 1 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the ignis mark from ultimate dmg is gated by ${cooldown}s since the last infliction (${gated}), and the text has no cooldown`,
             };
         },
     },
@@ -1141,12 +1208,39 @@ const checks = [
             const triggerTag = '125_P24';
             const ultraHits = CHARACTER['125'].ultimate.paramsTooltips.filter(hit => hit.damageTag);
             const ultraHasTag = ultraHits.some(hit => hit.damageTag.includes(triggerTag));
-            const active = !ultraHasTag;
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12501');
+            const config = extractMethod(namespace, 'public class Config_Support');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onSelfAttacked = extractMethod(support, 'protected override void OnSelfAttacked(AdventureActorReceiveAttackEvent attackEvent)');
+            const cooldown = +/triggerCD_P24 = FP\.op_Implicit\(([\d.]+)f?\)/.exec(config)[1];
+            const gated = onSelfAttacked.includes('_lastTriggerTime_P24')
+                && onSelfAttacked.includes('Config_Support.triggerCD_P24');
+            const active = !ultraHasTag && gated && cooldown === 1;
 
             return {
                 active,
                 text: potential.desc,
-                detail: `${extraHit}; Ultimate ${ultraHasTag ? 'has' : 'lacks'} ${triggerTag}`,
+                detail: `${extraHit}; Ultimate ${ultraHasTag ? 'has' : 'lacks'} ${triggerTag}, and the extra hit is gated by triggerCD_P24 = ${cooldown}s (${gated})`,
+            };
+        },
+    },
+    {
+        heading: 'Freesia > Ocean of Law',
+        check() {
+            const potential = findPotential('125', 512528);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12501');
+            const config = extractMethod(namespace, 'public class Config_Support');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onSelfAttacked = extractMethod(support, 'protected override void OnSelfAttacked(AdventureActorReceiveAttackEvent attackEvent)');
+            const cooldown = +/triggerCD_P28 = FP\.op_Implicit\(([\d.]+)f?\)/.exec(config)[1];
+            const gated = onSelfAttacked.includes('_lastTriggerTime_P28')
+                && onSelfAttacked.includes('Config_Support.triggerCD_P28');
+            const active = gated && cooldown === 1 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the atk buff is gated by triggerCD_P28 = ${cooldown}s since the last trigger (${gated}), and the text has no cooldown`,
             };
         },
     },
@@ -1422,6 +1516,24 @@ const checks = [
         },
     },
     {
+        heading: 'Mistique > Abominable Fester',
+        check() {
+            const potential = findPotential('135', 513508);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Monster._13500010BigHeadGhost');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onBeforeHit = extractMethod(parallel, 'private void OnBeforeHit(IEvent _evt)');
+            const gated = onBeforeHit.includes('CheckCd(513508, cd_8)');
+            const cooldown = +/private FP cd_8 = FP\.op_Implicit\(([\d.]+)f?\)/.exec(parallel)[1];
+            const active = gated && cooldown === 1.5 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the phantom's dmg buff and stun are gated by CheckCd(513508, ${cooldown}s), and the text has no cooldown`,
+            };
+        },
+    },
+    {
         heading: 'Eleanor > Flicker Sequence',
         check() {
             const potential = findPotential('137', 513712);
@@ -1451,6 +1563,25 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `extra explodes loop JumpAtkJumpIndex times, so slam 1 gets 0 and each later slam 1 more than the previous = ${usesJumpIndex}, which is better than the text overall (36 extras instead of 9); en text says +1 for each = ${saysOneEach}`,
+            };
+        },
+    },
+    {
+        heading: 'Sparkla > Ticking Aftershock',
+        check() {
+            const potential = findPotential('140', 514009);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14001');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onBulletFinish = extractMethod(main, 'private void OnBulletFinish(IEvent evt)');
+            const cooldown = +SCRIPTPARAMETERVALUE[14009011].CommonData / 10000;
+            const gated = onBulletFinish.includes('_lastTriggerTime_P9')
+                && onBulletFinish.includes('GetScriptValue(_actor, 14009011)');
+            const active = gated && cooldown === 2 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the booby trap drop is gated by 14009011 = ${cooldown}s since the last trigger, and the text has no cooldown`,
             };
         },
     },
@@ -1490,6 +1621,23 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `14104011 adds ${perStack.Value1 / 100}% per stack, max ${maxStacks} stacks = ${perStack.Value1 * maxStacks / 100}%, text advertises ${advertised.Value1 / 100}%`,
+            };
+        },
+    },
+    {
+        heading: 'Cosette > Nightscar Trace',
+        check() {
+            const potential = findPotential('142', 514202);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14201');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const cooldown = +main.match(/private FP cd_2 = FP\.op_Implicit\(([\d.]+)\)/)[1];
+            const gated = main.includes('CheckCd(514202, cd_2)');
+            const active = gated && cooldown === 0.5 && potential.desc.includes('5 times per Skill cast');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the claw marks are gated by CheckCd(514202, ${cooldown}s) = ${gated}, and the text only says 5 times per cast`,
             };
         },
     },
@@ -1570,6 +1718,25 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `buff 14232011 is added on the support skill cast = ${onSupportSkill} and also on the ultimate cast = ${onUltimate}; text only names the support skill = ${text}`,
+            };
+        },
+    },
+    {
+        heading: 'Wraith > Ominous Vibe',
+        check() {
+            const potential = findPotential('143', 514325);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14301');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onDamaged = extractMethod(support, 'protected override void OnSelfDamaged(AdventureActorReceiveDamageEvent damageEvent)');
+            const cooldown = +SCRIPTPARAMETERVALUE[14325012].CommonData / 10000;
+            const gated = onDamaged.includes('_lastTriggerTime_P25')
+                && onDamaged.includes('GetScriptValue(_actor, 14325012)');
+            const active = gated && cooldown === 1 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the laser proc is gated by 14325012 = ${cooldown}s since the last trigger, and the text has no cooldown`,
             };
         },
     },
@@ -1665,6 +1832,93 @@ const checks = [
         },
     },
     {
+        heading: 'Laru > Arc Chain Laser',
+        check() {
+            const potential = findPotential('150', 515002);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._15001');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onBuffRemove = extractMethod(main, 'private void OnBuffRemove(IEvent evt)');
+            const onActorDied = extractMethod(main, 'private void OnActorDied(IEvent evt)');
+            const explosion = extractMethod(main, 'private bool TryTriggerElectricityExplosion_P2(MonsterAdventureActor monster, bool onlyCheckStrength = false)');
+            const textHits = +potential.desc.match(/(\d+)(?:st|nd|rd|th) hit/)[1];
+            const textPct = potential.params[2].split('/').map(value => +value.replace('%', ''));
+            const bigPct = HITDAMAGE[150310203].SkillPercentAmend.map(value => value / 10000);
+            const smallPct = HITDAMAGE[150310202].SkillPercentAmend.map(value => value / 10000);
+            const explodesOnRemove = onBuffRemove.includes('buffId == 15002011')
+                && onBuffRemove.includes('TryTriggerElectricityExplosion_P2');
+            const explodesOnDeath = onActorDied.includes('TryTriggerElectricityExplosion_P2');
+            const picksByStacks = explosion.includes('buffNumByID >= 20')
+                && explosion.includes('Boom_Big')
+                && explosion.includes('Boom_Small');
+            const active = explodesOnRemove && explodesOnDeath && picksByStacks
+                && bigPct.join('/') === textPct.join('/')
+                && smallPct.every((value, index) => value < bigPct[index]);
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `removing shock 15002011 (expiry included) and the target dying both call TryTriggerElectricityExplosion_P2, so the explosion is not limited to the ${textHits}th hit; below 20 stacks it uses 150310202 = ${smallPct.join('/')}% instead of 150310203 = ${bigPct.join('/')}%`,
+            };
+        },
+    },
+    {
+        heading: 'Laru > Radiant Ascent',
+        check() {
+            const potential = findPotential('150', 515027);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._15001');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onBeforeSelfHit = extractMethod(support, 'protected override void OnBeforeSelfHit');
+            const usesLostControl = onBeforeSelfHit.includes('monsterAdventureActor.isLostControl');
+            const active = usesLostControl && potential.desc.includes('airborne');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the bonus is gated on isLostControl (${usesLostControl}), so stunned and frozen targets count too, not only airborne ones`,
+            };
+        },
+    },
+    {
+        heading: 'Laru > Lancefall: Electro Bind',
+        check() {
+            const potential = findPotential('150', 515042);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._15001');
+            const parallel = extractMethod(namespace, 'public class ParallelScript : ParallelBase');
+            const onReceiveDamage = extractMethod(parallel, 'private void OnReceiveDamage(IEvent evt)');
+            const cooldown = +SCRIPTPARAMETERVALUE['15042012'].CommonData / 10000;
+            const gated = onReceiveDamage.includes('_lastTriggerTime_P42')
+                && onReceiveDamage.includes('GetScriptValue(_actor, 15042012)')
+                && onReceiveDamage.includes('AddEnergy(');
+            const active = gated && cooldown > 0 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the energy gain is gated by 15042012 = ${cooldown}s since the last grant (${gated}), and the text has no cooldown`,
+            };
+        },
+    },
+    {
+        heading: 'Laru > Lancefall: Thunder Surge',
+        check() {
+            const potential = findPotential('150', 515043);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._15001');
+            const parallel = extractMethod(namespace, 'public class ParallelScript : ParallelBase');
+            const onReceiveAttack = extractMethod(parallel, 'private void OnReceiveAttack(IEvent evt)');
+            const addsOnEveryHit = onReceiveAttack.includes('AddBuff(15043011');
+            const tracksTargets = /HashSet|\.Add\(|\.Contains\(/.test(onReceiveAttack);
+            const lance = findPotential('150', 515041).paramsTooltips.find(tooltip => tooltip.hitDamageId).hitDamageId;
+            const ticks = getHitDamageAreaEffectDetail(lance).hits;
+            const active = addsOnEveryHit && !tracksTargets;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff 15043011 is added on every ultimate hit with no different-target tracking (${!tracksTargets}), and lance hit ${lance} ticks ${ticks} times`,
+            };
+        },
+    },
+    {
         heading: 'Shia > Kick the Wave',
         check() {
             const potential = findPotential('155', 515529);
@@ -1683,6 +1937,26 @@ const checks = [
         },
     },
     {
+        heading: 'Nazuna > Clean Sweep',
+        check() {
+            const potential = findPotential('156', 515608);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._15601');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onDamaged = extractMethod(main, 'protected override void OnSelfDamaged(AdventureActorReceiveDamageEvent damageEvent)');
+            const cooldown = +SCRIPTPARAMETERVALUE[15608012].CommonData / 10000;
+            const gated = onDamaged.includes('_lastTriggerTime_P8')
+                && onDamaged.includes('GetScriptValue(_actor, 15608012)');
+            const stampsOnThrow = /TSRandom[\s\S]*_lastTriggerTime_P8 = _actor\.LogicTime/.test(onDamaged);
+            const active = gated && stampsOnThrow && cooldown === 1 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the 15608012 = ${cooldown}s gate wraps the 20% roll and _lastTriggerTime_P8 is stamped only on a throw (${stampsOnThrow}), so auto attacks inside the window never roll and the text has no cooldown`,
+            };
+        },
+    },
+    {
         heading: 'Suntide Willow > Foam Echo',
         check() {
             const potential = findPotential('160', 516008);
@@ -1696,6 +1970,33 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `new Bubble Frog removes 16008011 from Willow when 516008 is active = ${removesBuff}`,
+            };
+        },
+    },
+    {
+        heading: 'Firstlight Noya > Dawnflare',
+        check() {
+            const potential = findPotential('162', 516202);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._16201');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onCast = extractMethod(main, 'protected override void OnSelfCastSkill(AdventureActorCastSkillEvent castSkillEvent)');
+            const bind = extractMethod(main, 'private IEnumerator BindExtraSkillLogic_P2()');
+            const rebind = extractMethod(main, 'private IEnumerator RebindSkillLogic_P2()');
+            const cooldown = +SCRIPTPARAMETERVALUE[16202011].CommonData / 10000;
+            const useWindow = +SKILL[16231002].UseTimeHint / 10000;
+            const setsTime = onCast.includes('_lastTriggerTime_P2 = _actor.LogicTime');
+            const waits = bind.includes('_lastTriggerTime_P2')
+                && bind.includes('GetScriptValue(_actor, 16202011)');
+            const expires = rebind.includes('GetSkillUseTimeHint(currentBindSkillId)')
+                && rebind.includes('RemoveBuffByBuffId(16202011)')
+                && rebind.includes('BindSkillIdToButton(ActionKey.B, 16231000)');
+            const active = setsTime && waits && cooldown === 8
+                && expires && useWindow === 10 && !potential.desc.includes('cooldown');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the special main skill is rebound only after 16202011 = ${cooldown}s since the last cast, and an unused one is taken away after 16231002.UseTimeHint = ${useWindow}s with 16202011 removed and 16231000 rebound (${expires}), and the text has no cooldown or duration`,
             };
         },
     },
