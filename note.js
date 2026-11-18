@@ -195,6 +195,29 @@ const checks = [
         },
     },
     {
+        heading: 'Firenze > High Risk',
+        check() {
+            const potential = findPotential('110', 511005);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11001');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onEnable = extractMethod(parallel, 'public override void OnEnable(');
+            const onReceive = extractMethod(parallel, 'private void OnReceiveDamage(');
+            const squadBonus = onEnable.includes('de_All = true') && onEnable.includes('de_All = false');
+            const usesSquad = onReceive.includes('de_All ?');
+            const usesBothChances = onReceive.includes('11005012') && onReceive.includes('11005011');
+            const chances = [SCRIPTPARAMETERVALUE['11005011'].CommonData, SCRIPTPARAMETERVALUE['11005012'].CommonData].map(value => `${value / 10000}%`);
+            const checksBurn = onReceive.includes('11090000');
+            const textBurn = potential.desc.includes('Umbra Burn');
+            const active = squadBonus && usesSquad && usesBothChances && !checksBurn && textBurn;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the boosted chance uses de_All (whole squad Umbra) = ${usesSquad}; chances 11005011/11005012 = ${chances.join(' / ')}; the target's Dark Burn buff 11090000 is never checked = ${!checksBurn}; text says ${potential.params[1]} -> ${potential.params[2]} vs Umbra Burn = ${textBurn}`,
+            };
+        },
+    },
+    {
         heading: 'Shimiao > Cascade Glow',
         check() {
             const potential = findPotential('113', 511307);
@@ -205,6 +228,48 @@ const checks = [
                 .join('; ');
 
             return { active, text: potential.desc, detail };
+        },
+    },
+    {
+        heading: 'Chaton > Efficient Use',
+        check() {
+            const potential = findPotential('114', 511406);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11401');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onCustomEvent = extractMethod(main, 'public override void OnCustomEvent(');
+            const addsBuff = /if \(evt\.intParam == 1\)[\s\S]*?AddBuff\(buff_6_dmg/.test(onCustomEvent);
+            const spanIndex = onCustomEvent.indexOf('CheckBuffByBuffID(buff_6)');
+            const bombNeedsSpark = spanIndex >= 0 && spanIndex < onCustomEvent.indexOf('buff_6_dmg');
+            const duration = BUFFVALUE['11406012'].Time / 10000;
+            const active = addsBuff && bombNeedsSpark && duration === +potential.params[3];
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the skill crit dmg buff 11406012 is added on every hold event = ${addsBuff}; the explosive bomb is the only part that needs the spark buff 11406011 = ${bombNeedsSpark}; buff lasts ${duration}s (text Param4 ${potential.params[3]}s)`,
+            };
+        },
+    },
+    {
+        heading: 'Chaton > Energy Overflow',
+        check() {
+            const potential = findPotential('114', 511431);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11401');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const energyChange = extractMethod(support, 'private void OnActorEnergyChange(');
+            const castEnd = extractMethod(support, 'public override void OnCastEndSkill(');
+            const addsAtFull = energyChange.includes('currentEnergy >= adventureActorEnergyChangeEvent.totalEnergy')
+                && energyChange.includes('AddBuff(buff_31');
+            const removesOnMain = castEnd.includes('skillSlotType.B')
+                && castEnd.includes('RemoveBuffByBuffId(buff_31)');
+            const duration = BUFFVALUE['11431011'].Time / 10000;
+            const active = addsAtFull && removesOnMain && duration === +potential.params[2];
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff 11431011 lasts ${duration}s (text Param3 ${potential.params[2]}s) and is added only on the energy change event at full energy = ${addsAtFull}, but removed at the end of every main skill cast = ${removesOnMain}`,
+            };
         },
     },
     {

@@ -11,9 +11,25 @@
     "active": true,
     "text": "When Aegis of Light hits a target with HP below <color=#ec6d21>&Param2&</color>, it creates a Lightning Array: Deals &Param3& of Tilia's ATK as AoE Lux Skill DMG and increases the Skill DMG they take by &Param4& for &Param5&s, stacking up to &Param6& times.\u000bThis effect can only be triggered once every &Param8&s.\u000bParam1: &Param1& (Skill,Title) \u000bParam7: &Param7& (EffectValue,EffectTypeFirstSubtype)"
   },
+  "Firenze > High Risk": {
+    "active": true,
+    "text": "When Firenze deals Skill DMG, there is a &Param2& chance to deal an additional <color=#ec6d21>&Param1&</color> of ATK as Umbra Skill DMG. The chance is increased to &Param3& if the target is inflicted with ##Umbra Burn#2028#. This effect can only be triggered &Param4& times every second."
+  },
   "Shimiao > Cascade Glow": {
     "active": true,
     "text": "In Phase 2, increases the &Param10& dealt to targets with ##Chill#1027#/##Frozen#1002# by <color=#ec6d21>&Param1&</color>. The lower the target's HP, the higher the DMG, up to a <color=#ec6d21>&Param9&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,Value1) \u000bParam3: &Param3& (OnceAdditionalAttribute,Value1) \u000bParam4: &Param4& (OnceAdditionalAttribute,Value1) \u000bParam5: &Param5& (OnceAdditionalAttribute,Value1) \u000bParam6: &Param6& (OnceAdditionalAttribute,Value1) \u000bParam7: &Param7& (OnceAdditionalAttribute,Value1) \u000bParam8: &Param8& (OnceAdditionalAttribute,Value1)"
+  },
+  "Chaton > Efficient Use": {
+    "active": true,
+    "text": "When a Bouncing Bomb runs out of bounces, it returns to Chaton and grants her Spark.\u000bWhen holding &Param1& (Main Skill), Chaton consumes Spark to increase her &Param2& by <color=#ec6d21>&Param3&</color> for &Param4&s and throws an Explosive Bomb at the target, dealing <color=#ec6d21>&Param5&</color> of ATK as AoE Ignis Skill DMG.\u000bThe Explosive Bomb cannot bounce."
+  },
+  "Chaton > Evil Eye Gaze": {
+    "active": true,
+    "text": "Increases the &Param2& of &Param1& (Support Skill) by <color=#ec6d21>&Param3&</color>.\u000bWhen casting the Support Skill, Evil Eye locks onto the target's current position, dealing <color=#ec6d21>&Param4&</color> of ATK as AoE Ignis Skill DMG every 0.4s for 8s."
+  },
+  "Chaton > Energy Overflow": {
+    "active": true,
+    "text": "When Chaton's Energy is full, increases her &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s."
   },
   "Firefly > Flash Resonance": {
     "active": true,
