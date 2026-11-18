@@ -83,6 +83,10 @@
     "active": true,
     "text": "When Freesia hits targets inflicted with ##Chill#1027#/##Frozen#1002#, deals an additional <color=#0abec5>&Param1& of ATK</color> as AoE Aqua Skill DMG.\u000bParam10: &Param10& (Skill,Title)"
   },
+  "Flora > Perfect Acting": {
+    "active": true,
+    "text": "When casting Flutter Flare (Support Skill), increases the main Trekker's &Param4& by <color=#ec6d21>&Param1&</color> for &Param2&s. \u000bWhen the main Trekker lands a Crit Hit, spawns a ##Scorched Butterfly#2019#, dealing <color=#ec6d21>&Param3& of ATK</color> as Ignis Skill DMG. This effect can only be triggered once per second."
+  },
   "Teresa > Muddy Engulf": {
     "active": true,
     "text": "When Teresa deals Skill DMG, increases the target's &Param3& by <color=#ec6d21>&Param1&</color> for &Param4&s.\u000bIf the target does not have broken resilience, increases their &Param3& by <color=#ec6d21>&Param2&</color> instead."

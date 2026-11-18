@@ -565,6 +565,26 @@ const checks = [
         },
     },
     {
+        heading: 'Flora > Perfect Acting',
+        check() {
+            const potential = findPotential('126', 512627);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12601');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onCrit = extractMethod(support, 'protected override void OnCrit(');
+            const countsMainCrit = onCrit.includes('mainCtrActor.Id == _evt.from.Id');
+            const countsSelfCrit = onCrit.includes('_actor.Id == _evt.from.Id');
+            const spawnsButterfly = onCrit.includes('bullut_flameButter_Prek27');
+            const active = countsMainCrit && countsSelfCrit && spawnsButterfly
+                && potential.desc.includes('main Trekker lands a Crit Hit');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the crit branch spawns the scorched butterfly for the main trekker = ${countsMainCrit} and for flora's own crits = ${countsSelfCrit}`,
+            };
+        },
+    },
+    {
         heading: 'Teresa > Muddy Engulf',
         check() {
             const potential = findPotential('127', 512706);
