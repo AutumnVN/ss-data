@@ -431,6 +431,69 @@ const checks = [
         },
     },
     {
+        heading: 'Noya > Wind Glaive',
+        check() {
+            const potential = findPotential('112', 511226);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11201');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onBeforeHit = extractMethod(parallel, 'private void OnBeforeHit(');
+            const perk = extractMethod(onBeforeHit, 'if (GetPerk(personalPerkId_26))');
+            const sibling = extractMethod(onBeforeHit, 'if (GetPerk(personalPerkId_27) &&');
+            const noTagCheck = perk.includes('AdventureActor.AddFromAttr(11252601')
+                && !perk.includes('CheckHitByTag');
+            const siblingChecksTag = sibling.includes('daFenrHitTag');
+            const active = noTagCheck && siblingChecksTag;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the perk adds once attribute 11252601 on every hit with no HeavyWBlade tag check (${noTagCheck}), while the next major sword aura pot checks daFenrHitTag (${siblingChecksTag})`,
+            };
+        },
+    },
+    {
+        heading: 'Noya > Leaf Barrier',
+        check() {
+            const potential = findPotential('112', 511227);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11201');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onReceiveDamage = extractMethod(parallel, 'private void OnReceiveDamage(');
+            const perk = extractMethod(onReceiveDamage, 'if (GetPerk(personalPerkId_27) &&');
+            const cd = +parallel.match(/cd_27 = FP\.op_Implicit\(([\d.]+)\)/)[1];
+            const hits = +parallel.match(/hitCount_27 = (\d+)/)[1];
+            const slow = EFFECTVALUE[11252711];
+            const comparesBeforeIncrease = perk.indexOf('perk27_Dic.Add(monsterAdventureActor2.Id, 1)')
+                < perk.indexOf('if (value >= hitCount_27)');
+            const isSlow = slow.EffectTypeFirstSubtype === 46 && slow.EffectTypeParam1.startsWith('-');
+            const active = cd === 0 && hits === 1 && comparesBeforeIncrease && isSlow;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `cd_27 is ${cd}s and hitCount_27 is ${hits}, so the per-target counter is reset on every hit and always compared at 0, meaning the movement spd buff (${isSlow}) is never added`,
+            };
+        },
+    },
+    {
+        heading: 'Noya > Cyclone Blades',
+        check() {
+            const potential = findPotential('112', 511231);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11201');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onElementMarkTrigger = extractMethod(parallel, 'private void OnElementMarkTrigger(');
+            const perk = extractMethod(onElementMarkTrigger, 'if (GetPerk(personalPerkId_31))');
+            const talentChecksTrigger = onElementMarkTrigger.includes('triggerActor.Id == _actor.Id');
+            const addsBuff = perk.includes('AddBuff(buff_31, _actor)');
+            const active = talentChecksTrigger && addsBuff && !perk.includes('triggerActor');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the talent block checks triggerActor.Id == _actor.Id (${talentChecksTrigger}) but the perk block just adds buff_31 (${addsBuff}), so any actor's WindMark1 trigger grants the atk buff`,
+            };
+        },
+    },
+    {
         heading: 'Shimiao > Cascade Glow',
         check() {
             const potential = findPotential('113', 511307);
@@ -441,6 +504,58 @@ const checks = [
                 .join('; ');
 
             return { active, text: potential.desc, detail };
+        },
+    },
+    {
+        heading: 'Shimiao > Rain Whisper: Light',
+        check() {
+            const potential = findPotential('113', 511324);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11301');
+            const normalAttack = extractMethod(namespace, 'public class SkillScript_Support_NormalAttack');
+            const interval = +normalAttack.match(/cd_24 = FP\.op_Implicit\(([\d.]+)\)/)[1];
+            const textInterval = +potential.desc.match(/every ([\d.]+)s/)[1];
+            const active = interval < textInterval && normalAttack.includes('GetPerkLv(511324');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the bonus is applied on the next shot after cd_24 = ${interval}s, while the text says every ${textInterval}s`,
+            };
+        },
+    },
+    {
+        heading: 'Shimiao > Full Preparation',
+        check() {
+            const potential = findPotential('113', 511326);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11301');
+            const parallel = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const required = +parallel.match(/count_26 = (\d+)/)[1];
+            const textTargets = +potential.desc.match(/(\d+) or more/)[1];
+            const active = required !== textTargets;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the slowed-target check needs ${required} slowed targets, the text says ${textTargets} or more`,
+            };
+        },
+    },
+    {
+        heading: 'Shimiao > Wave Rider',
+        check() {
+            const potential = findPotential('113', 511342);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11301');
+            const parallel = extractMethod(namespace, 'public class ParallelScript : ParallelBase');
+            const dict = extractMethod(parallel, 'private Dictionary<int, int> dicOnce_42');
+            const topBracket = +dict.match(/\[0\] = (\d+)/)[1];
+            const brackets = Array.from({ length: 9 }, (_, index) => ONCEADDITIONALATTRIBUTEVALUE[11342011 + index].Value1 / 100);
+            const active = topBracket === 0 && !potential.params[0].startsWith('0%');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `dicOnce_42 maps the hp bracket above 90% to ${topBracket}, so nothing is added there, while brackets 1-9 give ${brackets.join('%/')}% and text Param1 is ${potential.params[0]}`,
+            };
         },
     },
     {
@@ -1488,6 +1603,48 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `Dance of Elegance checks 144_Atk6_Shadow and adds 14406001 = ${active}`,
+            };
+        },
+    },
+    {
+        heading: 'Caramel > Rhythm Pulse',
+        check() {
+            const potential = findPotential('147', 514703);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14701');
+            const parallel = extractMethod(namespace, 'public class ParallelScript : ParallelBase');
+            const onHitPost = extractMethod(parallel, 'public virtual void OnHitPost(');
+            const triggerTag = parallel.match(/hitTag_Dark = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const waveHit = potential.paramsTooltips.find(tooltip => tooltip.hitDamageId).hitDamageId;
+            const tags = HITDAMAGE[waveHit].DamageTag || [];
+            const markNeedsTag = onHitPost.includes('CheckHitByTag(evt.hitDamageTag, hitTag_Dark)')
+                && onHitPost.includes('TriggerMask(evt, monster)');
+            const active = markNeedsTag && tags.length === 0;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the extra waves use hit ${waveHit} with ${tags.length} damage tags, while the gloom trigger only fires on hits tagged ${triggerTag} (${crc32(triggerTag)})`,
+            };
+        },
+    },
+    {
+        heading: 'Caramel > Fallen Duet',
+        check() {
+            const potential = findPotential('147', 514708);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._14701');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onCustomEvent = extractMethod(main, 'public override void OnCustomEvent(');
+            const performance = getHitDamageAreaEffectDetail('147300004');
+            const extra = performance.areaEffectVariants[0];
+            const linkedGate = onCustomEvent.includes('areaEffect_8_2')
+                && onCustomEvent.includes('isInLink');
+            const textHits = +potential.desc.match(/x(\d+)/)[1];
+            const active = performance.hits !== textHits && linkedGate;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the performance ae ticks ${performance.hits} times at ${performance.hitInterval}s intervals over ${performance.duration}s and the second ${extra.hits}-hit ae only needs isInLink (${linkedGate}), while the text says x${textHits}`,
             };
         },
     },

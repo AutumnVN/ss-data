@@ -55,9 +55,33 @@
     "active": true,
     "text": "While &Param10& (Ultimate) is active, each time a target is killed, increases &Param2& by <color=#ec6d21>&Param1&</color>."
   },
+  "Noya > Wind Glaive": {
+    "active": true,
+    "text": "Increases major sword auras' Attack Range, and increases their &Param2& by <color=#ec6d21>&Param1&</color>."
+  },
+  "Noya > Leaf Barrier": {
+    "active": true,
+    "text": "Increases major sword auras' &Param2& by <color=#ec6d21>&Param1&</color>. Also slightly reduces the target's Movement SPD."
+  },
+  "Noya > Cyclone Blades": {
+    "active": true,
+    "text": "When Noya triggers ##Ventus Mark: Breeze#2017#, increases her &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s."
+  },
   "Shimiao > Cascade Glow": {
     "active": true,
     "text": "In Phase 2, increases the &Param10& dealt to targets with ##Chill#1027#/##Frozen#1002# by <color=#ec6d21>&Param1&</color>. The lower the target's HP, the higher the DMG, up to a <color=#ec6d21>&Param9&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,Value1) \u000bParam3: &Param3& (OnceAdditionalAttribute,Value1) \u000bParam4: &Param4& (OnceAdditionalAttribute,Value1) \u000bParam5: &Param5& (OnceAdditionalAttribute,Value1) \u000bParam6: &Param6& (OnceAdditionalAttribute,Value1) \u000bParam7: &Param7& (OnceAdditionalAttribute,Value1) \u000bParam8: &Param8& (OnceAdditionalAttribute,Value1)"
+  },
+  "Shimiao > Rain Whisper: Light": {
+    "active": true,
+    "text": "While Aqua Aide (Support Skill) is active, Shimiao follows the Main Trekker and launches attacks, increasing the next water blade's &Param1& by <color=#0abec5>&Param2&</color> every 1.5s."
+  },
+  "Shimiao > Full Preparation": {
+    "active": true,
+    "text": "Aqua Aide (Support Skill) can slow targets. When there are 2 or more slowed targets around Shimiao, increases her &Param4& by <color=#ec6d21>&Param5&</color> for &Param6&s.\u000bParam1: &Param1& (EffectValue,EffectTypeFirstSubtype) \u000bParam2: &Param2& (EffectValue,EffectTypeParam1) \u000bParam3: &Param3& (BuffValue,Time)"
+  },
+  "Shimiao > Wave Rider": {
+    "active": true,
+    "text": "When casting Flood Mantra (Ultimate), increases the &Param10& dealt to targets inflicted with ##Chill#1027#/##Frozen#1002# by <color=#ec6d21>&Param1&</color>. The lower the target's HP, the higher the DMG, up to a <color=#ec6d21>&Param9&</color>.\u000bParam2: &Param2& (OnceAdditionalAttribute,Value1) \u000bParam3: &Param3& (OnceAdditionalAttribute,Value1) \u000bParam4: &Param4& (OnceAdditionalAttribute,Value1) \u000bParam5: &Param5& (OnceAdditionalAttribute,Value1) \u000bParam6: &Param6& (OnceAdditionalAttribute,Value1) \u000bParam7: &Param7& (OnceAdditionalAttribute,Value1) \u000bParam8: &Param8& (OnceAdditionalAttribute,Value1)"
   },
   "Chaton > Efficient Use": {
     "active": true,
@@ -274,6 +298,14 @@
   "Chitose > Dance of Elegance": {
     "active": true,
     "text": "When the Coiling Serpent deals DMG, increases &Param1& by <color=#ec6d21>&Param2&</color> for &Param5&s, stacking up to &Param6& times. Also, increases &Param7& of the last strike of Chitose's of Auto Attacks by <color=#ec6d21>&Param8&</color>, stacking up to 8 times. This bonus can be triggered once per 0.4s and expires after Chitose releases the last strike of her Auto Attacks."
+  },
+  "Caramel > Rhythm Pulse": {
+    "active": true,
+    "text": "##Demonic Boombox#4016# unleashes additional circular sound waves when pulsating, dealing <color=#0abec5>&Param1&</color> of ATK as Umbra Minion DMG. Can trigger ##Umbra Mark: Gloom#2018#.\u000bIncreases Caramel's &Param2& by <color=#0abec5>&Param3&</color>."
+  },
+  "Caramel > Fallen Duet": {
+    "active": true,
+    "text": "When casting Melodic Seraphim (Ultimate), ##Demonic Boomboxes#4016# plays at the same time, dealing <color=#ec6d21>&Param1& x13</color> of ATK as Umbra Minion DMG in a large area."
   },
   "Gerie > Samsara's Judgment": {
     "active": true,
