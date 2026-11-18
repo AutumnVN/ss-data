@@ -159,6 +159,47 @@ const checks = [
         },
     },
     {
+        heading: 'Tilia > Aegis Blessing',
+        check() {
+            const potential = findPotential('107', 510708);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._10701');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onReceive = extractMethod(parallel, 'private void OnReceiveDamage(');
+            const mainTag = parallel.match(/atk_skillTag = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const usesTag = onReceive.includes('CheckHitByTag(adventureActorReceiveDamageEvent.hitDamageTag, atk_skillTag)')
+                && onReceive.includes('AddBufftoGroup(10708011');
+            const sphere = CHARACTER['107'].ultimate.paramsTooltips
+                .filter(tooltip => tooltip.hitDamageId)
+                .find(tooltip => (tooltip.damageTag || []).includes(mainTag));
+            const active = usesTag && Boolean(sphere);
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the buff rolls on hits tagged ${mainTag}; the ultimate sphere ${sphere ? 'has' : 'lacks'} that tag`,
+            };
+        },
+    },
+    {
+        heading: 'Tilia > Holy Inscription',
+        check() {
+            const potential = findPotential('107', 510721);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._10701');
+            const onShieldHit = extractMethod(namespace, 'protected void OnShieldHit(IEvent evt)');
+            const onePerEnemy = onShieldHit.includes('!dicArea_p21.ContainsKey(monsterAdventureActor.Id)')
+                && onShieldHit.includes('dicArea_p21.Add(monsterAdventureActor.Id');
+            const noCap = !/dicArea_p21\.Count/.test(onShieldHit);
+            const textCap = +potential.desc.match(/up to (\d+) Lux spheres/)[1];
+            const active = onePerEnemy && noCap && textCap === 4;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `spheres are tracked per enemy id (${onePerEnemy}) with no count cap (${noCap}); text caps them at ${textCap}`,
+            };
+        },
+    },
+    {
         heading: 'Tilia > Perfect Spiral',
         check() {
             const spiral = findPotential('107', 510723);
@@ -173,6 +214,23 @@ const checks = [
                 active,
                 text: spiral.desc,
                 detail: `hit ${spiralHit.hitDamageId} vs ${flawHit.hitDamageId}; buff ${spiralBuff} vs ${flawBuff}`,
+            };
+        },
+    },
+    {
+        heading: "Tilia > Knight's Seal",
+        check() {
+            const potential = findPotential('107', 510727);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._10701');
+            const onMark = extractMethod(namespace, 'private void OnElementMarkTrigger(IEvent evt)');
+            const cooldown = +SCRIPTPARAMETERVALUE['10727012'].CommonData / 10000;
+            const usesCooldown = onMark.includes('GetPerk(perk_27, CommonUtils.GetScriptValue(_actor, 10727012))');
+            const active = usesCooldown && cooldown > 0 && !potential.desc.includes('once every');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the mark trigger is gated by spv 10727012 = ${cooldown}s, and the text has no cooldown`,
             };
         },
     },
@@ -330,6 +388,25 @@ const checks = [
         },
     },
     {
+        heading: 'Coronis > Spiritual Tome',
+        check() {
+            const potential = findPotential('118', 511825);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._11801');
+            const support = extractMethod(namespace, 'public class SkillScript_Support : SkillAdvancedBase');
+            const onReceiveDamage = extractMethod(support, 'private new void OnReceiveDamage(');
+            const onPhase2Finish = extractMethod(support, 'private void OnPhase2Finish(');
+            const countsPerHit = onReceiveDamage.includes('_hitTag_1_hitCount++');
+            const needsExactlyOne = onPhase2Finish.includes('_hitTag_1_hitCount == 1');
+            const active = countsPerHit && needsExactlyOne;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `_hitTag_1_hitCount is incremented once per 118_Sup_HengZhan_Hit_1 damage event = ${countsPerHit}, but the second sweep is only started when the count is exactly 1 = ${needsExactlyOne}`,
+            };
+        },
+    },
+    {
         heading: 'Nanoha > Growth Tempest',
         check() {
             const potential = findPotential('119', 511901);
@@ -471,6 +548,86 @@ const checks = [
                 active,
                 text: talent.desc,
                 detail: `talent buff 11996211 added in the main TriggerWindMark = ${addsInMain}; the clone TriggerWindMark dispatches the mark event as nanoha = ${cloneTriggersMark} but adds the buff = ${cloneTrigger.includes('AddBuff')}; ult hits tagged WindTag1Boom = ${ultHits.length}`,
+            };
+        },
+    },
+    {
+        heading: 'Canace > Erratic Weather',
+        check() {
+            const potential = findPotential('120', 512003);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12001');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onWeaponBorn = extractMethod(parallel, 'protected void OnWeaponBorn(IEvent evt)');
+            const roll = +onWeaponBorn.match(/TSRandom\.Range\(0, 100\) < (\d+)/)[1];
+            const textChance = +potential.desc.match(/(\d+)% chance/)[1];
+            const active = roll === 20 && textChance === 25;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the extra bullet roll is ${roll}% while the text says ${textChance}%`,
+            };
+        },
+    },
+    {
+        heading: "Ann > Wind's Breath",
+        check() {
+            const potential = findPotential('123', 512301);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12301');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onTriggerWindArea = extractMethod(parallel, 'private void OnTriggerWindArea(');
+            const nrmTag = parallel.match(/nrmAtkTag = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const cooldown = +parallel.match(/trigger_area_cd = FP\.op_Implicit\((\d+)\)/)[1];
+            const gatedOnNormal = /CheckHitByTag\(hitDamageTag, nrmAtkTag\)[\s\S]*?GetPerk\(512301/.test(onTriggerWindArea);
+            const tagged = tooltip => (HITDAMAGE[tooltip.hitDamageId].DamageTag || []).includes(crc32(nrmTag));
+            const normalHits = CHARACTER['123'].normalAtk.paramsTooltips.filter(tooltip => tooltip.hitDamageId);
+            const otherHits = ['skill', 'supportSkill', 'ultimate']
+                .flatMap(key => CHARACTER['123'][key].paramsTooltips.filter(tooltip => tooltip.hitDamageId));
+            const otherTagged = otherHits.filter(tagged).length;
+            const active = gatedOnNormal && normalHits.every(tagged) && otherTagged === 0;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `wind's breath needs a hit tagged ${nrmTag}, which ${normalHits.length}/${normalHits.length} auto attacks have and ${otherTagged}/${otherHits.length} skill and ultimate hits lack; hidden cooldown ${cooldown}s`,
+            };
+        },
+    },
+    {
+        heading: 'Ann > Grand Debut',
+        check() {
+            const potential = findPotential('123', 512304);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Monster._12301111FengTun');
+            const parallel = extractMethod(namespace, 'public class Parallel : ParallelBase');
+            const onEnable = extractMethod(parallel, 'public override void OnEnable()');
+            const buff = parallel.match(/buff_p4 = (\d+);/)[1];
+            const value = EFFECTVALUE[BUFFVALUE[buff].Effects[0]];
+            const readyAssistsOnly = /GetPerk\(perkId_p4\)[\s\S]*?isAssist && playerAdventureActor\.CheckSkillReady\(\)[\s\S]*?AddBuff\(buff_p4/.test(onEnable);
+            const squadWide = onEnable.includes('AddBufftoGroup(buff_p4');
+            const active = readyAssistsOnly && !squadWide;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `buff ${buff} (subtype ${value.EffectTypeFirstSubtype}, ${value.EffectTypeParam1}, ${BUFFVALUE[buff].Time / 10000}s) is only added to assists whose support skill is ready at summon; squad wide add = ${squadWide}`,
+            };
+        },
+    },
+    {
+        heading: "Ann > Wind's Track",
+        check() {
+            const potential = findPotential('123', 512312);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._12301');
+            const dodge = extractMethod(namespace, 'public class SkillScript_Dodge : SkillAdvancedBase');
+            const onStart = extractMethod(dodge, 'public void OnStart()');
+            const buffsGroup = onStart.includes('AddBufftoGroup(12312011');
+            const buffsSelf = onStart.includes('buffComponent.AddBuff(12312011');
+            const active = buffsGroup && !buffsSelf && potential.desc.includes('all other friendly units');
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the skill dmg buff is applied with AddBufftoGroup, which loops every squad actor including ann = ${buffsGroup}; a self only add = ${buffsSelf}`,
             };
         },
     },

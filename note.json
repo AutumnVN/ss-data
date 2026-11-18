@@ -3,9 +3,21 @@
     "active": true,
     "text": "Leaps and slams down onto the ground, dealing <color=#fb8037>&Param1&</color> of ATK as Lux Ultimate DMG in a large area. Meanwhile, creates a sphere that deals <color=#fb8037>&Param2&</color> of ATK as AoE Lux Skill DMG and inflicts ##Lux Mark: Radiance#2016# for 8s."
   },
+  "Tilia > Aegis Blessing": {
+    "active": true,
+    "text": "When &Param1& (Main Skill) deals DMG, there is a &Param2& chance to increase the squad's &Param6& by <color=#ec6d21>&Param3&</color> for &Param4&s, up to &Param5& stacks."
+  },
+  "Tilia > Holy Inscription": {
+    "active": true,
+    "text": "When Aegis of Light hits a target, summons a Lux sphere lasting for 8s, up to 4 Lux spheres can be created. \u000bIncreases the Lux DMG taken by targets within the sphere by <color=#0abec5>&Param2&</color> and inflicts ##Lux Mark: Radiance#2016# on them.\u000bParam1: &Param1& (Skill,Title) \u000bParam3: &Param3& (EffectValue,EffectTypeFirstSubtype)"
+  },
   "Tilia > Perfect Spiral": {
     "active": true,
     "text": "Aegis of Light shields the main Trekker and then ricochets.\u000bUpon hitting the main Trekker, it creates a Lightning Array: Deals <color=#0abec5>&Param2& of Tilia's ATK</color> as AoE Lux Skill DMG and increases the Skill DMG taken by nearby enemies by <color=#0abec5>&Param3&</color>, lasting for &Param4&s. Stacks up to &Param5& times.\u000bParam1: &Param1& (Skill,Title) \u000bParam6: &Param6& (EffectValue,EffectTypeFirstSubtype)"
+  },
+  "Tilia > Knight's Seal": {
+    "active": true,
+    "text": "When an ally triggers a Lux Mark, increases the squad's &Param4& by <color=#ec6d21>&Param1&</color> for &Param2&s, and grants Tilia &Param3& Energy."
   },
   "Tilia > Revealed Flaw": {
     "active": true,
@@ -35,6 +47,10 @@
     "active": true,
     "text": "When the Main Trekker triggers ##Lux Mark#1015#, Firefly gains 1 stack of Glow. When ##Lucent#4028# is generated afterwards, Firefly gains 1 stack of Halo. Both effects can stack up to &Param7& times.\u000bWhen casting &Param1& (Support Skill), Firefly consumes all stacks of Glow and Halo. For the current ##Sword Form#4031#'s active duration, increases Avalanche: Flying Blade's &Param3& by <color=#ec6d21>&Param2&</color> for each stack of Glow consumed; increases Avalanche: Flying Blade's &Param6& by <color=#ec6d21>&Param5&</color> for each stack of Halo consumed.\u000bParam4: &Param4& (BuffValue,LaminatedNum)"
   },
+  "Coronis > Spiritual Tome": {
+    "active": true,
+    "text": "When Coronis deals DMG to a target with the horizontal sweep of the Support Skill Bone Chain, launches a second sweep, dealing <color=#ec6d21>&Param1& of ATK</color> as Umbra Skill DMG.\u000bWhile casting the Support Skill Bone Chain, increases the &Param3& of the horizontal sweep and Shadow Scythes by <color=#ec6d21>&Param2&</color>."
+  },
   "Nanoha > Growth Tempest": {
     "active": true,
     "text": "After Nanoha deals DMG with Auto Attacks <color=#0abec5>3</color> times, deals an additional <color=#0abec5>&Param1& of ATK</color> as AoE Ventus Auto Attack DMG."
@@ -62,6 +78,22 @@
   "Nanoha > Rejuvenating Spring": {
     "active": true,
     "text": "When Nanoha triggers ##Ventus Mark#1017#, her ATK is increased by <color=#0abec5>&Param1&</color> for &Param2&s."
+  },
+  "Canace > Erratic Weather": {
+    "active": true,
+    "text": "Increases Canace's &Param1& by <color=#0abec5>30%</color>. There is 25% chance to fire additional Ventus-imbued bullets with Auto Attacks."
+  },
+  "Ann > Wind's Breath": {
+    "active": true,
+    "text": "When ##Bubble#4013# is on the battlefield, if Ann deals DMG, there is a <color=#0abec5>25%</color> chance to create a Wind Burst.\u000bWhen a Wind Burst is created, increases the squad's &Param2& by <color=#0abec5>&Param3&</color> for &Param4&s.\u000bParam1: &Param1& (HitDamage,Skill)"
+  },
+  "Ann > Grand Debut": {
+    "active": true,
+    "text": "When summoning ##Bubble#4013#, increases the squad's &Param1& by <color=#0abec5>&Param2&</color> for &Param3&s.\u000bWhen a squadmate triggers a ##Ventus Mark#1017#, ##Bubble#4013# will fire an additional laser beam, dealing <color=#0abec5>&Param4&</color> of ATK as Ventus Minion DMG."
+  },
+  "Ann > Wind's Track": {
+    "active": true,
+    "text": "Ann can dodge through barriers.\u000bWhen Ann dodges through barriers, increases all other friendly units' &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s."
   },
   "Freesia > Doomsday Blessing": {
     "active": true,
