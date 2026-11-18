@@ -260,15 +260,15 @@ const checks = [
             const castEnd = extractMethod(support, 'public override void OnCastEndSkill(');
             const addsAtFull = energyChange.includes('currentEnergy >= adventureActorEnergyChangeEvent.totalEnergy')
                 && energyChange.includes('AddBuff(buff_31');
-            const removesOnMain = castEnd.includes('skillSlotType.B')
+            const removesOnSkillCast = castEnd.includes('skillSlotType.B')
                 && castEnd.includes('RemoveBuffByBuffId(buff_31)');
             const duration = BUFFVALUE['11431011'].Time / 10000;
-            const active = addsAtFull && removesOnMain && duration === +potential.params[2];
+            const active = addsAtFull && removesOnSkillCast && duration === +potential.params[2];
 
             return {
                 active,
                 text: potential.desc,
-                detail: `buff 11431011 lasts ${duration}s (text Param3 ${potential.params[2]}s) and is added only on the energy change event at full energy = ${addsAtFull}, but removed at the end of every main skill cast = ${removesOnMain}`,
+                detail: `buff 11431011 lasts ${duration}s (text Param3 ${potential.params[2]}s) and is added only on the energy change event at full energy = ${addsAtFull}, but removed at the end of every support skill cast = ${removesOnSkillCast}`,
             };
         },
     },

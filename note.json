@@ -23,10 +23,6 @@
     "active": true,
     "text": "When a Bouncing Bomb runs out of bounces, it returns to Chaton and grants her Spark.\u000bWhen holding &Param1& (Main Skill), Chaton consumes Spark to increase her &Param2& by <color=#ec6d21>&Param3&</color> for &Param4&s and throws an Explosive Bomb at the target, dealing <color=#ec6d21>&Param5&</color> of ATK as AoE Ignis Skill DMG.\u000bThe Explosive Bomb cannot bounce."
   },
-  "Chaton > Evil Eye Gaze": {
-    "active": true,
-    "text": "Increases the &Param2& of &Param1& (Support Skill) by <color=#ec6d21>&Param3&</color>.\u000bWhen casting the Support Skill, Evil Eye locks onto the target's current position, dealing <color=#ec6d21>&Param4&</color> of ATK as AoE Ignis Skill DMG every 0.4s for 8s."
-  },
   "Chaton > Energy Overflow": {
     "active": true,
     "text": "When Chaton's Energy is full, increases her &Param1& by <color=#ec6d21>&Param2&</color> for &Param3&s."
