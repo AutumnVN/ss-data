@@ -158,7 +158,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "103000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 6)"
                     ],
                     "damageTag": [
                         "103_FireTag1_Boom"
@@ -217,7 +217,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "103000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 6)"
                     ],
                     "damageTag": [
                         "103_FireTag1_Boom"
@@ -262,7 +262,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "103000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 6)"
                     ],
                     "damageTag": [
                         "103_FireTag1_Boom"
@@ -400,7 +400,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "103304001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.3s, hit interval 5s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.3s (0.3333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "103_P9"
@@ -1096,7 +1096,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "103525001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2.5s, hit delay 0s, hit interval 0.25s, 10 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2.5s (2.5333s), hit delay 0s, hit interval 0.25s (0.2667s), 10 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "1076575591",
@@ -4455,7 +4455,7 @@
                     "damageType": "Skill (2.31e, from Skill, scale with Ultimate)",
                     "hitDamageId": "107400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 8s, hit delay 1s, hit interval 1s, 7 hits, Circle (radius 7)"
+                        "AreaEffectEntity(Snapshot): duration 8s (8.0333s), hit delay 1s (1.0333s), hit interval 1s (1.0333s), 7 hits, Circle (radius 7)"
                     ],
                     "damageTag": [
                         "457667586",
@@ -4816,7 +4816,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "107310601",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "457667586",
@@ -5522,7 +5522,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "107322301",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "107_Support_Skill"
@@ -5630,7 +5630,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "107322501",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "107_Support_Skill"
@@ -5895,7 +5895,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "107322301",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "107_Support_Skill"
@@ -9695,7 +9695,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "108521001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 8s, hit delay 1s, hit interval 1s, 7 hits, Circle (radius 2.5)"
+                                "AreaEffectEntity(Snapshot): duration 8s (8.0333s), hit delay 1s (1.0333s), hit interval 1s (1.0333s), 7 hits, Circle (radius 2.5)"
                             ],
                             "damageTag": [
                                 "-1797684307",
@@ -12989,7 +12989,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "110300004",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "110SupportQuanZhangAtk",
@@ -13063,7 +13063,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "110400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 5s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (11 × 11)"
+                        "AreaEffectEntity(Snapshot): duration 5s (5.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (11 × 11)"
                     ],
                     "damageTag": [
                         "110UltraAtk",
@@ -13074,7 +13074,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "110400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 5s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (11 × 11)"
+                        "AreaEffectEntity(Snapshot): duration 5s (5.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (11 × 11)"
                     ],
                     "damageTag": [
                         "110UltraAtk",
@@ -13253,7 +13253,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "110DarkTagBoom"
@@ -13947,7 +13947,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "110300006",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "110SupportQuanZhangAtk",
@@ -13985,7 +13985,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "110300004",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "110SupportQuanZhangAtk",
@@ -14411,7 +14411,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "110SupportFenShenAtk",
@@ -17202,7 +17202,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "111000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ]
                 }
             ],
@@ -17234,7 +17234,7 @@
                     "hitDamageId": "111320001",
                     "hitDamageNote": "Duration extended by 2s at runtime when Prolonged Winter (511126) is active",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 4s, hit delay 0.2s, hit interval 0.5s, 8 hits, Circle (radius 4.5)"
+                        "AreaEffectEntity(Snapshot): duration 4s (4.0333s), hit delay 0.2s (0.2333s), hit interval 0.5s (0.5333s), 8 hits, Circle (radius 4.5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -17243,7 +17243,7 @@
                             "duration": 4,
                             "hitDelay": 0.2,
                             "hitInterval": 0.25,
-                            "hits": 16,
+                            "hits": 15,
                             "shape": "circle",
                             "radius": 7,
                             "size": "radius 7"
@@ -17265,7 +17265,7 @@
                             "duration": 4,
                             "hitDelay": 0.2,
                             "hitInterval": 0.25,
-                            "hits": 16,
+                            "hits": 15,
                             "shape": "circle",
                             "radius": 4.5
                         }
@@ -17304,7 +17304,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "111400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 12s, hit delay 0.1s, hit interval 0.4s, 30 hits, Circle (radius 8)"
+                        "AreaEffectEntity(Snapshot): duration 12s (12.0333s), hit delay 0.1s (0.1333s), hit interval 0.4s (0.4333s), 28 hits, Circle (radius 8)"
                     ],
                     "damageTag": [
                         "Ultra"
@@ -17445,7 +17445,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "111502001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.5s, hit delay 0.2s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1.5s (1.5333s), hit delay 0.2s (0.2333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "Skill",
@@ -17457,7 +17457,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "111502002",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.6s, hit interval 5s, 1 hits, Circle (radius 7)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.6s (0.6333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 7)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -17586,7 +17586,7 @@
                             "hitDamageId": "111504001",
                             "hitDamageNote": "Requires Keep Strangers at Bay (511111)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2.9000001s, hit delay 1s, hit interval 0.5s, 4 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 2.9s (2.9333s), hit delay 1s (1.0333s), hit interval 0.5s (0.5333s), 4 hits, Circle (radius 2)"
                             ],
                             "damageTag": [
                                 "Skill"
@@ -17943,7 +17943,7 @@
                             "hitDamageId": "111511001",
                             "hitDamageNote": "Requires Keep Strangers at Bay (511111)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.5s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1.5s (1.5333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "Skill"
@@ -18014,7 +18014,7 @@
                             "damageType": "Mark (scale with Upgrade)",
                             "hitDamageId": "111000001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                             ]
                         },
                         {
@@ -18203,7 +18203,7 @@
                             "hitDamageId": "111541001",
                             "hitDamageNote": "Requires Icicle Rain (511141)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2.5s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                                "AreaEffectEntity(Snapshot): duration 2.5s (2.5333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                             ],
                             "damageTag": [
                                 "Ultra"
@@ -18486,7 +18486,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "111523001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 4s, hit delay 0.2s, hit interval 10s, 1 hits, Circle (radius 4.5)"
+                                "AreaEffectEntity(Snapshot): duration 4s (4.0333s), hit delay 0.2s (0.2333s), hit interval 10s (10.0333s), 1 hits, Circle (radius 4.5)"
                             ],
                             "damageTag": [
                                 "Skill"
@@ -18544,7 +18544,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "111524001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 1s, hit interval 5s, 1 hits, Circle (radius 7)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 1s (1.0333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 7)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -19033,7 +19033,7 @@
                             "hitDamageId": "111529001",
                             "hitDamageNote": "Requires Distressed Asset (511129)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.5s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1.5s (1.5333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "Skill"
@@ -21771,7 +21771,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "112100000",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.4s, 3 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.4s (0.4333s), 3 hits, Circle (radius 2.5)"
                     ]
                 }
             ],
@@ -21834,7 +21834,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "112100000",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.4s, 3 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.4s (0.4333s), 3 hits, Circle (radius 2.5)"
                     ]
                 }
             ],
@@ -21877,7 +21877,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "112100000",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.4s, 3 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.4s (0.4333s), 3 hits, Circle (radius 2.5)"
                     ]
                 }
             ],
@@ -22015,7 +22015,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "112100010",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.2s, 5 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.2s (0.2333s), 5 hits, Circle (radius 1)"
                             ],
                             "damageTag": [
                                 "NrmAtk"
@@ -25805,7 +25805,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "113000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ]
                 }
             ],
@@ -25859,7 +25859,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "113000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ]
                 }
             ],
@@ -25906,7 +25906,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "113000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ]
                 },
                 {
@@ -26165,7 +26165,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "113310401",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 1s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 1s (1.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -26406,7 +26406,7 @@
                             "damageType": "Skill",
                             "hitDamageId": "113310901",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 1s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 1s (1.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "Cold"
@@ -26443,7 +26443,7 @@
                             "damageType": "Skill",
                             "hitDamageId": "113311001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 11s, hit delay 1s, hit interval 1s, 10 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 11s (11.0333s), hit delay 1s (1.0333s), hit interval 1s (1.0333s), 10 hits, Circle (radius 1)"
                             ]
                         }
                     ],
@@ -26824,7 +26824,7 @@
                             "damageType": "Ultimate",
                             "hitDamageId": "113404301",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 1s, 1 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 1s (1.0333s), 1 hits, Circle (radius 1)"
                             ]
                         }
                     ],
@@ -27370,7 +27370,7 @@
                             "damageType": "Skill",
                             "hitDamageId": "113323001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 1s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 1s (1.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "SS",
@@ -27481,7 +27481,7 @@
                             "damageType": "Skill",
                             "hitDamageId": "113322901",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 1s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 1s (1.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "SS",
@@ -30263,7 +30263,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "114310002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 14.5s, hit delay 0.5s, hit interval 2s, 7 hits, Circle (radius 0.5)",
+                        "AreaEffectEntity(Snapshot): duration 14.5s (14.5333s), hit delay 0.5s (0.5333s), hit interval 2s (2.0333s), 7 hits, Circle (radius 0.5)",
                         "AdventureVerticalProjectile(Snapshot): 3s lifetime"
                     ],
                     "areaEffectVariants": [
@@ -30288,7 +30288,7 @@
                     "damageType": "Skill (3.17e, from Skill, scale with Skill)",
                     "hitDamageId": "114310003",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "114_FireTag1_Trigger",
@@ -30301,7 +30301,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "114000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "-1914176965"
@@ -30358,7 +30358,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "114000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "-1914176965"
@@ -30420,7 +30420,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "114400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 12)",
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 12)",
                         "AdventureTimeBomb(Snapshot): Circle"
                     ],
                     "areaEffectVariants": [
@@ -30430,7 +30430,7 @@
                             "duration": 1.6,
                             "hitDelay": 0,
                             "hitInterval": 0.2,
-                            "hits": 8,
+                            "hits": 7,
                             "shape": "circle",
                             "radius": 12
                         }
@@ -30444,7 +30444,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "114400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 4)"
                     ],
                     "damageTag": [
                         "114_FireTag1_Trigger",
@@ -30461,7 +30461,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "114000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "-1914176965"
@@ -30530,7 +30530,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "114501001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
@@ -30813,7 +30813,7 @@
                             "hitDamageId": "114506001",
                             "hitDamageNote": "Requires Efficient Use (511406)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
@@ -31455,7 +31455,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "114521001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.2s, hit interval 2s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.2s (0.2333s), hit interval 2s (2.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
@@ -31467,7 +31467,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "114521002",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.2s, hit interval 2s, 1 hits, Circle (radius 4.5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.2s (0.2333s), hit interval 2s (2.0333s), 1 hits, Circle (radius 4.5)"
                             ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
@@ -31479,7 +31479,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "114521003",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.2s, hit interval 2s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.2s (0.2333s), hit interval 2s (2.0333s), 1 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
@@ -31661,7 +31661,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "114525001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 8.3999996s, hit delay 0.1s, hit interval 0.4s, 21 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 8.4s, hit delay 0.1s (0.1333s), hit interval 0.4s (0.4333s), 20 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "114_FireTag1_Trigger",
@@ -31823,7 +31823,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "114528001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 2s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 4)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -34763,7 +34763,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "115000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.25s, hit interval 5s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.25s (0.2667s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -35038,7 +35038,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "115506001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2.3s, hit delay 0.2s, hit interval 0.4s, 6 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2.3s, hit delay 0.2s (0.2333s), hit interval 0.4s (0.4333s), 5 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "115_LightTag_Trigger"
@@ -35194,7 +35194,7 @@
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "115110301",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "115_Main_Laser",
@@ -35286,7 +35286,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "115308002",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "115_Main_Laser",
@@ -35466,7 +35466,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "115211301",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.6s, hit interval 5s, 1 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.6s (0.6333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                             ],
                             "damageTag": [
                                 "115_LightTag_Trigger"
@@ -35595,7 +35595,7 @@
                             "damageType": "Mark (scale with Upgrade)",
                             "hitDamageId": "115000001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.25s, hit interval 5s, 1 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.25s (0.2667s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -35901,7 +35901,7 @@
                             "damageType": "Skill (from Normal attack, scale with Skill)",
                             "hitDamageId": "115122202",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "115_FlyBlade",
@@ -36239,7 +36239,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "115322701",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.6s, hit delay 0s, hit interval 0.075s, 8 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 0.6s (0.6333s), hit delay 0s, hit interval 0.075s (0.1s), 7 hits, Circle (radius 2)"
                             ],
                             "damageTag": [
                                 "115_LightTag_Add",
@@ -36374,7 +36374,7 @@
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "115323001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "115_SupportAttack",
@@ -39347,7 +39347,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "116000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 2.5)"
                     ]
                 }
             ],
@@ -39390,16 +39390,16 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "116320001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2.5s, hit delay 0.5s, hit interval 0.33s, 7 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 2.5s (2.5333s), hit delay 0.5s (0.5333s), hit interval 0.33s (0.3333s), 6 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
                             "class": "AreaEffectEntity",
                             "snapshot": true,
-                            "duration": 2.5999999,
+                            "duration": 2.6,
                             "hitDelay": 0.5,
                             "hitInterval": 0.23,
-                            "hits": 10,
+                            "hits": 9,
                             "shape": "circle",
                             "radius": 5,
                             "requirement": "when Sense the Stir (511622) is active"
@@ -39407,10 +39407,10 @@
                         {
                             "class": "AreaEffectEntity",
                             "snapshot": true,
-                            "duration": 2.5999999,
+                            "duration": 2.6,
                             "hitDelay": 0.5,
                             "hitInterval": 0.23,
-                            "hits": 10,
+                            "hits": 9,
                             "shape": "circle",
                             "radius": 6.5,
                             "size": "radius 6.5",
@@ -39422,7 +39422,7 @@
                             "duration": 2.5,
                             "hitDelay": 0.5,
                             "hitInterval": 0.33,
-                            "hits": 7,
+                            "hits": 6,
                             "shape": "circle",
                             "radius": 6.5,
                             "size": "radius 6.5",
@@ -39442,7 +39442,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "116320002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.6s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 0.6s (0.6333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "116_B2_Seed_AttachExplosion"
@@ -39478,13 +39478,13 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "116400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3.4200001s, hit delay 1.3s, hit interval 0.46s, 5 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 3.42s (3.4333s), hit delay 1.3s, hit interval 0.46s (0.4667s), 5 hits, Circle (radius 6)"
                     ],
                     "areaEffectVariants": [
                         {
                             "class": "AreaEffectEntity",
                             "snapshot": true,
-                            "duration": 2.1199999,
+                            "duration": 2.12,
                             "hitDelay": 0,
                             "hitInterval": 0.46,
                             "hits": 5,
@@ -39501,7 +39501,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "116400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.9s, hit interval 3s, 1 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.9s, hit interval 3s (3.0333s), 1 hits, Circle (radius 6)"
                     ],
                     "damageTag": [
                         "116_Ultra_Final",
@@ -43503,7 +43503,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "117000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.25s, hit interval 5s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.25s (0.2667s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                     ]
                 }
             ],
@@ -43535,7 +43535,7 @@
                     "hitDamageId": "117320001",
                     "hitDamageNote": "Duration extended by 2s at runtime when Self-drawn Concealed Hand (511726) is active",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 8s, hit delay 0.5s, hit interval 0.5s, 15 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 8s (8.0333s), hit delay 0.5s (0.5333s), hit interval 0.5s (0.5333s), 15 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -43544,7 +43544,7 @@
                             "duration": 8,
                             "hitDelay": 0.3,
                             "hitInterval": 0.3,
-                            "hits": 26,
+                            "hits": 24,
                             "shape": "circle",
                             "radius": 5
                         },
@@ -43565,7 +43565,7 @@
                             "duration": 8,
                             "hitDelay": 0.3,
                             "hitInterval": 0.3,
-                            "hits": 26,
+                            "hits": 24,
                             "shape": "circle",
                             "radius": 7.5,
                             "size": "radius 7.5"
@@ -43604,7 +43604,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "117400001",
                     "hitSources": [
-                        "AdventureBullet(Snapshot): 2 speed, 10.1000004s lifetime, pierce, Circle (radius 30)"
+                        "AdventureBullet(Snapshot): 2 speed, 10.1s lifetime, pierce, Circle (radius 30)"
                     ],
                     "damageTag": [
                         "117_Ultra_Hit"
@@ -44170,7 +44170,7 @@
                             "damageType": "Mark (scale with Upgrade)",
                             "hitDamageId": "117000001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.25s, hit interval 5s, 1 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.25s (0.2667s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                             ]
                         },
                         {
@@ -44235,7 +44235,7 @@
                             "hitDamageId": "117512001",
                             "hitDamageNote": "Requires Neutral Left, Live Right, Ground Below (511712)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.2s, hit interval 2s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.2s (0.2333s), hit interval 2s (2.0333s), 1 hits, Circle (radius 4)"
                             ]
                         }
                     ],
@@ -44645,13 +44645,13 @@
                             "hitDamageId": "117524001",
                             "hitDamageNote": "Duration extended by 2s at runtime when Thunderbolt: Circle (511724) and Self-drawn Concealed Hand (511726) are active",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 8.3000002s, hit delay 0.1s, hit interval 3s, 3 hits, Circle (radius 7.5)"
+                                "AreaEffectEntity(Snapshot): duration 8.3s (8.3333s), hit delay 0.1s (0.1333s), hit interval 3s (3.0333s), 3 hits, Circle (radius 7.5)"
                             ],
                             "areaEffectVariants": [
                                 {
                                     "class": "AreaEffectEntity",
                                     "snapshot": true,
-                                    "duration": 8.3000002,
+                                    "duration": 8.3,
                                     "hitDelay": 0.1,
                                     "hitInterval": 3,
                                     "hits": 3,
@@ -48196,7 +48196,7 @@
                             "hitDamageId": "118000017",
                             "hitDamageNote": "Requires Toxin Infusion (511824)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 6s, hit delay 0s, hit interval 0.5s, 12 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 6s (6.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 12 hits, Circle (radius 3)"
                             ]
                         },
                         {
@@ -48802,7 +48802,7 @@
                             "hitDamageId": "118000011",
                             "hitDamageNote": "Requires Toxin Infusion (511824)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 6s, hit delay 0s, hit interval 0.5s, 12 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 6s (6.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 12 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "118_AddDarkMark1"
@@ -51937,7 +51937,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "119000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.8s, hit interval 4s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.8s (0.8333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 3)"
                     ]
                 }
             ],
@@ -51982,7 +51982,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "119000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.8s, hit interval 4s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.8s (0.8333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 3)"
                     ]
                 }
             ],
@@ -52051,7 +52051,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "119000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.8s, hit interval 4s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.8s (0.8333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 3)"
                     ]
                 }
             ],
@@ -52083,7 +52083,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "119501001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.2s, hit interval 0s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.2s (0.2333s), hit interval 0s, 1 hits, Circle (radius 4)"
                             ]
                         }
                     ],
@@ -52925,7 +52925,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "119503001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.2s, hit interval 0s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.2s (0.2333s), hit interval 0s, 1 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "119Skill2Atk"
@@ -56080,7 +56080,7 @@
                     "damageType": "Skill (1.32e, from Skill, scale with Skill)",
                     "hitDamageId": "120310001",
                     "hitSources": [
-                        "AdventureRotateWeapon: 7.3000002s duration, 0.5s interval, 15 hits, 150°/s rotate speed, Fan",
+                        "AdventureRotateWeapon: 7.3s duration, 0.5s interval, 15 hits, 150°/s rotate speed, Fan",
                         "AdventureRotateWeapon: 10s duration, 0.1s interval, 100 hits, 360°/s rotate speed, Fan",
                         "AdventureRotateWeapon: 10s duration, 0.25s interval, 40 hits, 180°/s rotate speed, Fan"
                     ],
@@ -56093,7 +56093,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "120000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.8s, hit interval 4s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.8s (0.8333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 3)"
                     ],
                     "damageTag": [
                         "120_WindTag"
@@ -56127,8 +56127,8 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "120320001",
                     "hitSources": [
-                        "AdventureRotateWeapon: 6.1999998s duration, 0.2s interval, 31 hits, -240°/s rotate speed, Fan",
-                        "AdventureRotateWeapon: 6.1999998s duration, 0.4s interval, 16 hits, -240°/s rotate speed, Fan"
+                        "AdventureRotateWeapon: 6.2s duration, 0.2s interval, 31 hits, -240°/s rotate speed, Fan",
+                        "AdventureRotateWeapon: 6.2s duration, 0.4s interval, 16 hits, -240°/s rotate speed, Fan"
                     ],
                     "damageTag": [
                         "120_B2",
@@ -57091,7 +57091,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "120524001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.12s, hit interval 4s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.12s (0.1333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "120_B2_Skill"
@@ -60154,7 +60154,7 @@
                     "damageType": "Auto Attack (4.04e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "123100003",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 0s, 1 hits, Rectangle (4 × 7)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Rectangle (4 × 7)"
                     ],
                     "damageTag": [
                         "123NrmAtk"
@@ -60226,7 +60226,7 @@
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.15s, hit interval 0s, 1 hits, Circle (radius 3.5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.15s (0.1667s), hit interval 0s, 1 hits, Circle (radius 3.5)"
                     ]
                 },
                 {
@@ -60287,7 +60287,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "123320001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 99s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 99s (99.0333s), 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "-2086493157",
@@ -60342,7 +60342,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "123300001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 1s, 1 hits, Circle (radius 8)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 1s (1.0333s), 1 hits, Circle (radius 8)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -60406,7 +60406,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.15s, hit interval 0s, 1 hits, Circle (radius 3.5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.15s (0.1667s), hit interval 0s, 1 hits, Circle (radius 3.5)"
                             ]
                         },
                         {
@@ -60516,7 +60516,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.5s, hit delay 0.1s, hit interval 0s, 1 hits, Rectangle (1 × 20)"
+                                "AreaEffectEntity(Snapshot): duration 0.5s (0.5333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Rectangle (1 × 20)"
                             ],
                             "damageTag": [
                                 "331199967",
@@ -60588,7 +60588,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.5s, hit delay 0.1s, hit interval 0s, 1 hits, Rectangle (1 × 20)"
+                                "AreaEffectEntity(Snapshot): duration 0.5s (0.5333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Rectangle (1 × 20)"
                             ],
                             "damageTag": [
                                 "331199967",
@@ -60964,7 +60964,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.15s, hit interval 0s, 1 hits, Circle (radius 3.5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.15s (0.1667s), hit interval 0s, 1 hits, Circle (radius 3.5)"
                             ]
                         },
                         {
@@ -61294,7 +61294,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "123320002",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 99s, hit delay 0.05s, hit interval 1s, 99 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 99s (99.0333s), hit delay 0.05s (0.0667s), hit interval 1s (1.0333s), 99 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "1711814237",
@@ -64586,7 +64586,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "125000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ]
                 }
             ],
@@ -65201,7 +65201,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "125310901",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.4s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.4s (0.4333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -65421,7 +65421,7 @@
                             "damageType": "Mark (scale with Upgrade)",
                             "hitDamageId": "125000001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                             ]
                         },
                         {
@@ -65885,7 +65885,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "125322401",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "-177771554",
@@ -66071,7 +66071,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "125322701",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2.2s, hit delay 2s, hit interval 5s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2.2s (2.2333s), hit delay 2s (2.0333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -69355,7 +69355,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "126400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 8s, hit delay 0.2s, hit interval 1s, 8 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 8s (8.0333s), hit delay 0.2s (0.2333s), hit interval 1s (1.0333s), 8 hits, Circle (radius 6)"
                     ],
                     "damageTag": [
                         "126_Ultra_FireRing"
@@ -69393,8 +69393,8 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AdventureBullet(Snapshot): 14 speed, 8s lifetime, homing (20 range, 600°/s), pierce, Circle (radius 2.4000001)",
-                                "AdventureBullet(Snapshot): 2 speed, 5s lifetime, pierce, Circle (radius 2.4000001)"
+                                "AdventureBullet(Snapshot): 14 speed, 8s lifetime, homing (20 range, 600°/s), pierce, Circle (radius 2.4)",
+                                "AdventureBullet(Snapshot): 2 speed, 5s lifetime, pierce, Circle (radius 2.4)"
                             ],
                             "damageTag": [
                                 "126_B1Hat"
@@ -70079,7 +70079,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "126542001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.2s, hit interval 3s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.2s (0.2333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "-66950993"
@@ -70116,7 +70116,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "126543001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 8s, hit delay 1.5s, hit interval 1s, 7 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 8s (8.0333s), hit delay 1.5s (1.5333s), hit interval 1s (1.0333s), 7 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "126_Ultra_FireRing"
@@ -73433,7 +73433,7 @@
                     "damageType": "Skill (12.24e, from Skill, scale with Skill)",
                     "hitDamageId": "127310001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.15s, hit delay 0s, hit interval 0.05s, 3 hits, Circle (radius 3.5)"
+                        "AreaEffectEntity(Snapshot): duration 0.15s (0.1667s), hit delay 0s, hit interval 0.05s (0.0667s), 3 hits, Circle (radius 3.5)"
                     ],
                     "damageTag": [
                         "127_B1Atk",
@@ -73490,7 +73490,7 @@
                     "hitDamageId": "127320002",
                     "hitDamageNote": "Duration set to 10s at runtime when Surge: Immortality (512723) is active",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 6s, hit delay 0.2s, hit interval 1s, 6 hits, Circle (radius 5.5)"
+                        "AreaEffectEntity(Snapshot): duration 6s (6.0333s), hit delay 0.2s (0.2333s), hit interval 1s (1.0333s), 6 hits, Circle (radius 5.5)"
                     ],
                     "damageTag": [
                         "127_B2Atk",
@@ -73584,7 +73584,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "127501001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.3s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.3s (0.3333s), hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "127_B1Atk",
@@ -73676,7 +73676,7 @@
                             "damageType": "Skill (4.66e, from Skill, scale with Skill)",
                             "hitDamageId": "127502005",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.15s, hit interval 3s, 1 hits, Circle (radius 3.75)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.15s (0.1667s), hit interval 3s (3.0333s), 1 hits, Circle (radius 3.75)"
                             ],
                             "damageTag": [
                                 "127_B1Atk",
@@ -73714,7 +73714,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "127503001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.3s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.3s (0.3333s), hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "127_B1Atk",
@@ -74459,7 +74459,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "127522001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 999s, hit delay 0.3s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 999s (999.0333s), hit delay 0.3s (0.3333s), hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "127_B2Atk",
@@ -74784,7 +74784,7 @@
                             "damageType": "Skill",
                             "hitDamageId": "127530001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.2s, hit interval 5s, 1 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.2s (0.2333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                             ],
                             "damageTag": [
                                 "WaterTag1"
@@ -77679,7 +77679,7 @@
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ]
                 }
             ],
@@ -77748,7 +77748,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "130320004",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 2)",
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)",
                         "AdventureBullet(Snapshot): 100 speed, 1s lifetime, pierce, Circle (radius 0.05)"
                     ],
                     "damageTag": [
@@ -77768,7 +77768,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "130320006",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.5s, hit delay 0s, hit interval 5s, 1 hits, Rectangle (4 × 30)"
+                        "AreaEffectEntity(Snapshot): duration 0.5s (0.5333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Rectangle (4 × 30)"
                     ],
                     "damageTag": [
                         "130_B2_Water"
@@ -77803,7 +77803,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "130400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.5s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 0.5s (0.5333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -78076,7 +78076,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 4s, hit delay 0.2s, hit interval 0.5s, 8 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 4s (4.0333s), hit delay 0.2s (0.2333s), hit interval 0.5s (0.5333s), 8 hits, Circle (radius 5)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -78439,7 +78439,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.2s, hit interval 5s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.2s (0.2333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 6)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -79113,7 +79113,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "130523001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.5s, hit delay 0.2s, hit interval 5s, 1 hits, Rectangle (8 × 30)",
+                                "AreaEffectEntity(Snapshot): duration 0.5s (0.5333s), hit delay 0.2s (0.2333s), hit interval 5s (5.0333s), 1 hits, Rectangle (8 × 30)",
                                 "AdventureBullet(Snapshot): 100 speed, 1s lifetime, pierce, Circle (radius 0.05)"
                             ],
                             "damageTag": [
@@ -79183,7 +79183,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "130524002",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.05s, hit interval 5s, 1 hits, Circle (radius 3)",
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.05s (0.0667s), hit interval 5s (5.0333s), 1 hits, Circle (radius 3)",
                                 "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 5)",
                                 "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 3)"
                             ],
@@ -82575,7 +82575,7 @@
                     "damageType": "Auto Attack (0.52e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "132100005",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.2s, hit delay 0s, hit interval 0.2s, 6 hits, Rectangle (2 × 6)",
+                        "AreaEffectEntity(Snapshot): duration 1.2s (1.2333s), hit delay 0s, hit interval 0.2s (0.2333s), 6 hits, Rectangle (2 × 6)",
                         "AdventureBullet(Snapshot): 40 speed, 0.5s lifetime, pierce, Circle (radius 2)"
                     ],
                     "damageTag": [
@@ -82651,7 +82651,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "132000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                     ],
                     "damageTag": [
                         "132_LightTag_Hurt"
@@ -82695,7 +82695,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "132320002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 4)"
                     ],
                     "damageTag": [
                         "1341892246",
@@ -82731,16 +82731,16 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "132400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 5.5999999s, hit delay 1.5s, hit interval 0.25s, 17 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 5.6s, hit delay 1.5s (1.5333s), hit interval 0.25s (0.2667s), 16 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
                             "class": "AreaEffectEntity",
                             "snapshot": true,
-                            "duration": 5.5999999,
+                            "duration": 5.6,
                             "hitDelay": 1.5,
                             "hitInterval": 0.18,
-                            "hits": 23,
+                            "hits": 21,
                             "shape": "circle",
                             "radius": 5,
                             "requirement": "when Flash of Starlight (513242) is active"
@@ -82966,7 +82966,7 @@
                             "damageType": "Skill (2.98e, from Skill, scale with Skill)",
                             "hitDamageId": "132310401",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "1341892246",
@@ -83193,7 +83193,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "132310801",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "1341892246",
@@ -83425,7 +83425,7 @@
                             "damageType": "Mark (scale with Upgrade)",
                             "hitDamageId": "132000001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                             ],
                             "damageTag": [
                                 "132_LightTag_Hurt"
@@ -83616,7 +83616,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "132400002",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 6.5s, hit delay 5s, hit interval 1s, 2 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 6.5s (6.5333s), hit delay 5s (5.0333s), hit interval 1s (1.0333s), 2 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "132_Ultra"
@@ -83626,7 +83626,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "132400003",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 6.5s, hit delay 6s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 6.5s (6.5333s), hit delay 6s (6.0333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "132_Ultra"
@@ -86925,7 +86925,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "133000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.8s, hit interval 4s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.8s (0.8333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 3)"
                     ],
                     "damageTag": [
                         "133_WindTag"
@@ -86961,7 +86961,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "133320001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 4s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "133Hit",
@@ -86985,7 +86985,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "133320003",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 6s, hit delay 1s, hit interval 1s, 5 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 6s (6.0333s), hit delay 1s (1.0333s), hit interval 1s (1.0333s), 5 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -87191,7 +87191,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "133504001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0.1s, 20 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0.1s (0.1333s), 16 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "133Hit",
@@ -87571,7 +87571,7 @@
                             "damageType": "Mark (scale with Upgrade)",
                             "hitDamageId": "133000001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.8s, hit interval 4s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.8s (0.8333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "133_WindTag"
@@ -88097,7 +88097,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "133524001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 4s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "133Hit",
@@ -88391,7 +88391,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "133530001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0s, hit interval 4s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0s, hit interval 4s (4.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "133Hit",
@@ -91317,7 +91317,7 @@
                     "damageType": "Auto Attack (from Normal attack, scale with Normal attack)",
                     "hitDamageId": "134100009",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2.0999999s, hit delay 0s, hit interval 5s, 1 hits, Fan (radius 5, 45°)"
+                        "AreaEffectEntity(Snapshot): duration 2.1s, hit delay 0s, hit interval 5s (5.0333s), 1 hits, Fan (radius 5, 45°)"
                     ],
                     "damageTag": [
                         "134_Normal_Attack",
@@ -91330,7 +91330,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "134000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "134_FireTag_Boom",
@@ -91390,7 +91390,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "134000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "134_FireTag_Boom",
@@ -91428,7 +91428,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "134320001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2.0999999s, hit delay 0s, hit interval 0.2s, 11 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 2.1s, hit delay 0s, hit interval 0.2s (0.2333s), 9 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -91454,7 +91454,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "134000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "134_FireTag_Boom",
@@ -91526,7 +91526,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "134000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "134_FireTag_Boom",
@@ -92000,7 +92000,7 @@
                             "hitDamageId": "134509001",
                             "hitDamageNote": "Requires Blast Chase (513409)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.1s, hit delay 0.2s, hit interval 5s, 1 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 1.1s (1.1333s), hit delay 0.2s (0.2333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 2)"
                             ]
                         }
                     ],
@@ -95631,7 +95631,7 @@
                     "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "135100001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 8)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 8)"
                     ],
                     "damageTag": [
                         "135NrmAtk",
@@ -95642,7 +95642,7 @@
                     "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "135100002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 8)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 8)"
                     ],
                     "damageTag": [
                         "135NrmAtk",
@@ -95653,7 +95653,7 @@
                     "damageType": "Auto Attack (1.87e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "135100003",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.32s, hit interval 0s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.32s (0.3333s), hit interval 0s, 1 hits, Circle (radius 3)"
                     ],
                     "damageTag": [
                         "135NrmAtk",
@@ -95664,7 +95664,7 @@
                     "damageType": "Auto Attack (3.74e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "135100004",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "135NrmAtk",
@@ -95784,7 +95784,7 @@
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "summonAttrPercent": 100,
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
                     ],
                     "damageTag": [
                         "BoomGhostAtk"
@@ -95820,7 +95820,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "135400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 4)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -95843,7 +95843,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "135400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "135UltraAtk"
@@ -95881,7 +95881,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "135DarkTagBoom",
@@ -96986,13 +96986,13 @@
                             "hitDamageId": "135900006",
                             "hitDamageNote": "Requires Malice (513528)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 6.5999999s, hit delay 1s, hit interval 1s, 6 hits, Circle (radius 3.5999999)"
+                                "AreaEffectEntity(Snapshot): duration 6.6s, hit delay 1s (1.0333s), hit interval 1s (1.0333s), 6 hits, Circle (radius 3.6)"
                             ],
                             "areaEffectVariants": [
                                 {
                                     "class": "AreaEffectEntity",
                                     "snapshot": true,
-                                    "duration": 6.5999999,
+                                    "duration": 6.6,
                                     "hitDelay": 1,
                                     "hitInterval": 1,
                                     "hits": 6,
@@ -99919,7 +99919,7 @@
                     "damageType": "Auto Attack (1.94e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "137100006",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.2s, hit interval 0s, 1 hits, Circle (radius 3.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.2s (0.2333s), hit interval 0s, 1 hits, Circle (radius 3.5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -99944,7 +99944,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "137000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.8s, hit interval 0s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.8s (0.8333s), hit interval 0s, 1 hits, Circle (radius 3)"
                     ]
                 }
             ],
@@ -100001,7 +100001,7 @@
                     "damageType": "Skill (7.37e, from Skill, scale with Skill)",
                     "hitDamageId": "137300002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1.1s (1.1333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -100048,7 +100048,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "137000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3s, hit delay 0.8s, hit interval 0s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0.8s (0.8333s), hit interval 0s, 1 hits, Circle (radius 3)"
                     ]
                 }
             ],
@@ -100081,7 +100081,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "137300010",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 3)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -100141,7 +100141,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "137900001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 4)"
                     ],
                     "damageTag": [
                         "137UltraAtk"
@@ -100211,7 +100211,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Normal attack)",
                             "hitDamageId": "137100007",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "137NrmAtk",
@@ -100318,7 +100318,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "137300003",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 3.5)"
+                                "AreaEffectEntity(Snapshot): duration 1.1s (1.1333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 3.5)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -100415,7 +100415,7 @@
                             "damageType": "Auto Attack (from Normal attack)",
                             "hitDamageId": "137100008",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.7s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.7s, hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -101303,7 +101303,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "137300013",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1.1s (1.1333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "-19581704",
@@ -104438,7 +104438,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "139310001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.5s, hit delay 0s, hit interval 1s, 1 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 0.5s (0.5333s), hit delay 0s, hit interval 1s (1.0333s), 1 hits, Circle (radius 4)"
                     ],
                     "damageTag": [
                         "139_B1",
@@ -104535,7 +104535,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "139320002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.15s, hit interval 3s, 1 hits, Fan (radius 6, 110°)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.15s (0.1667s), hit interval 3s (3.0333s), 1 hits, Fan (radius 6, 110°)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -104624,7 +104624,7 @@
                     "hitDamageId": "139400001",
                     "hitDamageNote": "Replaced by 139400101 when: hit deals no damage; Replaced by 139400201 when: Wide Blade Arc (513908) is active, all party members are Aqua, and hit has damage tag 139_P08_Mark",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.08s, hit interval 3s, 1 hits, Circle (radius 7)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.08s (0.1s), hit interval 3s (3.0333s), 1 hits, Circle (radius 7)"
                     ],
                     "damageTag": [
                         "139_Sup_P31",
@@ -104657,7 +104657,7 @@
                     "hitDamageId": "139400002",
                     "hitDamageNote": "Replaced by 139400102 when: hit deals no damage; Replaced by 139400302 when: Clothesline Stance (513905) is active and hit has damage tag 139_P05_Skill",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.05s, hit interval 3s, 1 hits, Circle (radius 8)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.05s (0.0667s), hit interval 3s (3.0333s), 1 hits, Circle (radius 8)"
                     ],
                     "damageTag": [
                         "139_Sup_P31",
@@ -104760,7 +104760,7 @@
                             "damageType": "Skill (5.1e, from Skill, scale with Skill)",
                             "hitDamageId": "139502001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.38s, hit interval 3s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.38s (0.4s), hit interval 3s (3.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "139_B1",
@@ -104865,7 +104865,7 @@
                             "damageType": "Mark (scale with Upgrade)",
                             "hitDamageId": "139504001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.2s, hit interval 3s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.2s (0.2333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 4)"
                             ]
                         }
                     ],
@@ -105916,7 +105916,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "139524001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.65s, hit interval 3s, 1 hits, Fan (radius 4, 100°)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.65s (0.6667s), hit interval 3s (3.0333s), 1 hits, Fan (radius 4, 100°)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -106166,7 +106166,7 @@
                             "hitDamageId": "139530001",
                             "hitDamageNote": "Requires Crescent Icicle (513930)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.08s, hit interval 3s, 1 hits, Fan (radius 4, 100°)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.08s (0.1s), hit interval 3s (3.0333s), 1 hits, Fan (radius 4, 100°)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -108836,7 +108836,7 @@
                     "damageType": "Skill (11.16e, from Skill, scale with Skill)",
                     "hitDamageId": "140310002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 4)"
                     ],
                     "damageTag": [
                         "140_LandTag_Trigger",
@@ -108861,7 +108861,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "140000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 2.5)"
                     ],
                     "damageTag": [
                         "140_P23"
@@ -108910,7 +108910,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "140000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 2.5)"
                     ],
                     "damageTag": [
                         "140_P23"
@@ -108948,7 +108948,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "140400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2.5s, hit delay 0s, hit interval 0.25s, 10 hits, Circle (radius 7)"
+                        "AreaEffectEntity(Snapshot): duration 2.5s (2.5333s), hit delay 0s, hit interval 0.25s (0.2667s), 10 hits, Circle (radius 7)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -108957,7 +108957,7 @@
                             "duration": 2.8,
                             "hitDelay": 0.25,
                             "hitInterval": 0.25,
-                            "hits": 11,
+                            "hits": 10,
                             "shape": "circle",
                             "radius": 7
                         }
@@ -108972,7 +108972,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "140400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -108999,7 +108999,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "140000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 2.5)"
                     ],
                     "damageTag": [
                         "140_P23"
@@ -109190,7 +109190,7 @@
                             "hitDamageId": "140503001",
                             "hitDamageNote": "Requires Fluffy Rechamber (514003)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "140_LandTag_Trigger",
@@ -109483,7 +109483,7 @@
                             "hitDamageId": "140508001",
                             "hitDamageNote": "Requires Cyclone Dial (514008)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Fan (radius 9, 60°)"
+                                "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Fan (radius 9, 60°)"
                             ],
                             "damageTag": [
                                 "140_LandTag_Trigger",
@@ -109496,7 +109496,7 @@
                             "hitDamageId": "140508002",
                             "hitDamageNote": "Requires Cyclone Dial (514008)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Fan (radius 9, 120°)"
+                                "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Fan (radius 9, 120°)"
                             ],
                             "damageTag": [
                                 "140_LandTag_Trigger",
@@ -113537,16 +113537,16 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "141400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3.9000001s, hit delay 0.5s, hit interval 0.5s, 7 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 3.9s (3.9333s), hit delay 0.5s (0.5333s), hit interval 0.5s (0.5333s), 7 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
                             "class": "AreaEffectEntity",
                             "snapshot": true,
-                            "duration": 5.1999998,
+                            "duration": 5.2,
                             "hitDelay": 0.3,
                             "hitInterval": 0.3,
-                            "hits": 17,
+                            "hits": 15,
                             "shape": "circle",
                             "radius": 7,
                             "size": "radius 7"
@@ -113691,7 +113691,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "141503001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 1.2s, hit interval 5s, 1 hits, Circle (radius 7)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 1.2s (1.2333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 7)"
                             ],
                             "damageTag": [
                                 "-1975843378"
@@ -113809,7 +113809,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "141506001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 8s, hit delay 1s, hit interval 1s, 7 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 8s (8.0333s), hit delay 1s (1.0333s), hit interval 1s (1.0333s), 7 hits, Circle (radius 2)"
                             ],
                             "damageTag": [
                                 "141_Ignite",
@@ -114272,7 +114272,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "141442001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 8s, hit delay 0.2s, hit interval 0.5s, 16 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 8s (8.0333s), hit delay 0.2s (0.2333s), hit interval 0.5s (0.5333s), 15 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "141_Ignite",
@@ -114310,7 +114310,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "141443001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 12s, hit delay 3s, hit interval 2s, 5 hits, Fan (radius 8, 100°)"
+                                "AreaEffectEntity(Snapshot): duration 12s (12.0333s), hit delay 3s (3.0333s), hit interval 2s (2.0333s), 5 hits, Fan (radius 8, 100°)"
                             ],
                             "damageTag": [
                                 "141_Ignite",
@@ -117675,7 +117675,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "142300006",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 10)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 10)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -117852,7 +117852,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "142300004",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 10)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 10)"
                             ],
                             "damageTag": [
                                 "142AddDarkMark1"
@@ -117969,7 +117969,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "142300005",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 10)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 10)"
                             ],
                             "damageTag": [
                                 "142AddDarkMark1"
@@ -118890,7 +118890,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "142300007",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (10 × 10)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (10 × 10)"
                             ],
                             "damageTag": [
                                 "142SkillSupAtk",
@@ -122087,7 +122087,7 @@
                     "damageType": "Auto Attack (5.11e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "143100002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 60)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 60)"
                     ],
                     "damageTag": [
                         "-668453169",
@@ -122135,7 +122135,7 @@
                     "damageType": "Skill (1.87e, from Skill, scale with Skill)",
                     "hitDamageId": "143300002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 60)",
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 60)",
                         "AdventureBullet(Snapshot): 25 speed, 1s lifetime, pierce, Circle (radius 2)"
                     ],
                     "damageTag": [
@@ -122148,7 +122148,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "143000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.4s, 3 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.4s (0.4333s), 3 hits, Circle (radius 2.5)"
                     ]
                 }
             ],
@@ -122202,7 +122202,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "143000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.4s, 3 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.4s (0.4333s), 3 hits, Circle (radius 2.5)"
                     ]
                 }
             ],
@@ -122237,7 +122237,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "143400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
                     ],
                     "damageTag": [
                         "143WindTagTrigger"
@@ -122247,7 +122247,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "143400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 5s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 10.6999998)"
+                        "AreaEffectEntity(Snapshot): duration 5s (5.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 10.7)"
                     ],
                     "damageTag": [
                         "143WindTagTrigger"
@@ -122257,7 +122257,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "143000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.4s, 3 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.4s (0.4333s), 3 hits, Circle (radius 2.5)"
                     ]
                 }
             ],
@@ -122307,7 +122307,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "143300003",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 4s, hit delay 0s, hit interval 0.5s, 8 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 4s (4.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 8 hits, Circle (radius 1)"
                             ],
                             "damageTag": [
                                 "143WindTagTrigger"
@@ -122351,7 +122351,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "143300003",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 4s, hit delay 0s, hit interval 0.5s, 8 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 4s (4.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 8 hits, Circle (radius 1)"
                             ],
                             "damageTag": [
                                 "143WindTagTrigger"
@@ -122888,7 +122888,7 @@
                             "damageType": "Skill (from Normal attack)",
                             "hitDamageId": "143300005",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 60)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 60)"
                             ],
                             "damageTag": [
                                 "143BulletAtk"
@@ -123108,7 +123108,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "143310004",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 0.2s (0.2333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "143WindTagTrigger",
@@ -123145,7 +123145,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "143310005",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.2s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 10)"
+                                "AreaEffectEntity(Snapshot): duration 0.2s (0.2333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (3 × 10)"
                             ],
                             "damageTag": [
                                 "143WindTagTrigger",
@@ -123241,7 +123241,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "143310008",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 60)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 60)"
                             ],
                             "damageTag": [
                                 "143WindTagTrigger"
@@ -123540,7 +123540,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "143310007",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 8s, hit delay 0s, hit interval 0.5s, 16 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 8s (8.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 16 hits, Circle (radius 1)"
                             ]
                         }
                     ],
@@ -126398,7 +126398,7 @@
                     "hitDamageId": "144310001",
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.3s, hit delay 0s, hit interval 0.18s, 2 hits, Circle (radius 3.5)"
+                        "AreaEffectEntity(Snapshot): duration 0.3s (0.3333s), hit delay 0s, hit interval 0.18s (0.2s), 2 hits, Circle (radius 3.5)"
                     ],
                     "damageTag": [
                         "144_B1",
@@ -126409,7 +126409,7 @@
                     "damageType": "Skill (12.49e, from Skill, scale with Skill)",
                     "hitDamageId": "144310002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.4s, hit delay 0s, hit interval 0.18s, 3 hits, Circle (radius 3.5)"
+                        "AreaEffectEntity(Snapshot): duration 0.4s (0.4333s), hit delay 0s, hit interval 0.18s (0.2s), 3 hits, Circle (radius 3.5)"
                     ],
                     "damageTag": [
                         "144_B1",
@@ -126425,7 +126425,7 @@
                     "hitDamageId": "144000001",
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ],
                     "damageTag": [
                         "144_WaterTag"
@@ -126463,7 +126463,7 @@
                     "hitDamageId": "144320001",
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.55s, hit delay 0s, hit interval 0.15s, 4 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 0.55s (0.5667s), hit delay 0s, hit interval 0.15s (0.1667s), 4 hits, Circle (radius 4)"
                     ],
                     "damageTag": [
                         "144_B2",
@@ -126485,7 +126485,7 @@
                     "hitDamageId": "144000001",
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ],
                     "damageTag": [
                         "144_WaterTag"
@@ -126546,7 +126546,7 @@
                     "hitDamageId": "144000001",
                     "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 5s, 1 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 5s (5.0333s), 1 hits, Circle (radius 1.5)"
                     ],
                     "damageTag": [
                         "144_WaterTag"
@@ -126704,7 +126704,7 @@
                             "damageType": "Skill (3.86e, from Skill, scale with Skill)",
                             "hitDamageId": "144310301",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.45s, hit delay 0s, hit interval 0.14s, 4 hits, Circle (radius 3.5)"
+                                "AreaEffectEntity(Snapshot): duration 0.45s (0.4667s), hit delay 0s, hit interval 0.14s (0.1667s), 3 hits, Circle (radius 3.5)"
                             ],
                             "damageTag": [
                                 "144_B1",
@@ -126966,7 +126966,7 @@
                             "hitDamageId": "144310701",
                             "hitDamageNote": "Requires Aqueous Phantasm (514407)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.5s, hit delay 0.15s, hit interval 0.2s, 2 hits, Circle (radius 2.5)",
+                                "AreaEffectEntity(Snapshot): duration 0.5s (0.5333s), hit delay 0.15s (0.1667s), hit interval 0.2s (0.2333s), 2 hits, Circle (radius 2.5)",
                                 "AdventureBullet(Snapshot): 22 speed, 0.45s lifetime, pierce, Circle (radius 0.7)"
                             ],
                             "damageTag": [
@@ -127499,7 +127499,7 @@
                             "hitDamageId": "144322201",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.55s, hit delay 0s, hit interval 0.15s, 4 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 0.55s (0.5667s), hit delay 0s, hit interval 0.15s (0.1667s), 4 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "144_B2",
@@ -127579,7 +127579,7 @@
                             "hitDamageId": "144322401",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.1s, hit delay 0.02s, hit interval 0s, 1 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 0.1s (0.1333s), hit delay 0.02s (0.0333s), hit interval 0s, 1 hits, Circle (radius 1)"
                             ],
                             "damageTag": [
                                 "144_WaterTag_Trigger"
@@ -130622,7 +130622,7 @@
                     "damageType": "Skill (14.08e, from Skill, scale with Skill)",
                     "hitDamageId": "145300001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Fan (radius 8, 90°)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Fan (radius 8, 90°)"
                     ],
                     "damageTag": [
                         "145SkillMainAtk",
@@ -130672,7 +130672,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "145300006",
                     "hitSources": [
-                        "AreaEffectEntity: duration 4s, hit delay 0s, hit interval 0.5s, 8 hits, Rectangle (10 × 4)"
+                        "AreaEffectEntity: duration 4s (4.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 8 hits, Rectangle (10 × 4)"
                     ],
                     "damageTag": [
                         "145SkillSupRain",
@@ -130737,7 +130737,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "145400004",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
                     ],
                     "damageTag": [
                         "145UltraAtk"
@@ -130747,7 +130747,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "145400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "145UltraAtk"
@@ -130757,7 +130757,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "145400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0.3s, 7 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0.3s (0.3333s), 7 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "145UltraAtk"
@@ -130795,7 +130795,7 @@
                             "hitDamageId": "145300002",
                             "hitDamageNote": "Requires Subtle Tremor (514501)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 1s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 1s (1.0333s), hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "145DarkTagTrigger"
@@ -130840,7 +130840,7 @@
                             "hitDamageId": "145300002",
                             "hitDamageNote": "Requires Subtle Tremor (514501)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 1s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 1s (1.0333s), hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "145DarkTagTrigger"
@@ -131712,7 +131712,7 @@
                             "hitDamageId": "145300011",
                             "hitDamageNote": "Requires Ripple of Shadow (514523)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.6s, hit interval 0s, 1 hits, Circle (radius 3.5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.6s (0.6333s), hit interval 0s, 1 hits, Circle (radius 3.5)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -131789,7 +131789,7 @@
                             "hitDamageId": "145300012",
                             "hitDamageNote": "Requires Evening Rain (514524)",
                             "hitSources": [
-                                "AreaEffectEntity: duration 4s, hit delay 0s, hit interval 0.5s, 8 hits, Rectangle (10 × 4)"
+                                "AreaEffectEntity: duration 4s (4.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 8 hits, Rectangle (10 × 4)"
                             ],
                             "damageTag": [
                                 "145SkillSupRain",
@@ -131853,7 +131853,7 @@
                             "hitDamageId": "145300009",
                             "hitDamageNote": "Requires Solitary Lantern (514525)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 21)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Rectangle (2 × 21)"
                             ],
                             "damageTag": [
                                 "145AddDarkMark1"
@@ -134927,7 +134927,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "147400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.12s, hit interval 0s, 1 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.12s (0.1333s), hit interval 0s, 1 hits, Circle (radius 6)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -135081,7 +135081,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.2s, hit interval 0s, 1 hits, Circle (radius 8)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.2s (0.2333s), hit interval 0s, 1 hits, Circle (radius 8)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -135358,7 +135358,7 @@
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "summonAttrPercent": 100,
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2.6199999s, hit delay 0s, hit interval 0.2s, 14 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 2.62s (2.6333s), hit delay 0s, hit interval 0.2s (0.2333s), 12 hits, Circle (radius 6)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -135870,7 +135870,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "147300008",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.85s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.85s (0.8667s), hit interval 0s, 1 hits, Circle (radius 3)"
                             ]
                         }
                     ],
@@ -139128,7 +139128,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "149000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 3s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 2)"
                     ]
                 }
             ],
@@ -139173,7 +139173,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "149320002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.5s, hit delay 0.1s, hit interval 3s, 1 hits, Circle (radius 3.3)"
+                        "AreaEffectEntity(Snapshot): duration 1.5s (1.5333s), hit delay 0.1s (0.1333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 3.3)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -139200,7 +139200,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "149000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 3s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 2)"
                     ]
                 }
             ],
@@ -139248,7 +139248,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "149000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 3s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 2)"
                     ]
                 }
             ],
@@ -140198,7 +140198,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "149323101",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.21s, hit delay 0.1s, hit interval 3s, 1 hits, Circle (radius 3.3)"
+                                "AreaEffectEntity(Snapshot): duration 1.21s (1.2333s), hit delay 0.1s (0.1333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 3.3)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -140473,7 +140473,7 @@
                             "hitDamageId": "149330101",
                             "hitDamageNote": "Requires Hexacalamity: Hallowed Chains (514927)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.5s, hit delay 0.3s, hit interval 3s, 1 hits, Circle (radius 3.3)"
+                                "AreaEffectEntity(Snapshot): duration 0.5s (0.5333s), hit delay 0.3s (0.3333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 3.3)"
                             ],
                             "damageTag": [
                                 "149_B2_Earthquake",
@@ -143397,7 +143397,7 @@
                     "damageType": "Auto Attack (0.58e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "150100007",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.6s, hit delay 0.1s, hit interval 0.1s, 5 hits, Circle (radius 1.5)"
+                        "AreaEffectEntity(Snapshot): duration 0.6s (0.6333s), hit delay 0.1s (0.1333s), hit interval 0.1s (0.1333s), 4 hits, Circle (radius 1.5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -143474,7 +143474,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "150000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                     ],
                     "damageTag": [
                         "150_Skill",
@@ -143513,7 +143513,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "150320003",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 4s, hit delay 0.3s, hit interval 0.3s, 13 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 4s (4.0333s), hit delay 0.3s (0.3333s), hit interval 0.3s (0.3333s), 12 hits, Circle (radius 2)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -143522,7 +143522,7 @@
                             "duration": 4,
                             "hitDelay": 0.3,
                             "hitInterval": 0.3,
-                            "hits": 13,
+                            "hits": 12,
                             "shape": "circle",
                             "radius": 4,
                             "size": "radius 4"
@@ -143537,7 +143537,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "150320001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 4)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -143563,7 +143563,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "150000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                     ],
                     "damageTag": [
                         "150_Skill",
@@ -143609,7 +143609,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "150400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 7)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 7)"
                     ],
                     "damageTag": [
                         "150_Ultra",
@@ -143622,7 +143622,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "150000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                     ],
                     "damageTag": [
                         "150_Skill",
@@ -143660,7 +143660,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150310101",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3.0999999s, hit delay 0s, hit interval 0.1s, 31 hits, Rectangle (2.5 × 32)"
+                                "AreaEffectEntity(Snapshot): duration 3.1s, hit delay 0s, hit interval 0.1s (0.1333s), 24 hits, Rectangle (2.5 × 32)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -143669,7 +143669,7 @@
                                     "duration": 10,
                                     "hitDelay": 0.5,
                                     "hitInterval": 0.5,
-                                    "hits": 19,
+                                    "hits": 18,
                                     "shape": "circle",
                                     "radius": 6,
                                     "size": "radius 6",
@@ -143732,7 +143732,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150310203",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "150_Skill",
@@ -143972,7 +143972,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "150310601",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 4)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -144190,7 +144190,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "150311101",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "150_Skill",
@@ -144409,7 +144409,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "150404101",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 10s, hit delay 0.5s, hit interval 0.5s, 19 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 10s (10.0333s), hit delay 0.5s (0.5333s), hit interval 0.5s (0.5333s), 18 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "150_Ultra",
@@ -144550,7 +144550,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150322101",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.3s, hit interval 0.3s, 3 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.3s (0.3333s), hit interval 0.3s (0.3333s), 3 hits, Circle (radius 4)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -144637,7 +144637,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150322301",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                             ],
                             "damageTag": [
                                 "150_LightMark_Trigger",
@@ -144650,7 +144650,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "150322302",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.3s, hit interval 0.3s, 3 hits, Circle (radius 1)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.3s (0.3333s), hit interval 0.3s (0.3333s), 3 hits, Circle (radius 1)"
                             ],
                             "damageTag": [
                                 "150_LightMark_Trigger",
@@ -144725,7 +144725,7 @@
                             "damageType": "Skill (from Skill)",
                             "hitDamageId": "150322501",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 6s, hit delay 0.1s, hit interval 0.3s, 20 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 6s (6.0333s), hit delay 0.1s (0.1333s), hit interval 0.3s (0.3333s), 18 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "150_LightMark_Trigger"
@@ -147835,7 +147835,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "155000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                     ]
                 }
             ],
@@ -147899,7 +147899,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "155000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                     ]
                 }
             ],
@@ -147933,7 +147933,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "155400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.2s, hit delay 0.2s, hit interval 2s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 1.2s (1.2333s), hit delay 0.2s (0.2333s), hit interval 2s (2.0333s), 1 hits, Circle (radius 2)"
                     ],
                     "damageTag": [
                         "155_Ultra",
@@ -147944,7 +147944,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "155000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 5s, 1 hits, Circle (radius 1)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 1)"
                     ]
                 }
             ],
@@ -152573,7 +152573,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "156320002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0.3s, 7 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0.3s (0.3333s), 7 hits, Circle (radius 4)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -152628,7 +152628,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "156320004",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -153865,7 +153865,7 @@
                             "hitDamageId": "156320005",
                             "hitDamageNote": "Requires Feather Frenzy (515625)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 2)"
                             ],
                             "damageTag": [
                                 "156AddLandMark1",
@@ -153962,7 +153962,7 @@
                             "hitDamageId": "156320006",
                             "hitDamageNote": "Requires Twinkle Toss (515627)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "156AddLandMark1",
@@ -156931,7 +156931,7 @@
                     "damageType": "Auto Attack (3.3388e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "157100001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "-523431358",
@@ -156983,7 +156983,7 @@
                     "damageType": "Auto Attack (15e, from Skill, scale with Skill)",
                     "hitDamageId": "157300001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.1s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 4)"
+                        "AreaEffectEntity(Snapshot): duration 1.1s (1.1333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 4)"
                     ],
                     "damageTag": [
                         "-1765443695",
@@ -156994,7 +156994,7 @@
                     "damageType": "Ultimate (15e, from Skill, scale with Skill)",
                     "hitDamageId": "157300002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.59s, hit interval 0s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.59s (0.6s), hit interval 0s, 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "-1765443695",
@@ -157147,7 +157147,7 @@
                             "damageType": "Ultimate (from Skill, scale with Skill)",
                             "hitDamageId": "157300003",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.5s, hit delay 0s, hit interval 0.2s, 8 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1.5s (1.5333s), hit delay 0s, hit interval 0.2s (0.2333s), 7 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "-1765443695",
@@ -157206,7 +157206,7 @@
                             "damageType": "Ultimate (from Skill, scale with Skill)",
                             "hitDamageId": "157300006",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "157DarkTagTrigger",
@@ -157276,7 +157276,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "157300004",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "-523431358",
@@ -157425,7 +157425,7 @@
                             "damageType": "Ultimate (from Skill)",
                             "hitDamageId": "157300007",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.2s, hit interval 0s, 1 hits, Circle (radius 4)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.2s (0.2333s), hit interval 0s, 1 hits, Circle (radius 4)"
                             ],
                             "damageTag": [
                                 "157DarkTagTrigger",
@@ -157604,7 +157604,7 @@
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "157300008",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.1s, 10 hits, Fan (radius 4, 360°)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.1s (0.1333s), 8 hits, Fan (radius 4, 360°)"
                             ],
                             "damageTag": [
                                 "157DarkTagTrigger"
@@ -158018,7 +158018,7 @@
                             "damageType": "Ultimate (from Ultimate)",
                             "hitDamageId": "157400002",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 0s, 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "157UltraAtk",
@@ -158233,7 +158233,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "157300015",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Fan (radius 5, 360°)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Fan (radius 5, 360°)"
                             ],
                             "damageTag": [
                                 "1580264229",
@@ -158277,7 +158277,7 @@
                             "damageType": "Ultimate (from Skill)",
                             "hitDamageId": "157300016",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0s, 1 hits, Fan (radius 4.5, 360°)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0s, 1 hits, Fan (radius 4.5, 360°)"
                             ],
                             "damageTag": [
                                 "1580264229",
@@ -161597,7 +161597,7 @@
                     "damageType": "Ultimate (1.35e, from Ultimate, scale with Ultimate)",
                     "hitDamageId": "158400003",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3.2s, hit delay 2s, hit interval 0.25s, 5 hits, Fan (radius 15, 120°)"
+                        "AreaEffectEntity(Snapshot): duration 3.2s (3.2333s), hit delay 2s (2.0333s), hit interval 0.25s (0.2667s), 5 hits, Fan (radius 15, 120°)"
                     ],
                     "damageTag": [
                         "158_P12",
@@ -161804,7 +161804,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "158504001",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.4s, hit delay 0.2s, hit interval 5s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 0.4s (0.4333s), hit delay 0.2s (0.2333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -161928,7 +161928,7 @@
                             "hitDamageId": "158506001",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "hitSources": [
-                                "AreaEffectEntity: duration 9999s, hit delay 0.5s, hit interval 1s, 9999 hits, Circle (radius 3)"
+                                "AreaEffectEntity: duration 9999s (9999.0333s), hit delay 0.5s (0.5333s), hit interval 1s (1.0333s), 9676 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "158_P07",
@@ -162143,7 +162143,7 @@
                             "hitDamageId": "158511002",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.1s, hit interval 5s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "158_P11_2"
@@ -166015,7 +166015,7 @@
                     "damageType": "Skill (32.33e, from Skill, scale with Skill)",
                     "hitDamageId": "159310001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.05s, 20 hits, Fan (radius 5, 120°)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.05s (0.0667s), 16 hits, Fan (radius 5, 120°)"
                     ],
                     "damageTag": [
                         "159_LandTrigger",
@@ -166035,7 +166035,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "159000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 0s, 1 hits, Circle (radius 2.5)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 0s, 1 hits, Circle (radius 2.5)"
                     ],
                     "damageTag": [
                         "159_Common"
@@ -166071,7 +166071,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "159320001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 6s, hit delay 1s, hit interval 0.8s, 7 hits, Circle (radius 2.7)"
+                        "AreaEffectEntity(Snapshot): duration 6s (6.0333s), hit delay 1s (1.0333s), hit interval 0.8s (0.8333s), 6 hits, Circle (radius 2.7)"
                     ],
                     "damageTag": [
                         "159_Sup_Rose",
@@ -166083,7 +166083,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "159320002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 6s, hit delay 1s, hit interval 0.8s, 7 hits, Circle (radius 2.7)"
+                        "AreaEffectEntity(Snapshot): duration 6s (6.0333s), hit delay 1s (1.0333s), hit interval 0.8s (0.8333s), 6 hits, Circle (radius 2.7)"
                     ],
                     "damageTag": [
                         "159_Sup_Withered",
@@ -166132,7 +166132,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "159400001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0s, hit interval 0.02s, 50 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 0.02s (0.0333s), 31 hits, Circle (radius 6)"
                     ],
                     "damageTag": [
                         "159_Ultra",
@@ -166144,7 +166144,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "159400002",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 0.78s, hit delay 0s, hit interval 0.09s, 9 hits, Circle (radius 8.1999998)"
+                        "AreaEffectEntity(Snapshot): duration 0.78s (0.8s), hit delay 0s, hit interval 0.09s (0.1s), 8 hits, Circle (radius 8.2)"
                     ],
                     "damageTag": [
                         "159_Ultra",
@@ -166249,7 +166249,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Normal attack)",
                             "hitDamageId": "159310301",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 0.3s, hit delay 0.1s, hit interval 1s, 1 hits, Circle (radius 2)"
+                                "AreaEffectEntity(Snapshot): duration 0.3s (0.3333s), hit delay 0.1s (0.1333s), hit interval 1s (1.0333s), 1 hits, Circle (radius 2)"
                             ],
                             "damageTag": [
                                 "159_NormalAtk",
@@ -166291,7 +166291,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Normal attack)",
                             "hitDamageId": "159310402",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.12s, hit interval 2s, 1 hits, Circle (radius 2.5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.12s (0.1333s), hit interval 2s (2.0333s), 1 hits, Circle (radius 2.5)"
                             ],
                             "damageTag": [
                                 "159_LandTrigger",
@@ -166996,7 +166996,7 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "159321101",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.5s, hit interval 3s, 1 hits, Circle (radius 2.7)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.5s (0.5333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 2.7)"
                             ],
                             "damageTag": [
                                 "159_Sup_Rose",
@@ -170360,7 +170360,7 @@
                     "damageType": "Skill (from Skill, scale with Skill)",
                     "hitDamageId": "160320002",
                     "hitSources": [
-                        "AreaEffectEntity: duration 50s, hit delay 1s, hit interval 3s, 17 hits, Circle (radius 8)"
+                        "AreaEffectEntity: duration 50s (50.0333s), hit delay 1s (1.0333s), hit interval 3s (3.0333s), 17 hits, Circle (radius 8)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -170583,7 +170583,7 @@
                             "hitDamageId": "160502001",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 20s, hit delay 1s, hit interval 1s, 19 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 20s (20.0333s), hit delay 1s (1.0333s), hit interval 1s (1.0333s), 19 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "1423934492",
@@ -170707,7 +170707,7 @@
                             "hitDamageId": "160504001",
                             "summonAttrType": "InheritByInitialSnapshot, copies owner's stats from the start of battle (later buffs excluded)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.25s, hit interval 3s, 1 hits, Circle (radius 2.5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.25s (0.2667s), hit interval 3s (3.0333s), 1 hits, Circle (radius 2.5)"
                             ],
                             "damageTag": [
                                 "1423934492",
@@ -170918,7 +170918,7 @@
                             "hitDamageId": "160507001",
                             "hitDamageNote": "Requires Clustered Foam (516007)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.2s, hit interval 4s, 1 hits, Circle (radius 2.5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.2s (0.2333s), hit interval 4s (4.0333s), 1 hits, Circle (radius 2.5)"
                             ],
                             "damageTag": [
                                 "1423934492",
@@ -171253,7 +171253,7 @@
                             "hitDamageId": "160510001",
                             "hitDamageNote": "Requires Wavering Glow (516010)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.25s, hit interval 2s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.25s (0.2667s), hit interval 2s (2.0333s), 1 hits, Circle (radius 5)"
                             ],
                             "damageTag": [
                                 "1423934492",
@@ -172069,7 +172069,7 @@
                             "hitDamageId": "160530001",
                             "hitDamageNote": "Requires Prismatic Bubbles (516030)",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1.5s, hit delay 1.4s, hit interval 3s, 1 hits, Circle (radius 3)"
+                                "AreaEffectEntity(Snapshot): duration 1.5s (1.5333s), hit delay 1.4s, hit interval 3s (3.0333s), 1 hits, Circle (radius 3)"
                             ],
                             "damageTag": [
                                 "-841558618"
@@ -175007,7 +175007,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "161000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s, hit interval 3s, 1 hits, Circle (radius 2)"
+                        "AreaEffectEntity(Snapshot): duration 1.8s, hit delay 0.1s (0.1333s), hit interval 3s (3.0333s), 1 hits, Circle (radius 2)"
                     ]
                 }
             ],
@@ -175039,7 +175039,7 @@
                     "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                     "hitDamageId": "161320001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.35s, hit interval 3s, 1 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.35s (0.3667s), hit interval 3s (3.0333s), 1 hits, Circle (radius 6)"
                     ],
                     "damageTag": [
                         "16101_FWB_Mark",
@@ -175051,7 +175051,7 @@
                     "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                     "hitDamageId": "161320002",
                     "hitSources": [
-                        "AreaEffectEntity: duration 30s, hit delay 0s, hit interval 2s, 15 hits, Circle (radius 6)"
+                        "AreaEffectEntity: duration 30s (30.0333s), hit delay 0s, hit interval 2s (2.0333s), 15 hits, Circle (radius 6)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -175099,7 +175099,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "161400001",
                     "hitSources": [
-                        "AreaEffectEntity: duration 20s, hit delay 0s, hit interval 3s, 7 hits, Circle (radius 9)"
+                        "AreaEffectEntity: duration 20s (20.0333s), hit delay 0s, hit interval 3s (3.0333s), 7 hits, Circle (radius 9)"
                     ],
                     "areaEffectVariants": [
                         {
@@ -175238,7 +175238,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "161310003",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0s, hit interval 3s, 1 hits, Circle (radius 8)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0s, hit interval 3s (3.0333s), 1 hits, Circle (radius 8)"
                             ],
                             "damageTag": [
                                 "16101_LandTag_Trigger",
@@ -176208,7 +176208,7 @@
                             "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                             "hitDamageId": "161320004",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 2s, hit delay 0.35s, hit interval 3s, 1 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.35s (0.3667s), hit interval 3s (3.0333s), 1 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "16101_FWB_Mark",
@@ -179551,7 +179551,7 @@
                     "damageType": "Auto Attack (from Skill, scale with Skill)",
                     "hitDamageId": "162310008",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.3s, hit interval 0s, 1 hits, Circle (radius 3.5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.3s (0.3333s), hit interval 0s, 1 hits, Circle (radius 3.5)"
                     ],
                     "damageTag": [
                         "162LightMarkTrigger",
@@ -179562,7 +179562,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "162000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.3s, hit interval 1.1s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.3s (0.3333s), hit interval 1.1s (1.1333s), 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "162TriggerAtk"
@@ -179626,7 +179626,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "162000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.3s, hit interval 1.1s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.3s (0.3333s), hit interval 1.1s (1.1333s), 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "162TriggerAtk"
@@ -179706,7 +179706,7 @@
                     "damageType": "Skill (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "162400004",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 3.3s, hit delay 0.8s, hit interval 0.35s, 8 hits, Circle (radius 6)"
+                        "AreaEffectEntity(Snapshot): duration 3.3s, hit delay 0.8s (0.8333s), hit interval 0.35s (0.3667s), 7 hits, Circle (radius 6)"
                     ],
                     "damageTag": [
                         "162LightMarkTrigger",
@@ -179737,7 +179737,7 @@
                     "damageType": "Mark (scale with Upgrade)",
                     "hitDamageId": "162000001",
                     "hitSources": [
-                        "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.3s, hit interval 1.1s, 1 hits, Circle (radius 5)"
+                        "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.3s (0.3333s), hit interval 1.1s (1.1333s), 1 hits, Circle (radius 5)"
                     ],
                     "damageTag": [
                         "162TriggerAtk"
@@ -179879,7 +179879,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "162310008",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.3s, hit interval 0s, 1 hits, Circle (radius 3.5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.3s (0.3333s), hit interval 0s, 1 hits, Circle (radius 3.5)"
                             ],
                             "damageTag": [
                                 "162LightMarkTrigger",
@@ -180183,7 +180183,7 @@
                             "damageType": "Auto Attack (from Skill)",
                             "hitDamageId": "162310010",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0s, hit interval 0.5s, 6 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 6 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "162LightMarkTrigger",
@@ -180533,7 +180533,7 @@
                             "damageType": "Auto Attack (from Ultimate)",
                             "hitDamageId": "162400007",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0s, hit interval 0.5s, 6 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 6 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "162LightMarkTrigger",
@@ -180638,7 +180638,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "162320006",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 3s, hit delay 0s, hit interval 0.5s, 6 hits, Circle (radius 6)"
+                                "AreaEffectEntity(Snapshot): duration 3s (3.0333s), hit delay 0s, hit interval 0.5s (0.5333s), 6 hits, Circle (radius 6)"
                             ],
                             "damageTag": [
                                 "162LightMarkTrigger",
@@ -180675,7 +180675,7 @@
                             "damageType": "Auto Attack (from Skill, scale with Skill)",
                             "hitDamageId": "162320004",
                             "hitSources": [
-                                "AreaEffectEntity(Snapshot): duration 1s, hit delay 0.3s, hit interval 0s, 1 hits, Circle (radius 5)"
+                                "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0.3s (0.3333s), hit interval 0s, 1 hits, Circle (radius 5)"
                             ],
                             "areaEffectVariants": [
                                 {

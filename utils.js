@@ -934,6 +934,22 @@ function formatSourceLabel(source) {
     return `${source.class}${source.snapshot ? '(Snapshot)' : ''}`;
 }
 
+const LOGIC_FRAME_SCALE = 4294967296;
+const LOGIC_FRAME_STEP = Math.trunc(LOGIC_FRAME_SCALE / 30);
+
+function logicFrames(seconds) {
+    const units = Math.trunc(Math.fround(seconds) * LOGIC_FRAME_SCALE);
+
+    return units <= 0 ? 0 : Math.floor((units + LOGIC_FRAME_STEP - 1) / LOGIC_FRAME_STEP);
+}
+
+function formatLogicSeconds(seconds) {
+    const authored = +seconds.toFixed(4);
+    const real = Math.round(logicFrames(seconds) / 30 * 1e4) / 1e4;
+
+    return real === authored ? `${authored}s` : `${authored}s (${real}s)`;
+}
+
 function formatShape(source) {
     if (!source?.shape) return;
 
@@ -958,9 +974,9 @@ function formatAreaEffectSource(detail) {
 
     const parts = [];
 
-    if (detail.duration !== undefined) parts.push(`duration ${detail.duration}s`);
-    if (detail.hitDelay !== undefined) parts.push(`hit delay ${detail.hitDelay}s`);
-    if (detail.hitInterval !== undefined) parts.push(`hit interval ${detail.hitInterval}s`);
+    if (detail.duration !== undefined) parts.push(`duration ${formatLogicSeconds(detail.duration)}`);
+    if (detail.hitDelay !== undefined) parts.push(`hit delay ${formatLogicSeconds(detail.hitDelay)}`);
+    if (detail.hitInterval !== undefined) parts.push(`hit interval ${formatLogicSeconds(detail.hitInterval)}`);
     if (detail.hits !== undefined) parts.push(`${detail.hits} hits`);
 
     const shape = formatShape(detail);
