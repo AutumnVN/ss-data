@@ -2088,6 +2088,26 @@ const checks = [
         },
     },
     {
+        heading: 'Steam Syndrome > Aromatic Steam',
+        check() {
+            const skill = DISC['213010'].mainSkill;
+            const effect = EFFECT['3010021'];
+            const aquaOnly = effect.TriggerCondition1 === 10
+                && effect.TriggerParam1 === '1'
+                && effect.TargetCondition1 === 10
+                && effect.TargetParam1 === '1';
+            const missingCondition = skill.desc.includes('If the main Trekker')
+                && !skill.desc.includes('when any Aqua Trekker deals Skill DMG');
+            const active = aquaOnly && missingCondition;
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `effect 3010021 only boosts aqua trekkers' skill hits (trigger ${effect.TriggerCondition1}/${effect.TriggerParam1}, target ${effect.TargetCondition1}/${effect.TargetParam1}), but the english text only says "this hit"`,
+            };
+        },
+    },
+    {
         heading: 'Soaring Blue > Horn of Departure',
         check() {
             const skill = DISC['214008'].secondarySkill2;

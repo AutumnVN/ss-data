@@ -383,6 +383,10 @@
     "active": true,
     "text": "Firing a total of <color=#0abec5>&Param1&</color> Glows grants Radiance Flurry (Special Main Skill): swings the longsword to unleash a massive blade light that deals <color=#0abec5>&Param2& x6</color> of Max HP as Lux Skill DMG and can trigger ##Lux Mark#1015#.\u000bLongsword sprint attacks during Auto Attacks now fire <color=#0abec5>3</color> Glows, each dealing <color=#0abec5>&Param3&</color> of Max HP as Lux Skill DMG."
   },
+  "Steam Syndrome > Aromatic Steam": {
+    "active": true,
+    "text": "Increases the Skill DMG of Aqua Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bIf the main Trekker's HP is above {2}, increases the DMG of this hit by <color=#ec6d21>{3}</color>."
+  },
   "Soaring Blue > Horn of Departure": {
     "active": true,
     "text": "If a target is inflicted with Bright Tide, each stack increases the Skill DMG dealt by Aqua Trekkers to the target by <color=#ec6d21>{1}</color>."
