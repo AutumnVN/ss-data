@@ -1843,7 +1843,7 @@ const checks = [
             const textHits = +potential.desc.match(/(\d+)(?:st|nd|rd|th) hit/)[1];
             const textPct = potential.params[2].split('/').map(value => +value.replace('%', ''));
             const bigPct = HITDAMAGE[150310203].SkillPercentAmend.map(value => value / 10000);
-            const smallPct = HITDAMAGE[150310202].SkillPercentAmend.map(value => value / 10000);
+            const hidden = potential.hiddenParamsTooltips.find(tooltip => tooltip.hitDamageId === '150310202');
             const explodesOnRemove = onBuffRemove.includes('buffId == 15002011')
                 && onBuffRemove.includes('TryTriggerElectricityExplosion_P2');
             const explodesOnDeath = onActorDied.includes('TryTriggerElectricityExplosion_P2');
@@ -1852,12 +1852,51 @@ const checks = [
                 && explosion.includes('Boom_Small');
             const active = explodesOnRemove && explodesOnDeath && picksByStacks
                 && bigPct.join('/') === textPct.join('/')
-                && smallPct.every((value, index) => value < bigPct[index]);
+                && hidden !== undefined;
 
             return {
                 active,
                 text: potential.desc,
-                detail: `removing shock 15002011 (expiry included) and the target dying both call TryTriggerElectricityExplosion_P2, so the explosion is not limited to the ${textHits}th hit; below 20 stacks it uses 150310202 = ${smallPct.join('/')}% instead of 150310203 = ${bigPct.join('/')}%`,
+                detail: `removing shock 15002011 (expiry included) and the target dying both call TryTriggerElectricityExplosion_P2, so the explosion is not limited to the ${textHits}th hit; below 20 stacks it uses hiddenparam1 (150310202) instead of 150310203 (${bigPct.join('/')}%)`,
+            };
+        },
+    },
+    {
+        heading: 'Laru > Electric Chain',
+        check() {
+            const potential = findPotential('150', 515009);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._15001');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onTrigger = extractMethod(main, 'protected override void OnTriggerLightMark(');
+            const perkLogic = extractMethod(main, 'private IEnumerator PerkLogic_P9(');
+            const reset = extractMethod(main, 'private IEnumerator ResetTriggerCount_P9(');
+            const config = extractMethod(namespace, 'public class Config_MainControl');
+            const triggerTag = config.match(/damageTag_Trigger_P9 = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const chainHit = +config.match(/hitdamageId_P9 = (\d+)/)[1];
+            const firstDelay = +config.match(/firstHitDelay_P9 = FP\.op_Implicit\(([\d.]+)\)/)[1];
+            const linkInterval = +config.match(/linkInterval_P9 = FP\.op_Implicit\(([\d.]+)\)/)[1];
+            const requiresTag = onTrigger.includes('CheckHitByTag(hitDamageTag, Config_MainControl.damageTag_Trigger_P9)');
+            const cap = onTrigger.includes('_triggerCount_P9 < 3');
+            const resetsAfter = reset.includes('WaitForSeconds(FP.op_Implicit(1))')
+                && reset.includes('_triggerCount_P9 = 0');
+            const delays = perkLogic.includes('firstHitDelay_P9')
+                && perkLogic.includes('linkInterval_P9');
+            const mainHits = [
+                CHARACTER['150'].skill.paramsTooltips,
+                findPotential('150', 515001).paramsTooltips,
+                findPotential('150', 515002).paramsTooltips,
+                findPotential('150', 515003).paramsTooltips,
+                findPotential('150', 515004).paramsTooltips,
+                findPotential('150', 515006).paramsTooltips,
+            ].flat().filter(tooltip => tooltip.hitDamageId
+                && (tooltip.damageTag || []).includes('150_LightMark_Trigger')
+                && !(tooltip.damageTag || []).includes(triggerTag));
+            const active = requiresTag && cap && resetsAfter && delays && mainHits.length > 0;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `chain hit ${chainHit} needs the ${triggerTag} tag (${requiresTag}), but Main Skill mark triggers ${mainHits.map(hit => hit.hitDamageId).join('/')} lack it, and the first hit lands ${firstDelay}s after the trigger with links every ${linkInterval}s and 3 procs per 1s reset from the first proc (${cap} ${resetsAfter})`,
             };
         },
     },

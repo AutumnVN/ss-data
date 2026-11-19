@@ -143695,12 +143695,13 @@
                     "nameCN": "电链镭射",
                     "nameJP": "ライトエギング",
                     "nameKR": "전격 사슬",
-                    "desc": "The laser inflicts Shock on targets for 10s. When dealing damage to Shocked targets, deals an additional <color=#0abec5>&Param2& of ATK</color> as Lux Skill DMG. With the 20th hit, deals <color=#0abec5>&Param3& of ATK</color> as AoE Lux Skill DMG and removes Shock.\u000bParam1: &Param1& (Skill,Title)",
-                    "descCN": "激光对目标附加「感电」，持续10秒。对「感电」目标造成伤害时，额外造成攻击力<color=#0abec5>&Param2&</color>的光系技能伤害，累计20次时，再造成攻击力<color=#0abec5>&Param3&</color>的范围光系技能伤害并结束「感电」。\u000bParam1: &Param1& (Skill,Title)",
-                    "descJP": "レーザーは敵に、10秒間持続する感電を付与するようになる。感電が付与されている敵にダメージを与えた時、その敵に攻撃力の<color=#0abec5>&Param2&</color>の光属性スキルダメージを追加で与える。この効果のダメージを累計20回与えた時、範囲内に攻撃力の<color=#0abec5>&Param3&</color>の光属性スキルダメージを与え、感電を解除させる。\u000bParam1: &Param1& (Skill,Title)",
-                    "descKR": "레이저가 목표에게 「감전」을 부여한다. 10초간 지속된다. 「감전」 목표에게 피해를 입히면 공격력 <color=#0abec5>&Param2&</color>의 빛 속성 스킬 피해를 추가로 입힌다. 20회 누적 시 다시 공격력 <color=#0abec5>&Param3&</color>의 빛 속성 범위 스킬 피해를 입히고 「감전」이 종료된다.\u000bParam1: &Param1& (Skill,Title)",
+                    "desc": "The laser inflicts Shock on targets for 10s. When dealing damage to Shocked targets, deals an additional <color=#0abec5>&Param2& of ATK</color> as Lux Skill DMG. With the 20th hit, deals <color=#0abec5>&Param3& of ATK</color> as AoE Lux Skill DMG and removes Shock.\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,150310202)",
+                    "descCN": "激光对目标附加「感电」，持续10秒。对「感电」目标造成伤害时，额外造成攻击力<color=#0abec5>&Param2&</color>的光系技能伤害，累计20次时，再造成攻击力<color=#0abec5>&Param3&</color>的范围光系技能伤害并结束「感电」。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,150310202)",
+                    "descJP": "レーザーは敵に、10秒間持続する感電を付与するようになる。感電が付与されている敵にダメージを与えた時、その敵に攻撃力の<color=#0abec5>&Param2&</color>の光属性スキルダメージを追加で与える。この効果のダメージを累計20回与えた時、範囲内に攻撃力の<color=#0abec5>&Param3&</color>の光属性スキルダメージを与え、感電を解除させる。\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,150310202)",
+                    "descKR": "레이저가 목표에게 「감전」을 부여한다. 10초간 지속된다. 「감전」 목표에게 피해를 입히면 공격력 <color=#0abec5>&Param2&</color>의 빛 속성 스킬 피해를 추가로 입힌다. 20회 누적 시 다시 공격력 <color=#0abec5>&Param3&</color>의 빛 속성 범위 스킬 피해를 입히고 「감전」이 종료된다.\u000bParam1: &Param1& (Skill,Title)\u000bHiddenParam1: &HiddenParam1& (HitDamage,Skill,150310202)",
                     "damageType": [
-                        "Skill (from Skill, scale with Skill)"
+                        "Skill (from Skill, scale with Skill)",
+                        "Skill (from Skill, scale with Skill) (hidden)"
                     ],
                     "effectType": [],
                     "addAttrType": [],
@@ -143741,8 +143742,23 @@
                             ]
                         }
                     ],
-                    "hiddenParams": [],
-                    "hiddenParamsTooltips": [],
+                    "hiddenParams": [
+                        "37.4%/41.2%/44.9%/56.1%/59.9%/63.6%/71.1%/74.9%/78.6%/86.1%/89.8%/93.6%/97.3%"
+                    ],
+                    "hiddenParamsTooltips": [
+                        {
+                            "damageType": "Skill (from Skill, scale with Skill)",
+                            "hitDamageId": "150310202",
+                            "hitSources": [
+                                "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.1s (0.1333s), hit interval 5s (5.0333s), 1 hits, Circle (radius 4)"
+                            ],
+                            "damageTag": [
+                                "150_Skill",
+                                "150_P07",
+                                "150_LightMark_Trigger"
+                            ]
+                        }
+                    ],
                     "icon": "15001_Potential_02",
                     "rarity": "core"
                 },

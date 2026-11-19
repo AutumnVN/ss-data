@@ -1229,4 +1229,4 @@ function getHitDamageNote(hitDamageId) {
     return [...base, ...runtime.filter(note => !base.includes(note))];
 }
 
-module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getPotentialBuffs, getBuffDetail, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };
+module.exports = { getHotfixData, getHotfixHitDamage, getHiddenHitDamageIds, getHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectDetail, getHitDamageAreaEffectEntry, getHitDamageBullet, getHitDamageTags, getPotentialBuffs, getBuffDetail, getCharacterSummonInfo, getClassSummonInfo, getHotfixScoreBossBuffs, getHotfixJointDrillBuffs, potentialLabel };

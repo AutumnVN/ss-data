@@ -13,7 +13,7 @@ const SCOREBOSSABILITY = require('./EN/bin/ScoreBossAbility.json');
 const SCOREBOSSGETCONTROL = require('./EN/bin/ScoreBossGetControl.json');
 const TRAVELERDUELCHALLENGEAFFIX = require('./EN/bin/TravelerDuelChallengeAffix.json');
 const ITEM = require('./EN/bin/Item.json');
-const { getHiddenHitDamageIds, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectDetail, getHitDamageBullet, getHitDamageTags, getBuffDetail, potentialLabel } = require('./hotfix');
+const { getHiddenHitDamageIds, getHitDamageNote: getHotfixHitDamageNote, getHitDamageSummonInfo, getHitDamageAreaEffectDetail, getHitDamageAreaEffectEntry, getHitDamageBullet, getHitDamageTags, getBuffDetail, potentialLabel } = require('./hotfix');
 const LANG_CHARACTER = require('./EN/language/en_US/Character.json');
 const LANG_SKILL = require('./EN/language/en_US/Skill.json');
 const LANG_UITEXT = require('./EN/language/en_US/UIText.json');
@@ -602,6 +602,47 @@ function formatHiddenParams(hiddenHitDamageIds, hiddenAddAttrs) {
     return { desc, params };
 }
 
+let areaEffectAliasIds;
+
+function getAreaEffectAliasIds(alias) {
+    if (!areaEffectAliasIds) {
+        areaEffectAliasIds = new Map();
+
+        for (const hitDamageId of Object.keys(HITDAMAGE)) {
+            for (const variant of getHitDamageAreaEffectEntry(hitDamageId)?.variants || []) {
+                const name = (variant.alias || '').split('/').pop();
+                if (!name) continue;
+
+                const ids = areaEffectAliasIds.get(name) || [];
+                if (!ids.includes(hitDamageId)) ids.push(hitDamageId);
+                areaEffectAliasIds.set(name, ids);
+            }
+        }
+    }
+
+    return areaEffectAliasIds.get(alias) || [];
+}
+
+function getHiddenAreaEffectVariantIds(obj) {
+    const ids = [];
+
+    for (const param of collectParamsFrom(obj)) {
+        const p = param.split(',');
+        if (p[0] !== 'HitDamage') continue;
+
+        for (const variant of getHitDamageAreaEffectEntry(p[2])?.variants || []) {
+            const alias = (variant.alias || '').split('/').pop();
+            if (!alias.endsWith('_Big')) continue;
+
+            for (const id of getAreaEffectAliasIds(alias.replace(/_Big$/, '_Small'))) {
+                if (!ids.includes(id)) ids.push(id);
+            }
+        }
+    }
+
+    return ids;
+}
+
 function collectPotentialHiddenParamsFrom(obj) {
     if (!obj) return { desc: '', params: [] };
 
@@ -617,7 +658,10 @@ function collectPotentialHiddenParamsFrom(obj) {
         return true;
     };
 
-    const hiddenHitDamageIds = getHiddenHitDamageIds(obj.Id).filter(accepted);
+    const hiddenHitDamageIds = [...new Set([
+        ...getHiddenHitDamageIds(obj.Id),
+        ...getHiddenAreaEffectVariantIds(obj),
+    ])].filter(accepted);
 
     return formatHiddenParams(hiddenHitDamageIds, hiddenAddAttrs);
 }
