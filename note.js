@@ -1843,6 +1843,34 @@ const checks = [
         },
     },
     {
+        heading: 'Laru > Piercing Sting',
+        check() {
+            const potential = findPotential('150', 515007);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._15001');
+            const main = extractMethod(namespace, 'public class ParallelScript_MainControl : ParallelScript');
+            const onSelfDamaged = extractMethod(main, 'protected override void OnSelfDamaged(AdventureActorReceiveDamageEvent damageEvent)');
+            const triggerTag = namespace.match(/damageTag_Trigger_P7 = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const addsOnTag = onSelfDamaged.includes('AddBuff(15007011')
+                && onSelfDamaged.includes('CheckHitByTag(damageEvent.hitDamageTag, Config_MainControl.damageTag_Trigger_P7)');
+            const tagged = Object.values(HITDAMAGE)
+                .filter(hit => (hit.DamageTag || []).includes(crc32(triggerTag)))
+                .map(hit => hit.Id);
+            const mainHits = CHARACTER['150'].skill.paramsTooltips
+                .filter(tooltip => tooltip.hitDamageId)
+                .map(tooltip => +tooltip.hitDamageId);
+            const otherHits = tagged.filter(id => !mainHits.includes(id));
+            const active = addsOnTag
+                && potential.params[0] === 'Thunderflare Strike'
+                && otherHits.length > 0;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `the buff 15007011 is added by any hit tagged ${triggerTag} (${addsOnTag}), and ${otherHits.length} of the ${tagged.length} tagged hits come from other skills, so it is not limited to ${potential.params[0]}`,
+            };
+        },
+    },
+    {
         heading: 'Laru > Electric Chain',
         check() {
             const potential = findPotential('150', 515009);
@@ -1909,12 +1937,25 @@ const checks = [
             const gated = onReceiveDamage.includes('_lastTriggerTime_P42')
                 && onReceiveDamage.includes('GetScriptValue(_actor, 15042012)')
                 && onReceiveDamage.includes('AddEnergy(');
-            const active = gated && cooldown > 0 && !potential.desc.includes('cooldown');
+            const triggerTag = namespace.match(/damageTag_Trigger_P42 = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
+            const tagged = Object.values(HITDAMAGE)
+                .filter(hit => (hit.DamageTag || []).includes(crc32(triggerTag)))
+                .map(hit => +hit.Id);
+            const ultimateHits = CHARACTER['150'].ultimate.paramsTooltips
+                .filter(tooltip => tooltip.hitDamageId)
+                .map(tooltip => +tooltip.hitDamageId);
+            const lance = +findPotential('150', 515041).paramsTooltips
+                .find(tooltip => tooltip.hitDamageId).hitDamageId;
+            const onlyUltimate = tagged.every(id => ultimateHits.includes(id)) && !tagged.includes(lance);
+            const active = gated
+                && cooldown > 0
+                && !potential.desc.includes('cooldown')
+                && onlyUltimate;
 
             return {
                 active,
                 text: potential.desc,
-                detail: `the energy gain is gated by 15042012 = ${cooldown}s since the last grant (${gated}), and the text has no cooldown`,
+                detail: `the energy gain is gated by 15042012 = ${cooldown}s since the last grant (${gated}), and only hits tagged ${triggerTag} trigger it, which excludes the light realm lance ${lance} (${onlyUltimate})`,
             };
         },
     },
