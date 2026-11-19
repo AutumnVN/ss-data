@@ -1345,25 +1345,6 @@ const checks = [
         },
     },
     {
-        heading: 'Donna > Rime Shatterer',
-        check() {
-            const potential = findPotential('130', 513007);
-            const config = getHotfix().slice(getHotfix().indexOf('areaEffectTag_UltraSkill = CommonHelper.StringToHash("130_Ultra_Area")'));
-            const tag = config.match(/damageTag_Trigger_P7 = CommonHelper\.StringToHash\("([^"]+)"\)/)[1];
-            const hash = crc32(tag);
-            const hits = Object.values(HITDAMAGE)
-                .filter(hit => Array.isArray(hit.DamageTag) && hit.DamageTag.includes(hash));
-            const bonusAttr = getOnceAdditionalLevels(13007011)[0].AttributeType1;
-            const active = bonusAttr === 57 && hits.some(hit => hit.DamageType === 1);
-
-            return {
-                active,
-                text: potential.desc,
-                detail: `elite bonus is skill dmg (attr ${bonusAttr}) but ${tag} is only on ${hits.map(hit => `${hit.Id} (damage type ${hit.DamageType})`).join(', ')}`,
-            };
-        },
-    },
-    {
         heading: 'Donna > Freezing Stasis',
         check() {
             const potential = findPotential('130', 513043);
@@ -1996,7 +1977,7 @@ const checks = [
         },
     },
     {
-        heading: 'Suntide Willow > Luminous Leaper',
+        heading: 'Suntide Willow > Skill: Luminous Leaper',
         check() {
             const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._16001');
             const config = extractMethod(namespace, 'public class Config_MainControl');

@@ -235,10 +235,6 @@
     "active": true,
     "text": "When the ##Advertising Doll#4017# disappears, extends the duration of ##Agile#2015# State by <color=#0abec5>&Param2&</color>s.\u000bWhile ##Agile#2015# State is active, every 10 Auto Attacks generate 1 water orb, accumulating up to <color=#0abec5>7</color> orbs. When ##Agile#2015# State ends, the next Auto Attack fires all water orbs to pierce through the target, with each orb dealing <color=#0abec5>&Param1&</color> of ATK as Aqua Skill DMG.\u000bParam10: &Param10& (Skill,Title)"
   },
-  "Donna > Rime Shatterer": {
-    "active": true,
-    "text": "While Donna is in ##Agile#2015# State, her Auto Attacks immediately defeat normal targets with HP below &Param1&. She also deals <color=#ec6d21>&Param2&</color> more &Param3& to elite or higher-tier targets with HP below &Param1&.\u000bParam10: &Param10& (Skill,Title)"
-  },
   "Donna > Freezing Stasis": {
     "active": true,
     "text": "Each time &Param10& (Ultimate) hits a target inflicted with ##Frozen#1002#/##Chill#1027#, increases rain of arrows' duration by &Param1&s and its &Param3& dealt by <color=#ec6d21>&Param2&</color>. This effect can only be triggered &Param4& times."
@@ -371,7 +367,7 @@
     "active": true,
     "text": "When Nazuna performs an Auto Attack, there is a 20% chance to throw a golden egg, dealing <color=#ec6d21>&Param1& of ATK</color> as AoE Terra Auto Attack DMG and inflicting ##Terra Mark: Earth Vein#2029#."
   },
-  "Suntide Willow > Luminous Leaper": {
+  "Suntide Willow > Skill: Luminous Leaper": {
     "active": true,
     "text": "When tapping the Main Skill button, different effects occur based on the current ##Decibels#4038#.\u000b<color=#0abec5>Current Decibels below 100:</color>\u000bSwitches back and forth between Bubble Machine and Megaphone modes.\u000b<color=#0abec5>Current Decibels at 100:</color>\u000bConsumes all Decibels at once and launches a Bubble Frog: every bounce creates an impact dealing <color=#fb8037>&Param1&</color> of ATK as AoE Aqua Skill DMG and inflicting ##Aqua Mark: Torrent#2008#, bouncing once every 3s. When Bubble Frog deals DMG, increases the squad's &Param2& by <color=#fb8037>&Param3&</color> for &Param4&s, stacking up to &Param5& times."
   },
