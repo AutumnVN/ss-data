@@ -403,6 +403,14 @@
     "active": true,
     "text": "Increases the Auto Attack DMG and Skill DMG of Aqua Trekkers in the squad by <color=#ec6d21>{1}</color>.\u000bFor every {2} targets killed, increases this effect by an additional {3}, stacking up to {4} times."
   },
+  "Meowing Cat God > Cat God's Penalty": {
+    "active": true,
+    "text": "If the main Trekker is inflicted with Blazing Armor, increases Ignis squadmates' Ultimate DMG to elite or higher-tier targets by <color=#ec6d21>{1}</color>."
+  },
+  "Summer Afternoon Rain > Dancing Waters": {
+    "active": true,
+    "text": "When any Aqua Trekker deals Skill DMG, if the main Aqua Trekker has a shield, increases the DMG of this hit by <color=#ec6d21>{1}</color>.\u000bIncreases the main Aqua Trekker's Aqua DMG dealt to elite or higher-tier targets by <color=#ec6d21>{2}</color>."
+  },
   "Colors Pierce the Grey > Street Spirit": {
     "active": true,
     "text": "Increases Terra Trekkers' Terra DMG dealt to targets with Terra VUL by <color=#ec6d21>{1}</color>.\u000bReduces the DMG taken by the main Terra Trekker by {2}."
@@ -411,9 +419,17 @@
     "active": true,
     "text": "After the main Aqua Trekker deals DMG {1} times in total, increases Aqua squadmates' ATK by <color=#ec6d21>{2}</color> for {3}s. This effect can only be triggered once every {4}s."
   },
+  "Sword Against Stream > Water Mirror": {
+    "active": true,
+    "text": "Increases Aqua Trekkers' Skill DMG dealt to elite or higher-tier targets by <color=#ec6d21>{1}</color>."
+  },
   "Daylight Garden > Swaying Petals": {
     "active": true,
     "text": "After the main Ventus Trekker deals DMG to the same target {1} times, increases the Ventus DMG the target takes by <color=#ec6d21>{2}</color> for {3}s. This effect can only be triggered once every {4}s for the same target."
+  },
+  "The Clash of Blade and Axe > Surging Slash": {
+    "active": true,
+    "text": "If the Main Trekker has Bless, increases all friendly units' Aqua DMG to elite or higher-tier targets by <color=#ec6d21>{1}</color>."
   },
   "Dream Factory of ☆Truth > Dream Factory of ☆Truth": {
     "active": true,

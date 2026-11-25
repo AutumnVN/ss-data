@@ -2179,6 +2179,38 @@ const checks = [
         },
     },
     {
+        heading: 'Meowing Cat God > Cat God\'s Penalty',
+        check() {
+            const skill = DISC['214001'].secondarySkill1;
+            const effect = EFFECT['4001106'];
+            const active = skill.desc.includes('elite or higher-tier')
+                && effect.TakeEffectCondition1 === 28
+                && effect.TakeEffectParam1 === '2,3,4';
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `TakeEffectCondition1=${effect.TakeEffectCondition1}, param="${effect.TakeEffectParam1}" = LORD(2)/LEADER(3)/ELITE(4); BOSSRUSH(7) and JOINTDRILLBOSS(8) excluded`,
+            };
+        },
+    },
+    {
+        heading: 'Summer Afternoon Rain > Dancing Waters',
+        check() {
+            const skill = DISC['214011'].secondarySkill2;
+            const effect = EFFECT['4011221'];
+            const active = skill.desc.includes('elite or higher-tier')
+                && effect.TakeEffectCondition1 === 28
+                && effect.TakeEffectParam1 === '2,3,4';
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `TakeEffectCondition1=${effect.TakeEffectCondition1}, param="${effect.TakeEffectParam1}" = LORD(2)/LEADER(3)/ELITE(4); BOSSRUSH(7) and JOINTDRILLBOSS(8) excluded`,
+            };
+        },
+    },
+    {
         heading: 'Colors Pierce the Grey > Street Spirit',
         check() {
             const skill = DISC['214023'].secondarySkill1;
@@ -2214,6 +2246,22 @@ const checks = [
         },
     },
     {
+        heading: 'Sword Against Stream > Water Mirror',
+        check() {
+            const skill = DISC['214026'].secondarySkill2;
+            const effect = EFFECT['4026201'];
+            const active = skill.desc.includes('elite or higher-tier')
+                && effect.TriggerCondition1 === 28
+                && effect.TriggerParam1 === '2,3,4';
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `TriggerCondition1=${effect.TriggerCondition1}, param="${effect.TriggerParam1}" = LORD(2)/LEADER(3)/ELITE(4); BOSSRUSH(7) and JOINTDRILLBOSS(8) excluded`,
+            };
+        },
+    },
+    {
         heading: 'Daylight Garden > Swaying Petals',
         check() {
             const skill = DISC['214028'].secondarySkill2;
@@ -2230,6 +2278,22 @@ const checks = [
                 active,
                 text: skill.desc,
                 detail: `OnPlayerActorDamaged checks main ventus = ${checksMain}; text says only the main ventus trekker's damage counts`,
+            };
+        },
+    },
+    {
+        heading: 'The Clash of Blade and Axe > Surging Slash',
+        check() {
+            const skill = DISC['214031'].secondarySkill1;
+            const effect = EFFECT['4031106'];
+            const active = skill.desc.includes('elite or higher-tier')
+                && effect.TriggerCondition1 === 28
+                && effect.TriggerParam1 === '2,3,4';
+
+            return {
+                active,
+                text: skill.desc,
+                detail: `TriggerCondition1=${effect.TriggerCondition1}, param="${effect.TriggerParam1}" = LORD(2)/LEADER(3)/ELITE(4); BOSSRUSH(7) and JOINTDRILLBOSS(8) excluded`,
             };
         },
     },
