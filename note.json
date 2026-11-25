@@ -283,6 +283,10 @@
     "active": true,
     "text": "Increases the &Param1& of jump slam explosions from Armed Assault (Support Skill) by <color=#0abec5>&Param2&</color>. Increases the number of explosions of each jump slam by 1. Resets when the Support Skill ends."
   },
+  "Eleanor > Precision Calibration": {
+    "active": true,
+    "text": "Increases ##Sentries'#4050# &Param1& by <color=#ec6d21>&Param2&</color>. When there are 3 ##Sentries#4050# on the field, increases the Ventus Vanguard Main Trekker's &Param3& by <color=#ec6d21>&Param4&</color> for 10s."
+  },
   "Sparkla > Ticking Aftershock": {
     "active": true,
     "text": "When Sparkla is in ##Bunny Jaws Mode#4033#, gains Super Armor and increases own &Param2& by <color=#ec6d21>&Param3&</color>.\u000bAfter the shells fired in ##Bunny Jaws Mode#4033# explode, 5 Booby Traps are randomly deployed within the blast radius, each Booby Trap dealing <color=#ec6d21>&Param1& of ATK</color> as Terra Skill DMG. Can trigger ##Terra Mark#1020#.\u000bShells fired by Bunny Roar scatter 10 Booby Traps over a much larger area."

@@ -1,4 +1,13 @@
 const { existsSync, readFileSync, writeFileSync } = require('fs');
+const { execFileSync } = require('child_process');
+const { tmpdir } = require('os');
+
+const HIT_SOURCE_FILE = `${tmpdir()}/hitSource.json`;
+
+if (!existsSync(HIT_SOURCE_FILE)) {
+    console.error('hitSource.json is missing, running fetchHitSource.js');
+    execFileSync(process.execPath, [`${__dirname}/fetchHitSource.js`], { stdio: 'inherit' });
+}
 
 const NOTE_FILE = `${__dirname}/note.json`;
 const HOTFIX_FILE = `${__dirname}/hotfix/out/Hotfix.decompiled.cs`;
@@ -1544,6 +1553,26 @@ const checks = [
                 active,
                 text: potential.desc,
                 detail: `extra explodes loop JumpAtkJumpIndex times, so slam 1 gets 0 and each later slam 1 more than the previous = ${usesJumpIndex}, which is better than the text overall (36 extras instead of 9); en text says +1 for each = ${saysOneEach}`,
+            };
+        },
+    },
+    {
+        heading: 'Eleanor > Precision Calibration',
+        check() {
+            const potential = findPotential('137', 513730);
+            const namespace = extractMethod(getHotfix(), 'namespace AIScript.Character._13701');
+            const support = extractMethod(namespace, 'public class ParallelScript_Support : ParallelScript');
+            const onMainBeforeHit = extractMethod(support, 'protected override void OnMainBeforeHit(AdventureActorReceiveDamageBeforeHitEvent beforeHit, PlayerAdventureActor main)');
+            const whirlwind = findPotential('143', 514301).paramsTooltips.find(tooltip => tooltip.hitDamageId);
+            const hit = HITDAMAGE[whirlwind.hitDamageId];
+            const normalSlotOnly = onMainBeforeHit.includes('beforeHit.skillSlotType == HotfixEnum.skillSlotType.NORMAL')
+                && onMainBeforeHit.includes('AddFromAttr(13730002, main)');
+            const active = normalSlotOnly && hit.DamageType === 1 && hit.SkillSlotType !== 5;
+
+            return {
+                active,
+                text: potential.desc,
+                detail: `13730002 (ventus normal dmg) is only added on hits whose skillSlotType is NORMAL, while wraith's whirlwind hit ${whirlwind.hitDamageId} is skill slot ${hit.SkillSlotType} with damageType ${hit.DamageType} (normal), so the buff is skipped`,
             };
         },
     },
