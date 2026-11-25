@@ -8798,7 +8798,10 @@
                     "hitDamageId": "108110001",
                     "hitSources": [
                         "AdventureBullet(Snapshot): 55 speed, 0.2s lifetime, -55 acceleration, pierce, Circle (radius 0.05)",
+                        "AdventureBullet(Snapshot): 55 speed, 0.2s lifetime, -55 acceleration, pierce, Circle (radius 0.05)",
                         "AdventureBullet(Snapshot): 55 speed, 0.16s lifetime, -55 acceleration, pierce, Circle (radius 0.05)",
+                        "AdventureBullet(Snapshot): 55 speed, 0.16s lifetime, -55 acceleration, pierce, Circle (radius 0.05)",
+                        "AdventureBullet(Snapshot): 55 speed, 0.12s lifetime, -55 acceleration, pierce, Circle (radius 0.05)",
                         "AdventureBullet(Snapshot): 55 speed, 0.12s lifetime, -55 acceleration, pierce, Circle (radius 0.05)"
                     ],
                     "damageTag": [
@@ -8880,6 +8883,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "108400001",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 100 speed, 0.15s lifetime, -40 acceleration, Circle (radius 0.05)",
                         "AdventureBullet(Snapshot): 100 speed, 0.15s lifetime, -40 acceleration, Circle (radius 0.05)"
                     ],
                     "damageTag": [
@@ -17143,7 +17147,13 @@
                     "hitSources": [
                         "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle",
                         "AdventureBezierBullet(Snapshot): 0.5s duration",
-                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, Circle"
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, Circle",
+                        "AdventureBezierBullet(Snapshot): 0.5s duration",
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle",
+                        "AdventureBezierBullet(Snapshot): 0.5s duration",
+                        "AdventureBezierBullet(Snapshot): 0.5s duration",
+                        "AdventureBezierBullet(Snapshot): 0.5s duration",
+                        "AdventureBezierBullet(Snapshot): 0.5s duration"
                     ],
                     "damageTag": [
                         "Normal",
@@ -17190,6 +17200,7 @@
                     "damageType": "Skill (12.81e, from Skill, scale with Skill)",
                     "hitDamageId": "111310001",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle (radius 1.6)",
                         "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle (radius 1.6)"
                     ],
                     "damageTag": [
@@ -21806,7 +21817,9 @@
                     "hitDamageId": "112320001",
                     "hitSources": [
                         "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)",
-                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, splits into 3, Rectangle (2.8 × 1.7)"
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, splits into 3, Rectangle (2.8 × 1.7)",
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, splits into 3, Rectangle (2.8 × 1.7)",
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
                     ],
                     "damageTag": [
                         "LightWBlade",
@@ -22052,6 +22065,7 @@
                             "damageType": "Auto Attack (0.55e, from Normal attack, scale with Skill)",
                             "hitDamageId": "112100011",
                             "hitSources": [
+                                "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)",
                                 "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
                             ],
                             "damageTag": [
@@ -30344,6 +30358,7 @@
                     "hitDamageId": "114320001",
                     "hitSources": [
                         "AdventureBullet(Snapshot): 50 speed, 1s lifetime, -20 acceleration, pierce, Circle",
+                        "AdventureBullet(Snapshot): 50 speed, 1s lifetime, -20 acceleration, pierce, Circle",
                         "AdventureBullet(Snapshot): 100 speed, 1.5s lifetime, pierce, Circle (radius 1)"
                     ],
                     "damageTag": [
@@ -30421,6 +30436,7 @@
                     "hitDamageId": "114400001",
                     "hitSources": [
                         "AreaEffectEntity(Snapshot): duration 1s (1.0333s), hit delay 0s, hit interval 2s (2.0333s), 1 hits, Circle (radius 12)",
+                        "AdventureTimeBomb(Snapshot): Circle",
                         "AdventureTimeBomb(Snapshot): Circle"
                     ],
                     "areaEffectVariants": [
@@ -34850,6 +34866,7 @@
                     "damageType": "Skill (from Normal attack, scale with Skill)",
                     "hitDamageId": "115120005",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 100 speed, 1s lifetime, pierce, Circle",
                         "AdventureBullet(Snapshot): 100 speed, 1s lifetime, pierce, Circle"
                     ],
                     "damageTag": [
@@ -39245,6 +39262,7 @@
                     "damageType": "Auto Attack (0.82e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "116100001",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 24 speed, 1.5s lifetime, pierce, Circle (radius 0.2)",
                         "AdventureBullet(Snapshot): 24 speed, 1.5s lifetime, pierce, Circle (radius 0.2)"
                     ],
                     "damageTag": [
@@ -39319,6 +39337,7 @@
                     "damageType": "Skill (10.17e, from Skill, scale with Skill)",
                     "hitDamageId": "116310001",
                     "hitSources": [
+                        "AdventureProjectile(Snapshot): 10 speed, Circle (radius 2.5)",
                         "AdventureProjectile(Snapshot): 10 speed, Circle (radius 2.5)"
                     ],
                     "damageTag": [
@@ -39538,6 +39557,7 @@
                             "damageType": "Skill (10.17e, from Skill, scale with Skill)",
                             "hitDamageId": "116310001",
                             "hitSources": [
+                                "AdventureProjectile(Snapshot): 10 speed, Circle (radius 2.5)",
                                 "AdventureProjectile(Snapshot): 10 speed, Circle (radius 2.5)"
                             ],
                             "damageTag": [
@@ -43492,6 +43512,7 @@
                     "damageType": "Skill (11.05e, from Skill, scale with Skill)",
                     "hitDamageId": "117502001",
                     "hitSources": [
+                        "AdventureBomb(Snapshot): Circle (radius 1)",
                         "AdventureBomb(Snapshot): Circle (radius 1)"
                     ],
                     "damageTag": [
@@ -43604,6 +43625,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "117400001",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 2 speed, 10.1s lifetime, pierce, Circle (radius 30)",
                         "AdventureBullet(Snapshot): 2 speed, 10.1s lifetime, pierce, Circle (radius 30)"
                     ],
                     "damageTag": [
@@ -43690,6 +43712,9 @@
                             "damageType": "Skill (11.05e, from Skill, scale with Skill)",
                             "hitDamageId": "117502003",
                             "hitSources": [
+                                "AdventureBomb(Snapshot): Circle (radius 2)",
+                                "AdventureBomb(Snapshot): Circle (radius 2)",
+                                "AdventureBomb(Snapshot): Circle (radius 2)",
                                 "AdventureBomb(Snapshot): Circle (radius 2)"
                             ],
                             "damageTag": [
@@ -43701,6 +43726,9 @@
                             "damageType": "Skill (11.05e, from Skill, scale with Skill)",
                             "hitDamageId": "117502004",
                             "hitSources": [
+                                "AdventureBomb(Snapshot): Circle (radius 2.5)",
+                                "AdventureBomb(Snapshot): Circle (radius 2.5)",
+                                "AdventureBomb(Snapshot): Circle (radius 2.5)",
                                 "AdventureBomb(Snapshot): Circle (radius 2.5)"
                             ],
                             "damageTag": [
@@ -43819,6 +43847,7 @@
                             "hitDamageId": "117505001",
                             "hitDamageNote": "Requires Neutral Left, Live Right, Ground Below (511712)",
                             "hitSources": [
+                                "AdventureBomb(Snapshot): Circle (radius 1)",
                                 "AdventureBomb(Snapshot): Circle (radius 1)"
                             ]
                         }
@@ -56082,7 +56111,9 @@
                     "hitSources": [
                         "AdventureRotateWeapon: 7.3s duration, 0.5s interval, 15 hits, 150°/s rotate speed, Fan",
                         "AdventureRotateWeapon: 10s duration, 0.1s interval, 100 hits, 360°/s rotate speed, Fan",
-                        "AdventureRotateWeapon: 10s duration, 0.25s interval, 40 hits, 180°/s rotate speed, Fan"
+                        "AdventureRotateWeapon: 7.3s duration, 0.5s interval, 15 hits, 150°/s rotate speed, Fan",
+                        "AdventureRotateWeapon: 10s duration, 0.25s interval, 40 hits, 180°/s rotate speed, Fan",
+                        "AdventureRotateWeapon: 10s duration, 0.1s interval, 100 hits, 360°/s rotate speed, Fan"
                     ],
                     "damageTag": [
                         "120_B1",
@@ -56128,7 +56159,9 @@
                     "hitDamageId": "120320001",
                     "hitSources": [
                         "AdventureRotateWeapon: 6.2s duration, 0.2s interval, 31 hits, -240°/s rotate speed, Fan",
-                        "AdventureRotateWeapon: 6.2s duration, 0.4s interval, 16 hits, -240°/s rotate speed, Fan"
+                        "AdventureRotateWeapon: 6.2s duration, 0.4s interval, 16 hits, -240°/s rotate speed, Fan",
+                        "AdventureRotateWeapon: 6.2s duration, 0.4s interval, 16 hits, -240°/s rotate speed, Fan",
+                        "AdventureRotateWeapon: 6.2s duration, 0.2s interval, 31 hits, -240°/s rotate speed, Fan"
                     ],
                     "damageTag": [
                         "120_B2",
@@ -69281,7 +69314,11 @@
                     "hitDamageId": "126320001",
                     "hitSources": [
                         "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
-                        "AdventureBullet(Snapshot): 12 speed, 1.5s lifetime, homing (15 range, 720°/s), pierce, Circle (radius 0.5)"
+                        "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
+                        "AdventureBullet(Snapshot): 12 speed, 1.5s lifetime, homing (15 range, 720°/s), pierce, Circle (radius 0.5)",
+                        "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
+                        "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
+                        "AdventureBezierBullet(Snapshot): 0.55s duration, pierce"
                     ],
                     "damageTag": [
                         "126_B2",
@@ -69348,6 +69385,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "126400001",
                     "hitSources": [
+                        "AdventureBomb(Snapshot): hit delay 0.25s, Circle (radius 5)",
                         "AdventureBomb(Snapshot): hit delay 0.25s, Circle (radius 5)"
                     ]
                 },
@@ -70312,6 +70350,7 @@
                             "damageType": "Skill (scale with Skill)",
                             "hitDamageId": "126524001",
                             "hitSources": [
+                                "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
                                 "AdventureBezierBullet(Snapshot): 0.55s duration, pierce"
                             ],
                             "damageTag": [
@@ -70476,6 +70515,7 @@
                             "damageType": "Skill",
                             "hitDamageId": "126527001",
                             "hitSources": [
+                                "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
                                 "AdventureBezierBullet(Snapshot): 0.55s duration, pierce"
                             ],
                             "damageTag": [
@@ -70576,6 +70616,10 @@
                             "damageType": "Skill",
                             "hitDamageId": "126530001",
                             "hitSources": [
+                                "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
+                                "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
+                                "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
+                                "AdventureBezierBullet(Snapshot): 0.55s duration, pierce",
                                 "AdventureBezierBullet(Snapshot): 0.55s duration, pierce"
                             ],
                             "damageTag": [
@@ -77925,6 +77969,9 @@
                             "hitDamageId": "130502001",
                             "hitDamageNote": "Conditional hit damage: only when Azure Night (513002) is active",
                             "hitSources": [
+                                "AdventureBezierBullet(Snapshot): 0.4s duration",
+                                "AdventureBezierBullet(Snapshot): 0.4s duration",
+                                "AdventureBezierBullet(Snapshot): 0.4s duration",
                                 "AdventureBezierBullet(Snapshot): 0.4s duration"
                             ],
                             "damageTag": [
@@ -78973,6 +79020,7 @@
                             "hitDamageId": "130521001",
                             "hitSources": [
                                 "AdventureBullet(Snapshot): 50 speed, 1s lifetime, pierce, Circle (radius 0.05)",
+                                "AdventureBullet(Snapshot): 50 speed, 1s lifetime, pierce, Circle (radius 0.05)",
                                 "AdventureBullet(Snapshot): 100 speed, 1s lifetime, pierce, Circle (radius 0.05)"
                             ],
                             "damageTag": [
@@ -79185,7 +79233,11 @@
                             "hitSources": [
                                 "AreaEffectEntity(Snapshot): duration 2s (2.0333s), hit delay 0.05s (0.0667s), hit interval 5s (5.0333s), 1 hits, Circle (radius 3)",
                                 "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 5)",
-                                "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 3)"
+                                "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 3)",
+                                "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 3)",
+                                "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 3)",
+                                "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 5)",
+                                "AdventureBezierBullet(Snapshot): 0.6s duration, Circle (radius 5)"
                             ],
                             "areaEffectVariants": [
                                 {
@@ -86877,6 +86929,8 @@
                     "damageType": "Auto Attack (2.95e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "133100003",
                     "hitSources": [
+                        "AdventureBezierBullet(Snapshot): 0.25s duration",
+                        "AdventureBezierBullet(Snapshot): 0.25s duration",
                         "AdventureBezierBullet(Snapshot): 0.25s duration"
                     ],
                     "damageTag": [
@@ -87036,6 +87090,7 @@
                     "damageType": "Ultimate (from Ultimate, scale with Ultimate)",
                     "hitDamageId": "133400001",
                     "hitSources": [
+                        "AdventureRotateWeapon: 3s duration, 0.25s interval, 12 hits, -150°/s rotate speed, Fan",
                         "AdventureRotateWeapon: 3s duration, 0.25s interval, 12 hits, -150°/s rotate speed, Fan"
                     ],
                     "damageTag": [
@@ -100104,6 +100159,9 @@
                     "damageType": "Auto Attack (from Normal attack, scale with Skill)",
                     "hitDamageId": "137300011",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 15 speed, 1s lifetime, pierce, Circle",
+                        "AdventureBullet(Snapshot): 15 speed, 1s lifetime, pierce, Circle",
+                        "AdventureBullet(Snapshot): 15 speed, 1s lifetime, pierce, Circle",
                         "AdventureBullet(Snapshot): 15 speed, 1s lifetime, pierce, Circle"
                     ],
                     "damageTag": [
@@ -105808,6 +105866,9 @@
                             "damageType": "Skill (from Skill, scale with Skill)",
                             "hitDamageId": "139521001",
                             "hitSources": [
+                                "AdventureBullet(Snapshot): 40 speed, 0.3s lifetime, pierce, Circle (radius 2)",
+                                "AdventureBullet(Snapshot): 40 speed, 0.3s lifetime, pierce, Circle (radius 2)",
+                                "AdventureBullet(Snapshot): 40 speed, 0.3s lifetime, pierce, Circle (radius 2)",
                                 "AdventureBullet(Snapshot): 40 speed, 0.3s lifetime, pierce, Circle (radius 2)"
                             ],
                             "damageTag": [
@@ -157066,6 +157127,9 @@
                     "damageType": "Ultimate (from Skill, scale with Skill)",
                     "hitDamageId": "157300012",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 20 speed, 0.7s lifetime, pierce, Circle",
+                        "AdventureBullet(Snapshot): 20 speed, 0.7s lifetime, pierce, Circle",
+                        "AdventureBullet(Snapshot): 20 speed, 0.7s lifetime, pierce, Circle",
                         "AdventureBullet(Snapshot): 20 speed, 0.7s lifetime, pierce, Circle"
                     ],
                     "damageTag": [
@@ -165991,6 +166055,12 @@
                     "hitDamageId": "159100001",
                     "hitSources": [
                         "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle (radius 0.2)",
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, Circle (radius 0.2)",
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle (radius 0.2)",
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle (radius 0.2)",
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle (radius 0.2)",
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle (radius 0.2)",
+                        "AdventureBullet(Snapshot): 40 speed, 1s lifetime, pierce, Circle (radius 0.2)",
                         "AdventureBullet(Snapshot): 40 speed, 1s lifetime, Circle (radius 0.2)"
                     ],
                     "damageTag": [
@@ -170177,6 +170247,7 @@
                     "damageType": "Auto Attack (1.8979e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "160100001",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 20 speed, 1.5s lifetime, -50 acceleration, pierce, Circle (radius 0.3)",
                         "AdventureBullet(Snapshot): 20 speed, 1.5s lifetime, -50 acceleration, pierce, Circle (radius 0.3)"
                     ],
                     "damageTag": [
@@ -170189,6 +170260,7 @@
                     "damageType": "Auto Attack (1.8979e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "160100002",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 18 speed, 1.5s lifetime, -46 acceleration, pierce, Circle (radius 0.45)",
                         "AdventureBullet(Snapshot): 18 speed, 1.5s lifetime, -46 acceleration, pierce, Circle (radius 0.45)"
                     ],
                     "damageTag": [
@@ -174943,6 +175015,7 @@
                     "damageType": "Auto Attack (3.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "161100001",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)",
                         "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
                     ],
                     "damageTag": [
@@ -174954,6 +175027,7 @@
                     "damageType": "Auto Attack (3.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "161100002",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)",
                         "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
                     ],
                     "damageTag": [
@@ -174965,6 +175039,7 @@
                     "damageType": "Auto Attack (3.8e, from Normal attack, scale with Normal attack)",
                     "hitDamageId": "161100003",
                     "hitSources": [
+                        "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)",
                         "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
                     ],
                     "damageTag": [
@@ -175174,6 +175249,7 @@
                             "damageType": "Auto Attack (3.9e, from Normal attack, scale with Normal attack)",
                             "hitDamageId": "161100004",
                             "hitSources": [
+                                "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)",
                                 "AdventureBullet(Snapshot): 20 speed, 1s lifetime, pierce, Rectangle (2.8 × 1.7)"
                             ],
                             "damageTag": [
@@ -180012,7 +180088,11 @@
                             "hitDamageId": "162310006",
                             "hitSources": [
                                 "AdventureBullet(Snapshot): 30 speed, 1s lifetime, pierce, Rectangle (3 × 2)",
-                                "AdventureBullet(Snapshot): 30 speed, 1s lifetime, pierce, Rectangle (5 × 2)"
+                                "AdventureBullet(Snapshot): 30 speed, 1s lifetime, pierce, Rectangle (3 × 2)",
+                                "AdventureBullet(Snapshot): 30 speed, 1s lifetime, pierce, Rectangle (3 × 2)",
+                                "AdventureBullet(Snapshot): 30 speed, 1s lifetime, pierce, Rectangle (5 × 2)",
+                                "AdventureBullet(Snapshot): 30 speed, 1s lifetime, pierce, Rectangle (3 × 2)",
+                                "AdventureBullet(Snapshot): 30 speed, 1s lifetime, pierce, Rectangle (3 × 2)"
                             ],
                             "damageTag": [
                                 "JianQi",
