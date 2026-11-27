@@ -38322,6 +38322,10 @@ public class AdventureModuleController : ModuleController<AdventureModuleControl
 						MonoSingleton<GameCameraStackManager>.Instance.StopMainCameraBlackScreenTransition(0.5f, (System.Action)null);
 						levelInstance.PlayTimelinePerformance(delegate
 						{
+							if (!SceneSingleton<AdventurePlayerController>.Instance.inputEnabled)
+							{
+								SceneSingleton<AdventurePlayerController>.Instance.InputEnable();
+							}
 							LevelStart();
 							if (hideActors != null)
 							{
@@ -38330,10 +38334,6 @@ public class AdventureModuleController : ModuleController<AdventureModuleControl
 									hideActors[k].Visible();
 								}
 								hideActors.Clear();
-							}
-							if (!SceneSingleton<AdventurePlayerController>.Instance.inputEnabled)
-							{
-								SceneSingleton<AdventurePlayerController>.Instance.InputEnable();
 							}
 							SceneSingleton<AdventureHUDController>.Instance.ShowAllHUD();
 							levelInstance.LevelStart_CheckBattleStartMsgTrigger();
@@ -967716,7 +967716,7 @@ namespace AIScript.Monster._Wind._50301MaoDa
 
 		private bool isStage1 = true;
 
-		private static readonly int Stage2RequireLevel = 10;
+		private static readonly int Stage2RequireLevel = 15;
 
 		protected override void OnActionEnable()
 		{
@@ -967795,71 +967795,71 @@ namespace AIScript.Monster._Wind._50301MaoDa
 			//IL_0307: Unknown result type (might be due to invalid IL or missing references)
 			//IL_030d: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0349: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0350: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0358: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0362: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0376: Unknown result type (might be due to invalid IL or missing references)
-			//IL_037c: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0383: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0389: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03a4: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03aa: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03cc: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03d2: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03d5: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03db: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03de: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03e4: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03eb: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03f1: Unknown result type (might be due to invalid IL or missing references)
-			//IL_040d: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0413: Unknown result type (might be due to invalid IL or missing references)
-			//IL_041a: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0424: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0445: Unknown result type (might be due to invalid IL or missing references)
-			//IL_044b: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0452: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0458: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0474: Unknown result type (might be due to invalid IL or missing references)
-			//IL_047a: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0482: Unknown result type (might be due to invalid IL or missing references)
-			//IL_048c: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04a0: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04a6: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04ad: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04b3: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04ce: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04d4: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04dc: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04e6: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04fa: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0500: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0507: Unknown result type (might be due to invalid IL or missing references)
-			//IL_050d: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0529: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0530: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0537: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0541: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0555: Unknown result type (might be due to invalid IL or missing references)
-			//IL_055b: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0562: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0568: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0583: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0589: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0591: Unknown result type (might be due to invalid IL or missing references)
-			//IL_059b: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05af: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05b5: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05bc: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05c2: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05dd: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05e3: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05eb: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05f5: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0609: Unknown result type (might be due to invalid IL or missing references)
-			//IL_060f: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0616: Unknown result type (might be due to invalid IL or missing references)
-			//IL_061c: Unknown result type (might be due to invalid IL or missing references)
+			//IL_034f: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0357: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0361: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0375: Unknown result type (might be due to invalid IL or missing references)
+			//IL_037b: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0382: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0388: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03a3: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03a9: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03cb: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03d1: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03d4: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03da: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03dd: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03e3: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03ea: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03f0: Unknown result type (might be due to invalid IL or missing references)
+			//IL_040c: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0412: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0419: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0423: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0444: Unknown result type (might be due to invalid IL or missing references)
+			//IL_044a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0451: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0457: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0473: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0479: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0481: Unknown result type (might be due to invalid IL or missing references)
+			//IL_048b: Unknown result type (might be due to invalid IL or missing references)
+			//IL_049f: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04a5: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04ac: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04b2: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04cd: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04d3: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04db: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04e5: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04f9: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04ff: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0506: Unknown result type (might be due to invalid IL or missing references)
+			//IL_050c: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0528: Unknown result type (might be due to invalid IL or missing references)
+			//IL_052f: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0536: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0540: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0554: Unknown result type (might be due to invalid IL or missing references)
+			//IL_055a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0561: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0567: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0582: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0588: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0590: Unknown result type (might be due to invalid IL or missing references)
+			//IL_059a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05ae: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05b4: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05bb: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05c1: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05dc: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05e2: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05ea: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05f4: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0608: Unknown result type (might be due to invalid IL or missing references)
+			//IL_060e: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0615: Unknown result type (might be due to invalid IL or missing references)
+			//IL_061b: Unknown result type (might be due to invalid IL or missing references)
 			_monsterAIType = MonsterAIType.POOL;
 			List<PoolBranchesInfo> list = new List<PoolBranchesInfo>();
 			PoolBranchesInfo obj = new PoolBranchesInfo
@@ -967932,7 +967932,7 @@ namespace AIScript.Monster._Wind._50301MaoDa
 			List<PoolBranchInfo> list3 = new List<PoolBranchInfo>();
 			AdventureActor actor9 = _actor;
 			FP cd9 = FP.op_Implicit(35);
-			FP initCd9 = FP.op_Implicit(30);
+			FP initCd9 = FP.op_Implicit(0);
 			FP releaseDistance8 = FP.op_Implicit(100);
 			FP releaseAngle8 = FP.op_Implicit(360);
 			operateIEnumerator = Attack05;
@@ -968006,7 +968006,6 @@ namespace AIScript.Monster._Wind._50301MaoDa
 				SwitchPool(2);
 				SkillTimes01 = 3;
 				isStage1 = false;
-				GotoCastskill(Skill_Attack05);
 			}
 		}
 
@@ -968211,71 +968210,71 @@ namespace AIScript.Monster._Wind._50301MaoDa
 			//IL_0307: Unknown result type (might be due to invalid IL or missing references)
 			//IL_030d: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0349: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0350: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0358: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0362: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0376: Unknown result type (might be due to invalid IL or missing references)
-			//IL_037c: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0383: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0389: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03a4: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03aa: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03cc: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03d2: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03d5: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03db: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03de: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03e4: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03eb: Unknown result type (might be due to invalid IL or missing references)
-			//IL_03f1: Unknown result type (might be due to invalid IL or missing references)
-			//IL_040d: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0413: Unknown result type (might be due to invalid IL or missing references)
-			//IL_041a: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0424: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0445: Unknown result type (might be due to invalid IL or missing references)
-			//IL_044b: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0452: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0458: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0474: Unknown result type (might be due to invalid IL or missing references)
-			//IL_047a: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0482: Unknown result type (might be due to invalid IL or missing references)
-			//IL_048c: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04a0: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04a6: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04ad: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04b3: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04ce: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04d4: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04dc: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04e6: Unknown result type (might be due to invalid IL or missing references)
-			//IL_04fa: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0500: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0507: Unknown result type (might be due to invalid IL or missing references)
-			//IL_050d: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0529: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0530: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0537: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0541: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0555: Unknown result type (might be due to invalid IL or missing references)
-			//IL_055b: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0562: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0568: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0583: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0589: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0591: Unknown result type (might be due to invalid IL or missing references)
-			//IL_059b: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05af: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05b5: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05bc: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05c2: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05dd: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05e3: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05eb: Unknown result type (might be due to invalid IL or missing references)
-			//IL_05f5: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0609: Unknown result type (might be due to invalid IL or missing references)
-			//IL_060f: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0616: Unknown result type (might be due to invalid IL or missing references)
-			//IL_061c: Unknown result type (might be due to invalid IL or missing references)
+			//IL_034f: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0357: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0361: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0375: Unknown result type (might be due to invalid IL or missing references)
+			//IL_037b: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0382: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0388: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03a3: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03a9: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03cb: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03d1: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03d4: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03da: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03dd: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03e3: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03ea: Unknown result type (might be due to invalid IL or missing references)
+			//IL_03f0: Unknown result type (might be due to invalid IL or missing references)
+			//IL_040c: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0412: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0419: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0423: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0444: Unknown result type (might be due to invalid IL or missing references)
+			//IL_044a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0451: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0457: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0473: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0479: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0481: Unknown result type (might be due to invalid IL or missing references)
+			//IL_048b: Unknown result type (might be due to invalid IL or missing references)
+			//IL_049f: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04a5: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04ac: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04b2: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04cd: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04d3: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04db: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04e5: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04f9: Unknown result type (might be due to invalid IL or missing references)
+			//IL_04ff: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0506: Unknown result type (might be due to invalid IL or missing references)
+			//IL_050c: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0528: Unknown result type (might be due to invalid IL or missing references)
+			//IL_052f: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0536: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0540: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0554: Unknown result type (might be due to invalid IL or missing references)
+			//IL_055a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0561: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0567: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0582: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0588: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0590: Unknown result type (might be due to invalid IL or missing references)
+			//IL_059a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05ae: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05b4: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05bb: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05c1: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05dc: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05e2: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05ea: Unknown result type (might be due to invalid IL or missing references)
+			//IL_05f4: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0608: Unknown result type (might be due to invalid IL or missing references)
+			//IL_060e: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0615: Unknown result type (might be due to invalid IL or missing references)
+			//IL_061b: Unknown result type (might be due to invalid IL or missing references)
 			_monsterAIType = MonsterAIType.POOL;
 			List<PoolBranchesInfo> list = new List<PoolBranchesInfo>();
 			PoolBranchesInfo obj = new PoolBranchesInfo
@@ -968348,7 +968347,7 @@ namespace AIScript.Monster._Wind._50301MaoDa
 			List<PoolBranchInfo> list3 = new List<PoolBranchInfo>();
 			AdventureActor actor9 = _actor;
 			FP cd9 = FP.op_Implicit(35);
-			FP initCd9 = FP.op_Implicit(30);
+			FP initCd9 = FP.op_Implicit(0);
 			FP releaseDistance8 = FP.op_Implicit(100);
 			FP releaseAngle8 = FP.op_Implicit(360);
 			operateIEnumerator = Attack05;
@@ -968422,7 +968421,6 @@ namespace AIScript.Monster._Wind._50301MaoDa
 				SwitchPool(2);
 				SkillTimes01 = 3;
 				isStage1 = false;
-				GotoCastskill(Skill_Attack05);
 			}
 		}
 
@@ -1003754,9 +1003752,9 @@ namespace AIScript.Monster._30931HaSaNa
 
 		private const string bossTagId3 = "100027";
 
-		private const int buff_8 = 0;
+		private const int buff_8 = 631029010;
 
-		private const int buff_9 = 0;
+		private const int buff_9 = 631029020;
 
 		private bool hasTag;
 
@@ -1003855,7 +1003853,7 @@ namespace AIScript.Monster._30931HaSaNa
 			if (hasTag3 && evt is AdventureActorRemoveShield adventureActorRemoveShield)
 			{
 				LogicEntity logicEntity = ((BaseEvent)adventureActorRemoveShield).sender as LogicEntity;
-				if (!(mainActor == null) && !(logicEntity != mainActor) && !HasActiveShield(mainActor))
+				if (!(mainActor == null) && !(logicEntity != mainActor) && !HasActiveShield(mainActor, adventureActorRemoveShield.shieldId))
 				{
 					ChangeShieldBuffState(hasShield: false);
 				}
@@ -1003870,21 +1003868,21 @@ namespace AIScript.Monster._30931HaSaNa
 			}
 			if (hasShield)
 			{
-				_actor.buffComponent.RemoveBuffByBuffId(0);
-				if (!_actor.buffComponent.CheckBuffByBuffID(0))
+				_actor.buffComponent.RemoveBuffByBuffId(631029020);
+				if (!_actor.buffComponent.CheckBuffByBuffID(631029010))
 				{
-					_actor.buffComponent.AddBuff(0, _actor);
+					_actor.buffComponent.AddBuff(631029010, _actor);
 				}
 			}
 			else
 			{
-				_actor.buffComponent.RemoveBuffByBuffId(0);
-				_actor.buffComponent.RemoveBuffByBuffId(0);
-				_actor.buffComponent.AddBuff(0, _actor);
+				_actor.buffComponent.RemoveBuffByBuffId(631029010);
+				_actor.buffComponent.RemoveBuffByBuffId(631029020);
+				_actor.buffComponent.AddBuff(631029020, _actor);
 			}
 		}
 
-		private static bool HasActiveShield(AdventureActor actor)
+		private static bool HasActiveShield(AdventureActor actor, int excludeShieldId = 0)
 		{
 			List<ShieldEntity> list = actor?.actorShield?.shieldList;
 			if (list == null)
@@ -1003894,7 +1003892,7 @@ namespace AIScript.Monster._30931HaSaNa
 			for (int i = 0; i < list.Count; i++)
 			{
 				ShieldEntity shieldEntity = list[i];
-				if (shieldEntity != null && !shieldEntity.iEnd)
+				if (shieldEntity != null && !shieldEntity.iEnd && (excludeShieldId == 0 || shieldEntity.shieldConfig == null || shieldEntity.shieldConfig.Id != excludeShieldId))
 				{
 					return true;
 				}
@@ -1006677,7 +1006675,7 @@ namespace AIScript.Monster._30931HaSaNa
 
 		private readonly FP duration = FP.op_Implicit(4);
 
-		private readonly FP rotationSpeed = FP.op_Implicit(60);
+		private readonly FP rotationSpeed = FP.op_Implicit(90);
 
 		private long StartFX;
 
@@ -1006716,14 +1006714,7 @@ namespace AIScript.Monster._30931HaSaNa
 				areaEffectId = PlayAreaEffect(areaEffecyKey, GetPosition(), GetRotation());
 			}
 			yield return WaitTime(FP.op_Implicit(1));
-			if (!GetLogicTagToggleValue(_actor, "IsMainline"))
-			{
-				yield return BeginLookAtMonsterTarget(duration - FP.op_Implicit(1), rotationSpeed);
-			}
-			else
-			{
-				yield return BeginLookAtMonsterTarget(duration - FP.op_Implicit(1), FP.op_Implicit(90));
-			}
+			yield return BeginLookAtMonsterTarget(duration - FP.op_Implicit(1), rotationSpeed);
 			if (areaEffectId > 0)
 			{
 				StopAreaEffect(areaEffectId);
@@ -1007747,7 +1007738,7 @@ namespace AIScript.Monster._30931HaSaNa
 
 		private readonly FP rushSpeed = FP.op_Implicit(1.5);
 
-		private readonly FP rotateSpeed = FP.op_Implicit(150);
+		private readonly FP rotateSpeed = FP.op_Implicit(300);
 
 		private readonly string eventName_EndJump = "JumpEnd";
 
@@ -1007857,7 +1007848,7 @@ namespace AIScript.Monster._30931HaSaNa
 			else if (string.Equals(eventName, eventName_StartJump))
 			{
 				BeginDashActorForward(1, rushSpeed, FP.op_Implicit(999), FP.op_Implicit(999), comboWithAttack: true, isAngle: true, notChangeForward: true);
-				BeginLookAtMonsterTarget(FP.op_Implicit(0.75), rotateSpeed);
+				BeginLookAtMonsterTarget(FP.op_Implicit(1.5), rotateSpeed);
 			}
 			else if (string.Equals(eventName, eventName_EndJump))
 			{
@@ -1008562,19 +1008553,19 @@ namespace AIScript.Monster._30931HaSaNa
 	{
 		private readonly string comboTag = "ShaJuRen_Attack_4";
 
-		private readonly int AreaEffectCount_Follow = 15;
+		private readonly int AreaEffectCount_Follow = 12;
 
-		private readonly FP BlastTimes_Follow = FP.op_Implicit(4);
+		private readonly FP BlastTimes_Follow = FP.op_Implicit(8);
 
-		private readonly FP BlastInterval_Follow = FP.op_Implicit(4.5);
+		private readonly FP BlastInterval_Follow = FP.op_Implicit(1.5);
 
 		private readonly string areaEffectKey_Follow = "Area_30931HaSaNa_SandBlast_Small_LongAlert";
 
 		private readonly int AreaEffectCount_Outside = 10;
 
-		private readonly FP BlastTimes_Outside = FP.op_Implicit(3);
+		private readonly FP BlastTimes_Outside = FP.op_Implicit(5);
 
-		private readonly FP BlastInterval_Outside = FP.op_Implicit(6);
+		private readonly FP BlastInterval_Outside = FP.op_Implicit(3);
 
 		private readonly FP BlastRadius_Outside = FP.op_Implicit(14);
 
@@ -1008586,23 +1008577,18 @@ namespace AIScript.Monster._30931HaSaNa
 
 		private readonly FP BlastTimeInterval_Spin = FP.op_Implicit(1.5);
 
-		private readonly FP BlastTimes_Spin = FP.op_Implicit(12);
+		private readonly FP BlastTimes_Spin = FP.op_Implicit(8);
 
-		private readonly FP BlastRadius_Spin = FP.op_Implicit(7.5);
+		private readonly FP BlastRadius_Spin = FP.op_Implicit(6.25);
 
 		private readonly string areaEffectKey_Spin = "Area_30931HaSaNa_SandBlast_Big";
 
-		private readonly FP addAreaEffectCount_Spin = FP.op_Implicit(0.5);
-
 		private List<PlayFX> linkFxList;
-
-		private int BlastCount_Spin;
 
 		protected override IEnumerator DoMainLogic()
 		{
 			linkFxList = new List<PlayFX>();
-			int chargeCount = GetActiveDeviceCount();
-			BlastCount_Spin = (int)(long)(FP.op_Implicit(AreaEffectCount_Spin) + FP.op_Implicit(chargeCount) * addAreaEffectCount_Spin);
+			GetActiveDeviceCount();
 			foreach (MonsterAdventureActor activeDevice in _activeDevices)
 			{
 				SetLogicTagToggleValue(activeDevice, "Locked", value: true);
@@ -1008614,14 +1008600,10 @@ namespace AIScript.Monster._30931HaSaNa
 			BeginAttack(1, comboTag, flushInputedKeys: true);
 			yield return WaitCombo(ComboAttackType.isAnticipationEnd);
 			StartCor(CircleExplosionFollow());
-			yield return WaitTime(FP.op_Implicit(1.5));
 			StartCor(CircleExplosionSpin());
-			yield return WaitTime(FP.op_Implicit(1.5));
-			if (chargeCount >= 3)
-			{
-				StartCor(CircleExplosionOutside());
-			}
-			yield return WaitTime(FP.op_Implicit(15));
+			yield return WaitTime(BlastTimeInterval_Spin);
+			StartCor(CircleExplosionOutside());
+			yield return WaitTime(FP.op_Implicit(10));
 			CancelAttack();
 			foreach (PlayFX linkFx in linkFxList)
 			{
@@ -1008661,7 +1008643,11 @@ namespace AIScript.Monster._30931HaSaNa
 			for (int i = 0; FP.op_Implicit(i) < BlastTimes_Outside; i++)
 			{
 				CircleExplosion(AreaEffectCount_Outside, BlastRadius_Outside, areaEffectKey_Outside, TSVector2.up);
-				yield return WaitTime(BlastInterval_Outside);
+				if (i < 2)
+				{
+					yield return WaitTime(BlastInterval_Outside / FP.op_Implicit(2));
+				}
+				yield return WaitTime(BlastInterval_Outside / FP.op_Implicit(2));
 			}
 		}
 
@@ -1008670,7 +1008656,11 @@ namespace AIScript.Monster._30931HaSaNa
 			TSVector2 CircleRotation = TSVector2.up;
 			for (int i = 0; FP.op_Implicit(i) < BlastTimes_Spin; i++)
 			{
-				CircleExplosion(BlastCount_Spin, BlastRadius_Spin, areaEffectKey_Spin, CircleRotation);
+				CircleExplosion(AreaEffectCount_Spin, BlastRadius_Spin, areaEffectKey_Spin, CircleRotation);
+				if (i == 0 || i == 2 || i == 4)
+				{
+					CircleExplosion(AreaEffectCount_Spin, BlastRadius_Spin * FP.op_Implicit(2), areaEffectKey_Spin, CircleRotation);
+				}
 				yield return WaitTime(BlastTimeInterval_Spin);
 				CircleRotation = RotateTo(CircleRotation, BlastAngleInterval_Spin);
 			}
@@ -1099470,11 +1099460,11 @@ namespace AIScript.Monster._50581DuoBiTaiDeng
 
 		private readonly int buffId_LiftThunder_StrengthenEntry_2 = 631013002;
 
-		private readonly string strengthenEntryId_3 = "100014";
+		private readonly string strengthenEntryId_3 = "100028";
 
-		private readonly int buffId_MainDamage_StrengthenEntry_3 = 631014001;
+		private readonly int buffId_MainDamage_StrengthenEntry_3 = 631030010;
 
-		private readonly int buffId_AssistDamage_StrengthenEntry_3 = 631014002;
+		private readonly int buffId_AssistDamage_StrengthenEntry_3 = 631030020;
 
 		private bool _succeed_ScoreEntry_1;
 
@@ -1151983,6 +1151973,8 @@ namespace AIScript.Character._16101
 		public static readonly int ultraAreaSlotEvt = CommonHelper.StringToHash("ultraAreaSlotEvt");
 
 		public static readonly int ultraLinkEvt = CommonHelper.StringToHash("ultraLinkEvt");
+
+		public static readonly int juDianDeadEvt = CommonHelper.StringToHash("juDianDeadEvt");
 	}
 	public static class EarthMarkUtil
 	{
@@ -1152693,7 +1152685,7 @@ namespace AIScript.Character._16101
 
 		private const int perkId_7 = 516107;
 
-		private int once_7 = 16107001;
+		private int buff_7 = 16107011;
 
 		private const int perkId_10 = 516110;
 
@@ -1152740,6 +1152732,8 @@ namespace AIScript.Character._16101
 			//IL_008d: Unknown result type (might be due to invalid IL or missing references)
 			//IL_00bf: Unknown result type (might be due to invalid IL or missing references)
 			//IL_00c5: Unknown result type (might be due to invalid IL or missing references)
+			//IL_00ff: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0105: Unknown result type (might be due to invalid IL or missing references)
 			//IL_00e2: Unknown result type (might be due to invalid IL or missing references)
 			//IL_00e8: Unknown result type (might be due to invalid IL or missing references)
 			//IL_00ed: Unknown result type (might be due to invalid IL or missing references)
@@ -1152765,6 +1152759,10 @@ namespace AIScript.Character._16101
 			{
 				SkillInfo skillCD2 = skillMgr.GetSkillCD(ActionKey.B);
 				skillMgr.ModifyOriginalSectionResumeTime(ActionKey.B, skillCD2.originalSectionResumeTime - cdReduce_3);
+			}
+			if (GetPerk(516107))
+			{
+				_actor.buffComponent.AddBuff(buff_7, _actor);
 			}
 			seFriendCount = 0;
 			List<PlayerAdventureActor> actorLs = SceneSingleton<AdventurePlayerController>.Instance.ActorLs;
@@ -1152798,15 +1152796,13 @@ namespace AIScript.Character._16101
 			//IL_0050: Unknown result type (might be due to invalid IL or missing references)
 			//IL_0084: Unknown result type (might be due to invalid IL or missing references)
 			//IL_008a: Unknown result type (might be due to invalid IL or missing references)
-			//IL_00be: Unknown result type (might be due to invalid IL or missing references)
-			//IL_00c4: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0109: Unknown result type (might be due to invalid IL or missing references)
-			//IL_010f: Unknown result type (might be due to invalid IL or missing references)
-			//IL_014c: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0152: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0194: Unknown result type (might be due to invalid IL or missing references)
-			//IL_019a: Unknown result type (might be due to invalid IL or missing references)
-			//IL_016a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_00cf: Unknown result type (might be due to invalid IL or missing references)
+			//IL_00d5: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0112: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0118: Unknown result type (might be due to invalid IL or missing references)
+			//IL_015a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0160: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0130: Unknown result type (might be due to invalid IL or missing references)
 			base.OnBeforeHit(evt, monster);
 			if (GetPerk(516101) && CommonUtils.CheckHitByTag(evt.hitDamageTag, Config.hitTag_NormalSpecial))
 			{
@@ -1152815,10 +1152811,6 @@ namespace AIScript.Character._16101
 			if (GetPerk(516102) && CommonUtils.CheckHitByTag(evt.hitDamageTag, Config.hitTag_Normal))
 			{
 				AdventureActor.AddFromAttr(once_2, _actor);
-			}
-			if (GetPerk(516107) && CommonUtils.CheckHitByTag(evt.hitDamageTag, Config.hitTag_Normal))
-			{
-				AdventureActor.AddFromAttr(once_7, _actor);
 			}
 			if (GetPerk(516113) && seFriendCount > 0)
 			{
@@ -1154545,8 +1154537,6 @@ namespace AIScript.Character._16101.Summoned.JuDian
 
 		private const int perkId_8 = 516108;
 
-		private const string areaEffect_JuDian_Debuff_8 = "AreaEffect_16101_JuDian_Debuff";
-
 		private const int buffId_8 = 16108011;
 
 		private FP clearRadius_8 = FP.op_Implicit(9);
@@ -1154555,20 +1154545,24 @@ namespace AIScript.Character._16101.Summoned.JuDian
 
 		private PlayerAdventureActor _summoner;
 
-		private long _auraId_8;
-
 		private CoroutineNode _corExplore;
 
 		private CoroutineNode _corAura_8;
 
-		private readonly List<LogicEntity> _searchBuffer = new List<LogicEntity>();
+		private readonly Dictionary<long, AdventureActor> _auraInside_8 = new Dictionary<long, AdventureActor>();
+
+		private readonly HashSet<long> _auraCurrent_8 = new HashSet<long>();
+
+		private readonly List<long> _auraExit_8 = new List<long>();
 
 		public override void OnEnable()
 		{
 			//IL_0056: Unknown result type (might be due to invalid IL or missing references)
 			//IL_005c: Unknown result type (might be due to invalid IL or missing references)
-			//IL_007e: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0084: Unknown result type (might be due to invalid IL or missing references)
+			//IL_009c: Unknown result type (might be due to invalid IL or missing references)
+			//IL_00a2: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0076: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0081: Expected O, but got Unknown
 			base.OnEnable();
 			_summoner = (_actor as MonsterAdventureActor)?.monsterSummonInfo.SummonActor as PlayerAdventureActor;
 			_actor.EnableUnparalleled();
@@ -1154576,7 +1154570,8 @@ namespace AIScript.Character._16101.Summoned.JuDian
 			_actor.EnableCloseBlock();
 			if (GetPerk(516108))
 			{
-				StartCoroutine(ref _corAura_8, DelayPlayAura_8());
+				_actor.AddEventListener("ACTOR_CUSTOM_EVENT", new EventDelegate(OnCustomEventRaw), (EventDispatchMode)0);
+				StartCoroutine(ref _corAura_8, AuraDetectLoop_8());
 			}
 			if (GetPerk(516104))
 			{
@@ -1154586,38 +1154581,76 @@ namespace AIScript.Character._16101.Summoned.JuDian
 
 		public override void OnDisable()
 		{
-			//IL_003f: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0045: Unknown result type (might be due to invalid IL or missing references)
-			//IL_0054: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0024: Unknown result type (might be due to invalid IL or missing references)
+			//IL_002a: Unknown result type (might be due to invalid IL or missing references)
+			//IL_0044: Unknown result type (might be due to invalid IL or missing references)
+			//IL_004e: Expected O, but got Unknown
 			base.OnDisable();
 			_actor.DisableUnparalleled();
 			_actor.DisableSearchedImmunity();
-			if (_auraId_8 != 0L)
-			{
-				ILRuntimeAPI.StopAreaEffect(_auraId_8);
-				_auraId_8 = 0L;
-			}
 			if (GetPerk(516108))
 			{
-				CommonUtils.SearchNearTargetsByCircle(_actor, clearRadius_8, isConfront: true, includeSelf: false, _searchBuffer);
-				for (int i = 0; i < _searchBuffer.Count; i++)
-				{
-					if (_searchBuffer[i] is AdventureActor adventureActor)
-					{
-						adventureActor.buffComponent.RemoveBuffByBuffId(16108011, 1);
-					}
-				}
-				_searchBuffer.Clear();
+				_actor.RemoveEventListener("ACTOR_CUSTOM_EVENT", new EventDelegate(OnCustomEventRaw));
+				ClearAuraDebuff_8();
 			}
 			StopCoroutine(ref _corExplore);
-			StopCoroutine(ref _corAura_8);
 			_summoner = null;
 		}
 
-		private IEnumerator DelayPlayAura_8()
+		private void OnCustomEventRaw(IEvent evt)
+		{
+			if (evt is AdventureActorCustomEvent adventureActorCustomEvent && adventureActorCustomEvent.eventHashCode == Config.juDianDeadEvt)
+			{
+				ClearAuraDebuff_8();
+			}
+		}
+
+		private void ClearAuraDebuff_8()
+		{
+			StopCoroutine(ref _corAura_8);
+			foreach (KeyValuePair<long, AdventureActor> item in _auraInside_8)
+			{
+				item.Value?.buffComponent.RemoveBuffByBuffId(16108011, 1);
+			}
+			_auraInside_8.Clear();
+		}
+
+		private IEnumerator AuraDetectLoop_8()
 		{
 			yield return _actor.WaitTime(auraDelay_8);
-			_auraId_8 = ILRuntimeAPI.PlayAreaEffect(_actor, "AreaEffect_16101_JuDian_Debuff", _actor.tsTransform.Position);
+			while (true)
+			{
+				_auraCurrent_8.Clear();
+				DeterministicShape deterministicCircleShape = CommonUtils.GetDeterministicCircleShape(clearRadius_8, FP.op_Implicit(0), _actor.tsTransform.Position);
+				List<LogicEntity> monstersFromShape = ILRuntimeAPI.GetMonstersFromShape(_actor, deterministicCircleShape, isConfront: false);
+				for (int i = 0; i < monstersFromShape.Count; i++)
+				{
+					if (monstersFromShape[i] is AdventureActor adventureActor && _actor.IsConfrontWith(adventureActor))
+					{
+						_auraCurrent_8.Add(adventureActor.Id);
+						if (!_auraInside_8.ContainsKey(adventureActor.Id))
+						{
+							_auraInside_8.Add(adventureActor.Id, adventureActor);
+							adventureActor.buffComponent.AddBuff(16108011, _actor);
+						}
+					}
+				}
+				_auraExit_8.Clear();
+				foreach (KeyValuePair<long, AdventureActor> item in _auraInside_8)
+				{
+					if (!_auraCurrent_8.Contains(item.Key))
+					{
+						_auraExit_8.Add(item.Key);
+					}
+				}
+				for (int j = 0; j < _auraExit_8.Count; j++)
+				{
+					long key = _auraExit_8[j];
+					_auraInside_8[key]?.buffComponent.RemoveBuffByBuffId(16108011, 1);
+					_auraInside_8.Remove(key);
+				}
+				yield return null;
+			}
 		}
 
 		private IEnumerator ExploreLoop()
@@ -1154639,10 +1154672,19 @@ namespace AIScript.Character._16101.Summoned.JuDian
 
 		protected override IEnumerator DoMainLogic()
 		{
+			DispatchJuDianDead();
 			SetCloseBlockEnable();
 			_actor.PlayDeathAnim();
 			BeginAttack(keyIndex, key, flushInputedKeys: true, forceInterruptAttack: true);
 			yield return WaitCombo(ComboAttackType.isComboFinish);
+		}
+
+		private void DispatchJuDianDead()
+		{
+			AdventureActorCustomEvent adventureActorCustomEvent = AdventureActorCustomEvent.Generate();
+			((BaseEvent)adventureActorCustomEvent).sender = _actor;
+			adventureActorCustomEvent.eventHashCode = Config.juDianDeadEvt;
+			_actor.DispatchEvent(adventureActorCustomEvent);
 		}
 
 		protected override void OnInterrupt(int comboIndex)
